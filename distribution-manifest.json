@@ -226,13 +226,13 @@
     },
     {
       "path": "docs/guide/Formalization.html",
-      "bytes": 4143,
-      "sha256": "8fca8824c2a5c3e80bf149a0aa89d7d12b771e9fd39d82c7dc72c58ff92b8d04"
+      "bytes": 4668,
+      "sha256": "a192e654c606a9320fce3734b162083959f3480430e0c6fea91e867709e971cd"
     },
     {
       "path": "docs/guide/Formalization.md",
-      "bytes": 2668,
-      "sha256": "2184762002794e0bfb7f012b546fdfd3e9c178210b54661a4287defe9ae29370"
+      "bytes": 3094,
+      "sha256": "d489ac9e8855c9f6f0dfbe3a21688892069cb950980c6491e15990028d2918f7"
     },
     {
       "path": "docs/guide/Home.html",
@@ -366,8 +366,8 @@
     },
     {
       "path": "docs/reference/native/index.html",
-      "bytes": 3009,
-      "sha256": "bc593a865669b79cbe16e3b8af7d52ac6c3ec820434ef14ed4170b540fa4d041"
+      "bytes": 3186,
+      "sha256": "9e4c3fa87c3309a7b8206427b9bb8a856ef4d53b5eb0491aa850f60d4894b49d"
     },
     {
       "path": "docs/reference/owl/classes.html",
@@ -780,14 +780,69 @@
       "sha256": "43a7a11bc3fb78b9ee5b8a8228010950a331204dc5982baea2b471fef5c1c306"
     },
     {
+      "path": "semantic/product/v2/formal-specification/README.md",
+      "bytes": 4345,
+      "sha256": "84c9be0e9fc1a82a9f71d7a1afe0682bffe73fd9cde79ca217c85e95e2cbb8cf"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/native-structure.md",
+      "bytes": 51975,
+      "sha256": "b1b3cbc2c8899e70c3a6f4fede5b372dd2057681367fa19ba99280de0d05761a"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/native-structure.p",
+      "bytes": 93535,
+      "sha256": "bf111d153bcbe71dd389275c573b85b5455c5aea39276d993c66ffb9c23abc0e"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/profile-projection.md",
+      "bytes": 175214,
+      "sha256": "e18dfc7e32fe938821679dc06be83f60eab2ee73f362088cd919539b9f4e688d"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/profile-projection.p",
+      "bytes": 345733,
+      "sha256": "c16325f0e85d7041655937fd3f2c6b0942d377a7f37d6ef6af69019ab4c37431"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/relation-signatures.json",
+      "bytes": 74248,
+      "sha256": "b4bdac2cfa2cb6ab3c987e0efedebe74605f68e87ed2bcc57c855dac97df91aa"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/review.md",
+      "bytes": 2485,
+      "sha256": "5545c0d0536bc11fe911d31795051c68c960aa74c81098bfc6abb407795d8f83"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/scoped-contracts.md",
+      "bytes": 3287,
+      "sha256": "e2a634902990a0449d4665b672e853e1de6bf0aac5e1495d30c5d84b22b007ed"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/source-bindings.json",
+      "bytes": 1024,
+      "sha256": "ae90689d6cd61bbd7f37fc27fbaed06916595ac038b5b62b761f00fe807235c7"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/symbols.json",
+      "bytes": 119973,
+      "sha256": "556902c3b069ea4e4bf41c7a89ab0727650f57dcaf004fbeb47ec3aee607107f"
+    },
+    {
+      "path": "semantic/product/v2/formal-specification/transcription-review.json",
+      "bytes": 1506,
+      "sha256": "fa837d3404b440470afa28bd7ae2c0c073d1c3bf99c258f8f35319e5266283b9"
+    },
+    {
       "path": "semantic/product/v2/native-input-locations.json",
       "bytes": 194,
       "sha256": "2df43851494e39df15dffdeee7d8a9081cd49bb419b5852cf5168ba0efc55848"
     },
     {
       "path": "semantic/product/v2/reference/README.md",
-      "bytes": 1377,
-      "sha256": "817c799e34e13877b70b81ef906b5022c7682b4f47c6dac7bb59468327a117d1"
+      "bytes": 1467,
+      "sha256": "aa43839441f8c4a688db8e556edade2ed6ba7ce892c1e3f4160562ea88a4a43f"
     },
     {
       "path": "semantic/product/v2/reference/associations.md",
@@ -3480,9 +3535,19 @@
       "sha256": "7d3c6aa9c3ad4f1df4cdc656193c5bc144a2a832bba440392a74c04ae7608fce"
     },
     {
+      "path": "tools/ontospk/build_fol.py",
+      "bytes": 15491,
+      "sha256": "f342b5be7498bac3cd83cc182cd80feb2a49a27588fc732384be0146182adbfb"
+    },
+    {
       "path": "tools/ontospk/build_reference.py",
       "bytes": 8365,
       "sha256": "fa582aec1578a151d76e4034d58dcbd745ceccf988c8dbdad05d8c8aad2e1378"
+    },
+    {
+      "path": "tools/ontospk/check_fol.py",
+      "bytes": 9438,
+      "sha256": "c638e6e914bc3196f491e7553cbf61056564458fe50d213cff52b59cc6b27483"
     },
     {
       "path": "tools/ontospk/requirements.txt",
@@ -3556,8 +3621,8 @@
     },
     {
       "path": "wiki-src/Formalization.md",
-      "bytes": 3000,
-      "sha256": "fc12e742bea0d73810f8626276a848e946b8fc203540cd61a83a21802a0f4405"
+      "bytes": 3472,
+      "sha256": "899c1ceed4859d30f8fb120984d945147fca05595d116923c0a3c80209fa45f6"
     },
     {
       "path": "wiki-src/Home.md",

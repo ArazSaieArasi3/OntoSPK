@@ -22,6 +22,10 @@ forall r,v1,v2:
 
 The uniqueness statement does not prove temporal continuity or conformance of a realization to an intended baseline. Under OWL, two version names without a distinctness assertion need not produce the same result as two explicitly distinct versions. The finite data checks test their own asserted-record requirements.
 
+## First-order specification
+
+The [first-order specification](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/formal-specification/README.md) provides a readable account and expanded formulas for the complete native structure, a separate projection of explicit logical-profile constructs, source mappings and a reproducible transcription review. It preserves source versions and distinguishes transcription checks from ontology-wide verification.
+
 ## Complete reference
 
 - [All structural formulas and association contracts](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/associations.md)

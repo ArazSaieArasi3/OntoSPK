@@ -2,6 +2,7 @@
 
 This reference covers every native class, association, end and generalization, the complete 892-expression structural register and the 22 scoped commitments. It distinguishes authored conceptual commitments, OWL restrictions, finite-data checks and operational history policies.
 
+- [First-order specification and transcription review](../formal-specification/README.md)
 - [Class definitions, identities, domains and native contract fields](classes.md)
 - [Associations, both ends, multiplicities and all static formulas](associations.md)
 - [Generalizations and generalization sets](generalizations.md)

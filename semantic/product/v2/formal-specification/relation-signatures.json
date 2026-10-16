@@ -1,0 +1,2576 @@
+[
+  {
+    "id": "ICREL:ARCH:realizedByComponent",
+    "name": "intendedRealizedByComponent",
+    "source": "IC:FeatureSpecification",
+    "target": "EXT:Architecture:Component",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_realizedbycomponent_26de1270"
+  },
+  {
+    "id": "ICREL:ARCH:realizedByService",
+    "name": "intendedRealizedByService",
+    "source": "IC:FeatureSpecification",
+    "target": "EXT:Architecture:Service",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_realizedbyservice_618225c2"
+  },
+  {
+    "id": "ICREL:ARCH:satisfiedByArchitectureElement",
+    "name": "intendedSatisfiedByArchitectureElement",
+    "source": "IC:RequirementSpecification",
+    "target": "EXT:Architecture:ArchitectureElement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_satisfiedbyarchitectureelement_b20955c5"
+  },
+  {
+    "id": "ICREL:ARCH:satisfiedByInterface",
+    "name": "intendedSatisfiedByInterface",
+    "source": "IC:RequirementSpecification",
+    "target": "EXT:Architecture:Interface",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_satisfiedbyinterface_c6f1deb1"
+  },
+  {
+    "id": "ICREL:ARCH:supportedByArchitectureElement",
+    "name": "intendedSupportedByArchitectureElement",
+    "source": "IC:CapabilitySpecification",
+    "target": "EXT:Architecture:ArchitectureElement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_supportedbyarchitectureelement_2891caff"
+  },
+  {
+    "id": "ICREL:CP:assessesSpecification",
+    "name": "assessesSpecification",
+    "source": "IC:TestExecution",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "1..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_assessesspecification_8c86d688"
+  },
+  {
+    "id": "ICREL:CP:bearsCapability",
+    "name": "bearsCapability",
+    "source": "IC:ProductRealization",
+    "target": "IC:ProductCapability",
+    "targets_per_source": "1..*",
+    "sources_per_target": "1",
+    "predicate": "n_bearscapability_4ef6f3c5"
+  },
+  {
+    "id": "ICREL:CP:evaluatedAgainst",
+    "name": "evaluatedAgainst",
+    "source": "IC:ProductCapability",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_evaluatedagainst_43d242a1"
+  },
+  {
+    "id": "ICREL:CP:realizesVersion",
+    "name": "realizesVersion",
+    "source": "IC:ProductRealization",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_realizesversion_dbceb26b"
+  },
+  {
+    "id": "ICREL:CP:specifiesCapability",
+    "name": "specifiesCapability",
+    "source": "IC:ProductVersion",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_specifiescapability_7462fc6a"
+  },
+  {
+    "id": "ICREL:CP:testsRealization",
+    "name": "testsRealization",
+    "source": "IC:TestExecution",
+    "target": "IC:ProductRealization",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_testsrealization_4ddb54ac"
+  },
+  {
+    "id": "ICREL:EU:assertsClaim",
+    "name": "recordsClaim",
+    "source": "IC:EvidenceAttributionRecord",
+    "target": "IC:AssessmentClaim",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_assertsclaim_19a0f620"
+  },
+  {
+    "id": "ICREL:EU:attributedTo",
+    "name": "recordedAttributionTo",
+    "source": "IC:EvidenceArtifact",
+    "target": "IC:AssessmentClaim",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_attributedto_272bb6d6"
+  },
+  {
+    "id": "ICREL:EU:usesEvidence",
+    "name": "recordsCarrier",
+    "source": "IC:EvidenceAttributionRecord",
+    "target": "IC:EvidenceArtifact",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_usesevidence_6313a294"
+  },
+  {
+    "id": "ICREL:SP:expectedCondition",
+    "name": "specifiesExpectedCondition",
+    "source": "IC:ScenarioSpecification",
+    "target": "IC:ConditionSpecification",
+    "targets_per_source": "1..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_expectedcondition_b7f103bd"
+  },
+  {
+    "id": "ICREL:implementsFeature",
+    "name": "implementsFeature",
+    "source": "IC:ProductRealization",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_implementsfeature_e68be3ec"
+  },
+  {
+    "id": "REL:ORSD04:claimActualCapability",
+    "name": "claimActualCapability",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:ProductCapability",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimactualcapability_c99b19a0"
+  },
+  {
+    "id": "REL:ORSD04:claimContext",
+    "name": "claimContext",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:AssessmentContextSpecification",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimcontext_c7d6c05a"
+  },
+  {
+    "id": "REL:ORSD04:claimCriterion",
+    "name": "claimCriterion",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:ConditionSpecification",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimcriterion_9572bd66"
+  },
+  {
+    "id": "REL:ORSD04:claimIntendedCapability",
+    "name": "claimIntendedCapability",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimintendedcapability_aab8b454"
+  },
+  {
+    "id": "REL:ORSD04:claimProduct",
+    "name": "claimProduct",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:Product",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimproduct_4f83299e"
+  },
+  {
+    "id": "REL:ORSD04:claimRealization",
+    "name": "claimRealization",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:ProductRealization",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimrealization_7c5dd420"
+  },
+  {
+    "id": "REL:ORSD04:claimRequirement",
+    "name": "claimRequirement",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimrequirement_011295f3"
+  },
+  {
+    "id": "REL:ORSD04:claimVersion",
+    "name": "claimVersion",
+    "source": "IC:AssessmentClaim",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_claimversion_5bcf65f5"
+  },
+  {
+    "id": "REL:ORSD04:contextScenario",
+    "name": "contextScenario",
+    "source": "IC:AssessmentContextSpecification",
+    "target": "IC:ScenarioSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_contextscenario_c0b66c40"
+  },
+  {
+    "id": "REL:ORSD04:contextVersion",
+    "name": "contextVersion",
+    "source": "IC:AssessmentContextSpecification",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_contextversion_7f5e23fa"
+  },
+  {
+    "id": "REL:ORSD04:scopeChangeRecord",
+    "name": "scopeChangeRecord",
+    "source": "IC:ScopeSpecification",
+    "target": "IC:ChangeRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_scopechangerecord_e7aec216"
+  },
+  {
+    "id": "REL:ORSD04:scopeSupersedes",
+    "name": "scopeSupersedes",
+    "source": "IC:ScopeSpecification",
+    "target": "IC:ScopeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_scopesupersedes_fbe9ba3e"
+  },
+  {
+    "id": "REL:ORSD04:versionScope",
+    "name": "versionScope",
+    "source": "IC:ProductVersion",
+    "target": "IC:ScopeSpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_versionscope_737b05a6"
+  },
+  {
+    "id": "REL:ORSD05:executionContext",
+    "name": "executionContext",
+    "source": "IC:TestExecution",
+    "target": "IC:AssessmentContextSpecification",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_executioncontext_8d285cac"
+  },
+  {
+    "id": "REL:ORSD05:executionCriterion",
+    "name": "executionCriterion",
+    "source": "IC:TestExecution",
+    "target": "IC:ConditionSpecification",
+    "targets_per_source": "1..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_executioncriterion_a846e8f6"
+  },
+  {
+    "id": "REL:ORSD05:itemStatus",
+    "name": "itemStatus",
+    "source": "IC:DeliveryWorkItem",
+    "target": "IC:DeliveryWorkItemStatusRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_itemstatus_cd8fd10f"
+  },
+  {
+    "id": "REL:ORSD05:itemStatusChange",
+    "name": "itemStatusChange",
+    "source": "IC:DeliveryWorkItemStatusRecord",
+    "target": "IC:ChangeRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_itemstatuschange_13913074"
+  },
+  {
+    "id": "REL:ORSD05:itemStatusVersion",
+    "name": "itemStatusVersion",
+    "source": "IC:DeliveryWorkItemStatusRecord",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_itemstatusversion_66b75a39"
+  },
+  {
+    "id": "REL:ORSD05:referenceReviewFinding",
+    "name": "referenceReviewFinding",
+    "source": "IC:ExternalReferenceRecord",
+    "target": "IC:FindingRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..1",
+    "predicate": "n_referencereviewfinding_63c58381"
+  },
+  {
+    "id": "REL:ORSD05:referenceSupersedes",
+    "name": "referenceSupersedes",
+    "source": "IC:ExternalReferenceRecord",
+    "target": "IC:ExternalReferenceRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_referencesupersedes_a3915a89"
+  },
+  {
+    "id": "REL:ORSD05:releaseStatusChange",
+    "name": "releaseStatusChange",
+    "source": "IC:DeliveryStatusRecord",
+    "target": "IC:ChangeRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_releasestatuschange_1dd48094"
+  },
+  {
+    "id": "REL:ORSD05:releaseStatusVersion",
+    "name": "releaseStatusVersion",
+    "source": "IC:DeliveryStatusRecord",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_releasestatusversion_84f5e5a4"
+  },
+  {
+    "id": "REL:ORSD06:acquisitionCitesEvidence",
+    "name": "acquisitionCitesEvidence",
+    "source": "IC:AcquisitionHypothesisSpecification",
+    "target": "IC:EvidenceAttributionRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_acquisitioncitesevidence_1d10d2eb"
+  },
+  {
+    "id": "REL:ORSD06:acquisitionCitesInsight",
+    "name": "acquisitionCitesInsight",
+    "source": "IC:AcquisitionHypothesisSpecification",
+    "target": "IC:MarketingInsightReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_acquisitioncitesinsight_9b6980d9"
+  },
+  {
+    "id": "REL:ORSD06:adoptionCitesEvidence",
+    "name": "adoptionCitesEvidence",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "IC:EvidenceAttributionRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_adoptioncitesevidence_84eb7c07"
+  },
+  {
+    "id": "REL:ORSD06:adoptionCitesInsight",
+    "name": "adoptionCitesInsight",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "IC:MarketingInsightReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_adoptioncitesinsight_cd9aa3b0"
+  },
+  {
+    "id": "REL:ORSD06:changeDecision",
+    "name": "changeDecision",
+    "source": "IC:ChangeRecord",
+    "target": "IC:DecisionRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_changedecision_920aa5a4"
+  },
+  {
+    "id": "REL:ORSD06:changeFeature",
+    "name": "changeFeature",
+    "source": "IC:ChangeRecord",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_changefeature_65510559"
+  },
+  {
+    "id": "REL:ORSD06:changeScope",
+    "name": "changeScope",
+    "source": "IC:ChangeRecord",
+    "target": "IC:ScopeSpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_changescope_c7b9bd3e"
+  },
+  {
+    "id": "REL:ORSD06:changeTask",
+    "name": "changeTask",
+    "source": "IC:ChangeRecord",
+    "target": "IC:TaskReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_changetask_078fbfba"
+  },
+  {
+    "id": "REL:ORSD06:decisionConsidersSolution",
+    "name": "decisionConsidersSolution",
+    "source": "IC:DecisionRecord",
+    "target": "IC:SolutionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_decisionconsiderssolution_82623377"
+  },
+  {
+    "id": "REL:ORSD06:decisionEvidence",
+    "name": "decisionEvidence",
+    "source": "IC:DecisionRecord",
+    "target": "IC:EvidenceAttributionRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_decisionevidence_9a72010a"
+  },
+  {
+    "id": "REL:ORSD06:decisionSelectsSolution",
+    "name": "decisionSelectsSolution",
+    "source": "IC:DecisionRecord",
+    "target": "IC:SolutionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_decisionselectssolution_b3f0703b"
+  },
+  {
+    "id": "REL:ORSD06:dependencyActualCapabilityTarget",
+    "name": "dependencyActualCapabilityTarget",
+    "source": "IC:DependencySpecification",
+    "target": "IC:ProductCapability",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_dependencyactualcapabilitytarget_65ba5295"
+  },
+  {
+    "id": "REL:ORSD06:dependencyCapabilitySpecificationTarget",
+    "name": "dependencyCapabilitySpecificationTarget",
+    "source": "IC:DependencySpecification",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_dependencycapabilityspecificationtarget_1754f838"
+  },
+  {
+    "id": "REL:ORSD06:dependencyCondition",
+    "name": "dependencyCondition",
+    "source": "IC:DependencySpecification",
+    "target": "IC:ConditionSpecification",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_dependencycondition_21a95369"
+  },
+  {
+    "id": "REL:ORSD06:dependencyExternalTarget",
+    "name": "dependencyExternalTarget",
+    "source": "IC:DependencySpecification",
+    "target": "IC:ExternalReferenceRecord",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_dependencyexternaltarget_955edd0c"
+  },
+  {
+    "id": "REL:ORSD06:dependencyProductTarget",
+    "name": "dependencyProductTarget",
+    "source": "IC:DependencySpecification",
+    "target": "IC:Product",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_dependencyproducttarget_16b74afa"
+  },
+  {
+    "id": "REL:ORSD06:narrativeCitesEvidence",
+    "name": "narrativeCitesEvidence",
+    "source": "IC:CompetitiveNarrative",
+    "target": "IC:EvidenceAttributionRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_narrativecitesevidence_fd04f2cf"
+  },
+  {
+    "id": "REL:ORSD06:narrativeCitesInsight",
+    "name": "narrativeCitesInsight",
+    "source": "IC:CompetitiveNarrative",
+    "target": "IC:MarketingInsightReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_narrativecitesinsight_abc6f884"
+  },
+  {
+    "id": "REL:ORSD06:proposalFeature",
+    "name": "proposalFeature",
+    "source": "IC:ChangeProposalSpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_proposalfeature_ac7ba05a"
+  },
+  {
+    "id": "REL:ORSD06:proposalScope",
+    "name": "proposalScope",
+    "source": "IC:ChangeProposalSpecification",
+    "target": "IC:ScopeSpecification",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_proposalscope_433a692d"
+  },
+  {
+    "id": "REL:ORSD06:stepPrecedes",
+    "name": "stepPrecedes",
+    "source": "IC:InteractionStepSpecification",
+    "target": "IC:InteractionStepSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_stepprecedes_170199a2"
+  },
+  {
+    "id": "REL:ORSD06:usabilityInformationArchitecture",
+    "name": "usabilityInformationArchitecture",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:InformationArchitectureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilityinformationarchitecture_cb4e112b"
+  },
+  {
+    "id": "REL:ORSD06:usabilityJourney",
+    "name": "usabilityJourney",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:JourneySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilityjourney_682a0049"
+  },
+  {
+    "id": "REL:ORSD06:usabilityJourneyStage",
+    "name": "usabilityJourneyStage",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:JourneyStageSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilityjourneystage_f610e490"
+  },
+  {
+    "id": "REL:ORSD06:usabilityPersona",
+    "name": "usabilityPersona",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:PersonaSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilitypersona_c893f98d"
+  },
+  {
+    "id": "REL:ORSD06:usabilityStep",
+    "name": "usabilityStep",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:InteractionStepSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilitystep_51ca1994"
+  },
+  {
+    "id": "REL:ORSD06:usabilityTouchpoint",
+    "name": "usabilityTouchpoint",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:TouchpointSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilitytouchpoint_a4969b48"
+  },
+  {
+    "id": "REL:ORSD06:usabilityUIState",
+    "name": "usabilityUIState",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:UIStateSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilityuistate_8080b03f"
+  },
+  {
+    "id": "REL:ORSD06:usabilityUserRole",
+    "name": "usabilityUserRole",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:UserRoleSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_usabilityuserrole_0884ccee"
+  },
+  {
+    "id": "REL:W2:002",
+    "name": "containsProduct",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:Product",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_002_141fb40d"
+  },
+  {
+    "id": "REL:W2:003",
+    "name": "organizesEntry",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:PortfolioEntry",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_003_2a4a05a1"
+  },
+  {
+    "id": "REL:W2:004",
+    "name": "entryOfPortfolio",
+    "source": "IC:PortfolioEntry",
+    "target": "IC:ProductPortfolio",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_004_ec439b63"
+  },
+  {
+    "id": "REL:W2:005",
+    "name": "offeringOf",
+    "source": "IC:OfferingSpecification",
+    "target": "IC:Product",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_005_4a1e3183"
+  },
+  {
+    "id": "REL:W2:006",
+    "name": "referencesOffering",
+    "source": "IC:BundleSpecification",
+    "target": "IC:OfferingSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_006_c65eb66a"
+  },
+  {
+    "id": "REL:W2:007",
+    "name": "hasVersion",
+    "source": "IC:Product",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_007_3040acdb"
+  },
+  {
+    "id": "REL:W2:008",
+    "name": "supersedes",
+    "source": "IC:ProductVersion",
+    "target": "IC:ProductVersion",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_008_e04b7afe"
+  },
+  {
+    "id": "REL:W2:009",
+    "name": "usesLifecycleSpecification",
+    "source": "IC:Product",
+    "target": "IC:LifecycleSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_009_de02e007"
+  },
+  {
+    "id": "REL:W2:010",
+    "name": "definesLifecycleStage",
+    "source": "IC:LifecycleSpecification",
+    "target": "IC:LifecycleStageSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_010_836fd99f"
+  },
+  {
+    "id": "REL:W2:011",
+    "name": "hasProductStatusRecord",
+    "source": "IC:Product",
+    "target": "IC:ProductStatusRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_011_8dfb819d"
+  },
+  {
+    "id": "REL:W2:012",
+    "name": "hasDependencySpecification",
+    "source": "IC:Product",
+    "target": "IC:DependencySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_012_691fdfa2"
+  },
+  {
+    "id": "REL:W2:013",
+    "name": "dependencyOfProduct",
+    "source": "IC:DependencySpecification",
+    "target": "IC:Product",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_013_ebb3b154"
+  },
+  {
+    "id": "REL:W2:014",
+    "name": "referencesProductFamily",
+    "source": "IC:Product",
+    "target": "IC:ProductFamilyReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_014_64c6b3c3"
+  },
+  {
+    "id": "REL:W2:015",
+    "name": "referencesProductLine",
+    "source": "IC:Product",
+    "target": "IC:ProductLineReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_015_ffe73557"
+  },
+  {
+    "id": "REL:W2:016",
+    "name": "referencesProductVariant",
+    "source": "IC:Product",
+    "target": "IC:ProductVariantReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_016_3a18449d"
+  },
+  {
+    "id": "REL:W2:017",
+    "name": "hasVisionStatement",
+    "source": "IC:Product",
+    "target": "IC:VisionStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_017_e7463820"
+  },
+  {
+    "id": "REL:W2:018",
+    "name": "motivatesGoal",
+    "source": "IC:VisionStatement",
+    "target": "IC:GoalSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_018_4708e02a"
+  },
+  {
+    "id": "REL:W2:019",
+    "name": "targetsOutcomeSpecification",
+    "source": "IC:GoalSpecification",
+    "target": "IC:OutcomeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_019_0e70c6e2"
+  },
+  {
+    "id": "REL:W2:020",
+    "name": "specifiesOutcomeMetric",
+    "source": "IC:OutcomeSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_020_74ea57b4"
+  },
+  {
+    "id": "REL:W2:021",
+    "name": "targetsOutcome",
+    "source": "IC:InitiativeSpecification",
+    "target": "IC:OutcomeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_021_d56fd35c"
+  },
+  {
+    "id": "REL:W2:022",
+    "name": "motivatesOpportunity",
+    "source": "IC:ProblemStatement",
+    "target": "IC:OpportunityStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_022_12886cb6"
+  },
+  {
+    "id": "REL:W2:023",
+    "name": "motivatesHypothesis",
+    "source": "IC:OpportunityStatement",
+    "target": "IC:HypothesisSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_023_695465dd"
+  },
+  {
+    "id": "REL:W2:024",
+    "name": "motivatesSolutionHypothesis",
+    "source": "IC:HypothesisSpecification",
+    "target": "IC:SolutionHypothesisSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_024_67c75a93"
+  },
+  {
+    "id": "REL:W2:025",
+    "name": "informsInitiative",
+    "source": "IC:SolutionHypothesisSpecification",
+    "target": "IC:InitiativeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_025_f493c010"
+  },
+  {
+    "id": "REL:W2:026",
+    "name": "recordsCriterion",
+    "source": "IC:DecisionRecord",
+    "target": "IC:DecisionCriterionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_026_327fea57"
+  },
+  {
+    "id": "REL:W2:027",
+    "name": "recordsAffectedInitiative",
+    "source": "IC:DecisionRecord",
+    "target": "IC:InitiativeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_027_c69299e9"
+  },
+  {
+    "id": "REL:W2:028",
+    "name": "assessesProblem",
+    "source": "IC:ProblemSolutionFitAssessment",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_028_dc597b7c"
+  },
+  {
+    "id": "REL:W2:029",
+    "name": "assessesSolution",
+    "source": "IC:ProblemSolutionFitAssessment",
+    "target": "IC:SolutionSpecification",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_029_52243471"
+  },
+  {
+    "id": "REL:W2:030",
+    "name": "assessesProduct",
+    "source": "IC:ProductMarketFitAssessment",
+    "target": "IC:Product",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_030_cc76183b"
+  },
+  {
+    "id": "REL:W2:031",
+    "name": "hasScopeSpecification",
+    "source": "IC:Product",
+    "target": "IC:ScopeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_031_1e7cb3a9"
+  },
+  {
+    "id": "REL:W2:032",
+    "name": "intendsCapability",
+    "source": "IC:Product",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_032_81b8b3c6"
+  },
+  {
+    "id": "REL:W2:033",
+    "name": "expectedEnabledBy",
+    "source": "IC:OutcomeSpecification",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_033_3bf6c244"
+  },
+  {
+    "id": "REL:W2:034",
+    "name": "specifiedThroughFeature",
+    "source": "IC:CapabilitySpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_034_4ca19bf6"
+  },
+  {
+    "id": "REL:W2:035",
+    "name": "hasProposedSolution",
+    "source": "IC:OpportunityStatement",
+    "target": "IC:SolutionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_035_33324b00"
+  },
+  {
+    "id": "REL:W2:036",
+    "name": "proposesCapability",
+    "source": "IC:SolutionSpecification",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_036_22e75750"
+  },
+  {
+    "id": "REL:W2:037",
+    "name": "proposesFeature",
+    "source": "IC:SolutionSpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_037_6101e6d0"
+  },
+  {
+    "id": "REL:W2:038",
+    "name": "specifiesSlice",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:VerticalSliceSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_038_776210ef"
+  },
+  {
+    "id": "REL:W2:039",
+    "name": "intendedToEnableFeature",
+    "source": "IC:EnablerSpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_039_c4ee49cb"
+  },
+  {
+    "id": "REL:W2:040",
+    "name": "dependsOnFeatureSpecification",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_040_3721176d"
+  },
+  {
+    "id": "REL:W2:041",
+    "name": "representedByStory",
+    "source": "IC:VerticalSliceSpecification",
+    "target": "IC:UserStorySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_041_1507b9fb"
+  },
+  {
+    "id": "REL:W2:042",
+    "name": "hasStorySpecification",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:UserStorySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_042_4d13393e"
+  },
+  {
+    "id": "REL:W2:043",
+    "name": "refinedByRequirement",
+    "source": "IC:UserStorySpecification",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_043_d4c2ace0"
+  },
+  {
+    "id": "REL:W2:044",
+    "name": "operationalizedByCriterion",
+    "source": "IC:RequirementSpecification",
+    "target": "IC:AcceptanceCriterionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_044_f91144d9"
+  },
+  {
+    "id": "REL:W2:045",
+    "name": "exemplifiedByScenario",
+    "source": "IC:AcceptanceCriterionSpecification",
+    "target": "IC:RequirementScenarioSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_045_c4d6444d"
+  },
+  {
+    "id": "REL:W2:046",
+    "name": "constrainsRequirement",
+    "source": "IC:ConstraintSpecification",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_046_82a9e28a"
+  },
+  {
+    "id": "REL:W2:047",
+    "name": "referencesRuleForRequirement",
+    "source": "IC:BusinessRuleReference",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_047_991c2810"
+  },
+  {
+    "id": "REL:W2:048",
+    "name": "sourcesRequirement",
+    "source": "IC:RequirementSourceReference",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_048_7b78adb4"
+  },
+  {
+    "id": "REL:W2:049",
+    "name": "justifiesRequirement",
+    "source": "IC:RequirementRationaleStatement",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_049_d089051b"
+  },
+  {
+    "id": "REL:W2:050",
+    "name": "concernsRequirement",
+    "source": "IC:ValidationFindingRecord",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_050_67d99833"
+  },
+  {
+    "id": "REL:W2:051",
+    "name": "describesUserRole",
+    "source": "IC:PersonaSpecification",
+    "target": "IC:UserRoleSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_051_f8adf7fb"
+  },
+  {
+    "id": "REL:W2:052",
+    "name": "representedInJourney",
+    "source": "IC:PersonaSpecification",
+    "target": "IC:JourneySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_052_56a45324"
+  },
+  {
+    "id": "REL:W2:053",
+    "name": "contains",
+    "source": "IC:JourneySpecification",
+    "target": "IC:JourneyStageSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_053_c23f19ff"
+  },
+  {
+    "id": "REL:W2:054",
+    "name": "includes",
+    "source": "IC:JourneyStageSpecification",
+    "target": "IC:TouchpointSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_054_f61125f3"
+  },
+  {
+    "id": "REL:W2:055",
+    "name": "describedByFlow",
+    "source": "IC:JourneyStageSpecification",
+    "target": "IC:UserFlowSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_055_9078cfc7"
+  },
+  {
+    "id": "REL:W2:056",
+    "name": "specifiesStep",
+    "source": "IC:UserFlowSpecification",
+    "target": "IC:InteractionStepSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_056_46d2ebbf"
+  },
+  {
+    "id": "REL:W2:057",
+    "name": "referencesScreen",
+    "source": "IC:InteractionStepSpecification",
+    "target": "IC:ScreenSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_057_ebeec762"
+  },
+  {
+    "id": "REL:W2:058",
+    "name": "organizesScreenSpecification",
+    "source": "IC:InformationArchitectureSpecification",
+    "target": "IC:ScreenSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_058_aecfa66f"
+  },
+  {
+    "id": "REL:W2:059",
+    "name": "definesUIState",
+    "source": "IC:ScreenSpecification",
+    "target": "IC:UIStateSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_059_eca1f05a"
+  },
+  {
+    "id": "REL:W2:060",
+    "name": "reportsOnFlow",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:UserFlowSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_060_cd8f0aa6"
+  },
+  {
+    "id": "REL:W2:061",
+    "name": "reportsOnScreen",
+    "source": "IC:UsabilityFindingRecord",
+    "target": "IC:ScreenSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_061_5acee16e"
+  },
+  {
+    "id": "REL:W2:062",
+    "name": "specifiesPersonaContext",
+    "source": "IC:UserStorySpecification",
+    "target": "IC:PersonaSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_062_bf69f3b2"
+  },
+  {
+    "id": "REL:W2:063",
+    "name": "supportedBy",
+    "source": "IC:UserStorySpecification",
+    "target": "IC:UserFlowSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_063_3d16cab3"
+  },
+  {
+    "id": "REL:W2:064",
+    "name": "organizesRoadmapEntry",
+    "source": "IC:Roadmap",
+    "target": "IC:RoadmapEntry",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_064_1f0ddc8f"
+  },
+  {
+    "id": "REL:W2:065",
+    "name": "plansInitiative",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:InitiativeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_065_ab3ce0c9"
+  },
+  {
+    "id": "REL:W2:066",
+    "name": "plansFeatureDelivery",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_066_260fbf52"
+  },
+  {
+    "id": "REL:W2:067",
+    "name": "targetsMilestone",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:MilestoneSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_067_ab8aca5c"
+  },
+  {
+    "id": "REL:W2:068",
+    "name": "hasPriorityAssessment",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:PriorityAssessment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_068_6c08abc9"
+  },
+  {
+    "id": "REL:W2:069",
+    "name": "usesRankingCriterion",
+    "source": "IC:PriorityAssessment",
+    "target": "IC:PrioritizationCriterionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_069_8b363281"
+  },
+  {
+    "id": "REL:W2:070",
+    "name": "usesHorizonDefinition",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:PlanningHorizonDefinition",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_070_42bdf6b1"
+  },
+  {
+    "id": "REL:W2:071",
+    "name": "hasTargetWindowAssignment",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:TargetWindowAssignment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_071_c85c4c1f"
+  },
+  {
+    "id": "REL:W2:072",
+    "name": "hasEntryConfidenceAssessment",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:ConfidenceAssessment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_072_d859bcab"
+  },
+  {
+    "id": "REL:W2:073",
+    "name": "usesCommitmentLevelDefinition",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:CommitmentLevelDefinition",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_073_1c1c1cbd"
+  },
+  {
+    "id": "REL:W2:074",
+    "name": "hasPlanningDependency",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:RoadmapEntry",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_074_54717fc7"
+  },
+  {
+    "id": "REL:W2:075",
+    "name": "plansDeliveryItem",
+    "source": "IC:ReleaseSpecification",
+    "target": "IC:DeliveryWorkItem",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_075_c862c342"
+  },
+  {
+    "id": "REL:W2:076",
+    "name": "referencesChangeRecord",
+    "source": "IC:ReleaseSpecification",
+    "target": "IC:ChangeRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_076_4e607c81"
+  },
+  {
+    "id": "REL:W2:077",
+    "name": "hasStatus",
+    "source": "IC:ReleaseSpecification",
+    "target": "IC:DeliveryStatusRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "1",
+    "predicate": "n_077_9eb172bd"
+  },
+  {
+    "id": "REL:W2:078",
+    "name": "hasReleaseEvidenceRecord",
+    "source": "IC:ReleaseSpecification",
+    "target": "IC:ReleaseEvidenceRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_078_e36c3427"
+  },
+  {
+    "id": "REL:W2:079",
+    "name": "proposesRecordedChange",
+    "source": "IC:ChangeProposalSpecification",
+    "target": "IC:ChangeRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_079_bc346458"
+  },
+  {
+    "id": "REL:W2:080",
+    "name": "plansFeature",
+    "source": "IC:DeliveryWorkItem",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_080_14c5005a"
+  },
+  {
+    "id": "REL:W2:081",
+    "name": "intendedToContributeToWork",
+    "source": "IC:TaskReference",
+    "target": "IC:DeliveryWorkItem",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_081_083ee30e"
+  },
+  {
+    "id": "REL:W2:082",
+    "name": "specifiesFeatureActivationControl",
+    "source": "IC:FeatureFlagSpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_082_3bc03cc0"
+  },
+  {
+    "id": "REL:W2:083",
+    "name": "plannedForRelease",
+    "source": "IC:ProductVersion",
+    "target": "IC:ReleaseSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_083_24f09796"
+  },
+  {
+    "id": "REL:W2:084",
+    "name": "covers",
+    "source": "IC:TestScenario",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_084_78cd3084"
+  },
+  {
+    "id": "REL:W2:085",
+    "name": "specifiesRequirementVerification",
+    "source": "IC:TestScenario",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_085_4f09fc52"
+  },
+  {
+    "id": "REL:W2:086",
+    "name": "specifiesCriterionVerification",
+    "source": "IC:TestScenario",
+    "target": "IC:AcceptanceCriterionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_086_fef7560c"
+  },
+  {
+    "id": "REL:W2:087",
+    "name": "refinesTestScenario",
+    "source": "IC:TestCase",
+    "target": "IC:TestScenario",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_087_6c98f19f"
+  },
+  {
+    "id": "REL:W2:088",
+    "name": "contains",
+    "source": "IC:TestSuiteSpecification",
+    "target": "IC:TestCase",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_088_8c7830ba"
+  },
+  {
+    "id": "REL:W2:089",
+    "name": "referencesTestData",
+    "source": "IC:TestCase",
+    "target": "IC:TestDataReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_089_dbfce11f"
+  },
+  {
+    "id": "REL:W2:090",
+    "name": "executes",
+    "source": "IC:TestExecution",
+    "target": "IC:TestCase",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_090_711de836"
+  },
+  {
+    "id": "REL:W2:091",
+    "name": "hasResult",
+    "source": "IC:TestExecution",
+    "target": "IC:TestResult",
+    "targets_per_source": "1",
+    "sources_per_target": "1",
+    "predicate": "n_091_04c14bba"
+  },
+  {
+    "id": "REL:W2:092",
+    "name": "hasVerificationEvidenceRecord",
+    "source": "IC:TestResult",
+    "target": "IC:VerificationEvidenceRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..1",
+    "predicate": "n_092_21a36b08"
+  },
+  {
+    "id": "REL:W2:093",
+    "name": "hasValidationEvidenceRecord",
+    "source": "IC:TestResult",
+    "target": "IC:ValidationEvidenceRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..1",
+    "predicate": "n_093_1b0cbd93"
+  },
+  {
+    "id": "REL:W2:094",
+    "name": "hasPositioningStatement",
+    "source": "IC:Product",
+    "target": "IC:PositioningStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_094_d290751e"
+  },
+  {
+    "id": "REL:W2:095",
+    "name": "positionedByStatement",
+    "source": "IC:OfferingSpecification",
+    "target": "IC:PositioningStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_095_726b9249"
+  },
+  {
+    "id": "REL:W2:096",
+    "name": "referencesTargetMarket",
+    "source": "IC:PositioningStatement",
+    "target": "IC:TargetMarketReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_096_7e5fd1f9"
+  },
+  {
+    "id": "REL:W2:097",
+    "name": "referencesTargetSegment",
+    "source": "IC:PositioningStatement",
+    "target": "IC:TargetSegmentReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_097_489acb44"
+  },
+  {
+    "id": "REL:W2:098",
+    "name": "referencesCompetitiveNarrative",
+    "source": "IC:PositioningStatement",
+    "target": "IC:CompetitiveNarrative",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_098_bd343015"
+  },
+  {
+    "id": "REL:W2:099",
+    "name": "expressesPositioning",
+    "source": "IC:MessagingSpecification",
+    "target": "IC:PositioningStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_099_2ceaa1b3"
+  },
+  {
+    "id": "REL:W2:100",
+    "name": "usesPositioningStatement",
+    "source": "IC:GoToMarketSpecification",
+    "target": "IC:PositioningStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_100_14f978b0"
+  },
+  {
+    "id": "REL:W2:101",
+    "name": "plansLaunch",
+    "source": "IC:GoToMarketSpecification",
+    "target": "IC:LaunchSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_101_f9cd32ae"
+  },
+  {
+    "id": "REL:W2:102",
+    "name": "targetsMarketingGoal",
+    "source": "IC:GoToMarketSpecification",
+    "target": "IC:MarketingGoalSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_102_12b748c6"
+  },
+  {
+    "id": "REL:W2:103",
+    "name": "informsPositioningStatement",
+    "source": "IC:MarketingInsightReference",
+    "target": "IC:PositioningStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_103_1d16419a"
+  },
+  {
+    "id": "REL:W2:104",
+    "name": "informsGoToMarketSpecification",
+    "source": "IC:MarketingInsightReference",
+    "target": "IC:GoToMarketSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_104_8bb25782"
+  },
+  {
+    "id": "REL:W2:105",
+    "name": "informsGoToMarketFromAcquisition",
+    "source": "IC:AcquisitionHypothesisSpecification",
+    "target": "IC:GoToMarketSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_105_30735771"
+  },
+  {
+    "id": "REL:W2:106",
+    "name": "informsGoToMarketFromAdoption",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "IC:GoToMarketSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_106_2fd4bd10"
+  },
+  {
+    "id": "REL:W2:107",
+    "name": "intendedToSupport",
+    "source": "IC:CapabilitySpecification",
+    "target": "EXT:Business:BusinessCapability",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_107_5f90f7dd"
+  },
+  {
+    "id": "REL:W2:108",
+    "name": "refersTo",
+    "source": "IC:ProductFamilyReference",
+    "target": "EXT:ProductLine:ProductFamily",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_108_db35e11f"
+  },
+  {
+    "id": "REL:W2:109",
+    "name": "refersTo",
+    "source": "IC:ProductLineReference",
+    "target": "EXT:ProductLine:ProductLine",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_109_29a6c8d4"
+  },
+  {
+    "id": "REL:W2:110",
+    "name": "refersTo",
+    "source": "IC:ProductVariantReference",
+    "target": "EXT:ProductLine:ProductVariant",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_110_7eb113ec"
+  },
+  {
+    "id": "REL:W2:111",
+    "name": "refersTo",
+    "source": "IC:BusinessRuleReference",
+    "target": "EXT:Business:BusinessRule",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_111_a7ab86d1"
+  },
+  {
+    "id": "REL:W2:112",
+    "name": "refersTo",
+    "source": "IC:ProductMetricReference",
+    "target": "EXT:ProductManagement:Metric",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_112_8ab8f69c"
+  },
+  {
+    "id": "REL:W2:113",
+    "name": "refersTo",
+    "source": "IC:TargetMarketReference",
+    "target": "EXT:Market:Market",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_113_94fa7e1d"
+  },
+  {
+    "id": "REL:W2:114",
+    "name": "refersTo",
+    "source": "IC:TargetSegmentReference",
+    "target": "EXT:Market:MarketSegment",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_114_7556b2ff"
+  },
+  {
+    "id": "REL:W2:115",
+    "name": "refersTo",
+    "source": "IC:MarketingInsightReference",
+    "target": "EXT:Market:MarketInsight",
+    "targets_per_source": "1",
+    "sources_per_target": "0..*",
+    "predicate": "n_115_080d7717"
+  },
+  {
+    "id": "REL:W2:116",
+    "name": "references",
+    "source": "IC:PositioningStatement",
+    "target": "EXT:Business:ValueProposition",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_116_16fce4c0"
+  },
+  {
+    "id": "REL:W2:117",
+    "name": "tracksInitiative",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:InitiativeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_117_f6e65bc8"
+  },
+  {
+    "id": "REL:W2:118",
+    "name": "tracksReleaseSpecification",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:ReleaseSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_118_3258b1bd"
+  },
+  {
+    "id": "REL:W2:119",
+    "name": "tracksMilestoneSpecification",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:MilestoneSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_119_c96f1d40"
+  },
+  {
+    "id": "REL:W2:120",
+    "name": "referencesProductLine",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:ProductLineReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_120_bcf6e49b"
+  },
+  {
+    "id": "REL:W2:121",
+    "name": "hasPortfolioConfidenceAssessment",
+    "source": "IC:ProductPortfolio",
+    "target": "IC:ConfidenceAssessment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_121_7232e709"
+  },
+  {
+    "id": "REL:W2:122",
+    "name": "targetsPersona",
+    "source": "IC:Product",
+    "target": "IC:PersonaSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_122_2fb01163"
+  },
+  {
+    "id": "REL:W2:123",
+    "name": "framesJourney",
+    "source": "IC:Product",
+    "target": "IC:JourneySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_123_030d77c5"
+  },
+  {
+    "id": "REL:W2:124",
+    "name": "referencesProduct",
+    "source": "IC:PortfolioEntry",
+    "target": "IC:Product",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_124_531d6524"
+  },
+  {
+    "id": "REL:W2:125",
+    "name": "framesFeature",
+    "source": "IC:VisionStatement",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_125_5bae11c3"
+  },
+  {
+    "id": "REL:W2:126",
+    "name": "intendsToSupportGoal",
+    "source": "IC:InitiativeSpecification",
+    "target": "IC:GoalSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_126_abc0b504"
+  },
+  {
+    "id": "REL:W2:127",
+    "name": "tracksInitiativeReleaseSpecification",
+    "source": "IC:InitiativeSpecification",
+    "target": "IC:ReleaseSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_127_cee54c49"
+  },
+  {
+    "id": "REL:W2:128",
+    "name": "hypothesizesAboutProblem",
+    "source": "IC:HypothesisSpecification",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_128_afd6f7dd"
+  },
+  {
+    "id": "REL:W2:129",
+    "name": "solutionHypothesizesAboutProblem",
+    "source": "IC:SolutionHypothesisSpecification",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_129_45f09c7d"
+  },
+  {
+    "id": "REL:W2:130",
+    "name": "intendsToAddressProblem",
+    "source": "IC:SolutionSpecification",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_130_685a9d09"
+  },
+  {
+    "id": "REL:W2:131",
+    "name": "specifiedByRequirement",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_131_b447a0af"
+  },
+  {
+    "id": "REL:W2:132",
+    "name": "hasFeatureCriterion",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:AcceptanceCriterionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_132_1b3a7a42"
+  },
+  {
+    "id": "REL:W2:133",
+    "name": "supportedBy",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:UserFlowSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_133_37331d96"
+  },
+  {
+    "id": "REL:W2:134",
+    "name": "hasStoryCriterion",
+    "source": "IC:UserStorySpecification",
+    "target": "IC:AcceptanceCriterionSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_134_7da32705"
+  },
+  {
+    "id": "REL:W2:135",
+    "name": "recordsResolutionChange",
+    "source": "IC:ValidationFindingRecord",
+    "target": "IC:ChangeRecord",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_135_520c0b94"
+  },
+  {
+    "id": "REL:W2:136",
+    "name": "includes",
+    "source": "IC:JourneySpecification",
+    "target": "IC:TouchpointSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_136_ad7fe2b2"
+  },
+  {
+    "id": "REL:W2:137",
+    "name": "includesScreen",
+    "source": "IC:UserFlowSpecification",
+    "target": "IC:ScreenSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_137_e3f8fbc7"
+  },
+  {
+    "id": "REL:W2:138",
+    "name": "allowsPrecedingScreen",
+    "source": "IC:ScreenSpecification",
+    "target": "IC:ScreenSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_138_6a47c2b2"
+  },
+  {
+    "id": "REL:W2:139",
+    "name": "intendsToSupportGoal",
+    "source": "IC:Roadmap",
+    "target": "IC:GoalSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_139_c315c5f6"
+  },
+  {
+    "id": "REL:W2:140",
+    "name": "plansEntryRelease",
+    "source": "IC:RoadmapEntry",
+    "target": "IC:ReleaseSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_140_ff5c4c16"
+  },
+  {
+    "id": "REL:W2:141",
+    "name": "milestoneForReleaseSpecification",
+    "source": "IC:MilestoneSpecification",
+    "target": "IC:ReleaseSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_141_71722598"
+  },
+  {
+    "id": "REL:W2:142",
+    "name": "groupsPlannedInitiative",
+    "source": "IC:PlanningHorizonDefinition",
+    "target": "IC:InitiativeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_142_f3e411b6"
+  },
+  {
+    "id": "REL:W2:143",
+    "name": "usesWindowHorizonDefinition",
+    "source": "IC:TargetWindowAssignment",
+    "target": "IC:PlanningHorizonDefinition",
+    "targets_per_source": "0..1",
+    "sources_per_target": "0..*",
+    "predicate": "n_143_e6959c6b"
+  },
+  {
+    "id": "REL:W2:144",
+    "name": "targetsReleaseGoal",
+    "source": "IC:ReleaseSpecification",
+    "target": "IC:GoalSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_144_e87df75f"
+  },
+  {
+    "id": "REL:W2:145",
+    "name": "concernsDeliveryWorkItem",
+    "source": "IC:ReleaseEvidenceRecord",
+    "target": "IC:DeliveryWorkItem",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_145_653a03f3"
+  },
+  {
+    "id": "REL:W2:146",
+    "name": "specifiesRequirementVerification",
+    "source": "IC:TestCase",
+    "target": "IC:RequirementSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_146_cc07f6c3"
+  },
+  {
+    "id": "REL:W2:147",
+    "name": "hasRecordedExecution",
+    "source": "IC:TestSuiteSpecification",
+    "target": "IC:TestExecution",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_147_2be83846"
+  },
+  {
+    "id": "REL:W2:148",
+    "name": "referencesJourneyStage",
+    "source": "IC:GoToMarketSpecification",
+    "target": "IC:JourneyStageSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_148_b64709fc"
+  },
+  {
+    "id": "REL:W2:149",
+    "name": "targetsLaunchPersona",
+    "source": "IC:LaunchSpecification",
+    "target": "IC:PersonaSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_149_3f030b56"
+  },
+  {
+    "id": "REL:W2:150",
+    "name": "usesLaunchPositioning",
+    "source": "IC:LaunchSpecification",
+    "target": "IC:PositioningStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_150_0d3ea20e"
+  },
+  {
+    "id": "REL:W2:151",
+    "name": "usesLaunchMessaging",
+    "source": "IC:LaunchSpecification",
+    "target": "IC:MessagingSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_151_17725d7e"
+  },
+  {
+    "id": "REL:W2:154",
+    "name": "referencesMetric",
+    "source": "IC:Product",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_154_2fb5b9e4"
+  },
+  {
+    "id": "REL:W2:155",
+    "name": "addresses",
+    "source": "IC:VisionStatement",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_155_c20d606e"
+  },
+  {
+    "id": "REL:W2:156",
+    "name": "referencesMetric",
+    "source": "IC:GoalSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_156_66b41181"
+  },
+  {
+    "id": "REL:W2:157",
+    "name": "evidencedBy",
+    "source": "IC:ProblemStatement",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_157_b4b09d48"
+  },
+  {
+    "id": "REL:W2:158",
+    "name": "referencesMetric",
+    "source": "IC:OpportunityStatement",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_158_7cf7ef44"
+  },
+  {
+    "id": "REL:W2:159",
+    "name": "predictsOutcome",
+    "source": "IC:HypothesisSpecification",
+    "target": "IC:OutcomeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_159_6a1e886d"
+  },
+  {
+    "id": "REL:W2:160",
+    "name": "evidencedBy",
+    "source": "IC:HypothesisSpecification",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_160_5631fcf4"
+  },
+  {
+    "id": "REL:W2:161",
+    "name": "solutionPredictsOutcome",
+    "source": "IC:SolutionHypothesisSpecification",
+    "target": "IC:OutcomeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_161_c87b4c9b"
+  },
+  {
+    "id": "REL:W2:162",
+    "name": "evidencedBy",
+    "source": "IC:ProductMarketFitAssessment",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_162_de20ad4d"
+  },
+  {
+    "id": "REL:W2:163",
+    "name": "intendsToContributeToOutcome",
+    "source": "IC:SolutionSpecification",
+    "target": "IC:OutcomeSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_163_6dcb4a3a"
+  },
+  {
+    "id": "REL:W2:164",
+    "name": "intendsToAddressProblem",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_164_764bbbfd"
+  },
+  {
+    "id": "REL:W2:165",
+    "name": "specifiesBeneficiaryPersona",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:PersonaSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_165_a9955cd3"
+  },
+  {
+    "id": "REL:W2:166",
+    "name": "referencesMetric",
+    "source": "IC:FeatureSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_166_220b252c"
+  },
+  {
+    "id": "REL:W2:167",
+    "name": "supports",
+    "source": "IC:QualityRequirementSpecification",
+    "target": "EXT:Business:BusinessGoal",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_167_f5ae6bc5"
+  },
+  {
+    "id": "REL:W2:168",
+    "name": "identifiesOpportunity",
+    "source": "IC:JourneySpecification",
+    "target": "IC:OpportunityStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_168_cd85c285"
+  },
+  {
+    "id": "REL:W2:169",
+    "name": "referencesMetric",
+    "source": "IC:JourneySpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_169_93b87844"
+  },
+  {
+    "id": "REL:W2:170",
+    "name": "identifiesOpportunity",
+    "source": "IC:JourneyStageSpecification",
+    "target": "IC:OpportunityStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_170_fc3b595f"
+  },
+  {
+    "id": "REL:W2:171",
+    "name": "referencesMetric",
+    "source": "IC:JourneyStageSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_171_59150940"
+  },
+  {
+    "id": "REL:W2:172",
+    "name": "addressesProblemStatement",
+    "source": "IC:PositioningStatement",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_172_0ee0178b"
+  },
+  {
+    "id": "REL:W2:173",
+    "name": "claimsDifferentiationThrough",
+    "source": "IC:PositioningStatement",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_173_457ef11b"
+  },
+  {
+    "id": "REL:W2:174",
+    "name": "targetsMessagePersona",
+    "source": "IC:MessagingSpecification",
+    "target": "IC:PersonaSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_174_d4c46284"
+  },
+  {
+    "id": "REL:W2:175",
+    "name": "referencesMessageFeature",
+    "source": "IC:MessagingSpecification",
+    "target": "IC:FeatureSpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_175_8311987a"
+  },
+  {
+    "id": "REL:W2:176",
+    "name": "referencesMetric",
+    "source": "IC:GoToMarketSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_176_96da697f"
+  },
+  {
+    "id": "REL:W2:177",
+    "name": "referencesMetric",
+    "source": "IC:LaunchSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_177_6556b1e5"
+  },
+  {
+    "id": "REL:W2:178",
+    "name": "referencesMetric",
+    "source": "IC:MarketingGoalSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_178_62caee94"
+  },
+  {
+    "id": "REL:W2:179",
+    "name": "addressesNarrativeProblem",
+    "source": "IC:CompetitiveNarrative",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_179_adaab01e"
+  },
+  {
+    "id": "REL:W2:180",
+    "name": "claimsDifferentiationThrough",
+    "source": "IC:CompetitiveNarrative",
+    "target": "IC:CapabilitySpecification",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_180_639fbb82"
+  },
+  {
+    "id": "REL:W2:181",
+    "name": "hypothesizesAcquisitionForProblem",
+    "source": "IC:AcquisitionHypothesisSpecification",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_181_ea63e6e5"
+  },
+  {
+    "id": "REL:W2:182",
+    "name": "referencesMetric",
+    "source": "IC:AcquisitionHypothesisSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_182_66d510db"
+  },
+  {
+    "id": "REL:W2:183",
+    "name": "hypothesizesAdoptionForProblem",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "IC:ProblemStatement",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_183_0b8f130d"
+  },
+  {
+    "id": "REL:W2:184",
+    "name": "referencesMetric",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "IC:ProductMetricReference",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_184_a1ed57e7"
+  },
+  {
+    "id": "REL:W2:185",
+    "name": "referencesValueProposition",
+    "source": "IC:Product",
+    "target": "EXT:Business:ValueProposition",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_185_0a345851"
+  },
+  {
+    "id": "REL:W2:186",
+    "name": "targets",
+    "source": "IC:OfferingSpecification",
+    "target": "EXT:Market:CustomerSegment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_186_947851f3"
+  },
+  {
+    "id": "REL:W2:187",
+    "name": "includesService",
+    "source": "IC:OfferingSpecification",
+    "target": "EXT:Business:Service",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_187_e0cc1dd3"
+  },
+  {
+    "id": "REL:W2:188",
+    "name": "referencesVariantConfiguration",
+    "source": "IC:ProductVariantReference",
+    "target": "EXT:ProductLine:ProductConfiguration",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_188_2942dbe4"
+  },
+  {
+    "id": "REL:W2:189",
+    "name": "targets",
+    "source": "IC:VisionStatement",
+    "target": "EXT:Market:CustomerSegment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_189_790a20b9"
+  },
+  {
+    "id": "REL:W2:190",
+    "name": "referencesValueProposition",
+    "source": "IC:VisionStatement",
+    "target": "EXT:Business:ValueProposition",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_190_4e9bd378"
+  },
+  {
+    "id": "REL:W2:192",
+    "name": "references",
+    "source": "IC:ProblemSolutionFitAssessment",
+    "target": "EXT:ExternalUnresolved:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_192_6ff172c2"
+  },
+  {
+    "id": "REL:W2:194",
+    "name": "referencesMentalModel",
+    "source": "IC:InformationArchitectureSpecification",
+    "target": "EXT:UXResearch:User_Mental_Model",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_194_95149cdd"
+  },
+  {
+    "id": "REL:W2:195",
+    "name": "usesScript",
+    "source": "IC:TestCase",
+    "target": "EXT:ExternalUnresolved:Test_Script",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_195_a50dcd09"
+  },
+  {
+    "id": "REL:W2:196",
+    "name": "reportedUnderTestPlan",
+    "source": "IC:TestResult",
+    "target": "EXT:ExternalUnresolved:Test_Plan",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_196_bb5d1c24"
+  },
+  {
+    "id": "REL:W2:197",
+    "name": "citesExecutionScript",
+    "source": "IC:TestResult",
+    "target": "EXT:ExternalUnresolved:Test_Script",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_197_8f50ed30"
+  },
+  {
+    "id": "REL:W2:198",
+    "name": "citesSupportingEvidence",
+    "source": "IC:ValidationEvidenceRecord",
+    "target": "EXT:ExternalUnresolved:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_198_5c7fb672"
+  },
+  {
+    "id": "REL:W2:199",
+    "name": "referencesDatasetConfiguration",
+    "source": "IC:TestDataReference",
+    "target": "EXT:ExternalUnresolved:Configuration",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_199_4b0cd550"
+  },
+  {
+    "id": "REL:W2:200",
+    "name": "targets",
+    "source": "IC:GoToMarketSpecification",
+    "target": "EXT:Market:CustomerSegment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_200_b70a2017"
+  },
+  {
+    "id": "REL:W2:201",
+    "name": "targets",
+    "source": "IC:GoToMarketSpecification",
+    "target": "EXT:Market:Market",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_201_9953767d"
+  },
+  {
+    "id": "REL:W2:202",
+    "name": "referencesValueProposition",
+    "source": "IC:GoToMarketSpecification",
+    "target": "EXT:Business:ValueProposition",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_202_2499cab2"
+  },
+  {
+    "id": "REL:W2:203",
+    "name": "targets",
+    "source": "IC:LaunchSpecification",
+    "target": "EXT:Market:CustomerSegment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_203_f37910dd"
+  },
+  {
+    "id": "REL:W2:204",
+    "name": "targets",
+    "source": "IC:MarketingGoalSpecification",
+    "target": "EXT:Market:CustomerSegment",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_204_8970de73"
+  },
+  {
+    "id": "REL:W2:207",
+    "name": "citesInsightEvidence",
+    "source": "IC:MarketingInsightReference",
+    "target": "EXT:ExternalUnresolved:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_207_54d533e5"
+  },
+  {
+    "id": "REL:W2:208",
+    "name": "addressesNeed",
+    "source": "IC:OfferingSpecification",
+    "target": "EXT:Market:Need",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_208_eb0946dd"
+  },
+  {
+    "id": "REL:W2:209",
+    "name": "informedBy",
+    "source": "IC:VisionStatement",
+    "target": "EXT:Market:Need",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_209_bc63edc2"
+  },
+  {
+    "id": "REL:W2:210",
+    "name": "assessesNeed",
+    "source": "IC:ProductMarketFitAssessment",
+    "target": "EXT:Market:Need",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_210_a1caac77"
+  },
+  {
+    "id": "REL:W2:211",
+    "name": "assessesPain",
+    "source": "IC:ProductMarketFitAssessment",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_211_364d6fd4"
+  },
+  {
+    "id": "REL:W2:212",
+    "name": "intendsToAddressNeed",
+    "source": "IC:FeatureSpecification",
+    "target": "EXT:Market:Need",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_212_6bc0f0da"
+  },
+  {
+    "id": "REL:W2:213",
+    "name": "addressesPain",
+    "source": "IC:UserStorySpecification",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_213_fe8bc0d3"
+  },
+  {
+    "id": "REL:W2:214",
+    "name": "describesPain",
+    "source": "IC:JourneySpecification",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_214_7438bc35"
+  },
+  {
+    "id": "REL:W2:215",
+    "name": "describesPain",
+    "source": "IC:JourneyStageSpecification",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_215_59ba13ad"
+  },
+  {
+    "id": "REL:W2:216",
+    "name": "intendsToAddressNeed",
+    "source": "IC:TouchpointSpecification",
+    "target": "EXT:Market:Need",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_216_6a9b8637"
+  },
+  {
+    "id": "REL:W2:217",
+    "name": "describesPain",
+    "source": "IC:TouchpointSpecification",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_217_50c81a10"
+  },
+  {
+    "id": "REL:W2:218",
+    "name": "citesSupportingEvidence",
+    "source": "IC:ReleaseEvidenceRecord",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_218_5a5859f5"
+  },
+  {
+    "id": "REL:W2:219",
+    "name": "addressesPain",
+    "source": "IC:PositioningStatement",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_219_3fc89329"
+  },
+  {
+    "id": "REL:W2:220",
+    "name": "addressesPain",
+    "source": "IC:MessagingSpecification",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_220_1a61635b"
+  },
+  {
+    "id": "REL:W2:221",
+    "name": "supportedBy",
+    "source": "IC:MessagingSpecification",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_221_852cd70e"
+  },
+  {
+    "id": "REL:W2:222",
+    "name": "differentiatesFrom",
+    "source": "IC:CompetitiveNarrative",
+    "target": "EXT:Market:Competitor_Alternative",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_222_3081c20b"
+  },
+  {
+    "id": "REL:W2:223",
+    "name": "supportedBy",
+    "source": "IC:CompetitiveNarrative",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_223_1f58cc6b"
+  },
+  {
+    "id": "REL:W2:224",
+    "name": "evidencedBy",
+    "source": "IC:AcquisitionHypothesisSpecification",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_224_3bc72b17"
+  },
+  {
+    "id": "REL:W2:225",
+    "name": "addressesPain",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "EXT:Market:Pain",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_225_1978540c"
+  },
+  {
+    "id": "REL:W2:226",
+    "name": "evidencedBy",
+    "source": "IC:AdoptionHypothesisSpecification",
+    "target": "EXT:EvidenceLayer:Evidence",
+    "targets_per_source": "0..*",
+    "sources_per_target": "0..*",
+    "predicate": "n_226_778054ce"
+  }
+]

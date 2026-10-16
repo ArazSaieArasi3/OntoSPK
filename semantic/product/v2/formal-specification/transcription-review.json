@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "scope": "FOL transcription and finite translation checks; not ontology-wide satisfiability, full OWL equivalence or independent semantic validation.",
+  "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "profile_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+  "parsed_native_formulas": 892,
+  "parsed_profile_formulas": 3038,
+  "all_formulas_closed_and_arity_correct": true,
+  "relation_signatures_compared": 286,
+  "two_object_relation_interpretations": 71872,
+  "valid_interpretations": 11807,
+  "invalid_interpretations": 60065,
+  "generalization_interpretations": 544,
+  "profile_source_family_counts": {
+    "asymmetric": 4,
+    "chain": 1,
+    "disjoint": 2229,
+    "domain": 330,
+    "functional": 50,
+    "inverse": 1,
+    "inverse_functional": 2,
+    "irreflexive": 9,
+    "range": 323,
+    "subclass": 75,
+    "subproperty": 14
+  },
+  "ontology_consistency_proved": false,
+  "datatype_value_semantics_verified": false,
+  "manuscript_changed": false,
+  "formal_source_models_changed": false,
+  "checked_output_sha256": {
+    "native-structure.p": "bf111d153bcbe71dd389275c573b85b5455c5aea39276d993c66ffb9c23abc0e",
+    "profile-projection.p": "c16325f0e85d7041655937fd3f2c6b0942d377a7f37d6ef6af69019ab4c37431",
+    "symbols.json": "556902c3b069ea4e4bf41c7a89ab0727650f57dcaf004fbeb47ec3aee607107f",
+    "relation-signatures.json": "b4bdac2cfa2cb6ab3c987e0efedebe74605f68e87ed2bcc57c855dac97df91aa"
+  }
+}

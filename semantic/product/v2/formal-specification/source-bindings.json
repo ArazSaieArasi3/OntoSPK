@@ -1,0 +1,27 @@
+{
+  "native_source": "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json",
+  "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "profile_source": "semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl",
+  "profile_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+  "classes": 128,
+  "relations": 286,
+  "generalizations": 34,
+  "native_expressions": 892,
+  "profile_expressions": 3038,
+  "profile_scope": "Object-level FOL projection of explicit logical constructs; XSD datatype predicates are abstract, not a complete OWL 2 datatype or direct-semantics axiomatization.",
+  "theories_combined": false,
+  "ontology_consistency_proved": false,
+  "profile_expression_families": {
+    "asymmetric": 4,
+    "chain": 1,
+    "disjoint": 2229,
+    "domain": 330,
+    "functional": 50,
+    "inverse": 1,
+    "inverse_functional": 2,
+    "irreflexive": 9,
+    "range": 323,
+    "subclass": 75,
+    "subproperty": 14
+  }
+}

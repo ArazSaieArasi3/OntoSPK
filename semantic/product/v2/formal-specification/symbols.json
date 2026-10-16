@@ -1,0 +1,4352 @@
+[
+  {
+    "symbol": "n_002_141fb40d",
+    "source_identifier": "REL:W2:002",
+    "arity": 2
+  },
+  {
+    "symbol": "n_003_2a4a05a1",
+    "source_identifier": "REL:W2:003",
+    "arity": 2
+  },
+  {
+    "symbol": "n_004_ec439b63",
+    "source_identifier": "REL:W2:004",
+    "arity": 2
+  },
+  {
+    "symbol": "n_005_4a1e3183",
+    "source_identifier": "REL:W2:005",
+    "arity": 2
+  },
+  {
+    "symbol": "n_006_c65eb66a",
+    "source_identifier": "REL:W2:006",
+    "arity": 2
+  },
+  {
+    "symbol": "n_007_3040acdb",
+    "source_identifier": "REL:W2:007",
+    "arity": 2
+  },
+  {
+    "symbol": "n_008_e04b7afe",
+    "source_identifier": "REL:W2:008",
+    "arity": 2
+  },
+  {
+    "symbol": "n_009_de02e007",
+    "source_identifier": "REL:W2:009",
+    "arity": 2
+  },
+  {
+    "symbol": "n_010_836fd99f",
+    "source_identifier": "REL:W2:010",
+    "arity": 2
+  },
+  {
+    "symbol": "n_011_8dfb819d",
+    "source_identifier": "REL:W2:011",
+    "arity": 2
+  },
+  {
+    "symbol": "n_012_691fdfa2",
+    "source_identifier": "REL:W2:012",
+    "arity": 2
+  },
+  {
+    "symbol": "n_013_ebb3b154",
+    "source_identifier": "REL:W2:013",
+    "arity": 2
+  },
+  {
+    "symbol": "n_014_64c6b3c3",
+    "source_identifier": "REL:W2:014",
+    "arity": 2
+  },
+  {
+    "symbol": "n_015_ffe73557",
+    "source_identifier": "REL:W2:015",
+    "arity": 2
+  },
+  {
+    "symbol": "n_016_3a18449d",
+    "source_identifier": "REL:W2:016",
+    "arity": 2
+  },
+  {
+    "symbol": "n_017_e7463820",
+    "source_identifier": "REL:W2:017",
+    "arity": 2
+  },
+  {
+    "symbol": "n_018_4708e02a",
+    "source_identifier": "REL:W2:018",
+    "arity": 2
+  },
+  {
+    "symbol": "n_019_0e70c6e2",
+    "source_identifier": "REL:W2:019",
+    "arity": 2
+  },
+  {
+    "symbol": "n_020_74ea57b4",
+    "source_identifier": "REL:W2:020",
+    "arity": 2
+  },
+  {
+    "symbol": "n_021_d56fd35c",
+    "source_identifier": "REL:W2:021",
+    "arity": 2
+  },
+  {
+    "symbol": "n_022_12886cb6",
+    "source_identifier": "REL:W2:022",
+    "arity": 2
+  },
+  {
+    "symbol": "n_023_695465dd",
+    "source_identifier": "REL:W2:023",
+    "arity": 2
+  },
+  {
+    "symbol": "n_024_67c75a93",
+    "source_identifier": "REL:W2:024",
+    "arity": 2
+  },
+  {
+    "symbol": "n_025_f493c010",
+    "source_identifier": "REL:W2:025",
+    "arity": 2
+  },
+  {
+    "symbol": "n_026_327fea57",
+    "source_identifier": "REL:W2:026",
+    "arity": 2
+  },
+  {
+    "symbol": "n_027_c69299e9",
+    "source_identifier": "REL:W2:027",
+    "arity": 2
+  },
+  {
+    "symbol": "n_028_dc597b7c",
+    "source_identifier": "REL:W2:028",
+    "arity": 2
+  },
+  {
+    "symbol": "n_029_52243471",
+    "source_identifier": "REL:W2:029",
+    "arity": 2
+  },
+  {
+    "symbol": "n_030_cc76183b",
+    "source_identifier": "REL:W2:030",
+    "arity": 2
+  },
+  {
+    "symbol": "n_031_1e7cb3a9",
+    "source_identifier": "REL:W2:031",
+    "arity": 2
+  },
+  {
+    "symbol": "n_032_81b8b3c6",
+    "source_identifier": "REL:W2:032",
+    "arity": 2
+  },
+  {
+    "symbol": "n_033_3bf6c244",
+    "source_identifier": "REL:W2:033",
+    "arity": 2
+  },
+  {
+    "symbol": "n_034_4ca19bf6",
+    "source_identifier": "REL:W2:034",
+    "arity": 2
+  },
+  {
+    "symbol": "n_035_33324b00",
+    "source_identifier": "REL:W2:035",
+    "arity": 2
+  },
+  {
+    "symbol": "n_036_22e75750",
+    "source_identifier": "REL:W2:036",
+    "arity": 2
+  },
+  {
+    "symbol": "n_037_6101e6d0",
+    "source_identifier": "REL:W2:037",
+    "arity": 2
+  },
+  {
+    "symbol": "n_038_776210ef",
+    "source_identifier": "REL:W2:038",
+    "arity": 2
+  },
+  {
+    "symbol": "n_039_c4ee49cb",
+    "source_identifier": "REL:W2:039",
+    "arity": 2
+  },
+  {
+    "symbol": "n_040_3721176d",
+    "source_identifier": "REL:W2:040",
+    "arity": 2
+  },
+  {
+    "symbol": "n_041_1507b9fb",
+    "source_identifier": "REL:W2:041",
+    "arity": 2
+  },
+  {
+    "symbol": "n_042_4d13393e",
+    "source_identifier": "REL:W2:042",
+    "arity": 2
+  },
+  {
+    "symbol": "n_043_d4c2ace0",
+    "source_identifier": "REL:W2:043",
+    "arity": 2
+  },
+  {
+    "symbol": "n_044_f91144d9",
+    "source_identifier": "REL:W2:044",
+    "arity": 2
+  },
+  {
+    "symbol": "n_045_c4d6444d",
+    "source_identifier": "REL:W2:045",
+    "arity": 2
+  },
+  {
+    "symbol": "n_046_82a9e28a",
+    "source_identifier": "REL:W2:046",
+    "arity": 2
+  },
+  {
+    "symbol": "n_047_991c2810",
+    "source_identifier": "REL:W2:047",
+    "arity": 2
+  },
+  {
+    "symbol": "n_048_7b78adb4",
+    "source_identifier": "REL:W2:048",
+    "arity": 2
+  },
+  {
+    "symbol": "n_049_d089051b",
+    "source_identifier": "REL:W2:049",
+    "arity": 2
+  },
+  {
+    "symbol": "n_050_67d99833",
+    "source_identifier": "REL:W2:050",
+    "arity": 2
+  },
+  {
+    "symbol": "n_051_f8adf7fb",
+    "source_identifier": "REL:W2:051",
+    "arity": 2
+  },
+  {
+    "symbol": "n_052_56a45324",
+    "source_identifier": "REL:W2:052",
+    "arity": 2
+  },
+  {
+    "symbol": "n_053_c23f19ff",
+    "source_identifier": "REL:W2:053",
+    "arity": 2
+  },
+  {
+    "symbol": "n_054_f61125f3",
+    "source_identifier": "REL:W2:054",
+    "arity": 2
+  },
+  {
+    "symbol": "n_055_9078cfc7",
+    "source_identifier": "REL:W2:055",
+    "arity": 2
+  },
+  {
+    "symbol": "n_056_46d2ebbf",
+    "source_identifier": "REL:W2:056",
+    "arity": 2
+  },
+  {
+    "symbol": "n_057_ebeec762",
+    "source_identifier": "REL:W2:057",
+    "arity": 2
+  },
+  {
+    "symbol": "n_058_aecfa66f",
+    "source_identifier": "REL:W2:058",
+    "arity": 2
+  },
+  {
+    "symbol": "n_059_eca1f05a",
+    "source_identifier": "REL:W2:059",
+    "arity": 2
+  },
+  {
+    "symbol": "n_060_cd8f0aa6",
+    "source_identifier": "REL:W2:060",
+    "arity": 2
+  },
+  {
+    "symbol": "n_061_5acee16e",
+    "source_identifier": "REL:W2:061",
+    "arity": 2
+  },
+  {
+    "symbol": "n_062_bf69f3b2",
+    "source_identifier": "REL:W2:062",
+    "arity": 2
+  },
+  {
+    "symbol": "n_063_3d16cab3",
+    "source_identifier": "REL:W2:063",
+    "arity": 2
+  },
+  {
+    "symbol": "n_064_1f0ddc8f",
+    "source_identifier": "REL:W2:064",
+    "arity": 2
+  },
+  {
+    "symbol": "n_065_ab3ce0c9",
+    "source_identifier": "REL:W2:065",
+    "arity": 2
+  },
+  {
+    "symbol": "n_066_260fbf52",
+    "source_identifier": "REL:W2:066",
+    "arity": 2
+  },
+  {
+    "symbol": "n_067_ab8aca5c",
+    "source_identifier": "REL:W2:067",
+    "arity": 2
+  },
+  {
+    "symbol": "n_068_6c08abc9",
+    "source_identifier": "REL:W2:068",
+    "arity": 2
+  },
+  {
+    "symbol": "n_069_8b363281",
+    "source_identifier": "REL:W2:069",
+    "arity": 2
+  },
+  {
+    "symbol": "n_070_42bdf6b1",
+    "source_identifier": "REL:W2:070",
+    "arity": 2
+  },
+  {
+    "symbol": "n_071_c85c4c1f",
+    "source_identifier": "REL:W2:071",
+    "arity": 2
+  },
+  {
+    "symbol": "n_072_d859bcab",
+    "source_identifier": "REL:W2:072",
+    "arity": 2
+  },
+  {
+    "symbol": "n_073_1c1c1cbd",
+    "source_identifier": "REL:W2:073",
+    "arity": 2
+  },
+  {
+    "symbol": "n_074_54717fc7",
+    "source_identifier": "REL:W2:074",
+    "arity": 2
+  },
+  {
+    "symbol": "n_075_c862c342",
+    "source_identifier": "REL:W2:075",
+    "arity": 2
+  },
+  {
+    "symbol": "n_076_4e607c81",
+    "source_identifier": "REL:W2:076",
+    "arity": 2
+  },
+  {
+    "symbol": "n_077_9eb172bd",
+    "source_identifier": "REL:W2:077",
+    "arity": 2
+  },
+  {
+    "symbol": "n_078_e36c3427",
+    "source_identifier": "REL:W2:078",
+    "arity": 2
+  },
+  {
+    "symbol": "n_079_bc346458",
+    "source_identifier": "REL:W2:079",
+    "arity": 2
+  },
+  {
+    "symbol": "n_080_14c5005a",
+    "source_identifier": "REL:W2:080",
+    "arity": 2
+  },
+  {
+    "symbol": "n_081_083ee30e",
+    "source_identifier": "REL:W2:081",
+    "arity": 2
+  },
+  {
+    "symbol": "n_082_3bc03cc0",
+    "source_identifier": "REL:W2:082",
+    "arity": 2
+  },
+  {
+    "symbol": "n_083_24f09796",
+    "source_identifier": "REL:W2:083",
+    "arity": 2
+  },
+  {
+    "symbol": "n_084_78cd3084",
+    "source_identifier": "REL:W2:084",
+    "arity": 2
+  },
+  {
+    "symbol": "n_085_4f09fc52",
+    "source_identifier": "REL:W2:085",
+    "arity": 2
+  },
+  {
+    "symbol": "n_086_fef7560c",
+    "source_identifier": "REL:W2:086",
+    "arity": 2
+  },
+  {
+    "symbol": "n_087_6c98f19f",
+    "source_identifier": "REL:W2:087",
+    "arity": 2
+  },
+  {
+    "symbol": "n_088_8c7830ba",
+    "source_identifier": "REL:W2:088",
+    "arity": 2
+  },
+  {
+    "symbol": "n_089_dbfce11f",
+    "source_identifier": "REL:W2:089",
+    "arity": 2
+  },
+  {
+    "symbol": "n_090_711de836",
+    "source_identifier": "REL:W2:090",
+    "arity": 2
+  },
+  {
+    "symbol": "n_091_04c14bba",
+    "source_identifier": "REL:W2:091",
+    "arity": 2
+  },
+  {
+    "symbol": "n_092_21a36b08",
+    "source_identifier": "REL:W2:092",
+    "arity": 2
+  },
+  {
+    "symbol": "n_093_1b0cbd93",
+    "source_identifier": "REL:W2:093",
+    "arity": 2
+  },
+  {
+    "symbol": "n_094_d290751e",
+    "source_identifier": "REL:W2:094",
+    "arity": 2
+  },
+  {
+    "symbol": "n_095_726b9249",
+    "source_identifier": "REL:W2:095",
+    "arity": 2
+  },
+  {
+    "symbol": "n_096_7e5fd1f9",
+    "source_identifier": "REL:W2:096",
+    "arity": 2
+  },
+  {
+    "symbol": "n_097_489acb44",
+    "source_identifier": "REL:W2:097",
+    "arity": 2
+  },
+  {
+    "symbol": "n_098_bd343015",
+    "source_identifier": "REL:W2:098",
+    "arity": 2
+  },
+  {
+    "symbol": "n_099_2ceaa1b3",
+    "source_identifier": "REL:W2:099",
+    "arity": 2
+  },
+  {
+    "symbol": "n_100_14f978b0",
+    "source_identifier": "REL:W2:100",
+    "arity": 2
+  },
+  {
+    "symbol": "n_101_f9cd32ae",
+    "source_identifier": "REL:W2:101",
+    "arity": 2
+  },
+  {
+    "symbol": "n_102_12b748c6",
+    "source_identifier": "REL:W2:102",
+    "arity": 2
+  },
+  {
+    "symbol": "n_103_1d16419a",
+    "source_identifier": "REL:W2:103",
+    "arity": 2
+  },
+  {
+    "symbol": "n_104_8bb25782",
+    "source_identifier": "REL:W2:104",
+    "arity": 2
+  },
+  {
+    "symbol": "n_105_30735771",
+    "source_identifier": "REL:W2:105",
+    "arity": 2
+  },
+  {
+    "symbol": "n_106_2fd4bd10",
+    "source_identifier": "REL:W2:106",
+    "arity": 2
+  },
+  {
+    "symbol": "n_107_5f90f7dd",
+    "source_identifier": "REL:W2:107",
+    "arity": 2
+  },
+  {
+    "symbol": "n_108_db35e11f",
+    "source_identifier": "REL:W2:108",
+    "arity": 2
+  },
+  {
+    "symbol": "n_109_29a6c8d4",
+    "source_identifier": "REL:W2:109",
+    "arity": 2
+  },
+  {
+    "symbol": "n_110_7eb113ec",
+    "source_identifier": "REL:W2:110",
+    "arity": 2
+  },
+  {
+    "symbol": "n_111_a7ab86d1",
+    "source_identifier": "REL:W2:111",
+    "arity": 2
+  },
+  {
+    "symbol": "n_112_8ab8f69c",
+    "source_identifier": "REL:W2:112",
+    "arity": 2
+  },
+  {
+    "symbol": "n_113_94fa7e1d",
+    "source_identifier": "REL:W2:113",
+    "arity": 2
+  },
+  {
+    "symbol": "n_114_7556b2ff",
+    "source_identifier": "REL:W2:114",
+    "arity": 2
+  },
+  {
+    "symbol": "n_115_080d7717",
+    "source_identifier": "REL:W2:115",
+    "arity": 2
+  },
+  {
+    "symbol": "n_116_16fce4c0",
+    "source_identifier": "REL:W2:116",
+    "arity": 2
+  },
+  {
+    "symbol": "n_117_f6e65bc8",
+    "source_identifier": "REL:W2:117",
+    "arity": 2
+  },
+  {
+    "symbol": "n_118_3258b1bd",
+    "source_identifier": "REL:W2:118",
+    "arity": 2
+  },
+  {
+    "symbol": "n_119_c96f1d40",
+    "source_identifier": "REL:W2:119",
+    "arity": 2
+  },
+  {
+    "symbol": "n_120_bcf6e49b",
+    "source_identifier": "REL:W2:120",
+    "arity": 2
+  },
+  {
+    "symbol": "n_121_7232e709",
+    "source_identifier": "REL:W2:121",
+    "arity": 2
+  },
+  {
+    "symbol": "n_122_2fb01163",
+    "source_identifier": "REL:W2:122",
+    "arity": 2
+  },
+  {
+    "symbol": "n_123_030d77c5",
+    "source_identifier": "REL:W2:123",
+    "arity": 2
+  },
+  {
+    "symbol": "n_124_531d6524",
+    "source_identifier": "REL:W2:124",
+    "arity": 2
+  },
+  {
+    "symbol": "n_125_5bae11c3",
+    "source_identifier": "REL:W2:125",
+    "arity": 2
+  },
+  {
+    "symbol": "n_126_abc0b504",
+    "source_identifier": "REL:W2:126",
+    "arity": 2
+  },
+  {
+    "symbol": "n_127_cee54c49",
+    "source_identifier": "REL:W2:127",
+    "arity": 2
+  },
+  {
+    "symbol": "n_128_afd6f7dd",
+    "source_identifier": "REL:W2:128",
+    "arity": 2
+  },
+  {
+    "symbol": "n_129_45f09c7d",
+    "source_identifier": "REL:W2:129",
+    "arity": 2
+  },
+  {
+    "symbol": "n_130_685a9d09",
+    "source_identifier": "REL:W2:130",
+    "arity": 2
+  },
+  {
+    "symbol": "n_131_b447a0af",
+    "source_identifier": "REL:W2:131",
+    "arity": 2
+  },
+  {
+    "symbol": "n_132_1b3a7a42",
+    "source_identifier": "REL:W2:132",
+    "arity": 2
+  },
+  {
+    "symbol": "n_133_37331d96",
+    "source_identifier": "REL:W2:133",
+    "arity": 2
+  },
+  {
+    "symbol": "n_134_7da32705",
+    "source_identifier": "REL:W2:134",
+    "arity": 2
+  },
+  {
+    "symbol": "n_135_520c0b94",
+    "source_identifier": "REL:W2:135",
+    "arity": 2
+  },
+  {
+    "symbol": "n_136_ad7fe2b2",
+    "source_identifier": "REL:W2:136",
+    "arity": 2
+  },
+  {
+    "symbol": "n_137_e3f8fbc7",
+    "source_identifier": "REL:W2:137",
+    "arity": 2
+  },
+  {
+    "symbol": "n_138_6a47c2b2",
+    "source_identifier": "REL:W2:138",
+    "arity": 2
+  },
+  {
+    "symbol": "n_139_c315c5f6",
+    "source_identifier": "REL:W2:139",
+    "arity": 2
+  },
+  {
+    "symbol": "n_140_ff5c4c16",
+    "source_identifier": "REL:W2:140",
+    "arity": 2
+  },
+  {
+    "symbol": "n_141_71722598",
+    "source_identifier": "REL:W2:141",
+    "arity": 2
+  },
+  {
+    "symbol": "n_142_f3e411b6",
+    "source_identifier": "REL:W2:142",
+    "arity": 2
+  },
+  {
+    "symbol": "n_143_e6959c6b",
+    "source_identifier": "REL:W2:143",
+    "arity": 2
+  },
+  {
+    "symbol": "n_144_e87df75f",
+    "source_identifier": "REL:W2:144",
+    "arity": 2
+  },
+  {
+    "symbol": "n_145_653a03f3",
+    "source_identifier": "REL:W2:145",
+    "arity": 2
+  },
+  {
+    "symbol": "n_146_cc07f6c3",
+    "source_identifier": "REL:W2:146",
+    "arity": 2
+  },
+  {
+    "symbol": "n_147_2be83846",
+    "source_identifier": "REL:W2:147",
+    "arity": 2
+  },
+  {
+    "symbol": "n_148_b64709fc",
+    "source_identifier": "REL:W2:148",
+    "arity": 2
+  },
+  {
+    "symbol": "n_149_3f030b56",
+    "source_identifier": "REL:W2:149",
+    "arity": 2
+  },
+  {
+    "symbol": "n_150_0d3ea20e",
+    "source_identifier": "REL:W2:150",
+    "arity": 2
+  },
+  {
+    "symbol": "n_151_17725d7e",
+    "source_identifier": "REL:W2:151",
+    "arity": 2
+  },
+  {
+    "symbol": "n_154_2fb5b9e4",
+    "source_identifier": "REL:W2:154",
+    "arity": 2
+  },
+  {
+    "symbol": "n_155_c20d606e",
+    "source_identifier": "REL:W2:155",
+    "arity": 2
+  },
+  {
+    "symbol": "n_156_66b41181",
+    "source_identifier": "REL:W2:156",
+    "arity": 2
+  },
+  {
+    "symbol": "n_157_b4b09d48",
+    "source_identifier": "REL:W2:157",
+    "arity": 2
+  },
+  {
+    "symbol": "n_158_7cf7ef44",
+    "source_identifier": "REL:W2:158",
+    "arity": 2
+  },
+  {
+    "symbol": "n_159_6a1e886d",
+    "source_identifier": "REL:W2:159",
+    "arity": 2
+  },
+  {
+    "symbol": "n_160_5631fcf4",
+    "source_identifier": "REL:W2:160",
+    "arity": 2
+  },
+  {
+    "symbol": "n_161_c87b4c9b",
+    "source_identifier": "REL:W2:161",
+    "arity": 2
+  },
+  {
+    "symbol": "n_162_de20ad4d",
+    "source_identifier": "REL:W2:162",
+    "arity": 2
+  },
+  {
+    "symbol": "n_163_6dcb4a3a",
+    "source_identifier": "REL:W2:163",
+    "arity": 2
+  },
+  {
+    "symbol": "n_164_764bbbfd",
+    "source_identifier": "REL:W2:164",
+    "arity": 2
+  },
+  {
+    "symbol": "n_165_a9955cd3",
+    "source_identifier": "REL:W2:165",
+    "arity": 2
+  },
+  {
+    "symbol": "n_166_220b252c",
+    "source_identifier": "REL:W2:166",
+    "arity": 2
+  },
+  {
+    "symbol": "n_167_f5ae6bc5",
+    "source_identifier": "REL:W2:167",
+    "arity": 2
+  },
+  {
+    "symbol": "n_168_cd85c285",
+    "source_identifier": "REL:W2:168",
+    "arity": 2
+  },
+  {
+    "symbol": "n_169_93b87844",
+    "source_identifier": "REL:W2:169",
+    "arity": 2
+  },
+  {
+    "symbol": "n_170_fc3b595f",
+    "source_identifier": "REL:W2:170",
+    "arity": 2
+  },
+  {
+    "symbol": "n_171_59150940",
+    "source_identifier": "REL:W2:171",
+    "arity": 2
+  },
+  {
+    "symbol": "n_172_0ee0178b",
+    "source_identifier": "REL:W2:172",
+    "arity": 2
+  },
+  {
+    "symbol": "n_173_457ef11b",
+    "source_identifier": "REL:W2:173",
+    "arity": 2
+  },
+  {
+    "symbol": "n_174_d4c46284",
+    "source_identifier": "REL:W2:174",
+    "arity": 2
+  },
+  {
+    "symbol": "n_175_8311987a",
+    "source_identifier": "REL:W2:175",
+    "arity": 2
+  },
+  {
+    "symbol": "n_176_96da697f",
+    "source_identifier": "REL:W2:176",
+    "arity": 2
+  },
+  {
+    "symbol": "n_177_6556b1e5",
+    "source_identifier": "REL:W2:177",
+    "arity": 2
+  },
+  {
+    "symbol": "n_178_62caee94",
+    "source_identifier": "REL:W2:178",
+    "arity": 2
+  },
+  {
+    "symbol": "n_179_adaab01e",
+    "source_identifier": "REL:W2:179",
+    "arity": 2
+  },
+  {
+    "symbol": "n_180_639fbb82",
+    "source_identifier": "REL:W2:180",
+    "arity": 2
+  },
+  {
+    "symbol": "n_181_ea63e6e5",
+    "source_identifier": "REL:W2:181",
+    "arity": 2
+  },
+  {
+    "symbol": "n_182_66d510db",
+    "source_identifier": "REL:W2:182",
+    "arity": 2
+  },
+  {
+    "symbol": "n_183_0b8f130d",
+    "source_identifier": "REL:W2:183",
+    "arity": 2
+  },
+  {
+    "symbol": "n_184_a1ed57e7",
+    "source_identifier": "REL:W2:184",
+    "arity": 2
+  },
+  {
+    "symbol": "n_185_0a345851",
+    "source_identifier": "REL:W2:185",
+    "arity": 2
+  },
+  {
+    "symbol": "n_186_947851f3",
+    "source_identifier": "REL:W2:186",
+    "arity": 2
+  },
+  {
+    "symbol": "n_187_e0cc1dd3",
+    "source_identifier": "REL:W2:187",
+    "arity": 2
+  },
+  {
+    "symbol": "n_188_2942dbe4",
+    "source_identifier": "REL:W2:188",
+    "arity": 2
+  },
+  {
+    "symbol": "n_189_790a20b9",
+    "source_identifier": "REL:W2:189",
+    "arity": 2
+  },
+  {
+    "symbol": "n_190_4e9bd378",
+    "source_identifier": "REL:W2:190",
+    "arity": 2
+  },
+  {
+    "symbol": "n_192_6ff172c2",
+    "source_identifier": "REL:W2:192",
+    "arity": 2
+  },
+  {
+    "symbol": "n_194_95149cdd",
+    "source_identifier": "REL:W2:194",
+    "arity": 2
+  },
+  {
+    "symbol": "n_195_a50dcd09",
+    "source_identifier": "REL:W2:195",
+    "arity": 2
+  },
+  {
+    "symbol": "n_196_bb5d1c24",
+    "source_identifier": "REL:W2:196",
+    "arity": 2
+  },
+  {
+    "symbol": "n_197_8f50ed30",
+    "source_identifier": "REL:W2:197",
+    "arity": 2
+  },
+  {
+    "symbol": "n_198_5c7fb672",
+    "source_identifier": "REL:W2:198",
+    "arity": 2
+  },
+  {
+    "symbol": "n_199_4b0cd550",
+    "source_identifier": "REL:W2:199",
+    "arity": 2
+  },
+  {
+    "symbol": "n_200_b70a2017",
+    "source_identifier": "REL:W2:200",
+    "arity": 2
+  },
+  {
+    "symbol": "n_201_9953767d",
+    "source_identifier": "REL:W2:201",
+    "arity": 2
+  },
+  {
+    "symbol": "n_202_2499cab2",
+    "source_identifier": "REL:W2:202",
+    "arity": 2
+  },
+  {
+    "symbol": "n_203_f37910dd",
+    "source_identifier": "REL:W2:203",
+    "arity": 2
+  },
+  {
+    "symbol": "n_204_8970de73",
+    "source_identifier": "REL:W2:204",
+    "arity": 2
+  },
+  {
+    "symbol": "n_207_54d533e5",
+    "source_identifier": "REL:W2:207",
+    "arity": 2
+  },
+  {
+    "symbol": "n_208_eb0946dd",
+    "source_identifier": "REL:W2:208",
+    "arity": 2
+  },
+  {
+    "symbol": "n_209_bc63edc2",
+    "source_identifier": "REL:W2:209",
+    "arity": 2
+  },
+  {
+    "symbol": "n_210_a1caac77",
+    "source_identifier": "REL:W2:210",
+    "arity": 2
+  },
+  {
+    "symbol": "n_211_364d6fd4",
+    "source_identifier": "REL:W2:211",
+    "arity": 2
+  },
+  {
+    "symbol": "n_212_6bc0f0da",
+    "source_identifier": "REL:W2:212",
+    "arity": 2
+  },
+  {
+    "symbol": "n_213_fe8bc0d3",
+    "source_identifier": "REL:W2:213",
+    "arity": 2
+  },
+  {
+    "symbol": "n_214_7438bc35",
+    "source_identifier": "REL:W2:214",
+    "arity": 2
+  },
+  {
+    "symbol": "n_215_59ba13ad",
+    "source_identifier": "REL:W2:215",
+    "arity": 2
+  },
+  {
+    "symbol": "n_216_6a9b8637",
+    "source_identifier": "REL:W2:216",
+    "arity": 2
+  },
+  {
+    "symbol": "n_217_50c81a10",
+    "source_identifier": "REL:W2:217",
+    "arity": 2
+  },
+  {
+    "symbol": "n_218_5a5859f5",
+    "source_identifier": "REL:W2:218",
+    "arity": 2
+  },
+  {
+    "symbol": "n_219_3fc89329",
+    "source_identifier": "REL:W2:219",
+    "arity": 2
+  },
+  {
+    "symbol": "n_220_1a61635b",
+    "source_identifier": "REL:W2:220",
+    "arity": 2
+  },
+  {
+    "symbol": "n_221_852cd70e",
+    "source_identifier": "REL:W2:221",
+    "arity": 2
+  },
+  {
+    "symbol": "n_222_3081c20b",
+    "source_identifier": "REL:W2:222",
+    "arity": 2
+  },
+  {
+    "symbol": "n_223_1f58cc6b",
+    "source_identifier": "REL:W2:223",
+    "arity": 2
+  },
+  {
+    "symbol": "n_224_3bc72b17",
+    "source_identifier": "REL:W2:224",
+    "arity": 2
+  },
+  {
+    "symbol": "n_225_1978540c",
+    "source_identifier": "REL:W2:225",
+    "arity": 2
+  },
+  {
+    "symbol": "n_226_778054ce",
+    "source_identifier": "REL:W2:226",
+    "arity": 2
+  },
+  {
+    "symbol": "n_acceptancecriterionspecification_b210a672",
+    "source_identifier": "IC:AcceptanceCriterionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_acquisitioncitesevidence_1d10d2eb",
+    "source_identifier": "REL:ORSD06:acquisitionCitesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "n_acquisitioncitesinsight_9b6980d9",
+    "source_identifier": "REL:ORSD06:acquisitionCitesInsight",
+    "arity": 2
+  },
+  {
+    "symbol": "n_acquisitionhypothesisspecification_f53c189f",
+    "source_identifier": "IC:AcquisitionHypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_adoptioncitesevidence_84eb7c07",
+    "source_identifier": "REL:ORSD06:adoptionCitesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "n_adoptioncitesinsight_cd9aa3b0",
+    "source_identifier": "REL:ORSD06:adoptionCitesInsight",
+    "arity": 2
+  },
+  {
+    "symbol": "n_adoptionhypothesisspecification_2af3a479",
+    "source_identifier": "IC:AdoptionHypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_architectureelement_e6c278b3",
+    "source_identifier": "EXT:Architecture:ArchitectureElement",
+    "arity": 1
+  },
+  {
+    "symbol": "n_assertsclaim_19a0f620",
+    "source_identifier": "ICREL:EU:assertsClaim",
+    "arity": 2
+  },
+  {
+    "symbol": "n_assessesspecification_8c86d688",
+    "source_identifier": "ICREL:CP:assessesSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "n_assessmentclaim_845fd7a6",
+    "source_identifier": "IC:AssessmentClaim",
+    "arity": 1
+  },
+  {
+    "symbol": "n_assessmentcontextspecification_1eaefd26",
+    "source_identifier": "IC:AssessmentContextSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_attributedto_272bb6d6",
+    "source_identifier": "ICREL:EU:attributedTo",
+    "arity": 2
+  },
+  {
+    "symbol": "n_bearscapability_4ef6f3c5",
+    "source_identifier": "ICREL:CP:bearsCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "n_bundlespecification_43ab05f6",
+    "source_identifier": "IC:BundleSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_businesscapability_0e01daa7",
+    "source_identifier": "EXT:Business:BusinessCapability",
+    "arity": 1
+  },
+  {
+    "symbol": "n_businessgoal_fd321d79",
+    "source_identifier": "EXT:Business:BusinessGoal",
+    "arity": 1
+  },
+  {
+    "symbol": "n_businessrule_66a93a3e",
+    "source_identifier": "EXT:Business:BusinessRule",
+    "arity": 1
+  },
+  {
+    "symbol": "n_businessrulereference_86a0a817",
+    "source_identifier": "IC:BusinessRuleReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_capabilityspecification_9a2df711",
+    "source_identifier": "IC:CapabilitySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_changedecision_920aa5a4",
+    "source_identifier": "REL:ORSD06:changeDecision",
+    "arity": 2
+  },
+  {
+    "symbol": "n_changefeature_65510559",
+    "source_identifier": "REL:ORSD06:changeFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "n_changeproposalspecification_78844f4a",
+    "source_identifier": "IC:ChangeProposalSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_changerecord_fd7f0722",
+    "source_identifier": "IC:ChangeRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_changescope_c7b9bd3e",
+    "source_identifier": "REL:ORSD06:changeScope",
+    "arity": 2
+  },
+  {
+    "symbol": "n_changetask_078fbfba",
+    "source_identifier": "REL:ORSD06:changeTask",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimactualcapability_c99b19a0",
+    "source_identifier": "REL:ORSD04:claimActualCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimcontext_c7d6c05a",
+    "source_identifier": "REL:ORSD04:claimContext",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimcriterion_9572bd66",
+    "source_identifier": "REL:ORSD04:claimCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimintendedcapability_aab8b454",
+    "source_identifier": "REL:ORSD04:claimIntendedCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimproduct_4f83299e",
+    "source_identifier": "REL:ORSD04:claimProduct",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimrealization_7c5dd420",
+    "source_identifier": "REL:ORSD04:claimRealization",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimrequirement_011295f3",
+    "source_identifier": "REL:ORSD04:claimRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "n_claimversion_5bcf65f5",
+    "source_identifier": "REL:ORSD04:claimVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_commitmentleveldefinition_07b14cfa",
+    "source_identifier": "IC:CommitmentLevelDefinition",
+    "arity": 1
+  },
+  {
+    "symbol": "n_competitivenarrative_346d99d1",
+    "source_identifier": "IC:CompetitiveNarrative",
+    "arity": 1
+  },
+  {
+    "symbol": "n_competitor_alternative_bd6168ff",
+    "source_identifier": "EXT:Market:Competitor_Alternative",
+    "arity": 1
+  },
+  {
+    "symbol": "n_component_ffb2c8c2",
+    "source_identifier": "EXT:Architecture:Component",
+    "arity": 1
+  },
+  {
+    "symbol": "n_conditionspecification_bd1404c1",
+    "source_identifier": "IC:ConditionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_confidenceassessment_6e5843ec",
+    "source_identifier": "IC:ConfidenceAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_configuration_6940ac17",
+    "source_identifier": "EXT:ExternalUnresolved:Configuration",
+    "arity": 1
+  },
+  {
+    "symbol": "n_constraintspecification_b3f38000",
+    "source_identifier": "IC:ConstraintSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_contextscenario_c0b66c40",
+    "source_identifier": "REL:ORSD04:contextScenario",
+    "arity": 2
+  },
+  {
+    "symbol": "n_contextversion_7f5e23fa",
+    "source_identifier": "REL:ORSD04:contextVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_customersegment_e1604cb2",
+    "source_identifier": "EXT:Market:CustomerSegment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_decisionconsiderssolution_82623377",
+    "source_identifier": "REL:ORSD06:decisionConsidersSolution",
+    "arity": 2
+  },
+  {
+    "symbol": "n_decisioncriterionspecification_94e603d1",
+    "source_identifier": "IC:DecisionCriterionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_decisionevidence_9a72010a",
+    "source_identifier": "REL:ORSD06:decisionEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "n_decisionrecord_1339be47",
+    "source_identifier": "IC:DecisionRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_decisionselectssolution_b3f0703b",
+    "source_identifier": "REL:ORSD06:decisionSelectsSolution",
+    "arity": 2
+  },
+  {
+    "symbol": "n_deliverystatusrecord_9e00ef2d",
+    "source_identifier": "IC:DeliveryStatusRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_deliveryworkitem_aa69924e",
+    "source_identifier": "IC:DeliveryWorkItem",
+    "arity": 1
+  },
+  {
+    "symbol": "n_deliveryworkitemstatusrecord_24efd200",
+    "source_identifier": "IC:DeliveryWorkItemStatusRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_dependencyactualcapabilitytarget_65ba5295",
+    "source_identifier": "REL:ORSD06:dependencyActualCapabilityTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "n_dependencycapabilityspecificationtarget_1754f838",
+    "source_identifier": "REL:ORSD06:dependencyCapabilitySpecificationTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "n_dependencycondition_21a95369",
+    "source_identifier": "REL:ORSD06:dependencyCondition",
+    "arity": 2
+  },
+  {
+    "symbol": "n_dependencyexternaltarget_955edd0c",
+    "source_identifier": "REL:ORSD06:dependencyExternalTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "n_dependencyproducttarget_16b74afa",
+    "source_identifier": "REL:ORSD06:dependencyProductTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "n_dependencyspecification_c46325d1",
+    "source_identifier": "IC:DependencySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_enablerspecification_b1d8c9be",
+    "source_identifier": "IC:EnablerSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_evaluatedagainst_43d242a1",
+    "source_identifier": "ICREL:CP:evaluatedAgainst",
+    "arity": 2
+  },
+  {
+    "symbol": "n_evidence_28f83376",
+    "source_identifier": "EXT:ExternalUnresolved:Evidence",
+    "arity": 1
+  },
+  {
+    "symbol": "n_evidence_d9b64bff",
+    "source_identifier": "EXT:EvidenceLayer:Evidence",
+    "arity": 1
+  },
+  {
+    "symbol": "n_evidenceartifact_9faef742",
+    "source_identifier": "IC:EvidenceArtifact",
+    "arity": 1
+  },
+  {
+    "symbol": "n_evidenceattributionrecord_1374deb5",
+    "source_identifier": "IC:EvidenceAttributionRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_executioncontext_8d285cac",
+    "source_identifier": "REL:ORSD05:executionContext",
+    "arity": 2
+  },
+  {
+    "symbol": "n_executioncriterion_a846e8f6",
+    "source_identifier": "REL:ORSD05:executionCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_expectedcondition_b7f103bd",
+    "source_identifier": "ICREL:SP:expectedCondition",
+    "arity": 2
+  },
+  {
+    "symbol": "n_externalreferencerecord_eecf8de0",
+    "source_identifier": "IC:ExternalReferenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_featureflagspecification_b1f1ade5",
+    "source_identifier": "IC:FeatureFlagSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_featurespecification_3608cfde",
+    "source_identifier": "IC:FeatureSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_findingrecord_0a2f27a2",
+    "source_identifier": "IC:FindingRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_functionalrequirementspecification_6d142951",
+    "source_identifier": "IC:FunctionalRequirementSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_goalspecification_e8a45aca",
+    "source_identifier": "IC:GoalSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_gotomarketspecification_0dec7af9",
+    "source_identifier": "IC:GoToMarketSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_hypothesisspecification_793ebb63",
+    "source_identifier": "IC:HypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_implementsfeature_e68be3ec",
+    "source_identifier": "ICREL:implementsFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "n_informationarchitecturespecification_7a7b972c",
+    "source_identifier": "IC:InformationArchitectureSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_initiativespecification_7e07a685",
+    "source_identifier": "IC:InitiativeSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_interactionstepspecification_cd93f059",
+    "source_identifier": "IC:InteractionStepSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_interface_9cd68719",
+    "source_identifier": "EXT:Architecture:Interface",
+    "arity": 1
+  },
+  {
+    "symbol": "n_itemstatus_cd8fd10f",
+    "source_identifier": "REL:ORSD05:itemStatus",
+    "arity": 2
+  },
+  {
+    "symbol": "n_itemstatuschange_13913074",
+    "source_identifier": "REL:ORSD05:itemStatusChange",
+    "arity": 2
+  },
+  {
+    "symbol": "n_itemstatusversion_66b75a39",
+    "source_identifier": "REL:ORSD05:itemStatusVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_journeyspecification_13c4d1f4",
+    "source_identifier": "IC:JourneySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_journeystagespecification_4bd4d01c",
+    "source_identifier": "IC:JourneyStageSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_launchspecification_e28ba61e",
+    "source_identifier": "IC:LaunchSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_lifecyclespecification_864030b5",
+    "source_identifier": "IC:LifecycleSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_lifecyclestagespecification_1bb099c0",
+    "source_identifier": "IC:LifecycleStageSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_market_88e504ed",
+    "source_identifier": "EXT:Market:Market",
+    "arity": 1
+  },
+  {
+    "symbol": "n_marketinggoalspecification_a5099fed",
+    "source_identifier": "IC:MarketingGoalSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_marketinginsightreference_3b862346",
+    "source_identifier": "IC:MarketingInsightReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_marketinsight_f2895c73",
+    "source_identifier": "EXT:Market:MarketInsight",
+    "arity": 1
+  },
+  {
+    "symbol": "n_marketsegment_a587efab",
+    "source_identifier": "EXT:Market:MarketSegment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_messagingspecification_5c538bb8",
+    "source_identifier": "IC:MessagingSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_metric_72cad409",
+    "source_identifier": "EXT:ProductManagement:Metric",
+    "arity": 1
+  },
+  {
+    "symbol": "n_milestonespecification_cde09a20",
+    "source_identifier": "IC:MilestoneSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_narrativecitesevidence_fd04f2cf",
+    "source_identifier": "REL:ORSD06:narrativeCitesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "n_narrativecitesinsight_abc6f884",
+    "source_identifier": "REL:ORSD06:narrativeCitesInsight",
+    "arity": 2
+  },
+  {
+    "symbol": "n_need_1c876b64",
+    "source_identifier": "EXT:Market:Need",
+    "arity": 1
+  },
+  {
+    "symbol": "n_offeringspecification_5446ebd8",
+    "source_identifier": "IC:OfferingSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_opportunitystatement_23a09cd2",
+    "source_identifier": "IC:OpportunityStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "n_outcomespecification_518f3db1",
+    "source_identifier": "IC:OutcomeSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_pain_e65105e8",
+    "source_identifier": "EXT:Market:Pain",
+    "arity": 1
+  },
+  {
+    "symbol": "n_personaspecification_f594b1db",
+    "source_identifier": "IC:PersonaSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_planninghorizondefinition_a0b203d3",
+    "source_identifier": "IC:PlanningHorizonDefinition",
+    "arity": 1
+  },
+  {
+    "symbol": "n_portfolioentry_33d7e05a",
+    "source_identifier": "IC:PortfolioEntry",
+    "arity": 1
+  },
+  {
+    "symbol": "n_positioningstatement_4cf10a65",
+    "source_identifier": "IC:PositioningStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "n_prioritizationcriterionspecification_93c7d7ac",
+    "source_identifier": "IC:PrioritizationCriterionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_priorityassessment_8ded0489",
+    "source_identifier": "IC:PriorityAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_problemsolutionfitassessment_c805b8da",
+    "source_identifier": "IC:ProblemSolutionFitAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_problemstatement_bbeab790",
+    "source_identifier": "IC:ProblemStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "n_product_1113063f",
+    "source_identifier": "IC:Product",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productcapability_daacc368",
+    "source_identifier": "IC:ProductCapability",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productconfiguration_4ca6b5f5",
+    "source_identifier": "EXT:ProductLine:ProductConfiguration",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productfamily_88b0b1dc",
+    "source_identifier": "EXT:ProductLine:ProductFamily",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productfamilyreference_690c8ed8",
+    "source_identifier": "IC:ProductFamilyReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productline_3dc98e6a",
+    "source_identifier": "EXT:ProductLine:ProductLine",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productlinereference_ca709c26",
+    "source_identifier": "IC:ProductLineReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productmarketfitassessment_edc39b79",
+    "source_identifier": "IC:ProductMarketFitAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productmetricreference_e601b04f",
+    "source_identifier": "IC:ProductMetricReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productportfolio_d7eb3fb1",
+    "source_identifier": "IC:ProductPortfolio",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productrealization_3f34561e",
+    "source_identifier": "IC:ProductRealization",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productstatusrecord_8dee8029",
+    "source_identifier": "IC:ProductStatusRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productvariant_bf90ec75",
+    "source_identifier": "EXT:ProductLine:ProductVariant",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productvariantreference_632bdd4c",
+    "source_identifier": "IC:ProductVariantReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_productversion_6f96b4e1",
+    "source_identifier": "IC:ProductVersion",
+    "arity": 1
+  },
+  {
+    "symbol": "n_proposalfeature_ac7ba05a",
+    "source_identifier": "REL:ORSD06:proposalFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "n_proposalscope_433a692d",
+    "source_identifier": "REL:ORSD06:proposalScope",
+    "arity": 2
+  },
+  {
+    "symbol": "n_qualityrequirementspecification_917fbe6e",
+    "source_identifier": "IC:QualityRequirementSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_realizedbycomponent_26de1270",
+    "source_identifier": "ICREL:ARCH:realizedByComponent",
+    "arity": 2
+  },
+  {
+    "symbol": "n_realizedbyservice_618225c2",
+    "source_identifier": "ICREL:ARCH:realizedByService",
+    "arity": 2
+  },
+  {
+    "symbol": "n_realizesversion_dbceb26b",
+    "source_identifier": "ICREL:CP:realizesVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_referencereviewfinding_63c58381",
+    "source_identifier": "REL:ORSD05:referenceReviewFinding",
+    "arity": 2
+  },
+  {
+    "symbol": "n_referencesupersedes_a3915a89",
+    "source_identifier": "REL:ORSD05:referenceSupersedes",
+    "arity": 2
+  },
+  {
+    "symbol": "n_releaseevidencerecord_7818c30f",
+    "source_identifier": "IC:ReleaseEvidenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_releasespecification_6af5122c",
+    "source_identifier": "IC:ReleaseSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_releasestatuschange_1dd48094",
+    "source_identifier": "REL:ORSD05:releaseStatusChange",
+    "arity": 2
+  },
+  {
+    "symbol": "n_releasestatusversion_84f5e5a4",
+    "source_identifier": "REL:ORSD05:releaseStatusVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "n_requirementrationalestatement_01810884",
+    "source_identifier": "IC:RequirementRationaleStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "n_requirementscenariospecification_c1770070",
+    "source_identifier": "IC:RequirementScenarioSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_requirementsourcereference_54b980ed",
+    "source_identifier": "IC:RequirementSourceReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_requirementspecification_65341313",
+    "source_identifier": "IC:RequirementSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_roadmap_995689f7",
+    "source_identifier": "IC:Roadmap",
+    "arity": 1
+  },
+  {
+    "symbol": "n_roadmapentry_357ac916",
+    "source_identifier": "IC:RoadmapEntry",
+    "arity": 1
+  },
+  {
+    "symbol": "n_satisfiedbyarchitectureelement_b20955c5",
+    "source_identifier": "ICREL:ARCH:satisfiedByArchitectureElement",
+    "arity": 2
+  },
+  {
+    "symbol": "n_satisfiedbyinterface_c6f1deb1",
+    "source_identifier": "ICREL:ARCH:satisfiedByInterface",
+    "arity": 2
+  },
+  {
+    "symbol": "n_scenariospecification_0e62e381",
+    "source_identifier": "IC:ScenarioSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_scopechangerecord_e7aec216",
+    "source_identifier": "REL:ORSD04:scopeChangeRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "n_scopespecification_08dd6413",
+    "source_identifier": "IC:ScopeSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_scopesupersedes_fbe9ba3e",
+    "source_identifier": "REL:ORSD04:scopeSupersedes",
+    "arity": 2
+  },
+  {
+    "symbol": "n_screenspecification_01d48843",
+    "source_identifier": "IC:ScreenSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_service_14dc588b",
+    "source_identifier": "EXT:Business:Service",
+    "arity": 1
+  },
+  {
+    "symbol": "n_service_40a44f0f",
+    "source_identifier": "EXT:Architecture:Service",
+    "arity": 1
+  },
+  {
+    "symbol": "n_solutionhypothesisspecification_f5d71b12",
+    "source_identifier": "IC:SolutionHypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_solutionspecification_1f2d66e4",
+    "source_identifier": "IC:SolutionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_specifiescapability_7462fc6a",
+    "source_identifier": "ICREL:CP:specifiesCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "n_stepprecedes_170199a2",
+    "source_identifier": "REL:ORSD06:stepPrecedes",
+    "arity": 2
+  },
+  {
+    "symbol": "n_supportedbyarchitectureelement_2891caff",
+    "source_identifier": "ICREL:ARCH:supportedByArchitectureElement",
+    "arity": 2
+  },
+  {
+    "symbol": "n_targetmarketreference_05622292",
+    "source_identifier": "IC:TargetMarketReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_targetsegmentreference_e8fed746",
+    "source_identifier": "IC:TargetSegmentReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_targetwindowassignment_b9fff514",
+    "source_identifier": "IC:TargetWindowAssignment",
+    "arity": 1
+  },
+  {
+    "symbol": "n_taskreference_55fe919a",
+    "source_identifier": "IC:TaskReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_test_plan_248db48a",
+    "source_identifier": "EXT:ExternalUnresolved:Test_Plan",
+    "arity": 1
+  },
+  {
+    "symbol": "n_test_script_493721b6",
+    "source_identifier": "EXT:ExternalUnresolved:Test_Script",
+    "arity": 1
+  },
+  {
+    "symbol": "n_testcase_4838ac55",
+    "source_identifier": "IC:TestCase",
+    "arity": 1
+  },
+  {
+    "symbol": "n_testdatareference_2f5031b7",
+    "source_identifier": "IC:TestDataReference",
+    "arity": 1
+  },
+  {
+    "symbol": "n_testexecution_de7d3951",
+    "source_identifier": "IC:TestExecution",
+    "arity": 1
+  },
+  {
+    "symbol": "n_testresult_1b08937a",
+    "source_identifier": "IC:TestResult",
+    "arity": 1
+  },
+  {
+    "symbol": "n_testscenario_48e750a7",
+    "source_identifier": "IC:TestScenario",
+    "arity": 1
+  },
+  {
+    "symbol": "n_testsrealization_4ddb54ac",
+    "source_identifier": "ICREL:CP:testsRealization",
+    "arity": 2
+  },
+  {
+    "symbol": "n_testsuitespecification_9c5427f3",
+    "source_identifier": "IC:TestSuiteSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_touchpointspecification_354c96e7",
+    "source_identifier": "IC:TouchpointSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_uistatespecification_dcbb7363",
+    "source_identifier": "IC:UIStateSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_usabilityfindingrecord_dcd80cdd",
+    "source_identifier": "IC:UsabilityFindingRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_usabilityinformationarchitecture_cb4e112b",
+    "source_identifier": "REL:ORSD06:usabilityInformationArchitecture",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilityjourney_682a0049",
+    "source_identifier": "REL:ORSD06:usabilityJourney",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilityjourneystage_f610e490",
+    "source_identifier": "REL:ORSD06:usabilityJourneyStage",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilitypersona_c893f98d",
+    "source_identifier": "REL:ORSD06:usabilityPersona",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilitystep_51ca1994",
+    "source_identifier": "REL:ORSD06:usabilityStep",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilitytouchpoint_a4969b48",
+    "source_identifier": "REL:ORSD06:usabilityTouchpoint",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilityuistate_8080b03f",
+    "source_identifier": "REL:ORSD06:usabilityUIState",
+    "arity": 2
+  },
+  {
+    "symbol": "n_usabilityuserrole_0884ccee",
+    "source_identifier": "REL:ORSD06:usabilityUserRole",
+    "arity": 2
+  },
+  {
+    "symbol": "n_user_mental_model_fd96909e",
+    "source_identifier": "EXT:UXResearch:User_Mental_Model",
+    "arity": 1
+  },
+  {
+    "symbol": "n_userflowspecification_cf108467",
+    "source_identifier": "IC:UserFlowSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_userrolespecification_22705cf4",
+    "source_identifier": "IC:UserRoleSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_userstoryspecification_ba3bd5ce",
+    "source_identifier": "IC:UserStorySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_usesevidence_6313a294",
+    "source_identifier": "ICREL:EU:usesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "n_validationevidencerecord_456f518a",
+    "source_identifier": "IC:ValidationEvidenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_validationfindingrecord_02b02536",
+    "source_identifier": "IC:ValidationFindingRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_valueproposition_dd391b92",
+    "source_identifier": "EXT:Business:ValueProposition",
+    "arity": 1
+  },
+  {
+    "symbol": "n_verificationevidencerecord_bd42ce8b",
+    "source_identifier": "IC:VerificationEvidenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "n_versionscope_737b05a6",
+    "source_identifier": "REL:ORSD04:versionScope",
+    "arity": 2
+  },
+  {
+    "symbol": "n_verticalslicespecification_5fd0b0b8",
+    "source_identifier": "IC:VerticalSliceSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "n_visionstatement_cb1717ed",
+    "source_identifier": "IC:VisionStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "o_acceptancecriterionspecification_0299ae3e",
+    "source_identifier": "urn:productium:specification-profile:AcceptanceCriterionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_acquisitioncitesevidence_f26cf4c5",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:acquisitionCitesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_acquisitioncitesinsight_ce0a4a23",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:acquisitionCitesInsight",
+    "arity": 2
+  },
+  {
+    "symbol": "o_acquisitionhypothesisspecification_6e118852",
+    "source_identifier": "urn:productium:specification-profile:AcquisitionHypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_adoptioncitesevidence_428719c3",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:adoptionCitesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_adoptioncitesinsight_ca8a908f",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:adoptionCitesInsight",
+    "arity": 2
+  },
+  {
+    "symbol": "o_adoptionhypothesisspecification_de10da7b",
+    "source_identifier": "urn:productium:specification-profile:AdoptionHypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_anyuri_be9501df",
+    "source_identifier": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "arity": 1
+  },
+  {
+    "symbol": "o_architecture_3aarchitectureelement_aeb7c90c",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Architecture%3AArchitectureElement",
+    "arity": 1
+  },
+  {
+    "symbol": "o_architecture_3acomponent_fee3a4db",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Architecture%3AComponent",
+    "arity": 1
+  },
+  {
+    "symbol": "o_architecture_3ainterface_164e7515",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Architecture%3AInterface",
+    "arity": 1
+  },
+  {
+    "symbol": "o_architecture_3aservice_dcbfdfed",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Architecture%3AService",
+    "arity": 1
+  },
+  {
+    "symbol": "o_architecture_intendedrealizedbycomponent_e7a020a9",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:architecture_intendedRealizedByComponent",
+    "arity": 2
+  },
+  {
+    "symbol": "o_architecture_intendedrealizedbyservice_ccc7d57c",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:architecture_intendedRealizedByService",
+    "arity": 2
+  },
+  {
+    "symbol": "o_architecture_intendedsatisfiedbyarchitectureelement_5d473d90",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:architecture_intendedSatisfiedByArchitectureElement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_architecture_intendedsatisfiedbyinterface_7a29350c",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:architecture_intendedSatisfiedByInterface",
+    "arity": 2
+  },
+  {
+    "symbol": "o_architecture_intendedsupportedbyarchitectureelement_7cafe8bc",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:architecture_intendedSupportedByArchitectureElement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_assessesproblem_338b0d44",
+    "source_identifier": "urn:productium:specification-profile:assessesProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_assessesproduct_26a7167f",
+    "source_identifier": "urn:productium:specification-profile:assessesProduct",
+    "arity": 2
+  },
+  {
+    "symbol": "o_assessessolution_17cfc916",
+    "source_identifier": "urn:productium:specification-profile:assessesSolution",
+    "arity": 2
+  },
+  {
+    "symbol": "o_assessesspecification_38115d6b",
+    "source_identifier": "urn:productium:specification-profile:assessesSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_assessmentclaim_4878d612",
+    "source_identifier": "urn:productium:specification-profile:AssessmentClaim",
+    "arity": 1
+  },
+  {
+    "symbol": "o_assessmentcontextspecification_9a5060b5",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_attributionagent_3e95a876",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:attributionAgent",
+    "arity": 2
+  },
+  {
+    "symbol": "o_attributionsource_9f703f28",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:attributionSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_attributionstance_86be106a",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:attributionStance",
+    "arity": 2
+  },
+  {
+    "symbol": "o_attributiontimestamp_edefea94",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:attributionTimestamp",
+    "arity": 2
+  },
+  {
+    "symbol": "o_bearscapability_2b724b5f",
+    "source_identifier": "urn:productium:specification-profile:bearsCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "o_bundlespecification_f7007010",
+    "source_identifier": "urn:productium:specification-profile:BundleSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_business_3abusinesscapability_f89e9560",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability",
+    "arity": 1
+  },
+  {
+    "symbol": "o_business_3abusinessgoal_c090e4a7",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal",
+    "arity": 1
+  },
+  {
+    "symbol": "o_business_3aservice_f1320a41",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Business%3AService",
+    "arity": 1
+  },
+  {
+    "symbol": "o_business_3avalueproposition_0e38f937",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition",
+    "arity": 1
+  },
+  {
+    "symbol": "o_businessrulereference_54a4db46",
+    "source_identifier": "urn:productium:specification-profile:BusinessRuleReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_canonicalowner_e9c00d88",
+    "source_identifier": "urn:productium:specification-profile:canonicalOwner",
+    "arity": 2
+  },
+  {
+    "symbol": "o_capabilityspecification_73a1b978",
+    "source_identifier": "urn:productium:specification-profile:CapabilitySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_changedecision_f64fbe05",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeDecision",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changefeature_d145a21d",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changeoccurrencereference_851a5877",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeOccurrenceReference",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changeproposalspecification_970520af",
+    "source_identifier": "urn:productium:specification-profile:ChangeProposalSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_changerecord_f3de1b87",
+    "source_identifier": "urn:productium:specification-profile:ChangeRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_changerecordedat_b51849a2",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeRecordedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changescope_3f8a92ef",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeScope",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changesource_52403cd5",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changestatement_0c3cf3b3",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_changetask_0b4d77dc",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:changeTask",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimactualcapability_27fec47c",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimActualCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimcontext_7950f82f",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimcriterion_6a063ec1",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimintendedcapability_56a5a011",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimIntendedCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimproduct_a8f421e4",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimProduct",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimrealization_2e93c51b",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimRealization",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimrequirement_19e961d9",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimstatement_30ad9287",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimsubject_8dc7dd3c",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimSubject",
+    "arity": 2
+  },
+  {
+    "symbol": "o_claimversion_32b75c75",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:claimVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_commitmentleveldefinition_ff01d228",
+    "source_identifier": "urn:productium:specification-profile:CommitmentLevelDefinition",
+    "arity": 1
+  },
+  {
+    "symbol": "o_competitivenarrative_88476b59",
+    "source_identifier": "urn:productium:specification-profile:CompetitiveNarrative",
+    "arity": 1
+  },
+  {
+    "symbol": "o_concernsrequirement_aa894472",
+    "source_identifier": "urn:productium:specification-profile:concernsRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_conditioncontext_0b036eac",
+    "source_identifier": "urn:productium:specification-profile:conditionContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_conditionspecification_bd3c5c1d",
+    "source_identifier": "urn:productium:specification-profile:ConditionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_conditionstatement_d35dee07",
+    "source_identifier": "urn:productium:specification-profile:conditionStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_confidenceassessment_e93b5ff6",
+    "source_identifier": "urn:productium:specification-profile:ConfidenceAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "o_constrainsrequirement_a32faf49",
+    "source_identifier": "urn:productium:specification-profile:constrainsRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_constraintspecification_8fe3dc03",
+    "source_identifier": "urn:productium:specification-profile:ConstraintSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_containscase_30232243",
+    "source_identifier": "urn:productium:specification-profile:containsCase",
+    "arity": 2
+  },
+  {
+    "symbol": "o_containsproduct_ecaaf85f",
+    "source_identifier": "urn:productium:specification-profile:containsProduct",
+    "arity": 2
+  },
+  {
+    "symbol": "o_containsstage_2deab665",
+    "source_identifier": "urn:productium:specification-profile:containsStage",
+    "arity": 2
+  },
+  {
+    "symbol": "o_contextdescription_a35336af",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:contextDescription",
+    "arity": 2
+  },
+  {
+    "symbol": "o_contextscenario_74327530",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:contextScenario",
+    "arity": 2
+  },
+  {
+    "symbol": "o_contextsource_10343fb1",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:contextSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_contextversion_b62a88f2",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:contextVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_datetime_db3d52ac",
+    "source_identifier": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "arity": 1
+  },
+  {
+    "symbol": "o_decisionconsiderssolution_6ba3a05f",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:decisionConsidersSolution",
+    "arity": 2
+  },
+  {
+    "symbol": "o_decisioncriterionspecification_2f0e2825",
+    "source_identifier": "urn:productium:specification-profile:DecisionCriterionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_decisionevidence_98d8b65a",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:decisionEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_decisionrationale_a17588c8",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:decisionRationale",
+    "arity": 2
+  },
+  {
+    "symbol": "o_decisionrecord_d6051b08",
+    "source_identifier": "urn:productium:specification-profile:DecisionRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_decisionselectssolution_595fe441",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:decisionSelectsSolution",
+    "arity": 2
+  },
+  {
+    "symbol": "o_decisionsource_5e2bafbc",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:decisionSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_deferredstatement_cb96fd07",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:deferredStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_defineslifecyclestage_9a9dcdbb",
+    "source_identifier": "urn:productium:specification-profile:definesLifecycleStage",
+    "arity": 2
+  },
+  {
+    "symbol": "o_deliverystatusrecord_e59c51e2",
+    "source_identifier": "urn:productium:specification-profile:DeliveryStatusRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_deliveryworkitem_f98a3f27",
+    "source_identifier": "urn:productium:specification-profile:DeliveryWorkItem",
+    "arity": 1
+  },
+  {
+    "symbol": "o_deliveryworkitemstatusrecord_17e65d34",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_dependencyactualcapabilitytarget_5f4e89b9",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:dependencyActualCapabilityTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "o_dependencycapabilityspecificationtarget_cfd20400",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:dependencyCapabilitySpecificationTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "o_dependencycondition_cc5a91c9",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:dependencyCondition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_dependencyexternaltarget_24a02018",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:dependencyExternalTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "o_dependencyproducttarget_c8cb5b8c",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:dependencyProductTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "o_dependencysource_84023279",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:dependencySource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_dependencyspecification_9401a9e8",
+    "source_identifier": "urn:productium:specification-profile:DependencySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_dependsonenablerspecification_e09124c8",
+    "source_identifier": "urn:productium:specification-profile:dependsOnEnablerSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_enablerspecification_4a676984",
+    "source_identifier": "urn:productium:specification-profile:EnablerSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_evaluatedagainst_b6d44896",
+    "source_identifier": "urn:productium:specification-profile:evaluatedAgainst",
+    "arity": 2
+  },
+  {
+    "symbol": "o_evidenceartifact_6317ec1f",
+    "source_identifier": "urn:productium:specification-profile:EvidenceArtifact",
+    "arity": 1
+  },
+  {
+    "symbol": "o_evidenceattributionrecord_1c89f498",
+    "source_identifier": "urn:productium:specification-profile:EvidenceAttributionRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_evidencelayer_3aevidence_c26fe8bd",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence",
+    "arity": 1
+  },
+  {
+    "symbol": "o_excludedstatement_bd86f1d3",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:excludedStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_executes_ed879ee9",
+    "source_identifier": "urn:productium:specification-profile:executes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_executioncontext_02a29f55",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:executionContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_executioncriterion_db30b082",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:executionCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_executionendedat_2fa28738",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:executionEndedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_exemplifiedbyscenario_2222458f",
+    "source_identifier": "urn:productium:specification-profile:exemplifiedByScenario",
+    "arity": 2
+  },
+  {
+    "symbol": "o_expectedenabledby_66626032",
+    "source_identifier": "urn:productium:specification-profile:expectedEnabledBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_externalreferencerecord_c2bf0dcc",
+    "source_identifier": "urn:productium:specification-profile:ExternalReferenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_externalunresolved_3aconfiguration_89aedc2c",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AConfiguration",
+    "arity": 1
+  },
+  {
+    "symbol": "o_externalunresolved_3aevidence_f652b3e0",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence",
+    "arity": 1
+  },
+  {
+    "symbol": "o_externalunresolved_3atest_plan_77f789bb",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Plan",
+    "arity": 1
+  },
+  {
+    "symbol": "o_externalunresolved_3atest_script_3061cf78",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Script",
+    "arity": 1
+  },
+  {
+    "symbol": "o_featureflagspecification_91eb227b",
+    "source_identifier": "urn:productium:specification-profile:FeatureFlagSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_featurespecification_2de6dfb0",
+    "source_identifier": "urn:productium:specification-profile:FeatureSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_findingrecord_6c235440",
+    "source_identifier": "urn:productium:specification-profile:FindingRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_findingsource_666e303f",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:findingSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_findingstatement_ba684cd2",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:findingStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_functionalrequirementspecification_1732b959",
+    "source_identifier": "urn:productium:specification-profile:FunctionalRequirementSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_goalspecification_9ac1cc8d",
+    "source_identifier": "urn:productium:specification-profile:GoalSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_gotomarketspecification_e383dc02",
+    "source_identifier": "urn:productium:specification-profile:GoToMarketSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_hasdependencyspecification_b4f40c53",
+    "source_identifier": "urn:productium:specification-profile:hasDependencySpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasfeaturecriterion_3b1e170f",
+    "source_identifier": "urn:productium:specification-profile:hasFeatureCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasproductstatusrecord_d1c2c559",
+    "source_identifier": "urn:productium:specification-profile:hasProductStatusRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasproposedsolution_f48d80c8",
+    "source_identifier": "urn:productium:specification-profile:hasProposedSolution",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasscopespecification_15ac67e9",
+    "source_identifier": "urn:productium:specification-profile:hasScopeSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasstorycriterion_324c6d65",
+    "source_identifier": "urn:productium:specification-profile:hasStoryCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasstoryspecification_d8dd9c41",
+    "source_identifier": "urn:productium:specification-profile:hasStorySpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasversion_4f56b7f5",
+    "source_identifier": "urn:productium:specification-profile:hasVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hasvisionstatement_4d04c805",
+    "source_identifier": "urn:productium:specification-profile:hasVisionStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_hypothesisspecification_9a33f1c8",
+    "source_identifier": "urn:productium:specification-profile:HypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_hypothesizesaboutproblem_ab4d9ffa",
+    "source_identifier": "urn:productium:specification-profile:hypothesizesAboutProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_implementsfeature_60c7b80d",
+    "source_identifier": "urn:productium:specification-profile:implementsFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_includedstatement_01f21b71",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:includedStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_informationarchitecturespecification_0a84724e",
+    "source_identifier": "urn:productium:specification-profile:InformationArchitectureSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_informsinitiative_91e95196",
+    "source_identifier": "urn:productium:specification-profile:informsInitiative",
+    "arity": 2
+  },
+  {
+    "symbol": "o_initiativespecification_5404588f",
+    "source_identifier": "urn:productium:specification-profile:InitiativeSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_intendedtoenablefeature_d4c185e5",
+    "source_identifier": "urn:productium:specification-profile:intendedToEnableFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_intendscapability_32debd07",
+    "source_identifier": "urn:productium:specification-profile:intendsCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "o_intendstoaddressproblem_b7999f7d",
+    "source_identifier": "urn:productium:specification-profile:intendsToAddressProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_intendstocontributetooutcome_26f1e26d",
+    "source_identifier": "urn:productium:specification-profile:intendsToContributeToOutcome",
+    "arity": 2
+  },
+  {
+    "symbol": "o_intendstosupportgoal_ca793e16",
+    "source_identifier": "urn:productium:specification-profile:intendsToSupportGoal",
+    "arity": 2
+  },
+  {
+    "symbol": "o_interactionstepspecification_44c8af3e",
+    "source_identifier": "urn:productium:specification-profile:InteractionStepSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_iscarrierinrecord_6fcdca61",
+    "source_identifier": "urn:productium:specification-profile:isCarrierInRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatus_370b117a",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatus",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatuschange_1f124dff",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatusChange",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatuscode_a08e2882",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatusCode",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatusreportedat_5cd2a459",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatusReportedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatusscheme_abd64624",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatusScheme",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatussource_abbfc60e",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatusSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_itemstatusversion_83352ce1",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:itemStatusVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_journeyspecification_6c58f66d",
+    "source_identifier": "urn:productium:specification-profile:JourneySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_journeystagespecification_4d216026",
+    "source_identifier": "urn:productium:specification-profile:JourneyStageSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_justifiesrequirement_19321de4",
+    "source_identifier": "urn:productium:specification-profile:justifiesRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_launchspecification_19376d8c",
+    "source_identifier": "urn:productium:specification-profile:LaunchSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_lifecyclespecification_8ccb5ce0",
+    "source_identifier": "urn:productium:specification-profile:LifecycleSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_lifecyclestagespecification_9e5a8393",
+    "source_identifier": "urn:productium:specification-profile:LifecycleStageSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_market_3acompetitor_alternative_1d938a32",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Market%3ACompetitor_Alternative",
+    "arity": 1
+  },
+  {
+    "symbol": "o_market_3acustomersegment_66d92554",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment",
+    "arity": 1
+  },
+  {
+    "symbol": "o_market_3amarket_caacdc2c",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Market%3AMarket",
+    "arity": 1
+  },
+  {
+    "symbol": "o_market_3aneed_3f8a1679",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Market%3ANeed",
+    "arity": 1
+  },
+  {
+    "symbol": "o_market_3apain_2b652a79",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:Market%3APain",
+    "arity": 1
+  },
+  {
+    "symbol": "o_marketinggoalspecification_19f0f0dc",
+    "source_identifier": "urn:productium:specification-profile:MarketingGoalSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_marketinginsightreference_ecbebe36",
+    "source_identifier": "urn:productium:specification-profile:MarketingInsightReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_messagingspecification_24de7362",
+    "source_identifier": "urn:productium:specification-profile:MessagingSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_milestonespecification_585f68a5",
+    "source_identifier": "urn:productium:specification-profile:MilestoneSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_motivatesgoal_1f820745",
+    "source_identifier": "urn:productium:specification-profile:motivatesGoal",
+    "arity": 2
+  },
+  {
+    "symbol": "o_motivateshypothesis_17ba4d64",
+    "source_identifier": "urn:productium:specification-profile:motivatesHypothesis",
+    "arity": 2
+  },
+  {
+    "symbol": "o_motivatessolutionhypothesis_906ea5a3",
+    "source_identifier": "urn:productium:specification-profile:motivatesSolutionHypothesis",
+    "arity": 2
+  },
+  {
+    "symbol": "o_narrativecitesevidence_4c4cfa6a",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:narrativeCitesEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_narrativecitesinsight_effdb379",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:narrativeCitesInsight",
+    "arity": 2
+  },
+  {
+    "symbol": "o_observedauthority_0599d34b",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:observedAuthority",
+    "arity": 2
+  },
+  {
+    "symbol": "o_observedtarget_32dd708a",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:observedTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "o_offeringof_38930d39",
+    "source_identifier": "urn:productium:specification-profile:offeringOf",
+    "arity": 2
+  },
+  {
+    "symbol": "o_offeringspecification_fd5297ce",
+    "source_identifier": "urn:productium:specification-profile:OfferingSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_operationalizedbycriterion_dab109a6",
+    "source_identifier": "urn:productium:specification-profile:operationalizedByCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_opportunitystatement_b89a8713",
+    "source_identifier": "urn:productium:specification-profile:OpportunityStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "o_organizesentry_8770c5a7",
+    "source_identifier": "urn:productium:specification-profile:organizesEntry",
+    "arity": 2
+  },
+  {
+    "symbol": "o_outcomespecification_05ee7bc3",
+    "source_identifier": "urn:productium:specification-profile:OutcomeSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_personacontext_dfcf9689",
+    "source_identifier": "urn:productium:specification-profile:personaContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_personadescription_d3f39048",
+    "source_identifier": "urn:productium:specification-profile:personaDescription",
+    "arity": 2
+  },
+  {
+    "symbol": "o_personaspecification_81fd0066",
+    "source_identifier": "urn:productium:specification-profile:PersonaSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_planninghorizondefinition_b6519652",
+    "source_identifier": "urn:productium:specification-profile:PlanningHorizonDefinition",
+    "arity": 1
+  },
+  {
+    "symbol": "o_portfolioentry_e83956e9",
+    "source_identifier": "urn:productium:specification-profile:PortfolioEntry",
+    "arity": 1
+  },
+  {
+    "symbol": "o_positioningstatement_23009b5a",
+    "source_identifier": "urn:productium:specification-profile:PositioningStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "o_predictsoutcome_89abbedd",
+    "source_identifier": "urn:productium:specification-profile:predictsOutcome",
+    "arity": 2
+  },
+  {
+    "symbol": "o_prioritizationcriterionspecification_5d537952",
+    "source_identifier": "urn:productium:specification-profile:PrioritizationCriterionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_priorityassessment_ac21f6f9",
+    "source_identifier": "urn:productium:specification-profile:PriorityAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "o_problemsolutionfitassessment_1c59291a",
+    "source_identifier": "urn:productium:specification-profile:ProblemSolutionFitAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "o_problemstatement_fe6d79b3",
+    "source_identifier": "urn:productium:specification-profile:ProblemStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "o_product_5e2e77d6",
+    "source_identifier": "urn:productium:specification-profile:Product",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productcapability_5801242c",
+    "source_identifier": "urn:productium:specification-profile:ProductCapability",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productfamilyreference_b7144cb8",
+    "source_identifier": "urn:productium:specification-profile:ProductFamilyReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productline_3aproductconfiguration_1aa4dbad",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:ProductLine%3AProductConfiguration",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productlinereference_b18ff0aa",
+    "source_identifier": "urn:productium:specification-profile:ProductLineReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productmarketfitassessment_c7e309d6",
+    "source_identifier": "urn:productium:specification-profile:ProductMarketFitAssessment",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productmetricreference_50f07de6",
+    "source_identifier": "urn:productium:specification-profile:ProductMetricReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productportfolio_7289b5d8",
+    "source_identifier": "urn:productium:specification-profile:ProductPortfolio",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productrealization_b516a087",
+    "source_identifier": "urn:productium:specification-profile:ProductRealization",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productstatusrecord_15a4cd21",
+    "source_identifier": "urn:productium:specification-profile:ProductStatusRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productvariantreference_0a8d9825",
+    "source_identifier": "urn:productium:specification-profile:ProductVariantReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_productversion_e1d59901",
+    "source_identifier": "urn:productium:specification-profile:ProductVersion",
+    "arity": 1
+  },
+  {
+    "symbol": "o_proposalfeature_019a6892",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:proposalFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_proposalscope_0facbcb1",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:proposalScope",
+    "arity": 2
+  },
+  {
+    "symbol": "o_proposalsource_dea17c01",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:proposalSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_proposalstatement_9485e7f4",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:proposalStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_proposescapability_c6854e04",
+    "source_identifier": "urn:productium:specification-profile:proposesCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "o_proposesfeature_d77fdc30",
+    "source_identifier": "urn:productium:specification-profile:proposesFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_qualityrequirementspecification_538881c0",
+    "source_identifier": "urn:productium:specification-profile:QualityRequirementSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_r100_usespositioningstatement_7d9e1c8f",
+    "source_identifier": "urn:productium:specification-profile:r100_usesPositioningStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r101_planslaunch_3f463a58",
+    "source_identifier": "urn:productium:specification-profile:r101_plansLaunch",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r102_targetsmarketinggoal_24bd6c0f",
+    "source_identifier": "urn:productium:specification-profile:r102_targetsMarketingGoal",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r103_informspositioningstatement_120b1242",
+    "source_identifier": "urn:productium:specification-profile:r103_informsPositioningStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r104_informsgotomarketspecification_02341859",
+    "source_identifier": "urn:productium:specification-profile:r104_informsGoToMarketSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r105_informsgotomarketfromacquisition_feb8a2fc",
+    "source_identifier": "urn:productium:specification-profile:r105_informsGoToMarketFromAcquisition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r106_informsgotomarketfromadoption_b0f8bd14",
+    "source_identifier": "urn:productium:specification-profile:r106_informsGoToMarketFromAdoption",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r107_intendedtosupport_a55e674b",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r107_intendedToSupport",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r116_references_63e63e34",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r116_references",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r117_tracksinitiative_681adc26",
+    "source_identifier": "urn:productium:specification-profile:r117_tracksInitiative",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r118_tracksreleasespecification_df925b75",
+    "source_identifier": "urn:productium:specification-profile:r118_tracksReleaseSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r119_tracksmilestonespecification_daacb60c",
+    "source_identifier": "urn:productium:specification-profile:r119_tracksMilestoneSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r120_referencesproductline_8119739b",
+    "source_identifier": "urn:productium:specification-profile:r120_referencesProductLine",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r121_hasportfolioconfidenceassessment_8c1fdc29",
+    "source_identifier": "urn:productium:specification-profile:r121_hasPortfolioConfidenceAssessment",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r122_targetspersona_ae33ca6e",
+    "source_identifier": "urn:productium:specification-profile:r122_targetsPersona",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r123_framesjourney_c1aae71e",
+    "source_identifier": "urn:productium:specification-profile:r123_framesJourney",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r125_framesfeature_be65a400",
+    "source_identifier": "urn:productium:specification-profile:r125_framesFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r127_tracksinitiativereleasespecification_bfe3d8f2",
+    "source_identifier": "urn:productium:specification-profile:r127_tracksInitiativeReleaseSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r133_supportedby_3ea116b3",
+    "source_identifier": "urn:productium:specification-profile:r133_supportedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r135_recordsresolutionchange_c4c748e4",
+    "source_identifier": "urn:productium:specification-profile:r135_recordsResolutionChange",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r136_includes_f27d15f3",
+    "source_identifier": "urn:productium:specification-profile:r136_includes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r137_includesscreen_b67b76df",
+    "source_identifier": "urn:productium:specification-profile:r137_includesScreen",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r138_precededby_4bd62bab",
+    "source_identifier": "urn:productium:specification-profile:r138_precededBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r139_intendstosupportgoal_99240761",
+    "source_identifier": "urn:productium:specification-profile:r139_intendsToSupportGoal",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r140_plansentryrelease_6edbf91c",
+    "source_identifier": "urn:productium:specification-profile:r140_plansEntryRelease",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r141_milestoneforreleasespecification_436e77e6",
+    "source_identifier": "urn:productium:specification-profile:r141_milestoneForReleaseSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r142_groupsplannedinitiative_5df56fc8",
+    "source_identifier": "urn:productium:specification-profile:r142_groupsPlannedInitiative",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r143_useswindowhorizondefinition_61719e93",
+    "source_identifier": "urn:productium:specification-profile:r143_usesWindowHorizonDefinition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r144_targetsreleasegoal_95fe86ff",
+    "source_identifier": "urn:productium:specification-profile:r144_targetsReleaseGoal",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r145_concernsdeliveryworkitem_4adaf68c",
+    "source_identifier": "urn:productium:specification-profile:r145_concernsDeliveryWorkItem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r146_specifiesrequirementverification_23b89ac8",
+    "source_identifier": "urn:productium:specification-profile:r146_specifiesRequirementVerification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r147_hasrecordedexecution_b149d286",
+    "source_identifier": "urn:productium:specification-profile:r147_hasRecordedExecution",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r148_referencesjourneystage_f1b07c84",
+    "source_identifier": "urn:productium:specification-profile:r148_referencesJourneyStage",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r149_targetslaunchpersona_b7340d99",
+    "source_identifier": "urn:productium:specification-profile:r149_targetsLaunchPersona",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r150_useslaunchpositioning_df725e36",
+    "source_identifier": "urn:productium:specification-profile:r150_usesLaunchPositioning",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r151_useslaunchmessaging_fc78021d",
+    "source_identifier": "urn:productium:specification-profile:r151_usesLaunchMessaging",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r154_referencesmetric_5e8c4c07",
+    "source_identifier": "urn:productium:specification-profile:r154_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r155_addresses_03ac5ee1",
+    "source_identifier": "urn:productium:specification-profile:r155_addresses",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r156_referencesmetric_e08298d2",
+    "source_identifier": "urn:productium:specification-profile:r156_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r157_evidencedby_0c148076",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r157_evidencedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r158_referencesmetric_faff69ea",
+    "source_identifier": "urn:productium:specification-profile:r158_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r160_evidencedby_f78dca6e",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r160_evidencedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r162_evidencedby_a21fefbd",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r162_evidencedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r164_intendstoaddressproblem_1652c40a",
+    "source_identifier": "urn:productium:specification-profile:r164_intendsToAddressProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r165_specifiesbeneficiarypersona_54ff8b06",
+    "source_identifier": "urn:productium:specification-profile:r165_specifiesBeneficiaryPersona",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r166_referencesmetric_bb043a79",
+    "source_identifier": "urn:productium:specification-profile:r166_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r167_supports_ac5c3998",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r167_supports",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r168_identifiesopportunity_67e1eb38",
+    "source_identifier": "urn:productium:specification-profile:r168_identifiesOpportunity",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r169_referencesmetric_8b89a396",
+    "source_identifier": "urn:productium:specification-profile:r169_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r170_identifiesopportunity_1891e592",
+    "source_identifier": "urn:productium:specification-profile:r170_identifiesOpportunity",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r171_referencesmetric_60f96202",
+    "source_identifier": "urn:productium:specification-profile:r171_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r172_addressesproblemstatement_c107d468",
+    "source_identifier": "urn:productium:specification-profile:r172_addressesProblemStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r173_claimsdifferentiationthrough_32299f8b",
+    "source_identifier": "urn:productium:specification-profile:r173_claimsDifferentiationThrough",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r174_targetsmessagepersona_4f03fd4a",
+    "source_identifier": "urn:productium:specification-profile:r174_targetsMessagePersona",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r175_referencesmessagefeature_8652872f",
+    "source_identifier": "urn:productium:specification-profile:r175_referencesMessageFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r176_referencesmetric_7f5339f1",
+    "source_identifier": "urn:productium:specification-profile:r176_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r177_referencesmetric_585bd336",
+    "source_identifier": "urn:productium:specification-profile:r177_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r178_referencesmetric_16b8c658",
+    "source_identifier": "urn:productium:specification-profile:r178_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r179_addressesnarrativeproblem_34764f2c",
+    "source_identifier": "urn:productium:specification-profile:r179_addressesNarrativeProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r180_claimsdifferentiationthrough_ad8a3f6b",
+    "source_identifier": "urn:productium:specification-profile:r180_claimsDifferentiationThrough",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r181_hypothesizesacquisitionforproblem_3b87a7c1",
+    "source_identifier": "urn:productium:specification-profile:r181_hypothesizesAcquisitionForProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r182_referencesmetric_a7139da4",
+    "source_identifier": "urn:productium:specification-profile:r182_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r183_hypothesizesadoptionforproblem_b930ea90",
+    "source_identifier": "urn:productium:specification-profile:r183_hypothesizesAdoptionForProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r184_referencesmetric_73452d4c",
+    "source_identifier": "urn:productium:specification-profile:r184_referencesMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r185_referencesvalueproposition_ffb84690",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r185_referencesValueProposition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r186_targets_2cb09f38",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r186_targets",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r187_includesservice_8dab3bd6",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r187_includesService",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r188_referencesvariantconfiguration_763729c8",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r188_referencesVariantConfiguration",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r189_targets_f54bba9b",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r189_targets",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r190_referencesvalueproposition_e34183b3",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r190_referencesValueProposition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r192_references_797ec57b",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r192_references",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r194_referencesmentalmodel_4329630f",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r194_referencesMentalModel",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r195_usesscript_5e74131c",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r195_usesScript",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r196_reportedundertestplan_d76ea0ce",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r196_reportedUnderTestPlan",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r197_citesexecutionscript_27d9b423",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r197_citesExecutionScript",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r198_citessupportingevidence_b12e8015",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r198_citesSupportingEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r199_referencesdatasetconfiguration_3452091a",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r199_referencesDatasetConfiguration",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r200_targets_6af6d65d",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r200_targets",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r201_targets_bcdee8f4",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r201_targets",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r202_referencesvalueproposition_3e308d90",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r202_referencesValueProposition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r203_targets_4b1b7f63",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r203_targets",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r204_targets_cce4b6f0",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r204_targets",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r207_citesinsightevidence_6c67b850",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r207_citesInsightEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r208_addressesneed_7e9f91f2",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r208_addressesNeed",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r209_informedby_359974a5",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r209_informedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r210_assessesneed_6c9cbff0",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r210_assessesNeed",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r211_assessespain_4bb93078",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r211_assessesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r212_intendstoaddressneed_c432a5ce",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r212_intendsToAddressNeed",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r213_addressespain_f5a8340d",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r213_addressesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r214_describespain_41cb74d0",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r214_describesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r215_describespain_45679c75",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r215_describesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r216_intendstoaddressneed_b44769cc",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r216_intendsToAddressNeed",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r217_describespain_88f12b79",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r217_describesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r218_citessupportingevidence_b66ffe2c",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r218_citesSupportingEvidence",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r219_addressespain_19e58eb3",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r219_addressesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r220_addressespain_44c648a6",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r220_addressesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r221_supportedby_f95d0f4b",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r221_supportedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r222_differentiatesfrom_15e5abc1",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r222_differentiatesFrom",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r223_supportedby_0fc110d1",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r223_supportedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r224_evidencedby_733ce5a5",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r224_evidencedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r225_addressespain_c6e2ffe1",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r225_addressesPain",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r226_evidencedby_83e51087",
+    "source_identifier": "urn:product-ontology:relation-profile:0.7:r226_evidencedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r22_motivatesopportunity_6479604f",
+    "source_identifier": "urn:productium:specification-profile:r22_motivatesOpportunity",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r51_describesuserrole_3185165a",
+    "source_identifier": "urn:productium:specification-profile:r51_describesUserRole",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r52_representedinjourney_b2264545",
+    "source_identifier": "urn:productium:specification-profile:r52_representedInJourney",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r54_includes_e85c425d",
+    "source_identifier": "urn:productium:specification-profile:r54_includes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r55_describedbyflow_1d3fe4a0",
+    "source_identifier": "urn:productium:specification-profile:r55_describedByFlow",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r56_specifiesstep_4fbba994",
+    "source_identifier": "urn:productium:specification-profile:r56_specifiesStep",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r57_referencesscreen_af9c2b51",
+    "source_identifier": "urn:productium:specification-profile:r57_referencesScreen",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r58_organizesscreenspecification_55a3985a",
+    "source_identifier": "urn:productium:specification-profile:r58_organizesScreenSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r59_definesuistate_1240d902",
+    "source_identifier": "urn:productium:specification-profile:r59_definesUIState",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r60_reportsonflow_1078c4ad",
+    "source_identifier": "urn:productium:specification-profile:r60_reportsOnFlow",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r61_reportsonscreen_dbff3398",
+    "source_identifier": "urn:productium:specification-profile:r61_reportsOnScreen",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r63_supportedby_1fdde5fb",
+    "source_identifier": "urn:productium:specification-profile:r63_supportedBy",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r64_organizesroadmapentry_e6adfceb",
+    "source_identifier": "urn:productium:specification-profile:r64_organizesRoadmapEntry",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r65_plansinitiative_ea87adc7",
+    "source_identifier": "urn:productium:specification-profile:r65_plansInitiative",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r66_plansfeaturedelivery_82d8279a",
+    "source_identifier": "urn:productium:specification-profile:r66_plansFeatureDelivery",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r67_targetsmilestone_7d34f2ca",
+    "source_identifier": "urn:productium:specification-profile:r67_targetsMilestone",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r68_haspriorityassessment_32fcf4c1",
+    "source_identifier": "urn:productium:specification-profile:r68_hasPriorityAssessment",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r69_usesrankingcriterion_4fe537ae",
+    "source_identifier": "urn:productium:specification-profile:r69_usesRankingCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r70_useshorizondefinition_fd4ddeb9",
+    "source_identifier": "urn:productium:specification-profile:r70_usesHorizonDefinition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r71_hastargetwindowassignment_192f03b5",
+    "source_identifier": "urn:productium:specification-profile:r71_hasTargetWindowAssignment",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r72_hasentryconfidenceassessment_e5951f91",
+    "source_identifier": "urn:productium:specification-profile:r72_hasEntryConfidenceAssessment",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r73_usescommitmentleveldefinition_f065646b",
+    "source_identifier": "urn:productium:specification-profile:r73_usesCommitmentLevelDefinition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r74_hasplanningdependency_64392581",
+    "source_identifier": "urn:productium:specification-profile:r74_hasPlanningDependency",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r75_plansdeliveryitem_0335f73f",
+    "source_identifier": "urn:productium:specification-profile:r75_plansDeliveryItem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r76_referenceschangerecord_e6102cca",
+    "source_identifier": "urn:productium:specification-profile:r76_referencesChangeRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r78_hasreleaseevidencerecord_349ce5f1",
+    "source_identifier": "urn:productium:specification-profile:r78_hasReleaseEvidenceRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r79_proposesrecordedchange_17c0be66",
+    "source_identifier": "urn:productium:specification-profile:r79_proposesRecordedChange",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r80_plansfeature_7dac01de",
+    "source_identifier": "urn:productium:specification-profile:r80_plansFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r81_intendedtocontributetowork_25bd0e17",
+    "source_identifier": "urn:productium:specification-profile:r81_intendedToContributeToWork",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r82_specifiesfeatureactivationcontrol_6337914a",
+    "source_identifier": "urn:productium:specification-profile:r82_specifiesFeatureActivationControl",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r83_plannedforrelease_2e49ff30",
+    "source_identifier": "urn:productium:specification-profile:r83_plannedForRelease",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r84_covers_274b6383",
+    "source_identifier": "urn:productium:specification-profile:r84_covers",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r85_specifiesrequirementverification_60458645",
+    "source_identifier": "urn:productium:specification-profile:r85_specifiesRequirementVerification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r86_specifiescriterionverification_fc5c455e",
+    "source_identifier": "urn:productium:specification-profile:r86_specifiesCriterionVerification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r87_refinestestscenario_2f86dad0",
+    "source_identifier": "urn:productium:specification-profile:r87_refinesTestScenario",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r89_referencestestdata_23eb835a",
+    "source_identifier": "urn:productium:specification-profile:r89_referencesTestData",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r8_supersedes_a59a0a58",
+    "source_identifier": "urn:productium:specification-profile:r8_supersedes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r92_hasverificationevidencerecord_387f2a4e",
+    "source_identifier": "urn:productium:specification-profile:r92_hasVerificationEvidenceRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r93_hasvalidationevidencerecord_8467c0d9",
+    "source_identifier": "urn:productium:specification-profile:r93_hasValidationEvidenceRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r94_haspositioningstatement_6fdb00a7",
+    "source_identifier": "urn:productium:specification-profile:r94_hasPositioningStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r95_positionedbystatement_6f7e5470",
+    "source_identifier": "urn:productium:specification-profile:r95_positionedByStatement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r96_referencestargetmarket_27d66c85",
+    "source_identifier": "urn:productium:specification-profile:r96_referencesTargetMarket",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r97_referencestargetsegment_26c84e83",
+    "source_identifier": "urn:productium:specification-profile:r97_referencesTargetSegment",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r98_referencescompetitivenarrative_217aed66",
+    "source_identifier": "urn:productium:specification-profile:r98_referencesCompetitiveNarrative",
+    "arity": 2
+  },
+  {
+    "symbol": "o_r99_expressespositioning_628c10f4",
+    "source_identifier": "urn:productium:specification-profile:r99_expressesPositioning",
+    "arity": 2
+  },
+  {
+    "symbol": "o_realizesversion_8ca00efc",
+    "source_identifier": "urn:productium:specification-profile:realizesVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_recordedattributionto_3e20c24d",
+    "source_identifier": "urn:productium:specification-profile:recordedAttributionTo",
+    "arity": 2
+  },
+  {
+    "symbol": "o_recordsaffectedinitiative_2fad9b0e",
+    "source_identifier": "urn:productium:specification-profile:recordsAffectedInitiative",
+    "arity": 2
+  },
+  {
+    "symbol": "o_recordscarrier_68e09c12",
+    "source_identifier": "urn:productium:specification-profile:recordsCarrier",
+    "arity": 2
+  },
+  {
+    "symbol": "o_recordsclaim_3d0873c5",
+    "source_identifier": "urn:productium:specification-profile:recordsClaim",
+    "arity": 2
+  },
+  {
+    "symbol": "o_recordscriterion_00fcf0e8",
+    "source_identifier": "urn:productium:specification-profile:recordsCriterion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_recordsexecution_bdd9ccef",
+    "source_identifier": "urn:productium:specification-profile:recordsExecution",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencecontext_58c96c8a",
+    "source_identifier": "urn:productium:specification-profile:referenceContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referenceprovenance_8d44e213",
+    "source_identifier": "urn:productium:specification-profile:referenceProvenance",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencepurpose_536ac956",
+    "source_identifier": "urn:productium:specification-profile:referencePurpose",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencerecordedat_d583c6bc",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:referenceRecordedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencereviewfinding_3b780567",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:referenceReviewFinding",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencerevisionlabel_8b082866",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:referenceRevisionLabel",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesoffering_bfc38ac5",
+    "source_identifier": "urn:productium:specification-profile:referencesOffering",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesproduct_8b03c51e",
+    "source_identifier": "urn:productium:specification-profile:referencesProduct",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesproductfamily_7de942a9",
+    "source_identifier": "urn:productium:specification-profile:referencesProductFamily",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesproductline_556acfa2",
+    "source_identifier": "urn:productium:specification-profile:referencesProductLine",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesproductvariant_63ea45c4",
+    "source_identifier": "urn:productium:specification-profile:referencesProductVariant",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesruleforrequirement_82b4b463",
+    "source_identifier": "urn:productium:specification-profile:referencesRuleForRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencesupersedes_67ba3120",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:referenceSupersedes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_referencetarget_c4ad5bee",
+    "source_identifier": "urn:productium:specification-profile:referenceTarget",
+    "arity": 2
+  },
+  {
+    "symbol": "o_refinedbyrequirement_96eabe04",
+    "source_identifier": "urn:productium:specification-profile:refinedByRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_releaseevidencerecord_0b26c3e8",
+    "source_identifier": "urn:productium:specification-profile:ReleaseEvidenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_releasespecification_37d609b4",
+    "source_identifier": "urn:productium:specification-profile:ReleaseSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_releasestatuschange_a735bfeb",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:releaseStatusChange",
+    "arity": 2
+  },
+  {
+    "symbol": "o_releasestatuscode_34ff965d",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:releaseStatusCode",
+    "arity": 2
+  },
+  {
+    "symbol": "o_releasestatusreportedat_2259b9bf",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:releaseStatusReportedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_releasestatusscheme_834a126d",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:releaseStatusScheme",
+    "arity": 2
+  },
+  {
+    "symbol": "o_releasestatussource_9174f3c6",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:releaseStatusSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_releasestatusversion_4d1e1ab0",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:releaseStatusVersion",
+    "arity": 2
+  },
+  {
+    "symbol": "o_reportsstatus_e9d948fc",
+    "source_identifier": "urn:productium:specification-profile:reportsStatus",
+    "arity": 2
+  },
+  {
+    "symbol": "o_representedbystory_25664527",
+    "source_identifier": "urn:productium:specification-profile:representedByStory",
+    "arity": 2
+  },
+  {
+    "symbol": "o_requirementrationalestatement_dc35d28b",
+    "source_identifier": "urn:productium:specification-profile:RequirementRationaleStatement",
+    "arity": 1
+  },
+  {
+    "symbol": "o_requirementscenariospecification_1c228a11",
+    "source_identifier": "urn:productium:specification-profile:RequirementScenarioSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_requirementsourcereference_372235ba",
+    "source_identifier": "urn:productium:specification-profile:RequirementSourceReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_requirementspecification_067f8073",
+    "source_identifier": "urn:productium:specification-profile:RequirementSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_resultoutcome_3eb31a2b",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:resultOutcome",
+    "arity": 2
+  },
+  {
+    "symbol": "o_resultrecordedat_cc5c9d15",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:resultRecordedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_resultsource_d7f3bdb0",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:resultSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_reviewreason_619760cf",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:reviewReason",
+    "arity": 2
+  },
+  {
+    "symbol": "o_reviewrecordedat_0012d0fd",
+    "source_identifier": "urn:product-ontology:delivery-profile:0.5:reviewRecordedAt",
+    "arity": 2
+  },
+  {
+    "symbol": "o_roadmap_381d20e5",
+    "source_identifier": "urn:productium:specification-profile:Roadmap",
+    "arity": 1
+  },
+  {
+    "symbol": "o_roadmapentry_c1c3186e",
+    "source_identifier": "urn:productium:specification-profile:RoadmapEntry",
+    "arity": 1
+  },
+  {
+    "symbol": "o_scenarioactions_6c887f89",
+    "source_identifier": "urn:productium:specification-profile:scenarioActions",
+    "arity": 2
+  },
+  {
+    "symbol": "o_scenariocontext_2ee069f1",
+    "source_identifier": "urn:productium:specification-profile:scenarioContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_scenarioprecondition_4776ce8c",
+    "source_identifier": "urn:productium:specification-profile:scenarioPrecondition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_scenariospecification_131385c1",
+    "source_identifier": "urn:productium:specification-profile:ScenarioSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_scopechangerecord_89135be8",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:scopeChangeRecord",
+    "arity": 2
+  },
+  {
+    "symbol": "o_scopesource_4d209733",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:scopeSource",
+    "arity": 2
+  },
+  {
+    "symbol": "o_scopespecification_beb9b28d",
+    "source_identifier": "urn:productium:specification-profile:ScopeSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_scopesupersedes_4c533220",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:scopeSupersedes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_screenspecification_cad2e1fc",
+    "source_identifier": "urn:productium:specification-profile:ScreenSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_solutionhypothesisspecification_724e7cc7",
+    "source_identifier": "urn:productium:specification-profile:SolutionHypothesisSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_solutionhypothesizesaboutproblem_32929111",
+    "source_identifier": "urn:productium:specification-profile:solutionHypothesizesAboutProblem",
+    "arity": 2
+  },
+  {
+    "symbol": "o_solutionpredictsoutcome_50736bc8",
+    "source_identifier": "urn:productium:specification-profile:solutionPredictsOutcome",
+    "arity": 2
+  },
+  {
+    "symbol": "o_solutionspecification_ca854bd1",
+    "source_identifier": "urn:productium:specification-profile:SolutionSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_sourcesrequirement_787c0bfa",
+    "source_identifier": "urn:productium:specification-profile:sourcesRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specificationprovenance_3872dc46",
+    "source_identifier": "urn:productium:specification-profile:specificationProvenance",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiedbyrequirement_4195410f",
+    "source_identifier": "urn:productium:specification-profile:specifiedByRequirement",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiedthroughfeature_c8fc40a2",
+    "source_identifier": "urn:productium:specification-profile:specifiedThroughFeature",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiescapability_1c1747fb",
+    "source_identifier": "urn:productium:specification-profile:specifiesCapability",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiesexpectedcondition_d555ae1c",
+    "source_identifier": "urn:productium:specification-profile:specifiesExpectedCondition",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiesoutcomemetric_c22cec66",
+    "source_identifier": "urn:productium:specification-profile:specifiesOutcomeMetric",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiespersonacontext_213f7eb5",
+    "source_identifier": "urn:productium:specification-profile:specifiesPersonaContext",
+    "arity": 2
+  },
+  {
+    "symbol": "o_specifiesslice_dc3a4749",
+    "source_identifier": "urn:productium:specification-profile:specifiesSlice",
+    "arity": 2
+  },
+  {
+    "symbol": "o_stepprecedes_f878e3d5",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:stepPrecedes",
+    "arity": 2
+  },
+  {
+    "symbol": "o_string_24ea0d6e",
+    "source_identifier": "http://www.w3.org/2001/XMLSchema#string",
+    "arity": 1
+  },
+  {
+    "symbol": "o_targetmarketreference_07684f2b",
+    "source_identifier": "urn:productium:specification-profile:TargetMarketReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_targetsegmentreference_776e2c90",
+    "source_identifier": "urn:productium:specification-profile:TargetSegmentReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_targetsoutcome_e53fd35a",
+    "source_identifier": "urn:productium:specification-profile:targetsOutcome",
+    "arity": 2
+  },
+  {
+    "symbol": "o_targetsoutcomespecification_a78e4886",
+    "source_identifier": "urn:productium:specification-profile:targetsOutcomeSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_targetwindowassignment_f8688c9e",
+    "source_identifier": "urn:productium:specification-profile:TargetWindowAssignment",
+    "arity": 1
+  },
+  {
+    "symbol": "o_taskreference_51d691cd",
+    "source_identifier": "urn:productium:specification-profile:TaskReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_testcase_d5ce3254",
+    "source_identifier": "urn:productium:specification-profile:TestCase",
+    "arity": 1
+  },
+  {
+    "symbol": "o_testdatareference_6063ba4c",
+    "source_identifier": "urn:productium:specification-profile:TestDataReference",
+    "arity": 1
+  },
+  {
+    "symbol": "o_testexecution_483822c9",
+    "source_identifier": "urn:productium:specification-profile:TestExecution",
+    "arity": 1
+  },
+  {
+    "symbol": "o_testresult_26ca0bda",
+    "source_identifier": "urn:productium:specification-profile:TestResult",
+    "arity": 1
+  },
+  {
+    "symbol": "o_testscenario_1c3da1d3",
+    "source_identifier": "urn:productium:specification-profile:TestScenario",
+    "arity": 1
+  },
+  {
+    "symbol": "o_testsrealization_70c84c2c",
+    "source_identifier": "urn:productium:specification-profile:testsRealization",
+    "arity": 2
+  },
+  {
+    "symbol": "o_testsuitespecification_97bde355",
+    "source_identifier": "urn:productium:specification-profile:TestSuiteSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_touchpointspecification_88904c65",
+    "source_identifier": "urn:productium:specification-profile:TouchpointSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_uistatespecification_64de4585",
+    "source_identifier": "urn:productium:specification-profile:UIStateSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_usabilityfindingrecord_1be07103",
+    "source_identifier": "urn:productium:specification-profile:UsabilityFindingRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_usabilityinformationarchitecture_da396e22",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityInformationArchitecture",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilityjourney_af09679d",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityJourney",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilityjourneystage_5caef2c8",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityJourneyStage",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilitypersona_063b1c06",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityPersona",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilityrecommendation_54765e4f",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityRecommendation",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilitystep_6665fcbf",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityStep",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilitytouchpoint_331ca302",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityTouchpoint",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilityuistate_f4195a87",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityUIState",
+    "arity": 2
+  },
+  {
+    "symbol": "o_usabilityuserrole_c0e67ae6",
+    "source_identifier": "urn:product-ontology:trace-profile:0.6:usabilityUserRole",
+    "arity": 2
+  },
+  {
+    "symbol": "o_userflowspecification_fb730f56",
+    "source_identifier": "urn:productium:specification-profile:UserFlowSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_userrolespecification_cccebf00",
+    "source_identifier": "urn:productium:specification-profile:UserRoleSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_userstoryspecification_680a42c6",
+    "source_identifier": "urn:productium:specification-profile:UserStorySpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_useslifecyclespecification_82197b12",
+    "source_identifier": "urn:productium:specification-profile:usesLifecycleSpecification",
+    "arity": 2
+  },
+  {
+    "symbol": "o_uxresearch_3auser_mental_model_8ac43723",
+    "source_identifier": "urn:product-ontology:external-boundary:0.7:UXResearch%3AUser_Mental_Model",
+    "arity": 1
+  },
+  {
+    "symbol": "o_validationevidencerecord_89bff0ca",
+    "source_identifier": "urn:productium:specification-profile:ValidationEvidenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_validationfindingrecord_e628162e",
+    "source_identifier": "urn:productium:specification-profile:ValidationFindingRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_verificationevidencerecord_16c2d7e8",
+    "source_identifier": "urn:productium:specification-profile:VerificationEvidenceRecord",
+    "arity": 1
+  },
+  {
+    "symbol": "o_versionscope_f2807a84",
+    "source_identifier": "urn:product-ontology:assessment-profile:0.4:versionScope",
+    "arity": 2
+  },
+  {
+    "symbol": "o_verticalslicespecification_25b6ba78",
+    "source_identifier": "urn:productium:specification-profile:VerticalSliceSpecification",
+    "arity": 1
+  },
+  {
+    "symbol": "o_visionstatement_cc6f8a1e",
+    "source_identifier": "urn:productium:specification-profile:VisionStatement",
+    "arity": 1
+  }
+]
