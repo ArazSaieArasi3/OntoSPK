@@ -1,0 +1,12 @@
+{
+  "verified_public_commit": "03c2fbc0b48f9ca2fead47ab817e8e376a2320c0",
+  "public_anonymous_clone": "PASS",
+  "manifest_files_verified": 719,
+  "manifest_digest_mismatches": 0,
+  "static_publication_check": "PASS",
+  "local_links_checked": 469,
+  "readback_worktree_clean": true,
+  "semantic_native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "logical_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+  "scope": "Anonymous source distribution verification. Online Wiki, Pages and rendered WebVOWL acceptance are separate."
+}

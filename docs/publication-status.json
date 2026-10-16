@@ -5,22 +5,34 @@
   "documentation_state": "candidate",
   "source_prepared": true,
   "local_semantic_evaluation": "PASS_TEN_STAGES",
-  "remote_semantic_ci": "NOT_VERIFIED",
+  "remote_semantic_ci": "BLOCKED_BEFORE_EXECUTION",
   "wiki": {
     "source": "wiki-src",
-    "state": "SOURCE_PREPARED_NOT_PUBLISHED",
+    "state": "SOURCE_PREPARED_PUBLICATION_ACCESS_PENDING",
     "published_ref": null
   },
   "pages": {
     "source": "docs",
-    "state": "SOURCE_PREPARED_NOT_DEPLOYED",
+    "state": "SOURCE_PREPARED_RELEASE_AND_SITE_CONFIGURATION_PENDING",
     "deployment_ref": null
   },
   "webvowl": {
     "data": "docs/webvowl/data/ontospk.json",
-    "state": "SOURCE_PREPARED",
+    "state": "DATA_AND_STATIC_CONTRACTS_VERIFIED_BROWSER_PENDING",
     "online_browser_verification": "NOT_EXECUTED"
   },
   "licensing": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
-  "source_prerelease_published": false
+  "source_prerelease_published": false,
+  "remote_check_runs": [
+    {
+      "run_id": 38925819198,
+      "kind": "ontology",
+      "state": "NOT_STARTED_ACCOUNT_RESTRICTION"
+    },
+    {
+      "run_id": 38925818909,
+      "kind": "documentation",
+      "state": "NOT_STARTED_ACCOUNT_RESTRICTION"
+    }
+  ]
 }
