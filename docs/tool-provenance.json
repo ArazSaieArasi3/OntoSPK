@@ -1,0 +1,22 @@
+{
+  "widoco": {
+    "version": "1.4.25",
+    "download": "https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar",
+    "jar_sha256": "be57a270fffb91e55810fa308717e704a44e2e7c027a3d68125a49da6c8b4e2b",
+    "configuration": "tools/publication/widoco.properties",
+    "source_logical_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+    "webvowl_default_conversion": "empty entity projection; not used as the published graph"
+  },
+  "webvowl": {
+    "version": "1.1.7",
+    "source": "https://github.com/VisualDataWeb/WebVOWL/tree/28e7dd9540622e8cb723dc000824b5eef5ae775f",
+    "build": "npm install --ignore-scripts --no-audit --no-fund; NODE_OPTIONS=--openssl-legacy-provider npx grunt release",
+    "dependency_lock": "docs/webvowl-build-package-lock.json",
+    "data_adapter": "tools/publication/build_webvowl_data.py",
+    "source_urns_preserved": true,
+    "changes": [
+      "only the OntoSPK preset is offered",
+      "documentation and coverage links added; runtime graph semantics unchanged"
+    ]
+  }
+}

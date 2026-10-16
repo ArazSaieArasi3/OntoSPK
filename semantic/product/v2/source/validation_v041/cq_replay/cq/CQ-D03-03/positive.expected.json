@@ -1,0 +1,30 @@
+[
+  [
+    "urn:orsd:v04:synthetic:product",
+    "urn:orsd:v04:synthetic:v1",
+    "urn:orsd:v04:synthetic:scope1",
+    "included",
+    "Feature A"
+  ],
+  [
+    "urn:orsd:v04:synthetic:product",
+    "urn:orsd:v04:synthetic:v1",
+    "urn:orsd:v04:synthetic:scope1",
+    "excluded",
+    "Feature B"
+  ],
+  [
+    "urn:orsd:v04:synthetic:product",
+    "urn:orsd:v04:synthetic:v2",
+    "urn:orsd:v04:synthetic:scope2",
+    "included",
+    "Feature A and Feature B"
+  ],
+  [
+    "urn:orsd:v04:synthetic:product",
+    "urn:orsd:v04:synthetic:v2",
+    "urn:orsd:v04:synthetic:scope2",
+    "excluded",
+    "Feature C"
+  ]
+]

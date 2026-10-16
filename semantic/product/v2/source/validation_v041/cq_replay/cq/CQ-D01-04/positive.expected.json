@@ -1,0 +1,30 @@
+[
+  [
+    "urn:orsd:v06:synthetic:product",
+    "urn:orsd:v06:synthetic:depLocal",
+    "product",
+    "urn:orsd:v06:synthetic:localTarget",
+    null
+  ],
+  [
+    "urn:orsd:v06:synthetic:product",
+    "urn:orsd:v06:synthetic:depActual",
+    "actual_capability",
+    "urn:orsd:v06:synthetic:actual",
+    null
+  ],
+  [
+    "urn:orsd:v06:synthetic:product",
+    "urn:orsd:v06:synthetic:depIntended",
+    "intended_capability",
+    "urn:orsd:v06:synthetic:intended",
+    null
+  ],
+  [
+    "urn:orsd:v06:synthetic:product",
+    "urn:orsd:v06:synthetic:depExternal",
+    "external_reference",
+    "urn:orsd:v06:synthetic:external",
+    "urn:orsd:v06:synthetic:externalResource"
+  ]
+]

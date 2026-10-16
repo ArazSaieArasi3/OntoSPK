@@ -1,0 +1,1991 @@
+{
+  "version": "0.41.0",
+  "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "total": 146,
+  "passed": 146,
+  "groups": {
+    "external_boundary": {
+      "total": 36,
+      "passed": 36
+    },
+    "history": {
+      "total": 11,
+      "passed": 11
+    },
+    "identity_policy": {
+      "total": 25,
+      "passed": 25
+    },
+    "occurrence": {
+      "total": 28,
+      "passed": 28
+    },
+    "owner_rdf": {
+      "total": 3,
+      "passed": 3
+    },
+    "persistence": {
+      "total": 1,
+      "passed": 1
+    },
+    "retained_event": {
+      "total": 42,
+      "passed": 42
+    }
+  },
+  "results": [
+    {
+      "id": "exercised_code_attempt",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "exercised_code_attempt",
+          "idempotent_replay": false,
+          "triples": 46,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft",
+          "profile": "0.41.0",
+          "occurrence_sql": true,
+          "occurrence_shacl": true,
+          "roost_equivalence": false
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": null
+      }
+    },
+    {
+      "id": "late_report_is_documentation",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "late_report_is_documentation",
+          "idempotent_replay": false,
+          "triples": 46,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft",
+          "profile": "0.41.0",
+          "occurrence_sql": true,
+          "occurrence_shacl": true,
+          "roost_equivalence": false
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": null
+      }
+    },
+    {
+      "id": "setup_abort_target_unestablished",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "setup_abort_target_unestablished",
+          "idempotent_replay": false,
+          "triples": 43,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft",
+          "profile": "0.41.0",
+          "occurrence_sql": true,
+          "occurrence_shacl": true,
+          "roost_equivalence": false
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": null
+      }
+    },
+    {
+      "id": "unknown_start_without_fabricated_time",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "unknown_start_without_fabricated_time",
+          "idempotent_replay": false,
+          "triples": 45,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft",
+          "profile": "0.41.0",
+          "occurrence_sql": true,
+          "occurrence_shacl": true,
+          "roost_equivalence": false
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": null
+      }
+    },
+    {
+      "id": "same_graph_new_snapshot",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "same_graph_new_snapshot",
+          "idempotent_replay": false,
+          "triples": 46,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft",
+          "profile": "0.41.0",
+          "occurrence_sql": true,
+          "occurrence_shacl": true,
+          "roost_equivalence": false
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": null
+      }
+    },
+    {
+      "id": "repeat_new_event_equal_times",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "repeat_new_event_equal_times",
+          "idempotent_replay": false,
+          "triples": 46,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft",
+          "profile": "0.41.0",
+          "occurrence_sql": true,
+          "occurrence_shacl": true,
+          "roost_equivalence": false
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": null
+      }
+    },
+    {
+      "id": "missing_startTimeKnowledge",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "START_KNOWLEDGE_ENUM",
+            "startTimeKnowledge:count"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "START_KNOWLEDGE_ENUM",
+          "startTimeKnowledge:count"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "missing_executionSource",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "executionSource:count"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "executionSource:count"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "missing_executionStage",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "ROOST_SUBSET_WITNESS_REQUIRED",
+            "STAGE_ENUM",
+            "executionStage:count"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "ROOST_SUBSET_WITNESS_REQUIRED",
+          "STAGE_ENUM",
+          "executionStage:count"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "missing_targetParticipation",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "EXERCISED_PARTICIPATION_REQUIRED",
+            "PARTICIPATION_ENUM",
+            "ROOST_SUBSET_WITNESS_REQUIRED",
+            "targetParticipation:count"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "EXERCISED_PARTICIPATION_REQUIRED",
+          "PARTICIPATION_ENUM",
+          "ROOST_SUBSET_WITNESS_REQUIRED",
+          "targetParticipation:count"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "missing_roostCandidate",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "BOOLEAN_LEXICAL",
+            "roostCandidate:count"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "BOOLEAN_LEXICAL",
+          "roostCandidate:count"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "known_start_missing",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "KNOWN_START_REQUIRED"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "KNOWN_START_REQUIRED"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "unknown_with_invented_start",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "UNKNOWN_START_MUST_BE_ABSENT"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "UNKNOWN_START_MUST_BE_ABSENT"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "start_after_end",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "START_AFTER_END"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "START_AFTER_END"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "start_date_only",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "TIME_ENVELOPE_OR_TIMEZONE"
+          ]
+        },
+        "sql": false,
+        "shacl": true,
+        "sqlerrors": [
+          "TIME_ENVELOPE_OR_TIMEZONE"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "impossible_calendar_date",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "TIME_ENVELOPE_OR_TIMEZONE"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "TIME_ENVELOPE_OR_TIMEZONE"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "timezone_missing",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "TIME_ENVELOPE_OR_TIMEZONE"
+          ]
+        },
+        "sql": false,
+        "shacl": true,
+        "sqlerrors": [
+          "TIME_ENVELOPE_OR_TIMEZONE"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "supported_participation_missing_source",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "PARTICIPATION_SOURCE_REQUIRED"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "PARTICIPATION_SOURCE_REQUIRED"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "participation_unknown_with_positive_source",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "EXERCISED_PARTICIPATION_REQUIRED",
+            "ROOST_SUBSET_WITNESS_REQUIRED",
+            "UNESTABLISHED_WITH_SOURCE"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "EXERCISED_PARTICIPATION_REQUIRED",
+          "ROOST_SUBSET_WITNESS_REQUIRED",
+          "UNESTABLISHED_WITH_SOURCE"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "code_candidate_without_code",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "CODE_SOURCE_WITHOUT_CODE",
+            "ROOST_SUBSET_WITNESS_REQUIRED"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "CODE_SOURCE_WITHOUT_CODE",
+          "ROOST_SUBSET_WITNESS_REQUIRED"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "code_candidate_without_use_source",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "ROOST_SUBSET_WITNESS_REQUIRED"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "ROOST_SUBSET_WITNESS_REQUIRED"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "invalid_stage",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "ROOST_SUBSET_WITNESS_REQUIRED",
+            "STAGE_ENUM"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "ROOST_SUBSET_WITNESS_REQUIRED",
+          "STAGE_ENUM"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "relative_observation_source",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "executionSource:absolute_iri"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "executionSource:absolute_iri"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "untyped_subject_with_profile",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "UNTYPED_PROFILE_SUBJECT"
+          ]
+        },
+        "sql": false,
+        "shacl": true,
+        "sqlerrors": [
+          "UNTYPED_PROFILE_SUBJECT"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "missing_end_not_fabricated",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "ONE_KNOWN_END_REQUIRED"
+          ]
+        },
+        "sql": false,
+        "shacl": true,
+        "sqlerrors": [
+          "ONE_KNOWN_END_REQUIRED"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "setup_claims_pass",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "occurrence_sql",
+          "detail": [
+            "ROOST_SUBSET_WITNESS_REQUIRED",
+            "SETUP_ONLY_NOT_A_TEST_EXERCISE"
+          ]
+        },
+        "sql": false,
+        "shacl": false,
+        "sqlerrors": [
+          "ROOST_SUBSET_WITNESS_REQUIRED",
+          "SETUP_ONLY_NOT_A_TEST_EXERCISE"
+        ],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "report_before_end",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:delivery-profile:0.5:shape:TestResult>\n\tFocus Node: <urn:product-ontology:event-instance:result1>\n\tValue Node: <urn:product-ontology:event-instance:result1>\n\tSource Constraint: <urn:product-ontology:delivery-profile:0.5:shape:ResultTime>\n\tMessage: A consolidated result report must not predate the recorded run end.\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "historical_event_source_rewrite",
+      "passed": true,
+      "group": "occurrence",
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "history",
+          "detail": {
+            "kind": "completed_event",
+            "iri": "urn:product-ontology:event-instance:e1",
+            "reason": "IMMUTABLE_BINDING_CONFLICT"
+          },
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true
+          }
+        },
+        "sql": true,
+        "shacl": true,
+        "sqlerrors": [],
+        "unchanged_on_rejection": true
+      }
+    },
+    {
+      "id": "idempotent_profile_replay",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "ACCEPTED_SCOPED",
+        "idempotent_replay": true,
+        "snapshot": "exercised_code_attempt",
+        "profile": "0.41.0",
+        "occurrence_sql": true,
+        "occurrence_shacl": true,
+        "roost_equivalence": false
+      }
+    },
+    {
+      "id": "correction_append_preserves_event_graph",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "RECORDED_ASSERTION",
+        "changes_accepted_occurrence": false,
+        "independent_acceptance": false
+      }
+    },
+    {
+      "id": "correction_supersession_chain",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "RECORDED_ASSERTION",
+        "changes_accepted_occurrence": false,
+        "independent_acceptance": false
+      }
+    },
+    {
+      "id": "duplicate_observation",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "IMMUTABLE_OBSERVATION"
+      }
+    },
+    {
+      "id": "missing_source",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "ABSOLUTE_IRI_REQUIRED"
+      }
+    },
+    {
+      "id": "unknown_event",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "UNKNOWN_ACCEPTED_EVENT"
+      }
+    },
+    {
+      "id": "unsupported_rebinding",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "UNSUPPORTED_OBSERVATION_FIELD"
+      }
+    },
+    {
+      "id": "nonexistent_supersession",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "INVALID_SUPERSESSION"
+      }
+    },
+    {
+      "id": "reversed_observation_time",
+      "passed": true,
+      "group": "history",
+      "detail": {
+        "status": "REJECTED",
+        "reason": "OBSERVATION_TIME_REVERSED"
+      }
+    },
+    {
+      "id": "observation_update",
+      "passed": true,
+      "group": "history",
+      "detail": null
+    },
+    {
+      "id": "observation_delete",
+      "passed": true,
+      "group": "history",
+      "detail": null
+    },
+    {
+      "id": "extended_graph_disk_roundtrip",
+      "passed": true,
+      "group": "persistence",
+      "detail": null
+    },
+    {
+      "id": "retained_event_completed_record",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_AcceptanceCriterionSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_ConstraintSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_FunctionalRequirementSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_GoalSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_MarketingGoalSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_OutcomeSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_QualityRequirementSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_only_RequirementSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_completed_failed",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_completed_aborted",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_repeat_new_event_same_bindings",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_explicit_suite_index",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_wrong_suite_index",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_091",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_multiple_091",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_091",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_090",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_multiple_090",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_090",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_147",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_testsRealization",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_multiple_testsRealization",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_testsRealization",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_assessesSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_assessesSpecification",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_executionContext",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_multiple_executionContext",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_executionContext",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_executionCriterion",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_wrong_target_executionCriterion",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_event_type",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_specification_as_event",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_missing_end_time",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_multiple_end_times",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_malformed_end_time",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_one_result_two_events",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_unmatched_capability_version",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_no_realization_version",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": false,
+        "shacl": false,
+        "expected": false
+      }
+    },
+    {
+      "id": "retained_event_no_criterion_propagation_019",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_no_criterion_propagation_046",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "retained_event_no_criterion_propagation_044",
+      "passed": true,
+      "group": "retained_event",
+      "detail": {
+        "sql": true,
+        "shacl": true,
+        "expected": true
+      }
+    },
+    {
+      "id": "identity_restart_preserved",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "SAME",
+        "capability_identity": "SAME",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_restart_disposition_recreated",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "SAME",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_rolling_upgrade",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_rollback_successor",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_migration_preserved",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "SAME",
+        "capability_identity": "SAME",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_migration_disposition_recreated",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "SAME",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_migration_breaks_whole",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_migration_branches",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_clone_same_version",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_destroy_and_recreate",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "ACCEPTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": []
+      }
+    },
+    {
+      "id": "identity_unknown_system",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REVIEW_REQUIRED",
+        "errors": [
+          "SYSTEM_CONTINUITY_UNDETERMINED"
+        ]
+      }
+    },
+    {
+      "id": "identity_unknown_disposition",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REVIEW_REQUIRED",
+        "errors": [
+          "DISPOSITION_CONTINUITY_UNDETERMINED"
+        ]
+      }
+    },
+    {
+      "id": "identity_upgrade_reuses_object",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "realization_identity": "DISTINCT",
+        "errors": [
+          "REALIZATION_IDENTITY_CONTRADICTION"
+        ]
+      }
+    },
+    {
+      "id": "identity_cross_bearer_mode_reuse",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "realization_identity": "DISTINCT",
+        "capability_identity": "DISTINCT",
+        "errors": [
+          "CAPABILITY_IDENTITY_CONTRADICTION"
+        ]
+      }
+    },
+    {
+      "id": "identity_clone_reuses_whole",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "realization_identity": "DISTINCT",
+        "errors": [
+          "REALIZATION_IDENTITY_CONTRADICTION"
+        ]
+      }
+    },
+    {
+      "id": "identity_broken_disposition_reuses_mode",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "realization_identity": "SAME",
+        "capability_identity": "DISTINCT",
+        "errors": [
+          "CAPABILITY_IDENTITY_CONTRADICTION"
+        ]
+      }
+    },
+    {
+      "id": "identity_same_disposition_split_without_basis",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "realization_identity": "SAME",
+        "capability_identity": "SAME",
+        "errors": [
+          "CAPABILITY_IDENTITY_CONTRADICTION"
+        ]
+      }
+    },
+    {
+      "id": "identity_preserved_whole_split_without_basis",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "realization_identity": "SAME",
+        "errors": [
+          "REALIZATION_IDENTITY_CONTRADICTION"
+        ]
+      }
+    },
+    {
+      "id": "identity_restart_changes_version",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "VERSION_CHANGE_REQUIRES_SUCCESSOR_OPERATION"
+        ]
+      }
+    },
+    {
+      "id": "identity_upgrade_without_version_change",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "VERSION_CHANGE_REQUIRED"
+        ]
+      }
+    },
+    {
+      "id": "identity_empty_evidence",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "INVALID_EVIDENCE"
+        ]
+      }
+    },
+    {
+      "id": "identity_identifier_looks_like_iri",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "INVALID_AFTER_R"
+        ]
+      }
+    },
+    {
+      "id": "identity_unrecognized_operation",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "UNKNOWN_OPERATION"
+        ]
+      }
+    },
+    {
+      "id": "identity_invalid_continuity_enum",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "INVALID_SYSTEM_CONTINUITY"
+        ]
+      }
+    },
+    {
+      "id": "identity_string_boolean",
+      "passed": true,
+      "group": "identity_policy",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "INVALID_BRANCHING"
+        ]
+      }
+    },
+    {
+      "id": "executable_script",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "manual_procedure",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "manual_as_roost_script",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "MANUAL_PROCEDURE_IS_NOT_ROOST_SCRIPT"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "unqualified_old_script",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH",
+          "MANUAL_PROCEDURE_IS_NOT_ROOST_SCRIPT"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "test_plan_document",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "suite_as_plan",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "dataset_configuration",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "environment_as_dataset",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "productline_as_dataset",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "competitor_role",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "alternative_assertion",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "alternative_as_class",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "ALTERNATIVE_ASSERTION_IS_NOT_AN_IMPORTED_CLASS"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "wrong_competitor_class",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "PINNED_COMPETITOR_CLASS_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "wrong_alternative_predicate",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "PINNED_ALTERNATIVE_PREDICATE_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "alternative_missing_object",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "ALTERNATIVE_ENDPOINTS_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "competitor_missing_market",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "COMPETITIVE_CONTEXT_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "competitor_missing_focal_product",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "COMPETITIVE_CONTEXT_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "competitor_missing_need",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "COMPETITIVE_CONTEXT_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "competitor_missing_valid_time",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "COMPETITIVE_CONTEXT_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "script_missing_source",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "script_missing_version",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "script_missing_target",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "forbidden_sameAs",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "EQUIVALENCE_NOT_AUTHORIZED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "forbidden_equivalentClass",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "EQUIVALENCE_NOT_AUTHORIZED"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:EvidenceLayer:Evidence_typed",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:EvidenceLayer:Evidence_conflation",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:Market:MarketInsight_typed",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:Market:MarketInsight_conflation",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:ProductManagement:Metric_typed",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:ProductManagement:Metric_conflation",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:ExternalUnresolved:Evidence_typed",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:ExternalUnresolved:Evidence_conflation",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:UXResearch:User_Mental_Model_typed",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:UXResearch:User_Mental_Model_conflation",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:Market:Pain_typed",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "CONTRACT_CONFORMING_ONLY",
+        "errors": [],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "EXT:Market:Pain_conflation",
+      "passed": true,
+      "group": "external_boundary",
+      "detail": {
+        "status": "REJECTED",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "semantic_equivalence": false,
+        "owner_acceptance": false
+      }
+    },
+    {
+      "id": "pinned_competitor_class",
+      "passed": true,
+      "group": "owner_rdf",
+      "detail": null
+    },
+    {
+      "id": "pinned_alternative_property",
+      "passed": true,
+      "group": "owner_rdf",
+      "detail": null
+    },
+    {
+      "id": "no_fabricated_market_classes",
+      "passed": true,
+      "group": "owner_rdf",
+      "detail": null
+    }
+  ],
+  "new_positive_population_triples": 46,
+  "scope": "Synthetic profile and regression controls. Independent semantic review, full ROoST integration, complete UFO-B semantics and real browser acceptance remain unexecuted.",
+  "independent_acceptances": 0
+}

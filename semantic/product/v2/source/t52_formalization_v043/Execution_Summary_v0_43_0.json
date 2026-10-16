@@ -1,0 +1,23 @@
+{
+  "version": "0.43.0",
+  "native_version": "0.41.0",
+  "native_unchanged": true,
+  "static_expressions": 892,
+  "commitments": 22,
+  "profile_checks": 13,
+  "reasoner_cases": 13,
+  "reasoner_cases_passed": 13,
+  "expected_consistent": 8,
+  "expected_inconsistent": 5,
+  "closed_world_contrasts": 4,
+  "contrasts_passed": 4,
+  "revision_controls": 146,
+  "integration_controls": 42,
+  "cq_comparisons": 374,
+  "cq_inference": "NONE",
+  "independent_acceptances": 0,
+  "full_modal_semantics": false,
+  "identity_transition_integrated_into_admission": false,
+  "logical_axioms_changed": false,
+  "explanatory_comments_changed": 2
+}

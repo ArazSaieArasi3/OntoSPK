@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?product ?version ?productStatus WHERE {
+VALUES ?product { e:productA } ?product p:hasVersion ?version . OPTIONAL { ?product p:hasProductStatusRecord ?productStatus }
+}

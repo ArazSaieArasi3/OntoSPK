@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?requirement ?finding ?change WHERE {
+VALUES ?requirement { e:requirementA } ?finding p:concernsRequirement ?requirement . OPTIONAL { ?finding p:r135_recordsResolutionChange ?change }
+}

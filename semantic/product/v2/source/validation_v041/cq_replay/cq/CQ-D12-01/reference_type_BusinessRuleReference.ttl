@@ -1,0 +1,6 @@
+<urn:orsd:v03:synthetic:referenceA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:BusinessRuleReference> .
+<urn:orsd:v03:synthetic:referenceA> <urn:productium:specification-profile:canonicalOwner> <urn:orsd:v03:synthetic:authorityA> .
+<urn:orsd:v03:synthetic:referenceA> <urn:productium:specification-profile:referenceTarget> <urn:orsd:v03:synthetic:familyA> .
+<urn:orsd:v03:synthetic:referenceAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductFamilyReference> .
+<urn:orsd:v03:synthetic:referenceAOther> <urn:productium:specification-profile:canonicalOwner> <urn:orsd:v03:synthetic:authorityAOther> .
+<urn:orsd:v03:synthetic:referenceAOther> <urn:productium:specification-profile:referenceTarget> <urn:orsd:v03:synthetic:familyAOther> .

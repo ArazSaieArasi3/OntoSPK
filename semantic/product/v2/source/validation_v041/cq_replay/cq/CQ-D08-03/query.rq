@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?suite ?case WHERE {
+VALUES ?suite { e:suiteA } ?suite p:containsCase ?case .
+}

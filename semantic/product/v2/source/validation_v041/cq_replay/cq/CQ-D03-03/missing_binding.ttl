@@ -1,0 +1,60 @@
+<urn:orsd:v04:synthetic:actual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductCapability> .
+<urn:orsd:v04:synthetic:actual> <urn:productium:specification-profile:evaluatedAgainst> <urn:orsd:v04:synthetic:intended> .
+<urn:orsd:v04:synthetic:change2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ChangeRecord> .
+<urn:orsd:v04:synthetic:claimA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:AssessmentClaim> .
+<urn:orsd:v04:synthetic:claimA> <urn:product-ontology:assessment-profile:0.4:claimActualCapability> <urn:orsd:v04:synthetic:actual> .
+<urn:orsd:v04:synthetic:claimA> <urn:product-ontology:assessment-profile:0.4:claimContext> <urn:orsd:v04:synthetic:context> .
+<urn:orsd:v04:synthetic:claimA> <urn:product-ontology:assessment-profile:0.4:claimCriterion> <urn:orsd:v04:synthetic:criterion> .
+<urn:orsd:v04:synthetic:claimA> <urn:product-ontology:assessment-profile:0.4:claimIntendedCapability> <urn:orsd:v04:synthetic:intended> .
+<urn:orsd:v04:synthetic:claimA> <urn:product-ontology:assessment-profile:0.4:claimRealization> <urn:orsd:v04:synthetic:realization> .
+<urn:orsd:v04:synthetic:claimA> <urn:product-ontology:assessment-profile:0.4:claimStatement> "The assessed capability meets the stated criterion in context A" .
+<urn:orsd:v04:synthetic:claimB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:AssessmentClaim> .
+<urn:orsd:v04:synthetic:claimB> <urn:product-ontology:assessment-profile:0.4:claimActualCapability> <urn:orsd:v04:synthetic:actual> .
+<urn:orsd:v04:synthetic:claimB> <urn:product-ontology:assessment-profile:0.4:claimContext> <urn:orsd:v04:synthetic:context> .
+<urn:orsd:v04:synthetic:claimB> <urn:product-ontology:assessment-profile:0.4:claimCriterion> <urn:orsd:v04:synthetic:criterion> .
+<urn:orsd:v04:synthetic:claimB> <urn:product-ontology:assessment-profile:0.4:claimIntendedCapability> <urn:orsd:v04:synthetic:intended> .
+<urn:orsd:v04:synthetic:claimB> <urn:product-ontology:assessment-profile:0.4:claimRealization> <urn:orsd:v04:synthetic:realization> .
+<urn:orsd:v04:synthetic:claimB> <urn:product-ontology:assessment-profile:0.4:claimStatement> "The assessed capability does not meet the stated criterion in context A" .
+<urn:orsd:v04:synthetic:context> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> .
+<urn:orsd:v04:synthetic:context> <urn:product-ontology:assessment-profile:0.4:contextDescription> "Recorded workload and environment A during the assessment interval" .
+<urn:orsd:v04:synthetic:context> <urn:product-ontology:assessment-profile:0.4:contextSource> "urn:source:assessment-protocol-A"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:context> <urn:product-ontology:assessment-profile:0.4:contextVersion> <urn:orsd:v04:synthetic:v1> .
+<urn:orsd:v04:synthetic:criterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:AcceptanceCriterionSpecification> .
+<urn:orsd:v04:synthetic:finding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:UsabilityFindingRecord> .
+<urn:orsd:v04:synthetic:finding> <urn:product-ontology:assessment-profile:0.4:findingSource> "urn:source:observation-log-A"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:finding> <urn:product-ontology:assessment-profile:0.4:findingStatement> "Observed responses vary across the recorded runs" .
+<urn:orsd:v04:synthetic:intended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:CapabilitySpecification> .
+<urn:orsd:v04:synthetic:product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:Product> .
+<urn:orsd:v04:synthetic:product> <urn:productium:specification-profile:hasVersion> <urn:orsd:v04:synthetic:v1> .
+<urn:orsd:v04:synthetic:product> <urn:productium:specification-profile:hasVersion> <urn:orsd:v04:synthetic:v2> .
+<urn:orsd:v04:synthetic:realization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductRealization> .
+<urn:orsd:v04:synthetic:realization> <urn:productium:specification-profile:bearsCapability> <urn:orsd:v04:synthetic:actual> .
+<urn:orsd:v04:synthetic:realization> <urn:productium:specification-profile:realizesVersion> <urn:orsd:v04:synthetic:v1> .
+<urn:orsd:v04:synthetic:recordA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:VerificationEvidenceRecord> .
+<urn:orsd:v04:synthetic:recordA> <urn:product-ontology:assessment-profile:0.4:attributionAgent> "urn:assessor:A"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:recordA> <urn:product-ontology:assessment-profile:0.4:attributionSource> "urn:source:assessment-A"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:recordA> <urn:product-ontology:assessment-profile:0.4:attributionStance> "supports" .
+<urn:orsd:v04:synthetic:recordA> <urn:product-ontology:assessment-profile:0.4:attributionTimestamp> "2026-10-10T09:00:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<urn:orsd:v04:synthetic:recordA> <urn:productium:specification-profile:recordsCarrier> <urn:orsd:v04:synthetic:finding> .
+<urn:orsd:v04:synthetic:recordA> <urn:productium:specification-profile:recordsClaim> <urn:orsd:v04:synthetic:claimA> .
+<urn:orsd:v04:synthetic:recordB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:VerificationEvidenceRecord> .
+<urn:orsd:v04:synthetic:recordB> <urn:product-ontology:assessment-profile:0.4:attributionAgent> "urn:assessor:B"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:recordB> <urn:product-ontology:assessment-profile:0.4:attributionSource> "urn:source:assessment-B"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:recordB> <urn:product-ontology:assessment-profile:0.4:attributionStance> "challenges" .
+<urn:orsd:v04:synthetic:recordB> <urn:product-ontology:assessment-profile:0.4:attributionTimestamp> "2026-10-10T09:30:00+00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<urn:orsd:v04:synthetic:recordB> <urn:productium:specification-profile:recordsCarrier> <urn:orsd:v04:synthetic:finding> .
+<urn:orsd:v04:synthetic:recordB> <urn:productium:specification-profile:recordsClaim> <urn:orsd:v04:synthetic:claimB> .
+<urn:orsd:v04:synthetic:scope1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ScopeSpecification> .
+<urn:orsd:v04:synthetic:scope1> <urn:product-ontology:assessment-profile:0.4:excludedStatement> "Feature B" .
+<urn:orsd:v04:synthetic:scope1> <urn:product-ontology:assessment-profile:0.4:includedStatement> "Feature A" .
+<urn:orsd:v04:synthetic:scope1> <urn:product-ontology:assessment-profile:0.4:scopeSource> "urn:source:scope-baseline-1"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:scope2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ScopeSpecification> .
+<urn:orsd:v04:synthetic:scope2> <urn:product-ontology:assessment-profile:0.4:excludedStatement> "Feature C" .
+<urn:orsd:v04:synthetic:scope2> <urn:product-ontology:assessment-profile:0.4:includedStatement> "Feature A and Feature B" .
+<urn:orsd:v04:synthetic:scope2> <urn:product-ontology:assessment-profile:0.4:scopeChangeRecord> <urn:orsd:v04:synthetic:change2> .
+<urn:orsd:v04:synthetic:scope2> <urn:product-ontology:assessment-profile:0.4:scopeSource> "urn:source:scope-baseline-2"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<urn:orsd:v04:synthetic:scope2> <urn:product-ontology:assessment-profile:0.4:scopeSupersedes> <urn:orsd:v04:synthetic:scope1> .
+<urn:orsd:v04:synthetic:v1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductVersion> .
+<urn:orsd:v04:synthetic:v1> <urn:productium:specification-profile:specifiesCapability> <urn:orsd:v04:synthetic:intended> .
+<urn:orsd:v04:synthetic:v2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductVersion> .
+<urn:orsd:v04:synthetic:v2> <urn:product-ontology:assessment-profile:0.4:versionScope> <urn:orsd:v04:synthetic:scope2> .

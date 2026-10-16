@@ -1,0 +1,6 @@
+<urn:orsd:v03:synthetic:caseA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:TestCase> .
+<urn:orsd:v03:synthetic:caseAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:TestCase> .
+<urn:orsd:v03:synthetic:suiteA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:TestSuiteSpecification> .
+<urn:orsd:v03:synthetic:suiteA> <urn:productium:specification-profile:containsCase> <urn:orsd:v03:synthetic:caseA> .
+<urn:orsd:v03:synthetic:suiteAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:TestSuiteSpecification> .
+<urn:orsd:v03:synthetic:suiteAOther> <urn:productium:specification-profile:containsCase> <urn:orsd:v03:synthetic:caseAOther> .

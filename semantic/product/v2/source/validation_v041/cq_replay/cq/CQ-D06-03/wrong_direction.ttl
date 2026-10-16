@@ -1,0 +1,6 @@
+<urn:orsd:v03:synthetic:entryA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:RoadmapEntry> .
+<urn:orsd:v03:synthetic:entryAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:RoadmapEntry> .
+<urn:orsd:v03:synthetic:entryAOther> <urn:productium:specification-profile:r67_targetsMilestone> <urn:orsd:v03:synthetic:milestoneAOther> .
+<urn:orsd:v03:synthetic:milestoneA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:MilestoneSpecification> .
+<urn:orsd:v03:synthetic:milestoneA> <urn:productium:specification-profile:r67_targetsMilestone> <urn:orsd:v03:synthetic:entryA> .
+<urn:orsd:v03:synthetic:milestoneAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:MilestoneSpecification> .

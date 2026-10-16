@@ -1,0 +1,6481 @@
+{
+  "_comment": "Derived exploratory view; missing endpoints are omitted, not supplied. See coverage.json.",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "title": {
+      "en": "OntoSPK bounded OWL profile"
+    },
+    "iri": "urn:productium:specification-profile:",
+    "version": "Logical profile 0.43.0; distribution candidate 2.0.0-rc.1",
+    "description": {
+      "en": "An exploratory projection of asserted named classes, declared property endpoints and URI subclass edges. It does not encode all restrictions, disjointness, SHACL or SQL policies."
+    }
+  },
+  "namespace": [
+    {
+      "name": "brick",
+      "iri": "https://brickschema.org/schema/Brick#"
+    },
+    {
+      "name": "csvw",
+      "iri": "http://www.w3.org/ns/csvw#"
+    },
+    {
+      "name": "dc",
+      "iri": "http://purl.org/dc/elements/1.1/"
+    },
+    {
+      "name": "dcat",
+      "iri": "http://www.w3.org/ns/dcat#"
+    },
+    {
+      "name": "dcmitype",
+      "iri": "http://purl.org/dc/dcmitype/"
+    },
+    {
+      "name": "dcterms",
+      "iri": "http://purl.org/dc/terms/"
+    },
+    {
+      "name": "dcam",
+      "iri": "http://purl.org/dc/dcam/"
+    },
+    {
+      "name": "doap",
+      "iri": "http://usefulinc.com/ns/doap#"
+    },
+    {
+      "name": "foaf",
+      "iri": "http://xmlns.com/foaf/0.1/"
+    },
+    {
+      "name": "geo",
+      "iri": "http://www.opengis.net/ont/geosparql#"
+    },
+    {
+      "name": "odrl",
+      "iri": "http://www.w3.org/ns/odrl/2/"
+    },
+    {
+      "name": "org",
+      "iri": "http://www.w3.org/ns/org#"
+    },
+    {
+      "name": "prof",
+      "iri": "http://www.w3.org/ns/dx/prof/"
+    },
+    {
+      "name": "prov",
+      "iri": "http://www.w3.org/ns/prov#"
+    },
+    {
+      "name": "qb",
+      "iri": "http://purl.org/linked-data/cube#"
+    },
+    {
+      "name": "schema",
+      "iri": "https://schema.org/"
+    },
+    {
+      "name": "sh",
+      "iri": "http://www.w3.org/ns/shacl#"
+    },
+    {
+      "name": "skos",
+      "iri": "http://www.w3.org/2004/02/skos/core#"
+    },
+    {
+      "name": "sosa",
+      "iri": "http://www.w3.org/ns/sosa/"
+    },
+    {
+      "name": "ssn",
+      "iri": "http://www.w3.org/ns/ssn/"
+    },
+    {
+      "name": "time",
+      "iri": "http://www.w3.org/2006/time#"
+    },
+    {
+      "name": "vann",
+      "iri": "http://purl.org/vocab/vann/"
+    },
+    {
+      "name": "void",
+      "iri": "http://rdfs.org/ns/void#"
+    },
+    {
+      "name": "wgs",
+      "iri": "https://www.w3.org/2003/01/geo/wgs84_pos#"
+    },
+    {
+      "name": "owl",
+      "iri": "http://www.w3.org/2002/07/owl#"
+    },
+    {
+      "name": "rdf",
+      "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    },
+    {
+      "name": "rdfs",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+      "name": "xsd",
+      "iri": "http://www.w3.org/2001/XMLSchema#"
+    },
+    {
+      "name": "xml",
+      "iri": "http://www.w3.org/XML/1998/namespace"
+    }
+  ],
+  "class": [
+    {
+      "id": "nbe9501df367a580d21c7",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "ndb3d52aca856342fb9e5",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "n24ea0d6e70c5cb98db61",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "n9a5060b5358b2345b223",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n17e65d34fbf03cac4870",
+      "type": "owl:Class"
+    },
+    {
+      "id": "naeb7c90c9428f535f976",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nfee3a4dbc74278cd5370",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n164e75152d167f8c82c8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ndcbfdfeda0f213b37466",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf89e956003d8ae67cf9f",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nc090e4a7ec02b61bb9ed",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf1320a418d78d1e4167a",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n0e38f93721eccd8ca39d",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nc26fe8bda2a516cae4ba",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n89aedc2cded108c0403a",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf652b3e0939ab0e3f8c7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n77f789bbf27b5f560a9e",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n3061cf789325c052beb1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1d938a321bcbcc76523a",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n66d9255488ebcdfdeb9d",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ncaacdc2cab1addcd86e4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n3f8a16796c9e2b48a650",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n2b652a79f68dd58cfaf3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1aa4dbada3349d298cfa",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n8ac437236da727ad980d",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n0299ae3ee8cee91408d7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n6e1188524044ed8ad6ee",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nde10da7b4fc8f28f82b0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n4878d612866e5c07ec1b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf7007010bd1b2d8f568b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n54a4db46d43f05edd03c",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n73a1b9784063fc7a22c7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n970520af8f016acd4c08",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf3de1b87cc6babb26efd",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nff01d22870ea111b7133",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n88476b59184a9fdbd673",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nbd3c5c1d047365e8eb98",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ne93b5ff63c4ef22bf7ba",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n8fe3dc034829c31c4142",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n2f0e28256b511bd84922",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nd6051b084cfe444fac84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ne59c51e2c7c4a15fa19c",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf98a3f272cdbd2fabfa3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n9401a9e8da8fd27ad193",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n4a676984934d1b4f4176",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n6317ec1f3f8b2bfad6ec",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1c89f4985c96ff3d68a9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nc2bf0dcc58669f93dcdf",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n91eb227b10a4970c3cc9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n2de6dfb02ad297d63b52",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n6c2354404467ca74bca5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1732b9594bb2c164a06a",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ne383dc02f66bc8520af0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n9ac1cc8dc6c5308bff69",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n9a33f1c873edb5eb5d48",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n0a84724e3d1633575b17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n5404588ff42409a3ae27",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n44c8af3e1677f7730e54",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n6c58f66d7f088a511c33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n4d216026de7b0083b7d4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n19376d8c2f66058479c7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n8ccb5ce0cb112c9e327a",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n9e5a8393f98f2d32d67b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n19f0f0dca27a2810d649",
+      "type": "owl:Class"
+    },
+    {
+      "id": "necbebe36879703ae24b5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n24de73621f7136be50d7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n585f68a5591c2aa29eda",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nfd5297ce9739603fad23",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nb89a87132a8ff5def01d",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n05ee7bc3b37cd3a6253a",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n81fd0066656d60aa6899",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nb6519652879086591ef3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ne83956e971de9d7355b8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n23009b5ab2d30405d07d",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n5d53795275865e27f341",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nac21f6f9d706a4321449",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1c59291a669e62b92500",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nfe6d79b3478d83b2bd9c",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n5e2e77d6a96b5ea17b91",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n5801242c0d8f60f71f75",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nb7144cb84d81c48311ac",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nb18ff0aad466eac6e927",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nc7e309d614ac82d7c5ea",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n50f07de6f93a6d92246b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n7289b5d8d65bbfd79183",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nb516a087ea45d4a6266b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n15a4cd21010bba7236da",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n0a8d9825145110ae1b59",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ne1d59901dfbc8c55525e",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n538881c077a746a622fc",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n0b26c3e85bf0cca558e2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n37d609b444c80787097b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ndc35d28b62aafc850713",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1c228a11c2c6e1b36da3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n372235ba19d156a14ea3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n067f8073d9ce09b52740",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n381d20e5e1a2cd3bea9c",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nc1c3186e77af3e25ca30",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n131385c1d5ae776bb9df",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nbeb9b28d3a17d1628f9b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ncad2e1fc80eb429330e0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n724e7cc77cebd66e69d1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nca854bd1e5832a9e502b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n07684f2be0a0b29f5495",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n776e2c90c5cbe92b0e0b",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nf8688c9e2e0569d5756c",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n51d691cd1ceb8aa4ceda",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nd5ce3254dc5412d6f7e2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n6063ba4c607cd6a780b9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n483822c94eb44db5943f",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n26ca0bdab7f0504401a8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1c3da1d37d2a2c639c45",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n97bde355b59217c8efbc",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n88904c65dcbffc01b0e0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n64de458501de896988c4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n1be0710365de9c491d25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "nfb730f56dad52bf0a783",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ncccebf00cfd7eaba871e",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n680a42c6a3a099583212",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n89bff0caf1a037586fa2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ne628162e32d9a7ceb4ac",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n16c2d7e8b12bb91150ef",
+      "type": "owl:Class"
+    },
+    {
+      "id": "n25b6ba7857ff379f9809",
+      "type": "owl:Class"
+    },
+    {
+      "id": "ncc6f8a1e9aef6ab2e0e7",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "nbe9501df367a580d21c7",
+      "iri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "label": {
+        "en": "anyURI"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "ndb3d52aca856342fb9e5",
+      "iri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "label": {
+        "en": "dateTime"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "n24ea0d6e70c5cb98db61",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "label": {
+        "en": "string"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "n9a5060b5358b2345b223",
+      "iri": "urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification",
+      "label": {
+        "en": "Assessment Context Specification"
+      },
+      "comment": {
+        "en": "An authored specification fixing the applicability boundary of an assessment, including its stated population, environment and temporal conditions, with optional version and scenario bindings."
+      }
+    },
+    {
+      "id": "n17e65d34fbf03cac4870",
+      "iri": "urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord",
+      "label": {
+        "en": "Delivery Work Item Status Record"
+      },
+      "comment": {
+        "en": "An immutable dated information record assigning a status code under a stated scheme to one delivery work item, optionally qualified by one product version."
+      }
+    },
+    {
+      "id": "naeb7c90c9428f535f976",
+      "iri": "urn:product-ontology:external-boundary:0.7:Architecture%3AArchitectureElement",
+      "label": {
+        "en": "ArchitectureElement"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "nfee3a4dbc74278cd5370",
+      "iri": "urn:product-ontology:external-boundary:0.7:Architecture%3AComponent",
+      "label": {
+        "en": "Component"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n164e75152d167f8c82c8",
+      "iri": "urn:product-ontology:external-boundary:0.7:Architecture%3AInterface",
+      "label": {
+        "en": "Interface"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "ndcbfdfeda0f213b37466",
+      "iri": "urn:product-ontology:external-boundary:0.7:Architecture%3AService",
+      "label": {
+        "en": "Service"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "nf89e956003d8ae67cf9f",
+      "iri": "urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability",
+      "label": {
+        "en": "BusinessCapability"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "nc090e4a7ec02b61bb9ed",
+      "iri": "urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal",
+      "label": {
+        "en": "BusinessGoal"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "nf1320a418d78d1e4167a",
+      "iri": "urn:product-ontology:external-boundary:0.7:Business%3AService",
+      "label": {
+        "en": "Service"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n0e38f93721eccd8ca39d",
+      "iri": "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition",
+      "label": {
+        "en": "ValueProposition"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "nc26fe8bda2a516cae4ba",
+      "iri": "urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence",
+      "label": {
+        "en": "Evidence"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n89aedc2cded108c0403a",
+      "iri": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AConfiguration",
+      "label": {
+        "en": "Configuration"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "nf652b3e0939ab0e3f8c7",
+      "iri": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence",
+      "label": {
+        "en": "Evidence"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n77f789bbf27b5f560a9e",
+      "iri": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Plan",
+      "label": {
+        "en": "Test Plan"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n3061cf789325c052beb1",
+      "iri": "urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Script",
+      "label": {
+        "en": "Test Script"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n1d938a321bcbcc76523a",
+      "iri": "urn:product-ontology:external-boundary:0.7:Market%3ACompetitor_Alternative",
+      "label": {
+        "en": "Competitor / Alternative"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n66d9255488ebcdfdeb9d",
+      "iri": "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment",
+      "label": {
+        "en": "CustomerSegment"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "ncaacdc2cab1addcd86e4",
+      "iri": "urn:product-ontology:external-boundary:0.7:Market%3AMarket",
+      "label": {
+        "en": "Market"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n3f8a16796c9e2b48a650",
+      "iri": "urn:product-ontology:external-boundary:0.7:Market%3ANeed",
+      "label": {
+        "en": "Need"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n2b652a79f68dd58cfaf3",
+      "iri": "urn:product-ontology:external-boundary:0.7:Market%3APain",
+      "label": {
+        "en": "Pain"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n1aa4dbada3349d298cfa",
+      "iri": "urn:product-ontology:external-boundary:0.7:ProductLine%3AProductConfiguration",
+      "label": {
+        "en": "ProductConfiguration"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n8ac437236da727ad980d",
+      "iri": "urn:product-ontology:external-boundary:0.7:UXResearch%3AUser_Mental_Model",
+      "label": {
+        "en": "User Mental Model"
+      },
+      "comment": {
+        "en": "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim."
+      }
+    },
+    {
+      "id": "n0299ae3ee8cee91408d7",
+      "iri": "urn:productium:specification-profile:AcceptanceCriterionSpecification",
+      "label": {
+        "en": "AcceptanceCriterionSpecification"
+      },
+      "comment": {
+        "en": "An authored ConditionSpecification whose constitutive content includes condition used in the authored acceptance contract. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+      }
+    },
+    {
+      "id": "n6e1188524044ed8ad6ee",
+      "iri": "urn:productium:specification-profile:AcquisitionHypothesisSpecification",
+      "label": {
+        "en": "AcquisitionHypothesisSpecification"
+      },
+      "comment": {
+        "en": "A hypothesis specification whose constitutive claim concerns acquiring intended users or customers."
+      }
+    },
+    {
+      "id": "nde10da7b4fc8f28f82b0",
+      "iri": "urn:productium:specification-profile:AdoptionHypothesisSpecification",
+      "label": {
+        "en": "AdoptionHypothesisSpecification"
+      },
+      "comment": {
+        "en": "A hypothesis specification whose constitutive claim concerns adoption barriers or adoption behavior."
+      }
+    },
+    {
+      "id": "n4878d612866e5c07ec1b",
+      "iri": "urn:productium:specification-profile:AssessmentClaim",
+      "label": {
+        "en": "AssessmentClaim"
+      },
+      "comment": {
+        "en": "An authored assessment-claim artifact fixing subject, criterion, scope and the proposition under consideration."
+      }
+    },
+    {
+      "id": "nf7007010bd1b2d8f568b",
+      "iri": "urn:productium:specification-profile:BundleSpecification",
+      "label": {
+        "en": "BundleSpecification"
+      },
+      "comment": {
+        "en": "A governed composition specification referencing offerings intended to be presented together."
+      }
+    },
+    {
+      "id": "n54a4db46d43f05edd03c",
+      "iri": "urn:productium:specification-profile:BusinessRuleReference",
+      "label": {
+        "en": "BusinessRuleReference"
+      },
+      "comment": {
+        "en": "A local reference artifact to an externally governed business rule. Its business-rule purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "n73a1b9784063fc7a22c7",
+      "iri": "urn:productium:specification-profile:CapabilitySpecification",
+      "label": {
+        "en": "CapabilitySpecification"
+      },
+      "comment": {
+        "en": "A version-scoped specification of an intended ability, irrespective of its implementation."
+      }
+    },
+    {
+      "id": "n970520af8f016acd4c08",
+      "iri": "urn:productium:specification-profile:ChangeProposalSpecification",
+      "label": {
+        "en": "ChangeProposalSpecification"
+      },
+      "comment": {
+        "en": "An authored proposal specifying a desired change and its intended target."
+      }
+    },
+    {
+      "id": "nf3de1b87cc6babb26efd",
+      "iri": "urn:productium:specification-profile:ChangeRecord",
+      "label": {
+        "en": "ChangeRecord"
+      },
+      "comment": {
+        "en": "A dated record describing an asserted modification to an identified product artifact or state."
+      }
+    },
+    {
+      "id": "nff01d22870ea111b7133",
+      "iri": "urn:productium:specification-profile:CommitmentLevelDefinition",
+      "label": {
+        "en": "CommitmentLevelDefinition"
+      },
+      "comment": {
+        "en": "A governed term definition for a planning-commitment label within a named scheme."
+      }
+    },
+    {
+      "id": "n88476b59184a9fdbd673",
+      "iri": "urn:productium:specification-profile:CompetitiveNarrative",
+      "label": {
+        "en": "CompetitiveNarrative"
+      },
+      "comment": {
+        "en": "An authored narrative presenting scoped differentiation claims and their evidential references."
+      }
+    },
+    {
+      "id": "nbd3c5c1d047365e8eb98",
+      "iri": "urn:productium:specification-profile:ConditionSpecification",
+      "label": {
+        "en": "ConditionSpecification"
+      },
+      "comment": {
+        "en": "An authored semantic condition unit with a fixed proposition, applicability context and authoring provenance; distinct from a stakeholder intention, observed result or containing scenario."
+      }
+    },
+    {
+      "id": "ne93b5ff63c4ef22bf7ba",
+      "iri": "urn:productium:specification-profile:ConfidenceAssessment",
+      "label": {
+        "en": "ConfidenceAssessment"
+      },
+      "comment": {
+        "en": "A dated assessment of planning confidence with explicit subject, assessor, evidence context and scale."
+      }
+    },
+    {
+      "id": "n8fe3dc034829c31c4142",
+      "iri": "urn:productium:specification-profile:ConstraintSpecification",
+      "label": {
+        "en": "ConstraintSpecification"
+      },
+      "comment": {
+        "en": "An authored ConditionSpecification whose constitutive content includes restriction constitutive to the authored specification. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+      }
+    },
+    {
+      "id": "n2f0e28256b511bd84922",
+      "iri": "urn:productium:specification-profile:DecisionCriterionSpecification",
+      "label": {
+        "en": "DecisionCriterionSpecification"
+      },
+      "comment": {
+        "en": "An authored rule or criterion specification used to appraise product alternatives."
+      }
+    },
+    {
+      "id": "nd6051b084cfe444fac84",
+      "iri": "urn:productium:specification-profile:DecisionRecord",
+      "label": {
+        "en": "DecisionRecord"
+      },
+      "comment": {
+        "en": "An immutable record of a product decision, its considered alternatives, rationale and provenance."
+      }
+    },
+    {
+      "id": "ne59c51e2c7c4a15fa19c",
+      "iri": "urn:productium:specification-profile:DeliveryStatusRecord",
+      "label": {
+        "en": "DeliveryStatusRecord"
+      },
+      "comment": {
+        "en": "An immutable dated report assigning a delivery-status value to one Release."
+      }
+    },
+    {
+      "id": "nf98a3f272cdbd2fabfa3",
+      "iri": "urn:productium:specification-profile:DeliveryWorkItem",
+      "label": {
+        "en": "DeliveryWorkItem"
+      },
+      "comment": {
+        "en": "A governed work-item artifact about intended delivery scope and its referenced functional specifications."
+      }
+    },
+    {
+      "id": "n9401a9e8da8fd27ad193",
+      "iri": "urn:productium:specification-profile:DependencySpecification",
+      "label": {
+        "en": "DependencySpecification"
+      },
+      "comment": {
+        "en": "An authored claim that one product depends on an identified product, capability or resource under a stated dependency condition."
+      }
+    },
+    {
+      "id": "n4a676984934d1b4f4176",
+      "iri": "urn:productium:specification-profile:EnablerSpecification",
+      "label": {
+        "en": "EnablerSpecification"
+      },
+      "comment": {
+        "en": "An authored supporting-work specification intended to enable a feature or capability specification."
+      }
+    },
+    {
+      "id": "n6317ec1f3f8b2bfad6ec",
+      "iri": "urn:productium:specification-profile:EvidenceArtifact",
+      "label": {
+        "en": "EvidenceArtifact"
+      },
+      "comment": {
+        "en": "An abstract category of information artifacts eligible to carry evidence in this bounded profile."
+      }
+    },
+    {
+      "id": "n1c89f4985c96ff3d68a9",
+      "iri": "urn:productium:specification-profile:EvidenceAttributionRecord",
+      "label": {
+        "en": "EvidenceAttributionRecord"
+      },
+      "comment": {
+        "en": "An information record documenting an assessor's attribution of one carrier to one assessment claim."
+      }
+    },
+    {
+      "id": "nc2bf0dcc58669f93dcdf",
+      "iri": "urn:productium:specification-profile:ExternalReferenceRecord",
+      "label": {
+        "en": "ExternalReferenceRecord"
+      },
+      "comment": {
+        "en": "A local information record of a fixed binding to a separately governed referent, with recorded authority, provenance and constitutive purpose set."
+      }
+    },
+    {
+      "id": "n91eb227b10a4970c3cc9",
+      "iri": "urn:productium:specification-profile:FeatureFlagSpecification",
+      "label": {
+        "en": "FeatureFlagSpecification"
+      },
+      "comment": {
+        "en": "A specification of a named feature-activation control and its intended scoping policy."
+      }
+    },
+    {
+      "id": "n2de6dfb02ad297d63b52",
+      "iri": "urn:productium:specification-profile:FeatureSpecification",
+      "label": {
+        "en": "FeatureSpecification"
+      },
+      "comment": {
+        "en": "An authored functional-unit specification linking intended behavior, user value and acceptance criteria."
+      }
+    },
+    {
+      "id": "n6c2354404467ca74bca5",
+      "iri": "urn:productium:specification-profile:FindingRecord",
+      "label": {
+        "en": "FindingRecord"
+      },
+      "comment": {
+        "en": "An authored observation or issue record with a fixed finding statement, subject bindings and provenance."
+      }
+    },
+    {
+      "id": "n1732b9594bb2c164a06a",
+      "iri": "urn:productium:specification-profile:FunctionalRequirementSpecification",
+      "label": {
+        "en": "FunctionalRequirementSpecification"
+      },
+      "comment": {
+        "en": "A requirement specification with an essential normative commitment about intended behavior or functionality."
+      }
+    },
+    {
+      "id": "ne383dc02f66bc8520af0",
+      "iri": "urn:productium:specification-profile:GoToMarketSpecification",
+      "label": {
+        "en": "GoToMarketSpecification"
+      },
+      "comment": {
+        "en": "A governed strategy specification linking positioning, audiences and intended market-entry activity."
+      }
+    },
+    {
+      "id": "n9ac1cc8dc6c5308bff69",
+      "iri": "urn:productium:specification-profile:GoalSpecification",
+      "label": {
+        "en": "GoalSpecification"
+      },
+      "comment": {
+        "en": "An authored ConditionSpecification whose constitutive content includes desired product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+      }
+    },
+    {
+      "id": "n9a33f1c873edb5eb5d48",
+      "iri": "urn:productium:specification-profile:HypothesisSpecification",
+      "label": {
+        "en": "HypothesisSpecification"
+      },
+      "comment": {
+        "en": "An authored testable-claim artifact fixing its claim, intended scope and refutation or support conditions."
+      }
+    },
+    {
+      "id": "n0a84724e3d1633575b17",
+      "iri": "urn:productium:specification-profile:InformationArchitectureSpecification",
+      "label": {
+        "en": "InformationArchitectureSpecification"
+      },
+      "comment": {
+        "en": "An authored model of information organization, hierarchy and navigation."
+      }
+    },
+    {
+      "id": "n5404588ff42409a3ae27",
+      "iri": "urn:productium:specification-profile:InitiativeSpecification",
+      "label": {
+        "en": "InitiativeSpecification"
+      },
+      "comment": {
+        "en": "An authored plan coordinating goals, scope and expected product outcomes."
+      }
+    },
+    {
+      "id": "n44c8af3e1677f7730e54",
+      "iri": "urn:productium:specification-profile:InteractionStepSpecification",
+      "label": {
+        "en": "InteractionStepSpecification"
+      },
+      "comment": {
+        "en": "A scoped action or decision-step specification in one user-flow design."
+      }
+    },
+    {
+      "id": "n6c58f66d7f088a511c33",
+      "iri": "urn:productium:specification-profile:JourneySpecification",
+      "label": {
+        "en": "JourneySpecification"
+      },
+      "comment": {
+        "en": "An authored structured experience model containing scoped stage specifications."
+      }
+    },
+    {
+      "id": "n4d216026de7b0083b7d4",
+      "iri": "urn:productium:specification-profile:JourneyStageSpecification",
+      "label": {
+        "en": "JourneyStageSpecification"
+      },
+      "comment": {
+        "en": "An authored constituent stage specification owned by exactly one JourneySpecification."
+      }
+    },
+    {
+      "id": "n19376d8c2f66058479c7",
+      "iri": "urn:productium:specification-profile:LaunchSpecification",
+      "label": {
+        "en": "LaunchSpecification"
+      },
+      "comment": {
+        "en": "A plan specification for introducing a product or change to an intended audience."
+      }
+    },
+    {
+      "id": "n8ccb5ce0cb112c9e327a",
+      "iri": "urn:productium:specification-profile:LifecycleSpecification",
+      "label": {
+        "en": "LifecycleSpecification"
+      },
+      "comment": {
+        "en": "An authored scheme describing lifecycle-stage meanings applicable to products."
+      }
+    },
+    {
+      "id": "n9e5a8393f98f2d32d67b",
+      "iri": "urn:productium:specification-profile:LifecycleStageSpecification",
+      "label": {
+        "en": "LifecycleStageSpecification"
+      },
+      "comment": {
+        "en": "A scoped definition of a lifecycle stage within one lifecycle specification."
+      }
+    },
+    {
+      "id": "n19f0f0dca27a2810d649",
+      "iri": "urn:productium:specification-profile:MarketingGoalSpecification",
+      "label": {
+        "en": "MarketingGoalSpecification"
+      },
+      "comment": {
+        "en": "A goal specification whose constitutive desired result concerns product marketing or market introduction."
+      }
+    },
+    {
+      "id": "necbebe36879703ae24b5",
+      "iri": "urn:productium:specification-profile:MarketingInsightReference",
+      "label": {
+        "en": "MarketingInsightReference"
+      },
+      "comment": {
+        "en": "A governed local reference artifact with one canonical target and an explicitly supplied owner identifier. Its marketing-insight purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "n24de73621f7136be50d7",
+      "iri": "urn:productium:specification-profile:MessagingSpecification",
+      "label": {
+        "en": "MessagingSpecification"
+      },
+      "comment": {
+        "en": "An authored specification of audience-directed messages and supporting claims."
+      }
+    },
+    {
+      "id": "n585f68a5591c2aa29eda",
+      "iri": "urn:productium:specification-profile:MilestoneSpecification",
+      "label": {
+        "en": "MilestoneSpecification"
+      },
+      "comment": {
+        "en": "An authored target-condition specification marking intended planning progress."
+      }
+    },
+    {
+      "id": "nfd5297ce9739603fad23",
+      "iri": "urn:productium:specification-profile:OfferingSpecification",
+      "label": {
+        "en": "OfferingSpecification"
+      },
+      "comment": {
+        "en": "A catalog specification of how one product is intended to be offered to an audience under stated terms."
+      }
+    },
+    {
+      "id": "nb89a87132a8ff5def01d",
+      "iri": "urn:productium:specification-profile:OpportunityStatement",
+      "label": {
+        "en": "OpportunityStatement"
+      },
+      "comment": {
+        "en": "A governed statement artifact identifying a possible value improvement in context."
+      }
+    },
+    {
+      "id": "n05ee7bc3b37cd3a6253a",
+      "iri": "urn:productium:specification-profile:OutcomeSpecification",
+      "label": {
+        "en": "OutcomeSpecification"
+      },
+      "comment": {
+        "en": "An authored ConditionSpecification whose constitutive content includes expected measurable product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+      }
+    },
+    {
+      "id": "n81fd0066656d60aa6899",
+      "iri": "urn:productium:specification-profile:PersonaSpecification",
+      "label": {
+        "en": "PersonaSpecification"
+      },
+      "comment": {
+        "en": "An authored model of a user archetype, fixing a behavioral profile, population/use context and research provenance; not a person, group of actual users or their temporary role."
+      }
+    },
+    {
+      "id": "nb6519652879086591ef3",
+      "iri": "urn:productium:specification-profile:PlanningHorizonDefinition",
+      "label": {
+        "en": "PlanningHorizonDefinition"
+      },
+      "comment": {
+        "en": "A governed term definition specifying the meaning of a planning-horizon label in a named scheme."
+      }
+    },
+    {
+      "id": "ne83956e971de9d7355b8",
+      "iri": "urn:productium:specification-profile:PortfolioEntry",
+      "label": {
+        "en": "PortfolioEntry"
+      },
+      "comment": {
+        "en": "A governed entry in one portfolio, optionally referencing a product while a broader target binding is being specified."
+      }
+    },
+    {
+      "id": "n23009b5ab2d30405d07d",
+      "iri": "urn:productium:specification-profile:PositioningStatement",
+      "label": {
+        "en": "PositioningStatement"
+      },
+      "comment": {
+        "en": "An authored statement specifying intended product perception for a target audience relative to alternatives."
+      }
+    },
+    {
+      "id": "n5d53795275865e27f341",
+      "iri": "urn:productium:specification-profile:PrioritizationCriterionSpecification",
+      "label": {
+        "en": "PrioritizationCriterionSpecification"
+      },
+      "comment": {
+        "en": "A decision-criterion specification whose constitutive purpose is to justify or compute a planning rank."
+      }
+    },
+    {
+      "id": "nac21f6f9d706a4321449",
+      "iri": "urn:productium:specification-profile:PriorityAssessment",
+      "label": {
+        "en": "PriorityAssessment"
+      },
+      "comment": {
+        "en": "A dated contextual ranking assessment recording a rank for a roadmap entry within a named comparison set and scale."
+      }
+    },
+    {
+      "id": "n1c59291a669e62b92500",
+      "iri": "urn:productium:specification-profile:ProblemSolutionFitAssessment",
+      "label": {
+        "en": "ProblemSolutionFitAssessment"
+      },
+      "comment": {
+        "en": "A dated assessment record about the proposed fit of a problem statement and a solution specification."
+      }
+    },
+    {
+      "id": "nfe6d79b3478d83b2bd9c",
+      "iri": "urn:productium:specification-profile:ProblemStatement",
+      "label": {
+        "en": "ProblemStatement"
+      },
+      "comment": {
+        "en": "A governed statement artifact describing a candidate or evidenced problem."
+      }
+    },
+    {
+      "id": "n5e2e77d6a96b5ea17b91",
+      "iri": "urn:productium:specification-profile:Product",
+      "label": {
+        "en": "Product"
+      },
+      "comment": {
+        "en": "A governed intentional product artifact with continuing constitutive purpose and stewardship lineage; not a deployment or a database row."
+      }
+    },
+    {
+      "id": "n5801242c0d8f60f71f75",
+      "iri": "urn:productium:specification-profile:ProductCapability",
+      "label": {
+        "en": "ProductCapability"
+      },
+      "comment": {
+        "en": "An actual intrinsic disposition of one concrete ProductRealization as a configured functional whole. Intended behavior, successful execution, a specification and a machine label are not the disposition."
+      }
+    },
+    {
+      "id": "nb7144cb84d81c48311ac",
+      "iri": "urn:productium:specification-profile:ProductFamilyReference",
+      "label": {
+        "en": "ProductFamilyReference"
+      },
+      "comment": {
+        "en": "A local reference artifact identifying a product-family target governed by an external owner. Its product-family purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "nb18ff0aad466eac6e927",
+      "iri": "urn:productium:specification-profile:ProductLineReference",
+      "label": {
+        "en": "ProductLineReference"
+      },
+      "comment": {
+        "en": "A local reference artifact identifying an externally governed product line. Its product-line purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "nc7e309d614ac82d7c5ea",
+      "iri": "urn:productium:specification-profile:ProductMarketFitAssessment",
+      "label": {
+        "en": "ProductMarketFitAssessment"
+      },
+      "comment": {
+        "en": "A dated assessment record about a product in an explicitly identified market context."
+      }
+    },
+    {
+      "id": "n50f07de6f93a6d92246b",
+      "iri": "urn:productium:specification-profile:ProductMetricReference",
+      "label": {
+        "en": "ProductMetricReference"
+      },
+      "comment": {
+        "en": "A local reference artifact binding a product measurement context to an externally governed metric. Its product-metric purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "n7289b5d8d65bbfd79183",
+      "iri": "urn:productium:specification-profile:ProductPortfolio",
+      "label": {
+        "en": "ProductPortfolio"
+      },
+      "comment": {
+        "en": "A governed strategic arrangement organizing products, entries and planning references under a continuing portfolio mandate."
+      }
+    },
+    {
+      "id": "nb516a087ea45d4a6266b",
+      "iri": "urn:productium:specification-profile:ProductRealization",
+      "label": {
+        "en": "ProductRealization"
+      },
+      "comment": {
+        "en": "A concrete, causally integrated computing-system artifact configured to enact one fixed product-version baseline. It is the deployed functional whole, not its record, hosting machine, execution event or deployment interval."
+      }
+    },
+    {
+      "id": "n15a4cd21010bba7236da",
+      "iri": "urn:productium:specification-profile:ProductStatusRecord",
+      "label": {
+        "en": "ProductStatusRecord"
+      },
+      "comment": {
+        "en": "A dated contextual assertion assigning a status value to one product."
+      }
+    },
+    {
+      "id": "n0a8d9825145110ae1b59",
+      "iri": "urn:productium:specification-profile:ProductVariantReference",
+      "label": {
+        "en": "ProductVariantReference"
+      },
+      "comment": {
+        "en": "A local reference artifact identifying an externally governed product variant. Its product-variant purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "ne1d59901dfbc8c55525e",
+      "iri": "urn:productium:specification-profile:ProductVersion",
+      "label": {
+        "en": "ProductVersion"
+      },
+      "comment": {
+        "en": "An immutable approved specification baseline for one Product."
+      }
+    },
+    {
+      "id": "n538881c077a746a622fc",
+      "iri": "urn:productium:specification-profile:QualityRequirementSpecification",
+      "label": {
+        "en": "QualityRequirementSpecification"
+      },
+      "comment": {
+        "en": "A requirement specification with an essential normative commitment about a measurable quality under defined conditions."
+      }
+    },
+    {
+      "id": "n0b26c3e85bf0cca558e2",
+      "iri": "urn:productium:specification-profile:ReleaseEvidenceRecord",
+      "label": {
+        "en": "ReleaseEvidenceRecord"
+      },
+      "comment": {
+        "en": "An evidence-attribution record whose constitutive assessment purpose is release."
+      }
+    },
+    {
+      "id": "n37d609b444c80787097b",
+      "iri": "urn:productium:specification-profile:ReleaseSpecification",
+      "label": {
+        "en": "ReleaseSpecification"
+      },
+      "comment": {
+        "en": "A governed specification of a planned delivery increment and its intended contents."
+      }
+    },
+    {
+      "id": "ndc35d28b62aafc850713",
+      "iri": "urn:productium:specification-profile:RequirementRationaleStatement",
+      "label": {
+        "en": "RequirementRationaleStatement"
+      },
+      "comment": {
+        "en": "An authored justification statement explaining why a requirement specification is needed."
+      }
+    },
+    {
+      "id": "n1c228a11c2c6e1b36da3",
+      "iri": "urn:productium:specification-profile:RequirementScenarioSpecification",
+      "label": {
+        "en": "RequirementScenarioSpecification"
+      },
+      "comment": {
+        "en": "An authored ScenarioSpecification whose constitutive content includes requirement/acceptance illustration. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+      }
+    },
+    {
+      "id": "n372235ba19d156a14ea3",
+      "iri": "urn:productium:specification-profile:RequirementSourceReference",
+      "label": {
+        "en": "RequirementSourceReference"
+      },
+      "comment": {
+        "en": "A local provenance reference artifact identifying an origin used in deriving a requirement specification. Its requirement-source purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "n067f8073d9ce09b52740",
+      "iri": "urn:productium:specification-profile:RequirementSpecification",
+      "label": {
+        "en": "RequirementSpecification"
+      },
+      "comment": {
+        "en": "An authored ConditionSpecification whose constitutive content includes required product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+      }
+    },
+    {
+      "id": "n381d20e5e1a2cd3bea9c",
+      "iri": "urn:productium:specification-profile:Roadmap",
+      "label": {
+        "en": "Roadmap"
+      },
+      "comment": {
+        "en": "A governed planning-projection artifact referencing canonical product knowledge."
+      }
+    },
+    {
+      "id": "nc1c3186e77af3e25ca30",
+      "iri": "urn:productium:specification-profile:RoadmapEntry",
+      "label": {
+        "en": "RoadmapEntry"
+      },
+      "comment": {
+        "en": "A scoped entry in one roadmap referencing intended initiatives, features or delivery targets."
+      }
+    },
+    {
+      "id": "n131385c1d5ae776bb9df",
+      "iri": "urn:productium:specification-profile:ScenarioSpecification",
+      "label": {
+        "en": "ScenarioSpecification"
+      },
+      "comment": {
+        "en": "An authored structured situation description fixing context, preconditions, ordered stimulus/action description and expected condition units; distinct from each actual occurrence."
+      }
+    },
+    {
+      "id": "nbeb9b28d3a17d1628f9b",
+      "iri": "urn:productium:specification-profile:ScopeSpecification",
+      "label": {
+        "en": "ScopeSpecification"
+      },
+      "comment": {
+        "en": "An authored specification of included, excluded and deferred product scope."
+      }
+    },
+    {
+      "id": "ncad2e1fc80eb429330e0",
+      "iri": "urn:productium:specification-profile:ScreenSpecification",
+      "label": {
+        "en": "ScreenSpecification"
+      },
+      "comment": {
+        "en": "An authored view specification with layout, interaction and state commitments."
+      }
+    },
+    {
+      "id": "n724e7cc77cebd66e69d1",
+      "iri": "urn:productium:specification-profile:SolutionHypothesisSpecification",
+      "label": {
+        "en": "SolutionHypothesisSpecification"
+      },
+      "comment": {
+        "en": "A hypothesis specification whose constitutive claim concerns a proposed solution addressing a problem."
+      }
+    },
+    {
+      "id": "nca854bd1e5832a9e502b",
+      "iri": "urn:productium:specification-profile:SolutionSpecification",
+      "label": {
+        "en": "SolutionSpecification"
+      },
+      "comment": {
+        "en": "An authored product-level solution proposal describing how problems or opportunities are intended to be addressed."
+      }
+    },
+    {
+      "id": "n07684f2be0a0b29f5495",
+      "iri": "urn:productium:specification-profile:TargetMarketReference",
+      "label": {
+        "en": "TargetMarketReference"
+      },
+      "comment": {
+        "en": "A local reference artifact to an externally governed target market. Its target-market purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "n776e2c90c5cbe92b0e0b",
+      "iri": "urn:productium:specification-profile:TargetSegmentReference",
+      "label": {
+        "en": "TargetSegmentReference"
+      },
+      "comment": {
+        "en": "A local reference artifact to an externally governed segment in an identified segmentation context. Its target-segment purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "nf8688c9e2e0569d5756c",
+      "iri": "urn:productium:specification-profile:TargetWindowAssignment",
+      "label": {
+        "en": "TargetWindowAssignment"
+      },
+      "comment": {
+        "en": "A planning record assigning a bounded target interval to one roadmap entry."
+      }
+    },
+    {
+      "id": "n51d691cd1ceb8aa4ceda",
+      "iri": "urn:productium:specification-profile:TaskReference",
+      "label": {
+        "en": "TaskReference"
+      },
+      "comment": {
+        "en": "A local reference artifact identifying an externally governed implementation task. Its implementation-task purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "nd5ce3254dc5412d6f7e2",
+      "iri": "urn:productium:specification-profile:TestCase",
+      "label": {
+        "en": "TestCase"
+      },
+      "comment": {
+        "en": "A ScenarioSpecification that includes an operational test procedure and expected conditions. Repeated executions reuse the specification and remain distinct events."
+      }
+    },
+    {
+      "id": "n6063ba4c607cd6a780b9",
+      "iri": "urn:productium:specification-profile:TestDataReference",
+      "label": {
+        "en": "TestDataReference"
+      },
+      "comment": {
+        "en": "A local reference artifact identifying a versioned dataset used in test design or execution. Its test-data purpose is constitutive to the authored reference record, not a temporary role of the target."
+      }
+    },
+    {
+      "id": "n483822c94eb44db5943f",
+      "iri": "urn:productium:specification-profile:TestExecution",
+      "label": {
+        "en": "TestExecution"
+      },
+      "comment": {
+        "en": "A concluded attempt concerning one declared TestCase and ProductRealization. A setup-only abort does not establish actual target participation. One consolidated result documents the attempt."
+      }
+    },
+    {
+      "id": "n26ca0bdab7f0504401a8",
+      "iri": "urn:productium:specification-profile:TestResult",
+      "label": {
+        "en": "TestResult"
+      },
+      "comment": {
+        "en": "The consolidated evidence record documenting one completed TestExecution."
+      }
+    },
+    {
+      "id": "n1c3da1d37d2a2c639c45",
+      "iri": "urn:productium:specification-profile:TestScenario",
+      "label": {
+        "en": "TestScenario"
+      },
+      "comment": {
+        "en": "A ScenarioSpecification describing a situation to verify specified behavior or conditions. It can be detailed enough to also be a TestCase; its described situation is not a completed TestExecution."
+      }
+    },
+    {
+      "id": "n97bde355b59217c8efbc",
+      "iri": "urn:productium:specification-profile:TestSuiteSpecification",
+      "label": {
+        "en": "TestSuiteSpecification"
+      },
+      "comment": {
+        "en": "A governed test-organization specification containing references to test cases."
+      }
+    },
+    {
+      "id": "n88904c65dcbffc01b0e0",
+      "iri": "urn:productium:specification-profile:TouchpointSpecification",
+      "label": {
+        "en": "TouchpointSpecification"
+      },
+      "comment": {
+        "en": "A design artifact specifying a point of contact, its channel, purpose and interaction context."
+      }
+    },
+    {
+      "id": "n64de458501de896988c4",
+      "iri": "urn:productium:specification-profile:UIStateSpecification",
+      "label": {
+        "en": "UIStateSpecification"
+      },
+      "comment": {
+        "en": "A scoped specification of a screen condition and its expected presentation or interaction."
+      }
+    },
+    {
+      "id": "n1be0710365de9c491d25",
+      "iri": "urn:productium:specification-profile:UsabilityFindingRecord",
+      "label": {
+        "en": "UsabilityFindingRecord"
+      },
+      "comment": {
+        "en": "A FindingRecord whose constitutive subject matter includes a user-flow or screen specification."
+      }
+    },
+    {
+      "id": "nfb730f56dad52bf0a783",
+      "iri": "urn:productium:specification-profile:UserFlowSpecification",
+      "label": {
+        "en": "UserFlowSpecification"
+      },
+      "comment": {
+        "en": "An authored sequence model of user actions, decisions and transitions."
+      }
+    },
+    {
+      "id": "ncccebf00cfd7eaba871e",
+      "iri": "urn:productium:specification-profile:UserRoleSpecification",
+      "label": {
+        "en": "UserRoleSpecification"
+      },
+      "comment": {
+        "en": "A designed specification of a user participation context, responsibilities and permissions."
+      }
+    },
+    {
+      "id": "n680a42c6a3a099583212",
+      "iri": "urn:productium:specification-profile:UserStorySpecification",
+      "label": {
+        "en": "UserStorySpecification"
+      },
+      "comment": {
+        "en": "An authored user-centered narrative specifying a desired interaction goal and expected value."
+      }
+    },
+    {
+      "id": "n89bff0caf1a037586fa2",
+      "iri": "urn:productium:specification-profile:ValidationEvidenceRecord",
+      "label": {
+        "en": "ValidationEvidenceRecord"
+      },
+      "comment": {
+        "en": "An evidence-attribution record whose constitutive assessment purpose is validation."
+      }
+    },
+    {
+      "id": "ne628162e32d9a7ceb4ac",
+      "iri": "urn:productium:specification-profile:ValidationFindingRecord",
+      "label": {
+        "en": "ValidationFindingRecord"
+      },
+      "comment": {
+        "en": "A FindingRecord whose constitutive subject matter includes a requirement specification."
+      }
+    },
+    {
+      "id": "n16c2d7e8b12bb91150ef",
+      "iri": "urn:productium:specification-profile:VerificationEvidenceRecord",
+      "label": {
+        "en": "VerificationEvidenceRecord"
+      },
+      "comment": {
+        "en": "An evidence-attribution record whose constitutive assessment purpose is verification."
+      }
+    },
+    {
+      "id": "n25b6ba7857ff379f9809",
+      "iri": "urn:productium:specification-profile:VerticalSliceSpecification",
+      "label": {
+        "en": "VerticalSliceSpecification"
+      },
+      "comment": {
+        "en": "An authored end-to-end increment specification connecting intended value to coherent behavior and acceptance conditions."
+      }
+    },
+    {
+      "id": "ncc6f8a1e9aef6ab2e0e7",
+      "iri": "urn:productium:specification-profile:VisionStatement",
+      "label": {
+        "en": "VisionStatement"
+      },
+      "comment": {
+        "en": "An authored statement articulating intended product direction, experience and value."
+      }
+    }
+  ],
+  "property": [
+    {
+      "id": "p0",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p1",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p2",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p3",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p4",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p5",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p6",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p7",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p8",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p9",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p10",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p11",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p12",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p13",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p14",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p15",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p16",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p17",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p18",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p19",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p20",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p21",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p22",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p24",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p25",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p26",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p27",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p28",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p29",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p30",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p31",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p32",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p33",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p34",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p35",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p36",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p37",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p38",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p39",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p40",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p41",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p42",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p43",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p44",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p45",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p46",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p47",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p48",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p49",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p50",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p51",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p52",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p53",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p54",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p55",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p56",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p57",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p58",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p59",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p60",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p61",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p62",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p63",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p64",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p65",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p66",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p67",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p68",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p69",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p70",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p71",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p72",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p73",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p74",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p75",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p76",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p77",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p78",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p79",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p80",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p81",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p82",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p83",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p84",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p85",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p86",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p87",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p88",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p89",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p90",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p91",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p92",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p93",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p94",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p95",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p96",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p97",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p98",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p99",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p100",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p101",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p102",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p103",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p104",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p105",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p106",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p107",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p108",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p109",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p110",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p111",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p112",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p113",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p114",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p115",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p116",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p117",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p118",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p119",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p120",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p121",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p122",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p123",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p124",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p125",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p126",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p127",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p128",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p129",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p130",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p131",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p132",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p133",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p134",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p135",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p136",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p137",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p138",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p139",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p140",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p141",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p142",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p143",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p144",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p145",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p146",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p147",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p148",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p149",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p150",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p151",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p152",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p153",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p154",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p155",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p156",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p157",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p158",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p159",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p160",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p161",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p162",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p163",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p164",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p165",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p166",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p167",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p168",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p169",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p170",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p171",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p172",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p173",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p174",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p175",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p176",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p177",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p178",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p179",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p180",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p181",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p182",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p183",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p184",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p185",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p186",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p187",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p188",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p189",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p190",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p191",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p192",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p193",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p194",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p195",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p196",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p197",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p198",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p199",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p200",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p201",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p202",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p203",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p204",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p205",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p206",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p207",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p208",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p209",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p210",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p211",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p212",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p213",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p214",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p215",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p216",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p217",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p218",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p219",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p220",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p221",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p222",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p223",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p224",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p225",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p226",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p227",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p228",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p229",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p230",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p231",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p232",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p233",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p234",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p235",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p236",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p237",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p238",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p239",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p240",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p241",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p242",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p243",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p244",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p245",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p246",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p247",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p248",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p249",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p250",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p251",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p252",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p253",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p254",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p255",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p256",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p257",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p258",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p259",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p260",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p261",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p262",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p263",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p264",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p265",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p266",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p267",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p268",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p269",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p270",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p271",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p272",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p273",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p274",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p275",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p276",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p277",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p278",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p279",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p280",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p281",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p282",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p283",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p284",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p285",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p286",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p287",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p288",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p289",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p290",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p291",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p292",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p293",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p294",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p295",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p296",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p297",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p298",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p299",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p300",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p301",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p302",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p303",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p304",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p305",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p306",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p307",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "p308",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p309",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p310",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p311",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p312",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p313",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p314",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p315",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p316",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p317",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p318",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p319",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p320",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p321",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "p322",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p323",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p324",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p325",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p326",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p327",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p328",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p329",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p330",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p331",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p332",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p333",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p334",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p335",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p336",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p337",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p338",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p339",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p340",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p341",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p342",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p343",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p344",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p345",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p346",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p347",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p348",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p349",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p350",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p351",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p352",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p353",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p354",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "p355",
+      "type": "rdfs:subClassOf"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "p0",
+      "domain": "n1c89f4985c96ff3d68a9",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "attributionAgent"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:attributionAgent"
+    },
+    {
+      "id": "p1",
+      "domain": "n1c89f4985c96ff3d68a9",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "attributionSource"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:attributionSource"
+    },
+    {
+      "id": "p2",
+      "domain": "n1c89f4985c96ff3d68a9",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "attributionStance"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:attributionStance"
+    },
+    {
+      "id": "p3",
+      "domain": "n1c89f4985c96ff3d68a9",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "attributionTimestamp"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:attributionTimestamp"
+    },
+    {
+      "id": "p4",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "n5801242c0d8f60f71f75",
+      "label": {
+        "en": "claimActualCapability"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimActualCapability"
+    },
+    {
+      "id": "p5",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "n9a5060b5358b2345b223",
+      "label": {
+        "en": "claimContext"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimContext"
+    },
+    {
+      "id": "p6",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "claimCriterion"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimCriterion"
+    },
+    {
+      "id": "p7",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "claimIntendedCapability"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimIntendedCapability"
+    },
+    {
+      "id": "p8",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "n5e2e77d6a96b5ea17b91",
+      "label": {
+        "en": "claimProduct"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimProduct"
+    },
+    {
+      "id": "p9",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "nb516a087ea45d4a6266b",
+      "label": {
+        "en": "claimRealization"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimRealization"
+    },
+    {
+      "id": "p10",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "claimRequirement"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimRequirement"
+    },
+    {
+      "id": "p11",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "claimStatement"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimStatement"
+    },
+    {
+      "id": "p12",
+      "domain": "n4878d612866e5c07ec1b",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "claimVersion"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimVersion"
+    },
+    {
+      "id": "p13",
+      "domain": "n9a5060b5358b2345b223",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "contextDescription"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:contextDescription"
+    },
+    {
+      "id": "p14",
+      "domain": "n9a5060b5358b2345b223",
+      "range": "n131385c1d5ae776bb9df",
+      "label": {
+        "en": "contextScenario"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:contextScenario"
+    },
+    {
+      "id": "p15",
+      "domain": "n9a5060b5358b2345b223",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "contextSource"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:contextSource"
+    },
+    {
+      "id": "p16",
+      "domain": "n9a5060b5358b2345b223",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "contextVersion"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:contextVersion"
+    },
+    {
+      "id": "p17",
+      "domain": "nbeb9b28d3a17d1628f9b",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "deferredStatement"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:deferredStatement"
+    },
+    {
+      "id": "p18",
+      "domain": "nbeb9b28d3a17d1628f9b",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "excludedStatement"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:excludedStatement"
+    },
+    {
+      "id": "p19",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "findingSource"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:findingSource"
+    },
+    {
+      "id": "p20",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "findingStatement"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:findingStatement"
+    },
+    {
+      "id": "p21",
+      "domain": "nbeb9b28d3a17d1628f9b",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "includedStatement"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:includedStatement"
+    },
+    {
+      "id": "p22",
+      "domain": "nbeb9b28d3a17d1628f9b",
+      "range": "nf3de1b87cc6babb26efd",
+      "label": {
+        "en": "scopeChangeRecord"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:scopeChangeRecord"
+    },
+    {
+      "id": "p23",
+      "domain": "nbeb9b28d3a17d1628f9b",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "scopeSource"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:scopeSource"
+    },
+    {
+      "id": "p24",
+      "domain": "nbeb9b28d3a17d1628f9b",
+      "range": "nbeb9b28d3a17d1628f9b",
+      "label": {
+        "en": "scopeSupersedes"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:scopeSupersedes"
+    },
+    {
+      "id": "p25",
+      "domain": "ne1d59901dfbc8c55525e",
+      "range": "nbeb9b28d3a17d1628f9b",
+      "label": {
+        "en": "versionScope"
+      },
+      "iri": "urn:product-ontology:assessment-profile:0.4:versionScope"
+    },
+    {
+      "id": "p26",
+      "domain": "n483822c94eb44db5943f",
+      "range": "n9a5060b5358b2345b223",
+      "label": {
+        "en": "executionContext"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:executionContext"
+    },
+    {
+      "id": "p27",
+      "domain": "n483822c94eb44db5943f",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "executionCriterion"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:executionCriterion"
+    },
+    {
+      "id": "p28",
+      "domain": "n483822c94eb44db5943f",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "executionEndedAt"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:executionEndedAt"
+    },
+    {
+      "id": "p29",
+      "domain": "nf98a3f272cdbd2fabfa3",
+      "range": "n17e65d34fbf03cac4870",
+      "label": {
+        "en": "itemStatus"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatus"
+    },
+    {
+      "id": "p30",
+      "domain": "n17e65d34fbf03cac4870",
+      "range": "nf3de1b87cc6babb26efd",
+      "label": {
+        "en": "itemStatusChange"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatusChange"
+    },
+    {
+      "id": "p31",
+      "domain": "n17e65d34fbf03cac4870",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "itemStatusCode"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatusCode"
+    },
+    {
+      "id": "p32",
+      "domain": "n17e65d34fbf03cac4870",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "itemStatusReportedAt"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatusReportedAt"
+    },
+    {
+      "id": "p33",
+      "domain": "n17e65d34fbf03cac4870",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "itemStatusScheme"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatusScheme"
+    },
+    {
+      "id": "p34",
+      "domain": "n17e65d34fbf03cac4870",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "itemStatusSource"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatusSource"
+    },
+    {
+      "id": "p35",
+      "domain": "n17e65d34fbf03cac4870",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "itemStatusVersion"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:itemStatusVersion"
+    },
+    {
+      "id": "p36",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "observedAuthority"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:observedAuthority"
+    },
+    {
+      "id": "p37",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "observedTarget"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:observedTarget"
+    },
+    {
+      "id": "p38",
+      "domain": "nc2bf0dcc58669f93dcdf",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "referenceRecordedAt"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:referenceRecordedAt"
+    },
+    {
+      "id": "p39",
+      "domain": "nc2bf0dcc58669f93dcdf",
+      "range": "n6c2354404467ca74bca5",
+      "label": {
+        "en": "referenceReviewFinding"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:referenceReviewFinding"
+    },
+    {
+      "id": "p40",
+      "domain": "nc2bf0dcc58669f93dcdf",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "referenceRevisionLabel"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:referenceRevisionLabel"
+    },
+    {
+      "id": "p41",
+      "domain": "nc2bf0dcc58669f93dcdf",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "referenceSupersedes"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:referenceSupersedes"
+    },
+    {
+      "id": "p42",
+      "domain": "ne59c51e2c7c4a15fa19c",
+      "range": "nf3de1b87cc6babb26efd",
+      "label": {
+        "en": "releaseStatusChange"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:releaseStatusChange"
+    },
+    {
+      "id": "p43",
+      "domain": "ne59c51e2c7c4a15fa19c",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "releaseStatusCode"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:releaseStatusCode"
+    },
+    {
+      "id": "p44",
+      "domain": "ne59c51e2c7c4a15fa19c",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "releaseStatusReportedAt"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:releaseStatusReportedAt"
+    },
+    {
+      "id": "p45",
+      "domain": "ne59c51e2c7c4a15fa19c",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "releaseStatusScheme"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:releaseStatusScheme"
+    },
+    {
+      "id": "p46",
+      "domain": "ne59c51e2c7c4a15fa19c",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "releaseStatusSource"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:releaseStatusSource"
+    },
+    {
+      "id": "p47",
+      "domain": "ne59c51e2c7c4a15fa19c",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "releaseStatusVersion"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:releaseStatusVersion"
+    },
+    {
+      "id": "p48",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "resultOutcome"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:resultOutcome"
+    },
+    {
+      "id": "p49",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "resultRecordedAt"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:resultRecordedAt"
+    },
+    {
+      "id": "p50",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "resultSource"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:resultSource"
+    },
+    {
+      "id": "p51",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "reviewReason"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:reviewReason"
+    },
+    {
+      "id": "p52",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "reviewRecordedAt"
+      },
+      "iri": "urn:product-ontology:delivery-profile:0.5:reviewRecordedAt"
+    },
+    {
+      "id": "p53",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "nfee3a4dbc74278cd5370",
+      "label": {
+        "en": "intendedRealizedByComponent"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:architecture_intendedRealizedByComponent"
+    },
+    {
+      "id": "p54",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "ndcbfdfeda0f213b37466",
+      "label": {
+        "en": "intendedRealizedByService"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:architecture_intendedRealizedByService"
+    },
+    {
+      "id": "p55",
+      "domain": "n067f8073d9ce09b52740",
+      "range": "naeb7c90c9428f535f976",
+      "label": {
+        "en": "intendedSatisfiedByArchitectureElement"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:architecture_intendedSatisfiedByArchitectureElement"
+    },
+    {
+      "id": "p56",
+      "domain": "n067f8073d9ce09b52740",
+      "range": "n164e75152d167f8c82c8",
+      "label": {
+        "en": "intendedSatisfiedByInterface"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:architecture_intendedSatisfiedByInterface"
+    },
+    {
+      "id": "p57",
+      "domain": "n73a1b9784063fc7a22c7",
+      "range": "naeb7c90c9428f535f976",
+      "label": {
+        "en": "intendedSupportedByArchitectureElement"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:architecture_intendedSupportedByArchitectureElement"
+    },
+    {
+      "id": "p58",
+      "domain": "n73a1b9784063fc7a22c7",
+      "range": "nf89e956003d8ae67cf9f",
+      "label": {
+        "en": "intendedToSupport"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r107_intendedToSupport"
+    },
+    {
+      "id": "p59",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "n0e38f93721eccd8ca39d",
+      "label": {
+        "en": "references"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r116_references"
+    },
+    {
+      "id": "p60",
+      "domain": "nfe6d79b3478d83b2bd9c",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "evidencedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r157_evidencedBy"
+    },
+    {
+      "id": "p61",
+      "domain": "n9a33f1c873edb5eb5d48",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "evidencedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r160_evidencedBy"
+    },
+    {
+      "id": "p62",
+      "domain": "nc7e309d614ac82d7c5ea",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "evidencedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r162_evidencedBy"
+    },
+    {
+      "id": "p63",
+      "domain": "n538881c077a746a622fc",
+      "range": "nc090e4a7ec02b61bb9ed",
+      "label": {
+        "en": "supports"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r167_supports"
+    },
+    {
+      "id": "p64",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n0e38f93721eccd8ca39d",
+      "label": {
+        "en": "referencesValueProposition"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r185_referencesValueProposition"
+    },
+    {
+      "id": "p65",
+      "domain": "nfd5297ce9739603fad23",
+      "range": "n66d9255488ebcdfdeb9d",
+      "label": {
+        "en": "targets"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r186_targets"
+    },
+    {
+      "id": "p66",
+      "domain": "nfd5297ce9739603fad23",
+      "range": "nf1320a418d78d1e4167a",
+      "label": {
+        "en": "includesService"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r187_includesService"
+    },
+    {
+      "id": "p67",
+      "domain": "n0a8d9825145110ae1b59",
+      "range": "n1aa4dbada3349d298cfa",
+      "label": {
+        "en": "referencesVariantConfiguration"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r188_referencesVariantConfiguration"
+    },
+    {
+      "id": "p68",
+      "domain": "ncc6f8a1e9aef6ab2e0e7",
+      "range": "n66d9255488ebcdfdeb9d",
+      "label": {
+        "en": "targets"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r189_targets"
+    },
+    {
+      "id": "p69",
+      "domain": "ncc6f8a1e9aef6ab2e0e7",
+      "range": "n0e38f93721eccd8ca39d",
+      "label": {
+        "en": "referencesValueProposition"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r190_referencesValueProposition"
+    },
+    {
+      "id": "p70",
+      "domain": "n1c59291a669e62b92500",
+      "range": "nf652b3e0939ab0e3f8c7",
+      "label": {
+        "en": "references"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r192_references"
+    },
+    {
+      "id": "p71",
+      "domain": "n0a84724e3d1633575b17",
+      "range": "n8ac437236da727ad980d",
+      "label": {
+        "en": "referencesMentalModel"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r194_referencesMentalModel"
+    },
+    {
+      "id": "p72",
+      "domain": "nd5ce3254dc5412d6f7e2",
+      "range": "n3061cf789325c052beb1",
+      "label": {
+        "en": "usesScript"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r195_usesScript"
+    },
+    {
+      "id": "p73",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n77f789bbf27b5f560a9e",
+      "label": {
+        "en": "reportedUnderTestPlan"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r196_reportedUnderTestPlan"
+    },
+    {
+      "id": "p74",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n3061cf789325c052beb1",
+      "label": {
+        "en": "citesExecutionScript"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r197_citesExecutionScript"
+    },
+    {
+      "id": "p75",
+      "domain": "n89bff0caf1a037586fa2",
+      "range": "nf652b3e0939ab0e3f8c7",
+      "label": {
+        "en": "citesSupportingEvidence"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r198_citesSupportingEvidence"
+    },
+    {
+      "id": "p76",
+      "domain": "n6063ba4c607cd6a780b9",
+      "range": "n89aedc2cded108c0403a",
+      "label": {
+        "en": "referencesDatasetConfiguration"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r199_referencesDatasetConfiguration"
+    },
+    {
+      "id": "p77",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n66d9255488ebcdfdeb9d",
+      "label": {
+        "en": "targets"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r200_targets"
+    },
+    {
+      "id": "p78",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "ncaacdc2cab1addcd86e4",
+      "label": {
+        "en": "targets"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r201_targets"
+    },
+    {
+      "id": "p79",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n0e38f93721eccd8ca39d",
+      "label": {
+        "en": "referencesValueProposition"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r202_referencesValueProposition"
+    },
+    {
+      "id": "p80",
+      "domain": "n19376d8c2f66058479c7",
+      "range": "n66d9255488ebcdfdeb9d",
+      "label": {
+        "en": "targets"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r203_targets"
+    },
+    {
+      "id": "p81",
+      "domain": "n19f0f0dca27a2810d649",
+      "range": "n66d9255488ebcdfdeb9d",
+      "label": {
+        "en": "targets"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r204_targets"
+    },
+    {
+      "id": "p82",
+      "domain": "necbebe36879703ae24b5",
+      "range": "nf652b3e0939ab0e3f8c7",
+      "label": {
+        "en": "citesInsightEvidence"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r207_citesInsightEvidence"
+    },
+    {
+      "id": "p83",
+      "domain": "nfd5297ce9739603fad23",
+      "range": "n3f8a16796c9e2b48a650",
+      "label": {
+        "en": "addressesNeed"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r208_addressesNeed"
+    },
+    {
+      "id": "p84",
+      "domain": "ncc6f8a1e9aef6ab2e0e7",
+      "range": "n3f8a16796c9e2b48a650",
+      "label": {
+        "en": "informedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r209_informedBy"
+    },
+    {
+      "id": "p85",
+      "domain": "nc7e309d614ac82d7c5ea",
+      "range": "n3f8a16796c9e2b48a650",
+      "label": {
+        "en": "assessesNeed"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r210_assessesNeed"
+    },
+    {
+      "id": "p86",
+      "domain": "nc7e309d614ac82d7c5ea",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "assessesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r211_assessesPain"
+    },
+    {
+      "id": "p87",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n3f8a16796c9e2b48a650",
+      "label": {
+        "en": "intendsToAddressNeed"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r212_intendsToAddressNeed"
+    },
+    {
+      "id": "p88",
+      "domain": "n680a42c6a3a099583212",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "addressesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r213_addressesPain"
+    },
+    {
+      "id": "p89",
+      "domain": "n6c58f66d7f088a511c33",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "describesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r214_describesPain"
+    },
+    {
+      "id": "p90",
+      "domain": "n4d216026de7b0083b7d4",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "describesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r215_describesPain"
+    },
+    {
+      "id": "p91",
+      "domain": "n88904c65dcbffc01b0e0",
+      "range": "n3f8a16796c9e2b48a650",
+      "label": {
+        "en": "intendsToAddressNeed"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r216_intendsToAddressNeed"
+    },
+    {
+      "id": "p92",
+      "domain": "n88904c65dcbffc01b0e0",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "describesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r217_describesPain"
+    },
+    {
+      "id": "p93",
+      "domain": "n0b26c3e85bf0cca558e2",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "citesSupportingEvidence"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r218_citesSupportingEvidence"
+    },
+    {
+      "id": "p94",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "addressesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r219_addressesPain"
+    },
+    {
+      "id": "p95",
+      "domain": "n24de73621f7136be50d7",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "addressesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r220_addressesPain"
+    },
+    {
+      "id": "p96",
+      "domain": "n24de73621f7136be50d7",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "supportedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r221_supportedBy"
+    },
+    {
+      "id": "p97",
+      "domain": "n88476b59184a9fdbd673",
+      "range": "n1d938a321bcbcc76523a",
+      "label": {
+        "en": "differentiatesFrom"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r222_differentiatesFrom"
+    },
+    {
+      "id": "p98",
+      "domain": "n88476b59184a9fdbd673",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "supportedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r223_supportedBy"
+    },
+    {
+      "id": "p99",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "evidencedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r224_evidencedBy"
+    },
+    {
+      "id": "p100",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "n2b652a79f68dd58cfaf3",
+      "label": {
+        "en": "addressesPain"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r225_addressesPain"
+    },
+    {
+      "id": "p101",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "nc26fe8bda2a516cae4ba",
+      "label": {
+        "en": "evidencedBy"
+      },
+      "iri": "urn:product-ontology:relation-profile:0.7:r226_evidencedBy"
+    },
+    {
+      "id": "p102",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "acquisitionCitesEvidence"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:acquisitionCitesEvidence"
+    },
+    {
+      "id": "p103",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "necbebe36879703ae24b5",
+      "label": {
+        "en": "acquisitionCitesInsight"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:acquisitionCitesInsight"
+    },
+    {
+      "id": "p104",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "adoptionCitesEvidence"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:adoptionCitesEvidence"
+    },
+    {
+      "id": "p105",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "necbebe36879703ae24b5",
+      "label": {
+        "en": "adoptionCitesInsight"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:adoptionCitesInsight"
+    },
+    {
+      "id": "p106",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "nd6051b084cfe444fac84",
+      "label": {
+        "en": "changeDecision"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeDecision"
+    },
+    {
+      "id": "p107",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "changeFeature"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeFeature"
+    },
+    {
+      "id": "p108",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "changeOccurrenceReference"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeOccurrenceReference"
+    },
+    {
+      "id": "p109",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "ndb3d52aca856342fb9e5",
+      "label": {
+        "en": "changeRecordedAt"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeRecordedAt"
+    },
+    {
+      "id": "p110",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "nbeb9b28d3a17d1628f9b",
+      "label": {
+        "en": "changeScope"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeScope"
+    },
+    {
+      "id": "p111",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "changeSource"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeSource"
+    },
+    {
+      "id": "p112",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "changeStatement"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeStatement"
+    },
+    {
+      "id": "p113",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "n51d691cd1ceb8aa4ceda",
+      "label": {
+        "en": "changeTask"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:changeTask"
+    },
+    {
+      "id": "p114",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "nca854bd1e5832a9e502b",
+      "label": {
+        "en": "decisionConsidersSolution"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:decisionConsidersSolution"
+    },
+    {
+      "id": "p115",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "decisionEvidence"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:decisionEvidence"
+    },
+    {
+      "id": "p116",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "decisionRationale"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:decisionRationale"
+    },
+    {
+      "id": "p117",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "nca854bd1e5832a9e502b",
+      "label": {
+        "en": "decisionSelectsSolution"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:decisionSelectsSolution"
+    },
+    {
+      "id": "p118",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "decisionSource"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:decisionSource"
+    },
+    {
+      "id": "p119",
+      "domain": "n9401a9e8da8fd27ad193",
+      "range": "n5801242c0d8f60f71f75",
+      "label": {
+        "en": "dependencyActualCapabilityTarget"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:dependencyActualCapabilityTarget"
+    },
+    {
+      "id": "p120",
+      "domain": "n9401a9e8da8fd27ad193",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "dependencyCapabilitySpecificationTarget"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:dependencyCapabilitySpecificationTarget"
+    },
+    {
+      "id": "p121",
+      "domain": "n9401a9e8da8fd27ad193",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "dependencyCondition"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:dependencyCondition"
+    },
+    {
+      "id": "p122",
+      "domain": "n9401a9e8da8fd27ad193",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "dependencyExternalTarget"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:dependencyExternalTarget"
+    },
+    {
+      "id": "p123",
+      "domain": "n9401a9e8da8fd27ad193",
+      "range": "n5e2e77d6a96b5ea17b91",
+      "label": {
+        "en": "dependencyProductTarget"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:dependencyProductTarget"
+    },
+    {
+      "id": "p124",
+      "domain": "n9401a9e8da8fd27ad193",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "dependencySource"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:dependencySource"
+    },
+    {
+      "id": "p125",
+      "domain": "n88476b59184a9fdbd673",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "narrativeCitesEvidence"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:narrativeCitesEvidence"
+    },
+    {
+      "id": "p126",
+      "domain": "n88476b59184a9fdbd673",
+      "range": "necbebe36879703ae24b5",
+      "label": {
+        "en": "narrativeCitesInsight"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:narrativeCitesInsight"
+    },
+    {
+      "id": "p127",
+      "domain": "n970520af8f016acd4c08",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "proposalFeature"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:proposalFeature"
+    },
+    {
+      "id": "p128",
+      "domain": "n970520af8f016acd4c08",
+      "range": "nbeb9b28d3a17d1628f9b",
+      "label": {
+        "en": "proposalScope"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:proposalScope"
+    },
+    {
+      "id": "p129",
+      "domain": "n970520af8f016acd4c08",
+      "range": "nbe9501df367a580d21c7",
+      "label": {
+        "en": "proposalSource"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:proposalSource"
+    },
+    {
+      "id": "p130",
+      "domain": "n970520af8f016acd4c08",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "proposalStatement"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:proposalStatement"
+    },
+    {
+      "id": "p131",
+      "domain": "n44c8af3e1677f7730e54",
+      "range": "n44c8af3e1677f7730e54",
+      "label": {
+        "en": "stepPrecedes"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:stepPrecedes"
+    },
+    {
+      "id": "p132",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n0a84724e3d1633575b17",
+      "label": {
+        "en": "usabilityInformationArchitecture"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityInformationArchitecture"
+    },
+    {
+      "id": "p133",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n6c58f66d7f088a511c33",
+      "label": {
+        "en": "usabilityJourney"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityJourney"
+    },
+    {
+      "id": "p134",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n4d216026de7b0083b7d4",
+      "label": {
+        "en": "usabilityJourneyStage"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityJourneyStage"
+    },
+    {
+      "id": "p135",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n81fd0066656d60aa6899",
+      "label": {
+        "en": "usabilityPersona"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityPersona"
+    },
+    {
+      "id": "p136",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "usabilityRecommendation"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityRecommendation"
+    },
+    {
+      "id": "p137",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n44c8af3e1677f7730e54",
+      "label": {
+        "en": "usabilityStep"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityStep"
+    },
+    {
+      "id": "p138",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n88904c65dcbffc01b0e0",
+      "label": {
+        "en": "usabilityTouchpoint"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityTouchpoint"
+    },
+    {
+      "id": "p139",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n64de458501de896988c4",
+      "label": {
+        "en": "usabilityUIState"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityUIState"
+    },
+    {
+      "id": "p140",
+      "domain": "n1be0710365de9c491d25",
+      "range": "ncccebf00cfd7eaba871e",
+      "label": {
+        "en": "usabilityUserRole"
+      },
+      "iri": "urn:product-ontology:trace-profile:0.6:usabilityUserRole"
+    },
+    {
+      "id": "p141",
+      "domain": "n1c59291a669e62b92500",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "assessesProblem"
+      },
+      "iri": "urn:productium:specification-profile:assessesProblem"
+    },
+    {
+      "id": "p142",
+      "domain": "nc7e309d614ac82d7c5ea",
+      "range": "n5e2e77d6a96b5ea17b91",
+      "label": {
+        "en": "assessesProduct"
+      },
+      "iri": "urn:productium:specification-profile:assessesProduct"
+    },
+    {
+      "id": "p143",
+      "domain": "n1c59291a669e62b92500",
+      "range": "nca854bd1e5832a9e502b",
+      "label": {
+        "en": "assessesSolution"
+      },
+      "iri": "urn:productium:specification-profile:assessesSolution"
+    },
+    {
+      "id": "p144",
+      "domain": "n483822c94eb44db5943f",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "assessesSpecification"
+      },
+      "iri": "urn:productium:specification-profile:assessesSpecification"
+    },
+    {
+      "id": "p145",
+      "domain": "nb516a087ea45d4a6266b",
+      "range": "n5801242c0d8f60f71f75",
+      "label": {
+        "en": "bearsCapability"
+      },
+      "iri": "urn:productium:specification-profile:bearsCapability"
+    },
+    {
+      "id": "p146",
+      "domain": "ne628162e32d9a7ceb4ac",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "concernsRequirement"
+      },
+      "iri": "urn:productium:specification-profile:concernsRequirement"
+    },
+    {
+      "id": "p147",
+      "domain": "nbd3c5c1d047365e8eb98",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "conditionStatement"
+      },
+      "iri": "urn:productium:specification-profile:conditionStatement"
+    },
+    {
+      "id": "p148",
+      "domain": "n8fe3dc034829c31c4142",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "constrainsRequirement"
+      },
+      "iri": "urn:productium:specification-profile:constrainsRequirement"
+    },
+    {
+      "id": "p149",
+      "domain": "n97bde355b59217c8efbc",
+      "range": "nd5ce3254dc5412d6f7e2",
+      "label": {
+        "en": "containsCase"
+      },
+      "iri": "urn:productium:specification-profile:containsCase"
+    },
+    {
+      "id": "p150",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "n5e2e77d6a96b5ea17b91",
+      "label": {
+        "en": "containsProduct"
+      },
+      "iri": "urn:productium:specification-profile:containsProduct"
+    },
+    {
+      "id": "p151",
+      "domain": "n6c58f66d7f088a511c33",
+      "range": "n4d216026de7b0083b7d4",
+      "label": {
+        "en": "containsStage"
+      },
+      "iri": "urn:productium:specification-profile:containsStage"
+    },
+    {
+      "id": "p152",
+      "domain": "n8ccb5ce0cb112c9e327a",
+      "range": "n9e5a8393f98f2d32d67b",
+      "label": {
+        "en": "definesLifecycleStage"
+      },
+      "iri": "urn:productium:specification-profile:definesLifecycleStage"
+    },
+    {
+      "id": "p153",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "dependsOnFeatureSpecification"
+      },
+      "iri": "urn:productium:specification-profile:dependsOnEnablerSpecification"
+    },
+    {
+      "id": "p154",
+      "domain": "n5801242c0d8f60f71f75",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "evaluatedAgainst"
+      },
+      "iri": "urn:productium:specification-profile:evaluatedAgainst"
+    },
+    {
+      "id": "p155",
+      "domain": "n483822c94eb44db5943f",
+      "range": "nd5ce3254dc5412d6f7e2",
+      "label": {
+        "en": "executes"
+      },
+      "iri": "urn:productium:specification-profile:executes"
+    },
+    {
+      "id": "p156",
+      "domain": "n0299ae3ee8cee91408d7",
+      "range": "n1c228a11c2c6e1b36da3",
+      "label": {
+        "en": "exemplifiedByScenario"
+      },
+      "iri": "urn:productium:specification-profile:exemplifiedByScenario"
+    },
+    {
+      "id": "p157",
+      "domain": "n05ee7bc3b37cd3a6253a",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "expectedEnabledBy"
+      },
+      "iri": "urn:productium:specification-profile:expectedEnabledBy"
+    },
+    {
+      "id": "p158",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n9401a9e8da8fd27ad193",
+      "label": {
+        "en": "hasDependencySpecification"
+      },
+      "iri": "urn:productium:specification-profile:hasDependencySpecification"
+    },
+    {
+      "id": "p159",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n0299ae3ee8cee91408d7",
+      "label": {
+        "en": "hasFeatureCriterion"
+      },
+      "iri": "urn:productium:specification-profile:hasFeatureCriterion"
+    },
+    {
+      "id": "p160",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n15a4cd21010bba7236da",
+      "label": {
+        "en": "hasProductStatusRecord"
+      },
+      "iri": "urn:productium:specification-profile:hasProductStatusRecord"
+    },
+    {
+      "id": "p161",
+      "domain": "nb89a87132a8ff5def01d",
+      "range": "nca854bd1e5832a9e502b",
+      "label": {
+        "en": "hasProposedSolution"
+      },
+      "iri": "urn:productium:specification-profile:hasProposedSolution"
+    },
+    {
+      "id": "p162",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "nbeb9b28d3a17d1628f9b",
+      "label": {
+        "en": "hasScopeSpecification"
+      },
+      "iri": "urn:productium:specification-profile:hasScopeSpecification"
+    },
+    {
+      "id": "p163",
+      "domain": "n680a42c6a3a099583212",
+      "range": "n0299ae3ee8cee91408d7",
+      "label": {
+        "en": "hasStoryCriterion"
+      },
+      "iri": "urn:productium:specification-profile:hasStoryCriterion"
+    },
+    {
+      "id": "p164",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n680a42c6a3a099583212",
+      "label": {
+        "en": "hasStorySpecification"
+      },
+      "iri": "urn:productium:specification-profile:hasStorySpecification"
+    },
+    {
+      "id": "p165",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "hasVersion"
+      },
+      "iri": "urn:productium:specification-profile:hasVersion"
+    },
+    {
+      "id": "p166",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "ncc6f8a1e9aef6ab2e0e7",
+      "label": {
+        "en": "hasVisionStatement"
+      },
+      "iri": "urn:productium:specification-profile:hasVisionStatement"
+    },
+    {
+      "id": "p167",
+      "domain": "n9a33f1c873edb5eb5d48",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "hypothesizesAboutProblem"
+      },
+      "iri": "urn:productium:specification-profile:hypothesizesAboutProblem"
+    },
+    {
+      "id": "p168",
+      "domain": "nb516a087ea45d4a6266b",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "implementsFeature"
+      },
+      "iri": "urn:productium:specification-profile:implementsFeature"
+    },
+    {
+      "id": "p169",
+      "domain": "n724e7cc77cebd66e69d1",
+      "range": "n5404588ff42409a3ae27",
+      "label": {
+        "en": "informsInitiative"
+      },
+      "iri": "urn:productium:specification-profile:informsInitiative"
+    },
+    {
+      "id": "p170",
+      "domain": "n4a676984934d1b4f4176",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "intendedToEnableFeature"
+      },
+      "iri": "urn:productium:specification-profile:intendedToEnableFeature"
+    },
+    {
+      "id": "p171",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "intendsCapability"
+      },
+      "iri": "urn:productium:specification-profile:intendsCapability"
+    },
+    {
+      "id": "p172",
+      "domain": "nca854bd1e5832a9e502b",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "intendsToAddressProblem"
+      },
+      "iri": "urn:productium:specification-profile:intendsToAddressProblem"
+    },
+    {
+      "id": "p173",
+      "domain": "nca854bd1e5832a9e502b",
+      "range": "n05ee7bc3b37cd3a6253a",
+      "label": {
+        "en": "intendsToContributeToOutcome"
+      },
+      "iri": "urn:productium:specification-profile:intendsToContributeToOutcome"
+    },
+    {
+      "id": "p174",
+      "domain": "n5404588ff42409a3ae27",
+      "range": "n9ac1cc8dc6c5308bff69",
+      "label": {
+        "en": "intendsToSupportGoal"
+      },
+      "iri": "urn:productium:specification-profile:intendsToSupportGoal"
+    },
+    {
+      "id": "p175",
+      "domain": "ndc35d28b62aafc850713",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "justifiesRequirement"
+      },
+      "iri": "urn:productium:specification-profile:justifiesRequirement"
+    },
+    {
+      "id": "p176",
+      "domain": "ncc6f8a1e9aef6ab2e0e7",
+      "range": "n9ac1cc8dc6c5308bff69",
+      "label": {
+        "en": "motivatesGoal"
+      },
+      "iri": "urn:productium:specification-profile:motivatesGoal"
+    },
+    {
+      "id": "p177",
+      "domain": "nb89a87132a8ff5def01d",
+      "range": "n9a33f1c873edb5eb5d48",
+      "label": {
+        "en": "motivatesHypothesis"
+      },
+      "iri": "urn:productium:specification-profile:motivatesHypothesis"
+    },
+    {
+      "id": "p178",
+      "domain": "n9a33f1c873edb5eb5d48",
+      "range": "n724e7cc77cebd66e69d1",
+      "label": {
+        "en": "motivatesSolutionHypothesis"
+      },
+      "iri": "urn:productium:specification-profile:motivatesSolutionHypothesis"
+    },
+    {
+      "id": "p179",
+      "domain": "nfd5297ce9739603fad23",
+      "range": "n5e2e77d6a96b5ea17b91",
+      "label": {
+        "en": "offeringOf"
+      },
+      "iri": "urn:productium:specification-profile:offeringOf"
+    },
+    {
+      "id": "p180",
+      "domain": "n067f8073d9ce09b52740",
+      "range": "n0299ae3ee8cee91408d7",
+      "label": {
+        "en": "operationalizedByCriterion"
+      },
+      "iri": "urn:productium:specification-profile:operationalizedByCriterion"
+    },
+    {
+      "id": "p181",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "ne83956e971de9d7355b8",
+      "label": {
+        "en": "organizesEntry"
+      },
+      "iri": "urn:productium:specification-profile:organizesEntry"
+    },
+    {
+      "id": "p182",
+      "domain": "n81fd0066656d60aa6899",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "personaDescription"
+      },
+      "iri": "urn:productium:specification-profile:personaDescription"
+    },
+    {
+      "id": "p183",
+      "domain": "n9a33f1c873edb5eb5d48",
+      "range": "n05ee7bc3b37cd3a6253a",
+      "label": {
+        "en": "predictsOutcome"
+      },
+      "iri": "urn:productium:specification-profile:predictsOutcome"
+    },
+    {
+      "id": "p184",
+      "domain": "nca854bd1e5832a9e502b",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "proposesCapability"
+      },
+      "iri": "urn:productium:specification-profile:proposesCapability"
+    },
+    {
+      "id": "p185",
+      "domain": "nca854bd1e5832a9e502b",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "proposesFeature"
+      },
+      "iri": "urn:productium:specification-profile:proposesFeature"
+    },
+    {
+      "id": "p186",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n23009b5ab2d30405d07d",
+      "label": {
+        "en": "r100_usesPositioningStatement"
+      },
+      "iri": "urn:productium:specification-profile:r100_usesPositioningStatement"
+    },
+    {
+      "id": "p187",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n19376d8c2f66058479c7",
+      "label": {
+        "en": "r101_plansLaunch"
+      },
+      "iri": "urn:productium:specification-profile:r101_plansLaunch"
+    },
+    {
+      "id": "p188",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n19f0f0dca27a2810d649",
+      "label": {
+        "en": "r102_targetsMarketingGoal"
+      },
+      "iri": "urn:productium:specification-profile:r102_targetsMarketingGoal"
+    },
+    {
+      "id": "p189",
+      "domain": "necbebe36879703ae24b5",
+      "range": "n23009b5ab2d30405d07d",
+      "label": {
+        "en": "r103_informsPositioningStatement"
+      },
+      "iri": "urn:productium:specification-profile:r103_informsPositioningStatement"
+    },
+    {
+      "id": "p190",
+      "domain": "necbebe36879703ae24b5",
+      "range": "ne383dc02f66bc8520af0",
+      "label": {
+        "en": "r104_informsGoToMarketSpecification"
+      },
+      "iri": "urn:productium:specification-profile:r104_informsGoToMarketSpecification"
+    },
+    {
+      "id": "p191",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "ne383dc02f66bc8520af0",
+      "label": {
+        "en": "r105_informsGoToMarketFromAcquisition"
+      },
+      "iri": "urn:productium:specification-profile:r105_informsGoToMarketFromAcquisition"
+    },
+    {
+      "id": "p192",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "ne383dc02f66bc8520af0",
+      "label": {
+        "en": "r106_informsGoToMarketFromAdoption"
+      },
+      "iri": "urn:productium:specification-profile:r106_informsGoToMarketFromAdoption"
+    },
+    {
+      "id": "p193",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "n5404588ff42409a3ae27",
+      "label": {
+        "en": "tracksInitiative"
+      },
+      "iri": "urn:productium:specification-profile:r117_tracksInitiative"
+    },
+    {
+      "id": "p194",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "n37d609b444c80787097b",
+      "label": {
+        "en": "tracksReleaseSpecification"
+      },
+      "iri": "urn:productium:specification-profile:r118_tracksReleaseSpecification"
+    },
+    {
+      "id": "p195",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "n585f68a5591c2aa29eda",
+      "label": {
+        "en": "tracksMilestoneSpecification"
+      },
+      "iri": "urn:productium:specification-profile:r119_tracksMilestoneSpecification"
+    },
+    {
+      "id": "p196",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "nb18ff0aad466eac6e927",
+      "label": {
+        "en": "r120_referencesProductLine"
+      },
+      "iri": "urn:productium:specification-profile:r120_referencesProductLine"
+    },
+    {
+      "id": "p197",
+      "domain": "n7289b5d8d65bbfd79183",
+      "range": "ne93b5ff63c4ef22bf7ba",
+      "label": {
+        "en": "r121_hasPortfolioConfidenceAssessment"
+      },
+      "iri": "urn:productium:specification-profile:r121_hasPortfolioConfidenceAssessment"
+    },
+    {
+      "id": "p198",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n81fd0066656d60aa6899",
+      "label": {
+        "en": "r122_targetsPersona"
+      },
+      "iri": "urn:productium:specification-profile:r122_targetsPersona"
+    },
+    {
+      "id": "p199",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n6c58f66d7f088a511c33",
+      "label": {
+        "en": "framesJourney"
+      },
+      "iri": "urn:productium:specification-profile:r123_framesJourney"
+    },
+    {
+      "id": "p200",
+      "domain": "ncc6f8a1e9aef6ab2e0e7",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "framesFeature"
+      },
+      "iri": "urn:productium:specification-profile:r125_framesFeature"
+    },
+    {
+      "id": "p201",
+      "domain": "n5404588ff42409a3ae27",
+      "range": "n37d609b444c80787097b",
+      "label": {
+        "en": "tracksInitiativeReleaseSpecification"
+      },
+      "iri": "urn:productium:specification-profile:r127_tracksInitiativeReleaseSpecification"
+    },
+    {
+      "id": "p202",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "nfb730f56dad52bf0a783",
+      "label": {
+        "en": "supportedBy"
+      },
+      "iri": "urn:productium:specification-profile:r133_supportedBy"
+    },
+    {
+      "id": "p203",
+      "domain": "ne628162e32d9a7ceb4ac",
+      "range": "nf3de1b87cc6babb26efd",
+      "label": {
+        "en": "recordsResolutionChange"
+      },
+      "iri": "urn:productium:specification-profile:r135_recordsResolutionChange"
+    },
+    {
+      "id": "p204",
+      "domain": "n6c58f66d7f088a511c33",
+      "range": "n88904c65dcbffc01b0e0",
+      "label": {
+        "en": "includes"
+      },
+      "iri": "urn:productium:specification-profile:r136_includes"
+    },
+    {
+      "id": "p205",
+      "domain": "nfb730f56dad52bf0a783",
+      "range": "ncad2e1fc80eb429330e0",
+      "label": {
+        "en": "includesScreen"
+      },
+      "iri": "urn:productium:specification-profile:r137_includesScreen"
+    },
+    {
+      "id": "p206",
+      "domain": "ncad2e1fc80eb429330e0",
+      "range": "ncad2e1fc80eb429330e0",
+      "label": {
+        "en": "allowsPrecedingScreen"
+      },
+      "iri": "urn:productium:specification-profile:r138_precededBy"
+    },
+    {
+      "id": "p207",
+      "domain": "n381d20e5e1a2cd3bea9c",
+      "range": "n9ac1cc8dc6c5308bff69",
+      "label": {
+        "en": "r139_intendsToSupportGoal"
+      },
+      "iri": "urn:productium:specification-profile:r139_intendsToSupportGoal"
+    },
+    {
+      "id": "p208",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "n37d609b444c80787097b",
+      "label": {
+        "en": "plansEntryRelease"
+      },
+      "iri": "urn:productium:specification-profile:r140_plansEntryRelease"
+    },
+    {
+      "id": "p209",
+      "domain": "n585f68a5591c2aa29eda",
+      "range": "n37d609b444c80787097b",
+      "label": {
+        "en": "milestoneForReleaseSpecification"
+      },
+      "iri": "urn:productium:specification-profile:r141_milestoneForReleaseSpecification"
+    },
+    {
+      "id": "p210",
+      "domain": "nb6519652879086591ef3",
+      "range": "n5404588ff42409a3ae27",
+      "label": {
+        "en": "groupsPlannedInitiative"
+      },
+      "iri": "urn:productium:specification-profile:r142_groupsPlannedInitiative"
+    },
+    {
+      "id": "p211",
+      "domain": "nf8688c9e2e0569d5756c",
+      "range": "nb6519652879086591ef3",
+      "label": {
+        "en": "usesWindowHorizonDefinition"
+      },
+      "iri": "urn:productium:specification-profile:r143_usesWindowHorizonDefinition"
+    },
+    {
+      "id": "p212",
+      "domain": "n37d609b444c80787097b",
+      "range": "n9ac1cc8dc6c5308bff69",
+      "label": {
+        "en": "r144_targetsReleaseGoal"
+      },
+      "iri": "urn:productium:specification-profile:r144_targetsReleaseGoal"
+    },
+    {
+      "id": "p213",
+      "domain": "n0b26c3e85bf0cca558e2",
+      "range": "nf98a3f272cdbd2fabfa3",
+      "label": {
+        "en": "r145_concernsDeliveryWorkItem"
+      },
+      "iri": "urn:productium:specification-profile:r145_concernsDeliveryWorkItem"
+    },
+    {
+      "id": "p214",
+      "domain": "nd5ce3254dc5412d6f7e2",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "r146_specifiesRequirementVerification"
+      },
+      "iri": "urn:productium:specification-profile:r146_specifiesRequirementVerification"
+    },
+    {
+      "id": "p215",
+      "domain": "n97bde355b59217c8efbc",
+      "range": "n483822c94eb44db5943f",
+      "label": {
+        "en": "hasRecordedExecution"
+      },
+      "iri": "urn:productium:specification-profile:r147_hasRecordedExecution"
+    },
+    {
+      "id": "p216",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n4d216026de7b0083b7d4",
+      "label": {
+        "en": "referencesJourneyStage"
+      },
+      "iri": "urn:productium:specification-profile:r148_referencesJourneyStage"
+    },
+    {
+      "id": "p217",
+      "domain": "n19376d8c2f66058479c7",
+      "range": "n81fd0066656d60aa6899",
+      "label": {
+        "en": "r149_targetsLaunchPersona"
+      },
+      "iri": "urn:productium:specification-profile:r149_targetsLaunchPersona"
+    },
+    {
+      "id": "p218",
+      "domain": "n19376d8c2f66058479c7",
+      "range": "n23009b5ab2d30405d07d",
+      "label": {
+        "en": "usesLaunchPositioning"
+      },
+      "iri": "urn:productium:specification-profile:r150_usesLaunchPositioning"
+    },
+    {
+      "id": "p219",
+      "domain": "n19376d8c2f66058479c7",
+      "range": "n24de73621f7136be50d7",
+      "label": {
+        "en": "usesLaunchMessaging"
+      },
+      "iri": "urn:productium:specification-profile:r151_usesLaunchMessaging"
+    },
+    {
+      "id": "p220",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r154_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r154_referencesMetric"
+    },
+    {
+      "id": "p221",
+      "domain": "ncc6f8a1e9aef6ab2e0e7",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "addresses"
+      },
+      "iri": "urn:productium:specification-profile:r155_addresses"
+    },
+    {
+      "id": "p222",
+      "domain": "n9ac1cc8dc6c5308bff69",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r156_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r156_referencesMetric"
+    },
+    {
+      "id": "p223",
+      "domain": "nb89a87132a8ff5def01d",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r158_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r158_referencesMetric"
+    },
+    {
+      "id": "p224",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "intendsToAddressProblem"
+      },
+      "iri": "urn:productium:specification-profile:r164_intendsToAddressProblem"
+    },
+    {
+      "id": "p225",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n81fd0066656d60aa6899",
+      "label": {
+        "en": "r165_specifiesBeneficiaryPersona"
+      },
+      "iri": "urn:productium:specification-profile:r165_specifiesBeneficiaryPersona"
+    },
+    {
+      "id": "p226",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r166_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r166_referencesMetric"
+    },
+    {
+      "id": "p227",
+      "domain": "n6c58f66d7f088a511c33",
+      "range": "nb89a87132a8ff5def01d",
+      "label": {
+        "en": "identifiesOpportunity"
+      },
+      "iri": "urn:productium:specification-profile:r168_identifiesOpportunity"
+    },
+    {
+      "id": "p228",
+      "domain": "n6c58f66d7f088a511c33",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r169_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r169_referencesMetric"
+    },
+    {
+      "id": "p229",
+      "domain": "n4d216026de7b0083b7d4",
+      "range": "nb89a87132a8ff5def01d",
+      "label": {
+        "en": "identifiesOpportunity"
+      },
+      "iri": "urn:productium:specification-profile:r170_identifiesOpportunity"
+    },
+    {
+      "id": "p230",
+      "domain": "n4d216026de7b0083b7d4",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r171_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r171_referencesMetric"
+    },
+    {
+      "id": "p231",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "addressesProblemStatement"
+      },
+      "iri": "urn:productium:specification-profile:r172_addressesProblemStatement"
+    },
+    {
+      "id": "p232",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "claimsDifferentiationThrough"
+      },
+      "iri": "urn:productium:specification-profile:r173_claimsDifferentiationThrough"
+    },
+    {
+      "id": "p233",
+      "domain": "n24de73621f7136be50d7",
+      "range": "n81fd0066656d60aa6899",
+      "label": {
+        "en": "r174_targetsMessagePersona"
+      },
+      "iri": "urn:productium:specification-profile:r174_targetsMessagePersona"
+    },
+    {
+      "id": "p234",
+      "domain": "n24de73621f7136be50d7",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "referencesMessageFeature"
+      },
+      "iri": "urn:productium:specification-profile:r175_referencesMessageFeature"
+    },
+    {
+      "id": "p235",
+      "domain": "ne383dc02f66bc8520af0",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r176_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r176_referencesMetric"
+    },
+    {
+      "id": "p236",
+      "domain": "n19376d8c2f66058479c7",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r177_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r177_referencesMetric"
+    },
+    {
+      "id": "p237",
+      "domain": "n19f0f0dca27a2810d649",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r178_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r178_referencesMetric"
+    },
+    {
+      "id": "p238",
+      "domain": "n88476b59184a9fdbd673",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "addressesNarrativeProblem"
+      },
+      "iri": "urn:productium:specification-profile:r179_addressesNarrativeProblem"
+    },
+    {
+      "id": "p239",
+      "domain": "n88476b59184a9fdbd673",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "claimsDifferentiationThrough"
+      },
+      "iri": "urn:productium:specification-profile:r180_claimsDifferentiationThrough"
+    },
+    {
+      "id": "p240",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "hypothesizesAcquisitionForProblem"
+      },
+      "iri": "urn:productium:specification-profile:r181_hypothesizesAcquisitionForProblem"
+    },
+    {
+      "id": "p241",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r182_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r182_referencesMetric"
+    },
+    {
+      "id": "p242",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "hypothesizesAdoptionForProblem"
+      },
+      "iri": "urn:productium:specification-profile:r183_hypothesizesAdoptionForProblem"
+    },
+    {
+      "id": "p243",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "r184_referencesMetric"
+      },
+      "iri": "urn:productium:specification-profile:r184_referencesMetric"
+    },
+    {
+      "id": "p244",
+      "domain": "nfe6d79b3478d83b2bd9c",
+      "range": "nb89a87132a8ff5def01d",
+      "label": {
+        "en": "motivatesOpportunity"
+      },
+      "iri": "urn:productium:specification-profile:r22_motivatesOpportunity"
+    },
+    {
+      "id": "p245",
+      "domain": "n81fd0066656d60aa6899",
+      "range": "ncccebf00cfd7eaba871e",
+      "label": {
+        "en": "r51_describesUserRole"
+      },
+      "iri": "urn:productium:specification-profile:r51_describesUserRole"
+    },
+    {
+      "id": "p246",
+      "domain": "n81fd0066656d60aa6899",
+      "range": "n6c58f66d7f088a511c33",
+      "label": {
+        "en": "r52_representedInJourney"
+      },
+      "iri": "urn:productium:specification-profile:r52_representedInJourney"
+    },
+    {
+      "id": "p247",
+      "domain": "n4d216026de7b0083b7d4",
+      "range": "n88904c65dcbffc01b0e0",
+      "label": {
+        "en": "includes"
+      },
+      "iri": "urn:productium:specification-profile:r54_includes"
+    },
+    {
+      "id": "p248",
+      "domain": "n4d216026de7b0083b7d4",
+      "range": "nfb730f56dad52bf0a783",
+      "label": {
+        "en": "describedByFlow"
+      },
+      "iri": "urn:productium:specification-profile:r55_describedByFlow"
+    },
+    {
+      "id": "p249",
+      "domain": "nfb730f56dad52bf0a783",
+      "range": "n44c8af3e1677f7730e54",
+      "label": {
+        "en": "r56_specifiesStep"
+      },
+      "iri": "urn:productium:specification-profile:r56_specifiesStep"
+    },
+    {
+      "id": "p250",
+      "domain": "n44c8af3e1677f7730e54",
+      "range": "ncad2e1fc80eb429330e0",
+      "label": {
+        "en": "r57_referencesScreen"
+      },
+      "iri": "urn:productium:specification-profile:r57_referencesScreen"
+    },
+    {
+      "id": "p251",
+      "domain": "n0a84724e3d1633575b17",
+      "range": "ncad2e1fc80eb429330e0",
+      "label": {
+        "en": "r58_organizesScreenSpecification"
+      },
+      "iri": "urn:productium:specification-profile:r58_organizesScreenSpecification"
+    },
+    {
+      "id": "p252",
+      "domain": "ncad2e1fc80eb429330e0",
+      "range": "n64de458501de896988c4",
+      "label": {
+        "en": "r59_definesUIState"
+      },
+      "iri": "urn:productium:specification-profile:r59_definesUIState"
+    },
+    {
+      "id": "p253",
+      "domain": "n1be0710365de9c491d25",
+      "range": "nfb730f56dad52bf0a783",
+      "label": {
+        "en": "r60_reportsOnFlow"
+      },
+      "iri": "urn:productium:specification-profile:r60_reportsOnFlow"
+    },
+    {
+      "id": "p254",
+      "domain": "n1be0710365de9c491d25",
+      "range": "ncad2e1fc80eb429330e0",
+      "label": {
+        "en": "r61_reportsOnScreen"
+      },
+      "iri": "urn:productium:specification-profile:r61_reportsOnScreen"
+    },
+    {
+      "id": "p255",
+      "domain": "n680a42c6a3a099583212",
+      "range": "nfb730f56dad52bf0a783",
+      "label": {
+        "en": "supportedBy"
+      },
+      "iri": "urn:productium:specification-profile:r63_supportedBy"
+    },
+    {
+      "id": "p256",
+      "domain": "n381d20e5e1a2cd3bea9c",
+      "range": "nc1c3186e77af3e25ca30",
+      "label": {
+        "en": "r64_organizesRoadmapEntry"
+      },
+      "iri": "urn:productium:specification-profile:r64_organizesRoadmapEntry"
+    },
+    {
+      "id": "p257",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "n5404588ff42409a3ae27",
+      "label": {
+        "en": "r65_plansInitiative"
+      },
+      "iri": "urn:productium:specification-profile:r65_plansInitiative"
+    },
+    {
+      "id": "p258",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "r66_plansFeatureDelivery"
+      },
+      "iri": "urn:productium:specification-profile:r66_plansFeatureDelivery"
+    },
+    {
+      "id": "p259",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "n585f68a5591c2aa29eda",
+      "label": {
+        "en": "r67_targetsMilestone"
+      },
+      "iri": "urn:productium:specification-profile:r67_targetsMilestone"
+    },
+    {
+      "id": "p260",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "nac21f6f9d706a4321449",
+      "label": {
+        "en": "r68_hasPriorityAssessment"
+      },
+      "iri": "urn:productium:specification-profile:r68_hasPriorityAssessment"
+    },
+    {
+      "id": "p261",
+      "domain": "nac21f6f9d706a4321449",
+      "range": "n5d53795275865e27f341",
+      "label": {
+        "en": "r69_usesRankingCriterion"
+      },
+      "iri": "urn:productium:specification-profile:r69_usesRankingCriterion"
+    },
+    {
+      "id": "p262",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "nb6519652879086591ef3",
+      "label": {
+        "en": "r70_usesHorizonDefinition"
+      },
+      "iri": "urn:productium:specification-profile:r70_usesHorizonDefinition"
+    },
+    {
+      "id": "p263",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "nf8688c9e2e0569d5756c",
+      "label": {
+        "en": "r71_hasTargetWindowAssignment"
+      },
+      "iri": "urn:productium:specification-profile:r71_hasTargetWindowAssignment"
+    },
+    {
+      "id": "p264",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "ne93b5ff63c4ef22bf7ba",
+      "label": {
+        "en": "r72_hasEntryConfidenceAssessment"
+      },
+      "iri": "urn:productium:specification-profile:r72_hasEntryConfidenceAssessment"
+    },
+    {
+      "id": "p265",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "nff01d22870ea111b7133",
+      "label": {
+        "en": "r73_usesCommitmentLevelDefinition"
+      },
+      "iri": "urn:productium:specification-profile:r73_usesCommitmentLevelDefinition"
+    },
+    {
+      "id": "p266",
+      "domain": "nc1c3186e77af3e25ca30",
+      "range": "nc1c3186e77af3e25ca30",
+      "label": {
+        "en": "r74_hasPlanningDependency"
+      },
+      "iri": "urn:productium:specification-profile:r74_hasPlanningDependency"
+    },
+    {
+      "id": "p267",
+      "domain": "n37d609b444c80787097b",
+      "range": "nf98a3f272cdbd2fabfa3",
+      "label": {
+        "en": "r75_plansDeliveryItem"
+      },
+      "iri": "urn:productium:specification-profile:r75_plansDeliveryItem"
+    },
+    {
+      "id": "p268",
+      "domain": "n37d609b444c80787097b",
+      "range": "nf3de1b87cc6babb26efd",
+      "label": {
+        "en": "r76_referencesChangeRecord"
+      },
+      "iri": "urn:productium:specification-profile:r76_referencesChangeRecord"
+    },
+    {
+      "id": "p269",
+      "domain": "n37d609b444c80787097b",
+      "range": "n0b26c3e85bf0cca558e2",
+      "label": {
+        "en": "r78_hasReleaseEvidenceRecord"
+      },
+      "iri": "urn:productium:specification-profile:r78_hasReleaseEvidenceRecord"
+    },
+    {
+      "id": "p270",
+      "domain": "n970520af8f016acd4c08",
+      "range": "nf3de1b87cc6babb26efd",
+      "label": {
+        "en": "r79_proposesRecordedChange"
+      },
+      "iri": "urn:productium:specification-profile:r79_proposesRecordedChange"
+    },
+    {
+      "id": "p271",
+      "domain": "nf98a3f272cdbd2fabfa3",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "plansFeature"
+      },
+      "iri": "urn:productium:specification-profile:r80_plansFeature"
+    },
+    {
+      "id": "p272",
+      "domain": "n51d691cd1ceb8aa4ceda",
+      "range": "nf98a3f272cdbd2fabfa3",
+      "label": {
+        "en": "r81_intendedToContributeToWork"
+      },
+      "iri": "urn:productium:specification-profile:r81_intendedToContributeToWork"
+    },
+    {
+      "id": "p273",
+      "domain": "n91eb227b10a4970c3cc9",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "r82_specifiesFeatureActivationControl"
+      },
+      "iri": "urn:productium:specification-profile:r82_specifiesFeatureActivationControl"
+    },
+    {
+      "id": "p274",
+      "domain": "ne1d59901dfbc8c55525e",
+      "range": "n37d609b444c80787097b",
+      "label": {
+        "en": "r83_plannedForRelease"
+      },
+      "iri": "urn:productium:specification-profile:r83_plannedForRelease"
+    },
+    {
+      "id": "p275",
+      "domain": "n1c3da1d37d2a2c639c45",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "r84_covers"
+      },
+      "iri": "urn:productium:specification-profile:r84_covers"
+    },
+    {
+      "id": "p276",
+      "domain": "n1c3da1d37d2a2c639c45",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "r85_specifiesRequirementVerification"
+      },
+      "iri": "urn:productium:specification-profile:r85_specifiesRequirementVerification"
+    },
+    {
+      "id": "p277",
+      "domain": "n1c3da1d37d2a2c639c45",
+      "range": "n0299ae3ee8cee91408d7",
+      "label": {
+        "en": "r86_specifiesCriterionVerification"
+      },
+      "iri": "urn:productium:specification-profile:r86_specifiesCriterionVerification"
+    },
+    {
+      "id": "p278",
+      "domain": "nd5ce3254dc5412d6f7e2",
+      "range": "n1c3da1d37d2a2c639c45",
+      "label": {
+        "en": "r87_refinesTestScenario"
+      },
+      "iri": "urn:productium:specification-profile:r87_refinesTestScenario"
+    },
+    {
+      "id": "p279",
+      "domain": "nd5ce3254dc5412d6f7e2",
+      "range": "n6063ba4c607cd6a780b9",
+      "label": {
+        "en": "r89_referencesTestData"
+      },
+      "iri": "urn:productium:specification-profile:r89_referencesTestData"
+    },
+    {
+      "id": "p280",
+      "domain": "ne1d59901dfbc8c55525e",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "supersedes"
+      },
+      "iri": "urn:productium:specification-profile:r8_supersedes"
+    },
+    {
+      "id": "p281",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n16c2d7e8b12bb91150ef",
+      "label": {
+        "en": "r92_hasVerificationEvidenceRecord"
+      },
+      "iri": "urn:productium:specification-profile:r92_hasVerificationEvidenceRecord"
+    },
+    {
+      "id": "p282",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n89bff0caf1a037586fa2",
+      "label": {
+        "en": "r93_hasValidationEvidenceRecord"
+      },
+      "iri": "urn:productium:specification-profile:r93_hasValidationEvidenceRecord"
+    },
+    {
+      "id": "p283",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n23009b5ab2d30405d07d",
+      "label": {
+        "en": "r94_hasPositioningStatement"
+      },
+      "iri": "urn:productium:specification-profile:r94_hasPositioningStatement"
+    },
+    {
+      "id": "p284",
+      "domain": "nfd5297ce9739603fad23",
+      "range": "n23009b5ab2d30405d07d",
+      "label": {
+        "en": "r95_positionedByStatement"
+      },
+      "iri": "urn:productium:specification-profile:r95_positionedByStatement"
+    },
+    {
+      "id": "p285",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "n07684f2be0a0b29f5495",
+      "label": {
+        "en": "r96_referencesTargetMarket"
+      },
+      "iri": "urn:productium:specification-profile:r96_referencesTargetMarket"
+    },
+    {
+      "id": "p286",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "n776e2c90c5cbe92b0e0b",
+      "label": {
+        "en": "r97_referencesTargetSegment"
+      },
+      "iri": "urn:productium:specification-profile:r97_referencesTargetSegment"
+    },
+    {
+      "id": "p287",
+      "domain": "n23009b5ab2d30405d07d",
+      "range": "n88476b59184a9fdbd673",
+      "label": {
+        "en": "r98_referencesCompetitiveNarrative"
+      },
+      "iri": "urn:productium:specification-profile:r98_referencesCompetitiveNarrative"
+    },
+    {
+      "id": "p288",
+      "domain": "n24de73621f7136be50d7",
+      "range": "n23009b5ab2d30405d07d",
+      "label": {
+        "en": "r99_expressesPositioning"
+      },
+      "iri": "urn:productium:specification-profile:r99_expressesPositioning"
+    },
+    {
+      "id": "p289",
+      "domain": "nb516a087ea45d4a6266b",
+      "range": "ne1d59901dfbc8c55525e",
+      "label": {
+        "en": "realizesVersion"
+      },
+      "iri": "urn:productium:specification-profile:realizesVersion"
+    },
+    {
+      "id": "p290",
+      "domain": "n6317ec1f3f8b2bfad6ec",
+      "range": "n4878d612866e5c07ec1b",
+      "label": {
+        "en": "recordedAttributionTo"
+      },
+      "iri": "urn:productium:specification-profile:recordedAttributionTo"
+    },
+    {
+      "id": "p291",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "n5404588ff42409a3ae27",
+      "label": {
+        "en": "recordsAffectedInitiative"
+      },
+      "iri": "urn:productium:specification-profile:recordsAffectedInitiative"
+    },
+    {
+      "id": "p292",
+      "domain": "n1c89f4985c96ff3d68a9",
+      "range": "n6317ec1f3f8b2bfad6ec",
+      "label": {
+        "en": "recordsCarrier"
+      },
+      "iri": "urn:productium:specification-profile:recordsCarrier"
+    },
+    {
+      "id": "p293",
+      "domain": "n1c89f4985c96ff3d68a9",
+      "range": "n4878d612866e5c07ec1b",
+      "label": {
+        "en": "recordsClaim"
+      },
+      "iri": "urn:productium:specification-profile:recordsClaim"
+    },
+    {
+      "id": "p294",
+      "domain": "nd6051b084cfe444fac84",
+      "range": "n2f0e28256b511bd84922",
+      "label": {
+        "en": "recordsCriterion"
+      },
+      "iri": "urn:productium:specification-profile:recordsCriterion"
+    },
+    {
+      "id": "p295",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n483822c94eb44db5943f",
+      "label": {
+        "en": "recordsExecution"
+      },
+      "iri": "urn:productium:specification-profile:recordsExecution"
+    },
+    {
+      "id": "p296",
+      "domain": "nc2bf0dcc58669f93dcdf",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "referencePurpose"
+      },
+      "iri": "urn:productium:specification-profile:referencePurpose"
+    },
+    {
+      "id": "p297",
+      "domain": "nf7007010bd1b2d8f568b",
+      "range": "nfd5297ce9739603fad23",
+      "label": {
+        "en": "referencesOffering"
+      },
+      "iri": "urn:productium:specification-profile:referencesOffering"
+    },
+    {
+      "id": "p298",
+      "domain": "ne83956e971de9d7355b8",
+      "range": "n5e2e77d6a96b5ea17b91",
+      "label": {
+        "en": "referencesProduct"
+      },
+      "iri": "urn:productium:specification-profile:referencesProduct"
+    },
+    {
+      "id": "p299",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "nb7144cb84d81c48311ac",
+      "label": {
+        "en": "referencesProductFamily"
+      },
+      "iri": "urn:productium:specification-profile:referencesProductFamily"
+    },
+    {
+      "id": "p300",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "nb18ff0aad466eac6e927",
+      "label": {
+        "en": "referencesProductLine"
+      },
+      "iri": "urn:productium:specification-profile:referencesProductLine"
+    },
+    {
+      "id": "p301",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n0a8d9825145110ae1b59",
+      "label": {
+        "en": "referencesProductVariant"
+      },
+      "iri": "urn:productium:specification-profile:referencesProductVariant"
+    },
+    {
+      "id": "p302",
+      "domain": "n54a4db46d43f05edd03c",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "referencesRuleForRequirement"
+      },
+      "iri": "urn:productium:specification-profile:referencesRuleForRequirement"
+    },
+    {
+      "id": "p303",
+      "domain": "n680a42c6a3a099583212",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "refinedByRequirement"
+      },
+      "iri": "urn:productium:specification-profile:refinedByRequirement"
+    },
+    {
+      "id": "p304",
+      "domain": "n37d609b444c80787097b",
+      "range": "ne59c51e2c7c4a15fa19c",
+      "label": {
+        "en": "reportsStatus"
+      },
+      "iri": "urn:productium:specification-profile:reportsStatus"
+    },
+    {
+      "id": "p305",
+      "domain": "n25b6ba7857ff379f9809",
+      "range": "n680a42c6a3a099583212",
+      "label": {
+        "en": "representedByStory"
+      },
+      "iri": "urn:productium:specification-profile:representedByStory"
+    },
+    {
+      "id": "p306",
+      "domain": "n131385c1d5ae776bb9df",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "scenarioActions"
+      },
+      "iri": "urn:productium:specification-profile:scenarioActions"
+    },
+    {
+      "id": "p307",
+      "domain": "n131385c1d5ae776bb9df",
+      "range": "n24ea0d6e70c5cb98db61",
+      "label": {
+        "en": "scenarioPrecondition"
+      },
+      "iri": "urn:productium:specification-profile:scenarioPrecondition"
+    },
+    {
+      "id": "p308",
+      "domain": "n724e7cc77cebd66e69d1",
+      "range": "nfe6d79b3478d83b2bd9c",
+      "label": {
+        "en": "solutionHypothesizesAboutProblem"
+      },
+      "iri": "urn:productium:specification-profile:solutionHypothesizesAboutProblem"
+    },
+    {
+      "id": "p309",
+      "domain": "n724e7cc77cebd66e69d1",
+      "range": "n05ee7bc3b37cd3a6253a",
+      "label": {
+        "en": "solutionPredictsOutcome"
+      },
+      "iri": "urn:productium:specification-profile:solutionPredictsOutcome"
+    },
+    {
+      "id": "p310",
+      "domain": "n372235ba19d156a14ea3",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "sourcesRequirement"
+      },
+      "iri": "urn:productium:specification-profile:sourcesRequirement"
+    },
+    {
+      "id": "p311",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "specifiedByRequirement"
+      },
+      "iri": "urn:productium:specification-profile:specifiedByRequirement"
+    },
+    {
+      "id": "p312",
+      "domain": "n73a1b9784063fc7a22c7",
+      "range": "n2de6dfb02ad297d63b52",
+      "label": {
+        "en": "specifiedThroughFeature"
+      },
+      "iri": "urn:productium:specification-profile:specifiedThroughFeature"
+    },
+    {
+      "id": "p313",
+      "domain": "ne1d59901dfbc8c55525e",
+      "range": "n73a1b9784063fc7a22c7",
+      "label": {
+        "en": "specifiesCapability"
+      },
+      "iri": "urn:productium:specification-profile:specifiesCapability"
+    },
+    {
+      "id": "p314",
+      "domain": "n131385c1d5ae776bb9df",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "specifiesExpectedCondition"
+      },
+      "iri": "urn:productium:specification-profile:specifiesExpectedCondition"
+    },
+    {
+      "id": "p315",
+      "domain": "n05ee7bc3b37cd3a6253a",
+      "range": "n50f07de6f93a6d92246b",
+      "label": {
+        "en": "specifiesOutcomeMetric"
+      },
+      "iri": "urn:productium:specification-profile:specifiesOutcomeMetric"
+    },
+    {
+      "id": "p316",
+      "domain": "n680a42c6a3a099583212",
+      "range": "n81fd0066656d60aa6899",
+      "label": {
+        "en": "specifiesPersonaContext"
+      },
+      "iri": "urn:productium:specification-profile:specifiesPersonaContext"
+    },
+    {
+      "id": "p317",
+      "domain": "n2de6dfb02ad297d63b52",
+      "range": "n25b6ba7857ff379f9809",
+      "label": {
+        "en": "specifiesSlice"
+      },
+      "iri": "urn:productium:specification-profile:specifiesSlice"
+    },
+    {
+      "id": "p318",
+      "domain": "n5404588ff42409a3ae27",
+      "range": "n05ee7bc3b37cd3a6253a",
+      "label": {
+        "en": "targetsOutcome"
+      },
+      "iri": "urn:productium:specification-profile:targetsOutcome"
+    },
+    {
+      "id": "p319",
+      "domain": "n9ac1cc8dc6c5308bff69",
+      "range": "n05ee7bc3b37cd3a6253a",
+      "label": {
+        "en": "targetsOutcomeSpecification"
+      },
+      "iri": "urn:productium:specification-profile:targetsOutcomeSpecification"
+    },
+    {
+      "id": "p320",
+      "domain": "n483822c94eb44db5943f",
+      "range": "nb516a087ea45d4a6266b",
+      "label": {
+        "en": "testsRealization"
+      },
+      "iri": "urn:productium:specification-profile:testsRealization"
+    },
+    {
+      "id": "p321",
+      "domain": "n5e2e77d6a96b5ea17b91",
+      "range": "n8ccb5ce0cb112c9e327a",
+      "label": {
+        "en": "usesLifecycleSpecification"
+      },
+      "iri": "urn:productium:specification-profile:usesLifecycleSpecification"
+    },
+    {
+      "id": "p322",
+      "domain": "n1732b9594bb2c164a06a",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p323",
+      "domain": "n538881c077a746a622fc",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p324",
+      "domain": "n54a4db46d43f05edd03c",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p325",
+      "domain": "nb7144cb84d81c48311ac",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p326",
+      "domain": "n372235ba19d156a14ea3",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p327",
+      "domain": "n07684f2be0a0b29f5495",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p328",
+      "domain": "n776e2c90c5cbe92b0e0b",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p329",
+      "domain": "nb18ff0aad466eac6e927",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p330",
+      "domain": "n0a8d9825145110ae1b59",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p331",
+      "domain": "n51d691cd1ceb8aa4ceda",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p332",
+      "domain": "n6063ba4c607cd6a780b9",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p333",
+      "domain": "necbebe36879703ae24b5",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p334",
+      "domain": "n50f07de6f93a6d92246b",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p335",
+      "domain": "n8fe3dc034829c31c4142",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p336",
+      "domain": "n0299ae3ee8cee91408d7",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p337",
+      "domain": "n9ac1cc8dc6c5308bff69",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p338",
+      "domain": "n05ee7bc3b37cd3a6253a",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p339",
+      "domain": "n067f8073d9ce09b52740",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p340",
+      "domain": "n5d53795275865e27f341",
+      "range": "n2f0e28256b511bd84922",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p341",
+      "domain": "n1c228a11c2c6e1b36da3",
+      "range": "n131385c1d5ae776bb9df",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p342",
+      "domain": "n1c3da1d37d2a2c639c45",
+      "range": "n131385c1d5ae776bb9df",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p343",
+      "domain": "nd5ce3254dc5412d6f7e2",
+      "range": "n131385c1d5ae776bb9df",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p344",
+      "domain": "n16c2d7e8b12bb91150ef",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p345",
+      "domain": "n89bff0caf1a037586fa2",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p346",
+      "domain": "n0b26c3e85bf0cca558e2",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p347",
+      "domain": "ne628162e32d9a7ceb4ac",
+      "range": "n6c2354404467ca74bca5",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p348",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n6c2354404467ca74bca5",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p349",
+      "domain": "n19f0f0dca27a2810d649",
+      "range": "n9ac1cc8dc6c5308bff69",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p350",
+      "domain": "n724e7cc77cebd66e69d1",
+      "range": "n9a33f1c873edb5eb5d48",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p351",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "n9a33f1c873edb5eb5d48",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p352",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "n9a33f1c873edb5eb5d48",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p353",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "n6317ec1f3f8b2bfad6ec",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p354",
+      "domain": "n26ca0bdab7f0504401a8",
+      "range": "n6317ec1f3f8b2bfad6ec",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p355",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "n6317ec1f3f8b2bfad6ec",
+      "label": {
+        "en": "subclass of"
+      }
+    }
+  ],
+  "metrics": {
+    "classCount": 121,
+    "datatypeCount": 3,
+    "objectPropertyCount": 276,
+    "datatypePropertyCount": 46,
+    "propertyCount": 356,
+    "nodeCount": 124,
+    "individualCount": 0
+  }
+}

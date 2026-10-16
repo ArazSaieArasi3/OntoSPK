@@ -1,0 +1,12 @@
+{
+  "version": "0.24.0",
+  "rdflib_version": "7.1.4",
+  "inference": "NONE",
+  "test_kind": "Retained exact-answer regression; not independent validation or OWL entailment testing",
+  "cq_count": 56,
+  "fixture_count": 187,
+  "comparisons": 374,
+  "passed": 374,
+  "failed": 0,
+  "profile_sha256": "410a0b9ef5459bb5dca14ee2383918d6196113bfc6245bc097309a788713d1ec"
+}

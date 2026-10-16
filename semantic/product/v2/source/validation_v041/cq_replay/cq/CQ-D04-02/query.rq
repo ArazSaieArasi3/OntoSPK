@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?requirement ?kind ?qualifier WHERE {
+VALUES ?requirement { e:requirementA } VALUES (?link ?kind) { (p:justifiesRequirement "rationale") (p:constrainsRequirement "constraint") (p:referencesRuleForRequirement "businessRuleReference") } ?qualifier ?link ?requirement .
+}

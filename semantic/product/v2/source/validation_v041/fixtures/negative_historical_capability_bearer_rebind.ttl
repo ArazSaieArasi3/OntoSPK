@@ -1,0 +1,55 @@
+@prefix ns1: <urn:productium:specification-profile:> .
+@prefix ns2: <urn:product-ontology:delivery-profile:0.5:> .
+@prefix ns3: <urn:product-ontology:assessment-profile:0.4:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:product-ontology:event-instance:product1> a ns1:Product ;
+    ns1:hasVersion <urn:product-ontology:event-instance:v1> .
+
+<urn:product-ontology:event-instance:result_bearer> a ns1:TestResult ;
+    ns2:resultOutcome "inconclusive" ;
+    ns2:resultRecordedAt "2026-10-14T04:31:00Z"^^xsd:dateTime ;
+    ns2:resultSource "urn:synthetic:v035:result-source"^^xsd:anyURI ;
+    ns1:recordsExecution <urn:product-ontology:event-instance:e_bearer> .
+
+<urn:product-ontology:event-instance:suite1> a ns1:TestSuiteSpecification ;
+    ns1:containsCase <urn:product-ontology:event-instance:case1> ;
+    ns1:r147_hasRecordedExecution <urn:product-ontology:event-instance:e_bearer> .
+
+<urn:product-ontology:event-instance:actual1> a ns1:ProductCapability ;
+    ns1:evaluatedAgainst <urn:product-ontology:event-instance:cap1> .
+
+<urn:product-ontology:event-instance:ctx1> a ns3:AssessmentContextSpecification ;
+    ns3:contextDescription "Synthetic completed-event and identity integration context" ;
+    ns3:contextSource "urn:synthetic:v035:context-source"^^xsd:anyURI ;
+    ns3:contextVersion <urn:product-ontology:event-instance:v1> .
+
+<urn:product-ontology:event-instance:feature1> a ns1:FeatureSpecification .
+
+<urn:product-ontology:event-instance:new_bearer> a ns1:ProductRealization ;
+    ns1:bearsCapability <urn:product-ontology:event-instance:actual1> ;
+    ns1:realizesVersion <urn:product-ontology:event-instance:v1> .
+
+<urn:product-ontology:event-instance:scenario1> a ns1:TestScenario ;
+    ns1:r84_covers <urn:product-ontology:event-instance:feature1> ;
+    ns1:specifiesExpectedCondition <urn:product-ontology:event-instance:condition1> .
+
+<urn:product-ontology:event-instance:case1> a ns1:TestCase ;
+    ns1:r87_refinesTestScenario <urn:product-ontology:event-instance:scenario1> ;
+    ns1:specifiesExpectedCondition <urn:product-ontology:event-instance:condition1> .
+
+<urn:product-ontology:event-instance:e_bearer> a ns1:TestExecution ;
+    ns2:executionContext <urn:product-ontology:event-instance:ctx1> ;
+    ns2:executionCriterion <urn:product-ontology:event-instance:condition1> ;
+    ns2:executionEndedAt "2026-10-14T04:30:00Z"^^xsd:dateTime ;
+    ns1:assessesSpecification <urn:product-ontology:event-instance:cap1> ;
+    ns1:executes <urn:product-ontology:event-instance:case1> ;
+    ns1:testsRealization <urn:product-ontology:event-instance:new_bearer> .
+
+<urn:product-ontology:event-instance:cap1> a ns1:CapabilitySpecification .
+
+<urn:product-ontology:event-instance:condition1> a ns1:ConditionSpecification .
+
+<urn:product-ontology:event-instance:v1> a ns1:ProductVersion ;
+    ns1:specifiesCapability <urn:product-ontology:event-instance:cap1> .
+

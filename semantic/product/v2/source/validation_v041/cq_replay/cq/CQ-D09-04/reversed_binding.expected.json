@@ -1,0 +1,23 @@
+[
+  [
+    "urn:orsd:v06:synthetic:narrative",
+    null,
+    "urn:orsd:v06:synthetic:evidence",
+    "urn:orsd:v06:synthetic:claim",
+    "unassessed"
+  ],
+  [
+    "urn:orsd:v06:synthetic:acquisition",
+    "urn:orsd:v06:synthetic:insight",
+    "urn:orsd:v06:synthetic:evidence",
+    "urn:orsd:v06:synthetic:claim",
+    "unassessed"
+  ],
+  [
+    "urn:orsd:v06:synthetic:adoption",
+    "urn:orsd:v06:synthetic:insight",
+    "urn:orsd:v06:synthetic:evidence",
+    "urn:orsd:v06:synthetic:claim",
+    "unassessed"
+  ]
+]

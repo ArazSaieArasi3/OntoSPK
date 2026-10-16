@@ -1,0 +1,61 @@
+@prefix market: <https://github.com/ArazSaieArasi3/product-management-research/semantic/market#> .
+@prefix prod: <https://github.com/ArazSaieArasi3/product-management-research/semantic/product#> .
+@prefix eco: <https://github.com/ArazSaieArasi3/product-management-research/semantic/ecosystem#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+market:MarketOntologyV1 a owl:Ontology ;
+  rdfs:label "Market Ontology V1 freeze-candidate skeleton"@en ;
+  rdfs:comment "Operational baseline for market context. Market Intelligence remains a separate analytical capability."@en .
+
+market:Market a owl:Class .
+market:MarketCategory a owl:Class .
+market:MarketSegment a owl:Class .
+market:CustomerSegment a owl:Class .
+market:Need a owl:Class .
+market:Demand a owl:Class .
+market:Preference a owl:Class .
+market:CompetitorRole a owl:Class .
+market:MarketTrend a owl:Class .
+market:MarketSignal a owl:Class .
+market:MarketEvent a owl:Class .
+market:MarketEvidence a owl:Class .
+market:MarketOpportunity a owl:Class .
+market:MarketThreat a owl:Class .
+market:MarketBarrier a owl:Class .
+market:MarketMeasure a owl:Class .
+market:TAM a owl:Class ; rdfs:subClassOf market:MarketMeasure .
+market:SAM a owl:Class ; rdfs:subClassOf market:MarketMeasure .
+market:SOM a owl:Class ; rdfs:subClassOf market:MarketMeasure .
+market:PricePoint a owl:Class .
+market:WillingnessToPay a owl:Class .
+market:MarketChannelContext a owl:Class .
+
+market:containsSegment a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:MarketSegment .
+market:segmentOf a owl:ObjectProperty ; rdfs:domain market:MarketSegment ; rdfs:range market:Market .
+market:containsCustomerSegment a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:CustomerSegment .
+market:expressesNeed a owl:ObjectProperty ; rdfs:range market:Need .
+market:expressesDemand a owl:ObjectProperty ; rdfs:range market:Demand .
+market:hasPreference a owl:ObjectProperty ; rdfs:range market:Preference .
+market:playedByActor a owl:ObjectProperty ; rdfs:domain market:CompetitorRole ; rdfs:range eco:Actor .
+market:alternativeTo a owl:ObjectProperty .
+market:substituteFor a owl:ObjectProperty .
+market:hasTrend a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:MarketTrend .
+market:supportedBySignal a owl:ObjectProperty ; rdfs:domain market:MarketTrend ; rdfs:range market:MarketSignal .
+market:derivedFromEvidence a owl:ObjectProperty ; rdfs:range market:MarketEvidence .
+market:occursInMarket a owl:ObjectProperty ; rdfs:domain market:MarketEvent ; rdfs:range market:Market .
+market:hasOpportunity a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:MarketOpportunity .
+market:hasThreat a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:MarketThreat .
+market:hasBarrier a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:MarketBarrier .
+market:hasMeasure a owl:ObjectProperty ; rdfs:domain market:Market ; rdfs:range market:MarketMeasure .
+market:referencesChannel a owl:ObjectProperty ; rdfs:domain market:MarketChannelContext ; rdfs:range eco:Channel .
+market:targetedByProduct a owl:ObjectProperty ; rdfs:range prod:Product .
+
+market:numericValue a owl:DatatypeProperty ; rdfs:range xsd:decimal .
+market:unit a owl:DatatypeProperty ; rdfs:range xsd:string .
+market:currency a owl:DatatypeProperty ; rdfs:range xsd:string .
+market:method a owl:DatatypeProperty ; rdfs:range xsd:string .
+market:periodStart a owl:DatatypeProperty ; rdfs:range xsd:date .
+market:periodEnd a owl:DatatypeProperty ; rdfs:range xsd:date .
+market:confidence a owl:DatatypeProperty ; rdfs:range xsd:decimal .

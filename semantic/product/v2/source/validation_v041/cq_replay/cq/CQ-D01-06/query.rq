@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?product ?lifecycle ?stage WHERE {
+VALUES ?product { e:productA } ?product p:usesLifecycleSpecification ?lifecycle . ?lifecycle p:definesLifecycleStage ?stage .
+}

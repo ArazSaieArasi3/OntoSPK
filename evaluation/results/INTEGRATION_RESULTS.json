@@ -1,0 +1,161 @@
+{
+  "release": "v2.0.0-rc.1",
+  "started_utc": "2026-10-16T15:20:19.216037+00:00",
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "packages": {
+    "rdflib": "7.1.4",
+    "pyshacl": "0.30.1",
+    "owlrl": "7.1.4",
+    "loguru": "0.7.3"
+  },
+  "steps": [
+    {
+      "id": "bootstrap",
+      "command": [
+        "python",
+        "tools/ontospk/bootstrap_inputs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.027,
+      "passed": true
+    },
+    {
+      "id": "structural",
+      "command": [
+        "python",
+        "semantic/product/v2/source/t52_formalization_v043/check_structural_register.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.041,
+      "passed": true
+    },
+    {
+      "id": "combined-admission",
+      "command": [
+        "python",
+        "semantic/product/v2/source/validation_v041/test_integration.py"
+      ],
+      "exit_code": 0,
+      "seconds": 11.104,
+      "passed": true
+    },
+    {
+      "id": "revision",
+      "command": [
+        "python",
+        "semantic/product/v2/source/validation_v041/test_revision.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.771,
+      "passed": true
+    },
+    {
+      "id": "cq",
+      "command": [
+        "python",
+        "semantic/product/v2/source/validation_v041/cq_replay/replay_cqs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 12.946,
+      "passed": true
+    },
+    {
+      "id": "project-rule-applicability",
+      "command": [
+        "python",
+        "semantic/product/v2/source/validation_v041/project_rules/remaining_rules.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.132,
+      "passed": true
+    },
+    {
+      "id": "project-rule-controls",
+      "command": [
+        "python",
+        "semantic/product/v2/source/validation_v041/project_rules/test_remaining_rules.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.089,
+      "passed": true
+    },
+    {
+      "id": "upstream-class-rules",
+      "command": [
+        "python",
+        "semantic/product/v2/source/validation_v041/official_tools/run_graph_validation.py",
+        "<ONTOUML_VALIDATOR>"
+      ],
+      "exit_code": 0,
+      "seconds": 2.928,
+      "passed": true
+    },
+    {
+      "id": "upstream-sdk",
+      "command": [
+        "node",
+        "semantic/product/v2/source/validation_v041/official_tools/sdk_roundtrip.cjs",
+        "<ONTOUML_SDK>"
+      ],
+      "exit_code": 0,
+      "seconds": 0.655,
+      "passed": true
+    },
+    {
+      "id": "owl-profile-hermit",
+      "command": [
+        "python",
+        "semantic/product/v2/source/t52_formalization_v043/run_formal_checks.py",
+        "<ROBOT_JAR>"
+      ],
+      "exit_code": 0,
+      "seconds": 16.585,
+      "passed": true
+    }
+  ],
+  "independent_acceptances": 0,
+  "scope": "Finite synthetic controls and static source reconciliation; no production, browser, full modal/causal or independent expert acceptance.",
+  "validator_commit": "46f54c1a5225fc9ea74ac2256fd4a673e9101a40",
+  "sdk_commit": "a0e44530564331cf17c850d659fae4b6adad4415",
+  "robot_sha256": "53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26",
+  "result_files": {
+    "combined": {
+      "path": "combined.json",
+      "sha256": "65a9312e022933d1fcbf86148e476d9fa88cf27e1bb87a1a69ae20a5783a74dc"
+    },
+    "revision": {
+      "path": "revision.json",
+      "sha256": "1037893180ee496be203f0c79456b30fe9b5646853371707a91bbccbb19633f3"
+    },
+    "cq": {
+      "path": "cq.json",
+      "sha256": "bc641810ac64e4938798d7b17a77443bc0dcd2cbb16fe995a2cde255cff538ad"
+    },
+    "project_rules": {
+      "path": "project_rules.json",
+      "sha256": "6346232924a37c0d51e10d008dba859c276c655ff512b8463c3094866244fb1e"
+    },
+    "structural": {
+      "path": "structural.json",
+      "sha256": "b73a358c0dff401fe1bf624b89e6969d34435cae7d53f6246dab07c72e4d6540"
+    },
+    "upstream_class_rules": {
+      "path": "upstream_class_rules.json",
+      "sha256": "b3f5c8503d4b699ecd77b8c8ad3cb28605d898ad317de3b36a79c2098844fa84"
+    },
+    "upstream_sdk": {
+      "path": "upstream_sdk.json",
+      "sha256": "43372c37b39ab495f73525d3c2ba1157ed81f2ce9e34ceb300a2ef56c96b9f67"
+    },
+    "formal": {
+      "path": "formal.json",
+      "sha256": "32a77531d3e99add5ea74ba5b81013d5876be31814332a6d18e779a5a3bda7eb"
+    }
+  },
+  "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "finished_utc": "2026-10-16T15:21:11.600887+00:00",
+  "passed": true,
+  "execution_kind": "FRESH_LOCAL_OR_CI_RUN",
+  "published_command_path_policy": "Repository-relative paths and named external-tool placeholders; test outcomes unchanged."
+}

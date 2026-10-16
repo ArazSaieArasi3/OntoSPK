@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?slice ?story ?requirement ?requirementType ?criterion WHERE {
+VALUES ?slice { e:sliceA } VALUES ?requirementType { p:RequirementSpecification p:FunctionalRequirementSpecification p:QualityRequirementSpecification } ?slice p:representedByStory ?story . ?story p:refinedByRequirement ?requirement . ?requirement a ?requirementType ; p:operationalizedByCriterion ?criterion .
+}

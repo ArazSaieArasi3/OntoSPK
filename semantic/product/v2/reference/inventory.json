@@ -1,0 +1,15 @@
+{
+  "native_elements": 1035,
+  "native_class_count": 128,
+  "local_class_count": 101,
+  "external_handles": 27,
+  "associations": 286,
+  "association_ends": 572,
+  "generalizations": 34,
+  "structural_expressions": 892,
+  "commitments": 22,
+  "owl_named_classes": 121,
+  "owl_anonymous_classes": 1,
+  "owl_triples": 2081,
+  "mapped_local_classes_declared_in_owl": 101
+}

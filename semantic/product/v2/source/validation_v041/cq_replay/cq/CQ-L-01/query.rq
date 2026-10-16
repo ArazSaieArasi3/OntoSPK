@@ -1,0 +1,10 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX a: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX e: <urn:product-ontology:delivery-profile:0.5:>
+PREFIX t: <urn:orsd:v05:synthetic:>
+SELECT DISTINCT ?version ?assertion ?kind ?value ?change WHERE { 
+ ?version a p:ProductVersion .
+ { ?version a:versionScope ?assertion . ?assertion a p:ScopeSpecification . BIND("scope" AS ?kind) OPTIONAL {?assertion a:scopeChangeRecord ?change} }
+ UNION { ?assertion a p:DeliveryStatusRecord ; e:releaseStatusVersion ?version ; e:releaseStatusCode ?value . BIND("release_status" AS ?kind) OPTIONAL {?assertion e:releaseStatusChange ?change} }
+ UNION { ?assertion a e:DeliveryWorkItemStatusRecord ; e:itemStatusVersion ?version ; e:itemStatusCode ?value . BIND("item_status" AS ?kind) OPTIONAL {?assertion e:itemStatusChange ?change} }
+  }

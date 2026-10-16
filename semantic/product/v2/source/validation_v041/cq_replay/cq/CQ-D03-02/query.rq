@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?feature ?slice WHERE {
+VALUES ?feature { e:featureA } ?feature p:specifiesSlice ?slice .
+}

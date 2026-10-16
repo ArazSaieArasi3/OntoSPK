@@ -1,0 +1,545 @@
+{
+  "source_native_model": "Native_Model_v0_30_0.json",
+  "relation_signatures": [
+    {
+      "relation": "REL:W2:091",
+      "source": "IC:TestExecution",
+      "target": "IC:TestResult",
+      "per_source_bounds": [
+        1,
+        1
+      ],
+      "per_target_bounds": [
+        1,
+        1
+      ]
+    },
+    {
+      "relation": "REL:W2:090",
+      "source": "IC:TestExecution",
+      "target": "IC:TestCase",
+      "per_source_bounds": [
+        1,
+        1
+      ],
+      "per_target_bounds": [
+        0,
+        null
+      ]
+    },
+    {
+      "relation": "REL:W2:147",
+      "source": "IC:TestSuiteSpecification",
+      "target": "IC:TestExecution",
+      "per_source_bounds": [
+        0,
+        null
+      ],
+      "per_target_bounds": [
+        0,
+        null
+      ]
+    },
+    {
+      "relation": "ICREL:CP:testsRealization",
+      "source": "IC:TestExecution",
+      "target": "IC:ProductRealization",
+      "per_source_bounds": [
+        1,
+        1
+      ],
+      "per_target_bounds": [
+        0,
+        null
+      ]
+    },
+    {
+      "relation": "ICREL:CP:assessesSpecification",
+      "source": "IC:TestExecution",
+      "target": "IC:CapabilitySpecification",
+      "per_source_bounds": [
+        1,
+        null
+      ],
+      "per_target_bounds": [
+        0,
+        null
+      ]
+    },
+    {
+      "relation": "REL:ORSD05:executionContext",
+      "source": "IC:TestExecution",
+      "target": "IC:AssessmentContextSpecification",
+      "per_source_bounds": [
+        1,
+        1
+      ],
+      "per_target_bounds": [
+        0,
+        null
+      ]
+    },
+    {
+      "relation": "REL:ORSD05:executionCriterion",
+      "source": "IC:TestExecution",
+      "target": "IC:ConditionSpecification",
+      "per_source_bounds": [
+        1,
+        null
+      ],
+      "per_target_bounds": [
+        0,
+        null
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "id": "completed_record",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_AcceptanceCriterionSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_ConstraintSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_FunctionalRequirementSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_GoalSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_MarketingGoalSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_OutcomeSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_QualityRequirementSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "only_RequirementSpecification",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "completed_failed",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "completed_aborted",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "repeat_new_event_same_bindings",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "explicit_suite_index",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "wrong_suite_index",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "suite_case_membership"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_091",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:W2:091:source",
+        "bound:REL:W2:091:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "multiple_091",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:W2:091:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_091",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:W2:091:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_090",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:W2:090:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "multiple_090",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:W2:090:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_090",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:W2:090:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_147",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:W2:147:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_testsRealization",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:ICREL:CP:testsRealization:source",
+        "same_tested_version"
+      ],
+      "passed": true
+    },
+    {
+      "id": "multiple_testsRealization",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:ICREL:CP:testsRealization:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_testsRealization",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:ICREL:CP:testsRealization:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_assessesSpecification",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:ICREL:CP:assessesSpecification:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_assessesSpecification",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:ICREL:CP:assessesSpecification:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_executionContext",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:ORSD05:executionContext:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "multiple_executionContext",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:ORSD05:executionContext:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_executionContext",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:ORSD05:executionContext:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_executionCriterion",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:ORSD05:executionCriterion:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "wrong_target_executionCriterion",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:ORSD05:executionCriterion:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_event_type",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:W2:091:source",
+        "type:REL:W2:090:source",
+        "type:ICREL:CP:testsRealization:source",
+        "type:ICREL:CP:assessesSpecification:source",
+        "type:REL:ORSD05:executionContext:source",
+        "type:REL:ORSD05:executionCriterion:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "specification_as_event",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "type:REL:W2:091:source",
+        "type:REL:W2:090:source",
+        "type:ICREL:CP:testsRealization:source",
+        "type:ICREL:CP:assessesSpecification:source",
+        "type:REL:ORSD05:executionContext:source",
+        "type:REL:ORSD05:executionCriterion:source"
+      ],
+      "passed": true
+    },
+    {
+      "id": "missing_end_time",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "end_count"
+      ],
+      "passed": true
+    },
+    {
+      "id": "multiple_end_times",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "end_count"
+      ],
+      "passed": true
+    },
+    {
+      "id": "malformed_end_time",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "end_datatype"
+      ],
+      "passed": true
+    },
+    {
+      "id": "one_result_two_events",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "bound:REL:W2:091:target"
+      ],
+      "passed": true
+    },
+    {
+      "id": "unmatched_capability_version",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "same_tested_version"
+      ],
+      "passed": true
+    },
+    {
+      "id": "no_realization_version",
+      "expected": false,
+      "shacl": false,
+      "sql": false,
+      "sql_errors": [
+        "same_tested_version"
+      ],
+      "passed": true
+    },
+    {
+      "id": "no_criterion_propagation_019",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "no_criterion_propagation_046",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    },
+    {
+      "id": "no_criterion_propagation_044",
+      "expected": true,
+      "shacl": true,
+      "sql": true,
+      "sql_errors": [],
+      "passed": true
+    }
+  ],
+  "passed": 42,
+  "total": 42,
+  "ledger_controls": [
+    {
+      "id": "idempotent_record",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "id": "repetition_separate_occurrence",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "id": "rebind_case_id",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "id": "rebind_realization",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "id": "rebind_context",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "id": "rebind_ended",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "id": "rebind_result_id",
+      "expected": "reject",
+      "passed": true
+    }
+  ],
+  "scope": "Synthetic finite recorded-run subprofile, seven native relation signatures, explicit end time, suite membership, tested-version capability binding and immutable completed-occurrence binding.",
+  "not_claimed": [
+    "Full native ontology population validity",
+    "Complete UFO-B event semantics",
+    "Official anti-pattern execution on Event",
+    "Success/satisfaction entailed from assessment",
+    "Empirical observation or independent acceptance"
+  ]
+}

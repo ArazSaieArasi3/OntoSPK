@@ -1,0 +1,57 @@
+[
+  [
+    "urn:orsd:v06:synthetic:flow",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:screen",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:persona",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:role",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:journey",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:stage",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:touchpoint",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:stepA",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:information",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:uiState",
+    "urn:orsd:v06:synthetic:usability",
+    "Clarify the primary action label"
+  ],
+  [
+    "urn:orsd:v06:synthetic:screen",
+    "urn:orsd:v06:synthetic:usabilityNoAdvice",
+    null
+  ]
+]

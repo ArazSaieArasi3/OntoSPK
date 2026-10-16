@@ -1,0 +1,8 @@
+<urn:orsd:v03:synthetic:itemA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:DeliveryWorkItem> .
+<urn:orsd:v03:synthetic:itemAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:DeliveryWorkItem> .
+<urn:orsd:v03:synthetic:referenceA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:TaskReference> .
+<urn:orsd:v03:synthetic:referenceA> <urn:productium:specification-profile:referenceContext> <urn:orsd:v03:synthetic:itemA> .
+<urn:orsd:v03:synthetic:referenceA> <urn:productium:specification-profile:referencePurpose> "planning trace" .
+<urn:orsd:v03:synthetic:referenceAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:TaskReference> .
+<urn:orsd:v03:synthetic:referenceAOther> <urn:productium:specification-profile:referenceContext> <urn:orsd:v03:synthetic:itemAOther> .
+<urn:orsd:v03:synthetic:referenceAOther> <urn:productium:specification-profile:referencePurpose> "planning trace" .

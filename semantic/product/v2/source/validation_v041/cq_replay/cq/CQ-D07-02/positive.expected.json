@@ -1,0 +1,37 @@
+[
+  [
+    "urn:orsd:v05:synthetic:release",
+    "urn:orsd:v05:synthetic:releaseStatus1",
+    "urn:orsd:v05:synthetic:v1",
+    "ready",
+    "urn:orsd:v05:synthetic:releaseEvidence"
+  ],
+  [
+    "urn:orsd:v05:synthetic:release",
+    "urn:orsd:v05:synthetic:releaseStatus2",
+    "urn:orsd:v05:synthetic:v2",
+    "planned",
+    null
+  ],
+  [
+    "urn:orsd:v05:synthetic:release",
+    "urn:orsd:v05:synthetic:unqualifiedStatus",
+    null,
+    "unqualified",
+    null
+  ],
+  [
+    "urn:orsd:v05:synthetic:item",
+    "urn:orsd:v05:synthetic:itemStatus1",
+    "urn:orsd:v05:synthetic:v1",
+    "blocked",
+    "urn:orsd:v05:synthetic:releaseEvidence"
+  ],
+  [
+    "urn:orsd:v05:synthetic:item",
+    "urn:orsd:v05:synthetic:itemStatus2",
+    "urn:orsd:v05:synthetic:v2",
+    "queued",
+    null
+  ]
+]

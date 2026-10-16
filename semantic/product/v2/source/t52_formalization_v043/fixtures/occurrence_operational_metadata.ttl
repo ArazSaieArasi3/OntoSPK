@@ -1,0 +1,13 @@
+@prefix ns1: <urn:ontospk:occurrence-profile:0.41:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:product-ontology:event-instance:e1> ns1:codeUseSource "urn:synthetic:code-use-observation"^^xsd:anyURI ;
+    ns1:executionCode "urn:synthetic:test-code"^^xsd:anyURI ;
+    ns1:executionSource "urn:synthetic:attempt-observation"^^xsd:anyURI ;
+    ns1:executionStage "test_exercised"^^xsd:string ;
+    ns1:executionStartedAt "2026-10-14T04:29:00+00:00"^^xsd:dateTime ;
+    ns1:participationSource "urn:synthetic:target-observation"^^xsd:anyURI ;
+    ns1:roostCandidate true ;
+    ns1:startTimeKnowledge "known"^^xsd:string ;
+    ns1:targetParticipation "supported"^^xsd:string .
+

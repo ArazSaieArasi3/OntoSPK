@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?product ?vision ?goal ?outcome ?metric WHERE {
+VALUES ?product { e:productA } ?product p:hasVisionStatement ?vision . ?vision p:motivatesGoal ?goal . ?goal p:targetsOutcomeSpecification ?outcome . OPTIONAL { ?outcome p:specifiesOutcomeMetric ?metric }
+}

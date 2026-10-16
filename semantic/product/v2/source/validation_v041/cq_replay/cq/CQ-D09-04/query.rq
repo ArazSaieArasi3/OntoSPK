@@ -1,0 +1,13 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX a: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX d: <urn:product-ontology:delivery-profile:0.5:>
+PREFIX e: <urn:product-ontology:trace-profile:0.6:>
+PREFIX t: <urn:orsd:v06:synthetic:>
+SELECT DISTINCT ?artifact ?insight ?evidence ?claim ?stance WHERE { 
+{ ?artifact a p:CompetitiveNarrative . OPTIONAL {?artifact e:narrativeCitesInsight ?insight} OPTIONAL {?artifact e:narrativeCitesEvidence ?evidence . ?evidence p:recordsClaim ?claim ; a:attributionStance ?stance} }
+ UNION
+{ ?artifact a p:AcquisitionHypothesisSpecification . OPTIONAL {?artifact e:acquisitionCitesInsight ?insight} OPTIONAL {?artifact e:acquisitionCitesEvidence ?evidence . ?evidence p:recordsClaim ?claim ; a:attributionStance ?stance} }
+ UNION
+{ ?artifact a p:AdoptionHypothesisSpecification . OPTIONAL {?artifact e:adoptionCitesInsight ?insight} OPTIONAL {?artifact e:adoptionCitesEvidence ?evidence . ?evidence p:recordsClaim ?claim ; a:attributionStance ?stance} }
+ FILTER(BOUND(?insight) || BOUND(?evidence))
+  }

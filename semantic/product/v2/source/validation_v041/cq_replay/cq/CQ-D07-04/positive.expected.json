@@ -1,0 +1,26 @@
+[
+  [
+    "urn:orsd:v06:synthetic:changeScope",
+    "urn:orsd:v06:synthetic:proposalScope",
+    "urn:orsd:v06:synthetic:scope",
+    "scope",
+    "urn:orsd:v06:synthetic:decision",
+    "urn:orsd:v06:synthetic:task"
+  ],
+  [
+    "urn:orsd:v06:synthetic:changeFeature",
+    null,
+    "urn:orsd:v06:synthetic:feature",
+    "feature",
+    null,
+    null
+  ],
+  [
+    null,
+    "urn:orsd:v06:synthetic:proposalOnly",
+    "urn:orsd:v06:synthetic:otherFeature",
+    "feature",
+    null,
+    null
+  ]
+]

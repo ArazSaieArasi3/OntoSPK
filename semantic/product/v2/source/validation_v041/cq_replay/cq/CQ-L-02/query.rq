@@ -1,0 +1,4 @@
+PREFIX prod: <urn:productium:specification-profile:>
+PREFIX assess: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX t: <urn:orsd:v04:synthetic:>
+SELECT DISTINCT ?subject ?claim1 ?claim2 ?record1 ?record2 ?carrier1 ?carrier2 WHERE { ?claim1 (assess:claimProduct|assess:claimVersion|assess:claimRealization|assess:claimRequirement) ?subject ; assess:claimCriterion ?criterion ; assess:claimContext ?context ; assess:claimStatement ?statement1 . ?claim2 (assess:claimProduct|assess:claimVersion|assess:claimRealization|assess:claimRequirement) ?subject ; assess:claimCriterion ?criterion ; assess:claimContext ?context ; assess:claimStatement ?statement2 . FILTER(STR(?claim1) < STR(?claim2) && ?statement1 != ?statement2) ?record1 prod:recordsClaim ?claim1 ; prod:recordsCarrier ?carrier1 . ?record2 prod:recordsClaim ?claim2 ; prod:recordsCarrier ?carrier2 . }

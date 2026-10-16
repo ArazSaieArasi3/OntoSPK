@@ -1,0 +1,2343 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:product-ontology:assessment-profile:0.4:attributionAgent> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Recorded assessor identifier. An identifier is operational metadata, not a new Agent concept or a verified identity." ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceAttributionRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:assessment-profile:0.4:attributionSource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded source URI; kept separate from the assessor identifier and from evidence ownership." ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceAttributionRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:assessment-profile:0.4:attributionStance> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "One of supports, challenges, limits, unassessed. Stance belongs to the record, never globally to its carrier." ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceAttributionRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:attributionTimestamp> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Time of the recorded attribution. Does not establish when the evidence carrier was generated." ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceAttributionRecord> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:assessment-profile:0.4:claimActualCapability> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "The actual capability under assessment. Paired with claimIntendedCapability; not a satisfaction assertion." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:ProductCapability> .
+
+<urn:product-ontology:assessment-profile:0.4:claimIntendedCapability> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "The intended ability compared in this claim. No intended-to-actual entailment is introduced." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:product-ontology:assessment-profile:0.4:claimProduct> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "A product-lineage subject. Exactly one subject is selected across the four subject relations." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:Product> ;
+    rdfs:subPropertyOf <urn:product-ontology:assessment-profile:0.4:claimSubject> .
+
+<urn:product-ontology:assessment-profile:0.4:claimRealization> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "A concrete realization subject; capability assessments use this subject relation." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:ProductRealization> ;
+    rdfs:subPropertyOf <urn:product-ontology:assessment-profile:0.4:claimSubject> .
+
+<urn:product-ontology:assessment-profile:0.4:claimRequirement> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "An authored requirement subject, not the stakeholder intention." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> ;
+    rdfs:subPropertyOf <urn:product-ontology:assessment-profile:0.4:claimSubject> .
+
+<urn:product-ontology:assessment-profile:0.4:claimStatement> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "The proposition asserted by this authored claim; no truth assertion is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:claimVersion> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "A specification-baseline subject; not an implemented system." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> ;
+    rdfs:subPropertyOf <urn:product-ontology:assessment-profile:0.4:claimSubject> .
+
+<urn:product-ontology:assessment-profile:0.4:contextDescription> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Explicit bounded applicability description; not a full structured context ontology." ;
+    rdfs:domain <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:contextScenario> a owl:ObjectProperty ;
+    rdfs:comment "Optional reuse of authored scenario details without equating context and scenario identity." ;
+    rdfs:domain <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScenarioSpecification> .
+
+<urn:product-ontology:assessment-profile:0.4:contextSource> a owl:DatatypeProperty ;
+    rdfs:comment "URI identifying recorded authoring/source provenance, not proof of authority." ;
+    rdfs:domain <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:assessment-profile:0.4:contextVersion> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Optional baseline qualifier of the context, mandatory for a capability assessment in the reporting profile." ;
+    rdfs:domain <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> .
+
+<urn:product-ontology:assessment-profile:0.4:deferredStatement> a owl:DatatypeProperty ;
+    rdfs:comment "Authored deferred content; distinct from exclusion." ;
+    rdfs:domain <urn:productium:specification-profile:ScopeSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:excludedStatement> a owl:DatatypeProperty ;
+    rdfs:comment "Authored excluded content; not a closed-world complement of the included content." ;
+    rdfs:domain <urn:productium:specification-profile:ScopeSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:findingSource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded observation provenance URI." ;
+    rdfs:domain <urn:productium:specification-profile:FindingRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:assessment-profile:0.4:findingStatement> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Observation or issue content, distinct from its contextual evidential stance." ;
+    rdfs:domain <urn:productium:specification-profile:FindingRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:includedStatement> a owl:DatatypeProperty ;
+    rdfs:comment "Authored included content. Absence is not an assertion that the included set is empty." ;
+    rdfs:domain <urn:productium:specification-profile:ScopeSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:assessment-profile:0.4:scopeChangeRecord> a owl:ObjectProperty ;
+    rdfs:comment "A recorded change description for this scope baseline. It does not establish an applied implementation change." ;
+    rdfs:domain <urn:productium:specification-profile:ScopeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ChangeRecord> .
+
+<urn:product-ontology:assessment-profile:0.4:scopeSource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded source of the authored scope baseline." ;
+    rdfs:domain <urn:productium:specification-profile:ScopeSpecification> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:assessment-profile:0.4:scopeSupersedes> a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Recorded directed scope-baseline revision; branching and merging permitted, cycles forbidden." ;
+    rdfs:domain <urn:productium:specification-profile:ScopeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScopeSpecification> .
+
+<urn:product-ontology:assessment-profile:0.4:versionScope> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "At most one consolidated authored scope baseline per product version. Unrecorded scope is allowed; partial documents must be consolidated or this contract revised." ;
+    rdfs:domain <urn:productium:specification-profile:ProductVersion> ;
+    rdfs:range <urn:productium:specification-profile:ScopeSpecification> .
+
+<urn:product-ontology:delivery-profile:0.5:executionEndedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "End of a concluded run, including an aborted run. Ongoing runs are outside this completed-event profile." ;
+    rdfs:domain <urn:productium:specification-profile:TestExecution> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatusChange> a owl:ObjectProperty ;
+    rdfs:comment "Explicit change records cited by this work-item assertion; no applied-change entailment." ;
+    rdfs:domain <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> ;
+    rdfs:range <urn:productium:specification-profile:ChangeRecord> .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatusCode> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Recorded code under the named workflow scheme; it is not proof of delivery." ;
+    rdfs:domain <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatusReportedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Time of this immutable report, not automatically the time of delivery." ;
+    rdfs:domain <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatusScheme> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Identifier of the interpretation scheme; this ontology does not impose a universal delivery lifecycle." ;
+    rdfs:domain <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatusSource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded report provenance, distinct from a workflow code." ;
+    rdfs:domain <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatusVersion> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Optional exact baseline qualifier of this work-item assertion; changing a qualifier creates another record." ;
+    rdfs:domain <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> .
+
+<urn:product-ontology:delivery-profile:0.5:observedAuthority> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Observed authority identifier; required and different from the old authority for authority_changed findings." ;
+    rdfs:domain <urn:productium:specification-profile:FindingRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:observedTarget> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Observed target identifier; required and different from the old target for target_changed findings." ;
+    rdfs:domain <urn:productium:specification-profile:FindingRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:referenceRecordedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Recorded creation time of this fixed reference binding." ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:delivery-profile:0.5:referenceReviewFinding> a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "A recorded review finding concerns at most one reference under this reporting profile. Several findings can concern one reference; ordinary findings need not concern any reference." ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> ;
+    rdfs:range <urn:productium:specification-profile:FindingRecord> .
+
+<urn:product-ontology:delivery-profile:0.5:referenceRevisionLabel> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Optional authored revision label. A label alone does not establish freshness or a successor." ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:delivery-profile:0.5:referenceSupersedes> a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "An explicit successor reference record replaces an earlier recorded binding for its stated purpose. Branching is permitted; cycles are forbidden. No mutation or automatic identity merge." ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> ;
+    rdfs:range <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:product-ontology:delivery-profile:0.5:releaseStatusChange> a owl:ObjectProperty ;
+    rdfs:comment "Explicit change records cited by this release-status assertion. This link does not mean an implementation change occurred." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryStatusRecord> ;
+    rdfs:range <urn:productium:specification-profile:ChangeRecord> .
+
+<urn:product-ontology:delivery-profile:0.5:releaseStatusCode> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Recorded code under the named workflow scheme; it is not proof of delivery." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryStatusRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:delivery-profile:0.5:releaseStatusReportedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Time of this immutable report, not automatically the time of delivery." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryStatusRecord> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:delivery-profile:0.5:releaseStatusScheme> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Identifier of the interpretation scheme; this ontology does not impose a universal delivery lifecycle." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryStatusRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:releaseStatusSource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded report provenance, distinct from a workflow code." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryStatusRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:releaseStatusVersion> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Optional exact baseline qualifier of this immutable release-status assertion. Unqualified records are not copied to versions." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryStatusRecord> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> .
+
+<urn:product-ontology:delivery-profile:0.5:resultOutcome> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Local reporting code: passed, failed, aborted, inconclusive or unknown. A recorded pass does not entail claim truth or acceptance." ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:delivery-profile:0.5:resultRecordedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Report time at or after the recorded execution end." ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:delivery-profile:0.5:resultSource> a owl:DatatypeProperty ;
+    rdfs:comment "Source identifier of the recorded execution result." ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:delivery-profile:0.5:reviewReason> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "For reference-review findings only: target_changed, authority_changed, target_unreachable or scheduled_review." ;
+    rdfs:domain <urn:productium:specification-profile:FindingRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:delivery-profile:0.5:reviewRecordedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Required for a reference-review finding; observations must not predate the referenced binding." ;
+    rdfs:domain <urn:productium:specification-profile:FindingRecord> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:relation-profile:0.7:architecture_intendedRealizedByComponent> a owl:ObjectProperty ;
+    rdfs:label "intendedRealizedByComponent" ;
+    rdfs:comment "The feature specification explicitly names an external component as a proposed realization target." ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Architecture%3AComponent> .
+
+<urn:product-ontology:relation-profile:0.7:architecture_intendedRealizedByService> a owl:ObjectProperty ;
+    rdfs:label "intendedRealizedByService" ;
+    rdfs:comment "The feature specification names an external service as a proposed realization target." ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Architecture%3AService> .
+
+<urn:product-ontology:relation-profile:0.7:architecture_intendedSatisfiedByArchitectureElement> a owl:ObjectProperty ;
+    rdfs:label "intendedSatisfiedByArchitectureElement" ;
+    rdfs:comment "The requirement specification records an intended architectural satisfaction allocation." ;
+    rdfs:domain <urn:productium:specification-profile:RequirementSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Architecture%3AArchitectureElement> .
+
+<urn:product-ontology:relation-profile:0.7:architecture_intendedSatisfiedByInterface> a owl:ObjectProperty ;
+    rdfs:label "intendedSatisfiedByInterface" ;
+    rdfs:comment "The requirement specification records an intended satisfaction allocation to an external interface." ;
+    rdfs:domain <urn:productium:specification-profile:RequirementSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Architecture%3AInterface> .
+
+<urn:product-ontology:relation-profile:0.7:architecture_intendedSupportedByArchitectureElement> a owl:ObjectProperty ;
+    rdfs:label "intendedSupportedByArchitectureElement" ;
+    rdfs:comment "The intended capability specification identifies an architectural element proposed to support it." ;
+    rdfs:domain <urn:productium:specification-profile:CapabilitySpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Architecture%3AArchitectureElement> .
+
+<urn:product-ontology:relation-profile:0.7:r107_intendedToSupport> a owl:ObjectProperty ;
+    rdfs:label "intendedToSupport" ;
+    rdfs:comment "The capability specification records an intention to support an externally governed business capability." ;
+    rdfs:domain <urn:productium:specification-profile:CapabilitySpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability> .
+
+<urn:product-ontology:relation-profile:0.7:r116_references> a owl:ObjectProperty ;
+    rdfs:label "references" ;
+    rdfs:comment "The positioning statement explicitly cites an externally governed value proposition." ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3AValueProposition> .
+
+<urn:product-ontology:relation-profile:0.7:r157_evidencedBy> a owl:ObjectProperty ;
+    rdfs:label "evidencedBy" ;
+    rdfs:comment "The problem statement explicitly cites external evidence offered for its formulation, without asserting that its claim is true." ;
+    rdfs:domain <urn:productium:specification-profile:ProblemStatement> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r162_evidencedBy> a owl:ObjectProperty ;
+    rdfs:label "evidencedBy" ;
+    rdfs:comment "The product-market-fit assessment cites external evidence informing its recorded assessment." ;
+    rdfs:domain <urn:productium:specification-profile:ProductMarketFitAssessment> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r167_supports> a owl:ObjectProperty ;
+    rdfs:label "supports" ;
+    rdfs:comment "The quality requirement records an intended contribution to an external business goal." ;
+    rdfs:domain <urn:productium:specification-profile:QualityRequirementSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal> .
+
+<urn:product-ontology:relation-profile:0.7:r185_referencesValueProposition> a owl:ObjectProperty ;
+    rdfs:label "referencesValueProposition" ;
+    rdfs:comment "The product has an explicit knowledge link to an externally governed value proposition." ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3AValueProposition> .
+
+<urn:product-ontology:relation-profile:0.7:r186_targets> a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "The offering specification identifies an external segment in its intended audience." ;
+    rdfs:domain <urn:productium:specification-profile:OfferingSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment> .
+
+<urn:product-ontology:relation-profile:0.7:r187_includesService> a owl:ObjectProperty ;
+    rdfs:label "includesService" ;
+    rdfs:comment "The offering specification describes an external service as included in the intended offer; it does not assert an executed service event." ;
+    rdfs:domain <urn:productium:specification-profile:OfferingSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3AService> .
+
+<urn:product-ontology:relation-profile:0.7:r188_referencesVariantConfiguration> a owl:ObjectProperty ;
+    rdfs:label "referencesVariantConfiguration" ;
+    rdfs:comment "The local variant reference records an external configuration relevant to its fixed variant referent; the reference record itself is not configured by that target." ;
+    rdfs:domain <urn:productium:specification-profile:ProductVariantReference> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ProductLine%3AProductConfiguration> .
+
+<urn:product-ontology:relation-profile:0.7:r189_targets> a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "The vision statement identifies an external segment within its intended audience." ;
+    rdfs:domain <urn:productium:specification-profile:VisionStatement> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment> .
+
+<urn:product-ontology:relation-profile:0.7:r190_referencesValueProposition> a owl:ObjectProperty ;
+    rdfs:label "referencesValueProposition" ;
+    rdfs:comment "The vision statement explicitly cites an external value proposition." ;
+    rdfs:domain <urn:productium:specification-profile:VisionStatement> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3AValueProposition> .
+
+<urn:product-ontology:relation-profile:0.7:r192_references> a owl:ObjectProperty ;
+    rdfs:label "references" ;
+    rdfs:comment "The problem-solution-fit assessment cites external evidence considered in its recorded appraisal." ;
+    rdfs:domain <urn:productium:specification-profile:ProblemSolutionFitAssessment> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r194_referencesMentalModel> a owl:ObjectProperty ;
+    rdfs:label "referencesMentalModel" ;
+    rdfs:comment "The information-architecture specification cites an externally governed user mental model as a design input." ;
+    rdfs:domain <urn:productium:specification-profile:InformationArchitectureSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:UXResearch%3AUser_Mental_Model> .
+
+<urn:product-ontology:relation-profile:0.7:r195_usesScript> a owl:ObjectProperty ;
+    rdfs:label "usesScript" ;
+    rdfs:comment "The test-case specification references an external test script prescribed for its procedure; this is not evidence of execution." ;
+    rdfs:domain <urn:productium:specification-profile:TestCase> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Script> .
+
+<urn:product-ontology:relation-profile:0.7:r196_reportedUnderTestPlan> a owl:ObjectProperty ;
+    rdfs:label "reportedUnderTestPlan" ;
+    rdfs:comment "The test-result record is explicitly reported under an externally governed test plan; this is not a part-whole assertion." ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Plan> .
+
+<urn:product-ontology:relation-profile:0.7:r197_citesExecutionScript> a owl:ObjectProperty ;
+    rdfs:label "citesExecutionScript" ;
+    rdfs:comment "The test-result record cites an external script reported as relevant to its recorded execution; the record itself does not execute the script." ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Script> .
+
+<urn:product-ontology:relation-profile:0.7:r198_citesSupportingEvidence> a owl:ObjectProperty ;
+    rdfs:label "citesSupportingEvidence" ;
+    rdfs:comment "The validation attribution record explicitly cites an additional external evidence item as support for its recorded attribution." ;
+    rdfs:domain <urn:productium:specification-profile:ValidationEvidenceRecord> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r199_referencesDatasetConfiguration> a owl:ObjectProperty ;
+    rdfs:label "referencesDatasetConfiguration" ;
+    rdfs:comment "The test-data reference records an external configuration of or relevant to its fixed dataset referent." ;
+    rdfs:domain <urn:productium:specification-profile:TestDataReference> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AConfiguration> .
+
+<urn:product-ontology:relation-profile:0.7:r200_targets> a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "The go-to-market specification records an externally governed customer segment as an intended audience." ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment> .
+
+<urn:product-ontology:relation-profile:0.7:r201_targets> a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "The go-to-market specification records an externally governed market as intended scope." ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3AMarket> .
+
+<urn:product-ontology:relation-profile:0.7:r202_referencesValueProposition> a owl:ObjectProperty ;
+    rdfs:label "referencesValueProposition" ;
+    rdfs:comment "The go-to-market specification explicitly cites an external value proposition." ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Business%3AValueProposition> .
+
+<urn:product-ontology:relation-profile:0.7:r203_targets> a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "The launch specification identifies an externally governed segment as an intended audience." ;
+    rdfs:domain <urn:productium:specification-profile:LaunchSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment> .
+
+<urn:product-ontology:relation-profile:0.7:r204_targets> a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "The marketing-goal condition specifies its intended applicability to an external customer segment." ;
+    rdfs:domain <urn:productium:specification-profile:MarketingGoalSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment> .
+
+<urn:product-ontology:relation-profile:0.7:r207_citesInsightEvidence> a owl:ObjectProperty ;
+    rdfs:label "citesInsightEvidence" ;
+    rdfs:comment "The marketing-insight reference cites external evidence relevant to its fixed insight referent, without independently endorsing the insight." ;
+    rdfs:domain <urn:productium:specification-profile:MarketingInsightReference> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r208_addressesNeed> a owl:ObjectProperty ;
+    rdfs:label "addressesNeed" ;
+    rdfs:comment "The offering specification states an intended response to an external need." ;
+    rdfs:domain <urn:productium:specification-profile:OfferingSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ANeed> .
+
+<urn:product-ontology:relation-profile:0.7:r209_informedBy> a owl:ObjectProperty ;
+    rdfs:label "informedBy" ;
+    rdfs:comment "The vision statement explicitly cites an external need as an input to its formulation." ;
+    rdfs:domain <urn:productium:specification-profile:VisionStatement> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ANeed> .
+
+<urn:product-ontology:relation-profile:0.7:r210_assessesNeed> a owl:ObjectProperty ;
+    rdfs:label "assessesNeed" ;
+    rdfs:comment "The product-market-fit assessment identifies an external need within its appraisal scope." ;
+    rdfs:domain <urn:productium:specification-profile:ProductMarketFitAssessment> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ANeed> .
+
+<urn:product-ontology:relation-profile:0.7:r211_assessesPain> a owl:ObjectProperty ;
+    rdfs:label "assessesPain" ;
+    rdfs:comment "The product-market-fit assessment identifies an external pain within its appraisal scope." ;
+    rdfs:domain <urn:productium:specification-profile:ProductMarketFitAssessment> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r212_intendsToAddressNeed> a owl:ObjectProperty ;
+    rdfs:label "intendsToAddressNeed" ;
+    rdfs:comment "The feature specification records an intended response to an externally governed need." ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ANeed> .
+
+<urn:product-ontology:relation-profile:0.7:r213_addressesPain> a owl:ObjectProperty ;
+    rdfs:label "addressesPain" ;
+    rdfs:comment "The user story explicitly records an intended response to an externally governed pain." ;
+    rdfs:domain <urn:productium:specification-profile:UserStorySpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r214_describesPain> a owl:ObjectProperty ;
+    rdfs:label "describesPain" ;
+    rdfs:comment "The journey specification explicitly describes an externally governed pain within its intended experience scope." ;
+    rdfs:domain <urn:productium:specification-profile:JourneySpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r215_describesPain> a owl:ObjectProperty ;
+    rdfs:label "describesPain" ;
+    rdfs:comment "The journey-stage specification explicitly describes an external pain in that stage context." ;
+    rdfs:domain <urn:productium:specification-profile:JourneyStageSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r216_intendsToAddressNeed> a owl:ObjectProperty ;
+    rdfs:label "intendsToAddressNeed" ;
+    rdfs:comment "The touchpoint specification records an intended response to an external need." ;
+    rdfs:domain <urn:productium:specification-profile:TouchpointSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ANeed> .
+
+<urn:product-ontology:relation-profile:0.7:r217_describesPain> a owl:ObjectProperty ;
+    rdfs:label "describesPain" ;
+    rdfs:comment "The touchpoint specification explicitly describes an external pain associated with its designed contact context." ;
+    rdfs:domain <urn:productium:specification-profile:TouchpointSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r218_citesSupportingEvidence> a owl:ObjectProperty ;
+    rdfs:label "citesSupportingEvidence" ;
+    rdfs:comment "The release attribution record explicitly cites an additional external evidence item as support for its recorded attribution." ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseEvidenceRecord> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r219_addressesPain> a owl:ObjectProperty ;
+    rdfs:label "addressesPain" ;
+    rdfs:comment "The positioning statement records an intended response to an externally governed pain." ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r220_addressesPain> a owl:ObjectProperty ;
+    rdfs:label "addressesPain" ;
+    rdfs:comment "The messaging specification records an intended response to an externally governed pain." ;
+    rdfs:domain <urn:productium:specification-profile:MessagingSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r221_supportedBy> a owl:ObjectProperty ;
+    rdfs:label "supportedBy" ;
+    rdfs:comment "The messaging specification explicitly cites external evidence as claimed support; the link does not certify the message." ;
+    rdfs:domain <urn:productium:specification-profile:MessagingSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r222_differentiatesFrom> a owl:ObjectProperty ;
+    rdfs:label "differentiatesFrom" ;
+    rdfs:comment "The competitive narrative identifies an external competitor or alternative in its authored comparison." ;
+    rdfs:domain <urn:productium:specification-profile:CompetitiveNarrative> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3ACompetitor_Alternative> .
+
+<urn:product-ontology:relation-profile:0.7:r223_supportedBy> a owl:ObjectProperty ;
+    rdfs:label "supportedBy" ;
+    rdfs:comment "The competitive narrative cites an external evidence item as claimed support for its comparison." ;
+    rdfs:domain <urn:productium:specification-profile:CompetitiveNarrative> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> .
+
+<urn:product-ontology:relation-profile:0.7:r224_evidencedBy> a owl:ObjectProperty ;
+    rdfs:label "evidencedBy" ;
+    rdfs:comment "The acquisition hypothesis cites external evidence offered in assessing its claim; the relation does not entail confirmation." ;
+    rdfs:domain <urn:productium:specification-profile:AcquisitionHypothesisSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> ;
+    rdfs:subPropertyOf <urn:product-ontology:relation-profile:0.7:r160_evidencedBy> .
+
+<urn:product-ontology:relation-profile:0.7:r225_addressesPain> a owl:ObjectProperty ;
+    rdfs:label "addressesPain" ;
+    rdfs:comment "The adoption hypothesis identifies an externally governed pain within its intended explanatory scope." ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:Market%3APain> .
+
+<urn:product-ontology:relation-profile:0.7:r226_evidencedBy> a owl:ObjectProperty ;
+    rdfs:label "evidencedBy" ;
+    rdfs:comment "The adoption hypothesis cites external evidence offered in assessing its claim; the relation does not entail confirmation." ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> ;
+    rdfs:subPropertyOf <urn:product-ontology:relation-profile:0.7:r160_evidencedBy> .
+
+<urn:product-ontology:trace-profile:0.6:acquisitionCitesEvidence> a owl:ObjectProperty ;
+    rdfs:comment "Explicit citation of an evidence-attribution record, including its claim and stance. Citation is not verification of the marketing statement." ;
+    rdfs:domain <urn:productium:specification-profile:AcquisitionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:product-ontology:trace-profile:0.6:acquisitionCitesInsight> a owl:ObjectProperty ;
+    rdfs:comment "Explicit citation of a local reference to a separately governed marketing insight; sharing a plan is insufficient." ;
+    rdfs:domain <urn:productium:specification-profile:AcquisitionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:MarketingInsightReference> .
+
+<urn:product-ontology:trace-profile:0.6:adoptionCitesEvidence> a owl:ObjectProperty ;
+    rdfs:comment "Explicit citation of an evidence-attribution record, including its claim and stance. Citation is not verification of the marketing statement." ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:product-ontology:trace-profile:0.6:adoptionCitesInsight> a owl:ObjectProperty ;
+    rdfs:comment "Explicit citation of a local reference to a separately governed marketing insight; sharing a plan is insufficient." ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:MarketingInsightReference> .
+
+<urn:product-ontology:trace-profile:0.6:changeDecision> a owl:ObjectProperty ;
+    rdfs:comment "Explicit decision records cited as handling the recorded modification. Release membership is not handling." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range <urn:productium:specification-profile:DecisionRecord> .
+
+<urn:product-ontology:trace-profile:0.6:changeFeature> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Recorded feature subject of an asserted modification; exclusive with changeScope. No actual implementation change is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:changeOccurrenceReference> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Recorded identifier for the asserted modification occurrence; not a fabricated event individual." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:trace-profile:0.6:changeRecordedAt> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Time of the immutable change report." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range xsd:dateTime .
+
+<urn:product-ontology:trace-profile:0.6:changeScope> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Recorded scope subject of an asserted modification; exclusive with changeFeature in this bounded reporting profile." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range <urn:productium:specification-profile:ScopeSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:changeSource> a owl:DatatypeProperty ;
+    rdfs:comment "Source provenance of the change assertion." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:trace-profile:0.6:changeStatement> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Content of the asserted modification; not proof of application." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:trace-profile:0.6:changeTask> a owl:ObjectProperty ;
+    rdfs:comment "Local external task references cited as handling; no task completion or ownership transfer is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeRecord> ;
+    rdfs:range <urn:productium:specification-profile:TaskReference> .
+
+<urn:product-ontology:trace-profile:0.6:decisionEvidence> a owl:ObjectProperty ;
+    rdfs:comment "Cited attributed evidence used in the recorded rationale; citation does not establish decision correctness or claim truth." ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:product-ontology:trace-profile:0.6:decisionRationale> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Recorded rationale explaining selection, nonselection or handling. The string is not machine-verified reasoning." ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:trace-profile:0.6:decisionSelectsSolution> a owl:ObjectProperty ;
+    rdfs:comment "Explicitly selected alternatives; multiple selections or no selection are permitted. Every selected solution is considered." ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range <urn:productium:specification-profile:SolutionSpecification> ;
+    rdfs:subPropertyOf <urn:product-ontology:trace-profile:0.6:decisionConsidersSolution> .
+
+<urn:product-ontology:trace-profile:0.6:decisionSource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded provenance of this decision record." ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:trace-profile:0.6:dependencyActualCapabilityTarget> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Actual capability target, not an intended ability. The bearer must be recorded separately." ;
+    rdfs:domain <urn:productium:specification-profile:DependencySpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductCapability> .
+
+<urn:product-ontology:trace-profile:0.6:dependencyCapabilitySpecificationTarget> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Intended capability specification target; does not entail an actual capability." ;
+    rdfs:domain <urn:productium:specification-profile:DependencySpecification> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:product-ontology:trace-profile:0.6:dependencyExternalTarget> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Local reference to a separately governed target, including resources; the referenced target is not re-owned." ;
+    rdfs:domain <urn:productium:specification-profile:DependencySpecification> ;
+    rdfs:range <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:product-ontology:trace-profile:0.6:dependencyProductTarget> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Optional local product target; exactly one of the four typed target alternatives in the complete dependency profile." ;
+    rdfs:domain <urn:productium:specification-profile:DependencySpecification> ;
+    rdfs:range <urn:productium:specification-profile:Product> .
+
+<urn:product-ontology:trace-profile:0.6:dependencySource> a owl:DatatypeProperty ;
+    rdfs:comment "Recorded source of the authored dependency assertion." ;
+    rdfs:domain <urn:productium:specification-profile:DependencySpecification> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:trace-profile:0.6:narrativeCitesEvidence> a owl:ObjectProperty ;
+    rdfs:comment "Explicit citation of an evidence-attribution record, including its claim and stance. Citation is not verification of the marketing statement." ;
+    rdfs:domain <urn:productium:specification-profile:CompetitiveNarrative> ;
+    rdfs:range <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:product-ontology:trace-profile:0.6:narrativeCitesInsight> a owl:ObjectProperty ;
+    rdfs:comment "Explicit citation of a local reference to a separately governed marketing insight; sharing a plan is insufficient." ;
+    rdfs:domain <urn:productium:specification-profile:CompetitiveNarrative> ;
+    rdfs:range <urn:productium:specification-profile:MarketingInsightReference> .
+
+<urn:product-ontology:trace-profile:0.6:proposalFeature> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Intended feature subject. Supports a proposal even when no ChangeRecord exists." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeProposalSpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:proposalScope> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "Intended scope subject; exclusive with proposalFeature. A proposal does not create a change occurrence." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeProposalSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScopeSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:proposalSource> a owl:DatatypeProperty ;
+    rdfs:comment "Provenance of the authored proposal." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeProposalSpecification> ;
+    rdfs:range xsd:anyURI .
+
+<urn:product-ontology:trace-profile:0.6:proposalStatement> a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:comment "Authored desired delta, distinct from an assertion that it occurred." ;
+    rdfs:domain <urn:productium:specification-profile:ChangeProposalSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:trace-profile:0.6:stepPrecedes> a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "An explicit precedence constraint between steps in the same owning flow. Branches and partial order are permitted. This is not an execution transition or an immediate-next relation." ;
+    rdfs:domain <urn:productium:specification-profile:InteractionStepSpecification> ;
+    rdfs:range <urn:productium:specification-profile:InteractionStepSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityInformationArchitecture> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:InformationArchitectureSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityJourney> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:JourneySpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityJourneyStage> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:JourneyStageSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityPersona> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityRecommendation> a owl:DatatypeProperty ;
+    rdfs:comment "Advice authored within this finding and sharing its provenance. Absence is unknown; no separate recommendation identity or implemented fix is asserted." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range xsd:string .
+
+<urn:product-ontology:trace-profile:0.6:usabilityStep> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:InteractionStepSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityTouchpoint> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:TouchpointSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityUIState> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:UIStateSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:usabilityUserRole> a owl:ObjectProperty ;
+    rdfs:comment "An additional explicitly recorded experience subject. The finding retains its constitutive flow or screen subject; no implemented improvement is inferred." ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:UserRoleSpecification> .
+
+<urn:productium:specification-profile:> a owl:Ontology ;
+    owl:versionInfo "IC-0.7 authored specification identity candidate" .
+
+<urn:productium:specification-profile:FunctionalRequirementSpecification> a owl:Class ;
+    rdfs:label "FunctionalRequirementSpecification" ;
+    rdfs:comment "A requirement specification with an essential normative commitment about intended behavior or functionality." ;
+    rdfs:subClassOf <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:assessesProblem> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProblemSolutionFitAssessment> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:assessesProduct> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductMarketFitAssessment> ;
+    rdfs:range <urn:productium:specification-profile:Product> .
+
+<urn:productium:specification-profile:assessesSolution> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProblemSolutionFitAssessment> ;
+    rdfs:range <urn:productium:specification-profile:SolutionSpecification> .
+
+<urn:productium:specification-profile:concernsRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ValidationFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:constrainsRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ConstraintSpecification> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:containsCase> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestSuiteSpecification> ;
+    rdfs:range <urn:productium:specification-profile:TestCase> .
+
+<urn:productium:specification-profile:containsProduct> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:Product> .
+
+<urn:productium:specification-profile:containsStage> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:JourneySpecification> ;
+    rdfs:range <urn:productium:specification-profile:JourneyStageSpecification> .
+
+<urn:productium:specification-profile:definesLifecycleStage> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:LifecycleSpecification> ;
+    rdfs:range <urn:productium:specification-profile:LifecycleStageSpecification> .
+
+<urn:productium:specification-profile:dependsOnEnablerSpecification> a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "dependsOnFeatureSpecification" ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:exemplifiedByScenario> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:AcceptanceCriterionSpecification> ;
+    rdfs:range <urn:productium:specification-profile:RequirementScenarioSpecification> .
+
+<urn:productium:specification-profile:expectedEnabledBy> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OutcomeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:hasDependencySpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:DependencySpecification> .
+
+<urn:productium:specification-profile:hasFeatureCriterion> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:AcceptanceCriterionSpecification> .
+
+<urn:productium:specification-profile:hasProductStatusRecord> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ProductStatusRecord> .
+
+<urn:productium:specification-profile:hasProposedSolution> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OpportunityStatement> ;
+    rdfs:range <urn:productium:specification-profile:SolutionSpecification> .
+
+<urn:productium:specification-profile:hasScopeSpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ScopeSpecification> .
+
+<urn:productium:specification-profile:hasStoryCriterion> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:UserStorySpecification> ;
+    rdfs:range <urn:productium:specification-profile:AcceptanceCriterionSpecification> .
+
+<urn:productium:specification-profile:hasStorySpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:UserStorySpecification> .
+
+<urn:productium:specification-profile:hasVisionStatement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:VisionStatement> .
+
+<urn:productium:specification-profile:implementsFeature> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductRealization> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:informsInitiative> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:InitiativeSpecification> .
+
+<urn:productium:specification-profile:intendedToEnableFeature> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:EnablerSpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:intendsCapability> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:intendsToAddressProblem> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:intendsToContributeToOutcome> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OutcomeSpecification> .
+
+<urn:productium:specification-profile:intendsToSupportGoal> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:InitiativeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:GoalSpecification> .
+
+<urn:productium:specification-profile:justifiesRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RequirementRationaleStatement> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:motivatesGoal> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:VisionStatement> ;
+    rdfs:range <urn:productium:specification-profile:GoalSpecification> .
+
+<urn:productium:specification-profile:motivatesHypothesis> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OpportunityStatement> ;
+    rdfs:range <urn:productium:specification-profile:HypothesisSpecification> .
+
+<urn:productium:specification-profile:motivatesSolutionHypothesis> a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:HypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:SolutionHypothesisSpecification> .
+
+<urn:productium:specification-profile:offeringOf> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OfferingSpecification> ;
+    rdfs:range <urn:productium:specification-profile:Product> .
+
+<urn:productium:specification-profile:operationalizedByCriterion> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RequirementSpecification> ;
+    rdfs:range <urn:productium:specification-profile:AcceptanceCriterionSpecification> .
+
+<urn:productium:specification-profile:organizesEntry> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:PortfolioEntry> .
+
+<urn:productium:specification-profile:proposesCapability> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionSpecification> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:proposesFeature> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionSpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r100_usesPositioningStatement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PositioningStatement> .
+
+<urn:productium:specification-profile:r101_plansLaunch> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:productium:specification-profile:LaunchSpecification> .
+
+<urn:productium:specification-profile:r102_targetsMarketingGoal> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:productium:specification-profile:MarketingGoalSpecification> .
+
+<urn:productium:specification-profile:r103_informsPositioningStatement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:MarketingInsightReference> ;
+    rdfs:range <urn:productium:specification-profile:PositioningStatement> .
+
+<urn:productium:specification-profile:r104_informsGoToMarketSpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:MarketingInsightReference> ;
+    rdfs:range <urn:productium:specification-profile:GoToMarketSpecification> .
+
+<urn:productium:specification-profile:r105_informsGoToMarketFromAcquisition> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:AcquisitionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:GoToMarketSpecification> .
+
+<urn:productium:specification-profile:r106_informsGoToMarketFromAdoption> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:GoToMarketSpecification> .
+
+<urn:productium:specification-profile:r117_tracksInitiative> a owl:ObjectProperty ;
+    rdfs:label "tracksInitiative" ;
+    rdfs:comment "The portfolio explicitly tracks an initiative specification as a planning reference." ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:InitiativeSpecification> .
+
+<urn:productium:specification-profile:r118_tracksReleaseSpecification> a owl:ObjectProperty ;
+    rdfs:label "tracksReleaseSpecification" ;
+    rdfs:comment "The portfolio explicitly tracks a release specification as a planning reference." ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:ReleaseSpecification> .
+
+<urn:productium:specification-profile:r119_tracksMilestoneSpecification> a owl:ObjectProperty ;
+    rdfs:label "tracksMilestoneSpecification" ;
+    rdfs:comment "The portfolio explicitly tracks a milestone specification as a planning reference." ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:MilestoneSpecification> .
+
+<urn:productium:specification-profile:r120_referencesProductLine> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:ProductLineReference> .
+
+<urn:productium:specification-profile:r121_hasPortfolioConfidenceAssessment> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductPortfolio> ;
+    rdfs:range <urn:productium:specification-profile:ConfidenceAssessment> .
+
+<urn:productium:specification-profile:r122_targetsPersona> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:productium:specification-profile:r123_framesJourney> a owl:ObjectProperty ;
+    rdfs:label "framesJourney" ;
+    rdfs:comment "The product is explicitly associated with an authored journey specification describing its intended use context." ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:JourneySpecification> .
+
+<urn:productium:specification-profile:r125_framesFeature> a owl:ObjectProperty ;
+    rdfs:label "framesFeature" ;
+    rdfs:comment "The vision statement explicitly frames a feature specification as relevant to its intended direction." ;
+    rdfs:domain <urn:productium:specification-profile:VisionStatement> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r127_tracksInitiativeReleaseSpecification> a owl:ObjectProperty ;
+    rdfs:label "tracksInitiativeReleaseSpecification" ;
+    rdfs:comment "The initiative specification explicitly tracks a release specification within its plan." ;
+    rdfs:domain <urn:productium:specification-profile:InitiativeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ReleaseSpecification> .
+
+<urn:productium:specification-profile:r133_supportedBy> a owl:ObjectProperty ;
+    rdfs:label "supportedBy" ;
+    rdfs:comment "The feature specification explicitly references a user-flow design as illustrating its intended interaction." ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:UserFlowSpecification> .
+
+<urn:productium:specification-profile:r135_recordsResolutionChange> a owl:ObjectProperty ;
+    rdfs:label "recordsResolutionChange" ;
+    rdfs:comment "The validation finding explicitly cites a change record asserted to address that finding, without certifying resolution." ;
+    rdfs:domain <urn:productium:specification-profile:ValidationFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:ChangeRecord> .
+
+<urn:productium:specification-profile:r136_includes> a owl:ObjectProperty ;
+    rdfs:label "includes" ;
+    rdfs:comment "The journey specification explicitly references touchpoint designs in its modeled experience." ;
+    rdfs:domain <urn:productium:specification-profile:JourneySpecification> ;
+    rdfs:range <urn:productium:specification-profile:TouchpointSpecification> .
+
+<urn:productium:specification-profile:r137_includesScreen> a owl:ObjectProperty ;
+    rdfs:label "includesScreen" ;
+    rdfs:comment "The user-flow specification references screen designs that may be used in its interaction design." ;
+    rdfs:domain <urn:productium:specification-profile:UserFlowSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScreenSpecification> .
+
+<urn:productium:specification-profile:r138_precededBy> a owl:ObjectProperty ;
+    rdfs:label "allowsPrecedingScreen" ;
+    rdfs:comment "The screen specification explicitly permits the target screen design as a possible preceding view in a designed navigation path." ;
+    rdfs:domain <urn:productium:specification-profile:ScreenSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScreenSpecification> .
+
+<urn:productium:specification-profile:r139_intendsToSupportGoal> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Roadmap> ;
+    rdfs:range <urn:productium:specification-profile:GoalSpecification> .
+
+<urn:productium:specification-profile:r140_plansEntryRelease> a owl:ObjectProperty ;
+    rdfs:label "plansEntryRelease" ;
+    rdfs:comment "The roadmap entry explicitly names a planned release specification in its projection." ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:ReleaseSpecification> .
+
+<urn:productium:specification-profile:r141_milestoneForReleaseSpecification> a owl:ObjectProperty ;
+    rdfs:label "milestoneForReleaseSpecification" ;
+    rdfs:comment "The milestone specification identifies a release specification relevant to its target condition." ;
+    rdfs:domain <urn:productium:specification-profile:MilestoneSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ReleaseSpecification> .
+
+<urn:productium:specification-profile:r142_groupsPlannedInitiative> a owl:ObjectProperty ;
+    rdfs:label "groupsPlannedInitiative" ;
+    rdfs:comment "The planning-horizon definition is explicitly associated with initiatives classified under that horizon in a planning view." ;
+    rdfs:domain <urn:productium:specification-profile:PlanningHorizonDefinition> ;
+    rdfs:range <urn:productium:specification-profile:InitiativeSpecification> .
+
+<urn:productium:specification-profile:r143_usesWindowHorizonDefinition> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "usesWindowHorizonDefinition" ;
+    rdfs:comment "The target-window assignment optionally selects one canonical horizon definition for this assignment record." ;
+    rdfs:domain <urn:productium:specification-profile:TargetWindowAssignment> ;
+    rdfs:range <urn:productium:specification-profile:PlanningHorizonDefinition> .
+
+<urn:productium:specification-profile:r144_targetsReleaseGoal> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseSpecification> ;
+    rdfs:range <urn:productium:specification-profile:GoalSpecification> .
+
+<urn:productium:specification-profile:r145_concernsDeliveryWorkItem> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseEvidenceRecord> ;
+    rdfs:range <urn:productium:specification-profile:DeliveryWorkItem> .
+
+<urn:productium:specification-profile:r146_specifiesRequirementVerification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestCase> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:r147_hasRecordedExecution> a owl:ObjectProperty ;
+    rdfs:label "hasRecordedExecution" ;
+    rdfs:comment "The test-suite specification explicitly indexes a recorded test execution whose executed case belongs to that suite." ;
+    rdfs:domain <urn:productium:specification-profile:TestSuiteSpecification> ;
+    rdfs:range <urn:productium:specification-profile:TestExecution> .
+
+<urn:productium:specification-profile:r148_referencesJourneyStage> a owl:ObjectProperty ;
+    rdfs:label "referencesJourneyStage" ;
+    rdfs:comment "The go-to-market specification explicitly identifies a journey stage relevant to the strategy." ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:productium:specification-profile:JourneyStageSpecification> .
+
+<urn:productium:specification-profile:r149_targetsLaunchPersona> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:LaunchSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:productium:specification-profile:r150_usesLaunchPositioning> a owl:ObjectProperty ;
+    rdfs:label "usesLaunchPositioning" ;
+    rdfs:comment "The launch specification explicitly adopts positioning statements for its intended introduction." ;
+    rdfs:domain <urn:productium:specification-profile:LaunchSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PositioningStatement> .
+
+<urn:productium:specification-profile:r151_usesLaunchMessaging> a owl:ObjectProperty ;
+    rdfs:label "usesLaunchMessaging" ;
+    rdfs:comment "The launch specification explicitly adopts messaging specifications for its intended introduction." ;
+    rdfs:domain <urn:productium:specification-profile:LaunchSpecification> ;
+    rdfs:range <urn:productium:specification-profile:MessagingSpecification> .
+
+<urn:productium:specification-profile:r154_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r155_addresses> a owl:ObjectProperty ;
+    rdfs:label "addresses" ;
+    rdfs:comment "The vision statement records an intended response to a problem statement." ;
+    rdfs:domain <urn:productium:specification-profile:VisionStatement> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:r158_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OpportunityStatement> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r164_intendsToAddressProblem> a owl:ObjectProperty ;
+    rdfs:label "intendsToAddressProblem" ;
+    rdfs:comment "The feature specification records an intended contribution to addressing a problem statement." ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:r165_specifiesBeneficiaryPersona> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:productium:specification-profile:r166_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r168_identifiesOpportunity> a owl:ObjectProperty ;
+    rdfs:label "identifiesOpportunity" ;
+    rdfs:comment "The journey specification records an opportunity identified while analysing the modeled experience." ;
+    rdfs:domain <urn:productium:specification-profile:JourneySpecification> ;
+    rdfs:range <urn:productium:specification-profile:OpportunityStatement> .
+
+<urn:productium:specification-profile:r169_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:JourneySpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r170_identifiesOpportunity> a owl:ObjectProperty ;
+    rdfs:label "identifiesOpportunity" ;
+    rdfs:comment "The stage specification records an opportunity identified for that authored stage." ;
+    rdfs:domain <urn:productium:specification-profile:JourneyStageSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OpportunityStatement> .
+
+<urn:productium:specification-profile:r171_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:JourneyStageSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r172_addressesProblemStatement> a owl:ObjectProperty ;
+    rdfs:label "addressesProblemStatement" ;
+    rdfs:comment "The positioning statement claims relevance to a recorded problem formulation." ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:r173_claimsDifferentiationThrough> a owl:ObjectProperty ;
+    rdfs:label "claimsDifferentiationThrough" ;
+    rdfs:comment "The positioning statement records a differentiation claim referring to an intended capability specification." ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:r174_targetsMessagePersona> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:MessagingSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:productium:specification-profile:r175_referencesMessageFeature> a owl:ObjectProperty ;
+    rdfs:label "referencesMessageFeature" ;
+    rdfs:comment "The messaging specification explicitly references a feature described in its messages." ;
+    rdfs:domain <urn:productium:specification-profile:MessagingSpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r176_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:GoToMarketSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r177_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:LaunchSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r178_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:MarketingGoalSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:r156_referencesMetric> .
+
+<urn:productium:specification-profile:r179_addressesNarrativeProblem> a owl:ObjectProperty ;
+    rdfs:label "addressesNarrativeProblem" ;
+    rdfs:comment "The competitive narrative explicitly frames its comparison around a problem statement." ;
+    rdfs:domain <urn:productium:specification-profile:CompetitiveNarrative> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:r180_claimsDifferentiationThrough> a owl:ObjectProperty ;
+    rdfs:label "claimsDifferentiationThrough" ;
+    rdfs:comment "The competitive narrative records a differentiation claim about an intended capability specification." ;
+    rdfs:domain <urn:productium:specification-profile:CompetitiveNarrative> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:r181_hypothesizesAcquisitionForProblem> a owl:ObjectProperty ;
+    rdfs:label "hypothesizesAcquisitionForProblem" ;
+    rdfs:comment "The acquisition hypothesis identifies a problem statement in the scope of its acquisition claim." ;
+    rdfs:domain <urn:productium:specification-profile:AcquisitionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:hypothesizesAboutProblem> .
+
+<urn:productium:specification-profile:r182_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:AcquisitionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r183_hypothesizesAdoptionForProblem> a owl:ObjectProperty ;
+    rdfs:label "hypothesizesAdoptionForProblem" ;
+    rdfs:comment "The adoption hypothesis identifies a problem statement in its proposed explanation of adoption." ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:hypothesizesAboutProblem> .
+
+<urn:productium:specification-profile:r184_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:AdoptionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:r22_motivatesOpportunity> a owl:ObjectProperty ;
+    rdfs:label "motivatesOpportunity" ;
+    rdfs:comment "The problem statement is explicitly recorded as a motivation for an opportunity statement." ;
+    rdfs:domain <urn:productium:specification-profile:ProblemStatement> ;
+    rdfs:range <urn:productium:specification-profile:OpportunityStatement> .
+
+<urn:productium:specification-profile:r51_describesUserRole> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PersonaSpecification> ;
+    rdfs:range <urn:productium:specification-profile:UserRoleSpecification> .
+
+<urn:productium:specification-profile:r52_representedInJourney> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PersonaSpecification> ;
+    rdfs:range <urn:productium:specification-profile:JourneySpecification> .
+
+<urn:productium:specification-profile:r54_includes> a owl:ObjectProperty ;
+    rdfs:label "includes" ;
+    rdfs:comment "The journey-stage specification references a touchpoint design as included in its experience description." ;
+    rdfs:domain <urn:productium:specification-profile:JourneyStageSpecification> ;
+    rdfs:range <urn:productium:specification-profile:TouchpointSpecification> .
+
+<urn:productium:specification-profile:r55_describedByFlow> a owl:ObjectProperty ;
+    rdfs:label "describedByFlow" ;
+    rdfs:comment "The journey-stage specification explicitly references a flow design describing interactions in that stage." ;
+    rdfs:domain <urn:productium:specification-profile:JourneyStageSpecification> ;
+    rdfs:range <urn:productium:specification-profile:UserFlowSpecification> .
+
+<urn:productium:specification-profile:r56_specifiesStep> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:UserFlowSpecification> ;
+    rdfs:range <urn:productium:specification-profile:InteractionStepSpecification> .
+
+<urn:productium:specification-profile:r57_referencesScreen> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:InteractionStepSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScreenSpecification> .
+
+<urn:productium:specification-profile:r58_organizesScreenSpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:InformationArchitectureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ScreenSpecification> .
+
+<urn:productium:specification-profile:r59_definesUIState> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ScreenSpecification> ;
+    rdfs:range <urn:productium:specification-profile:UIStateSpecification> .
+
+<urn:productium:specification-profile:r60_reportsOnFlow> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:UserFlowSpecification> .
+
+<urn:productium:specification-profile:r61_reportsOnScreen> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:UsabilityFindingRecord> ;
+    rdfs:range <urn:productium:specification-profile:ScreenSpecification> .
+
+<urn:productium:specification-profile:r63_supportedBy> a owl:ObjectProperty ;
+    rdfs:label "supportedBy" ;
+    rdfs:comment "The user-story specification references a user-flow design illustrating the desired interaction." ;
+    rdfs:domain <urn:productium:specification-profile:UserStorySpecification> ;
+    rdfs:range <urn:productium:specification-profile:UserFlowSpecification> .
+
+<urn:productium:specification-profile:r64_organizesRoadmapEntry> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Roadmap> ;
+    rdfs:range <urn:productium:specification-profile:RoadmapEntry> .
+
+<urn:productium:specification-profile:r65_plansInitiative> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:InitiativeSpecification> .
+
+<urn:productium:specification-profile:r66_plansFeatureDelivery> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r67_targetsMilestone> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:MilestoneSpecification> .
+
+<urn:productium:specification-profile:r68_hasPriorityAssessment> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:PriorityAssessment> .
+
+<urn:productium:specification-profile:r69_usesRankingCriterion> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PriorityAssessment> ;
+    rdfs:range <urn:productium:specification-profile:PrioritizationCriterionSpecification> .
+
+<urn:productium:specification-profile:r70_usesHorizonDefinition> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:PlanningHorizonDefinition> .
+
+<urn:productium:specification-profile:r71_hasTargetWindowAssignment> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:TargetWindowAssignment> .
+
+<urn:productium:specification-profile:r72_hasEntryConfidenceAssessment> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:ConfidenceAssessment> .
+
+<urn:productium:specification-profile:r73_usesCommitmentLevelDefinition> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:CommitmentLevelDefinition> .
+
+<urn:productium:specification-profile:r74_hasPlanningDependency> a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RoadmapEntry> ;
+    rdfs:range <urn:productium:specification-profile:RoadmapEntry> .
+
+<urn:productium:specification-profile:r75_plansDeliveryItem> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseSpecification> ;
+    rdfs:range <urn:productium:specification-profile:DeliveryWorkItem> .
+
+<urn:productium:specification-profile:r76_referencesChangeRecord> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ChangeRecord> .
+
+<urn:productium:specification-profile:r78_hasReleaseEvidenceRecord> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ReleaseEvidenceRecord> .
+
+<urn:productium:specification-profile:r79_proposesRecordedChange> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ChangeProposalSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ChangeRecord> .
+
+<urn:productium:specification-profile:r80_plansFeature> a owl:ObjectProperty ;
+    rdfs:label "plansFeature" ;
+    rdfs:comment "The delivery work item names a feature specification in its planned delivery scope." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryWorkItem> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r81_intendedToContributeToWork> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TaskReference> ;
+    rdfs:range <urn:productium:specification-profile:DeliveryWorkItem> .
+
+<urn:productium:specification-profile:r82_specifiesFeatureActivationControl> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureFlagSpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r83_plannedForRelease> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ProductVersion> ;
+    rdfs:range <urn:productium:specification-profile:ReleaseSpecification> .
+
+<urn:productium:specification-profile:r84_covers> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestScenario> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:r85_specifiesRequirementVerification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestScenario> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:r86_specifiesCriterionVerification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestScenario> ;
+    rdfs:range <urn:productium:specification-profile:AcceptanceCriterionSpecification> .
+
+<urn:productium:specification-profile:r87_refinesTestScenario> a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestCase> ;
+    rdfs:range <urn:productium:specification-profile:TestScenario> .
+
+<urn:productium:specification-profile:r89_referencesTestData> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestCase> ;
+    rdfs:range <urn:productium:specification-profile:TestDataReference> .
+
+<urn:productium:specification-profile:r8_supersedes> a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "supersedes" ;
+    rdfs:comment "The source product version is explicitly recorded as a direct successor baseline replacing the target within the same product lineage." ;
+    rdfs:domain <urn:productium:specification-profile:ProductVersion> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> .
+
+<urn:productium:specification-profile:r92_hasVerificationEvidenceRecord> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range <urn:productium:specification-profile:VerificationEvidenceRecord> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:isCarrierInRecord> .
+
+<urn:productium:specification-profile:r93_hasValidationEvidenceRecord> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range <urn:productium:specification-profile:ValidationEvidenceRecord> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:isCarrierInRecord> .
+
+<urn:productium:specification-profile:r94_hasPositioningStatement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:PositioningStatement> .
+
+<urn:productium:specification-profile:r95_positionedByStatement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OfferingSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PositioningStatement> .
+
+<urn:productium:specification-profile:r96_referencesTargetMarket> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:productium:specification-profile:TargetMarketReference> .
+
+<urn:productium:specification-profile:r97_referencesTargetSegment> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:productium:specification-profile:TargetSegmentReference> .
+
+<urn:productium:specification-profile:r98_referencesCompetitiveNarrative> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PositioningStatement> ;
+    rdfs:range <urn:productium:specification-profile:CompetitiveNarrative> .
+
+<urn:productium:specification-profile:r99_expressesPositioning> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:MessagingSpecification> ;
+    rdfs:range <urn:productium:specification-profile:PositioningStatement> .
+
+<urn:productium:specification-profile:recordedAttributionTo> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceArtifact> ;
+    rdfs:range <urn:productium:specification-profile:AssessmentClaim> ;
+    owl:propertyChainAxiom ( <urn:productium:specification-profile:isCarrierInRecord> <urn:productium:specification-profile:recordsClaim> ) .
+
+<urn:productium:specification-profile:recordsAffectedInitiative> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range <urn:productium:specification-profile:InitiativeSpecification> .
+
+<urn:productium:specification-profile:recordsCriterion> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range <urn:productium:specification-profile:DecisionCriterionSpecification> .
+
+<urn:productium:specification-profile:referenceContext> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:referencePurpose> a owl:DatatypeProperty ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> ;
+    rdfs:range xsd:string .
+
+<urn:productium:specification-profile:referencesOffering> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:BundleSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OfferingSpecification> .
+
+<urn:productium:specification-profile:referencesProduct> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PortfolioEntry> ;
+    rdfs:range <urn:productium:specification-profile:Product> .
+
+<urn:productium:specification-profile:referencesProductFamily> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ProductFamilyReference> .
+
+<urn:productium:specification-profile:referencesProductLine> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ProductLineReference> .
+
+<urn:productium:specification-profile:referencesProductVariant> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ProductVariantReference> .
+
+<urn:productium:specification-profile:referencesRuleForRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:BusinessRuleReference> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:refinedByRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:UserStorySpecification> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:reportsStatus> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ReleaseSpecification> ;
+    rdfs:range <urn:productium:specification-profile:DeliveryStatusRecord> .
+
+<urn:productium:specification-profile:representedByStory> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:VerticalSliceSpecification> ;
+    rdfs:range <urn:productium:specification-profile:UserStorySpecification> .
+
+<urn:productium:specification-profile:solutionHypothesizesAboutProblem> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:hypothesizesAboutProblem> .
+
+<urn:productium:specification-profile:solutionPredictsOutcome> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:SolutionHypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OutcomeSpecification> ;
+    rdfs:subPropertyOf <urn:productium:specification-profile:predictsOutcome> .
+
+<urn:productium:specification-profile:sourcesRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:RequirementSourceReference> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:specifiedByRequirement> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:specifiedThroughFeature> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:CapabilitySpecification> ;
+    rdfs:range <urn:productium:specification-profile:FeatureSpecification> .
+
+<urn:productium:specification-profile:specifiesOutcomeMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:OutcomeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:specifiesPersonaContext> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:UserStorySpecification> ;
+    rdfs:range <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:productium:specification-profile:specifiesSlice> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:FeatureSpecification> ;
+    rdfs:range <urn:productium:specification-profile:VerticalSliceSpecification> .
+
+<urn:productium:specification-profile:targetsOutcome> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:InitiativeSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OutcomeSpecification> .
+
+<urn:productium:specification-profile:targetsOutcomeSpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:GoalSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OutcomeSpecification> .
+
+<urn:productium:specification-profile:usesLifecycleSpecification> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:LifecycleSpecification> .
+
+<urn:product-ontology:assessment-profile:0.4:claimContext> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "One fixed applicability context; sharing a context does not imply sharing a claim." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> .
+
+<urn:product-ontology:assessment-profile:0.4:claimCriterion> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "One atomic assessment criterion. Compound criteria must have an explicit condition specification." ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:product-ontology:delivery-profile:0.5:executionContext> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "One fixed assessment applicability context for a concluded test occurrence. Repeated or differently contextualized runs are separate events." ;
+    rdfs:domain <urn:productium:specification-profile:TestExecution> ;
+    rdfs:range <urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> .
+
+<urn:product-ontology:delivery-profile:0.5:executionCriterion> a owl:ObjectProperty ;
+    rdfs:comment "Explicit assessment criteria evaluated during the run. Case membership and shared labels do not establish criterion coverage." ;
+    rdfs:domain <urn:productium:specification-profile:TestExecution> ;
+    rdfs:range <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:product-ontology:delivery-profile:0.5:itemStatus> a owl:InverseFunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "One item owns each status assertion; an item may have no record or many historical records. Release membership never propagates status." ;
+    rdfs:domain <urn:productium:specification-profile:DeliveryWorkItem> ;
+    rdfs:range <urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> .
+
+<urn:product-ontology:external-boundary:0.7:Architecture%3AComponent> a owl:Class ;
+    rdfs:label "Component" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Architecture%3AInterface> a owl:Class ;
+    rdfs:label "Interface" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Architecture%3AService> a owl:Class ;
+    rdfs:label "Service" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability> a owl:Class ;
+    rdfs:label "BusinessCapability" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal> a owl:Class ;
+    rdfs:label "BusinessGoal" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Business%3AService> a owl:Class ;
+    rdfs:label "Service" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AConfiguration> a owl:Class ;
+    rdfs:label "Configuration" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Plan> a owl:Class ;
+    rdfs:label "Test Plan" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Market%3ACompetitor_Alternative> a owl:Class ;
+    rdfs:label "Competitor / Alternative" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Market%3AMarket> a owl:Class ;
+    rdfs:label "Market" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:ProductLine%3AProductConfiguration> a owl:Class ;
+    rdfs:label "ProductConfiguration" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:UXResearch%3AUser_Mental_Model> a owl:Class ;
+    rdfs:label "User Mental Model" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:trace-profile:0.6:decisionConsidersSolution> a owl:ObjectProperty ;
+    rdfs:comment "Explicit alternatives considered in this decision; consideration is not selection." ;
+    rdfs:domain <urn:productium:specification-profile:DecisionRecord> ;
+    rdfs:range <urn:productium:specification-profile:SolutionSpecification> .
+
+<urn:product-ontology:trace-profile:0.6:dependencyCondition> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:comment "One authored condition baseline for an atomic dependency specification. Compound conditions can be represented by one authored condition specification." ;
+    rdfs:domain <urn:productium:specification-profile:DependencySpecification> ;
+    rdfs:range <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:BusinessRuleReference> a owl:Class ;
+    rdfs:label "BusinessRuleReference" ;
+    rdfs:comment "A local reference artifact to an externally governed business rule. Its business-rule purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:ConstraintSpecification> a owl:Class ;
+    rdfs:label "ConstraintSpecification" ;
+    rdfs:comment "An authored ConditionSpecification whose constitutive content includes restriction constitutive to the authored specification. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:PrioritizationCriterionSpecification> a owl:Class ;
+    rdfs:label "PrioritizationCriterionSpecification" ;
+    rdfs:comment "A decision-criterion specification whose constitutive purpose is to justify or compute a planning rank." ;
+    rdfs:subClassOf <urn:productium:specification-profile:DecisionCriterionSpecification> .
+
+<urn:productium:specification-profile:ProductFamilyReference> a owl:Class ;
+    rdfs:label "ProductFamilyReference" ;
+    rdfs:comment "A local reference artifact identifying a product-family target governed by an external owner. Its product-family purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:QualityRequirementSpecification> a owl:Class ;
+    rdfs:label "QualityRequirementSpecification" ;
+    rdfs:comment "A requirement specification with an essential normative commitment about a measurable quality under defined conditions." ;
+    rdfs:subClassOf <urn:productium:specification-profile:RequirementSpecification> .
+
+<urn:productium:specification-profile:RequirementScenarioSpecification> a owl:Class ;
+    rdfs:label "RequirementScenarioSpecification" ;
+    rdfs:comment "An authored ScenarioSpecification whose constitutive content includes requirement/acceptance illustration. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ScenarioSpecification> .
+
+<urn:productium:specification-profile:RequirementSourceReference> a owl:Class ;
+    rdfs:label "RequirementSourceReference" ;
+    rdfs:comment "A local provenance reference artifact identifying an origin used in deriving a requirement specification. Its requirement-source purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:TargetMarketReference> a owl:Class ;
+    rdfs:label "TargetMarketReference" ;
+    rdfs:comment "A local reference artifact to an externally governed target market. Its target-market purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:TargetSegmentReference> a owl:Class ;
+    rdfs:label "TargetSegmentReference" ;
+    rdfs:comment "A local reference artifact to an externally governed segment in an identified segmentation context. Its target-segment purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:VerificationEvidenceRecord> a owl:Class ;
+    rdfs:label "VerificationEvidenceRecord" ;
+    rdfs:comment "An evidence-attribution record whose constitutive assessment purpose is verification." ;
+    rdfs:subClassOf <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:productium:specification-profile:canonicalOwner> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:conditionContext> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:conditionStatement> a owl:DatatypeProperty ;
+    rdfs:domain <urn:productium:specification-profile:ConditionSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:productium:specification-profile:personaContext> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:PersonaSpecification> .
+
+<urn:productium:specification-profile:personaDescription> a owl:DatatypeProperty ;
+    rdfs:domain <urn:productium:specification-profile:PersonaSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:productium:specification-profile:predictsOutcome> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:HypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:OutcomeSpecification> .
+
+<urn:productium:specification-profile:r156_referencesMetric> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:GoalSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProductMetricReference> .
+
+<urn:productium:specification-profile:referenceProvenance> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:referenceTarget> a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:scenarioActions> a owl:DatatypeProperty ;
+    rdfs:domain <urn:productium:specification-profile:ScenarioSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:productium:specification-profile:scenarioContext> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ScenarioSpecification> .
+
+<urn:productium:specification-profile:scenarioPrecondition> a owl:DatatypeProperty ;
+    rdfs:domain <urn:productium:specification-profile:ScenarioSpecification> ;
+    rdfs:range xsd:string .
+
+<urn:productium:specification-profile:specifiesExpectedCondition> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:ScenarioSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:product-ontology:external-boundary:0.7:Architecture%3AArchitectureElement> a owl:Class ;
+    rdfs:label "ArchitectureElement" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Script> a owl:Class ;
+    rdfs:label "Test Script" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:relation-profile:0.7:r160_evidencedBy> a owl:ObjectProperty ;
+    rdfs:label "evidencedBy" ;
+    rdfs:comment "The hypothesis specification explicitly cites external evidence offered in assessing its proposition." ;
+    rdfs:domain <urn:productium:specification-profile:HypothesisSpecification> ;
+    rdfs:range <urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> .
+
+<urn:productium:specification-profile:BundleSpecification> a owl:Class ;
+    rdfs:label "BundleSpecification" ;
+    rdfs:comment "A governed composition specification referencing offerings intended to be presented together." .
+
+<urn:productium:specification-profile:CommitmentLevelDefinition> a owl:Class ;
+    rdfs:label "CommitmentLevelDefinition" ;
+    rdfs:comment "A governed term definition for a planning-commitment label within a named scheme." .
+
+<urn:productium:specification-profile:EnablerSpecification> a owl:Class ;
+    rdfs:label "EnablerSpecification" ;
+    rdfs:comment "An authored supporting-work specification intended to enable a feature or capability specification." .
+
+<urn:productium:specification-profile:FeatureFlagSpecification> a owl:Class ;
+    rdfs:label "FeatureFlagSpecification" ;
+    rdfs:comment "A specification of a named feature-activation control and its intended scoping policy." .
+
+<urn:productium:specification-profile:LifecycleStageSpecification> a owl:Class ;
+    rdfs:label "LifecycleStageSpecification" ;
+    rdfs:comment "A scoped definition of a lifecycle stage within one lifecycle specification." .
+
+<urn:productium:specification-profile:ProductLineReference> a owl:Class ;
+    rdfs:label "ProductLineReference" ;
+    rdfs:comment "A local reference artifact identifying an externally governed product line. Its product-line purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:ProductStatusRecord> a owl:Class ;
+    rdfs:label "ProductStatusRecord" ;
+    rdfs:comment "A dated contextual assertion assigning a status value to one product." .
+
+<urn:productium:specification-profile:ProductVariantReference> a owl:Class ;
+    rdfs:label "ProductVariantReference" ;
+    rdfs:comment "A local reference artifact identifying an externally governed product variant. Its product-variant purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:RequirementRationaleStatement> a owl:Class ;
+    rdfs:label "RequirementRationaleStatement" ;
+    rdfs:comment "An authored justification statement explaining why a requirement specification is needed." .
+
+<urn:productium:specification-profile:TaskReference> a owl:Class ;
+    rdfs:label "TaskReference" ;
+    rdfs:comment "A local reference artifact identifying an externally governed implementation task. Its implementation-task purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:TestDataReference> a owl:Class ;
+    rdfs:label "TestDataReference" ;
+    rdfs:comment "A local reference artifact identifying a versioned dataset used in test design or execution. Its test-data purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:ValidationEvidenceRecord> a owl:Class ;
+    rdfs:label "ValidationEvidenceRecord" ;
+    rdfs:comment "An evidence-attribution record whose constitutive assessment purpose is validation." ;
+    rdfs:subClassOf <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:productium:specification-profile:ValidationFindingRecord> a owl:Class ;
+    rdfs:label "ValidationFindingRecord" ;
+    rdfs:comment "A FindingRecord whose constitutive subject matter includes a requirement specification." ;
+    rdfs:subClassOf <urn:productium:specification-profile:FindingRecord> .
+
+<urn:productium:specification-profile:assessesSpecification> a owl:ObjectProperty ;
+    rdfs:comment "At least one intended ability contract for the same tested version." ;
+    rdfs:domain <urn:productium:specification-profile:TestExecution> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:bearsCapability> a owl:ObjectProperty ;
+    rdfs:comment "Each actual disposition has exactly one realization bearer throughout its existence. The 1..* capability bound is a local profile restriction to capability-bearing configured systems, not a universal claim about every broken installation." ;
+    rdfs:domain <urn:productium:specification-profile:ProductRealization> ;
+    rdfs:range <urn:productium:specification-profile:ProductCapability> .
+
+<urn:productium:specification-profile:evaluatedAgainst> a owl:ObjectProperty ;
+    rdfs:comment "Assessment reference does not assert conformance or success." ;
+    rdfs:domain <urn:productium:specification-profile:ProductCapability> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:executes> a owl:ObjectProperty ;
+    rdfs:comment "Exactly one test specification per completed execution in this profile." ;
+    rdfs:domain <urn:productium:specification-profile:TestExecution> ;
+    rdfs:range <urn:productium:specification-profile:TestCase> .
+
+<urn:productium:specification-profile:hasVersion> a owl:ObjectProperty ;
+    rdfs:comment "Versions may be absent for an early product; each version belongs to one product." ;
+    rdfs:domain <urn:productium:specification-profile:Product> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> .
+
+<urn:productium:specification-profile:realizesVersion> a owl:ObjectProperty ;
+    rdfs:comment "A configured deployment artifact enacts one fixed version baseline in this bounded profile; this trace does not certify full conformance. A constitutive version change creates a successor realization." ;
+    rdfs:domain <urn:productium:specification-profile:ProductRealization> ;
+    rdfs:range <urn:productium:specification-profile:ProductVersion> .
+
+<urn:productium:specification-profile:recordsCarrier> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceAttributionRecord> ;
+    rdfs:range <urn:productium:specification-profile:EvidenceArtifact> .
+
+<urn:productium:specification-profile:recordsClaim> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:EvidenceAttributionRecord> ;
+    rdfs:range <urn:productium:specification-profile:AssessmentClaim> .
+
+<urn:productium:specification-profile:recordsExecution> a owl:ObjectProperty ;
+    rdfs:comment "One consolidated result for each completed execution, including aborted/failed outcomes." ;
+    rdfs:domain <urn:productium:specification-profile:TestResult> ;
+    rdfs:range <urn:productium:specification-profile:TestExecution> .
+
+<urn:productium:specification-profile:specifiesCapability> a owl:ObjectProperty ;
+    rdfs:comment "Specification is version-scoped; reuse across versions uses distinct scoped specifications." ;
+    rdfs:domain <urn:productium:specification-profile:ProductVersion> ;
+    rdfs:range <urn:productium:specification-profile:CapabilitySpecification> .
+
+<urn:productium:specification-profile:testsRealization> a owl:ObjectProperty ;
+    rdfs:comment "Exactly one concrete test subject; a plan is not a test subject." ;
+    rdfs:domain <urn:productium:specification-profile:TestExecution> ;
+    rdfs:range <urn:productium:specification-profile:ProductRealization> .
+
+<urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence> a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:productium:specification-profile:ConfidenceAssessment> a owl:Class ;
+    rdfs:label "ConfidenceAssessment" ;
+    rdfs:comment "A dated assessment of planning confidence with explicit subject, assessor, evidence context and scale." .
+
+<urn:productium:specification-profile:DecisionCriterionSpecification> a owl:Class ;
+    rdfs:label "DecisionCriterionSpecification" ;
+    rdfs:comment "An authored rule or criterion specification used to appraise product alternatives." .
+
+<urn:productium:specification-profile:LifecycleSpecification> a owl:Class ;
+    rdfs:label "LifecycleSpecification" ;
+    rdfs:comment "An authored scheme describing lifecycle-stage meanings applicable to products." .
+
+<urn:productium:specification-profile:MarketingGoalSpecification> a owl:Class ;
+    rdfs:label "MarketingGoalSpecification" ;
+    rdfs:comment "A goal specification whose constitutive desired result concerns product marketing or market introduction." ;
+    rdfs:subClassOf <urn:productium:specification-profile:GoalSpecification> .
+
+<urn:productium:specification-profile:PortfolioEntry> a owl:Class ;
+    rdfs:label "PortfolioEntry" ;
+    rdfs:comment "A governed entry in one portfolio, optionally referencing a product while a broader target binding is being specified." .
+
+<urn:productium:specification-profile:PriorityAssessment> a owl:Class ;
+    rdfs:label "PriorityAssessment" ;
+    rdfs:comment "A dated contextual ranking assessment recording a rank for a roadmap entry within a named comparison set and scale." .
+
+<urn:productium:specification-profile:ReleaseEvidenceRecord> a owl:Class ;
+    rdfs:label "ReleaseEvidenceRecord" ;
+    rdfs:comment "An evidence-attribution record whose constitutive assessment purpose is release." ;
+    rdfs:subClassOf <urn:productium:specification-profile:EvidenceAttributionRecord> .
+
+<urn:productium:specification-profile:Roadmap> a owl:Class ;
+    rdfs:label "Roadmap" ;
+    rdfs:comment "A governed planning-projection artifact referencing canonical product knowledge." .
+
+<urn:productium:specification-profile:TargetWindowAssignment> a owl:Class ;
+    rdfs:label "TargetWindowAssignment" ;
+    rdfs:comment "A planning record assigning a bounded target interval to one roadmap entry." .
+
+<urn:productium:specification-profile:TestSuiteSpecification> a owl:Class ;
+    rdfs:label "TestSuiteSpecification" ;
+    rdfs:comment "A governed test-organization specification containing references to test cases." .
+
+<urn:productium:specification-profile:UIStateSpecification> a owl:Class ;
+    rdfs:label "UIStateSpecification" ;
+    rdfs:comment "A scoped specification of a screen condition and its expected presentation or interaction." .
+
+<urn:productium:specification-profile:UserRoleSpecification> a owl:Class ;
+    rdfs:label "UserRoleSpecification" ;
+    rdfs:comment "A designed specification of a user participation context, responsibilities and permissions." .
+
+<urn:productium:specification-profile:VerticalSliceSpecification> a owl:Class ;
+    rdfs:label "VerticalSliceSpecification" ;
+    rdfs:comment "An authored end-to-end increment specification connecting intended value to coherent behavior and acceptance conditions." .
+
+<urn:productium:specification-profile:hypothesizesAboutProblem> a owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:HypothesisSpecification> ;
+    rdfs:range <urn:productium:specification-profile:ProblemStatement> .
+
+<urn:productium:specification-profile:isCarrierInRecord> a owl:ObjectProperty ;
+    owl:inverseOf <urn:productium:specification-profile:recordsCarrier> .
+
+<urn:productium:specification-profile:specificationProvenance> a owl:ObjectProperty .
+
+<urn:product-ontology:external-boundary:0.7:Business%3AValueProposition> a owl:Class ;
+    rdfs:label "ValueProposition" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:productium:specification-profile:InformationArchitectureSpecification> a owl:Class ;
+    rdfs:label "InformationArchitectureSpecification" ;
+    rdfs:comment "An authored model of information organization, hierarchy and navigation." .
+
+<urn:productium:specification-profile:MilestoneSpecification> a owl:Class ;
+    rdfs:label "MilestoneSpecification" ;
+    rdfs:comment "An authored target-condition specification marking intended planning progress." .
+
+<urn:productium:specification-profile:PlanningHorizonDefinition> a owl:Class ;
+    rdfs:label "PlanningHorizonDefinition" ;
+    rdfs:comment "A governed term definition specifying the meaning of a planning-horizon label in a named scheme." .
+
+<urn:productium:specification-profile:ProblemSolutionFitAssessment> a owl:Class ;
+    rdfs:label "ProblemSolutionFitAssessment" ;
+    rdfs:comment "A dated assessment record about the proposed fit of a problem statement and a solution specification." .
+
+<urn:productium:specification-profile:SolutionHypothesisSpecification> a owl:Class ;
+    rdfs:label "SolutionHypothesisSpecification" ;
+    rdfs:comment "A hypothesis specification whose constitutive claim concerns a proposed solution addressing a problem." ;
+    rdfs:subClassOf <urn:productium:specification-profile:HypothesisSpecification> .
+
+<urn:productium:specification-profile:TestScenario> a owl:Class ;
+    rdfs:label "TestScenario" ;
+    rdfs:comment "A ScenarioSpecification describing a situation to verify specified behavior or conditions. It can be detailed enough to also be a TestCase; its described situation is not a completed TestExecution." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ScenarioSpecification> .
+
+<urn:product-ontology:assessment-profile:0.4:claimSubject> a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:domain <urn:productium:specification-profile:AssessmentClaim> ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( <urn:productium:specification-profile:Product> <urn:productium:specification-profile:ProductVersion> <urn:productium:specification-profile:ProductRealization> <urn:productium:specification-profile:RequirementSpecification> ) ] .
+
+<urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment> a owl:Class ;
+    rdfs:label "CustomerSegment" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Market%3ANeed> a owl:Class ;
+    rdfs:label "Need" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:productium:specification-profile:AcceptanceCriterionSpecification> a owl:Class ;
+    rdfs:label "AcceptanceCriterionSpecification" ;
+    rdfs:comment "An authored ConditionSpecification whose constitutive content includes condition used in the authored acceptance contract. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:ProductMarketFitAssessment> a owl:Class ;
+    rdfs:label "ProductMarketFitAssessment" ;
+    rdfs:comment "A dated assessment record about a product in an explicitly identified market context." .
+
+<urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification> a owl:Class ;
+    rdfs:label "Assessment Context Specification" ;
+    rdfs:comment "An authored specification fixing the applicability boundary of an assessment, including its stated population, environment and temporal conditions, with optional version and scenario bindings." ;
+    owl:disjointWith <urn:productium:specification-profile:AssessmentClaim>,
+        <urn:productium:specification-profile:ConditionSpecification>,
+        <urn:productium:specification-profile:EvidenceArtifact>,
+        <urn:productium:specification-profile:EvidenceAttributionRecord>,
+        <urn:productium:specification-profile:ProductCapability>,
+        <urn:productium:specification-profile:ProductRealization>,
+        <urn:productium:specification-profile:ProductVersion>,
+        <urn:productium:specification-profile:ScenarioSpecification>,
+        <urn:productium:specification-profile:ScopeSpecification> .
+
+<urn:productium:specification-profile:AcquisitionHypothesisSpecification> a owl:Class ;
+    rdfs:label "AcquisitionHypothesisSpecification" ;
+    rdfs:comment "A hypothesis specification whose constitutive claim concerns acquiring intended users or customers." ;
+    rdfs:subClassOf <urn:productium:specification-profile:HypothesisSpecification> .
+
+<urn:productium:specification-profile:ChangeProposalSpecification> a owl:Class ;
+    rdfs:label "ChangeProposalSpecification" ;
+    rdfs:comment "An authored proposal specifying a desired change and its intended target." .
+
+<urn:productium:specification-profile:InteractionStepSpecification> a owl:Class ;
+    rdfs:label "InteractionStepSpecification" ;
+    rdfs:comment "A scoped action or decision-step specification in one user-flow design." .
+
+<urn:productium:specification-profile:MarketingInsightReference> a owl:Class ;
+    rdfs:label "MarketingInsightReference" ;
+    rdfs:comment "A governed local reference artifact with one canonical target and an explicitly supplied owner identifier. Its marketing-insight purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:TestCase> a owl:Class ;
+    rdfs:label "TestCase" ;
+    rdfs:comment "A ScenarioSpecification that includes an operational test procedure and expected conditions. Repeated executions reuse the specification and remain distinct events." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:executes> ] ],
+        <urn:productium:specification-profile:ScenarioSpecification> .
+
+<urn:productium:specification-profile:TouchpointSpecification> a owl:Class ;
+    rdfs:label "TouchpointSpecification" ;
+    rdfs:comment "A design artifact specifying a point of contact, its channel, purpose and interaction context." .
+
+<urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord> a owl:Class ;
+    rdfs:label "Delivery Work Item Status Record" ;
+    rdfs:comment "An immutable dated information record assigning a status code under a stated scheme to one delivery work item, optionally qualified by one product version." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:product-ontology:delivery-profile:0.5:itemStatus> ] ] ;
+    owl:disjointWith <urn:productium:specification-profile:DeliveryStatusRecord>,
+        <urn:productium:specification-profile:DeliveryWorkItem>,
+        <urn:productium:specification-profile:ProductCapability>,
+        <urn:productium:specification-profile:ProductRealization>,
+        <urn:productium:specification-profile:ProductVersion>,
+        <urn:productium:specification-profile:ReleaseSpecification>,
+        <urn:productium:specification-profile:TestExecution>,
+        <urn:productium:specification-profile:TestResult> .
+
+<urn:productium:specification-profile:AdoptionHypothesisSpecification> a owl:Class ;
+    rdfs:label "AdoptionHypothesisSpecification" ;
+    rdfs:comment "A hypothesis specification whose constitutive claim concerns adoption barriers or adoption behavior." ;
+    rdfs:subClassOf <urn:productium:specification-profile:HypothesisSpecification> .
+
+<urn:productium:specification-profile:DeliveryWorkItem> a owl:Class ;
+    rdfs:label "DeliveryWorkItem" ;
+    rdfs:comment "A governed work-item artifact about intended delivery scope and its referenced functional specifications." .
+
+<urn:productium:specification-profile:EvidenceArtifact> a owl:Class ;
+    rdfs:label "EvidenceArtifact" ;
+    rdfs:comment "An abstract category of information artifacts eligible to carry evidence in this bounded profile." ;
+    owl:disjointWith <urn:productium:specification-profile:AssessmentClaim> .
+
+<urn:productium:specification-profile:GoalSpecification> a owl:Class ;
+    rdfs:label "GoalSpecification" ;
+    rdfs:comment "An authored ConditionSpecification whose constitutive content includes desired product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:LaunchSpecification> a owl:Class ;
+    rdfs:label "LaunchSpecification" ;
+    rdfs:comment "A plan specification for introducing a product or change to an intended audience." .
+
+<urn:productium:specification-profile:MessagingSpecification> a owl:Class ;
+    rdfs:label "MessagingSpecification" ;
+    rdfs:comment "An authored specification of audience-directed messages and supporting claims." .
+
+<urn:productium:specification-profile:OfferingSpecification> a owl:Class ;
+    rdfs:label "OfferingSpecification" ;
+    rdfs:comment "A catalog specification of how one product is intended to be offered to an audience under stated terms." .
+
+<urn:productium:specification-profile:OpportunityStatement> a owl:Class ;
+    rdfs:label "OpportunityStatement" ;
+    rdfs:comment "A governed statement artifact identifying a possible value improvement in context." .
+
+<urn:productium:specification-profile:OutcomeSpecification> a owl:Class ;
+    rdfs:label "OutcomeSpecification" ;
+    rdfs:comment "An authored ConditionSpecification whose constitutive content includes expected measurable product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:ProductCapability> a owl:Class ;
+    rdfs:label "ProductCapability" ;
+    rdfs:comment "An actual intrinsic disposition of one concrete ProductRealization as a configured functional whole. Intended behavior, successful execution, a specification and a machine label are not the disposition." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:evaluatedAgainst> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:bearsCapability> ] ] .
+
+<urn:productium:specification-profile:UserFlowSpecification> a owl:Class ;
+    rdfs:label "UserFlowSpecification" ;
+    rdfs:comment "An authored sequence model of user actions, decisions and transitions." .
+
+<urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence> a owl:Class ;
+    rdfs:label "Evidence" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:product-ontology:external-boundary:0.7:Market%3APain> a owl:Class ;
+    rdfs:label "Pain" ;
+    rdfs:comment "Boundary placeholder for a separately governed target type. UFO stereotype and authoritative alignment are unresolved; no local ownership or owl:equivalentClass claim." .
+
+<urn:productium:specification-profile:CompetitiveNarrative> a owl:Class ;
+    rdfs:label "CompetitiveNarrative" ;
+    rdfs:comment "An authored narrative presenting scoped differentiation claims and their evidential references." .
+
+<urn:productium:specification-profile:DependencySpecification> a owl:Class ;
+    rdfs:label "DependencySpecification" ;
+    rdfs:comment "An authored claim that one product depends on an identified product, capability or resource under a stated dependency condition." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:product-ontology:trace-profile:0.6:dependencyCondition> ] .
+
+<urn:productium:specification-profile:ProductPortfolio> a owl:Class ;
+    rdfs:label "ProductPortfolio" ;
+    rdfs:comment "A governed strategic arrangement organizing products, entries and planning references under a continuing portfolio mandate." .
+
+<urn:productium:specification-profile:ScreenSpecification> a owl:Class ;
+    rdfs:label "ScreenSpecification" ;
+    rdfs:comment "An authored view specification with layout, interaction and state commitments." .
+
+<urn:productium:specification-profile:UserStorySpecification> a owl:Class ;
+    rdfs:label "UserStorySpecification" ;
+    rdfs:comment "An authored user-centered narrative specifying a desired interaction goal and expected value." .
+
+<urn:productium:specification-profile:VisionStatement> a owl:Class ;
+    rdfs:label "VisionStatement" ;
+    rdfs:comment "An authored statement articulating intended product direction, experience and value." .
+
+<urn:productium:specification-profile:DecisionRecord> a owl:Class ;
+    rdfs:label "DecisionRecord" ;
+    rdfs:comment "An immutable record of a product decision, its considered alternatives, rationale and provenance." .
+
+<urn:productium:specification-profile:DeliveryStatusRecord> a owl:Class ;
+    rdfs:label "DeliveryStatusRecord" ;
+    rdfs:comment "An immutable dated report assigning a delivery-status value to one Release." .
+
+<urn:productium:specification-profile:HypothesisSpecification> a owl:Class ;
+    rdfs:label "HypothesisSpecification" ;
+    rdfs:comment "An authored testable-claim artifact fixing its claim, intended scope and refutation or support conditions." .
+
+<urn:productium:specification-profile:InitiativeSpecification> a owl:Class ;
+    rdfs:label "InitiativeSpecification" ;
+    rdfs:comment "An authored plan coordinating goals, scope and expected product outcomes." .
+
+<urn:productium:specification-profile:JourneySpecification> a owl:Class ;
+    rdfs:label "JourneySpecification" ;
+    rdfs:comment "An authored structured experience model containing scoped stage specifications." .
+
+<urn:productium:specification-profile:JourneyStageSpecification> a owl:Class ;
+    rdfs:label "JourneyStageSpecification" ;
+    rdfs:comment "An authored constituent stage specification owned by exactly one JourneySpecification." .
+
+<urn:productium:specification-profile:ProductRealization> a owl:Class ;
+    rdfs:label "ProductRealization" ;
+    rdfs:comment "A concrete, causally integrated computing-system artifact configured to enact one fixed product-version baseline. It is the deployed functional whole, not its record, hosting machine, execution event or deployment interval." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:testsRealization> ] ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:bearsCapability> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:realizesVersion> ] .
+
+<urn:productium:specification-profile:SolutionSpecification> a owl:Class ;
+    rdfs:label "SolutionSpecification" ;
+    rdfs:comment "An authored product-level solution proposal describing how problems or opportunities are intended to be addressed." .
+
+<urn:productium:specification-profile:FindingRecord> a owl:Class ;
+    rdfs:label "FindingRecord" ;
+    rdfs:comment "An authored observation or issue record with a fixed finding statement, subject bindings and provenance." ;
+    rdfs:subClassOf <urn:productium:specification-profile:EvidenceArtifact> .
+
+<urn:productium:specification-profile:ScenarioSpecification> a owl:Class ;
+    rdfs:label "ScenarioSpecification" ;
+    rdfs:comment "An authored structured situation description fixing context, preconditions, ordered stimulus/action description and expected condition units; distinct from each actual occurrence." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <urn:productium:specification-profile:specifiesExpectedCondition> ;
+            owl:someValuesFrom <urn:productium:specification-profile:ConditionSpecification> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:scenarioActions> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:specificationProvenance> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:scenarioContext> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:scenarioPrecondition> ] .
+
+<urn:productium:specification-profile:TestExecution> a owl:Class ;
+    rdfs:label "TestExecution" ;
+    rdfs:comment "A completed execution of one TestCase against one ProductRealization, including unsuccessful or aborted runs with a consolidated result." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:product-ontology:delivery-profile:0.5:executionCriterion> ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:assessesSpecification> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:recordsExecution> ] ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:executes> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:product-ontology:delivery-profile:0.5:executionContext> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:testsRealization> ] .
+
+<urn:productium:specification-profile:TestResult> a owl:Class ;
+    rdfs:label "TestResult" ;
+    rdfs:comment "The consolidated evidence record documenting one completed TestExecution." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:recordsExecution> ],
+        <urn:productium:specification-profile:EvidenceArtifact> .
+
+<urn:productium:specification-profile:PersonaSpecification> a owl:Class ;
+    rdfs:label "PersonaSpecification" ;
+    rdfs:comment "An authored model of a user archetype, fixing a behavioral profile, population/use context and research provenance; not a person, group of actual users or their temporary role." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:personaContext> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:personaDescription> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:specificationProvenance> ] .
+
+<urn:productium:specification-profile:UsabilityFindingRecord> a owl:Class ;
+    rdfs:label "UsabilityFindingRecord" ;
+    rdfs:comment "A FindingRecord whose constitutive subject matter includes a user-flow or screen specification." ;
+    rdfs:subClassOf <urn:productium:specification-profile:FindingRecord> .
+
+<urn:productium:specification-profile:GoToMarketSpecification> a owl:Class ;
+    rdfs:label "GoToMarketSpecification" ;
+    rdfs:comment "A governed strategy specification linking positioning, audiences and intended market-entry activity." .
+
+<urn:productium:specification-profile:ProductMetricReference> a owl:Class ;
+    rdfs:label "ProductMetricReference" ;
+    rdfs:comment "A local reference artifact binding a product measurement context to an externally governed metric. Its product-metric purpose is constitutive to the authored reference record, not a temporary role of the target." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ExternalReferenceRecord> .
+
+<urn:productium:specification-profile:ReleaseSpecification> a owl:Class ;
+    rdfs:label "ReleaseSpecification" ;
+    rdfs:comment "A governed specification of a planned delivery increment and its intended contents." .
+
+<urn:productium:specification-profile:ProblemStatement> a owl:Class ;
+    rdfs:label "ProblemStatement" ;
+    rdfs:comment "A governed statement artifact describing a candidate or evidenced problem." .
+
+<urn:productium:specification-profile:RoadmapEntry> a owl:Class ;
+    rdfs:label "RoadmapEntry" ;
+    rdfs:comment "A scoped entry in one roadmap referencing intended initiatives, features or delivery targets." .
+
+<urn:productium:specification-profile:ScopeSpecification> a owl:Class ;
+    rdfs:label "ScopeSpecification" ;
+    rdfs:comment "An authored specification of included, excluded and deferred product scope." .
+
+<urn:productium:specification-profile:CapabilitySpecification> a owl:Class ;
+    rdfs:label "CapabilitySpecification" ;
+    rdfs:comment "A version-scoped specification of an intended ability, irrespective of its implementation." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:evaluatedAgainst> ] ],
+        [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:assessesSpecification> ] ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:specifiesCapability> ] ] .
+
+<urn:productium:specification-profile:ConditionSpecification> a owl:Class ;
+    rdfs:label "ConditionSpecification" ;
+    rdfs:comment "An authored semantic condition unit with a fixed proposition, applicability context and authoring provenance; distinct from a stakeholder intention, observed result or containing scenario." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:specificationProvenance> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:conditionStatement> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:conditionContext> ] .
+
+<urn:productium:specification-profile:PositioningStatement> a owl:Class ;
+    rdfs:label "PositioningStatement" ;
+    rdfs:comment "An authored statement specifying intended product perception for a target audience relative to alternatives." .
+
+<urn:productium:specification-profile:ChangeRecord> a owl:Class ;
+    rdfs:label "ChangeRecord" ;
+    rdfs:comment "A dated record describing an asserted modification to an identified product artifact or state." ;
+    rdfs:subClassOf <urn:productium:specification-profile:EvidenceArtifact> .
+
+<urn:productium:specification-profile:EvidenceAttributionRecord> a owl:Class ;
+    rdfs:label "EvidenceAttributionRecord" ;
+    rdfs:comment "An information record documenting an assessor's attribution of one carrier to one assessment claim." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass <urn:productium:specification-profile:AssessmentClaim> ;
+            owl:onProperty <urn:productium:specification-profile:recordsClaim> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass <urn:productium:specification-profile:EvidenceArtifact> ;
+            owl:onProperty <urn:productium:specification-profile:recordsCarrier> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] .
+
+<urn:productium:specification-profile:ProductVersion> a owl:Class ;
+    rdfs:label "ProductVersion" ;
+    rdfs:comment "An immutable approved specification baseline for one Product." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:realizesVersion> ] ],
+        [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:specifiesCapability> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty [ owl:inverseOf <urn:productium:specification-profile:hasVersion> ] ] .
+
+<urn:productium:specification-profile:AssessmentClaim> a owl:Class ;
+    rdfs:label "AssessmentClaim" ;
+    rdfs:comment "An authored assessment-claim artifact fixing subject, criterion, scope and the proposition under consideration." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:product-ontology:assessment-profile:0.4:claimSubject> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:product-ontology:assessment-profile:0.4:claimContext> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:product-ontology:assessment-profile:0.4:claimCriterion> ] .
+
+<urn:productium:specification-profile:RequirementSpecification> a owl:Class ;
+    rdfs:label "RequirementSpecification" ;
+    rdfs:comment "An authored ConditionSpecification whose constitutive content includes required product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence." ;
+    rdfs:subClassOf <urn:productium:specification-profile:ConditionSpecification> .
+
+<urn:productium:specification-profile:ExternalReferenceRecord> a owl:Class ;
+    rdfs:label "ExternalReferenceRecord" ;
+    rdfs:comment "A local information record of a fixed binding to a separately governed referent, with recorded authority, provenance and constitutive purpose set." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:canonicalOwner> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:referenceTarget> ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:referenceProvenance> ] .
+
+<urn:productium:specification-profile:Product> a owl:Class ;
+    rdfs:label "Product" ;
+    rdfs:comment "A governed intentional product artifact with continuing constitutive purpose and stewardship lineage; not a deployment or a database row." ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+            owl:onProperty <urn:productium:specification-profile:hasVersion> ] .
+
+<urn:productium:specification-profile:FeatureSpecification> a owl:Class ;
+    rdfs:label "FeatureSpecification" ;
+    rdfs:comment "An authored functional-unit specification linking intended behavior, user value and acceptance criteria." .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( <urn:productium:specification-profile:ProductPortfolio> <urn:productium:specification-profile:Product> <urn:productium:specification-profile:OfferingSpecification> <urn:productium:specification-profile:BundleSpecification> <urn:productium:specification-profile:ProductVersion> <urn:productium:specification-profile:LifecycleSpecification> <urn:productium:specification-profile:LifecycleStageSpecification> <urn:productium:specification-profile:ProductStatusRecord> <urn:productium:specification-profile:DependencySpecification> <urn:productium:specification-profile:PortfolioEntry> <urn:productium:specification-profile:VisionStatement> <urn:productium:specification-profile:InitiativeSpecification> <urn:productium:specification-profile:ProblemStatement> <urn:productium:specification-profile:OpportunityStatement> <urn:productium:specification-profile:HypothesisSpecification> <urn:productium:specification-profile:DecisionRecord> <urn:productium:specification-profile:DecisionCriterionSpecification> <urn:productium:specification-profile:ProblemSolutionFitAssessment> <urn:productium:specification-profile:ProductMarketFitAssessment> <urn:productium:specification-profile:ScopeSpecification> <urn:productium:specification-profile:CapabilitySpecification> <urn:productium:specification-profile:SolutionSpecification> <urn:productium:specification-profile:FeatureSpecification> <urn:productium:specification-profile:VerticalSliceSpecification> <urn:productium:specification-profile:EnablerSpecification> <urn:productium:specification-profile:UserStorySpecification> <urn:productium:specification-profile:RequirementRationaleStatement> <urn:productium:specification-profile:PersonaSpecification> <urn:productium:specification-profile:UserRoleSpecification> <urn:productium:specification-profile:JourneySpecification> <urn:productium:specification-profile:JourneyStageSpecification> <urn:productium:specification-profile:TouchpointSpecification> <urn:productium:specification-profile:UserFlowSpecification> <urn:productium:specification-profile:InteractionStepSpecification> <urn:productium:specification-profile:InformationArchitectureSpecification> <urn:productium:specification-profile:ScreenSpecification> <urn:productium:specification-profile:UIStateSpecification> <urn:productium:specification-profile:Roadmap> <urn:productium:specification-profile:RoadmapEntry> <urn:productium:specification-profile:MilestoneSpecification> <urn:productium:specification-profile:PriorityAssessment> <urn:productium:specification-profile:PlanningHorizonDefinition> <urn:productium:specification-profile:TargetWindowAssignment> <urn:productium:specification-profile:ConfidenceAssessment> <urn:productium:specification-profile:CommitmentLevelDefinition> <urn:productium:specification-profile:ReleaseSpecification> <urn:productium:specification-profile:DeliveryWorkItem> <urn:productium:specification-profile:ChangeRecord> <urn:productium:specification-profile:ChangeProposalSpecification> <urn:productium:specification-profile:FeatureFlagSpecification> <urn:productium:specification-profile:DeliveryStatusRecord> <urn:productium:specification-profile:TestExecution> <urn:productium:specification-profile:TestResult> <urn:productium:specification-profile:TestSuiteSpecification> <urn:productium:specification-profile:PositioningStatement> <urn:productium:specification-profile:MessagingSpecification> <urn:productium:specification-profile:GoToMarketSpecification> <urn:productium:specification-profile:LaunchSpecification> <urn:productium:specification-profile:CompetitiveNarrative> <urn:productium:specification-profile:ProductRealization> <urn:productium:specification-profile:ProductCapability> <urn:productium:specification-profile:AssessmentClaim> <urn:productium:specification-profile:EvidenceAttributionRecord> <urn:productium:specification-profile:FindingRecord> <urn:productium:specification-profile:ExternalReferenceRecord> <urn:productium:specification-profile:ConditionSpecification> <urn:productium:specification-profile:ScenarioSpecification> ) .
+

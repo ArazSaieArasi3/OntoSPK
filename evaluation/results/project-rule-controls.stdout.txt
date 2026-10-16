@@ -1,0 +1,1 @@
+{"semantic_controls": 41, "applicability_controls": 31, "adapter_controls": 8, "total": 80, "passed": 80, "scope": "Project-owned encodings and bounded orientation view. Selector activation is not semantic rule execution. No independent acceptance or browser execution."}

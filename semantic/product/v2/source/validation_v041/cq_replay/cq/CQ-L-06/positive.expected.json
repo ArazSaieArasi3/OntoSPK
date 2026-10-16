@@ -1,0 +1,30 @@
+[
+  [
+    "urn:orsd:v06:synthetic:changeFeature",
+    "urn:orsd:v06:synthetic:feature",
+    "urn:orsd:v06:synthetic:requirement",
+    "requirement",
+    "impact_candidate"
+  ],
+  [
+    "urn:orsd:v06:synthetic:changeFeature",
+    "urn:orsd:v06:synthetic:feature",
+    "urn:orsd:v06:synthetic:roadmap",
+    "roadmapEntry",
+    "impact_candidate"
+  ],
+  [
+    "urn:orsd:v06:synthetic:changeFeature",
+    "urn:orsd:v06:synthetic:feature",
+    "urn:orsd:v06:synthetic:release",
+    "release",
+    "impact_candidate"
+  ],
+  [
+    "urn:orsd:v06:synthetic:changeFeature",
+    "urn:orsd:v06:synthetic:feature",
+    "urn:orsd:v06:synthetic:case",
+    "testCase",
+    "impact_candidate"
+  ]
+]

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+build/
+dist/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+semantic/product/v2/source/validation_v041/results/
+semantic/product/v2/source/validation_v041/official_tools/results/
+semantic/product/v2/source/t52_formalization_v043/results/

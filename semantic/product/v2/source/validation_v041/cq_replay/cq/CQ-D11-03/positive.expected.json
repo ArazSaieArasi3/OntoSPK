@@ -1,0 +1,20 @@
+[
+  [
+    "urn:orsd:v04:synthetic:intended",
+    "urn:orsd:v04:synthetic:actual",
+    "urn:orsd:v04:synthetic:realization",
+    "urn:orsd:v04:synthetic:claimA",
+    "urn:orsd:v04:synthetic:recordA",
+    "urn:orsd:v04:synthetic:finding",
+    "supports"
+  ],
+  [
+    "urn:orsd:v04:synthetic:intended",
+    "urn:orsd:v04:synthetic:actual",
+    "urn:orsd:v04:synthetic:realization",
+    "urn:orsd:v04:synthetic:claimB",
+    "urn:orsd:v04:synthetic:recordB",
+    "urn:orsd:v04:synthetic:finding",
+    "challenges"
+  ]
+]

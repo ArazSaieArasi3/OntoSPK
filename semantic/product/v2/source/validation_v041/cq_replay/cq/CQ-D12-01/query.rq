@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?reference ?referenceType ?target ?authority WHERE {
+VALUES ?reference { e:referenceA } ?reference a ?referenceType ; p:referenceTarget ?target ; p:canonicalOwner ?authority . VALUES ?referenceType { p:ExternalReferenceRecord p:ProductFamilyReference p:ProductLineReference p:ProductVariantReference p:ProductMetricReference p:BusinessRuleReference p:RequirementSourceReference p:TaskReference p:TestDataReference p:TargetMarketReference p:TargetSegmentReference p:MarketingInsightReference }
+}

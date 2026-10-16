@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?assessment ?assessmentType ?subjectKind ?subject WHERE {
+VALUES ?assessment { e:psFitA e:pmFitA } VALUES (?link ?assessmentType ?subjectKind) { (p:assessesProblem p:ProblemSolutionFitAssessment "problem") (p:assessesSolution p:ProblemSolutionFitAssessment "solution") (p:assessesProduct p:ProductMarketFitAssessment "product") } ?assessment a ?assessmentType ; ?link ?subject .
+}

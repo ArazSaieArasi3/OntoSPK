@@ -1,0 +1,108 @@
+{
+  "dimension_keys": [
+    "scope",
+    "unit",
+    "semantics",
+    "identity",
+    "evidence",
+    "relation",
+    "conclusion"
+  ],
+  "assessment": "Source-backed conceptual comparison, no scoring or superiority benchmark; no owl:equivalentClass or automatic import.",
+  "works": [
+    {
+      "id": "CPM",
+      "name": "CPM / CPM2",
+      "refs": [
+        10,
+        11
+      ],
+      "priority": "PRIMARY",
+      "source": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf",
+      "secondary_source": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf",
+      "locator": "CPM: PDF pp.11-19, Sections 4-6; CPM2: PDF pp.9-17, Section 2; pp.18-23, Section 3; p.26, Appendix A.",
+      "access": "Full reports downloaded; selected modeling and implementation sections reread.",
+      "scope": "Engineering product design and artifact descriptions.",
+      "unit": "Artifact; Feature; Function; Specification; Behavior.",
+      "semantics": "UML object/relationship model; Java/XML illustrations.",
+      "identity": "Design specification and intended function are explicit; no software-realization identity equivalence follows.",
+      "evidence": "Worked engineering example; appendix Java is explicitly illustrative and incomplete.",
+      "relation": "Our emphasis is governed software-product knowledge, version-bound bearer wholes and assessment records.",
+      "conclusion": "Use CPM as a design-description precedent. Intended Function is not an automatic match for actual ProductCapability.",
+      "github": "No author/NIST-linked GitHub repository verified in targeted searches.",
+      "artifact": "Official NIST reports include UML and Java/XML material.",
+      "artifact_url": "https://doi.org/10.6028/NIST.IR.7185",
+      "artifact_checked": "Selected report and appendix content inspected; no CPM software executed."
+    },
+    {
+      "id": "OntoProd",
+      "name": "OntoProd",
+      "refs": [
+        12
+      ],
+      "priority": "PRIMARY",
+      "source": "https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework",
+      "secondary_source": "https://re.public.polimi.it/handle/11311/1286998",
+      "locator": "Article pp.6-8, Section 4.1; pp.8-11, Sections 4.2-5; p.12, Table 2 and implementation discussion; p.13, conclusions/data availability.",
+      "access": "Author-uploaded full-text sections read; institutional PDF download blocked, with full text available through the author copy.",
+      "scope": "Part-based product knowledge and information lifecycle in engineer-to-order settings.",
+      "unit": "Part; Feature; Datum; DatumInstance; configuration templates/project graphs.",
+      "semantics": "OWL restrictions, SWRL rules and SPARQL; reported Fuseki/Pellet/C# prototype.",
+      "identity": "Template/project-instance cloning is not automatically our version-bound configured realization.",
+      "evidence": "Industrial examples and descriptive capability table; no matched OntoSPK benchmark.",
+      "relation": "Our FeatureSpecification is a description artifact; actual capability and report attribution have their own contracts.",
+      "conclusion": "Compare lifecycle structure and data provenance; require explicit correspondence for Feature, project instance and DatumInstance.",
+      "github": "No author-linked public GitHub repository verified. Do not substitute Ontop, a different platform.",
+      "artifact": "Paper-linked Zenodo 15005493 provides OntoProd.zip and a separate TTL.",
+      "artifact_url": "https://zenodo.org/records/15005493",
+      "artifact_checked": "Official file inventory/ZIP preview inspected. Root ontology file contents and application were not inspected or executed; downloads returned HTTP 403. The separate 2.5 kB TTL is service configuration according to retained inspection, not the 20.4 kB root file listed inside ZIP."
+    },
+    {
+      "id": "SPM",
+      "name": "Botzenhardt et al. SPM ontology",
+      "refs": [
+        1
+      ],
+      "priority": "PRIMARY",
+      "source": "https://doi.org/10.1109/IWSPM.2011.6046207",
+      "secondary_source": "https://publikationen.bibliothek.kit.edu/1000052295",
+      "locator": "Supplied PDF pp.2-5, method; p.7, Table IV and relations; p.8, Figure 2 and limitations; pp.8-9, conclusion/future evaluation.",
+      "access": "Today’s ten-page user PDF recovered; exact SHA matches the earlier reviewed attachment.",
+      "scope": "Shared software product-management vocabulary.",
+      "unit": "Activity; Artifact; Role; Organization, including Product, Specification and Roadmap.",
+      "semantics": "Literature/text extraction and an RDFS vocabulary.",
+      "identity": "Shared labels require semantic correspondence; role and artifact categories are not OntoUML stereotypes.",
+      "evidence": "66 articles and five books support construction; expert interviews are future work.",
+      "relation": "Shared management vocabulary is direct prior art; OntoSPK focuses its explicit contracts on identity, specifications, realizations and assessment records.",
+      "conclusion": "Retain as direct prior art. Do not claim the first ontology of software product management.",
+      "github": "No author-linked GitHub repository verified in targeted searches.",
+      "artifact": "Paper gives an RDF-S download address on the former Mannheim site.",
+      "artifact_checked": "Paper Figure 2, Table IV and relations inspected; current RDF download did not succeed, and no RDF model execution is claimed.",
+      "historical_artifact_url_unavailable": "http://wifo4.bwl.uni-mannheim.de/fileadmin/files/IWSPM5/SPM-Domain-Ontology.rdf",
+      "active_record_url": "https://publikationen.bibliothek.kit.edu/1000052295"
+    },
+    {
+      "id": "SwO",
+      "name": "SwO / RSRO / RRO",
+      "refs": [
+        14
+      ],
+      "priority": "PRIMARY",
+      "source": "https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf",
+      "secondary_source": "https://journals.sagepub.com/doi/10.3233/AO-180197",
+      "locator": "Author manuscript PDF pp.15-18, Section 5; pp.18-20, Section 6; pp.22-25, Section 8 and Tables 2-7. PDF pagination differs from final journal pages 73-105.",
+      "access": "Full author manuscript downloaded; conceptual definitions and evaluation sections reread.",
+      "scope": "Software nature, requirements and requirements at runtime.",
+      "unit": "Program; specification; Loaded Program Copy; Software Function; execution.",
+      "semantics": "SABiO/UFO reference ontologies with explicit conceptual axioms.",
+      "identity": "Loaded Program Copy is a disposition; Requirement is an intention, distinct from Requirement Artifact.",
+      "evidence": "Expert CQ verification, instantiation and test-case designs; operational implementation/execution is outside that paper’s scope.",
+      "relation": "OntoSPK models a configured realization as a bearer whole, with ProductCapability as its disposition, and uses requirement specifications as artifacts.",
+      "conclusion": "This is the closest foundational comparison. The distinctions are precedents; whole-bearer and loaded-copy correspondences remain candidates.",
+      "github": "No GitHub repository tied to this exact paper/version verified. allysonlister/swo is a different ontology and was excluded.",
+      "artifact": "Official SEON specification and operational OWL download are available as a separate, versioned source.",
+      "artifact_url": "https://dev.nemo.inf.ufes.br/seon/menu.html",
+      "artifact_checked": "Paper and official specification inspected. Website version 1.0.5 (2017) is not assumed identical to the 2018 paper; any downloaded OWL is only a static snapshot."
+    }
+  ]
+}

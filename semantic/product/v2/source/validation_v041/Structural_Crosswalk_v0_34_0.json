@@ -1,0 +1,705 @@
+[
+  {
+    "native_relation_id": "REL:W2:091",
+    "native_source": "IC:TestExecution",
+    "native_target": "IC:TestResult",
+    "native_source_cardinality": "1",
+    "native_target_cardinality": "1",
+    "formal_predicate": "urn:productium:specification-profile:recordsExecution",
+    "formal_direction": "INVERSE",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestResult"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:TestResult"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:recordsExecution"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:TestExecution"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b120"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_records_execution",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_records_execution",
+        "sql": "CREATE TABLE link_records_execution(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_records_execution_insert",
+        "sql": "CREATE TRIGGER link_records_execution_insert BEFORE INSERT ON link_records_execution BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:091 IC:TestExecution') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_result c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:091 IC:TestResult') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) AND (SELECT count(*) FROM link_records_execution WHERE snapshot_id=NEW.snapshot_id AND object_id=NEW.object_id)>=1 THEN RAISE(ABORT,'REL:W2:091 maximum 1') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d08_test_result c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) AND (SELECT count(*) FROM link_records_execution WHERE snapshot_id=NEW.snapshot_id AND subject_id=NEW.subject_id)>=1 THEN RAISE(ABORT,'REL:W2:091 maximum 1') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_records_execution_immutable",
+        "sql": "CREATE TRIGGER link_records_execution_immutable BEFORE UPDATE ON link_records_execution BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "REL:W2:090",
+    "native_source": "IC:TestExecution",
+    "native_target": "IC:TestCase",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "1",
+    "formal_predicate": "urn:productium:specification-profile:executes",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:TestCase"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:TestExecution"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:executes"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:TestCase"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "0"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b51"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_executes",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_executes",
+        "sql": "CREATE TABLE link_executes(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_executes_insert",
+        "sql": "CREATE TRIGGER link_executes_insert BEFORE INSERT ON link_executes BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:090 IC:TestExecution') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_case c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:090 IC:TestCase') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) AND (SELECT count(*) FROM link_executes WHERE snapshot_id=NEW.snapshot_id AND subject_id=NEW.subject_id)>=1 THEN RAISE(ABORT,'REL:W2:090 maximum 1') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_executes_immutable",
+        "sql": "CREATE TRIGGER link_executes_immutable BEFORE UPDATE ON link_executes BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "REL:W2:147",
+    "native_source": "IC:TestSuiteSpecification",
+    "native_target": "IC:TestExecution",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "0..*",
+    "formal_predicate": "urn:productium:specification-profile:r147_hasRecordedExecution",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestSuiteSpecification"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_restrictions": [],
+    "sql_table": "link_r147_has_recorded_execution",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_r147_has_recorded_execution",
+        "sql": "CREATE TABLE link_r147_has_recorded_execution(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_r147_has_recorded_execution_insert",
+        "sql": "CREATE TRIGGER link_r147_has_recorded_execution_insert BEFORE INSERT ON link_r147_has_recorded_execution BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_suite_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:147 IC:TestSuiteSpecification') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:147 IC:TestExecution') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_r147_has_recorded_execution_immutable",
+        "sql": "CREATE TRIGGER link_r147_has_recorded_execution_immutable BEFORE UPDATE ON link_r147_has_recorded_execution BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "ICREL:CP:testsRealization",
+    "native_source": "IC:TestExecution",
+    "native_target": "IC:ProductRealization",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "1",
+    "formal_predicate": "urn:productium:specification-profile:testsRealization",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:ProductRealization"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:TestExecution"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:testsRealization"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:ProductRealization"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "0"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b97"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_tests_realization",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_tests_realization",
+        "sql": "CREATE TABLE link_tests_realization(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_tests_realization_insert",
+        "sql": "CREATE TRIGGER link_tests_realization_insert BEFORE INSERT ON link_tests_realization BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:testsRealization IC:TestExecution') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d11_product_realization c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:testsRealization IC:ProductRealization') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) AND (SELECT count(*) FROM link_tests_realization WHERE snapshot_id=NEW.snapshot_id AND subject_id=NEW.subject_id)>=1 THEN RAISE(ABORT,'ICREL:CP:testsRealization maximum 1') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_tests_realization_immutable",
+        "sql": "CREATE TRIGGER link_tests_realization_immutable BEFORE UPDATE ON link_tests_realization BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "ICREL:CP:assessesSpecification",
+    "native_source": "IC:TestExecution",
+    "native_target": "IC:CapabilitySpecification",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "1..*",
+    "formal_predicate": "urn:productium:specification-profile:assessesSpecification",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:CapabilitySpecification"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:TestExecution"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:assessesSpecification"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:CapabilitySpecification"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "0"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b62"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_assesses_specification",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_assesses_specification",
+        "sql": "CREATE TABLE link_assesses_specification(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_assesses_specification_insert",
+        "sql": "CREATE TRIGGER link_assesses_specification_insert BEFORE INSERT ON link_assesses_specification BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:assessesSpecification IC:TestExecution') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d03_capability_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:assessesSpecification IC:CapabilitySpecification') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_assesses_specification_immutable",
+        "sql": "CREATE TRIGGER link_assesses_specification_immutable BEFORE UPDATE ON link_assesses_specification BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "REL:ORSD05:executionContext",
+    "native_source": "IC:TestExecution",
+    "native_target": "IC:AssessmentContextSpecification",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "1",
+    "formal_predicate": "urn:product-ontology:delivery-profile:0.5:executionContext",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_range": [
+      "urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:TestExecution"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:product-ontology:delivery-profile:0.5:executionContext"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_execution_context",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_execution_context",
+        "sql": "CREATE TABLE link_execution_context(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_execution_context_insert",
+        "sql": "CREATE TRIGGER link_execution_context_insert BEFORE INSERT ON link_execution_context BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: REL:ORSD05:executionContext IC:TestExecution') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d10_assessment_context_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: REL:ORSD05:executionContext IC:AssessmentContextSpecification') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) AND (SELECT count(*) FROM link_execution_context WHERE snapshot_id=NEW.snapshot_id AND subject_id=NEW.subject_id)>=1 THEN RAISE(ABORT,'REL:ORSD05:executionContext maximum 1') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM link_execution_context WHERE snapshot_id=NEW.snapshot_id AND subject_id=NEW.subject_id) THEN RAISE(ABORT,'Functional property maximum') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_execution_context_immutable",
+        "sql": "CREATE TRIGGER link_execution_context_immutable BEFORE UPDATE ON link_execution_context BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "REL:ORSD05:executionCriterion",
+    "native_source": "IC:TestExecution",
+    "native_target": "IC:ConditionSpecification",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "1..*",
+    "formal_predicate": "urn:product-ontology:delivery-profile:0.5:executionCriterion",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestExecution"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:ConditionSpecification"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:TestExecution"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:product-ontology:delivery-profile:0.5:executionCriterion"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_execution_criterion",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_execution_criterion",
+        "sql": "CREATE TABLE link_execution_criterion(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_execution_criterion_insert",
+        "sql": "CREATE TRIGGER link_execution_criterion_insert BEFORE INSERT ON link_execution_criterion BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_execution c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: REL:ORSD05:executionCriterion IC:TestExecution') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d03_condition_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: REL:ORSD05:executionCriterion IC:ConditionSpecification') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_execution_criterion_immutable",
+        "sql": "CREATE TRIGGER link_execution_criterion_immutable BEFORE UPDATE ON link_execution_criterion BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "ICREL:CP:realizesVersion",
+    "native_source": "IC:ProductRealization",
+    "native_target": "IC:ProductVersion",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "1",
+    "formal_predicate": "urn:productium:specification-profile:realizesVersion",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:ProductRealization"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:ProductVersion"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:ProductRealization"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:realizesVersion"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:ProductVersion"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "0"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b78"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_realizes_version",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_realizes_version",
+        "sql": "CREATE TABLE link_realizes_version(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_realizes_version_insert",
+        "sql": "CREATE TRIGGER link_realizes_version_insert BEFORE INSERT ON link_realizes_version BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d11_product_realization c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:realizesVersion IC:ProductRealization') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d01_product_version c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:realizesVersion IC:ProductVersion') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d11_product_realization c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) AND (SELECT count(*) FROM link_realizes_version WHERE snapshot_id=NEW.snapshot_id AND subject_id=NEW.subject_id)>=1 THEN RAISE(ABORT,'ICREL:CP:realizesVersion maximum 1') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_realizes_version_immutable",
+        "sql": "CREATE TRIGGER link_realizes_version_immutable BEFORE UPDATE ON link_realizes_version BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "ICREL:CP:bearsCapability",
+    "native_source": "IC:ProductRealization",
+    "native_target": "IC:ProductCapability",
+    "native_source_cardinality": "1",
+    "native_target_cardinality": "1..*",
+    "formal_predicate": "urn:productium:specification-profile:bearsCapability",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:ProductRealization"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:ProductCapability"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:ProductRealization"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:bearsCapability"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:ProductCapability"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b115"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_bears_capability",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_bears_capability",
+        "sql": "CREATE TABLE link_bears_capability(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_bears_capability_insert",
+        "sql": "CREATE TRIGGER link_bears_capability_insert BEFORE INSERT ON link_bears_capability BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d11_product_realization c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:bearsCapability IC:ProductRealization') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d11_product_capability c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:bearsCapability IC:ProductCapability') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d11_product_capability c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) AND (SELECT count(*) FROM link_bears_capability WHERE snapshot_id=NEW.snapshot_id AND object_id=NEW.object_id)>=1 THEN RAISE(ABORT,'ICREL:CP:bearsCapability maximum 1') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_bears_capability_immutable",
+        "sql": "CREATE TRIGGER link_bears_capability_immutable BEFORE UPDATE ON link_bears_capability BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "ICREL:CP:specifiesCapability",
+    "native_source": "IC:ProductVersion",
+    "native_target": "IC:CapabilitySpecification",
+    "native_source_cardinality": "1",
+    "native_target_cardinality": "0..*",
+    "formal_predicate": "urn:productium:specification-profile:specifiesCapability",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:ProductVersion"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:CapabilitySpecification"
+    ],
+    "owl_restrictions": [
+      {
+        "direction": "forward",
+        "classes": [
+          "urn:productium:specification-profile:ProductVersion"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#minCardinality",
+            "0"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "urn:productium:specification-profile:specifiesCapability"
+          ]
+        ]
+      },
+      {
+        "direction": "inverse",
+        "classes": [
+          "urn:productium:specification-profile:CapabilitySpecification"
+        ],
+        "assertions": [
+          [
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+            "http://www.w3.org/2002/07/owl#Restriction"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#cardinality",
+            "1"
+          ],
+          [
+            "http://www.w3.org/2002/07/owl#onProperty",
+            "nec3fac021c66437f858a4515264904e6b123"
+          ]
+        ]
+      }
+    ],
+    "sql_table": "link_specifies_capability",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_specifies_capability",
+        "sql": "CREATE TABLE link_specifies_capability(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_specifies_capability_insert",
+        "sql": "CREATE TRIGGER link_specifies_capability_insert BEFORE INSERT ON link_specifies_capability BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d01_product_version c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:specifiesCapability IC:ProductVersion') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d03_capability_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: ICREL:CP:specifiesCapability IC:CapabilitySpecification') END;\nSELECT CASE WHEN EXISTS(SELECT 1 FROM d03_capability_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) AND (SELECT count(*) FROM link_specifies_capability WHERE snapshot_id=NEW.snapshot_id AND object_id=NEW.object_id)>=1 THEN RAISE(ABORT,'ICREL:CP:specifiesCapability maximum 1') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_specifies_capability_immutable",
+        "sql": "CREATE TRIGGER link_specifies_capability_immutable BEFORE UPDATE ON link_specifies_capability BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  },
+  {
+    "native_relation_id": "REL:W2:088",
+    "native_source": "IC:TestSuiteSpecification",
+    "native_target": "IC:TestCase",
+    "native_source_cardinality": "0..*",
+    "native_target_cardinality": "0..*",
+    "formal_predicate": "urn:productium:specification-profile:containsCase",
+    "formal_direction": "SAME",
+    "owl_domain": [
+      "urn:productium:specification-profile:TestSuiteSpecification"
+    ],
+    "owl_range": [
+      "urn:productium:specification-profile:TestCase"
+    ],
+    "owl_restrictions": [],
+    "sql_table": "link_contains_case",
+    "sql_definitions": [
+      {
+        "type": "table",
+        "name": "link_contains_case",
+        "sql": "CREATE TABLE link_contains_case(snapshot_id TEXT NOT NULL,subject_id INTEGER NOT NULL,object_id INTEGER NOT NULL REFERENCES term(term_id),\n PRIMARY KEY(snapshot_id,subject_id,object_id),FOREIGN KEY(snapshot_id,subject_id) REFERENCES entity(snapshot_id,term_id)\n ,FOREIGN KEY(snapshot_id,object_id) REFERENCES entity(snapshot_id,term_id))"
+      },
+      {
+        "type": "trigger",
+        "name": "link_contains_case_insert",
+        "sql": "CREATE TRIGGER link_contains_case_insert BEFORE INSERT ON link_contains_case BEGIN\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_suite_specification c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.subject_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:088 IC:TestSuiteSpecification') END;\nSELECT CASE WHEN NOT EXISTS(SELECT 1 FROM d08_test_case c WHERE c.snapshot_id=NEW.snapshot_id AND c.entity_id=NEW.object_id) THEN RAISE(ABORT,'Endpoint type: REL:W2:088 IC:TestCase') END;\nEND"
+      },
+      {
+        "type": "trigger",
+        "name": "link_contains_case_immutable",
+        "sql": "CREATE TRIGGER link_contains_case_immutable BEFORE UPDATE ON link_contains_case BEGIN SELECT RAISE(ABORT,'Replace the snapshot; in-place updates are unsupported'); END"
+      }
+    ]
+  }
+]

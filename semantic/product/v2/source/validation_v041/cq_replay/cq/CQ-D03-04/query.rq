@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?solution ?capability ?feature ?enabler WHERE {
+VALUES ?solution { e:solutionA } ?solution p:proposesFeature ?feature . OPTIONAL { ?solution p:proposesCapability ?capability } OPTIONAL { ?enabler p:intendedToEnableFeature ?feature }
+}

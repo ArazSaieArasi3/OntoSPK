@@ -1,0 +1,20 @@
+[
+  [
+    "urn:orsd:v03:synthetic:pmFitA",
+    "urn:productium:specification-profile:ProductMarketFitAssessment",
+    "product",
+    "urn:orsd:v03:synthetic:productA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:psFitA",
+    "urn:productium:specification-profile:ProblemSolutionFitAssessment",
+    "problem",
+    "urn:orsd:v03:synthetic:problemA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:psFitA",
+    "urn:productium:specification-profile:ProblemSolutionFitAssessment",
+    "solution",
+    "urn:orsd:v03:synthetic:solutionA"
+  ]
+]

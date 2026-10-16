@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?product ?capabilitySpecification ?feature WHERE {
+VALUES ?product { e:productA } ?product p:intendsCapability ?capabilitySpecification . ?capabilitySpecification a p:CapabilitySpecification ; p:specifiedThroughFeature ?feature .
+}

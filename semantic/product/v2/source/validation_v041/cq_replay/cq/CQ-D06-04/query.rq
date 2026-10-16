@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?initiative ?entry ?horizon WHERE {
+VALUES ?horizon { e:horizonA } ?entry p:r70_usesHorizonDefinition ?horizon ; p:r65_plansInitiative ?initiative .
+}

@@ -1,0 +1,491 @@
+{
+  "version": "0.43.0",
+  "notation": "forall/exists range over one interpretation unless explicitly marked operational. exists! means existence and uniqueness. Temporal statements are separately scoped operational policies, not unencoded OWL axioms.",
+  "world_assumptions": "OWL: open world, no unique-name assumption. Data validation: explicitly asserted finite population, configured inference=none; SQL identifiers refer to records.",
+  "rows": [
+    {
+      "id": "ID01",
+      "commitment": "One version per ProductRealization",
+      "owl": "Exact cardinality 1 on realizesVersion; open-world semantics.",
+      "shacl": "Identity slice retained; newly added to event slice.",
+      "sql": "Snapshot INSERT maximum plus separate completeness audit; new event SQL count/type checks.",
+      "history": "v0.34 records one stable realization/version binding across admitted events.",
+      "formulas": [
+        "forall r: ProductRealization(r) -> exists v: ProductVersion(v) and realizesVersion(r,v)",
+        "forall r,v1,v2: realizesVersion(r,v1) and realizesVersion(r,v2) -> v1=v2"
+      ],
+      "positive": "One typed version bound to a realization.",
+      "negative": "Two explicitly distinct versions for one realization.",
+      "checks": [
+        "positive_population",
+        "two_versions_distinct",
+        "two_versions_unseparated",
+        "missing_version_open_world"
+      ],
+      "limit": "Static uniqueness does not prove conformance to a baseline or temporal continuity.",
+      "native_relation_id": "ICREL:CP:realizesVersion",
+      "native_display_name": "realizesVersion",
+      "static_native_formulas": [
+        "forall x,y: R[\"ICREL:CP:realizesVersion\"](x,y) => (C[\"IC:ProductRealization\"](x) and C[\"IC:ProductVersion\"](y))",
+        "forall x: C[\"IC:ProductRealization\"](x) => 1 <= card{y | R[\"ICREL:CP:realizesVersion\"](x,y)} <= 1",
+        "forall y: C[\"IC:ProductVersion\"](y) => 0 <= card{x | R[\"ICREL:CP:realizesVersion\"](x,y)}"
+      ]
+    },
+    {
+      "id": "ID02",
+      "commitment": "At least one actual capability per realization",
+      "owl": "minCardinality 1 on bearsCapability.",
+      "shacl": "Retained identity shape minCount 1.",
+      "sql": "Retained schema stores links; lower-bound check is external to draft DDL.",
+      "history": "Explorer admits declared capability; new event ledger intentionally excludes this slice.",
+      "formulas": [
+        "forall r: ProductRealization(r) -> exists c: ProductCapability(c) and bearsCapability(r,c)"
+      ],
+      "positive": "A configured whole with one or more actual capabilities.",
+      "negative": "An admitted realization with no explicit actual capability.",
+      "checks": [
+        "Integration_Replay: missing_actual_capability"
+      ],
+      "limit": "A local restriction to capability-bearing configured wholes; not a universal claim about every broken software installation.",
+      "native_relation_id": "ICREL:CP:bearsCapability",
+      "native_display_name": "bearsCapability",
+      "static_native_formulas": [
+        "forall x,y: R[\"ICREL:CP:bearsCapability\"](x,y) => (C[\"IC:ProductRealization\"](x) and C[\"IC:ProductCapability\"](y))",
+        "forall x: C[\"IC:ProductRealization\"](x) => 1 <= card{y | R[\"ICREL:CP:bearsCapability\"](x,y)}",
+        "forall y: C[\"IC:ProductCapability\"](y) => 1 <= card{x | R[\"ICREL:CP:bearsCapability\"](x,y)} <= 1"
+      ]
+    },
+    {
+      "id": "ID03",
+      "commitment": "Exactly one bearer per ProductCapability",
+      "owl": "Exact cardinality 1 on inverse bearsCapability.",
+      "shacl": "Retained identity inverse min/max 1.",
+      "sql": "Retained link_bears_capability inverse maximum.",
+      "history": "Explorer submit checks persisted bearer; direct-DML hardening of that old runtime is not done here.",
+      "formulas": [
+        "forall c: ProductCapability(c) -> exists r: ProductRealization(r) and bearsCapability(r,c)",
+        "forall c,r1,r2: bearsCapability(r1,c) and bearsCapability(r2,c) -> r1=r2"
+      ],
+      "positive": "One actual disposition bound to one bearer.",
+      "negative": "One capability bound to two explicitly distinct bearers.",
+      "checks": [
+        "two_bearers_distinct",
+        "two_bearers_unseparated",
+        "missing_bearer_open_world",
+        "missing_bearer_explicit_population"
+      ],
+      "limit": "OWL names do not imply distinct individuals. Explicit SHACL/SQL counts have a different admission meaning. Full modal dependence is not encoded.",
+      "native_relation_id": "ICREL:CP:bearsCapability",
+      "native_display_name": "bearsCapability",
+      "static_native_formulas": [
+        "forall x,y: R[\"ICREL:CP:bearsCapability\"](x,y) => (C[\"IC:ProductRealization\"](x) and C[\"IC:ProductCapability\"](y))",
+        "forall x: C[\"IC:ProductRealization\"](x) => 1 <= card{y | R[\"ICREL:CP:bearsCapability\"](x,y)}",
+        "forall y: C[\"IC:ProductCapability\"](y) => 1 <= card{x | R[\"ICREL:CP:bearsCapability\"](x,y)} <= 1"
+      ]
+    },
+    {
+      "id": "ID04",
+      "commitment": "Realization and capability continuity",
+      "owl": "No temporal identity inference from the static OWL restrictions.",
+      "shacl": "No cross-history identity decision.",
+      "sql": "No such decision in the 438-table snapshot schema.",
+      "history": "Retained v0.22 policy: preserved/broken/unknown evidence, version changes, branching and successors.",
+      "formulas": [
+        "Policy input: operation, before/after realization, version, capability, continuity evidence and branching.",
+        "VersionChange or Clone or Recreate or Branching or BrokenSystemContinuity => RequireDistinctRealization",
+        "SameRealization and PreservedDispositionContinuity => RequireSameCapability",
+        "Unknown continuity => REVIEW_REQUIRED; no fabricated continuity conclusion"
+      ],
+      "positive": "Restart with evidenced system and disposition continuity retains both identities.",
+      "negative": "Upgrade reuses the prior realization; another bearer reuses the prior capability.",
+      "checks": [
+        "identity_restart_preserved",
+        "identity_rolling_upgrade",
+        "identity_unknown_system",
+        "identity_upgrade_reuses_object",
+        "identity_cross_bearer_mode_reuse"
+      ],
+      "limit": "Executable decision rules over supplied evidence, not a modal theory. The policy remains separate from combined SQL admission. Product constitutive lineage is an authored identity criterion, not an OWL key."
+    },
+    {
+      "id": "ID05",
+      "commitment": "Do not infer identity from equal identifiers or timestamps",
+      "owl": "No universal unique-name or event-key claim.",
+      "shacl": "Record counts are graph constraints, not event individuation.",
+      "sql": "Primary keys identify records, not real-world occurrences.",
+      "history": "Distinct events may share time/case/realization; separate result IDs required.",
+      "formulas": [
+        "Equal(recordedTimestamp(e1),recordedTimestamp(e2)) does not entail e1=e2.",
+        "Reuse of an identifier does not entail continuous real-world identity."
+      ],
+      "positive": "Distinct attempts can have the same timestamp and inputs.",
+      "negative": "Treat a repeated record as a newly observed occurrence.",
+      "checks": [
+        "repeat_new_event_equal_times",
+        "idempotent_profile_replay"
+      ],
+      "limit": "SQL keys identify records. They do not independently individuate real-world events."
+    },
+    {
+      "id": "EV01",
+      "commitment": "hasResult / inverse recordsExecution endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_records_execution; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [
+        "forall e,r: hasResult(e,r) <-> recordsExecution(r,e)",
+        "forall e: TestExecution(e) -> exists! r: TestResult(r) and hasResult(e,r)",
+        "forall r: TestResult(r) -> exists! e: TestExecution(e) and recordsExecution(r,e)"
+      ],
+      "positive": "A consolidated report recorded after the concluded attempt.",
+      "negative": "One consolidated result bound to two attempts, or an attempt without its required result.",
+      "checks": [
+        "late_report_is_documentation",
+        "retained_event_one_result_two_events",
+        "event_also_result"
+      ],
+      "limit": "hasResult is a native display association mapped by inversion to recordsExecution; no new owl:inverseOf property is invented. It asserts documentation, not contemporaneous creation or causation. Multiple source logs remain possible.",
+      "native_relation_id": "REL:W2:091",
+      "native_display_name": "hasResult",
+      "static_native_formulas": [
+        "forall x,y: R[\"REL:W2:091\"](x,y) => (C[\"IC:TestExecution\"](x) and C[\"IC:TestResult\"](y))",
+        "forall x: C[\"IC:TestExecution\"](x) => 1 <= card{y | R[\"REL:W2:091\"](x,y)} <= 1",
+        "forall y: C[\"IC:TestResult\"](y) => 1 <= card{x | R[\"REL:W2:091\"](x,y)} <= 1"
+      ]
+    },
+    {
+      "id": "EV02",
+      "commitment": "executes endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_executes; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [],
+      "positive": "One concluded attempt has one declared test-case binding.",
+      "negative": "One attempt explicitly bound to two cases, or a case of the wrong type.",
+      "checks": [
+        "retained_event_missing_090",
+        "retained_event_multiple_090",
+        "retained_event_wrong_target_090"
+      ],
+      "limit": "A declared binding does not establish that every specified test step occurred.",
+      "native_relation_id": "REL:W2:090",
+      "native_display_name": "executes",
+      "static_native_formulas": [
+        "forall x,y: R[\"REL:W2:090\"](x,y) => (C[\"IC:TestExecution\"](x) and C[\"IC:TestCase\"](y))",
+        "forall x: C[\"IC:TestExecution\"](x) => 1 <= card{y | R[\"REL:W2:090\"](x,y)} <= 1",
+        "forall y: C[\"IC:TestCase\"](y) => 0 <= card{x | R[\"REL:W2:090\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV03",
+      "commitment": "hasRecordedExecution endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_r147_has_recorded_execution; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [],
+      "positive": "A suite can index an attempt of one of its contained cases.",
+      "negative": "The indexing suite does not contain the executed case.",
+      "checks": [
+        "retained_event_explicit_suite_index",
+        "retained_event_wrong_suite_index"
+      ],
+      "limit": "The index is a recorded association, not proof of suite-wide execution; full suite identity is outside this profile.",
+      "native_relation_id": "REL:W2:147",
+      "native_display_name": "hasRecordedExecution",
+      "static_native_formulas": [
+        "forall x,y: R[\"REL:W2:147\"](x,y) => (C[\"IC:TestSuiteSpecification\"](x) and C[\"IC:TestExecution\"](y))",
+        "forall x: C[\"IC:TestSuiteSpecification\"](x) => 0 <= card{y | R[\"REL:W2:147\"](x,y)}",
+        "forall y: C[\"IC:TestExecution\"](y) => 0 <= card{x | R[\"REL:W2:147\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV04",
+      "commitment": "testsRealization endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_tests_realization; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [],
+      "positive": "The attempt has one declared realization target.",
+      "negative": "The target is absent, multiply bound or incorrectly typed.",
+      "checks": [
+        "setup_abort_target_unestablished",
+        "retained_event_multiple_testsRealization",
+        "supported_participation_missing_source"
+      ],
+      "limit": "testsRealization records the declared target. It does not entail actual participation; setup-only aborts explicitly leave participation unestablished.",
+      "native_relation_id": "ICREL:CP:testsRealization",
+      "native_display_name": "testsRealization",
+      "static_native_formulas": [
+        "forall x,y: R[\"ICREL:CP:testsRealization\"](x,y) => (C[\"IC:TestExecution\"](x) and C[\"IC:ProductRealization\"](y))",
+        "forall x: C[\"IC:TestExecution\"](x) => 1 <= card{y | R[\"ICREL:CP:testsRealization\"](x,y)} <= 1",
+        "forall y: C[\"IC:ProductRealization\"](y) => 0 <= card{x | R[\"ICREL:CP:testsRealization\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV05",
+      "commitment": "assessesSpecification endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_assesses_specification; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [],
+      "positive": "An attempt identifies its declared assessment scope.",
+      "negative": "Missing or incorrectly typed assessment scope.",
+      "checks": [
+        "retained_event_missing_assessesSpecification",
+        "retained_event_wrong_target_assessesSpecification"
+      ],
+      "limit": "Binding a specification does not imply that it was evaluated, satisfied or successfully tested.",
+      "native_relation_id": "ICREL:CP:assessesSpecification",
+      "native_display_name": "assessesSpecification",
+      "static_native_formulas": [
+        "forall x,y: R[\"ICREL:CP:assessesSpecification\"](x,y) => (C[\"IC:TestExecution\"](x) and C[\"IC:CapabilitySpecification\"](y))",
+        "forall x: C[\"IC:TestExecution\"](x) => 1 <= card{y | R[\"ICREL:CP:assessesSpecification\"](x,y)}",
+        "forall y: C[\"IC:CapabilitySpecification\"](y) => 0 <= card{x | R[\"ICREL:CP:assessesSpecification\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV06",
+      "commitment": "executionContext endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_execution_context; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [],
+      "positive": "One documented assessment-context binding.",
+      "negative": "Missing, multiply bound or incorrectly typed context.",
+      "checks": [
+        "retained_event_missing_executionContext",
+        "retained_event_multiple_executionContext"
+      ],
+      "limit": "A context document is not proof of actual environmental conditions.",
+      "native_relation_id": "REL:ORSD05:executionContext",
+      "native_display_name": "executionContext",
+      "static_native_formulas": [
+        "forall x,y: R[\"REL:ORSD05:executionContext\"](x,y) => (C[\"IC:TestExecution\"](x) and C[\"IC:AssessmentContextSpecification\"](y))",
+        "forall x: C[\"IC:TestExecution\"](x) => 1 <= card{y | R[\"REL:ORSD05:executionContext\"](x,y)} <= 1",
+        "forall y: C[\"IC:AssessmentContextSpecification\"](y) => 0 <= card{x | R[\"REL:ORSD05:executionContext\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV07",
+      "commitment": "executionCriterion endpoint types and native multiplicities",
+      "owl": "Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.",
+      "shacl": "Both incident endpoints are targeted; typed endpoints and min/max counts.",
+      "sql": "Retained table link_execution_criterion; new bounded SQL count/type validation.",
+      "history": "Admission requires both SQL and SHACL; stored completed-event payload is immutable.",
+      "formulas": [],
+      "positive": "At least one typed declared assessment criterion.",
+      "negative": "Missing or incorrectly typed criterion.",
+      "checks": [
+        "retained_event_missing_executionCriterion",
+        "retained_event_wrong_target_executionCriterion"
+      ],
+      "limit": "No automatic propagation to other specifications or success entailment.",
+      "native_relation_id": "REL:ORSD05:executionCriterion",
+      "native_display_name": "executionCriterion",
+      "static_native_formulas": [
+        "forall x,y: R[\"REL:ORSD05:executionCriterion\"](x,y) => (C[\"IC:TestExecution\"](x) and C[\"IC:ConditionSpecification\"](y))",
+        "forall x: C[\"IC:TestExecution\"](x) => 1 <= card{y | R[\"REL:ORSD05:executionCriterion\"](x,y)}",
+        "forall y: C[\"IC:ConditionSpecification\"](y) => 0 <= card{x | R[\"REL:ORSD05:executionCriterion\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV08",
+      "commitment": "One known observed end; start explicitly known or unknown; timezone-qualified recorded times",
+      "owl": "Functional executionEndedAt dateTime; no explicit minimum in inspected OWL.",
+      "shacl": "Occurrence shape requires start knowledge, provenance and conditional start count; SQL path additionally validates calendar and timezone envelope.",
+      "sql": "occurrence_profile.sql_check enforces counts, supplied timestamp envelope, timezone, known-start ordering and provenance fields; base gate adds native population checks.",
+      "history": "NOT NULL, validity check and immutable stored time.",
+      "formulas": [
+        "For each admitted concluded attempt e: count(end(e))=1; each supplied time satisfies the declared timezone/calendar envelope.",
+        "knownStart(e) => count(start(e))=1; unknownStart(e) => count(start(e))=0",
+        "start(e) and end(e) supplied => start(e)<=end(e)"
+      ],
+      "positive": "Known start precedes the observed end; an unknown start is absent.",
+      "negative": "Invented start for unknown knowledge, reversed times, missing end or missing timezone.",
+      "checks": [
+        "unknown_start_without_fabricated_time",
+        "unknown_with_invented_start",
+        "start_after_end",
+        "timezone_missing",
+        "missing_end_not_fabricated"
+      ],
+      "limit": "The selected OWL profile declares end as functional but does not enforce the operational minimum or time ordering. SHACL and the SQL/Python envelope have explicitly different coverage. Full XSD lexical space, unknown-end events and general event lifecycles are not claimed."
+    },
+    {
+      "id": "EV09",
+      "commitment": "Tested realization has a typed single version",
+      "owl": "Retained realizesVersion class/cardinality restrictions.",
+      "shacl": "v0.34 adds property-based target and one typed version.",
+      "sql": "v0.34 counts and endpoint types; old event validator lacked these supporting checks.",
+      "history": "Admission checks current snapshot and historical realization/version binding.",
+      "formulas": [
+        "testsRealization(e,r) => exists! v: ProductVersion(v) and realizesVersion(r,v)"
+      ],
+      "positive": "The declared target has one typed version.",
+      "negative": "A target without a version, or with conflicting explicit bindings.",
+      "checks": [
+        "retained_event_no_realization_version",
+        "two_versions_distinct"
+      ],
+      "limit": "The realization/version link does not establish baseline satisfaction.",
+      "native_relation_id": "ICREL:CP:realizesVersion",
+      "native_display_name": "realizesVersion",
+      "static_native_formulas": [
+        "forall x,y: R[\"ICREL:CP:realizesVersion\"](x,y) => (C[\"IC:ProductRealization\"](x) and C[\"IC:ProductVersion\"](y))",
+        "forall x: C[\"IC:ProductRealization\"](x) => 1 <= card{y | R[\"ICREL:CP:realizesVersion\"](x,y)} <= 1",
+        "forall y: C[\"IC:ProductVersion\"](y) => 0 <= card{x | R[\"ICREL:CP:realizesVersion\"](x,y)}"
+      ]
+    },
+    {
+      "id": "EV10",
+      "commitment": "Assessed specification belongs to tested version",
+      "owl": "Individual predicates present; no inspected property-chain enforcement claimed.",
+      "shacl": "Retained SPARQL same-version constraint.",
+      "sql": "Retained bounded join query, rerun in v0.34.",
+      "history": "Checked at admission and retained in immutable declared snapshot.",
+      "formulas": [
+        "testsRealization(e,r) and assessesSpecification(e,s) => exists v: realizesVersion(r,v) and specifiesCapability(v,s)"
+      ],
+      "positive": "The assessed capability specification is declared by the target version.",
+      "negative": "An assessed capability belongs to a different version.",
+      "checks": [
+        "retained_event_unmatched_capability_version"
+      ],
+      "limit": "A selected graph/SQL join contract; no truth, achieved capability or test success follows."
+    },
+    {
+      "id": "EV11",
+      "commitment": "Indexing suite contains the executed case",
+      "owl": "Predicates present; no general closure inference claimed.",
+      "shacl": "Retained suite-membership SPARQL constraint.",
+      "sql": "Retained bounded join query, rerun in v0.34.",
+      "history": "Admission preserves explicit membership evidence.",
+      "formulas": [
+        "hasRecordedExecution(suite,e) and executes(e,c) => containsCase(suite,c)"
+      ],
+      "positive": "Suite contains the case of the indexed attempt.",
+      "negative": "Indexing an attempt whose case is not contained.",
+      "checks": [
+        "retained_event_wrong_suite_index"
+      ],
+      "limit": "Adding a later index must not rewrite the accepted event snapshot. This is not a general mereological or temporal suite theory."
+    },
+    {
+      "id": "EV12",
+      "commitment": "No automatic criterion propagation or success entailment",
+      "owl": "No additional composition/satisfaction axiom added.",
+      "shacl": "Only explicit checked criteria counted.",
+      "sql": "No implicit closure added.",
+      "history": "Stores declarations only; unsuccessful/aborted concluded runs remain valid.",
+      "formulas": [
+        "No axiom or operational rule propagates a declared criterion to an unrelated assessed item.",
+        "recordsExecution(result,event) does not entail passed(result)."
+      ],
+      "positive": "An inconclusive or aborted result documents an attempt.",
+      "negative": "Infer success from the existence of a result or criterion link.",
+      "checks": [
+        "retained_event_no_criterion_propagation_019",
+        "retained_event_no_criterion_propagation_046",
+        "setup_claims_pass"
+      ],
+      "limit": "These are inference exclusions and controlled probes, not a proof against all possible downstream rules."
+    },
+    {
+      "id": "LG01",
+      "commitment": "Completed record cannot be renamed, rebound or erased",
+      "owl": "OWL does not enforce database history.",
+      "shacl": "Snapshot checks do not protect past records.",
+      "sql": "Old snapshot DDL is not an event history store.",
+      "history": "Accepted occurrence and historical bindings remain protected; append_observation records a sourced correction assertion without mutating accepted occurrence.",
+      "formulas": [
+        "Accepted(snapshot) => storedGraph(snapshot) is immutable under the supported admission API.",
+        "Correction => AppendSourcedObservation; accepted occurrence remains unchanged."
+      ],
+      "positive": "Append a sourced superseding observation without changing the accepted graph.",
+      "negative": "UPDATE, DELETE, replacement or rebinding of an accepted record.",
+      "checks": [
+        "correction_append_preserves_event_graph",
+        "correction_supersession_chain",
+        "observation_update",
+        "observation_delete"
+      ],
+      "limit": "Operational invariants, not OWL axioms. Database-owner/schema changes and external tampering remain outside the protection."
+    },
+    {
+      "id": "LG02",
+      "commitment": "Replay is idempotent; conflicting replay is rejected",
+      "owl": "Not an OWL identity inference.",
+      "shacl": "Duplicate graph statements have set semantics.",
+      "sql": "Duplicate inputs normalized before primary-key insertion.",
+      "history": "Same normalized graph fields accepted; changed payload rejected.",
+      "formulas": [
+        "Admit(id,G); Admit(id,G) => idempotent receipt and no state mutation.",
+        "Admit(id,G); Admit(id,H) with H != G under recorded graph equivalence => reject and rollback."
+      ],
+      "positive": "Replay the same admitted graph.",
+      "negative": "Reuse a snapshot identifier with a changed payload.",
+      "checks": [
+        "idempotent_profile_replay",
+        "Integration_Replay: snapshot_identifier_conflict"
+      ],
+      "limit": "Graph equivalence and record identity are not real-world event identity. Literal normalization is explicitly bounded."
+    },
+    {
+      "id": "LG03",
+      "commitment": "Persistence survives close/reopen",
+      "owl": "Not applicable.",
+      "shacl": "Revalidation still available.",
+      "sql": "File-backed SQLite used in the test.",
+      "history": "Stored record reloaded; conflicting rebind remains rejected.",
+      "formulas": [
+        "Export(Reopen(Persist(Admit(G)))) is RDF-isomorphic to G for the selected profile."
+      ],
+      "positive": "Close, reopen and reconstruct the accepted population.",
+      "negative": "Stored graph differs from the receipt hash or count.",
+      "checks": [
+        "extended_graph_disk_roundtrip"
+      ],
+      "limit": "A finite persistence probe, not a production durability, concurrency or fault-recovery benchmark."
+    },
+    {
+      "id": "INT01",
+      "commitment": "OWL/native/SHACL/SQL identifiers are explicitly mapped",
+      "owl": "Retained formal predicates differ from native-contract URNs.",
+      "shacl": "Event URNs encode native IDs; identity shapes use the retained formal namespace.",
+      "sql": "Eleven selected relations mapped to physical tables, including inversions.",
+      "history": "New ledger local node IDs are scoped record identifiers; no automatic universal equivalence.",
+      "formulas": [
+        "For each mapped native signature: preserve identifier, direction, endpoint type and bound.",
+        "For selected admitted population G: Export(Import(G)) is RDF-isomorphic to G."
+      ],
+      "positive": "37 baseline and 46 revised occurrence triples reconstruct without dropped input.",
+      "negative": "Unmapped predicates, missing types, inverse-direction mistakes or historical rebinding.",
+      "checks": [
+        "Integration_Replay: 42 controls",
+        "Revision_Replay: extended_graph_disk_roundtrip"
+      ],
+      "limit": "Static inventory mapping is complete for the declared source; executed reconstruction is selected. It does not establish whole-population equivalence, complete UFO semantics or production deployment."
+    },
+    {
+      "id": "OPEN01",
+      "commitment": "Full modal/Event semantics and independent acceptance",
+      "owl": "Bounded operational profile only.",
+      "shacl": "No independent conceptual adequacy proof.",
+      "sql": "No scientific acceptance proof.",
+      "history": "No independent observation truth established.",
+      "formulas": [
+        "No complete modal, causal or counterfactual UFO theory is asserted."
+      ],
+      "positive": "Each reported result retains its input, method and scope.",
+      "negative": "Treat passing tests or author approval as independent conceptual acceptance.",
+      "checks": [],
+      "limit": "Independent reviewers, external owner/IRI acceptance, full event causality and modal dependence remain deferred scientific work."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "sdk_version": "1.0.0",
+  "input_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "serialized_sha256": "4147588ed515c60925b14b861c4015d753e06e8e849c962a658a591c5e1e4432",
+  "elements": 1035,
+  "event_ids": [
+    "IC:TestExecution"
+  ],
+  "full_inventory_and_protected_fields_preserved": true,
+  "save_reload_byte_identical_after_normalization": true,
+  "original_bytes_identical": false,
+  "source_element_order_preserved": false,
+  "normalization_count": 5132,
+  "incident_relations": 7,
+  "incident_ends": 14,
+  "environment_fallback_used": true,
+  "upstream_source_modified": false,
+  "fidelity_controls": [
+    {
+      "id": "readonly_loss",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "END:W2:090:B:isReadOnly"
+      ]
+    },
+    {
+      "id": "event_stereotype",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "IC:TestExecution:stereotype"
+      ]
+    },
+    {
+      "id": "event_nature",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "IC:TestExecution:restrictedTo"
+      ]
+    },
+    {
+      "id": "relation_loss",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "element_inventory",
+        "REL:W2:090:missing"
+      ]
+    },
+    {
+      "id": "end_loss",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "element_inventory",
+        "END:W2:090:B:missing"
+      ]
+    },
+    {
+      "id": "end_target",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "END:W2:090:B:propertyType"
+      ]
+    },
+    {
+      "id": "multiplicity",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "END:ORSD05:executionCriterion:B:cardinality"
+      ]
+    },
+    {
+      "id": "occurrence_contract",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "IC:TestExecution:customProperties"
+      ]
+    },
+    {
+      "id": "end_reversal",
+      "passed": true,
+      "detected_by": "project fidelity guard, not SDK semantic validator",
+      "errors": [
+        "REL:W2:090:properties"
+      ]
+    }
+  ],
+  "schema_controls": [
+    {
+      "id": "invalid_stereotype_datatype",
+      "passed": true,
+      "actual_sdk_rejection": "Invalid serialization according to the OntoUML JSON Schema: '/elements/73' must have required property 'owner'; '/elements/73' must have required property 'views'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'isViewOf'; '/elements/73' must have required property 'rectangle'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'generalizations'; '/elements/73' must have required property 'text'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'members'; '/elements/73' must have required property 'diamond'; '/elements/73' must have required property 'paths'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'text'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'rectangle'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'sourceView'; '/elements/73' must have required property 'targetView'; '/elements/73' must have required property 'path'; '/elements/73/type' must be equal to constant; '/elements/73/type' must be equal to constant; '/elements/73/type' must be equal to constant; '/elements/73' must match exactly one schema in oneOf; '/elements/73' must match exactly one schema in oneOf; '/elements/73' must have required property 'general'; '/elements/73' must have required property 'specific'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'isDisjoint'; '/elements/73' must have required property 'isComplete'; '/elements/73' must have required property 'generalizations'; '/elements/73' must have required property 'categorizer'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'note'; '/elements/73' must have required property 'element'; '/elements/73/type' must be equal to constant; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'text'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'contents'; '/elements/73/type' must be equal to constant; '/elements/73/stereotype' must be null; '/elements/73/stereotype' must be string; '/elements/73/stereotype' must match exactly one schema in oneOf; '/elements/73' must match exactly one schema in oneOf; '/elements/73' must have required property 'points'; '/elements/73/type' must be equal to constant; '/elements/73' must have required property 'topLeft'; '/elements/73' must have required property 'width'; '/elements/73' must have required property 'height'; '/elements/73/type' must be equal to constant; '/elements/73/type' must be equal to constant; '/elements/73/type' must be equal to constant; '/elements/73' must match exactly one schema in oneOf; '/elements/73' must match exactly one schema in oneOf; '/elements/73' must match exactly one schema in oneOf; '/' must have required property 'customProperties'; '/' must have required property 'general'; '/' must have required property 'specific'; '/type' must be equal to constant; '/' must have required property 'isDisjoint'; '/' must have required property 'isComplete'; '/' must have required property 'generalizations'; '/' must have required property 'categorizer'; '/type' must be equal to constant; '/' must have required property 'note'; '/' must have required property 'element'; '/type' must be equal to constant; '/type' must be equal to constant; '/' must have required property 'text'; '/type' must be equal to constant; '/' must have required property 'contents'; '/type' must be equal to constant; '/' must have required property 'stereotype'; '/' must have required property 'isDerived'; '/' must have required property 'subsettedProperties'; '/' must have required property 'redefinedProperties'; '/' must have required property 'aggregationKind'; '/' must have required property 'cardinality'; '/' must have required property 'isOrdered'; '/' must have required property 'isReadOnly'; '/' must have required property 'propertyType'; '/type' must be equal to constant; '/' must have required property 'isAbstract'; '/' must have required property 'properties'; '/' must have required property 'literals'; '/' must have required property 'restrictedTo'; '/' must have required property 'isPowertype'; '/' must have required property 'order'; '/type' must be equal to constant; '/type' must be equal to constant; '/type' must be equal to constant; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must have required property 'points'; '/type' must be equal to constant; '/' must have required property 'topLeft'; '/' must have required property 'width'; '/' must have required property 'height'; '/type' must be equal to constant; '/type' must be equal to constant; '/type' must be equal to constant; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must have required property 'isViewOf'; '/' must have required property 'rectangle'; '/type' must be equal to constant; '/' must have required property 'generalizations'; '/' must have required property 'text'; '/type' must be equal to constant; '/' must have required property 'members'; '/' must have required property 'diamond'; '/' must have required property 'paths'; '/type' must be equal to constant; '/' must have required property 'text'; '/type' must be equal to constant; '/' must have required property 'rectangle'; '/type' must be equal to constant; '/' must have required property 'sourceView'; '/' must have required property 'targetView'; '/' must have required property 'path'; '/type' must be equal to constant; '/type' must be equal to constant; '/type' must be equal to constant; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf; '/' must match exactly one schema in oneOf."
+    },
+    {
+      "id": "dangling_endpoint",
+      "passed": true,
+      "actual_sdk_rejection": "Could not resolve the members of the relations 'REL:W2:090'."
+    }
+  ],
+  "scope": "Official SDK parse/schema/serialization and local fidelity guards; no official anti-pattern or Event identity reasoning is supplied by the SDK."
+}

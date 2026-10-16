@@ -1,0 +1,70 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix q: <urn:ontospk:occurrence-profile:0.41:> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:Class rdfs:subClassOf rdfs:Class .
+
+owl:DatatypeProperty rdfs:subClassOf rdf:Property .
+
+q:EventShape a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:string ;
+            sh:in ( "supported"^^xsd:string "unestablished"^^xsd:string ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path q:targetParticipation ],
+        [ sh:datatype xsd:anyURI ;
+            sh:minCount 0 ;
+            sh:path q:codeUseSource ;
+            sh:pattern "^(urn:[^\\s]+|https?://[^\\s/]+[^\\s]*)$" ],
+        [ sh:datatype xsd:anyURI ;
+            sh:minCount 1 ;
+            sh:path q:executionSource ;
+            sh:pattern "^(urn:[^\\s]+|https?://[^\\s/]+[^\\s]*)$" ],
+        [ sh:datatype xsd:boolean ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path q:roostCandidate ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 0 ;
+            sh:path q:executionStartedAt ],
+        [ sh:datatype xsd:anyURI ;
+            sh:minCount 0 ;
+            sh:path q:participationSource ;
+            sh:pattern "^(urn:[^\\s]+|https?://[^\\s/]+[^\\s]*)$" ],
+        [ sh:datatype xsd:string ;
+            sh:in ( "setup_only"^^xsd:string "test_exercised"^^xsd:string ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path q:executionStage ],
+        [ sh:datatype xsd:string ;
+            sh:in ( "known"^^xsd:string "unknown"^^xsd:string ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path q:startTimeKnowledge ],
+        [ sh:datatype xsd:anyURI ;
+            sh:maxCount 1 ;
+            sh:minCount 0 ;
+            sh:path q:executionCode ;
+            sh:pattern "^(urn:[^\\s]+|https?://[^\\s/]+[^\\s]*)$" ] ;
+    sh:sparql [ sh:message "ROoST candidate requires exercised code and causal evidence." ;
+            sh:select "SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:roostCandidate> true . FILTER (NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:executionStage> \"test_exercised\"^^<http://www.w3.org/2001/XMLSchema#string>} || NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:targetParticipation> \"supported\"^^<http://www.w3.org/2001/XMLSchema#string>} || NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:executionCode> ?c} || NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:codeUseSource> ?s}) }" ],
+        [ sh:message "Setup-only attempts must be aborted and have unestablished target participation." ;
+            sh:select "SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:executionStage> \"setup_only\"^^<http://www.w3.org/2001/XMLSchema#string> . FILTER (NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:targetParticipation> \"unestablished\"^^<http://www.w3.org/2001/XMLSchema#string>} || NOT EXISTS {?r <urn:productium:specification-profile:recordsExecution> $this; <urn:product-ontology:delivery-profile:0.5:resultOutcome> \"aborted\"}) }" ],
+        [ sh:message "Observed start must not follow observed end." ;
+            sh:select "SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:executionStartedAt> ?s; <urn:product-ontology:delivery-profile:0.5:executionEndedAt> ?e . FILTER (?s > ?e) }" ],
+        [ sh:message "Code-use sources require a code target." ;
+            sh:select "SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:codeUseSource> ?s . FILTER NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:executionCode> ?c} }" ],
+        [ sh:message "An exercised test needs supported participation." ;
+            sh:select "SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:executionStage> \"test_exercised\"^^<http://www.w3.org/2001/XMLSchema#string> . FILTER NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:targetParticipation> \"supported\"^^<http://www.w3.org/2001/XMLSchema#string>} }" ],
+        [ sh:message "Supported participation requires a source; unestablished participation has no positive source." ;
+            sh:select """SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:targetParticipation> ?k .
+ FILTER ((?k="supported" && NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:participationSource> ?v}) || (?k="unestablished" && EXISTS {$this <urn:ontospk:occurrence-profile:0.41:participationSource> ?v})) }""" ],
+        [ sh:message "Known start requires one start; unknown start requires none." ;
+            sh:select """SELECT $this WHERE { $this <urn:ontospk:occurrence-profile:0.41:startTimeKnowledge> ?k .
+ FILTER ((?k="known" && NOT EXISTS {$this <urn:ontospk:occurrence-profile:0.41:executionStartedAt> ?v}) || (?k="unknown" && EXISTS {$this <urn:ontospk:occurrence-profile:0.41:executionStartedAt> ?v})) }""" ] ;
+    sh:targetClass <urn:productium:specification-profile:TestExecution> .
+

@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?product ?positioning ?plan ?marketReference ?segmentReference WHERE {
+VALUES ?product { e:productA } ?product p:r94_hasPositioningStatement ?positioning . ?plan p:r100_usesPositioningStatement ?positioning . OPTIONAL { ?positioning p:r96_referencesTargetMarket ?marketReference } OPTIONAL { ?positioning p:r97_referencesTargetSegment ?segmentReference }
+}

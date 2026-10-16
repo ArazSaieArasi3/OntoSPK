@@ -1,0 +1,158 @@
+{
+  "scope": "All bibliography entries screened for comparison relevance. This is not a claim that all 23 full texts or links were freshly read or independently validated.",
+  "primary_references": [
+    1,
+    10,
+    11,
+    12,
+    14
+  ],
+  "primary_families": 4,
+  "complementary_references": [
+    13,
+    15,
+    16,
+    17,
+    23
+  ],
+  "rows": [
+    {
+      "reference": 1,
+      "citation": "[1] A. Botzenhardt, A. Mädche, and J. Wiesner, “Developing a domain ontology for software product management,” in Proc. 5th Int. Workshop Software Product Management (IWSPM), 2011, pp. 7–16. doi: 10.1109/IWSPM.2011.6046207.",
+      "decision": "PRIMARY_COMPARISON",
+      "reason": "SPM vocabulary directly adjacent to product knowledge"
+    },
+    {
+      "reference": 2,
+      "citation": "[2] K. Peffers, T. Tuunanen, M. A. Rothenberger, and S. Chatterjee, “A Design Science Research Methodology for Information Systems Research,” J. Manage. Inf. Syst., vol. 24, no. 3, pp. 45–77, 2007. doi: 10.2753/MIS0742-1222240302.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 3,
+      "citation": "[3] R. de Almeida Falbo, “SABiO: Systematic Approach for Building Ontologies,” in Proc. ONTO.COM/ODISE, CEUR Workshop Proceedings, vol. 1301, 2014. [Online]. Available: https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 4,
+      "citation": "[4] M. C. Suárez-Figueroa, A. Gómez-Pérez, and B. Villazón-Terrazas, “How to Write and Use the Ontology Requirements Specification Document,” in On the Move to Meaningful Internet Systems: OTM 2009, LNCS 5871, pp. 966–982, 2009. doi: 10.1007/978-3-642-05151-7_16.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 5,
+      "citation": "[5] P. C. Barbosa Fernandes, R. S. S. Guizzardi, and G. Guizzardi, “Using Goal Modeling to Capture Competency Questions in Ontology-based Systems,” Journal of Information and Data Management, vol. 2, no. 3, 2011. [Online]. Available: https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 6,
+      "citation": "[6] A. Fernández-Izquierdo, “Ontology testing based on requirements formalization in collaborative development environments,” CEUR Workshop Proceedings, vol. 1962, 2017. [Online]. Available: https://ceur-ws.org/Vol-1962/paper_8.pdf",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 7,
+      "citation": "[7] V. Braun and V. Clarke, “Using thematic analysis in psychology,” Qualitative Research in Psychology, vol. 3, no. 2, pp. 77–101, 2006. doi: 10.1191/1478088706qp063oa.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 8,
+      "citation": "[8] G. Guizzardi, G. Wagner, J. P. A. Almeida, and R. S. S. Guizzardi, “Towards ontological foundations for conceptual modeling: The unified foundational ontology (UFO) story,” Applied Ontology, vol. 10, nos. 3–4, pp. 259–271, 2015. doi: 10.3233/AO-150157.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 9,
+      "citation": "[9] OntoUML, “OntoUML specification: Classes, relationships and anti-pattern catalogue.” [Online]. Available: https://ontouml.readthedocs.io/en/latest/. Accessed: Oct. 14, 2026.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 10,
+      "citation": "[10] S. J. Fenves, A Core Product Model for Representing Design Information, NISTIR 6736. Gaithersburg, MD, USA: NIST, 2002. doi: 10.6028/NIST.IR.6736.",
+      "decision": "PRIMARY_COMPARISON",
+      "reason": "Core engineering-product representation"
+    },
+    {
+      "reference": 11,
+      "citation": "[11] S. J. Fenves, S. Foufou, C. Bock, R. Sudarsan, N. Bouillon, and R. D. Sriram, CPM 2: A Revised Core Product Model for Representing Design Information, NISTIR 7185, Oct. 2004. doi: 10.6028/NIST.IR.7185.",
+      "decision": "PRIMARY_COMPARISON",
+      "reason": "Revised CPM with specifications, function and implementation examples"
+    },
+    {
+      "reference": 12,
+      "citation": "[12] L. Failla, M. Rossoni, M. Quirini, and G. Colombo, “Managing lifecycle of product information with an ontology-based knowledge framework,” J. Ind. Inf. Integr., vol. 45, Art. no. 100820, 2025. doi: 10.1016/j.jii.2025.100820.",
+      "decision": "PRIMARY_COMPARISON",
+      "reason": "Product knowledge and lifecycle model with a published artifact deposit"
+    },
+    {
+      "reference": 13,
+      "citation": "[13] F. B. Ruy, R. A. Falbo, M. P. Barcellos, S. D. Costa, and G. Guizzardi, “SEON: A Software Engineering Ontology Network,” in EKAW 2016, LNCS 10024, pp. 527–542, 2016. doi: 10.1007/978-3-319-49004-5_34.",
+      "decision": "COMPLEMENTARY_COMPARISON",
+      "reason": "Network architecture and reuse"
+    },
+    {
+      "reference": 14,
+      "citation": "[14] B. B. Duarte et al., “Ontological foundations for software requirements with a focus on requirements at runtime,” Applied Ontology, vol. 13, no. 2, pp. 73–105, 2018. doi: 10.3233/AO-180197.",
+      "decision": "PRIMARY_COMPARISON",
+      "reason": "Closest software identity, requirements and execution precedent"
+    },
+    {
+      "reference": 15,
+      "citation": "[15] M. L. Roldán, M. Vegetti, S. Gonnet, M. Marciszack, and H. Leone, “An Ontology for Specifying and Tracing Requirements Engineering Artifacts and Test Artifacts,” CLEI Electron. J., vol. 22, no. 1, 2019. doi: 10.19153/cleiej.22.1.2.",
+      "decision": "COMPLEMENTARY_COMPARISON",
+      "reason": "Requirements/test traceability"
+    },
+    {
+      "reference": 16,
+      "citation": "[16] D. Mosquera, M. Ruiz, and O. Pastor, “Ontology-based NLP tool for tracing software requirements and conceptual models: an empirical study,” Requirements Eng., vol. 30, pp. 341–369, 2025. doi: 10.1007/s00766-025-00447-4.",
+      "decision": "COMPLEMENTARY_COMPARISON",
+      "reason": "Human-task evaluation precedent"
+    },
+    {
+      "reference": 17,
+      "citation": "[17] H. Panetto, M. Dassisti, and A. Tursi, “ONTO-PDM: Product-driven ONTOlogy for Product Data Management interoperability within manufacturing process environment,” Adv. Eng. Inform., vol. 26, no. 2, pp. 334–348, 2012. doi: 10.1016/j.aei.2011.12.002.",
+      "decision": "COMPLEMENTARY_COMPARISON",
+      "reason": "Standards interoperability and formal correspondences"
+    },
+    {
+      "reference": 18,
+      "citation": "[18] H. Knublauch and D. Kontokostas, Eds., “Shapes Constraint Language (SHACL),” W3C Recommendation, Jul. 20, 2017. [Online]. Available: https://www.w3.org/TR/2017/REC-shacl-20170720/",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 19,
+      "citation": "[19] ROBOT, “Reason” and “Validate Profile,” documentation. [Online]. Available: https://robot.obolibrary.org/reason and https://robot.obolibrary.org/validate-profile. Accessed: Oct. 12, 2026.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 20,
+      "citation": "[20] OntoUML, “OntoUML Graph Validator,” source code, ver. 1.0.0a0. [Online]. Available: https://github.com/OntoUML/ontouml-validator. Accessed: Oct. 14, 2026.",
+      "decision": "METHOD_FOUNDATION_STANDARD_OR_TOOL",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 21,
+      "citation": "[21] A. Saie Arasi, H. Haghighi, and H. Azgomi, “CM-PharmE ver.1: Towards a Conceptual Model for Pharmaceutical Ecosystem with a Business-Architecture Perspective,” in Proc. 2025 9th Iranian Conf. Advances in Enterprise Architecture (ICAEA), 2025. doi: 10.1109/ICAEA69058.2025.11301544.",
+      "decision": "CASE_OR_DATA_SOURCE",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 22,
+      "citation": "[22] U.S. Food and Drug Administration, “openFDA Drug NDC API.” [Online]. Available: https://open.fda.gov/apis/drug/ndc/. Accessed: Oct. 12, 2026.",
+      "decision": "CASE_OR_DATA_SOURCE",
+      "reason": "Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model."
+    },
+    {
+      "reference": 23,
+      "citation": "[23] NEMO, “Reference Ontology on Software Testing (ROoST),” SEON ontology specification, 2017. [Online]. Available: https://dev.nemo.inf.ufes.br/seon/ROoST.html. Accessed: Oct. 15, 2026.",
+      "decision": "COMPLEMENTARY_COMPARISON",
+      "reason": "Testing concepts and conditional reuse boundary"
+    }
+  ]
+}

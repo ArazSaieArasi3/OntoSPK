@@ -1,0 +1,2134 @@
+[
+  {
+    "id": "IC:ProductPortfolio",
+    "name": "ProductPortfolio",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed strategic arrangement organizing products, entries and planning references under a continuing portfolio mandate."
+    },
+    "identity_commitment": "Constitutive mandate and stewardship lineage; adding or removing products does not create a new portfolio. A separately constituted mandate does.",
+    "review_question": "Does portfolio identity survive member changes, and do all Products participate uniformly? If heterogeneous PortfolioItems are parts, define their roles.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:Product",
+    "name": "Product",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed intentional product artifact with continuing constitutive purpose and stewardship lineage; not a deployment or a database row."
+    },
+    "identity_commitment": "Same constitutive product lineage survives rename, owner transfer and version changes. A declared independent fork starts another product. ID records this decision; it does not prove it.",
+    "review_question": "Specify sameness across versions, offerings, ownership and deployment; separate product referent from Product Knowledge record if both occur.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:OfferingSpecification",
+    "name": "OfferingSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A catalog specification of how one product is intended to be offered to an audience under stated terms."
+    },
+    "identity_commitment": "Approved offering purpose and terms baseline; changing constitutive commercial terms creates a successor specification.",
+    "review_question": "Choose offer identity across audience/price/channel changes and show dependence on Product and market context.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:BundleSpecification",
+    "name": "BundleSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed composition specification referencing offerings intended to be presented together."
+    },
+    "identity_commitment": "Authored bundle configuration lineage; no identity is inferred from the accidental equality of referenced offering sets.",
+    "review_question": "Identify homogeneous members or different functional roles; test whether same bundle survives member replacement.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductVersion",
+    "name": "ProductVersion",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An immutable approved specification baseline for one Product."
+    },
+    "identity_commitment": "Same product lineage and same approved semantic baseline. A semantic change creates a new version; serialization copies do not.",
+    "review_question": "Choose independent version-record identity versus same Product changing intrinsic condition; define succession.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:LifecycleSpecification",
+    "name": "LifecycleSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored scheme describing lifecycle-stage meanings applicable to products."
+    },
+    "identity_commitment": "Lifecycle scheme purpose and controlled revision lineage; product transitions do not change the scheme identity.",
+    "review_question": "Identify whether instances are reusable models or actual histories of one Product.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:LifecycleStageSpecification",
+    "name": "LifecycleStageSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A scoped definition of a lifecycle stage within one lifecycle specification."
+    },
+    "identity_commitment": "Owning lifecycle scheme and authored stage definition; reuse under another scheme creates a scoped definition.",
+    "review_question": "For «Phase», identify the Product identity provider, intrinsic criterion and complete disjoint partition; otherwise model a stage category.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductStatusRecord",
+    "name": "ProductStatusRecord",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A dated contextual assertion assigning a status value to one product."
+    },
+    "identity_commitment": "Subject product, assessment context, assertion time and provenance; a new assessment is a new record.",
+    "review_question": "Specify bearer, value, changes and identity of status assignment; «Quality» requires characterization, «Phase» requires intrinsic partition.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:DependencySpecification",
+    "name": "DependencySpecification",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored claim that one product depends on an identified product, capability or resource under a stated dependency condition."
+    },
+    "identity_commitment": "Dependent product, target binding and dependency condition baseline; retargeting creates a successor specification.",
+    "review_question": "Name all participants, truthmaker and existential dependence; «Relator» requires mediations to at least two individuals.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductFamilyReference",
+    "name": "ProductFamilyReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact identifying a product-family target governed by an external owner. Its product-family purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; product-family is part of its fixed purpose set.",
+    "review_question": "Define reference identity, external target IRI, source/version and whether reference can change target.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductLineReference",
+    "name": "ProductLineReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact identifying an externally governed product line. Its product-line purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; product-line is part of its fixed purpose set.",
+    "review_question": "Define local reference identity and external ProductLine target/source/version.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductVariantReference",
+    "name": "ProductVariantReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact identifying an externally governed product variant. Its product-variant purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; product-variant is part of its fixed purpose set.",
+    "review_question": "Define local reference identity and ProductVariant target/configuration version.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:PortfolioEntry",
+    "name": "PortfolioEntry",
+    "scope": "LOCAL",
+    "domain": "Product Portfolio",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed entry in one portfolio, optionally referencing a product while a broader target binding is being specified."
+    },
+    "identity_commitment": "Entry creation within its owner portfolio; a move to another portfolio creates a new entry.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:VisionStatement",
+    "name": "VisionStatement",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored statement articulating intended product direction, experience and value."
+    },
+    "identity_commitment": "Authored vision purpose and revision lineage; a materially different intended direction requires a successor statement.",
+    "review_question": "Specify statement identity/version, author and product bearer; distinguish description from a future situation.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:GoalSpecification",
+    "name": "GoalSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored ConditionSpecification whose constitutive content includes desired product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+    },
+    "identity_commitment": "Inherits ConditionSpecification identity. Desired product condition is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Decide whether instance is a governed statement with its own ID or an intention borne by an agent; trace targets to Outcome.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:OutcomeSpecification",
+    "name": "OutcomeSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored ConditionSpecification whose constitutive content includes expected measurable product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+    },
+    "identity_commitment": "Inherits ConditionSpecification identity. Expected measurable product condition is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Separate expected target from actual observation/event and specify outcome identity across measures.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductMetricReference",
+    "name": "ProductMetricReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact binding a product measurement context to an externally governed metric. Its product-metric purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; product-metric is part of its fixed purpose set.",
+    "review_question": "Define local reference identity and external Metric ownership; distinguish metric definition from measured value.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:InitiativeSpecification",
+    "name": "InitiativeSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored plan coordinating goals, scope and expected product outcomes."
+    },
+    "identity_commitment": "One governed initiative plan survives rescheduling; executed work is a separate occurrence.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProblemStatement",
+    "name": "ProblemStatement",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed statement artifact describing a candidate or evidenced problem."
+    },
+    "identity_commitment": "Same authored problem formulation and revision lineage even if the claim is refuted.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:OpportunityStatement",
+    "name": "OpportunityStatement",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed statement artifact identifying a possible value improvement in context."
+    },
+    "identity_commitment": "Same formulated opportunity and assessment context; realized value is separate.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:HypothesisSpecification",
+    "name": "HypothesisSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored testable-claim artifact fixing its claim, intended scope and refutation or support conditions."
+    },
+    "identity_commitment": "Claim content and intended scope are constitutive; substantive claim change creates a new artifact. Evidential status may change.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:SolutionHypothesisSpecification",
+    "name": "SolutionHypothesisSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A hypothesis specification whose constitutive claim concerns a proposed solution addressing a problem."
+    },
+    "identity_commitment": "Inherits HypothesisSpecification identity; solution-related content is essential to this artifact.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:DecisionRecord",
+    "name": "DecisionRecord",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An immutable record of a product decision, its considered alternatives, rationale and provenance."
+    },
+    "identity_commitment": "Decision occurrence reference and record provenance; a later decision is another record.",
+    "review_question": "Distinguish decision act from record; define record identity and change/version policy.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:DecisionCriterionSpecification",
+    "name": "DecisionCriterionSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored rule or criterion specification used to appraise product alternatives."
+    },
+    "identity_commitment": "Criterion meaning and appraisal context baseline; applying it repeatedly does not create a new specification.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProblemSolutionFitAssessment",
+    "name": "ProblemSolutionFitAssessment",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A dated assessment record about the proposed fit of a problem statement and a solution specification."
+    },
+    "identity_commitment": "Problem-solution pair, assessment context, time and provenance; conclusions can be positive, negative or inconclusive.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductMarketFitAssessment",
+    "name": "ProductMarketFitAssessment",
+    "scope": "LOCAL",
+    "domain": "Product Strategy",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A dated assessment record about a product in an explicitly identified market context."
+    },
+    "identity_commitment": "Product, market context, assessment time and provenance; repeated assessment creates another record.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ScopeSpecification",
+    "name": "ScopeSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored specification of included, excluded and deferred product scope."
+    },
+    "identity_commitment": "Scope boundary baseline and governed revision lineage; delivered content is a separate fact.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:CapabilitySpecification",
+    "name": "CapabilitySpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A version-scoped specification of an intended ability, irrespective of its implementation."
+    },
+    "identity_commitment": "Same version-scoped intended ability contract; changed contract requires a new baseline.",
+    "review_question": "Identify concrete Product bearer and necessary dependence for «Mode»; if merely planned, model capability specification separately.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:SolutionSpecification",
+    "name": "SolutionSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored product-level solution proposal describing how problems or opportunities are intended to be addressed."
+    },
+    "identity_commitment": "Solution proposal purpose and baseline; an alternative solution is a different artifact.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:FeatureSpecification",
+    "name": "FeatureSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored functional-unit specification linking intended behavior, user value and acceptance criteria."
+    },
+    "identity_commitment": "Authored functional contract and revision lineage; deployment or enabling does not create/change its identity.",
+    "review_question": "Clarify implemented functionality vs specification, independent identity, and real parthood in a Product.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:VerticalSliceSpecification",
+    "name": "VerticalSliceSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored end-to-end increment specification connecting intended value to coherent behavior and acceptance conditions."
+    },
+    "identity_commitment": "Value-bearing slice contract and baseline; runtime implementation is distinct.",
+    "review_question": "Specify slice identity and whether decomposedInto denotes product parthood, planned work or specification refinement.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:EnablerSpecification",
+    "name": "EnablerSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored supporting-work specification intended to enable a feature or capability specification."
+    },
+    "identity_commitment": "Supporting-work objective and baseline; completion does not change specification identity.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:UserStorySpecification",
+    "name": "UserStorySpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored user-centered narrative specifying a desired interaction goal and expected value."
+    },
+    "identity_commitment": "Narrative goal, intended actor context and baseline; wording edits do not change the constitutive story.",
+    "review_question": "Specify ID and version; preserve distinction from actual user action and Requirement.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:RequirementSpecification",
+    "name": "RequirementSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored ConditionSpecification whose constitutive content includes required product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+    },
+    "identity_commitment": "Inherits ConditionSpecification identity. Required product condition is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Ground persistent requirement identity across edits and copies; distinguish normative statement from required behavior.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:FunctionalRequirementSpecification",
+    "name": "FunctionalRequirementSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A requirement specification with an essential normative commitment about intended behavior or functionality."
+    },
+    "identity_commitment": "Inherits RequirementSpecification identity; the behavior commitment is constitutive of this clause.",
+    "review_question": "First establish Requirement's identity provider; justify that functional classification is rigid; decide overlap with QualityRequirement.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:QualityRequirementSpecification",
+    "name": "QualityRequirementSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A requirement specification with an essential normative commitment about a measurable quality under defined conditions."
+    },
+    "identity_commitment": "Inherits RequirementSpecification identity; changing the constitutive quality commitment creates a successor clause.",
+    "review_question": "First establish same identity provider and rigid classification; decide overlap/completeness of the two categories.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ConstraintSpecification",
+    "name": "ConstraintSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored ConditionSpecification whose constitutive content includes restriction constitutive to the authored specification. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+    },
+    "identity_commitment": "Inherits ConditionSpecification identity. Restriction constitutive to the authored specification is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:BusinessRuleReference",
+    "name": "BusinessRuleReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact to an externally governed business rule. Its business-rule purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; business-rule is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:AcceptanceCriterionSpecification",
+    "name": "AcceptanceCriterionSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored ConditionSpecification whose constitutive content includes condition used in the authored acceptance contract. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+    },
+    "identity_commitment": "Inherits ConditionSpecification identity. Condition used in the authored acceptance contract is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Specify criterion ID, owner and scope; separate statement from observed satisfaction.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:RequirementScenarioSpecification",
+    "name": "RequirementScenarioSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored ScenarioSpecification whose constitutive content includes requirement/acceptance illustration. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence."
+    },
+    "identity_commitment": "Inherits ScenarioSpecification identity. Requirement/acceptance illustration is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Identify scenario across changes and distinguish from TestScenario and enacted behavior.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:RequirementSourceReference",
+    "name": "RequirementSourceReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local provenance reference artifact identifying an origin used in deriving a requirement specification. Its requirement-source purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; requirement-source is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:RequirementRationaleStatement",
+    "name": "RequirementRationaleStatement",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored justification statement explaining why a requirement specification is needed."
+    },
+    "identity_commitment": "Justification content and its applicability context; evaluation of its truth is separate.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ValidationFindingRecord",
+    "name": "ValidationFindingRecord",
+    "scope": "LOCAL",
+    "domain": "Product Requirement",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A FindingRecord whose constitutive subject matter includes a requirement specification."
+    },
+    "identity_commitment": "Inherits FindingRecord identity. One authored finding may concern both interface use and a requirement without becoming two records.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:PersonaSpecification",
+    "name": "PersonaSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored model of a user archetype, fixing a behavioral profile, population/use context and research provenance; not a person, group of actual users or their temporary role."
+    },
+    "identity_commitment": "The same authored archetype-model baseline with fixed behavioral interpretation, population/use context and research provenance. A display-name change or file copy preserves it; changing constitutive profile or scope creates a successor. Neither a database ID nor an actual user supplies its identity.",
+    "review_question": "Specify archetype artifact identity/evidence; actual human users would need a different type.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:UserRoleSpecification",
+    "name": "UserRoleSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A designed specification of a user participation context, responsibilities and permissions."
+    },
+    "identity_commitment": "Defined participation purpose and governed specification lineage. Actual users have their own identity.",
+    "review_question": "If «Role», model Person/user identity provider and necessary relational context; if definition, give artifact identity.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:JourneySpecification",
+    "name": "JourneySpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored structured experience model containing scoped stage specifications."
+    },
+    "identity_commitment": "Same authored experience-model lineage; actual user journeys are separate occurrences.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:JourneyStageSpecification",
+    "name": "JourneyStageSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored constituent stage specification owned by exactly one JourneySpecification."
+    },
+    "identity_commitment": "Owner journey and authored stage lineage; reuse in another journey creates a scoped copy.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TouchpointSpecification",
+    "name": "TouchpointSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A design artifact specifying a point of contact, its channel, purpose and interaction context."
+    },
+    "identity_commitment": "Same authored contact contract across revisions; an actual contact is a distinct event.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:UserFlowSpecification",
+    "name": "UserFlowSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored sequence model of user actions, decisions and transitions."
+    },
+    "identity_commitment": "Same authored flow lineage; performed traversals have distinct occurrence identities.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:InteractionStepSpecification",
+    "name": "InteractionStepSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A scoped action or decision-step specification in one user-flow design."
+    },
+    "identity_commitment": "Owning flow and authored step lineage; moving to another flow creates a scoped copy.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:InformationArchitectureSpecification",
+    "name": "InformationArchitectureSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored model of information organization, hierarchy and navigation."
+    },
+    "identity_commitment": "Information-organization purpose and controlled model lineage.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ScreenSpecification",
+    "name": "ScreenSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored view specification with layout, interaction and state commitments."
+    },
+    "identity_commitment": "Same designed view contract through governed revisions; rendered screens are different realizations.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:UIStateSpecification",
+    "name": "UIStateSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A scoped specification of a screen condition and its expected presentation or interaction."
+    },
+    "identity_commitment": "Owning screen specification and condition baseline.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:UsabilityFindingRecord",
+    "name": "UsabilityFindingRecord",
+    "scope": "LOCAL",
+    "domain": "Product Experience",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A FindingRecord whose constitutive subject matter includes a user-flow or screen specification."
+    },
+    "identity_commitment": "Inherits FindingRecord identity. One authored finding may concern both interface use and a requirement without becoming two records.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:Roadmap",
+    "name": "Roadmap",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed planning-projection artifact referencing canonical product knowledge."
+    },
+    "identity_commitment": "Projection purpose and stewardship lineage, persisting across rescheduling.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:RoadmapEntry",
+    "name": "RoadmapEntry",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A scoped entry in one roadmap referencing intended initiatives, features or delivery targets."
+    },
+    "identity_commitment": "Owning roadmap and entry creation lineage; moving owners creates a successor entry.",
+    "review_question": "Define entry ID across target/schedule changes and distinguish from the actual target item.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:MilestoneSpecification",
+    "name": "MilestoneSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored target-condition specification marking intended planning progress."
+    },
+    "identity_commitment": "Target condition and planning context baseline.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:PriorityAssessment",
+    "name": "PriorityAssessment",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A dated contextual ranking assessment recording a rank for a roadmap entry within a named comparison set and scale."
+    },
+    "identity_commitment": "Subject, comparison set, assessor, scale and assessment time.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:PrioritizationCriterionSpecification",
+    "name": "PrioritizationCriterionSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A decision-criterion specification whose constitutive purpose is to justify or compute a planning rank."
+    },
+    "identity_commitment": "Inherits DecisionCriterionSpecification identity; prioritization purpose is essential.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:PlanningHorizonDefinition",
+    "name": "PlanningHorizonDefinition",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed term definition specifying the meaning of a planning-horizon label in a named scheme."
+    },
+    "identity_commitment": "Scheme and term-definition lineage; the same displayed label in another scheme is distinct.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TargetWindowAssignment",
+    "name": "TargetWindowAssignment",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A planning record assigning a bounded target interval to one roadmap entry."
+    },
+    "identity_commitment": "Subject entry, interval-assignment episode and provenance.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ConfidenceAssessment",
+    "name": "ConfidenceAssessment",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A dated assessment of planning confidence with explicit subject, assessor, evidence context and scale."
+    },
+    "identity_commitment": "Subject, assessor, context and assessment time; revised estimates are new records.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:CommitmentLevelDefinition",
+    "name": "CommitmentLevelDefinition",
+    "scope": "LOCAL",
+    "domain": "Product Roadmap",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed term definition for a planning-commitment label within a named scheme."
+    },
+    "identity_commitment": "Scheme and term-definition lineage.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ReleaseSpecification",
+    "name": "ReleaseSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed specification of a planned delivery increment and its intended contents."
+    },
+    "identity_commitment": "Delivery-increment purpose and specification baseline.",
+    "review_question": "Choose package/snapshot, act of publishing, or record; specify release ID, temporal boundary and version relation.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:DeliveryWorkItem",
+    "name": "DeliveryWorkItem",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed work-item artifact about intended delivery scope and its referenced functional specifications."
+    },
+    "identity_commitment": "Same work-item creation lineage across status changes; it is not identical to the delivered feature.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ChangeRecord",
+    "name": "ChangeRecord",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A dated record describing an asserted modification to an identified product artifact or state."
+    },
+    "identity_commitment": "Affected subject, modification occurrence reference and record provenance.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ChangeProposalSpecification",
+    "name": "ChangeProposalSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored proposal specifying a desired change and its intended target."
+    },
+    "identity_commitment": "Proposed delta, target context and baseline; approval state may change.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:FeatureFlagSpecification",
+    "name": "FeatureFlagSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A specification of a named feature-activation control and its intended scoping policy."
+    },
+    "identity_commitment": "Control purpose, governed name and scope-policy baseline.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:DeliveryStatusRecord",
+    "name": "DeliveryStatusRecord",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An immutable dated report assigning a delivery-status value to one Release."
+    },
+    "identity_commitment": "Same subject, observation/report time and provenance; a later assessment is another record.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ReleaseEvidenceRecord",
+    "name": "ReleaseEvidenceRecord",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An evidence-attribution record whose constitutive assessment purpose is release."
+    },
+    "identity_commitment": "Inherits EvidenceAttributionRecord identity. Purpose belongs to the recorded claim, not a temporary role of its carrier.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TaskReference",
+    "name": "TaskReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact identifying an externally governed implementation task. Its implementation-task purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; implementation-task is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TestScenario",
+    "name": "TestScenario",
+    "scope": "LOCAL",
+    "domain": "Product Test",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A ScenarioSpecification describing a situation to verify specified behavior or conditions. It can be detailed enough to also be a TestCase; its described situation is not a completed TestExecution."
+    },
+    "identity_commitment": "Inherits ScenarioSpecification identity. Verification situation is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Define scenario ID and ensure it is a specification rather than an occurring situation.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TestCase",
+    "name": "TestCase",
+    "scope": "LOCAL",
+    "domain": "Product Test",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A ScenarioSpecification that includes an operational test procedure and expected conditions. Repeated executions reuse the specification and remain distinct events."
+    },
+    "identity_commitment": "Inherits ScenarioSpecification identity. Operational test procedure is fixed in this authored baseline; compatible facets can overlap.",
+    "review_question": "Define test-case identity and revision semantics; separate its executions.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TestExecution",
+    "name": "TestExecution",
+    "scope": "LOCAL",
+    "domain": "Product Test",
+    "stereotype": "event",
+    "restrictedTo": [
+      "event"
+    ],
+    "definition": {
+      "en": "A concluded real attempt to carry out one TestCase against one declared ProductRealization, including a setup-only aborted attempt or an unsuccessful exercised test, with one consolidated result. A planned run is not an occurrence. Only the evidenced code-exercised subset is a candidate for alignment to ROoST Test Execution."
+    },
+    "identity_commitment": "Same occurrence and participants; repetition is a new event, even with equal inputs/results.",
+    "review_question": "Represent occurrence, participants, time and TestCase specification using an event-capable native model; determine tooling coverage.",
+    "independent_acceptance": false,
+    "operational_event_profile": {
+      "identity": "A real attempt occurrence, not its identifier, timestamp or report. Equal inputs/times do not identify repeated attempts. Replay of the same recorded graph is not another attempt.",
+      "stage_partition": [
+        "setup_only",
+        "test_exercised"
+      ],
+      "target_binding": "Exactly one declared target; binding alone does not assert actual participation.",
+      "unknown_time_policy": "A start may be explicitly unknown. End is required by this admitted concluded-reporting profile. Unknown end is outside this admission scope, not an invented timestamp.",
+      "time_envelope": "Offset-aware xsd:dateTime values, real calendar dates, CE years 0001..9999, <=6 fractional digits; not a claim to accept the entire XSD lexical space.",
+      "historical_policy": "Accepted occurrence bindings are immutable in this profile. Later knowledge is an append-only observation, never an in-place alteration of a past occurrence.",
+      "roost_policy": "No equivalentClass/sameAs bridge. Candidate correspondence only for dynamic, code-exercised cases with explicit code and causal/source evidence.",
+      "full_UFO_B_semantics": false,
+      "independent_acceptance": false
+    }
+  },
+  {
+    "id": "IC:TestResult",
+    "name": "TestResult",
+    "scope": "LOCAL",
+    "domain": "Product Test",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "The single consolidated outcome record for one concluded TestExecution in this reporting profile. Recording may occur after the attempt ends; this association does not assert creation during the attempt."
+    },
+    "identity_commitment": "Same recorded execution outcome and provenance; a copy is the same record representation, not another test.",
+    "review_question": "Set result-record identity/provenance and distinguish observed outcome/value from the recording artifact.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:VerificationEvidenceRecord",
+    "name": "VerificationEvidenceRecord",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An evidence-attribution record whose constitutive assessment purpose is verification."
+    },
+    "identity_commitment": "Inherits EvidenceAttributionRecord identity. Purpose belongs to the recorded claim, not a temporary role of its carrier.",
+    "review_question": "Determine evidence identity and whether verification is essential or a contextual use; if «Role», add identity provider and dependency.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ValidationEvidenceRecord",
+    "name": "ValidationEvidenceRecord",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An evidence-attribution record whose constitutive assessment purpose is validation."
+    },
+    "identity_commitment": "Inherits EvidenceAttributionRecord identity. Purpose belongs to the recorded claim, not a temporary role of its carrier.",
+    "review_question": "Determine evidence identity and whether the same record may support both validation and verification.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TestSuiteSpecification",
+    "name": "TestSuiteSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Test",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed test-organization specification containing references to test cases."
+    },
+    "identity_commitment": "Same governed suite lineage survives case membership changes.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TestDataReference",
+    "name": "TestDataReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact identifying a versioned dataset used in test design or execution. Its test-data purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; test-data is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:PositioningStatement",
+    "name": "PositioningStatement",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored statement specifying intended product perception for a target audience relative to alternatives."
+    },
+    "identity_commitment": "Audience, positioning purpose and statement lineage.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:MessagingSpecification",
+    "name": "MessagingSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored specification of audience-directed messages and supporting claims."
+    },
+    "identity_commitment": "Communication purpose, audience context and message-set lineage.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:GoToMarketSpecification",
+    "name": "GoToMarketSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed strategy specification linking positioning, audiences and intended market-entry activity."
+    },
+    "identity_commitment": "Strategy purpose, scope and governed baseline.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:LaunchSpecification",
+    "name": "LaunchSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A plan specification for introducing a product or change to an intended audience."
+    },
+    "identity_commitment": "Introduction purpose, audience context and plan baseline.",
+    "review_question": "Distinguish actual activity, campaign/plan and record; provide temporal identity and participants.",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:MarketingGoalSpecification",
+    "name": "MarketingGoalSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A goal specification whose constitutive desired result concerns product marketing or market introduction."
+    },
+    "identity_commitment": "Inherits GoalSpecification identity; marketing subject matter is essential to the goal formulation.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TargetMarketReference",
+    "name": "TargetMarketReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact to an externally governed target market. Its target-market purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; target-market is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:TargetSegmentReference",
+    "name": "TargetSegmentReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local reference artifact to an externally governed segment in an identified segmentation context. Its target-segment purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; target-segment is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:CompetitiveNarrative",
+    "name": "CompetitiveNarrative",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored narrative presenting scoped differentiation claims and their evidential references."
+    },
+    "identity_commitment": "Comparison purpose, intended audience and narrative lineage.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:MarketingInsightReference",
+    "name": "MarketingInsightReference",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A governed local reference artifact with one canonical target and an explicitly supplied owner identifier. Its marketing-insight purpose is constitutive to the authored reference record, not a temporary role of the target."
+    },
+    "identity_commitment": "Inherits ExternalReferenceRecord identity; marketing-insight is part of its fixed purpose set.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:AcquisitionHypothesisSpecification",
+    "name": "AcquisitionHypothesisSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A hypothesis specification whose constitutive claim concerns acquiring intended users or customers."
+    },
+    "identity_commitment": "Inherits HypothesisSpecification identity; acquisition claim content is essential. It may also concern adoption.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:AdoptionHypothesisSpecification",
+    "name": "AdoptionHypothesisSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Marketing",
+    "stereotype": "subkind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A hypothesis specification whose constitutive claim concerns adoption barriers or adoption behavior."
+    },
+    "identity_commitment": "Inherits HypothesisSpecification identity; adoption claim content is essential to the authored artifact.",
+    "review_question": "",
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Business:BusinessRule",
+    "name": "BusinessRule",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Business."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:EvidenceLayer:Evidence",
+    "name": "Evidence",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by EvidenceLayer."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Evidence",
+      "allowed_target_kinds": [
+        "supporting_evidence"
+      ],
+      "operational_definition": "An external item used as support or challenge relative to a contextual claim. The item, its attribution and the claim are distinct; general PROV Entity does not establish an Evidence class or its owner.",
+      "owner_class_locator": "",
+      "owner_alignment": "OPEN",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:Market:CustomerSegment",
+    "name": "CustomerSegment",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Market:Market",
+    "name": "Market",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Market:MarketInsight",
+    "name": "MarketInsight",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Market Insight",
+      "allowed_target_kinds": [
+        "market_insight"
+      ],
+      "operational_definition": "A source-attributed interpretation about a market or customer context, distinct from its raw signals and from product-management ManagementInsight. Market concept ownership is retained; no undeclared class IRI is invented.",
+      "owner_class_locator": "",
+      "owner_alignment": "OPEN",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:Market:MarketSegment",
+    "name": "MarketSegment",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:ProductLine:ProductFamily",
+    "name": "ProductFamily",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ProductLine."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:ProductLine:ProductLine",
+    "name": "ProductLine",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ProductLine."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:ProductLine:ProductVariant",
+    "name": "ProductVariant",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ProductLine."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:ProductManagement:Metric",
+    "name": "Metric",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ProductManagement."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Metric Definition",
+      "allowed_target_kinds": [
+        "metric_definition"
+      ],
+      "operational_definition": "An externally governed versioned measure definition with formula, unit, population and interpretation context; not an observed value or target. DQV is a data-quality example only, not a universal measure vocabulary.",
+      "owner_class_locator": "",
+      "owner_alignment": "OPEN",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:Business:BusinessCapability",
+    "name": "BusinessCapability",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Business."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Business:ValueProposition",
+    "name": "ValueProposition",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Business."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Business:BusinessGoal",
+    "name": "BusinessGoal",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Business."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Business:Service",
+    "name": "Business Service",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Business."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:ProductLine:ProductConfiguration",
+    "name": "ProductConfiguration",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ProductLine."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:ExternalUnresolved:Evidence",
+    "name": "Evidence",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ExternalUnresolved."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "External Evidence",
+      "allowed_target_kinds": [
+        "supporting_evidence"
+      ],
+      "operational_definition": "An external evidence item identified by its own source and version. This opaque boundary is not automatically identical to EvidenceLayer Evidence, a carrier, a claim or an attribution record.",
+      "owner_class_locator": "",
+      "owner_alignment": "OPEN",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:UXResearch:User_Mental_Model",
+    "name": "User Mental Model",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by UXResearch."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Documented User Mental Model",
+      "allowed_target_kinds": [
+        "mental_model_representation"
+      ],
+      "operational_definition": "An external documented representation of how users understand or expect a product to work; not a user mental state.",
+      "owner_class_locator": "",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:ExternalUnresolved:Test_Script",
+    "name": "Test Script",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ExternalUnresolved."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Test Script or Manual Procedure",
+      "allowed_target_kinds": [
+        "executable_code",
+        "manual_procedure"
+      ],
+      "operational_definition": "A typed external test instruction artifact. executable_code denotes runnable test code; manual_procedure denotes documented human steps. The two must not be conflated.",
+      "roost_candidate_kind": "executable_code",
+      "roost_concept_locator": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+      "locator_kind": "DOCUMENT_CONCEPT_LABEL_ONLY_NOT_VERIFIED_MACHINE_CLASS_IRI",
+      "owner_class_locator": "",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED",
+      "roost_concept_label": "Test Script"
+    }
+  },
+  {
+    "id": "EXT:ExternalUnresolved:Test_Plan",
+    "name": "Test Plan",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ExternalUnresolved."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Test Plan",
+      "allowed_target_kinds": [
+        "test_plan_document"
+      ],
+      "operational_definition": "An external versioned planning document that describes testing scope, approach and organization; not an activity, a suite or a result.",
+      "roost_source": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+      "roost_concept_label": "Test Plan",
+      "owner_class_locator": "",
+      "machine_alignment": "NOT_LOCKED",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:ExternalUnresolved:Configuration",
+    "name": "Configuration",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by ExternalUnresolved."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Test Dataset Configuration Description",
+      "allowed_target_kinds": [
+        "test_dataset_configuration"
+      ],
+      "operational_definition": "An immutable versioned description of test dataset settings or generation parameters cited by TestDataReference; not the dataset, the testing environment or a product-line assignment.",
+      "scope_decision": "Resolve the existing referencesDatasetConfiguration relation to dataset configuration only; an environment configuration would require a separate justified relation.",
+      "owner_class_locator": "",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:Market:Need",
+    "name": "Need",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Market:Pain",
+    "name": "Pain",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Customer Pain Point",
+      "allowed_target_kinds": [
+        "customer_pain_point"
+      ],
+      "operational_definition": "A source-attributed adverse consequence or obstacle in a specified customer context. It is distinct from a need, demand, problem record or medical pain; no class in the locked Market core is fabricated.",
+      "owner_class_locator": "",
+      "owner_alignment": "OPEN",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "EXT:Market:Competitor_Alternative",
+    "name": "Competitive Referent",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only target stub owned by Market."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false,
+    "current_boundary_contract": {
+      "display_label": "Competitive Referent",
+      "allowed_target_kinds": [
+        "competitor_role",
+        "alternative_assertion"
+      ],
+      "operational_definition": "Either a competitor role instance with a focal competitor and market context, or a contextual assertion relating two alternatives for a need at a time. This boundary handle is not a union imported class.",
+      "competitor_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#CompetitorRole",
+      "alternative_property_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#alternativeTo",
+      "owner_repository": "ArazSaieArasi3/market-ontology",
+      "owner_ref": "e309f00adb812b37b6b6d64ec83a1db89cc80995",
+      "required_context": [
+        "market",
+        "focal_product",
+        "need",
+        "valid_time"
+      ],
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED"
+    }
+  },
+  {
+    "id": "IC:ProductRealization",
+    "name": "ProductRealization",
+    "scope": "LOCAL",
+    "domain": "Product Realization",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A concrete, causally integrated computing-system artifact configured to enact one fixed product-version baseline. It is the deployed functional whole, not its record, hosting machine, execution event or deployment interval."
+    },
+    "identity_commitment": "The same constitutively organized deployment lineage and fixed version baseline, sustained by nonbranching causal continuity of the configured functional whole. Restart or host replacement preserves identity only when that continuity is evidenced. Version change, independent duplication or destruction followed by reconstruction creates another realization. A retained deployment identifier alone does not establish continuity.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ProductCapability",
+    "name": "ProductCapability",
+    "scope": "LOCAL",
+    "domain": "Product Realization",
+    "stereotype": "mode",
+    "restrictedTo": [
+      "intrinsic-mode"
+    ],
+    "definition": {
+      "en": "An actual intrinsic disposition of one concrete ProductRealization as a configured functional whole. Intended behavior, successful execution, a specification and a machine label are not the disposition."
+    },
+    "identity_commitment": "The same bearer and continuous underlying disposition. A new bearer requires a distinct capability; a preserved bearer is insufficient if the underlying disposition is destroyed and recreated. Similar functionality or identifiers do not prove disposition continuity.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Architecture:Component",
+    "name": "Component",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only Architecture target; full external IRI and ontology import not verified."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Architecture:Service",
+    "name": "Service",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only Architecture target; full external IRI and ontology import not verified."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Architecture:ArchitectureElement",
+    "name": "ArchitectureElement",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only Architecture target; full external IRI and ontology import not verified."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "EXT:Architecture:Interface",
+    "name": "Interface",
+    "scope": "EXTERNAL_OPAQUE",
+    "domain": null,
+    "stereotype": null,
+    "restrictedTo": [],
+    "definition": {
+      "en": "Reference-only Architecture target; full external IRI and ontology import not verified."
+    },
+    "identity_commitment": null,
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:EvidenceArtifact",
+    "name": "EvidenceArtifact",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "category",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An abstract category of information artifacts eligible to carry evidence in this bounded profile."
+    },
+    "identity_commitment": "Identity comes from TestResult, UsabilityFindingRecord, ValidationFindingRecord or ChangeRecord.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:AssessmentClaim",
+    "name": "AssessmentClaim",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored assessment-claim artifact fixing subject, criterion, scope and the proposition under consideration."
+    },
+    "identity_commitment": "Same authored claim statement, subject, criterion baseline and applicability context. A constitutive change creates a successor claim; equal strings do not identify separate authoring records.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:EvidenceAttributionRecord",
+    "name": "EvidenceAttributionRecord",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An information record documenting an assessor's attribution of one carrier to one assessment claim."
+    },
+    "identity_commitment": "The same authored attribution statement and record provenance. Withdrawal changes acceptance metadata without destroying this record or its carrier.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:FindingRecord",
+    "name": "FindingRecord",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored observation or issue record with a fixed finding statement, subject bindings and provenance."
+    },
+    "identity_commitment": "One authored finding statement with its observation provenance and subject bindings; storage copies do not create new findings. Adding a constitutive subject or changing the statement creates a successor record.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ExternalReferenceRecord",
+    "name": "ExternalReferenceRecord",
+    "scope": "LOCAL",
+    "domain": "Product Reference",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "A local information record of a fixed binding to a separately governed referent, with recorded authority, provenance and constitutive purpose set."
+    },
+    "identity_commitment": "One authored binding record with fixed referent, recorded authority, provenance, constitutive purpose set and any stated version/context. A copy or changed display label preserves identity; retargeting or changing constitutive content creates a successor. Equal target and authority alone do not make two records identical.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ConditionSpecification",
+    "name": "ConditionSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored semantic condition unit with a fixed proposition, applicability context and authoring provenance; distinct from a stakeholder intention, observed result or containing scenario."
+    },
+    "identity_commitment": "The same authored condition unit, semantic condition, applicability context and authoring provenance. Equivalent serialization or editorial wording preserves it; changing the constitutive condition, scope or modality creates a successor baseline. Equal strings alone do not identify independently authored units.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:ScenarioSpecification",
+    "name": "ScenarioSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Definition",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored structured situation description fixing context, preconditions, ordered stimulus/action description and expected condition units; distinct from each actual occurrence."
+    },
+    "identity_commitment": "The same authored structured scenario baseline with fixed context, precondition meaning, ordered action meaning, expected condition units and provenance. A copy or wording correction preserves it; a constitutive change creates a successor. Its constituent condition is not identical to the containing scenario.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:AssessmentContextSpecification",
+    "name": "AssessmentContextSpecification",
+    "scope": "LOCAL",
+    "domain": "Product Evidence",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An authored specification fixing the applicability boundary of an assessment, including its stated population, environment and temporal conditions, with optional version and scenario bindings."
+    },
+    "identity_commitment": "Same authored applicability boundary and provenance. A constitutive scope or version change creates a successor; an equivalent serialization does not. Equal descriptions alone do not identify independently authored contexts.",
+    "review_question": null,
+    "independent_acceptance": false
+  },
+  {
+    "id": "IC:DeliveryWorkItemStatusRecord",
+    "name": "DeliveryWorkItemStatusRecord",
+    "scope": "LOCAL",
+    "domain": "Product Delivery",
+    "stereotype": "kind",
+    "restrictedTo": [
+      "functional-complex"
+    ],
+    "definition": {
+      "en": "An immutable dated information record assigning a status code under a stated scheme to one delivery work item, optionally qualified by one product version."
+    },
+    "identity_commitment": "Same work-item subject, observation/report time, version qualifier if present, status statement and provenance. A later or corrected report is another record; a serialization copy is not. It does not inherit release-status record identity.",
+    "review_question": null,
+    "independent_acceptance": false
+  }
+]

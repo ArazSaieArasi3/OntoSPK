@@ -1,0 +1,4 @@
+PREFIX prod: <urn:productium:specification-profile:>
+PREFIX assess: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX t: <urn:orsd:v04:synthetic:>
+SELECT DISTINCT ?product ?version ?scope ?boundary ?statement WHERE { ?product prod:hasVersion ?version . ?version assess:versionScope ?scope . { ?scope assess:includedStatement ?statement . BIND("included" AS ?boundary) } UNION { ?scope assess:excludedStatement ?statement . BIND("excluded" AS ?boundary) } UNION { ?scope assess:deferredStatement ?statement . BIND("deferred" AS ?boundary) } }

@@ -1,0 +1,23 @@
+{
+  "version": "0.43.0",
+  "date": "2026-10-16",
+  "tool_version": "ROBOT version 1.9.11",
+  "tool_sha256": "53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26",
+  "tool_source": "https://github.com/ontodev/robot/releases/download/v1.9.11/robot.jar",
+  "reasoner": "HermiT",
+  "logical_axioms_unchanged": true,
+  "explanatory_annotation_changes": 2,
+  "reasoner_cases": 13,
+  "profile_passes": 13,
+  "expected_consistent": 8,
+  "expected_inconsistent": 5,
+  "passed": 13,
+  "closed_world_contrast_controls": 4,
+  "contrast_passed": 4,
+  "occurrence_projection": {
+    "input_triples": 46,
+    "logical_triples": 37,
+    "preserved_metadata_triples": 9
+  },
+  "scope": "Full retained operational TBox with selected synthetic populations; no complete UFO modal/causal formalization, independent acceptance or production claim."
+}

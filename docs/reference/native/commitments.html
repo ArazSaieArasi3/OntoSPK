@@ -1,0 +1,788 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bounded commitments — OntoSPK</title><link rel="stylesheet" href="../../assets/site.css"><header><strong><a href="../../index.html">OntoSPK</a></strong><div>Software Product Knowledge Ontology · 2.0.0-rc.1 candidate</div><nav><a href="../../index.html">Home</a><a href="../../guide/Home.html">Guide</a><a href="index.html">Conceptual reference</a><a href="../owl/index.html">Logical reference</a><a href="../../downloads/index.html">Downloads</a><a href="../../webvowl/index.html#ontospk">WebVOWL</a></nav></header><main><h1 id="bounded-commitments">Bounded commitments</h1>
+<p>OWL uses open-world semantics with no unique-name assumption. SHACL, SQL and admission policies assess supplied finite records. Operational policies are identified separately from logical axioms.</p>
+<h2 id="id01-one-version-per-productrealization">ID01 — One version per ProductRealization</h2>
+<pre><code class="language-text">forall r: ProductRealization(r) -&gt; exists v: ProductVersion(v) and realizesVersion(r,v)
+</code></pre>
+<pre><code class="language-text">forall r,v1,v2: realizesVersion(r,v1) and realizesVersion(r,v2) -&gt; v1=v2
+</code></pre>
+<pre><code class="language-text">forall x,y: R["ICREL:CP:realizesVersion"](x,y) =&gt; (C["IC:ProductRealization"](x) and C["IC:ProductVersion"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:ProductRealization"](x) =&gt; 1 &lt;= card{y | R["ICREL:CP:realizesVersion"](x,y)} &lt;= 1
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:ProductVersion"](y) =&gt; 0 &lt;= card{x | R["ICREL:CP:realizesVersion"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Exact cardinality 1 on realizesVersion; open-world semantics.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Identity slice retained; newly added to event slice.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Snapshot INSERT maximum plus separate completeness audit; new event SQL count/type checks.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>v0.34 records one stable realization/version binding across admitted events.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: One typed version bound to a realization.</p>
+<p>Counterexample: Two explicitly distinct versions for one realization.</p>
+<p>Limit: Static uniqueness does not prove conformance to a baseline or temporal continuity.</p>
+<h2 id="id02-at-least-one-actual-capability-per-realization">ID02 — At least one actual capability per realization</h2>
+<pre><code class="language-text">forall r: ProductRealization(r) -&gt; exists c: ProductCapability(c) and bearsCapability(r,c)
+</code></pre>
+<pre><code class="language-text">forall x,y: R["ICREL:CP:bearsCapability"](x,y) =&gt; (C["IC:ProductRealization"](x) and C["IC:ProductCapability"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:ProductRealization"](x) =&gt; 1 &lt;= card{y | R["ICREL:CP:bearsCapability"](x,y)}
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:ProductCapability"](y) =&gt; 1 &lt;= card{x | R["ICREL:CP:bearsCapability"](x,y)} &lt;= 1
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>minCardinality 1 on bearsCapability.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Retained identity shape minCount 1.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained schema stores links; lower-bound check is external to draft DDL.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Explorer admits declared capability; new event ledger intentionally excludes this slice.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: A configured whole with one or more actual capabilities.</p>
+<p>Counterexample: An admitted realization with no explicit actual capability.</p>
+<p>Limit: A local restriction to capability-bearing configured wholes; not a universal claim about every broken software installation.</p>
+<h2 id="id03-exactly-one-bearer-per-productcapability">ID03 — Exactly one bearer per ProductCapability</h2>
+<pre><code class="language-text">forall c: ProductCapability(c) -&gt; exists r: ProductRealization(r) and bearsCapability(r,c)
+</code></pre>
+<pre><code class="language-text">forall c,r1,r2: bearsCapability(r1,c) and bearsCapability(r2,c) -&gt; r1=r2
+</code></pre>
+<pre><code class="language-text">forall x,y: R["ICREL:CP:bearsCapability"](x,y) =&gt; (C["IC:ProductRealization"](x) and C["IC:ProductCapability"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:ProductRealization"](x) =&gt; 1 &lt;= card{y | R["ICREL:CP:bearsCapability"](x,y)}
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:ProductCapability"](y) =&gt; 1 &lt;= card{x | R["ICREL:CP:bearsCapability"](x,y)} &lt;= 1
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Exact cardinality 1 on inverse bearsCapability.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Retained identity inverse min/max 1.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained link_bears_capability inverse maximum.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Explorer submit checks persisted bearer; direct-DML hardening of that old runtime is not done here.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: One actual disposition bound to one bearer.</p>
+<p>Counterexample: One capability bound to two explicitly distinct bearers.</p>
+<p>Limit: OWL names do not imply distinct individuals. Explicit SHACL/SQL counts have a different admission meaning. Full modal dependence is not encoded.</p>
+<h2 id="id04-realization-and-capability-continuity">ID04 — Realization and capability continuity</h2>
+<pre><code class="language-text">Policy input: operation, before/after realization, version, capability, continuity evidence and branching.
+</code></pre>
+<pre><code class="language-text">VersionChange or Clone or Recreate or Branching or BrokenSystemContinuity =&gt; RequireDistinctRealization
+</code></pre>
+<pre><code class="language-text">SameRealization and PreservedDispositionContinuity =&gt; RequireSameCapability
+</code></pre>
+<pre><code class="language-text">Unknown continuity =&gt; REVIEW_REQUIRED; no fabricated continuity conclusion
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>No temporal identity inference from the static OWL restrictions.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>No cross-history identity decision.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>No such decision in the 438-table snapshot schema.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Retained v0.22 policy: preserved/broken/unknown evidence, version changes, branching and successors.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Restart with evidenced system and disposition continuity retains both identities.</p>
+<p>Counterexample: Upgrade reuses the prior realization; another bearer reuses the prior capability.</p>
+<p>Limit: Executable decision rules over supplied evidence, not a modal theory. The policy remains separate from combined SQL admission. Product constitutive lineage is an authored identity criterion, not an OWL key.</p>
+<h2 id="id05-do-not-infer-identity-from-equal-identifiers-or-timestamps">ID05 — Do not infer identity from equal identifiers or timestamps</h2>
+<pre><code class="language-text">Equal(recordedTimestamp(e1),recordedTimestamp(e2)) does not entail e1=e2.
+</code></pre>
+<pre><code class="language-text">Reuse of an identifier does not entail continuous real-world identity.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>No universal unique-name or event-key claim.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Record counts are graph constraints, not event individuation.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Primary keys identify records, not real-world occurrences.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Distinct events may share time/case/realization; separate result IDs required.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Distinct attempts can have the same timestamp and inputs.</p>
+<p>Counterexample: Treat a repeated record as a newly observed occurrence.</p>
+<p>Limit: SQL keys identify records. They do not independently individuate real-world events.</p>
+<h2 id="ev01-hasresult-inverse-recordsexecution-endpoint-types-and-native-multiplicities">EV01 — hasResult / inverse recordsExecution endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall e,r: hasResult(e,r) &lt;-&gt; recordsExecution(r,e)
+</code></pre>
+<pre><code class="language-text">forall e: TestExecution(e) -&gt; exists! r: TestResult(r) and hasResult(e,r)
+</code></pre>
+<pre><code class="language-text">forall r: TestResult(r) -&gt; exists! e: TestExecution(e) and recordsExecution(r,e)
+</code></pre>
+<pre><code class="language-text">forall x,y: R["REL:W2:091"](x,y) =&gt; (C["IC:TestExecution"](x) and C["IC:TestResult"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestExecution"](x) =&gt; 1 &lt;= card{y | R["REL:W2:091"](x,y)} &lt;= 1
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:TestResult"](y) =&gt; 1 &lt;= card{x | R["REL:W2:091"](x,y)} &lt;= 1
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_records_execution; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: A consolidated report recorded after the concluded attempt.</p>
+<p>Counterexample: One consolidated result bound to two attempts, or an attempt without its required result.</p>
+<p>Limit: hasResult is a native display association mapped by inversion to recordsExecution; no new owl:inverseOf property is invented. It asserts documentation, not contemporaneous creation or causation. Multiple source logs remain possible.</p>
+<h2 id="ev02-executes-endpoint-types-and-native-multiplicities">EV02 — executes endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall x,y: R["REL:W2:090"](x,y) =&gt; (C["IC:TestExecution"](x) and C["IC:TestCase"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestExecution"](x) =&gt; 1 &lt;= card{y | R["REL:W2:090"](x,y)} &lt;= 1
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:TestCase"](y) =&gt; 0 &lt;= card{x | R["REL:W2:090"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_executes; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: One concluded attempt has one declared test-case binding.</p>
+<p>Counterexample: One attempt explicitly bound to two cases, or a case of the wrong type.</p>
+<p>Limit: A declared binding does not establish that every specified test step occurred.</p>
+<h2 id="ev03-hasrecordedexecution-endpoint-types-and-native-multiplicities">EV03 — hasRecordedExecution endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall x,y: R["REL:W2:147"](x,y) =&gt; (C["IC:TestSuiteSpecification"](x) and C["IC:TestExecution"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestSuiteSpecification"](x) =&gt; 0 &lt;= card{y | R["REL:W2:147"](x,y)}
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:TestExecution"](y) =&gt; 0 &lt;= card{x | R["REL:W2:147"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_r147_has_recorded_execution; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: A suite can index an attempt of one of its contained cases.</p>
+<p>Counterexample: The indexing suite does not contain the executed case.</p>
+<p>Limit: The index is a recorded association, not proof of suite-wide execution; full suite identity is outside this profile.</p>
+<h2 id="ev04-testsrealization-endpoint-types-and-native-multiplicities">EV04 — testsRealization endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall x,y: R["ICREL:CP:testsRealization"](x,y) =&gt; (C["IC:TestExecution"](x) and C["IC:ProductRealization"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestExecution"](x) =&gt; 1 &lt;= card{y | R["ICREL:CP:testsRealization"](x,y)} &lt;= 1
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:ProductRealization"](y) =&gt; 0 &lt;= card{x | R["ICREL:CP:testsRealization"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_tests_realization; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: The attempt has one declared realization target.</p>
+<p>Counterexample: The target is absent, multiply bound or incorrectly typed.</p>
+<p>Limit: testsRealization records the declared target. It does not entail actual participation; setup-only aborts explicitly leave participation unestablished.</p>
+<h2 id="ev05-assessesspecification-endpoint-types-and-native-multiplicities">EV05 — assessesSpecification endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall x,y: R["ICREL:CP:assessesSpecification"](x,y) =&gt; (C["IC:TestExecution"](x) and C["IC:CapabilitySpecification"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestExecution"](x) =&gt; 1 &lt;= card{y | R["ICREL:CP:assessesSpecification"](x,y)}
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:CapabilitySpecification"](y) =&gt; 0 &lt;= card{x | R["ICREL:CP:assessesSpecification"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_assesses_specification; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: An attempt identifies its declared assessment scope.</p>
+<p>Counterexample: Missing or incorrectly typed assessment scope.</p>
+<p>Limit: Binding a specification does not imply that it was evaluated, satisfied or successfully tested.</p>
+<h2 id="ev06-executioncontext-endpoint-types-and-native-multiplicities">EV06 — executionContext endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall x,y: R["REL:ORSD05:executionContext"](x,y) =&gt; (C["IC:TestExecution"](x) and C["IC:AssessmentContextSpecification"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestExecution"](x) =&gt; 1 &lt;= card{y | R["REL:ORSD05:executionContext"](x,y)} &lt;= 1
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:AssessmentContextSpecification"](y) =&gt; 0 &lt;= card{x | R["REL:ORSD05:executionContext"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_execution_context; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: One documented assessment-context binding.</p>
+<p>Counterexample: Missing, multiply bound or incorrectly typed context.</p>
+<p>Limit: A context document is not proof of actual environmental conditions.</p>
+<h2 id="ev07-executioncriterion-endpoint-types-and-native-multiplicities">EV07 — executionCriterion endpoint types and native multiplicities</h2>
+<pre><code class="language-text">forall x,y: R["REL:ORSD05:executionCriterion"](x,y) =&gt; (C["IC:TestExecution"](x) and C["IC:ConditionSpecification"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:TestExecution"](x) =&gt; 1 &lt;= card{y | R["REL:ORSD05:executionCriterion"](x,y)}
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:ConditionSpecification"](y) =&gt; 0 &lt;= card{x | R["REL:ORSD05:executionCriterion"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Mapped predicate domain/range and retained forward/inverse restrictions; see extracted triples.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Both incident endpoints are targeted; typed endpoints and min/max counts.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained table link_execution_criterion; new bounded SQL count/type validation.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission requires both SQL and SHACL; stored completed-event payload is immutable.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: At least one typed declared assessment criterion.</p>
+<p>Counterexample: Missing or incorrectly typed criterion.</p>
+<p>Limit: No automatic propagation to other specifications or success entailment.</p>
+<h2 id="ev08-one-known-observed-end-start-explicitly-known-or-unknown-timezone-qualified-recorded-times">EV08 — One known observed end; start explicitly known or unknown; timezone-qualified recorded times</h2>
+<pre><code class="language-text">For each admitted concluded attempt e: count(end(e))=1; each supplied time satisfies the declared timezone/calendar envelope.
+</code></pre>
+<pre><code class="language-text">knownStart(e) =&gt; count(start(e))=1; unknownStart(e) =&gt; count(start(e))=0
+</code></pre>
+<pre><code class="language-text">start(e) and end(e) supplied =&gt; start(e)&lt;=end(e)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Functional executionEndedAt dateTime; no explicit minimum in inspected OWL.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Occurrence shape requires start knowledge, provenance and conditional start count; SQL path additionally validates calendar and timezone envelope.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>occurrence_profile.sql_check enforces counts, supplied timestamp envelope, timezone, known-start ordering and provenance fields; base gate adds native population checks.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>NOT NULL, validity check and immutable stored time.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Known start precedes the observed end; an unknown start is absent.</p>
+<p>Counterexample: Invented start for unknown knowledge, reversed times, missing end or missing timezone.</p>
+<p>Limit: The selected OWL profile declares end as functional but does not enforce the operational minimum or time ordering. SHACL and the SQL/Python envelope have explicitly different coverage. Full XSD lexical space, unknown-end events and general event lifecycles are not claimed.</p>
+<h2 id="ev09-tested-realization-has-a-typed-single-version">EV09 — Tested realization has a typed single version</h2>
+<pre><code class="language-text">testsRealization(e,r) =&gt; exists! v: ProductVersion(v) and realizesVersion(r,v)
+</code></pre>
+<pre><code class="language-text">forall x,y: R["ICREL:CP:realizesVersion"](x,y) =&gt; (C["IC:ProductRealization"](x) and C["IC:ProductVersion"](y))
+</code></pre>
+<pre><code class="language-text">forall x: C["IC:ProductRealization"](x) =&gt; 1 &lt;= card{y | R["ICREL:CP:realizesVersion"](x,y)} &lt;= 1
+</code></pre>
+<pre><code class="language-text">forall y: C["IC:ProductVersion"](y) =&gt; 0 &lt;= card{x | R["ICREL:CP:realizesVersion"](x,y)}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Retained realizesVersion class/cardinality restrictions.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>v0.34 adds property-based target and one typed version.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>v0.34 counts and endpoint types; old event validator lacked these supporting checks.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission checks current snapshot and historical realization/version binding.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: The declared target has one typed version.</p>
+<p>Counterexample: A target without a version, or with conflicting explicit bindings.</p>
+<p>Limit: The realization/version link does not establish baseline satisfaction.</p>
+<h2 id="ev10-assessed-specification-belongs-to-tested-version">EV10 — Assessed specification belongs to tested version</h2>
+<pre><code class="language-text">testsRealization(e,r) and assessesSpecification(e,s) =&gt; exists v: realizesVersion(r,v) and specifiesCapability(v,s)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Individual predicates present; no inspected property-chain enforcement claimed.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Retained SPARQL same-version constraint.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained bounded join query, rerun in v0.34.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Checked at admission and retained in immutable declared snapshot.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: The assessed capability specification is declared by the target version.</p>
+<p>Counterexample: An assessed capability belongs to a different version.</p>
+<p>Limit: A selected graph/SQL join contract; no truth, achieved capability or test success follows.</p>
+<h2 id="ev11-indexing-suite-contains-the-executed-case">EV11 — Indexing suite contains the executed case</h2>
+<pre><code class="language-text">hasRecordedExecution(suite,e) and executes(e,c) =&gt; containsCase(suite,c)
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Predicates present; no general closure inference claimed.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Retained suite-membership SPARQL constraint.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Retained bounded join query, rerun in v0.34.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Admission preserves explicit membership evidence.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Suite contains the case of the indexed attempt.</p>
+<p>Counterexample: Indexing an attempt whose case is not contained.</p>
+<p>Limit: Adding a later index must not rewrite the accepted event snapshot. This is not a general mereological or temporal suite theory.</p>
+<h2 id="ev12-no-automatic-criterion-propagation-or-success-entailment">EV12 — No automatic criterion propagation or success entailment</h2>
+<pre><code class="language-text">No axiom or operational rule propagates a declared criterion to an unrelated assessed item.
+</code></pre>
+<pre><code class="language-text">recordsExecution(result,event) does not entail passed(result).
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>No additional composition/satisfaction axiom added.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Only explicit checked criteria counted.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>No implicit closure added.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Stores declarations only; unsuccessful/aborted concluded runs remain valid.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: An inconclusive or aborted result documents an attempt.</p>
+<p>Counterexample: Infer success from the existence of a result or criterion link.</p>
+<p>Limit: These are inference exclusions and controlled probes, not a proof against all possible downstream rules.</p>
+<h2 id="lg01-completed-record-cannot-be-renamed-rebound-or-erased">LG01 — Completed record cannot be renamed, rebound or erased</h2>
+<pre><code class="language-text">Accepted(snapshot) =&gt; storedGraph(snapshot) is immutable under the supported admission API.
+</code></pre>
+<pre><code class="language-text">Correction =&gt; AppendSourcedObservation; accepted occurrence remains unchanged.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>OWL does not enforce database history.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Snapshot checks do not protect past records.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Old snapshot DDL is not an event history store.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Accepted occurrence and historical bindings remain protected; append_observation records a sourced correction assertion without mutating accepted occurrence.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Append a sourced superseding observation without changing the accepted graph.</p>
+<p>Counterexample: UPDATE, DELETE, replacement or rebinding of an accepted record.</p>
+<p>Limit: Operational invariants, not OWL axioms. Database-owner/schema changes and external tampering remain outside the protection.</p>
+<h2 id="lg02-replay-is-idempotent-conflicting-replay-is-rejected">LG02 — Replay is idempotent; conflicting replay is rejected</h2>
+<pre><code class="language-text">Admit(id,G); Admit(id,G) =&gt; idempotent receipt and no state mutation.
+</code></pre>
+<pre><code class="language-text">Admit(id,G); Admit(id,H) with H != G under recorded graph equivalence =&gt; reject and rollback.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Not an OWL identity inference.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Duplicate graph statements have set semantics.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Duplicate inputs normalized before primary-key insertion.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Same normalized graph fields accepted; changed payload rejected.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Replay the same admitted graph.</p>
+<p>Counterexample: Reuse a snapshot identifier with a changed payload.</p>
+<p>Limit: Graph equivalence and record identity are not real-world event identity. Literal normalization is explicitly bounded.</p>
+<h2 id="lg03-persistence-survives-closereopen">LG03 — Persistence survives close/reopen</h2>
+<pre><code class="language-text">Export(Reopen(Persist(Admit(G)))) is RDF-isomorphic to G for the selected profile.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Not applicable.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Revalidation still available.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>File-backed SQLite used in the test.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>Stored record reloaded; conflicting rebind remains rejected.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Close, reopen and reconstruct the accepted population.</p>
+<p>Counterexample: Stored graph differs from the receipt hash or count.</p>
+<p>Limit: A finite persistence probe, not a production durability, concurrency or fault-recovery benchmark.</p>
+<h2 id="int01-owlnativeshaclsql-identifiers-are-explicitly-mapped">INT01 — OWL/native/SHACL/SQL identifiers are explicitly mapped</h2>
+<pre><code class="language-text">For each mapped native signature: preserve identifier, direction, endpoint type and bound.
+</code></pre>
+<pre><code class="language-text">For selected admitted population G: Export(Import(G)) is RDF-isomorphic to G.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Retained formal predicates differ from native-contract URNs.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>Event URNs encode native IDs; identity shapes use the retained formal namespace.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>Eleven selected relations mapped to physical tables, including inversions.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>New ledger local node IDs are scoped record identifiers; no automatic universal equivalence.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: 37 baseline and 46 revised occurrence triples reconstruct without dropped input.</p>
+<p>Counterexample: Unmapped predicates, missing types, inverse-direction mistakes or historical rebinding.</p>
+<p>Limit: Static inventory mapping is complete for the declared source; executed reconstruction is selected. It does not establish whole-population equivalence, complete UFO semantics or production deployment.</p>
+<h2 id="open01-full-modalevent-semantics-and-independent-acceptance">OPEN01 — Full modal/Event semantics and independent acceptance</h2>
+<pre><code class="language-text">No complete modal, causal or counterfactual UFO theory is asserted.
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Scope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OWL</td>
+<td>Bounded operational profile only.</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>No independent conceptual adequacy proof.</td>
+</tr>
+<tr>
+<td>SQL</td>
+<td>No scientific acceptance proof.</td>
+</tr>
+<tr>
+<td>History/policy</td>
+<td>No independent observation truth established.</td>
+</tr>
+</tbody>
+</table>
+<p>Example: Each reported result retains its input, method and scope.</p>
+<p>Counterexample: Treat passing tests or author approval as independent conceptual acceptance.</p>
+<p>Limit: Independent reviewers, external owner/IRI acceptance, full event causality and modal dependence remain deferred scientific work.</p></main><footer>Native model 0.41.0 · logical profile 0.43.0 · documentation candidate DB-2026.10.1. <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a> · <a href="../../guide/Citation.html">Citation and reuse</a> · <a href="../../guide/Limitations.html">Limitations</a>. Generated reference is derived from the declared source; it is not independent semantic acceptance.</footer></html>

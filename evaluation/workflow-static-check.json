@@ -1,0 +1,15 @@
+{
+  "parsed_yaml": [
+    ".github/workflows/validation.yml",
+    ".github/workflows/documentation.yml",
+    ".github/workflows/pages.yml"
+  ],
+  "parser": "PyYAML BaseLoader",
+  "actionlint": {
+    "version": "1.7.12",
+    "workflows": 3,
+    "syntax_expression_errors": 0,
+    "shellcheck_and_pyflakes": "disabled"
+  },
+  "remote_execution": "NOT_VERIFIED"
+}

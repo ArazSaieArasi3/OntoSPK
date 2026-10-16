@@ -1,0 +1,122 @@
+owl_class_iri,mapped_native_id
+urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification,IC:AssessmentContextSpecification
+urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord,IC:DeliveryWorkItemStatusRecord
+urn:product-ontology:external-boundary:0.7:Architecture%3AArchitectureElement,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Architecture%3AComponent,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Architecture%3AInterface,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Architecture%3AService,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Business%3AService,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Business%3AValueProposition,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:EvidenceLayer%3AEvidence,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AConfiguration,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3AEvidence,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Plan,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:ExternalUnresolved%3ATest_Script,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Market%3ACompetitor_Alternative,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Market%3AMarket,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Market%3ANeed,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:Market%3APain,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:ProductLine%3AProductConfiguration,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:product-ontology:external-boundary:0.7:UXResearch%3AUser_Mental_Model,bounded-profile proxy; no exact native-handle mapping asserted here
+urn:productium:specification-profile:AcceptanceCriterionSpecification,IC:AcceptanceCriterionSpecification
+urn:productium:specification-profile:AcquisitionHypothesisSpecification,IC:AcquisitionHypothesisSpecification
+urn:productium:specification-profile:AdoptionHypothesisSpecification,IC:AdoptionHypothesisSpecification
+urn:productium:specification-profile:AssessmentClaim,IC:AssessmentClaim
+urn:productium:specification-profile:BundleSpecification,IC:BundleSpecification
+urn:productium:specification-profile:BusinessRuleReference,IC:BusinessRuleReference
+urn:productium:specification-profile:CapabilitySpecification,IC:CapabilitySpecification
+urn:productium:specification-profile:ChangeProposalSpecification,IC:ChangeProposalSpecification
+urn:productium:specification-profile:ChangeRecord,IC:ChangeRecord
+urn:productium:specification-profile:CommitmentLevelDefinition,IC:CommitmentLevelDefinition
+urn:productium:specification-profile:CompetitiveNarrative,IC:CompetitiveNarrative
+urn:productium:specification-profile:ConditionSpecification,IC:ConditionSpecification
+urn:productium:specification-profile:ConfidenceAssessment,IC:ConfidenceAssessment
+urn:productium:specification-profile:ConstraintSpecification,IC:ConstraintSpecification
+urn:productium:specification-profile:DecisionCriterionSpecification,IC:DecisionCriterionSpecification
+urn:productium:specification-profile:DecisionRecord,IC:DecisionRecord
+urn:productium:specification-profile:DeliveryStatusRecord,IC:DeliveryStatusRecord
+urn:productium:specification-profile:DeliveryWorkItem,IC:DeliveryWorkItem
+urn:productium:specification-profile:DependencySpecification,IC:DependencySpecification
+urn:productium:specification-profile:EnablerSpecification,IC:EnablerSpecification
+urn:productium:specification-profile:EvidenceArtifact,IC:EvidenceArtifact
+urn:productium:specification-profile:EvidenceAttributionRecord,IC:EvidenceAttributionRecord
+urn:productium:specification-profile:ExternalReferenceRecord,IC:ExternalReferenceRecord
+urn:productium:specification-profile:FeatureFlagSpecification,IC:FeatureFlagSpecification
+urn:productium:specification-profile:FeatureSpecification,IC:FeatureSpecification
+urn:productium:specification-profile:FindingRecord,IC:FindingRecord
+urn:productium:specification-profile:FunctionalRequirementSpecification,IC:FunctionalRequirementSpecification
+urn:productium:specification-profile:GoToMarketSpecification,IC:GoToMarketSpecification
+urn:productium:specification-profile:GoalSpecification,IC:GoalSpecification
+urn:productium:specification-profile:HypothesisSpecification,IC:HypothesisSpecification
+urn:productium:specification-profile:InformationArchitectureSpecification,IC:InformationArchitectureSpecification
+urn:productium:specification-profile:InitiativeSpecification,IC:InitiativeSpecification
+urn:productium:specification-profile:InteractionStepSpecification,IC:InteractionStepSpecification
+urn:productium:specification-profile:JourneySpecification,IC:JourneySpecification
+urn:productium:specification-profile:JourneyStageSpecification,IC:JourneyStageSpecification
+urn:productium:specification-profile:LaunchSpecification,IC:LaunchSpecification
+urn:productium:specification-profile:LifecycleSpecification,IC:LifecycleSpecification
+urn:productium:specification-profile:LifecycleStageSpecification,IC:LifecycleStageSpecification
+urn:productium:specification-profile:MarketingGoalSpecification,IC:MarketingGoalSpecification
+urn:productium:specification-profile:MarketingInsightReference,IC:MarketingInsightReference
+urn:productium:specification-profile:MessagingSpecification,IC:MessagingSpecification
+urn:productium:specification-profile:MilestoneSpecification,IC:MilestoneSpecification
+urn:productium:specification-profile:OfferingSpecification,IC:OfferingSpecification
+urn:productium:specification-profile:OpportunityStatement,IC:OpportunityStatement
+urn:productium:specification-profile:OutcomeSpecification,IC:OutcomeSpecification
+urn:productium:specification-profile:PersonaSpecification,IC:PersonaSpecification
+urn:productium:specification-profile:PlanningHorizonDefinition,IC:PlanningHorizonDefinition
+urn:productium:specification-profile:PortfolioEntry,IC:PortfolioEntry
+urn:productium:specification-profile:PositioningStatement,IC:PositioningStatement
+urn:productium:specification-profile:PrioritizationCriterionSpecification,IC:PrioritizationCriterionSpecification
+urn:productium:specification-profile:PriorityAssessment,IC:PriorityAssessment
+urn:productium:specification-profile:ProblemSolutionFitAssessment,IC:ProblemSolutionFitAssessment
+urn:productium:specification-profile:ProblemStatement,IC:ProblemStatement
+urn:productium:specification-profile:Product,IC:Product
+urn:productium:specification-profile:ProductCapability,IC:ProductCapability
+urn:productium:specification-profile:ProductFamilyReference,IC:ProductFamilyReference
+urn:productium:specification-profile:ProductLineReference,IC:ProductLineReference
+urn:productium:specification-profile:ProductMarketFitAssessment,IC:ProductMarketFitAssessment
+urn:productium:specification-profile:ProductMetricReference,IC:ProductMetricReference
+urn:productium:specification-profile:ProductPortfolio,IC:ProductPortfolio
+urn:productium:specification-profile:ProductRealization,IC:ProductRealization
+urn:productium:specification-profile:ProductStatusRecord,IC:ProductStatusRecord
+urn:productium:specification-profile:ProductVariantReference,IC:ProductVariantReference
+urn:productium:specification-profile:ProductVersion,IC:ProductVersion
+urn:productium:specification-profile:QualityRequirementSpecification,IC:QualityRequirementSpecification
+urn:productium:specification-profile:ReleaseEvidenceRecord,IC:ReleaseEvidenceRecord
+urn:productium:specification-profile:ReleaseSpecification,IC:ReleaseSpecification
+urn:productium:specification-profile:RequirementRationaleStatement,IC:RequirementRationaleStatement
+urn:productium:specification-profile:RequirementScenarioSpecification,IC:RequirementScenarioSpecification
+urn:productium:specification-profile:RequirementSourceReference,IC:RequirementSourceReference
+urn:productium:specification-profile:RequirementSpecification,IC:RequirementSpecification
+urn:productium:specification-profile:Roadmap,IC:Roadmap
+urn:productium:specification-profile:RoadmapEntry,IC:RoadmapEntry
+urn:productium:specification-profile:ScenarioSpecification,IC:ScenarioSpecification
+urn:productium:specification-profile:ScopeSpecification,IC:ScopeSpecification
+urn:productium:specification-profile:ScreenSpecification,IC:ScreenSpecification
+urn:productium:specification-profile:SolutionHypothesisSpecification,IC:SolutionHypothesisSpecification
+urn:productium:specification-profile:SolutionSpecification,IC:SolutionSpecification
+urn:productium:specification-profile:TargetMarketReference,IC:TargetMarketReference
+urn:productium:specification-profile:TargetSegmentReference,IC:TargetSegmentReference
+urn:productium:specification-profile:TargetWindowAssignment,IC:TargetWindowAssignment
+urn:productium:specification-profile:TaskReference,IC:TaskReference
+urn:productium:specification-profile:TestCase,IC:TestCase
+urn:productium:specification-profile:TestDataReference,IC:TestDataReference
+urn:productium:specification-profile:TestExecution,IC:TestExecution
+urn:productium:specification-profile:TestResult,IC:TestResult
+urn:productium:specification-profile:TestScenario,IC:TestScenario
+urn:productium:specification-profile:TestSuiteSpecification,IC:TestSuiteSpecification
+urn:productium:specification-profile:TouchpointSpecification,IC:TouchpointSpecification
+urn:productium:specification-profile:UIStateSpecification,IC:UIStateSpecification
+urn:productium:specification-profile:UsabilityFindingRecord,IC:UsabilityFindingRecord
+urn:productium:specification-profile:UserFlowSpecification,IC:UserFlowSpecification
+urn:productium:specification-profile:UserRoleSpecification,IC:UserRoleSpecification
+urn:productium:specification-profile:UserStorySpecification,IC:UserStorySpecification
+urn:productium:specification-profile:ValidationEvidenceRecord,IC:ValidationEvidenceRecord
+urn:productium:specification-profile:ValidationFindingRecord,IC:ValidationFindingRecord
+urn:productium:specification-profile:VerificationEvidenceRecord,IC:VerificationEvidenceRecord
+urn:productium:specification-profile:VerticalSliceSpecification,IC:VerticalSliceSpecification
+urn:productium:specification-profile:VisionStatement,IC:VisionStatement

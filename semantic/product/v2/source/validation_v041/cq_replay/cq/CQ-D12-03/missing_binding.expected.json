@@ -1,0 +1,23 @@
+[
+  [
+    "urn:orsd:v05:synthetic:refNew",
+    "urn:orsd:v05:synthetic:targetNew",
+    "urn:orsd:v05:synthetic:referenceSource",
+    "r2",
+    null
+  ],
+  [
+    "urn:orsd:v05:synthetic:refOld",
+    "urn:orsd:v05:synthetic:targetOld",
+    "urn:orsd:v05:synthetic:referenceSource",
+    "r1",
+    null
+  ],
+  [
+    "urn:orsd:v05:synthetic:refUnversioned",
+    "urn:orsd:v05:synthetic:otherTarget",
+    "urn:orsd:v05:synthetic:referenceSource",
+    null,
+    null
+  ]
+]

@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?goal ?metric WHERE {
+VALUES ?goal { e:goalA } ?goal p:r178_referencesMetric ?metric .
+}

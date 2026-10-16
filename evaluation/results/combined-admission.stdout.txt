@@ -1,0 +1,45 @@
+{
+  "version": "0.35.0",
+  "total": 42,
+  "passed": 42,
+  "groups": {
+    "boundary": {
+      "total": 2,
+      "passed": 2
+    },
+    "history": {
+      "total": 1,
+      "passed": 1
+    },
+    "integrity": {
+      "total": 2,
+      "passed": 2
+    },
+    "mapping": {
+      "total": 2,
+      "passed": 2
+    },
+    "persistence": {
+      "total": 2,
+      "passed": 2
+    },
+    "population": {
+      "total": 6,
+      "passed": 6
+    },
+    "provenance": {
+      "total": 1,
+      "passed": 1
+    },
+    "rejection": {
+      "total": 25,
+      "passed": 25
+    },
+    "roundtrip": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "scope": "One constructed population with its mutations, actual SQLite physical schema and bounded pinned profiles; not an empirical study or whole-ontology semantic validation."
+}
+POPULATION {"triples": 37, "typed_entities": 13, "asserted_classes": 13, "physical_tables": 438, "added_gate_tables": 2, "populated_tables": {"snapshot": 1, "term": 56, "entity": 26, "asserted_type": 13, "d01_product": 1, "d01_product_version": 1, "d03_capability_specification": 1, "d03_feature_specification": 1, "d08_test_scenario": 1, "d08_test_case": 1, "d08_test_execution": 1, "d08_test_result": 1, "d08_test_suite_specification": 1, "d11_product_realization": 1, "d11_product_capability": 1, "d10_evidence_artifact": 1, "d03_condition_specification": 1, "d03_scenario_specification": 2, "d10_assessment_context_specification": 1, "value_context_description": 1, "value_context_source": 1, "link_context_version": 1, "link_execution_context": 1, "link_execution_criterion": 1, "value_execution_ended_at": 1, "value_result_outcome": 1, "value_result_recorded_at": 1, "value_result_source": 1, "link_assesses_specification": 1, "link_bears_capability": 1, "link_contains_case": 1, "link_evaluated_against": 1, "link_executes": 1, "link_has_version": 1, "link_r147_has_recorded_execution": 1, "link_r84_covers": 1, "link_r87_refines_test_scenario": 1, "link_realizes_version": 1, "link_records_execution": 1, "link_specifies_capability": 1, "link_specifies_expected_condition": 2, "link_tests_realization": 1, "admission_receipt": 1, "historical_binding": 4}}

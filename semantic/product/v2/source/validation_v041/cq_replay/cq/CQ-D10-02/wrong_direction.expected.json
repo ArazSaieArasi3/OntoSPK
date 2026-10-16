@@ -1,0 +1,14 @@
+[
+  [
+    "urn:orsd:v03:synthetic:validationEvidenceA",
+    "urn:productium:specification-profile:ValidationEvidenceRecord",
+    "urn:orsd:v03:synthetic:claimA",
+    "urn:orsd:v03:synthetic:findingA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:verificationEvidenceA",
+    "urn:productium:specification-profile:VerificationEvidenceRecord",
+    "urn:orsd:v03:synthetic:claimA",
+    "urn:orsd:v03:synthetic:resultA"
+  ]
+]

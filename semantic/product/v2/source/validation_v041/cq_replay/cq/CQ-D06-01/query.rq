@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?roadmap ?entry ?feature ?priority ?ranking ?horizon ?window ?confidence ?commitment WHERE {
+VALUES ?roadmap { e:roadmapA } ?roadmap p:r64_organizesRoadmapEntry ?entry . ?entry p:r66_plansFeatureDelivery ?feature . OPTIONAL { ?entry p:r68_hasPriorityAssessment ?priority . OPTIONAL { ?priority p:r69_usesRankingCriterion ?ranking } } OPTIONAL { ?entry p:r70_usesHorizonDefinition ?horizon } OPTIONAL { ?entry p:r71_hasTargetWindowAssignment ?window } OPTIONAL { ?entry p:r72_hasEntryConfidenceAssessment ?confidence } OPTIONAL { ?entry p:r73_usesCommitmentLevelDefinition ?commitment }
+}

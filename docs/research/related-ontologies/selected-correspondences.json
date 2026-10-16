@@ -1,0 +1,98 @@
+[
+  {
+    "source_family": "CPM",
+    "source_concept": "Artifact",
+    "local_concept": "ProductRealization",
+    "decision": "Candidate analogy only; check whether an engineering entity and a configured computing whole have matching identity conditions.",
+    "locator": "CPM2 Section 2.2, PDF p.10",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "CPM",
+    "source_concept": "Specification",
+    "local_concept": "CapabilitySpecification / RequirementSpecification",
+    "decision": "Specification aggregates design requirements; matching a specific local description requires decomposition and scope.",
+    "locator": "CPM2 PDF p.11",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "CPM",
+    "source_concept": "Function",
+    "local_concept": "ProductCapability / CapabilitySpecification",
+    "decision": "Function denotes what an artifact is supposed to do. Do not collapse intended function and actual disposition.",
+    "locator": "CPM2 PDF p.12",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "OntoProd",
+    "source_concept": "Feature",
+    "local_concept": "FeatureSpecification",
+    "decision": "A characteristic of a Part and a description artifact are not established as the same category.",
+    "locator": "Section 4.1.1, article p.6",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "OntoProd",
+    "source_concept": "Project-instance graph",
+    "local_concept": "ProductRealization",
+    "decision": "Cloning a template graph does not establish identity of a configured bearer whole.",
+    "locator": "Section 5, article pp.9-11",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "OntoProd",
+    "source_concept": "DatumInstance",
+    "local_concept": "TestResult / EvidenceArtifact",
+    "decision": "Information-lifecycle records may be related, but no evidence or result class equivalence is established.",
+    "locator": "Sections 4.1.1 and 5, article pp.6,10",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "SPM",
+    "source_concept": "Product / Specification",
+    "local_concept": "Product / specification classes",
+    "decision": "Shared terminology is a correspondence lead, not proof of matching identity, typing or cardinality.",
+    "locator": "Table IV and Figure 2, supplied PDF pp.7-8",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "SPM",
+    "source_concept": "Roadmap",
+    "local_concept": "Roadmap",
+    "decision": "Compare intended description and governance before any import or identity merge.",
+    "locator": "Table IV, supplied PDF p.7",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "SwO",
+    "source_concept": "Loaded Program Copy",
+    "local_concept": "ProductCapability / ProductRealization",
+    "decision": "Source copy is a complex disposition. OntoSPK capability is a disposition and realization is its bearer whole; explicit bearer analysis is needed.",
+    "locator": "Section 5, author PDF p.17",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "SwO",
+    "source_concept": "Requirement / Requirement Artifact",
+    "local_concept": "RequirementSpecification",
+    "decision": "The local specification is an information artifact; do not map it to a stakeholder intention.",
+    "locator": "Section 6, author PDF pp.18-19",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "SwO",
+    "source_concept": "Program Copy Execution",
+    "local_concept": "TestExecution",
+    "decision": "A general program execution is broader than a concluded test attempt; a setup-only abort may lack target participation.",
+    "locator": "Section 5 and existing occurrence profile",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  },
+  {
+    "source_family": "ROoST",
+    "source_concept": "Test Execution / Test Script / creates",
+    "local_concept": "TestExecution / external script / hasResult",
+    "decision": "Only evidenced exercised-code attempts are candidates; manual procedures and report documentation do not match code or creation automatically.",
+    "locator": "Official ROoST definitions and retained ROoST_Correspondence_v0_41_0.json",
+    "status": "CANDIDATE_OR_NON_EQUIVALENCE_BOUNDARY; NOT_EXECUTABLE_ALIGNMENT"
+  }
+]

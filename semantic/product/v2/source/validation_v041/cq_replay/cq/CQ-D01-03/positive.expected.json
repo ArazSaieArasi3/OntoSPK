@@ -1,0 +1,20 @@
+[
+  [
+    "urn:orsd:v03:synthetic:productA",
+    "urn:orsd:v03:synthetic:familyRefA",
+    "urn:productium:specification-profile:ProductFamilyReference",
+    "urn:orsd:v03:synthetic:familyA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:productA",
+    "urn:orsd:v03:synthetic:lineRefA",
+    "urn:productium:specification-profile:ProductLineReference",
+    "urn:orsd:v03:synthetic:lineA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:productA",
+    "urn:orsd:v03:synthetic:variantRefA",
+    "urn:productium:specification-profile:ProductVariantReference",
+    "urn:orsd:v03:synthetic:variantA"
+  ]
+]

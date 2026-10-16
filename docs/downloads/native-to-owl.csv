@@ -1,0 +1,129 @@
+native_id,label,scope,mapped_iri,declared_owl_class,mapping_basis
+IC:ProductPortfolio,ProductPortfolio,local,urn:productium:specification-profile:ProductPortfolio,True,class-table map
+IC:Product,Product,local,urn:productium:specification-profile:Product,True,class-table map
+IC:OfferingSpecification,OfferingSpecification,local,urn:productium:specification-profile:OfferingSpecification,True,class-table map
+IC:BundleSpecification,BundleSpecification,local,urn:productium:specification-profile:BundleSpecification,True,class-table map
+IC:ProductVersion,ProductVersion,local,urn:productium:specification-profile:ProductVersion,True,class-table map
+IC:LifecycleSpecification,LifecycleSpecification,local,urn:productium:specification-profile:LifecycleSpecification,True,class-table map
+IC:LifecycleStageSpecification,LifecycleStageSpecification,local,urn:productium:specification-profile:LifecycleStageSpecification,True,class-table map
+IC:ProductStatusRecord,ProductStatusRecord,local,urn:productium:specification-profile:ProductStatusRecord,True,class-table map
+IC:DependencySpecification,DependencySpecification,local,urn:productium:specification-profile:DependencySpecification,True,class-table map
+IC:ProductFamilyReference,ProductFamilyReference,local,urn:productium:specification-profile:ProductFamilyReference,True,class-table map
+IC:ProductLineReference,ProductLineReference,local,urn:productium:specification-profile:ProductLineReference,True,class-table map
+IC:ProductVariantReference,ProductVariantReference,local,urn:productium:specification-profile:ProductVariantReference,True,class-table map
+IC:PortfolioEntry,PortfolioEntry,local,urn:productium:specification-profile:PortfolioEntry,True,class-table map
+IC:VisionStatement,VisionStatement,local,urn:productium:specification-profile:VisionStatement,True,class-table map
+IC:GoalSpecification,GoalSpecification,local,urn:productium:specification-profile:GoalSpecification,True,class-table map
+IC:OutcomeSpecification,OutcomeSpecification,local,urn:productium:specification-profile:OutcomeSpecification,True,class-table map
+IC:ProductMetricReference,ProductMetricReference,local,urn:productium:specification-profile:ProductMetricReference,True,class-table map
+IC:InitiativeSpecification,InitiativeSpecification,local,urn:productium:specification-profile:InitiativeSpecification,True,class-table map
+IC:ProblemStatement,ProblemStatement,local,urn:productium:specification-profile:ProblemStatement,True,class-table map
+IC:OpportunityStatement,OpportunityStatement,local,urn:productium:specification-profile:OpportunityStatement,True,class-table map
+IC:HypothesisSpecification,HypothesisSpecification,local,urn:productium:specification-profile:HypothesisSpecification,True,class-table map
+IC:SolutionHypothesisSpecification,SolutionHypothesisSpecification,local,urn:productium:specification-profile:SolutionHypothesisSpecification,True,class-table map
+IC:DecisionRecord,DecisionRecord,local,urn:productium:specification-profile:DecisionRecord,True,class-table map
+IC:DecisionCriterionSpecification,DecisionCriterionSpecification,local,urn:productium:specification-profile:DecisionCriterionSpecification,True,class-table map
+IC:ProblemSolutionFitAssessment,ProblemSolutionFitAssessment,local,urn:productium:specification-profile:ProblemSolutionFitAssessment,True,class-table map
+IC:ProductMarketFitAssessment,ProductMarketFitAssessment,local,urn:productium:specification-profile:ProductMarketFitAssessment,True,class-table map
+IC:ScopeSpecification,ScopeSpecification,local,urn:productium:specification-profile:ScopeSpecification,True,class-table map
+IC:CapabilitySpecification,CapabilitySpecification,local,urn:productium:specification-profile:CapabilitySpecification,True,class-table map
+IC:SolutionSpecification,SolutionSpecification,local,urn:productium:specification-profile:SolutionSpecification,True,class-table map
+IC:FeatureSpecification,FeatureSpecification,local,urn:productium:specification-profile:FeatureSpecification,True,class-table map
+IC:VerticalSliceSpecification,VerticalSliceSpecification,local,urn:productium:specification-profile:VerticalSliceSpecification,True,class-table map
+IC:EnablerSpecification,EnablerSpecification,local,urn:productium:specification-profile:EnablerSpecification,True,class-table map
+IC:UserStorySpecification,UserStorySpecification,local,urn:productium:specification-profile:UserStorySpecification,True,class-table map
+IC:RequirementSpecification,RequirementSpecification,local,urn:productium:specification-profile:RequirementSpecification,True,class-table map
+IC:FunctionalRequirementSpecification,FunctionalRequirementSpecification,local,urn:productium:specification-profile:FunctionalRequirementSpecification,True,class-table map
+IC:QualityRequirementSpecification,QualityRequirementSpecification,local,urn:productium:specification-profile:QualityRequirementSpecification,True,class-table map
+IC:ConstraintSpecification,ConstraintSpecification,local,urn:productium:specification-profile:ConstraintSpecification,True,class-table map
+IC:BusinessRuleReference,BusinessRuleReference,local,urn:productium:specification-profile:BusinessRuleReference,True,class-table map
+IC:AcceptanceCriterionSpecification,AcceptanceCriterionSpecification,local,urn:productium:specification-profile:AcceptanceCriterionSpecification,True,class-table map
+IC:RequirementScenarioSpecification,RequirementScenarioSpecification,local,urn:productium:specification-profile:RequirementScenarioSpecification,True,class-table map
+IC:RequirementSourceReference,RequirementSourceReference,local,urn:productium:specification-profile:RequirementSourceReference,True,class-table map
+IC:RequirementRationaleStatement,RequirementRationaleStatement,local,urn:productium:specification-profile:RequirementRationaleStatement,True,class-table map
+IC:ValidationFindingRecord,ValidationFindingRecord,local,urn:productium:specification-profile:ValidationFindingRecord,True,class-table map
+IC:PersonaSpecification,PersonaSpecification,local,urn:productium:specification-profile:PersonaSpecification,True,class-table map
+IC:UserRoleSpecification,UserRoleSpecification,local,urn:productium:specification-profile:UserRoleSpecification,True,class-table map
+IC:JourneySpecification,JourneySpecification,local,urn:productium:specification-profile:JourneySpecification,True,class-table map
+IC:JourneyStageSpecification,JourneyStageSpecification,local,urn:productium:specification-profile:JourneyStageSpecification,True,class-table map
+IC:TouchpointSpecification,TouchpointSpecification,local,urn:productium:specification-profile:TouchpointSpecification,True,class-table map
+IC:UserFlowSpecification,UserFlowSpecification,local,urn:productium:specification-profile:UserFlowSpecification,True,class-table map
+IC:InteractionStepSpecification,InteractionStepSpecification,local,urn:productium:specification-profile:InteractionStepSpecification,True,class-table map
+IC:InformationArchitectureSpecification,InformationArchitectureSpecification,local,urn:productium:specification-profile:InformationArchitectureSpecification,True,class-table map
+IC:ScreenSpecification,ScreenSpecification,local,urn:productium:specification-profile:ScreenSpecification,True,class-table map
+IC:UIStateSpecification,UIStateSpecification,local,urn:productium:specification-profile:UIStateSpecification,True,class-table map
+IC:UsabilityFindingRecord,UsabilityFindingRecord,local,urn:productium:specification-profile:UsabilityFindingRecord,True,class-table map
+IC:Roadmap,Roadmap,local,urn:productium:specification-profile:Roadmap,True,class-table map
+IC:RoadmapEntry,RoadmapEntry,local,urn:productium:specification-profile:RoadmapEntry,True,class-table map
+IC:MilestoneSpecification,MilestoneSpecification,local,urn:productium:specification-profile:MilestoneSpecification,True,class-table map
+IC:PriorityAssessment,PriorityAssessment,local,urn:productium:specification-profile:PriorityAssessment,True,class-table map
+IC:PrioritizationCriterionSpecification,PrioritizationCriterionSpecification,local,urn:productium:specification-profile:PrioritizationCriterionSpecification,True,class-table map
+IC:PlanningHorizonDefinition,PlanningHorizonDefinition,local,urn:productium:specification-profile:PlanningHorizonDefinition,True,class-table map
+IC:TargetWindowAssignment,TargetWindowAssignment,local,urn:productium:specification-profile:TargetWindowAssignment,True,class-table map
+IC:ConfidenceAssessment,ConfidenceAssessment,local,urn:productium:specification-profile:ConfidenceAssessment,True,class-table map
+IC:CommitmentLevelDefinition,CommitmentLevelDefinition,local,urn:productium:specification-profile:CommitmentLevelDefinition,True,class-table map
+IC:ReleaseSpecification,ReleaseSpecification,local,urn:productium:specification-profile:ReleaseSpecification,True,class-table map
+IC:DeliveryWorkItem,DeliveryWorkItem,local,urn:productium:specification-profile:DeliveryWorkItem,True,class-table map
+IC:ChangeRecord,ChangeRecord,local,urn:productium:specification-profile:ChangeRecord,True,class-table map
+IC:ChangeProposalSpecification,ChangeProposalSpecification,local,urn:productium:specification-profile:ChangeProposalSpecification,True,class-table map
+IC:FeatureFlagSpecification,FeatureFlagSpecification,local,urn:productium:specification-profile:FeatureFlagSpecification,True,class-table map
+IC:DeliveryStatusRecord,DeliveryStatusRecord,local,urn:productium:specification-profile:DeliveryStatusRecord,True,class-table map
+IC:ReleaseEvidenceRecord,ReleaseEvidenceRecord,local,urn:productium:specification-profile:ReleaseEvidenceRecord,True,class-table map
+IC:TaskReference,TaskReference,local,urn:productium:specification-profile:TaskReference,True,class-table map
+IC:TestScenario,TestScenario,local,urn:productium:specification-profile:TestScenario,True,class-table map
+IC:TestCase,TestCase,local,urn:productium:specification-profile:TestCase,True,class-table map
+IC:TestExecution,TestExecution,local,urn:productium:specification-profile:TestExecution,True,class-table map
+IC:TestResult,TestResult,local,urn:productium:specification-profile:TestResult,True,class-table map
+IC:VerificationEvidenceRecord,VerificationEvidenceRecord,local,urn:productium:specification-profile:VerificationEvidenceRecord,True,class-table map
+IC:ValidationEvidenceRecord,ValidationEvidenceRecord,local,urn:productium:specification-profile:ValidationEvidenceRecord,True,class-table map
+IC:TestSuiteSpecification,TestSuiteSpecification,local,urn:productium:specification-profile:TestSuiteSpecification,True,class-table map
+IC:TestDataReference,TestDataReference,local,urn:productium:specification-profile:TestDataReference,True,class-table map
+IC:PositioningStatement,PositioningStatement,local,urn:productium:specification-profile:PositioningStatement,True,class-table map
+IC:MessagingSpecification,MessagingSpecification,local,urn:productium:specification-profile:MessagingSpecification,True,class-table map
+IC:GoToMarketSpecification,GoToMarketSpecification,local,urn:productium:specification-profile:GoToMarketSpecification,True,class-table map
+IC:LaunchSpecification,LaunchSpecification,local,urn:productium:specification-profile:LaunchSpecification,True,class-table map
+IC:MarketingGoalSpecification,MarketingGoalSpecification,local,urn:productium:specification-profile:MarketingGoalSpecification,True,class-table map
+IC:TargetMarketReference,TargetMarketReference,local,urn:productium:specification-profile:TargetMarketReference,True,class-table map
+IC:TargetSegmentReference,TargetSegmentReference,local,urn:productium:specification-profile:TargetSegmentReference,True,class-table map
+IC:CompetitiveNarrative,CompetitiveNarrative,local,urn:productium:specification-profile:CompetitiveNarrative,True,class-table map
+IC:MarketingInsightReference,MarketingInsightReference,local,urn:productium:specification-profile:MarketingInsightReference,True,class-table map
+IC:AcquisitionHypothesisSpecification,AcquisitionHypothesisSpecification,local,urn:productium:specification-profile:AcquisitionHypothesisSpecification,True,class-table map
+IC:AdoptionHypothesisSpecification,AdoptionHypothesisSpecification,local,urn:productium:specification-profile:AdoptionHypothesisSpecification,True,class-table map
+EXT:Business:BusinessRule,BusinessRule,external,,,no mapping asserted by this register
+EXT:EvidenceLayer:Evidence,Evidence,external,,,no mapping asserted by this register
+EXT:Market:CustomerSegment,CustomerSegment,external,,,no mapping asserted by this register
+EXT:Market:Market,Market,external,,,no mapping asserted by this register
+EXT:Market:MarketInsight,MarketInsight,external,,,no mapping asserted by this register
+EXT:Market:MarketSegment,MarketSegment,external,,,no mapping asserted by this register
+EXT:ProductLine:ProductFamily,ProductFamily,external,,,no mapping asserted by this register
+EXT:ProductLine:ProductLine,ProductLine,external,,,no mapping asserted by this register
+EXT:ProductLine:ProductVariant,ProductVariant,external,,,no mapping asserted by this register
+EXT:ProductManagement:Metric,Metric,external,,,no mapping asserted by this register
+EXT:Business:BusinessCapability,BusinessCapability,external,,,no mapping asserted by this register
+EXT:Business:ValueProposition,ValueProposition,external,,,no mapping asserted by this register
+EXT:Business:BusinessGoal,BusinessGoal,external,,,no mapping asserted by this register
+EXT:Business:Service,Business Service,external,,,no mapping asserted by this register
+EXT:ProductLine:ProductConfiguration,ProductConfiguration,external,,,no mapping asserted by this register
+EXT:ExternalUnresolved:Evidence,Evidence,external,,,no mapping asserted by this register
+EXT:UXResearch:User_Mental_Model,User Mental Model,external,,,no mapping asserted by this register
+EXT:ExternalUnresolved:Test_Script,Test Script,external,,,no mapping asserted by this register
+EXT:ExternalUnresolved:Test_Plan,Test Plan,external,,,no mapping asserted by this register
+EXT:ExternalUnresolved:Configuration,Configuration,external,,,no mapping asserted by this register
+EXT:Market:Need,Need,external,,,no mapping asserted by this register
+EXT:Market:Pain,Pain,external,,,no mapping asserted by this register
+EXT:Market:Competitor_Alternative,Competitive Referent,external,,,no mapping asserted by this register
+IC:ProductRealization,ProductRealization,local,urn:productium:specification-profile:ProductRealization,True,class-table map
+IC:ProductCapability,ProductCapability,local,urn:productium:specification-profile:ProductCapability,True,class-table map
+EXT:Architecture:Component,Component,external,,,no mapping asserted by this register
+EXT:Architecture:Service,Service,external,,,no mapping asserted by this register
+EXT:Architecture:ArchitectureElement,ArchitectureElement,external,,,no mapping asserted by this register
+EXT:Architecture:Interface,Interface,external,,,no mapping asserted by this register
+IC:EvidenceArtifact,EvidenceArtifact,local,urn:productium:specification-profile:EvidenceArtifact,True,class-table map
+IC:AssessmentClaim,AssessmentClaim,local,urn:productium:specification-profile:AssessmentClaim,True,class-table map
+IC:EvidenceAttributionRecord,EvidenceAttributionRecord,local,urn:productium:specification-profile:EvidenceAttributionRecord,True,class-table map
+IC:FindingRecord,FindingRecord,local,urn:productium:specification-profile:FindingRecord,True,class-table map
+IC:ExternalReferenceRecord,ExternalReferenceRecord,local,urn:productium:specification-profile:ExternalReferenceRecord,True,class-table map
+IC:ConditionSpecification,ConditionSpecification,local,urn:productium:specification-profile:ConditionSpecification,True,class-table map
+IC:ScenarioSpecification,ScenarioSpecification,local,urn:productium:specification-profile:ScenarioSpecification,True,class-table map
+IC:AssessmentContextSpecification,AssessmentContextSpecification,local,urn:product-ontology:assessment-profile:0.4:AssessmentContextSpecification,True,class-table map
+IC:DeliveryWorkItemStatusRecord,DeliveryWorkItemStatusRecord,local,urn:product-ontology:delivery-profile:0.5:DeliveryWorkItemStatusRecord,True,class-table map

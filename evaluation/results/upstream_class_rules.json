@@ -1,0 +1,926 @@
+{
+  "source": "OntoUML/ontouml-validator",
+  "declared_rules": 71,
+  "implemented_rules": 13,
+  "unimplemented_rules": 58,
+  "execution_scope": "Direct calls to all 13 unmodified implemented functions on audited full native structural projection. Not a completed aggregate validator run.",
+  "aggregate_entry_point": {
+    "completed": false,
+    "exception": "ValueError('End of switch (if-else statements) without valid parameter!')",
+    "reason": "The upstream dispatcher iterates all defined rules but implements only 13; unsupported rule reaches default exception."
+  },
+  "rules": [
+    {
+      "rule": "R_CL_AIB",
+      "definition": "Enumeration classes cannot be specialized by other classes.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_ALX",
+      "definition": "Every class decorated with a ULTIMATE SORTAL or a NON-SORTAL stereotype cannot specialize classes decorated with a SORTAL or an ABSTRACT stereotype.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_ANY",
+      "definition": "No class representing a powertype (i.e., whose tagged value 'isPowertype' is set to 'true') can be the target of more than one non-derived instantiation relation.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_ASZ",
+      "definition": "Every class decorated with a non-sortal stereotype and the tagged value 'order' set to '1' must have the tagged value 'restrictedTo' set to an array containing one or more of the values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality' ].",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_BFO",
+      "definition": "Every class whose tagged value 'restrictedTo' is [ 'collective' ] must have the tagged value 'isExtensional' set to either 'true' or 'false'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_BLE",
+      "definition": "Every class decorated with a RIGID or SEMI-RIGID stereotype cannot specialize classes decorated with an ANTI-RIGID stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_BQI",
+      "definition": "Every class with the tagged value 'restrictedTo' set to [ 'type' ] must have the have the tagged 'order' set to a number greater than '1'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_BWZ",
+      "definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+      "status": "EXECUTED",
+      "warnings": [
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Component' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AComponent"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Interface' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AInterface"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Service' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AService"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'BusinessCapability' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3ABusinessCapability"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'BusinessGoal' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3ABusinessGoal"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'BusinessRule' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3ABusinessRule"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Business Service' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3AService"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Configuration' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3AConfiguration"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Test Plan' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3ATest_Plan"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Competitive Referent' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3ACompetitor_Alternative"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'MarketInsight' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3AMarketInsight"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'MarketSegment' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3AMarketSegment"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'ProductConfiguration' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductConfiguration"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'ProductFamily' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductFamily"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'ProductLine' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductLine"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'ProductVariant' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductVariant"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Metric' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductManagement%3AMetric"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'User Mental Model' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AUXResearch%3AUser_Mental_Model"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'ArchitectureElement' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AArchitectureElement"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Test Script' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3ATest_Script"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Market' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3AMarket"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Evidence' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3AEvidence"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'ValueProposition' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3AValueProposition"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'CustomerSegment' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3ACustomerSegment"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Need' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3ANeed"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Evidence' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AEvidenceLayer%3AEvidence"
+        },
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'Pain' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3APain"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_CMS",
+      "definition": "Every class decorated with a \u00abphase\u00bb must be part of a disjoint and complete generalization set including only classes decorated with \u00abphase\u00bb as the generalizations' specific classes.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_EDA",
+      "definition": "Enumeration classes can only be generalized by classes with stereotype Abstract.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_EGT",
+      "definition": "No class can have one of its subclasses as its superclasses.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_EMV",
+      "definition": "Every class must have the tagged value 'restrictedTo' set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'event', 'situation', 'abstract', 'type' ].",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_GAZ",
+      "definition": "Every class with the tagged value 'restrictedTo' set to [ 'type' ] and some other value must have the have the tagged 'order' set to '*'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_GJU",
+      "definition": "Every class must be decorated with exactly one stereotype.",
+      "status": "EXECUTED",
+      "warnings": [
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Component' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AComponent"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Interface' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AInterface"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Service' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AService"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'BusinessCapability' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3ABusinessCapability"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'BusinessGoal' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3ABusinessGoal"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'BusinessRule' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3ABusinessRule"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Business Service' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3AService"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Configuration' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3AConfiguration"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Test Plan' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3ATest_Plan"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Competitive Referent' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3ACompetitor_Alternative"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'MarketInsight' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3AMarketInsight"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'MarketSegment' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3AMarketSegment"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'ProductConfiguration' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductConfiguration"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'ProductFamily' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductFamily"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'ProductLine' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductLine"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'ProductVariant' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductLine%3AProductVariant"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Metric' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AProductManagement%3AMetric"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'User Mental Model' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AUXResearch%3AUser_Mental_Model"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'ArchitectureElement' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AArchitecture%3AArchitectureElement"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Test Script' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3ATest_Script"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Market' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3AMarket"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Evidence' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AExternalUnresolved%3AEvidence"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'ValueProposition' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3ABusiness%3AValueProposition"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'CustomerSegment' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3ACustomerSegment"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Need' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3ANeed"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Evidence' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AEvidenceLayer%3AEvidence"
+        },
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'Pain' has no stereotype.",
+          "related_id": "urn:product-ontology:native:EXT%3AMarket%3APain"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_JFW",
+      "definition": "Every class representing a powertype (i.e., whose tagged value 'isPowertype' is set to 'true') must only have types as instances (i.e., its tagged value 'restrictedTo' must be set to [ 'type' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_JMQ",
+      "definition": "Every class must have the tagged value 'order' set to a number greater than '0' or set to '*'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_JOJ",
+      "definition": "Every class having enumeration literals must be decorated with the stereotype enumeration.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_LAX",
+      "definition": "Every class decorated with a base sortal stereotype and the tagged value 'order' set to '1' must have the tagged value 'restrictedTo' set to an array containing one of the values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality' ].",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_NBG",
+      "definition": "Every class decorated with a \u00abphaseMixin\u00bb must be part of a disjoint and complete generalization set including only classes decorated with \u00abphaseMixin\u00bb as the generalizations' specific classes.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_OEV",
+      "definition": "Every non-derived class decorated with a \u00abrole\u00bb must be connected directly or indirectly to some relation decorated with the stereotype \u00abmediation\u00bb where the opposited end has a cardinality with lower bound '1'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_PPZ",
+      "definition": "Every abstract class should be specialized by some concrete class or have a super class that is specialized by a concrete class.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_PSQ",
+      "definition": "Every class decorated with a stereotype \u00abtype\u00bb must have the have the tagged 'order' set to a number greater than '1' or set to '*'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_QJC",
+      "definition": "Each class with one of the following stereotypes must exclusively map to the corresponding 'restrictedTo' value: collective to collective, event to event, kind to functional-complex, quality to quality, quantity to quantity, relator to relator, situation to situation, abstract to abstract, enumeration to abstract, and datatype to abstract.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_QOV",
+      "definition": "Every class representing a powertype (i.e., whose tagged value 'isPowertype' is set to 'true') must be decorated with a RIGID stereotype (i.e., either \u00abcategory\u00bb, \u00abtype\u00bb, or \u00absubkind\u00bb).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_SQU",
+      "definition": "Every class decorated with a stereotype from the set \u00abkind\u00bb, \u00abcollective\u00bb, \u00abquantity\u00bb, \u00abrelator\u00bb, \u00abmode\u00bb, \u00abquality\u00bb, \u00abevent\u00bb, \u00absituation\u00bb, \u00ababstract\u00bb, \u00abdatatype\u00bb, or \u00abenumeration\u00bb, must have the have the tagged 'order' set to '1'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_UMC",
+      "definition": "Every enumeration class must have at least two literals.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_UTL",
+      "definition": "Every class whose tagged value 'restrictedTo' does includes the value [ 'type' ] must have the tagged value 'isPowertype' set to either 'true' or 'false'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_VOQ",
+      "definition": "Every class whose tagged value 'restrictedTo' is not [ 'collective' ] must have the tagged value 'isExtensional' set to 'null'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_VPE",
+      "definition": "Every class whose tagged value 'restrictedTo' does not include the value [ 'type' ] must have the tagged value 'isPowertype' set to 'null'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_XJZ",
+      "definition": "Every class decorated with the stereotype \u00abenumeration\u00bb must not have attributes.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_YOK",
+      "definition": "Every class decorated with a non-sortal stereotype must be abstract.",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_ZEF",
+      "definition": "Every class decorated with a stereotype \u00abmode\u00bb must have the tagged value 'restrictedTo' set to an array containing one of or both the values [ 'intrinsic-mode', 'extrinsic-mode' ].",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_CL_ZGT",
+      "definition": "Every class decorated with a base sortal stereotype must specialize a unique class decorated with a ULTIMATE SORTAL stereotype .",
+      "status": "EXECUTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_BAK",
+      "definition": "No generalization can connect a general class decorated with \u00ababstract\u00bb to a specific class that is not decorated with some abstract stereotype (i.e., \u00ababstract\u00bb, \u00abdatatype\u00bb, or \u00abenumeration\u00bb).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_EPG",
+      "definition": "No generalization can connect a general class decorated with a ULTIMATE SORTAL stereotype to a specific class decorated with a ULTIMATE SORTAL stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_HGQ",
+      "definition": "No generalization can connect a general class decorated with a sortal stereotype to a specific class decorated with a non-sortal stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_HPZ",
+      "definition": "No generalization can connect a general class to an specific class where the specific class has in its tagged value 'restrictedTo' values that are not present in the same tagged value of the general class.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_IJM",
+      "definition": "No generalization can connect a general class decorated with \u00abevent\u00bb to a specific class decorated with a different stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_JLW",
+      "definition": "No generalization can connect a general class decorated with \u00abdatatype\u00bb to a specific class decorated with a different stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_MDR",
+      "definition": "Every generalization connected to a general class with its tagged value 'order' set to a number can only connect a specific class whose tagged value 'order' is set to the same number.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_MXI",
+      "definition": "No generalization can connect a general class decorated with an ANTI-RIGID stereotype to a specific class decorated with a RIGID or SEMI-RIGID stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_UXR",
+      "definition": "No generalization can connect a general class decorated with \u00absituation\u00bb to a specific class decorated with a different stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_VEZ",
+      "definition": "No generalization can connect a general class decorated with \u00abenumeration\u00bb to a specific class decorated with a different stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GE_XRS",
+      "definition": "Every generalization connected to a general class with its tagged value 'isExtensional' set to 'true' can only connect a specific class whose tagged value 'isExtensional' is set to 'true' as well.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GS_LHD",
+      "definition": "Every categorizer in a generalization set must be a high-order type whose instances are types (i.e., whose tagged value 'restrictedTo' is set to [ 'type' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GS_PQP",
+      "definition": "Every categorizer in a generalization set must be the target of an instantiation relation (i.e., a relation decorated with a stereotype \u00abinstantiation\u00bb) whose source is the generalization set's general class.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GS_UTW",
+      "definition": "Every categorizer in a generalization set must have the tagged value 'isPowertype' set to 'false'.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GS_XXB",
+      "definition": "The target's cardinality of the instantiation relation between the general class and the categorizer must not have a lower bound '0' if the generalization set is complete.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GS_YKW",
+      "definition": "Every generalization in a generalization set must share the same general class.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_GS_ZMQ",
+      "definition": "The target's cardinality of the instantiation relation between the general class and the categorizer must not have an upper bound '1' if the generalization set is overlapping (or covering).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_PR_BWY",
+      "definition": "Every property decorated with a stereotype \u00abbegin\u00bb must be defined within a class representing an event (i.e., whose tagged value is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_PR_LCI",
+      "definition": "Every property decorated with a stereotype \u00abend\u00bb must be defined within a class representing an event (i.e., whose tagged value is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_ALR",
+      "definition": "Every relation decorated with a stereotype \u00abhistoricalDepedence\u00bb must connect source class and target class where either both represent endurants (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]) or both represent events (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_AZO",
+      "definition": "Every relation decorated with a stereotype \u00abbringsAbout\u00bb must connect a source class representing an event (i.e., whose tagged value is set to [ 'event' ]) to a target class representing a situation (i.e., whose tagged value 'restrictedTo' is set to [ 'situation' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_CDJ",
+      "definition": "Every relation decorated with a stereotype \u00abmediation\u00bb must connect a source class representing a relator (i.e., whose tagged value 'restrictedTo' set to [ 'relator' ]) to a target class representing an endurant (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_EAQ",
+      "definition": "Every relation decorated with a stereotype \u00abmanifestation\u00bb must connect a source class representing a moment (i.e., whose tagged value is set to one or more values in the list [ 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality' ]) to a target class representing an event (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_ECP",
+      "definition": "Every relation decorated with a stereotype \u00abcharacterization\u00bb must connect a source class representing mode or quality (i.e., whose tagged value 'restrictedTo' set to one or more values in the list [ 'intrinsic-mode', 'extrinsic-mode', 'quality' ]) to a target class representing an endurant (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_FIX",
+      "definition": "Every relation decorated with a stereotype \u00abcomponentOf\u00bb must connect a source class and a target class representing functional-complexes (i.e., whose tagged value 'restrictedTo' is set to [ 'functional-complex' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_GZF",
+      "definition": "No relation decorated with a stereotype \u00abinstantiation\u00bb can connect an ordered source class (i.e., whose tagged value 'order' is set to a number 'x') to a target class that is not an orderless (i.e., whose tagged value 'order' is set to '*') or in the order immediately above (i.e., whose tagged value 'order' is set to a number 'x+1').",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_GZN",
+      "definition": "Every relation decorated with a stereotype \u00abtriggers\u00bb must connect a source class representing a situation (i.e., whose tagged value is set to [ 'situation' ]) to a target class representing an event (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_HGG",
+      "definition": "Every relation decorated with a stereotype \u00abcreation\u00bb must connect a source class representing an endurant (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]) to a target class representing an event (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_JND",
+      "definition": "No relation decorated with a stereotype \u00abinstantiation\u00bb can connect an orderless source class (i.e., whose tagged value 'order' is set to '*') to a target class that is not an orderless as well.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_KPG",
+      "definition": "Every relation must be decorated with at most one stereotype.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_KZC",
+      "definition": "Every relation decorated with a stereotype \u00abparticipation\u00bb must connect a source class representing an endurant (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]) to a target class representing an event (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_LQF",
+      "definition": "Every relation decorated with a stereotype \u00abtermination\u00bb must connect a source class representing an endurant (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]) to a target class representing an event (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_NTY",
+      "definition": "Every relation decorated with a stereotype \u00abparticipational\u00bb must connect a source class and a target class representing events (i.e., whose tagged value 'restrictedTo' is set to [ 'event' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_RON",
+      "definition": "Every relation decorated with a stereotype \u00abmemberOf\u00bb must connect a source class representing a functional-complex (i.e., whose tagged value 'restrictedTo' is set to [ 'functional-complex' ]) to a target class representing a collective (i.e., whose tagged value 'restrictedTo' is set to [ 'collective' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_SEI",
+      "definition": "Every relation decorated with a stereotype \u00abinstantiation\u00bb must connect a target class representing a high-order type whose instances are types (i.e., whose tagged value 'restrictedTo' is set to [ 'type' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_UCH",
+      "definition": "Every relation decorated with a stereotype \u00absubCollectionOf\u00bb must connect a source class and a target class representing collectives (i.e., whose tagged value 'restrictedTo' is set to [ 'collective' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_VDQ",
+      "definition": "Every relation decorated with a stereotype \u00abderivation\u00bb must connect a source relation to a target class.",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    },
+    {
+      "rule": "R_RE_VMI",
+      "definition": "Every relation decorated with a stereotype \u00abexternalDependence\u00bb must connect a source class representing extrinsic mode (i.e., whose tagged value 'restrictedTo' set to [ 'extrinsic-mode' ]) to a target class representing an endurant (i.e., whose tagged value is set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'type' ]).",
+      "status": "NOT_IMPLEMENTED",
+      "warnings": [],
+      "errors": []
+    }
+  ],
+  "event_issues": [],
+  "event_controls": [
+    {
+      "id": "event_valid",
+      "rule": "R_CL_QJC",
+      "expected_issue": false,
+      "issues": [],
+      "passed": true
+    },
+    {
+      "id": "event_wrong_nature",
+      "rule": "R_CL_QJC",
+      "expected_issue": true,
+      "issues": [
+        {
+          "rule_code": "R_CL_QJC",
+          "rule_definition": "Each class with one of the following stereotypes must exclusively map to the corresponding 'restrictedTo' value: collective to collective, event to event, kind to functional-complex, quality to quality, quantity to quantity, relator to relator, situation to situation, abstract to abstract, enumeration to abstract, and datatype to abstract.",
+          "issue_description": "The class 'TestExecution' with stereotype 'https://w3id.org/ontouml#event' has an incorrect restrictedTo value ('https://w3id.org/ontouml#functionalComplexNature'). ",
+          "related_id": "urn:product-ontology:native:IC%3ATestExecution"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "event_missing_nature",
+      "rule": "R_CL_EMV",
+      "expected_issue": true,
+      "issues": [
+        {
+          "rule_code": "R_CL_EMV",
+          "rule_definition": "Every class must have the tagged value 'restrictedTo' set to one or more values in the list [ 'functional-complex', 'collective', 'quantity', 'relator', 'intrinsic-mode', 'extrinsic-mode', 'quality', 'event', 'situation', 'abstract', 'type' ].",
+          "issue_description": "The class 'TestExecution' with stereotype 'https://w3id.org/ontouml#event' has no restrictedTo value. ",
+          "related_id": "urn:product-ontology:native:IC%3ATestExecution"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "event_unknown_stereotype",
+      "rule": "R_CL_BWZ",
+      "expected_issue": true,
+      "issues": [
+        {
+          "rule_code": "R_CL_BWZ",
+          "rule_definition": "Every class must be decorated with stereotypes of the OntoUML profile.",
+          "issue_description": "The class 'TestExecution' has stereotype 'https://w3id.org/ontouml#unknown', which is not part of the OntoUML profile.",
+          "related_id": "urn:product-ontology:native:IC%3ATestExecution"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "event_duplicate_stereotype",
+      "rule": "R_CL_GJU",
+      "expected_issue": true,
+      "issues": [
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'TestExecution' has more than one stereotype.",
+          "related_id": "urn:product-ontology:native:IC%3ATestExecution"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "event_missing_stereotype",
+      "rule": "R_CL_GJU",
+      "expected_issue": true,
+      "issues": [
+        {
+          "rule_code": "R_CL_GJU",
+          "rule_definition": "Every class must be decorated with exactly one stereotype.",
+          "issue_description": "The class 'TestExecution' has no stereotype.",
+          "related_id": "urn:product-ontology:native:IC%3ATestExecution"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "warning_count": 54,
+  "error_count": 0,
+  "unsupported_event_relation_and_identity_semantics": true,
+  "limits": [
+    "All implemented functions are class rules; no relationship-rule implementation exists in this pinned source.",
+    "Known implementation query scope is narrower than prose definitions (for example, named typed focus classes); do not generalize recall beyond controls.",
+    "The source get_all_superclasses/subclasses traverses at most two hierarchy levels. No complete reachability proof is claimed.",
+    "Custom properties are archived exactly but ignored by upstream rules. Relation cardinalities are preserved, not validated by these class rules."
+  ]
+}

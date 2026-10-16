@@ -1,0 +1,12 @@
+[
+  [
+    "urn:orsd:v03:synthetic:hypothesisA",
+    "urn:productium:specification-profile:HypothesisSpecification",
+    "urn:orsd:v03:synthetic:outcomeA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:solutionHypothesisA",
+    "urn:productium:specification-profile:SolutionHypothesisSpecification",
+    "urn:orsd:v03:synthetic:outcomeB"
+  ]
+]

@@ -1,0 +1,39 @@
+{
+  "version": "0.41.0",
+  "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+  "total": 146,
+  "passed": 146,
+  "groups": {
+    "external_boundary": {
+      "total": 36,
+      "passed": 36
+    },
+    "history": {
+      "total": 11,
+      "passed": 11
+    },
+    "identity_policy": {
+      "total": 25,
+      "passed": 25
+    },
+    "occurrence": {
+      "total": 28,
+      "passed": 28
+    },
+    "owner_rdf": {
+      "total": 3,
+      "passed": 3
+    },
+    "persistence": {
+      "total": 1,
+      "passed": 1
+    },
+    "retained_event": {
+      "total": 42,
+      "passed": 42
+    }
+  },
+  "new_positive_population_triples": 46,
+  "scope": "Synthetic profile and regression controls. Independent semantic review, full ROoST integration, complete UFO-B semantics and real browser acceptance remain unexecuted.",
+  "independent_acceptances": 0
+}

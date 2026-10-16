@@ -1,0 +1,20 @@
+[
+  [
+    "urn:orsd:v05:synthetic:refOld",
+    "urn:orsd:v05:synthetic:targetOld",
+    "urn:orsd:v05:synthetic:authorityOld",
+    "urn:orsd:v05:synthetic:authorityFinding",
+    "authority_changed",
+    null,
+    "urn:orsd:v05:synthetic:authorityNew"
+  ],
+  [
+    "urn:orsd:v05:synthetic:refOld",
+    "urn:orsd:v05:synthetic:targetOld",
+    "urn:orsd:v05:synthetic:authorityOld",
+    "urn:orsd:v05:synthetic:unreachableFinding",
+    "target_unreachable",
+    null,
+    null
+  ]
+]

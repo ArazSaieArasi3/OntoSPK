@@ -1,0 +1,134 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:product-ontology:event-instance:EventShape> a sh:NodeShape ;
+    sh:property [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:executionEndedAt> ] ;
+    sh:sparql [ sh:message "Assessed capability specification must be linked to the version of the tested realization." ;
+            sh:select "SELECT $this WHERE { $this <urn:product-ontology:event-contract:ICREL%3ACP%3AassessesSpecification> ?cap . FILTER NOT EXISTS { $this <urn:product-ontology:event-contract:ICREL%3ACP%3AtestsRealization> ?real . ?real <urn:product-ontology:event-contract:ICREL%3ACP%3ArealizesVersion> ?v . ?v <urn:product-ontology:event-contract:ICREL%3ACP%3AspecifiesCapability> ?cap } }" ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> .
+
+<urn:product-ontology:event-instance:SuiteShape> a sh:NodeShape ;
+    sh:sparql [ sh:message "Recorded execution must execute a case explicitly contained in the indexing suite." ;
+            sh:select "SELECT $this WHERE { $this <urn:product-ontology:event-contract:REL%3AW2%3A147> ?e . ?e <urn:product-ontology:event-contract:REL%3AW2%3A090> ?case . FILTER NOT EXISTS {$this <urn:product-ontology:event-contract:REL%3AW2%3A088> ?case } }" ] ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A147> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestResult> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:REL%3AW2%3A091> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A091> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestSuiteSpecification> ;
+            sh:minCount 0 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:REL%3AW2%3A147> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A147> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3AAssessmentContextSpecification> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionContext> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionContext> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3AProductRealization> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:minCount 0 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:ICREL%3ACP%3AtestsRealization> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3AProductRealization> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:ICREL%3ACP%3AtestsRealization> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestCase> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:minCount 0 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:REL%3AW2%3A090> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestCase> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A090> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3AConditionSpecification> ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionCriterion> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionCriterion> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3AConditionSpecification> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:minCount 0 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionCriterion> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3AConditionSpecification> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionCriterion> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ACapabilitySpecification> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:minCount 0 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:ICREL%3ACP%3AassessesSpecification> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ACapabilitySpecification> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:ICREL%3ACP%3AassessesSpecification> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestCase> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:REL%3AW2%3A090> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A090> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3AAssessmentContextSpecification> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:minCount 0 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionContext> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3AAssessmentContextSpecification> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:REL%3AORSD05%3AexecutionContext> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestResult> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path [ sh:inversePath <urn:product-ontology:event-contract:REL%3AW2%3A091> ] ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestResult> ;
+    sh:targetObjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A091> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3AProductRealization> ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:ICREL%3ACP%3AtestsRealization> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:ICREL%3ACP%3AtestsRealization> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestSuiteSpecification> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+            sh:minCount 0 ;
+            sh:path <urn:product-ontology:event-contract:REL%3AW2%3A147> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestSuiteSpecification> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:REL%3AW2%3A147> .
+
+[] a sh:NodeShape ;
+    sh:class <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:property [ sh:class <urn:product-ontology:native:IC%3ACapabilitySpecification> ;
+            sh:minCount 1 ;
+            sh:path <urn:product-ontology:event-contract:ICREL%3ACP%3AassessesSpecification> ] ;
+    sh:targetClass <urn:product-ontology:native:IC%3ATestExecution> ;
+    sh:targetSubjectsOf <urn:product-ontology:event-contract:ICREL%3ACP%3AassessesSpecification> .
+

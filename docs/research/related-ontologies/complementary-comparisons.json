@@ -1,0 +1,27 @@
+[
+  {
+    "name": "SEON",
+    "reference": 13,
+    "reason": "Network architecture, shared foundations and integration boundaries; not a whole-network superiority test."
+  },
+  {
+    "name": "Requirements/test ontology",
+    "reference": 15,
+    "reason": "Artifact traceability; do not equate a trace link with established assessment truth."
+  },
+  {
+    "name": "OntoTrace",
+    "reference": 16,
+    "reason": "Human-task evidence; its reported results are not transferred to OntoSPK."
+  },
+  {
+    "name": "ONTO-PDM",
+    "reference": 17,
+    "reason": "Formal interoperability and standards correspondences; not a matched software-product benchmark."
+  },
+  {
+    "name": "ROoST",
+    "reference": 23,
+    "reason": "Targeted testing semantics; reuse the existing conditional correspondence matrix without claiming full integration."
+  }
+]

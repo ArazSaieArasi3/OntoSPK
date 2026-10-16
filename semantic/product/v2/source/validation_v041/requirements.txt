@@ -1,0 +1,2 @@
+# Active integration dependencies; retained old lock is under evidence/historical.
+-r ../../../../../tools/ontospk/requirements.txt

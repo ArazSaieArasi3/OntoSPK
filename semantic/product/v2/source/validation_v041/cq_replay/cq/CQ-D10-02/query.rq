@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?record ?category ?claim ?carrier WHERE {
+VALUES ?claim { e:claimA } VALUES ?category { p:ReleaseEvidenceRecord p:VerificationEvidenceRecord p:ValidationEvidenceRecord } ?record a ?category ; p:recordsClaim ?claim ; p:recordsCarrier ?carrier .
+}

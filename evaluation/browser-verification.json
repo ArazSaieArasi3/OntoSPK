@@ -1,0 +1,7 @@
+{
+  "local_render": "BLOCKED",
+  "reason": "Chromium launch terminated because Unix socket creation is not permitted in the execution environment.",
+  "online_render": "NOT_EXECUTED",
+  "webvowl_contract_check": "docs/webvowl/coverage.json",
+  "no_visual_pass_claimed": true
+}

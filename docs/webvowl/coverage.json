@@ -1,0 +1,92 @@
+{
+  "logical_source_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+  "adapter": "tools/publication/build_webvowl_data.py",
+  "named_classes": 121,
+  "named_classes_rendered": 121,
+  "declared_object_properties": 286,
+  "declared_datatype_properties": 46,
+  "rendered_declared_properties": 322,
+  "rendered_uri_subclass_edges": 34,
+  "omitted_properties": [
+    {
+      "iri": "urn:product-ontology:assessment-profile:0.4:claimSubject",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:AssessmentClaim"
+      ],
+      "declared_ranges": [
+        "n4cba54e0e2f14d35bdeded485e149d8fb3"
+      ]
+    },
+    {
+      "iri": "urn:productium:specification-profile:canonicalOwner",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:ExternalReferenceRecord"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:conditionContext",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:ConditionSpecification"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:isCarrierInRecord",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:personaContext",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:PersonaSpecification"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:referenceContext",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:ExternalReferenceRecord"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:referenceProvenance",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:ExternalReferenceRecord"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:referenceTarget",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:ExternalReferenceRecord"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:scenarioContext",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [
+        "urn:productium:specification-profile:ScenarioSpecification"
+      ],
+      "declared_ranges": []
+    },
+    {
+      "iri": "urn:productium:specification-profile:specificationProvenance",
+      "reason": "An exact single declared URI domain and range are required for this view.",
+      "declared_domains": [],
+      "declared_ranges": []
+    }
+  ],
+  "scope": "Asserted URI endpoints only; anonymous axioms, disjointness, SHACL and SQL remain in the formal reference. No missing domain or range is invented.",
+  "widoco_default_converter": "The unmodified source produced an empty WebVOWL entity projection with the bundled converter; this explicit adapter preserves original URN identifiers."
+}

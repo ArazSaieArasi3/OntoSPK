@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?reference ?context ?purpose WHERE {
+VALUES ?reference { e:referenceA } ?reference p:referenceContext ?context . OPTIONAL { ?reference p:referencePurpose ?purpose }
+}

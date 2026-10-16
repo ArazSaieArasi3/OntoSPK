@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?plan ?messaging ?launch WHERE {
+VALUES ?plan { e:gtmA } ?plan p:r101_plansLaunch ?launch . OPTIONAL { ?launch p:r151_usesLaunchMessaging ?messaging }
+}

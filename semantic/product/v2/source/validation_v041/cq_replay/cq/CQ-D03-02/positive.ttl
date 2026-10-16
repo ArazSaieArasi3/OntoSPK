@@ -1,0 +1,6 @@
+<urn:orsd:v03:synthetic:featureA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:FeatureSpecification> .
+<urn:orsd:v03:synthetic:featureA> <urn:productium:specification-profile:specifiesSlice> <urn:orsd:v03:synthetic:sliceA> .
+<urn:orsd:v03:synthetic:featureAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:FeatureSpecification> .
+<urn:orsd:v03:synthetic:featureAOther> <urn:productium:specification-profile:specifiesSlice> <urn:orsd:v03:synthetic:sliceAOther> .
+<urn:orsd:v03:synthetic:sliceA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:VerticalSliceSpecification> .
+<urn:orsd:v03:synthetic:sliceAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:VerticalSliceSpecification> .

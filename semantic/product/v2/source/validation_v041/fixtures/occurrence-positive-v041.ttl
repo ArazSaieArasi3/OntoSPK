@@ -1,0 +1,65 @@
+@prefix ns1: <urn:ontospk:occurrence-profile:0.41:> .
+@prefix ns2: <urn:product-ontology:delivery-profile:0.5:> .
+@prefix ns3: <urn:productium:specification-profile:> .
+@prefix ns4: <urn:product-ontology:assessment-profile:0.4:> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:product-ontology:event-instance:product1> a ns3:Product ;
+    ns3:hasVersion <urn:product-ontology:event-instance:v1> .
+
+<urn:product-ontology:event-instance:result1> a ns3:TestResult ;
+    ns2:resultOutcome "inconclusive" ;
+    ns2:resultRecordedAt "2026-10-14T04:31:00Z"^^xsd:dateTime ;
+    ns2:resultSource "urn:synthetic:v035:result-source"^^xsd:anyURI ;
+    ns3:recordsExecution <urn:product-ontology:event-instance:e1> .
+
+<urn:product-ontology:event-instance:suite1> a ns3:TestSuiteSpecification ;
+    ns3:containsCase <urn:product-ontology:event-instance:case1> ;
+    ns3:r147_hasRecordedExecution <urn:product-ontology:event-instance:e1> .
+
+<urn:product-ontology:event-instance:actual1> a ns3:ProductCapability ;
+    ns3:evaluatedAgainst <urn:product-ontology:event-instance:cap1> .
+
+<urn:product-ontology:event-instance:ctx1> a ns4:AssessmentContextSpecification ;
+    ns4:contextDescription "Synthetic completed-event and identity integration context" ;
+    ns4:contextSource "urn:synthetic:v035:context-source"^^xsd:anyURI ;
+    ns4:contextVersion <urn:product-ontology:event-instance:v1> .
+
+<urn:product-ontology:event-instance:feature1> a ns3:FeatureSpecification .
+
+<urn:product-ontology:event-instance:real1> a ns3:ProductRealization ;
+    ns3:bearsCapability <urn:product-ontology:event-instance:actual1> ;
+    ns3:realizesVersion <urn:product-ontology:event-instance:v1> .
+
+<urn:product-ontology:event-instance:scenario1> a ns3:TestScenario ;
+    ns3:r84_covers <urn:product-ontology:event-instance:feature1> ;
+    ns3:specifiesExpectedCondition <urn:product-ontology:event-instance:condition1> .
+
+<urn:product-ontology:event-instance:case1> a ns3:TestCase ;
+    ns3:r87_refinesTestScenario <urn:product-ontology:event-instance:scenario1> ;
+    ns3:specifiesExpectedCondition <urn:product-ontology:event-instance:condition1> .
+
+<urn:product-ontology:event-instance:e1> a ns3:TestExecution ;
+    ns1:codeUseSource "urn:synthetic:code-use-observation"^^xsd:anyURI ;
+    ns1:executionCode "urn:synthetic:test-code"^^xsd:anyURI ;
+    ns1:executionSource "urn:synthetic:attempt-observation"^^xsd:anyURI ;
+    ns1:executionStage "test_exercised"^^xsd:string ;
+    ns1:executionStartedAt "2026-10-14T04:29:00Z"^^xsd:dateTime ;
+    ns1:participationSource "urn:synthetic:target-observation"^^xsd:anyURI ;
+    ns1:roostCandidate true ;
+    ns1:startTimeKnowledge "known"^^xsd:string ;
+    ns1:targetParticipation "supported"^^xsd:string ;
+    ns2:executionContext <urn:product-ontology:event-instance:ctx1> ;
+    ns2:executionCriterion <urn:product-ontology:event-instance:condition1> ;
+    ns2:executionEndedAt "2026-10-14T04:30:00Z"^^xsd:dateTime ;
+    ns3:assessesSpecification <urn:product-ontology:event-instance:cap1> ;
+    ns3:executes <urn:product-ontology:event-instance:case1> ;
+    ns3:testsRealization <urn:product-ontology:event-instance:real1> .
+
+<urn:product-ontology:event-instance:cap1> a ns3:CapabilitySpecification .
+
+<urn:product-ontology:event-instance:condition1> a ns3:ConditionSpecification .
+
+<urn:product-ontology:event-instance:v1> a ns3:ProductVersion ;
+    ns3:specifiesCapability <urn:product-ontology:event-instance:cap1> .
+

@@ -1,0 +1,7 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX a: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX e: <urn:product-ontology:delivery-profile:0.5:>
+PREFIX t: <urn:orsd:v05:synthetic:>
+SELECT DISTINCT ?reference ?target ?source ?revision ?predecessor WHERE { 
+ ?reference p:referenceTarget ?target ; p:referenceProvenance ?source . OPTIONAL {?reference e:referenceRevisionLabel ?revision} OPTIONAL {?reference e:referenceSupersedes ?predecessor}
+  }

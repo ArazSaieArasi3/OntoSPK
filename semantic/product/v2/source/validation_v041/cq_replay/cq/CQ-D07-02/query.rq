@@ -1,0 +1,12 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX a: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX e: <urn:product-ontology:delivery-profile:0.5:>
+PREFIX t: <urn:orsd:v05:synthetic:>
+SELECT DISTINCT ?target ?status ?version ?code ?evidence WHERE { 
+ { ?target a p:ReleaseSpecification . OPTIONAL {?target p:reportsStatus ?status . ?status e:releaseStatusCode ?code . OPTIONAL {?status e:releaseStatusVersion ?version}}
+ OPTIONAL {?target p:r78_hasReleaseEvidenceRecord ?evidence . ?evidence p:recordsClaim/a:claimContext/a:contextVersion ?ev . FILTER(!BOUND(?status) || (BOUND(?version) && ?ev=?version))} }
+ UNION
+ { ?target a p:DeliveryWorkItem . OPTIONAL {?target e:itemStatus ?status . ?status e:itemStatusCode ?code . OPTIONAL {?status e:itemStatusVersion ?version}}
+ OPTIONAL {?evidence p:r145_concernsDeliveryWorkItem ?target ; p:recordsClaim/a:claimContext/a:contextVersion ?ev . FILTER(!BOUND(?status) || (BOUND(?version) && ?ev=?version))} }
+ FILTER(BOUND(?status) || BOUND(?evidence))
+  }

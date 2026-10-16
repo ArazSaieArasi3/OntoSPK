@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?hypothesis ?hypothesisType ?outcome WHERE {
+VALUES ?hypothesis { e:hypothesisA e:solutionHypothesisA } VALUES (?link ?hypothesisType) { (p:predictsOutcome p:HypothesisSpecification) (p:solutionPredictsOutcome p:SolutionHypothesisSpecification) } ?hypothesis a ?hypothesisType ; ?link ?outcome .
+}

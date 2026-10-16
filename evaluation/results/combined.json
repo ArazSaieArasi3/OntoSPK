@@ -1,0 +1,851 @@
+{
+  "version": "0.35.0",
+  "total": 42,
+  "passed": 42,
+  "groups": {
+    "boundary": {
+      "total": 2,
+      "passed": 2
+    },
+    "history": {
+      "total": 1,
+      "passed": 1
+    },
+    "integrity": {
+      "total": 2,
+      "passed": 2
+    },
+    "mapping": {
+      "total": 2,
+      "passed": 2
+    },
+    "persistence": {
+      "total": 2,
+      "passed": 2
+    },
+    "population": {
+      "total": 6,
+      "passed": 6
+    },
+    "provenance": {
+      "total": 1,
+      "passed": 1
+    },
+    "rejection": {
+      "total": 25,
+      "passed": 25
+    },
+    "roundtrip": {
+      "total": 1,
+      "passed": 1
+    }
+  },
+  "results": [
+    {
+      "id": "combined_baseline",
+      "group": "population",
+      "passed": true,
+      "detail": {
+        "status": "ACCEPTED_SCOPED",
+        "snapshot": "baseline",
+        "idempotent_replay": false,
+        "triples": 37,
+        "stages": {
+          "physical_sql_import": true,
+          "native_minima": true,
+          "identity_shacl": true,
+          "retained_reporting_shacl": true,
+          "event_sql": true,
+          "event_shacl": true,
+          "asserted_roundtrip": true,
+          "history": true
+        },
+        "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+        "independent_acceptance": false,
+        "legacy_snapshot_status": "draft"
+      }
+    },
+    {
+      "id": "all_asserted_triples_recovered",
+      "group": "roundtrip",
+      "passed": true,
+      "detail": {
+        "triples": 37
+      }
+    },
+    {
+      "id": "legacy_snapshot_explicitly_draft",
+      "group": "provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "idempotent_replay_no_writes",
+      "group": "history",
+      "passed": true,
+      "detail": {
+        "status": "ACCEPTED_SCOPED",
+        "idempotent_replay": true,
+        "snapshot": "baseline"
+      }
+    },
+    {
+      "id": "same_population_new_snapshot",
+      "group": "population",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "same_population_new_snapshot",
+          "idempotent_replay": false,
+          "triples": 37,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft"
+        },
+        "roundtrip": true
+      }
+    },
+    {
+      "id": "repeat_distinct_event_same_inputs",
+      "group": "population",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "repeat_distinct_event_same_inputs",
+          "idempotent_replay": false,
+          "triples": 37,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft"
+        },
+        "roundtrip": true
+      }
+    },
+    {
+      "id": "two_events_one_population",
+      "group": "population",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "two_events_one_population",
+          "idempotent_replay": false,
+          "triples": 50,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft"
+        },
+        "roundtrip": true
+      }
+    },
+    {
+      "id": "subtype_explicit_ancestry_roundtrip",
+      "group": "population",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "subtype_explicit_ancestry_roundtrip",
+          "idempotent_replay": false,
+          "triples": 37,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft"
+        },
+        "roundtrip": true
+      }
+    },
+    {
+      "id": "multiple_capabilities_one_bearer",
+      "group": "population",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "ACCEPTED_SCOPED",
+          "snapshot": "multiple_capabilities_one_bearer",
+          "idempotent_replay": false,
+          "triples": 39,
+          "stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true,
+            "history": true
+          },
+          "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+          "independent_acceptance": false,
+          "legacy_snapshot_status": "draft"
+        },
+        "roundtrip": true
+      }
+    },
+    {
+      "id": "empty_population",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "scope",
+          "detail": "AT_LEAST_ONE_TYPED_COMPLETED_EVENT_REQUIRED",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_realization_type",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "physical_sql_import",
+          "detail": "Endpoint type: ICREL:CP:testsRealization IC:ProductRealization",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_actual_capability_type",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "physical_sql_import",
+          "detail": "Endpoint type: ICREL:CP:evaluatedAgainst IC:ProductCapability",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_version_binding",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "native_minima",
+          "detail": [
+            {
+              "relation": "ICREL:CP:realizesVersion",
+              "end": "target",
+              "entity": 31,
+              "minimum": 1,
+              "observed": 0
+            }
+          ],
+          "completed_stages": {
+            "physical_sql_import": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "two_versions_for_one_realization",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "physical_sql_import",
+          "detail": "ICREL:CP:realizesVersion maximum 1",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_actual_capability",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "native_minima",
+          "detail": [
+            {
+              "relation": "ICREL:CP:bearsCapability",
+              "end": "source",
+              "entity": 1,
+              "minimum": 1,
+              "observed": 0
+            },
+            {
+              "relation": "ICREL:CP:bearsCapability",
+              "end": "target",
+              "entity": 31,
+              "minimum": 1,
+              "observed": 0
+            }
+          ],
+          "completed_stages": {
+            "physical_sql_import": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "two_bearers_for_one_capability",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "physical_sql_import",
+          "detail": "ICREL:CP:bearsCapability maximum 1",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_product_owner_of_version",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "native_minima",
+          "detail": [
+            {
+              "relation": "REL:W2:007",
+              "end": "source",
+              "entity": 21,
+              "minimum": 1,
+              "observed": 0
+            }
+          ],
+          "completed_stages": {
+            "physical_sql_import": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_result_execution_link",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "native_minima",
+          "detail": [
+            {
+              "relation": "REL:W2:091",
+              "end": "source",
+              "entity": 40,
+              "minimum": 1,
+              "observed": 0
+            },
+            {
+              "relation": "REL:W2:091",
+              "end": "target",
+              "entity": 22,
+              "minimum": 1,
+              "observed": 0
+            }
+          ],
+          "completed_stages": {
+            "physical_sql_import": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_end_time",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:delivery-profile:0.5:shape:executionEndedAt>\n\tFocus Node: <urn:product-ontology:event-instance:e1>\n\tResult Path: <urn:product-ontology:delivery-profile:0.5:executionEndedAt>\n\tMessage: Less than 1 values on <urn:product-ontology:event-instance:e1>-><urn:product-ontology:delivery-profile:0.5:executionEndedAt>\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "date_only_end_time",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "event_sql",
+          "detail": [
+            "end_datatype_or_serialization_profile"
+          ],
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "result_before_event_end",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:delivery-profile:0.5:shape:TestResult>\n\tFocus Node: <urn:product-ontology:event-instance:result1>\n\tValue Node: <urn:product-ontology:event-instance:result1>\n\tSource Constraint: <urn:product-ontology:delivery-profile:0.5:shape:ResultTime>\n\tMessage: A consolidated result report must not predate the recorded run end.\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "unknown_result_outcome",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in InConstraintComponent (http://www.w3.org/ns/shacl#InConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:delivery-profile:0.5:shape:resultOutcome>\n\tFocus Node: <urn:product-ontology:event-instance:result1>\n\tValue Node: Literal(\"perfect\")\n\tResult Path: <urn:product-ontology:delivery-profile:0.5:resultOutcome>\n\tMessage: Value Literal(\"perfect\") not in list ['Literal(\"passed\")', 'Literal(\"failed\")', 'Literal(\"unknown\")', 'Literal(\"inconclusive\")', 'Literal(\"aborted\")']\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_context_provenance",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:assessment-profile:0.4:shape:contextSource>\n\tFocus Node: <urn:product-ontology:event-instance:ctx1>\n\tResult Path: <urn:product-ontology:assessment-profile:0.4:contextSource>\n\tMessage: Less than 1 values on <urn:product-ontology:event-instance:ctx1>-><urn:product-ontology:assessment-profile:0.4:contextSource>\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_result_provenance",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:delivery-profile:0.5:shape:resultSource>\n\tFocus Node: <urn:product-ontology:event-instance:result1>\n\tResult Path: <urn:product-ontology:delivery-profile:0.5:resultSource>\n\tMessage: Less than 1 values on <urn:product-ontology:event-instance:result1>-><urn:product-ontology:delivery-profile:0.5:resultSource>\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "missing_capability_version_link",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "native_minima",
+          "detail": [
+            {
+              "relation": "ICREL:CP:specifiesCapability",
+              "end": "source",
+              "entity": 5,
+              "minimum": 1,
+              "observed": 0
+            }
+          ],
+          "completed_stages": {
+            "physical_sql_import": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "suite_does_not_contain_executed_case",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "retained_reporting_shacl",
+          "detail": "Validation Report\nConforms: False\nResults (1):\nConstraint Violation in SPARQLConstraintComponent (http://www.w3.org/ns/shacl#SPARQLConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: <urn:product-ontology:relation-shapes:0.7:suiteExecutionTrace>\n\tFocus Node: <urn:product-ontology:event-instance:suite1>\n\tValue Node: <urn:product-ontology:event-instance:suite1>\n\tSource Constraint: <urn:product-ontology:relation-shapes:0.7:suite_case_trace>\n\tMessage: An indexed execution must execute a case explicitly included in the suite.\n",
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "datatype_mismatch",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "physical_sql_import",
+          "detail": "Datatype range",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "unmapped_predicate",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "scope",
+          "detail": "UNMAPPED_PREDICATE",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "unmapped_class",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "scope",
+          "detail": "UNMAPPED_ASSERTED_CLASS",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "historical_realization_version_rebind",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "history",
+          "detail": {
+            "kind": "realization_version",
+            "iri": "urn:product-ontology:event-instance:real1",
+            "reason": "IMMUTABLE_BINDING_CONFLICT"
+          },
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "historical_capability_bearer_rebind",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "history",
+          "detail": {
+            "kind": "capability_bearer",
+            "iri": "urn:product-ontology:event-instance:actual1",
+            "reason": "IMMUTABLE_BINDING_CONFLICT"
+          },
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "historical_event_case_rebind",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "history",
+          "detail": {
+            "kind": "completed_event",
+            "iri": "urn:product-ontology:event-instance:e1",
+            "reason": "IMMUTABLE_BINDING_CONFLICT"
+          },
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "historical_result_outcome_rebind",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "history",
+          "detail": {
+            "kind": "completed_result",
+            "iri": "urn:product-ontology:event-instance:result1",
+            "reason": "IMMUTABLE_BINDING_CONFLICT"
+          },
+          "completed_stages": {
+            "physical_sql_import": true,
+            "native_minima": true,
+            "identity_shacl": true,
+            "retained_reporting_shacl": true,
+            "event_sql": true,
+            "event_shacl": true,
+            "asserted_roundtrip": true
+          }
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "snapshot_identifier_conflict",
+      "group": "rejection",
+      "passed": true,
+      "detail": {
+        "receipt": {
+          "status": "REJECTED",
+          "stage": "idempotency",
+          "detail": "SNAPSHOT_ID_CONFLICT",
+          "completed_stages": {}
+        },
+        "all_tables_unchanged": true
+      }
+    },
+    {
+      "id": "draft_storage_is_not_acceptance",
+      "group": "boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "disk_reopen_exact_graph",
+      "group": "persistence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "disk_reopen_history_rejection",
+      "group": "persistence",
+      "passed": true,
+      "detail": {
+        "status": "REJECTED",
+        "stage": "history",
+        "detail": {
+          "kind": "realization_version",
+          "iri": "urn:product-ontology:event-instance:real1",
+          "reason": "IMMUTABLE_BINDING_CONFLICT"
+        },
+        "completed_stages": {
+          "physical_sql_import": true,
+          "native_minima": true,
+          "identity_shacl": true,
+          "retained_reporting_shacl": true,
+          "event_sql": true,
+          "event_shacl": true,
+          "asserted_roundtrip": true
+        }
+      }
+    },
+    {
+      "id": "post_admission_graph_tampering_detected",
+      "group": "boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "all_286_physical_relation_contracts_match_current_native",
+      "group": "mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "all_101_local_classes_match_current_native",
+      "group": "mapping",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "sqlite_foreign_key_integrity",
+      "group": "integrity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "id": "sqlite_integrity_check",
+      "group": "integrity",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "population": {
+    "triples": 37,
+    "typed_entities": 13,
+    "asserted_classes": 13,
+    "physical_tables": 438,
+    "added_gate_tables": 2,
+    "populated_tables": {
+      "snapshot": 1,
+      "term": 56,
+      "entity": 26,
+      "asserted_type": 13,
+      "d01_product": 1,
+      "d01_product_version": 1,
+      "d03_capability_specification": 1,
+      "d03_feature_specification": 1,
+      "d08_test_scenario": 1,
+      "d08_test_case": 1,
+      "d08_test_execution": 1,
+      "d08_test_result": 1,
+      "d08_test_suite_specification": 1,
+      "d11_product_realization": 1,
+      "d11_product_capability": 1,
+      "d10_evidence_artifact": 1,
+      "d03_condition_specification": 1,
+      "d03_scenario_specification": 2,
+      "d10_assessment_context_specification": 1,
+      "value_context_description": 1,
+      "value_context_source": 1,
+      "link_context_version": 1,
+      "link_execution_context": 1,
+      "link_execution_criterion": 1,
+      "value_execution_ended_at": 1,
+      "value_result_outcome": 1,
+      "value_result_recorded_at": 1,
+      "value_result_source": 1,
+      "link_assesses_specification": 1,
+      "link_bears_capability": 1,
+      "link_contains_case": 1,
+      "link_evaluated_against": 1,
+      "link_executes": 1,
+      "link_has_version": 1,
+      "link_r147_has_recorded_execution": 1,
+      "link_r84_covers": 1,
+      "link_r87_refines_test_scenario": 1,
+      "link_realizes_version": 1,
+      "link_records_execution": 1,
+      "link_specifies_capability": 1,
+      "link_specifies_expected_condition": 2,
+      "link_tests_realization": 1,
+      "admission_receipt": 1,
+      "historical_binding": 4
+    }
+  },
+  "clean_demo_receipt": {
+    "status": "ACCEPTED_SCOPED",
+    "snapshot": "combined-positive-v035",
+    "idempotent_replay": false,
+    "triples": 37,
+    "stages": {
+      "physical_sql_import": true,
+      "native_minima": true,
+      "identity_shacl": true,
+      "retained_reporting_shacl": true,
+      "event_sql": true,
+      "event_shacl": true,
+      "asserted_roundtrip": true,
+      "history": true
+    },
+    "evidence": "SYNTHETIC_OR_DECLARED_ONLY",
+    "independent_acceptance": false,
+    "legacy_snapshot_status": "draft"
+  },
+  "scope": "One constructed population with its mutations, actual SQLite physical schema and bounded pinned profiles; not an empirical study or whole-ontology semantic validation."
+}

@@ -1,0 +1,26 @@
+{
+  "distribution_version": "2.0.0-rc.1",
+  "distribution_state": "unreleased_candidate",
+  "documentation_baseline": "DB-2026.10.1",
+  "documentation_state": "candidate",
+  "source_prepared": true,
+  "local_semantic_evaluation": "PASS_TEN_STAGES",
+  "remote_semantic_ci": "NOT_VERIFIED",
+  "wiki": {
+    "source": "wiki-src",
+    "state": "SOURCE_PREPARED_NOT_PUBLISHED",
+    "published_ref": null
+  },
+  "pages": {
+    "source": "docs",
+    "state": "SOURCE_PREPARED_NOT_DEPLOYED",
+    "deployment_ref": null
+  },
+  "webvowl": {
+    "data": "docs/webvowl/data/ontospk.json",
+    "state": "SOURCE_PREPARED",
+    "online_browser_verification": "NOT_EXECUTED"
+  },
+  "licensing": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
+  "source_prerelease_published": false
+}

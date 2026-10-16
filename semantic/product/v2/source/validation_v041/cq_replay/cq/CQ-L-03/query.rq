@@ -1,0 +1,14 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX a: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX e: <urn:product-ontology:delivery-profile:0.5:>
+PREFIX t: <urn:orsd:v05:synthetic:>
+SELECT DISTINCT ?claim ?criterion ?state ?result ?outcome WHERE { 
+ ?claim a p:AssessmentClaim ; a:claimCriterion ?criterion ; a:claimContext ?ctx . ?criterion a p:AcceptanceCriterionSpecification .
+ OPTIONAL {
+  ?record p:recordsClaim ?claim ; p:recordsCarrier ?result . ?result a p:TestResult ; p:recordsExecution ?run .
+  ?run a p:TestExecution ; e:executionCriterion ?criterion ; e:executionContext ?ctx ; p:testsRealization ?r .
+  FILTER NOT EXISTS {?claim a:claimRealization ?subject . FILTER(?subject != ?r)}
+  OPTIONAL {?result e:resultOutcome ?outcome}
+ }
+ BIND(IF(BOUND(?result),IF(BOUND(?outcome),CONCAT("recorded_",?outcome),"recorded_outcome_unspecified"),"no_contextual_execution_evidence") AS ?state)
+  }

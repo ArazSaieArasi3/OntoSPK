@@ -1,0 +1,1 @@
+{"remaining_rules": 40, "applicable": 9, "no_declared_focus": 31, "native_pass": 8, "profile_orientation_mismatch": 1, "adapted_pass": 9}

@@ -1,0 +1,162 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Generalizations and sets — OntoSPK</title><link rel="stylesheet" href="../../assets/site.css"><header><strong><a href="../../index.html">OntoSPK</a></strong><div>Software Product Knowledge Ontology · 2.0.0-rc.1 candidate</div><nav><a href="../../index.html">Home</a><a href="../../guide/Home.html">Guide</a><a href="index.html">Conceptual reference</a><a href="../owl/index.html">Logical reference</a><a href="../../downloads/index.html">Downloads</a><a href="../../webvowl/index.html#ontospk">WebVOWL</a></nav></header><main><h1 id="generalizations-and-sets">Generalizations and sets</h1>
+<h2 id="genw2152"><code>GEN:W2:152</code></h2>
+<p><code>IC:FunctionalRequirementSpecification</code> specializes <code>IC:RequirementSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:FunctionalRequirementSpecification"](x) =&gt; C["IC:RequirementSpecification"](x)
+</code></pre>
+<h2 id="genw2153"><code>GEN:W2:153</code></h2>
+<p><code>IC:QualityRequirementSpecification</code> specializes <code>IC:RequirementSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:QualityRequirementSpecification"](x) =&gt; C["IC:RequirementSpecification"](x)
+</code></pre>
+<h2 id="genproposedsolutionhypothesis"><code>GEN:PROPOSED:SolutionHypothesis</code></h2>
+<p><code>IC:SolutionHypothesisSpecification</code> specializes <code>IC:HypothesisSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:SolutionHypothesisSpecification"](x) =&gt; C["IC:HypothesisSpecification"](x)
+</code></pre>
+<h2 id="genproposedacquisitionhypothesis"><code>GEN:PROPOSED:AcquisitionHypothesis</code></h2>
+<p><code>IC:AcquisitionHypothesisSpecification</code> specializes <code>IC:HypothesisSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:AcquisitionHypothesisSpecification"](x) =&gt; C["IC:HypothesisSpecification"](x)
+</code></pre>
+<h2 id="genproposedadoptionhypothesis"><code>GEN:PROPOSED:AdoptionHypothesis</code></h2>
+<p><code>IC:AdoptionHypothesisSpecification</code> specializes <code>IC:HypothesisSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:AdoptionHypothesisSpecification"](x) =&gt; C["IC:HypothesisSpecification"](x)
+</code></pre>
+<h2 id="genic04prioritizationcriterionspecificationdecisioncriterionspecification"><code>GEN:IC04:PrioritizationCriterionSpecification:DecisionCriterionSpecification</code></h2>
+<p><code>IC:PrioritizationCriterionSpecification</code> specializes <code>IC:DecisionCriterionSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:PrioritizationCriterionSpecification"](x) =&gt; C["IC:DecisionCriterionSpecification"](x)
+</code></pre>
+<h2 id="genic04marketinggoalspecificationgoalspecification"><code>GEN:IC04:MarketingGoalSpecification:GoalSpecification</code></h2>
+<p><code>IC:MarketingGoalSpecification</code> specializes <code>IC:GoalSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:MarketingGoalSpecification"](x) =&gt; C["IC:GoalSpecification"](x)
+</code></pre>
+<h2 id="genic04testresultevidenceartifact"><code>GEN:IC04:TestResult:EvidenceArtifact</code></h2>
+<p><code>IC:TestResult</code> specializes <code>IC:EvidenceArtifact</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TestResult"](x) =&gt; C["IC:EvidenceArtifact"](x)
+</code></pre>
+<h2 id="genic04changerecordevidenceartifact"><code>GEN:IC04:ChangeRecord:EvidenceArtifact</code></h2>
+<p><code>IC:ChangeRecord</code> specializes <code>IC:EvidenceArtifact</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ChangeRecord"](x) =&gt; C["IC:EvidenceArtifact"](x)
+</code></pre>
+<h2 id="genic04verificationevidenceevidenceartifact"><code>GEN:IC04:VerificationEvidence:EvidenceArtifact</code></h2>
+<p><code>IC:VerificationEvidenceRecord</code> specializes <code>IC:EvidenceAttributionRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:VerificationEvidenceRecord"](x) =&gt; C["IC:EvidenceAttributionRecord"](x)
+</code></pre>
+<h2 id="genic04validationevidenceevidenceartifact"><code>GEN:IC04:ValidationEvidence:EvidenceArtifact</code></h2>
+<p><code>IC:ValidationEvidenceRecord</code> specializes <code>IC:EvidenceAttributionRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ValidationEvidenceRecord"](x) =&gt; C["IC:EvidenceAttributionRecord"](x)
+</code></pre>
+<h2 id="genic04releaseevidenceevidenceartifact"><code>GEN:IC04:ReleaseEvidence:EvidenceArtifact</code></h2>
+<p><code>IC:ReleaseEvidenceRecord</code> specializes <code>IC:EvidenceAttributionRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ReleaseEvidenceRecord"](x) =&gt; C["IC:EvidenceAttributionRecord"](x)
+</code></pre>
+<h2 id="genic05findingrecordevidenceartifact"><code>GEN:IC05:FindingRecord:EvidenceArtifact</code></h2>
+<p><code>IC:FindingRecord</code> specializes <code>IC:EvidenceArtifact</code>.</p>
+<pre><code class="language-text">forall x: C["IC:FindingRecord"](x) =&gt; C["IC:EvidenceArtifact"](x)
+</code></pre>
+<h2 id="genic05usabilityfindingrecordfindingrecord"><code>GEN:IC05:UsabilityFindingRecord:FindingRecord</code></h2>
+<p><code>IC:UsabilityFindingRecord</code> specializes <code>IC:FindingRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:UsabilityFindingRecord"](x) =&gt; C["IC:FindingRecord"](x)
+</code></pre>
+<h2 id="genic05validationfindingrecordfindingrecord"><code>GEN:IC05:ValidationFindingRecord:FindingRecord</code></h2>
+<p><code>IC:ValidationFindingRecord</code> specializes <code>IC:FindingRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ValidationFindingRecord"](x) =&gt; C["IC:FindingRecord"](x)
+</code></pre>
+<h2 id="genic06productfamilyreference"><code>GEN:IC06:ProductFamilyReference</code></h2>
+<p><code>IC:ProductFamilyReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ProductFamilyReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06productlinereference"><code>GEN:IC06:ProductLineReference</code></h2>
+<p><code>IC:ProductLineReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ProductLineReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06productvariantreference"><code>GEN:IC06:ProductVariantReference</code></h2>
+<p><code>IC:ProductVariantReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ProductVariantReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06productmetricreference"><code>GEN:IC06:ProductMetricReference</code></h2>
+<p><code>IC:ProductMetricReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ProductMetricReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06businessrulereference"><code>GEN:IC06:BusinessRuleReference</code></h2>
+<p><code>IC:BusinessRuleReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:BusinessRuleReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06requirementsourcereference"><code>GEN:IC06:RequirementSourceReference</code></h2>
+<p><code>IC:RequirementSourceReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:RequirementSourceReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06taskreference"><code>GEN:IC06:TaskReference</code></h2>
+<p><code>IC:TaskReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TaskReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06testdatareference"><code>GEN:IC06:TestDataReference</code></h2>
+<p><code>IC:TestDataReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TestDataReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06targetmarketreference"><code>GEN:IC06:TargetMarketReference</code></h2>
+<p><code>IC:TargetMarketReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TargetMarketReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06targetsegmentreference"><code>GEN:IC06:TargetSegmentReference</code></h2>
+<p><code>IC:TargetSegmentReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TargetSegmentReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic06marketinginsightreference"><code>GEN:IC06:MarketingInsightReference</code></h2>
+<p><code>IC:MarketingInsightReference</code> specializes <code>IC:ExternalReferenceRecord</code>.</p>
+<pre><code class="language-text">forall x: C["IC:MarketingInsightReference"](x) =&gt; C["IC:ExternalReferenceRecord"](x)
+</code></pre>
+<h2 id="genic07goalspecification"><code>GEN:IC07:GoalSpecification</code></h2>
+<p><code>IC:GoalSpecification</code> specializes <code>IC:ConditionSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:GoalSpecification"](x) =&gt; C["IC:ConditionSpecification"](x)
+</code></pre>
+<h2 id="genic07outcomespecification"><code>GEN:IC07:OutcomeSpecification</code></h2>
+<p><code>IC:OutcomeSpecification</code> specializes <code>IC:ConditionSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:OutcomeSpecification"](x) =&gt; C["IC:ConditionSpecification"](x)
+</code></pre>
+<h2 id="genic07requirementspecification"><code>GEN:IC07:RequirementSpecification</code></h2>
+<p><code>IC:RequirementSpecification</code> specializes <code>IC:ConditionSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:RequirementSpecification"](x) =&gt; C["IC:ConditionSpecification"](x)
+</code></pre>
+<h2 id="genic07acceptancecriterionspecification"><code>GEN:IC07:AcceptanceCriterionSpecification</code></h2>
+<p><code>IC:AcceptanceCriterionSpecification</code> specializes <code>IC:ConditionSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:AcceptanceCriterionSpecification"](x) =&gt; C["IC:ConditionSpecification"](x)
+</code></pre>
+<h2 id="genic07constraintspecification"><code>GEN:IC07:ConstraintSpecification</code></h2>
+<p><code>IC:ConstraintSpecification</code> specializes <code>IC:ConditionSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:ConstraintSpecification"](x) =&gt; C["IC:ConditionSpecification"](x)
+</code></pre>
+<h2 id="genic07requirementscenariospecification"><code>GEN:IC07:RequirementScenarioSpecification</code></h2>
+<p><code>IC:RequirementScenarioSpecification</code> specializes <code>IC:ScenarioSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:RequirementScenarioSpecification"](x) =&gt; C["IC:ScenarioSpecification"](x)
+</code></pre>
+<h2 id="genic07testscenario"><code>GEN:IC07:TestScenario</code></h2>
+<p><code>IC:TestScenario</code> specializes <code>IC:ScenarioSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TestScenario"](x) =&gt; C["IC:ScenarioSpecification"](x)
+</code></pre>
+<h2 id="genic07testcase"><code>GEN:IC07:TestCase</code></h2>
+<p><code>IC:TestCase</code> specializes <code>IC:ScenarioSpecification</code>.</p>
+<pre><code class="language-text">forall x: C["IC:TestCase"](x) =&gt; C["IC:ScenarioSpecification"](x)
+</code></pre>
+<pre><code class="language-json">{
+  "id": "GS:Requirement:ContentTypes",
+  "type": "GeneralizationSet",
+  "created": "2026-10-09",
+  "modified": "2026-10-09",
+  "name": {
+    "en": "Requirement content categories"
+  },
+  "alternativeNames": [],
+  "description": null,
+  "editorialNotes": [],
+  "creators": [],
+  "contributors": [],
+  "customProperties": {
+    "status": "IC03_OVERLAP_PERMITTED_OPEN_CLASSIFICATION"
+  },
+  "isDisjoint": false,
+  "isComplete": false,
+  "generalizations": [
+    "GEN:W2:152",
+    "GEN:W2:153"
+  ],
+  "categorizer": null
+}
+</code></pre></main><footer>Native model 0.41.0 · logical profile 0.43.0 · documentation candidate DB-2026.10.1. <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a> · <a href="../../guide/Citation.html">Citation and reuse</a> · <a href="../../guide/Limitations.html">Limitations</a>. Generated reference is derived from the declared source; it is not independent semantic acceptance.</footer></html>

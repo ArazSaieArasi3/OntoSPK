@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?portfolio ?entry ?product WHERE {
+VALUES ?portfolio { e:portfolioA } ?portfolio p:organizesEntry ?entry . ?entry p:referencesProduct ?product .
+}

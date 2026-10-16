@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?story ?persona ?role ?flow ?informationArchitecture ?screen ?state WHERE {
+VALUES ?story { e:storyA } ?story p:r63_supportedBy ?flow . OPTIONAL { ?story p:specifiesPersonaContext ?persona . OPTIONAL { ?persona p:r51_describesUserRole ?role } } ?flow p:r137_includesScreen ?screen . OPTIONAL { ?screen p:r59_definesUIState ?state } OPTIONAL { ?informationArchitecture p:r58_organizesScreenSpecification ?screen }
+}

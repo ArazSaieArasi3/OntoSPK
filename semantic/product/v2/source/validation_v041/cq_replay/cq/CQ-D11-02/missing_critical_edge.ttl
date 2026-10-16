@@ -1,0 +1,5 @@
+<urn:orsd:v03:synthetic:capabilityA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductCapability> .
+<urn:orsd:v03:synthetic:capabilityAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductCapability> .
+<urn:orsd:v03:synthetic:realizationA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductRealization> .
+<urn:orsd:v03:synthetic:realizationAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductRealization> .
+<urn:orsd:v03:synthetic:realizationAOther> <urn:productium:specification-profile:bearsCapability> <urn:orsd:v03:synthetic:capabilityAOther> .

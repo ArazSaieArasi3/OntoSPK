@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?persona ?role ?journey ?stage ?touchpoint WHERE {
+VALUES ?persona { e:personaA } ?persona p:r52_representedInJourney ?journey . OPTIONAL { ?persona p:r51_describesUserRole ?role } ?journey p:containsStage ?stage . ?stage p:r54_includes ?touchpoint .
+}

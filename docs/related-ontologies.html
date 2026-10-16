@@ -1,0 +1,789 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OntoSPK: bounded comparison with related ontologies — OntoSPK</title><link rel="stylesheet" href="assets/site.css"><header><strong><a href="index.html">OntoSPK</a></strong><div>Software Product Knowledge Ontology · 2.0.0-rc.1 candidate</div><nav><a href="index.html">Home</a><a href="guide/Home.html">Guide</a><a href="reference/native/index.html">Conceptual reference</a><a href="reference/owl/index.html">Logical reference</a><a href="downloads/index.html">Downloads</a><a href="webvowl/index.html#ontospk">WebVOWL</a></nav></header><main><h1 id="ontospk-bounded-comparison-with-related-ontologies">OntoSPK: bounded comparison with related ontologies</h1>
+<p><strong>Conceptual comparison · evidence assessed 15 October 2026 · native model 0.41.0</strong></p>
+<p>This page records a source-backed conceptual comparison. The underlying 23-entry bibliography was screened for relevance: four primary families cover five references, and five references support complementary comparisons. Selected full-text sections and official specifications informed the comparisons; this does not mean that every bibliography entry received a fresh full-text review. This is not a systematic literature review, executable alignment, or superiority benchmark.</p>
+<p><strong>Repository boundary.</strong> The concepts compared here belong to the OntoSPK manuscript companion v0.44.0 (native model v0.41.0). This record does not silently equate that model with, or modify, the repository’s frozen Product Ontology v1.5 baseline. No third-party models or papers are redistributed.</p>
+<h2 id="comparison-selection-and-dimensions">Comparison selection and dimensions</h2>
+<table>
+<thead>
+<tr>
+<th>Family</th>
+<th>References</th>
+<th>Why selected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CPM / CPM2</td>
+<td><a href="#ref-10">10</a>, <a href="#ref-11">11</a></td>
+<td>Engineering-product representation and design specifications.</td>
+</tr>
+<tr>
+<td>OntoProd</td>
+<td><a href="#ref-12">12</a></td>
+<td>Product-information lifecycle and implementation deposit.</td>
+</tr>
+<tr>
+<td>Software product-management ontology</td>
+<td><a href="#ref-1">1</a></td>
+<td>Direct management-vocabulary prior art; a direct management-vocabulary comparison.</td>
+</tr>
+<tr>
+<td>SwO / RSRO / RRO</td>
+<td><a href="#ref-14">14</a></td>
+<td>Software identity, requirements and execution foundations.</td>
+</tr>
+</tbody>
+</table>
+<p>Dimensions: domain scope; representation unit; formalization; identity/category boundaries; reported evidence; relation to OntoSPK; and the resulting correspondence decision. No numeric ranking is assigned.</p>
+<h2 id="primary-comparisons">Primary comparisons</h2>
+<h3 id="cpm-cpm2">CPM / CPM2</h3>
+<p><a href="#ref-10">10</a> <a href="https://doi.org/10.6028/NIST.IR.6736">CPM DOI</a> · <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf#page=11">official CPM PDF, p.11</a> (PDF pp.11–19, §§4–6). <a href="#ref-11">11</a> <a href="https://doi.org/10.6028/NIST.IR.7185">CPM2 DOI</a> · <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf#page=9">official CPM2 PDF, p.9</a> (§§2–3, PDF pp.9–23); <a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf#page=26">Appendix A, PDF p.26</a>. PDF page numbers are one-based viewer pages.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Observation / comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Engineering product design and artifact descriptions.</td>
+</tr>
+<tr>
+<td>Representation unit</td>
+<td>Artifact; Feature; Function; Specification; Behavior.</td>
+</tr>
+<tr>
+<td>Formalization</td>
+<td>UML object/relationship model; Java/XML illustrations.</td>
+</tr>
+<tr>
+<td>Identity/category boundary</td>
+<td>Design specification and intended function are explicit; no software-realization identity equivalence follows.</td>
+</tr>
+<tr>
+<td>Source-reported evidence</td>
+<td>Worked engineering example; appendix Java is explicitly illustrative and incomplete.</td>
+</tr>
+<tr>
+<td>OntoSPK relation</td>
+<td>Our emphasis is governed software-product knowledge, version-bound bearer wholes and assessment records.</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>Use CPM as a design-description precedent. Intended Function is not an automatic match for actual ProductCapability.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Repository/artifact check:</strong> No author/NIST-linked GitHub repository verified in targeted searches. Selected report and appendix content inspected; no CPM software executed.</p>
+<h3 id="ontoprod">OntoProd</h3>
+<p><a href="#ref-12">12</a> <a href="https://doi.org/10.1016/j.jii.2025.100820">article DOI</a> · <a href="https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework">author-uploaded full text</a> · <a href="https://zenodo.org/records/15005493">official Zenodo deposit</a>. Article §§4.1–4.2 (pp.6–8), §5 (pp.8–11), Table 2 (p.12), and conclusions/data availability (p.13). The DOI currently resolves to unavailable publisher content in this client; the deposit and author copy are separate access routes.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Observation / comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Part-based product knowledge and information lifecycle in engineer-to-order settings.</td>
+</tr>
+<tr>
+<td>Representation unit</td>
+<td>Part; Feature; Datum; DatumInstance; configuration templates/project graphs.</td>
+</tr>
+<tr>
+<td>Formalization</td>
+<td>OWL restrictions, SWRL rules and SPARQL; reported Fuseki/Pellet/C# prototype.</td>
+</tr>
+<tr>
+<td>Identity/category boundary</td>
+<td>Template/project-instance cloning is not automatically our version-bound configured realization.</td>
+</tr>
+<tr>
+<td>Source-reported evidence</td>
+<td>Industrial examples and descriptive capability table; no matched OntoSPK benchmark.</td>
+</tr>
+<tr>
+<td>OntoSPK relation</td>
+<td>Our FeatureSpecification is a description artifact; actual capability and report attribution have their own contracts.</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>Compare lifecycle structure and data provenance; require explicit correspondence for Feature, project instance and DatumInstance.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Repository/artifact check:</strong> No author-linked public GitHub repository verified. Do not substitute Ontop, a different platform. Official file inventory/ZIP preview inspected. Root ontology file contents and application were not inspected or executed; downloads returned HTTP 403. The separate 2.5 kB TTL is service configuration according to retained inspection, not the 20.4 kB root file listed inside ZIP.</p>
+<h3 id="botzenhardt-et-al-spm-ontology">Botzenhardt et al. SPM ontology</h3>
+<p><a href="#ref-1">1</a> <a href="https://doi.org/10.1109/IWSPM.2011.6046207">article DOI</a> · <a href="https://publikationen.bibliothek.kit.edu/1000052295">KIT institutional record</a>. Supplied 10-page PDF: pp.2–5 (method), p.7 (Table IV and relations), p.8 (Figure 2), pp.8–9 (limits/future evaluation). The supplied PDF matches the previously inspected copy and is not a new distinct reference. The old RDF address is unavailable and is retained only as a historical entry in the link audit.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Observation / comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Shared software product-management vocabulary.</td>
+</tr>
+<tr>
+<td>Representation unit</td>
+<td>Activity; Artifact; Role; Organization, including Product, Specification and Roadmap.</td>
+</tr>
+<tr>
+<td>Formalization</td>
+<td>Literature/text extraction and an RDFS vocabulary.</td>
+</tr>
+<tr>
+<td>Identity/category boundary</td>
+<td>Shared labels require semantic correspondence; role and artifact categories are not OntoUML stereotypes.</td>
+</tr>
+<tr>
+<td>Source-reported evidence</td>
+<td>66 articles and five books support construction; expert interviews are future work.</td>
+</tr>
+<tr>
+<td>OntoSPK relation</td>
+<td>Shared management vocabulary is direct prior art; OntoSPK focuses its explicit contracts on identity, specifications, realizations and assessment records.</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>Retain as direct prior art. Do not claim the first ontology of software product management.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Repository/artifact check:</strong> No author-linked GitHub repository verified in targeted searches. Paper Figure 2, Table IV and relations inspected; current RDF download did not succeed, and no RDF model execution is claimed.</p>
+<h3 id="swo-rsro-rro">SwO / RSRO / RRO</h3>
+<p><a href="#ref-14">14</a> <a href="https://doi.org/10.3233/AO-180197">article DOI</a> · <a href="https://journals.sagepub.com/doi/10.3233/AO-180197">publisher record</a> · <a href="https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf#page=15">author manuscript, PDF p.15</a> · <a href="https://dev.nemo.inf.ufes.br/seon/SwO.html">official SwO specification</a>. Author PDF §5, pp.15–18; §6, pp.18–20; §8 and Tables 2–7, pp.22–25. This draft’s pagination differs from journal pp.73–105.</p>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Observation / comparison</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scope</td>
+<td>Software nature, requirements and requirements at runtime.</td>
+</tr>
+<tr>
+<td>Representation unit</td>
+<td>Program; specification; Loaded Program Copy; Software Function; execution.</td>
+</tr>
+<tr>
+<td>Formalization</td>
+<td>SABiO/UFO reference ontologies with explicit conceptual axioms.</td>
+</tr>
+<tr>
+<td>Identity/category boundary</td>
+<td>Loaded Program Copy is a disposition; Requirement is an intention, distinct from Requirement Artifact.</td>
+</tr>
+<tr>
+<td>Source-reported evidence</td>
+<td>Expert CQ verification, instantiation and test-case designs; operational implementation/execution is outside that paper’s scope.</td>
+</tr>
+<tr>
+<td>OntoSPK relation</td>
+<td>OntoSPK models a configured realization as a bearer whole, with ProductCapability as its disposition, and uses requirement specifications as artifacts.</td>
+</tr>
+<tr>
+<td>Decision</td>
+<td>This is the closest foundational comparison. The distinctions are precedents; whole-bearer and loaded-copy correspondences remain candidates.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Repository/artifact check:</strong> No GitHub repository tied to this exact paper/version verified. allysonlister/swo is a different ontology and was excluded. Paper and official specification inspected. Website version 1.0.5 (2017) is not assumed identical to the 2018 paper; any downloaded OWL is only a static snapshot.</p>
+<p>The <a href="https://dev.nemo.inf.ufes.br/seon/menu.html">official SEON site</a> offers an <a href="https://dev.nemo.inf.ufes.br/seon/SEON.owl">operational OWL snapshot</a>. The inspected site version is 1.0.5 (2017); it is not assumed identical to the 2018 article. Relative/base-IRI issues in the downloaded XML prevent treating parser-generated local-file IRIs as authoritative class identities.</p>
+<h2 id="twelve-selected-correspondence-decisions">Twelve selected correspondence decisions</h2>
+<p>These are candidate analogies or non-equivalence boundaries, not a complete mapping. No <code>owl:equivalentClass</code>, automated import, or executable integration is asserted. Each location below links to the inspected source.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Family</th>
+<th>Source concept</th>
+<th>OntoSPK candidate</th>
+<th>Decision</th>
+<th>Evidence location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>CPM</td>
+<td>Artifact</td>
+<td>ProductRealization</td>
+<td>Candidate analogy only; check whether an engineering entity and a configured computing whole have matching identity conditions.</td>
+<td><a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf#page=10">CPM2 Section 2.2, PDF p.10</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td>CPM</td>
+<td>Specification</td>
+<td>CapabilitySpecification / RequirementSpecification</td>
+<td>Specification aggregates design requirements; matching a specific local description requires decomposition and scope.</td>
+<td><a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf#page=11">CPM2 PDF p.11</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>CPM</td>
+<td>Function</td>
+<td>ProductCapability / CapabilitySpecification</td>
+<td>Function denotes what an artifact is supposed to do. Do not collapse intended function and actual disposition.</td>
+<td><a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf#page=12">CPM2 PDF p.12</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td>OntoProd</td>
+<td>Feature</td>
+<td>FeatureSpecification</td>
+<td>A characteristic of a Part and a description artifact are not established as the same category.</td>
+<td><a href="https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework">Section 4.1.1, article p.6</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td>OntoProd</td>
+<td>Project-instance graph</td>
+<td>ProductRealization</td>
+<td>Cloning a template graph does not establish identity of a configured bearer whole.</td>
+<td><a href="https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework">Section 5, article pp.9-11</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td>OntoProd</td>
+<td>DatumInstance</td>
+<td>TestResult / EvidenceArtifact</td>
+<td>Information-lifecycle records may be related, but no evidence or result class equivalence is established.</td>
+<td><a href="https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework">Sections 4.1.1 and 5, article pp.6,10</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td>SPM</td>
+<td>Product / Specification</td>
+<td>Product / specification classes</td>
+<td>Shared terminology is a correspondence lead, not proof of matching identity, typing or cardinality.</td>
+<td><a href="https://publikationen.bibliothek.kit.edu/1000052295">Table IV and Figure 2, supplied PDF pp.7-8; institutional identity record, PDF supplied privately</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td>SPM</td>
+<td>Roadmap</td>
+<td>Roadmap</td>
+<td>Compare intended description and governance before any import or identity merge.</td>
+<td><a href="https://publikationen.bibliothek.kit.edu/1000052295">Table IV, supplied PDF p.7; institutional identity record, PDF supplied privately</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>SwO</td>
+<td>Loaded Program Copy</td>
+<td>ProductCapability / ProductRealization</td>
+<td>Source copy is a complex disposition. OntoSPK capability is a disposition and realization is its bearer whole; explicit bearer analysis is needed.</td>
+<td><a href="https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf#page=17">Section 5, author PDF p.17</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>SwO</td>
+<td>Requirement / Requirement Artifact</td>
+<td>RequirementSpecification</td>
+<td>The local specification is an information artifact; do not map it to a stakeholder intention.</td>
+<td><a href="https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf#page=18">Section 6, author PDF pp.18-19</a></td>
+</tr>
+<tr>
+<td>11</td>
+<td>SwO</td>
+<td>Program Copy Execution</td>
+<td>TestExecution</td>
+<td>A general program execution is broader than a concluded test attempt; a setup-only abort may lack target participation.</td>
+<td><a href="https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf#page=15">Section 5 and existing occurrence profile</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td>ROoST</td>
+<td>Test Execution / Test Script / creates</td>
+<td>TestExecution / external script / hasResult</td>
+<td>Only evidenced exercised-code attempts are candidates; manual procedures and report documentation do not match code or creation automatically.</td>
+<td><a href="https://dev.nemo.inf.ufes.br/seon/ROoST.html">Official ROoST definitions and retained ROoST_Correspondence_v0_41_0.json</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="complementary-comparisons">Complementary comparisons</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Role and comparison boundary</th>
+<th>Direct source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SEON <a href="#ref-13">13</a></td>
+<td>Network architecture, shared foundations and integration boundaries; not a whole-network superiority test.</td>
+<td><a href="https://link.springer.com/chapter/10.1007/978-3-319-49004-5_34">publisher / official / institutional source</a></td>
+</tr>
+<tr>
+<td>Requirements/test ontology <a href="#ref-15">15</a></td>
+<td>Artifact traceability; do not equate a trace link with established assessment truth.</td>
+<td><a href="https://ejbeta.clei.org/cleiej/article/view/341">publisher / official / institutional source</a></td>
+</tr>
+<tr>
+<td>OntoTrace <a href="#ref-16">16</a></td>
+<td>Human-task evidence; its reported results are not transferred to OntoSPK.</td>
+<td><a href="https://doi.org/10.1007/s00766-025-00447-4">publisher / official / institutional source</a></td>
+</tr>
+<tr>
+<td>ONTO-PDM <a href="#ref-17">17</a></td>
+<td>Formal interoperability and standards correspondences; not a matched software-product benchmark.</td>
+<td><a href="https://iris.poliba.it/handle/11589/5202">publisher / official / institutional source</a></td>
+</tr>
+<tr>
+<td>ROoST <a href="#ref-23">23</a></td>
+<td>Targeted testing semantics; reuse the existing conditional correspondence matrix without claiming full integration.</td>
+<td><a href="https://dev.nemo.inf.ufes.br/seon/ROoST.html">publisher / official / institutional source</a></td>
+</tr>
+</tbody>
+</table>
+<p>ROoST is considered only for conditional testing correspondences. An attempt that never exercises target code, a manual procedure, or a report documenting a result does not automatically satisfy ROoST’s code execution or result-creation semantics. A full integration remains future work.</p>
+<h2 id="overall-conclusion-and-manuscript-use">Overall conclusion and manuscript use</h2>
+<p>The supported emphasis is the organization of portfolio and strategy knowledge together with version-bound realizations and attributable assessment records. The sources already supply important product, management, software and testing distinctions. Shared labels establish neither identical identity conditions nor formal equivalence. This comparison supports scoped positioning; it establishes neither exhaustive novelty nor measured superiority.</p>
+<p>The concise comparison is reflected in the v0.44.0 manuscript’s literature-review method, Table I and comparative discussion. The detailed decisions and access boundaries are retained here. No third-party implementation was executed. The OntoProd archive download remains blocked; inventory inspection is not model-content verification.</p>
+<h2 id="screening-of-all-23-manuscript-references">Screening of all 23 manuscript references</h2>
+<table>
+<thead>
+<tr>
+<th>Reference</th>
+<th>Selection</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#ref-1">1</a></td>
+<td>primary comparison</td>
+<td>SPM vocabulary directly adjacent to product knowledge</td>
+</tr>
+<tr>
+<td><a href="#ref-2">2</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-3">3</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-4">4</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-5">5</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-6">6</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-7">7</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-8">8</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-9">9</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-10">10</a></td>
+<td>primary comparison</td>
+<td>Core engineering-product representation</td>
+</tr>
+<tr>
+<td><a href="#ref-11">11</a></td>
+<td>primary comparison</td>
+<td>Revised CPM with specifications, function and implementation examples</td>
+</tr>
+<tr>
+<td><a href="#ref-12">12</a></td>
+<td>primary comparison</td>
+<td>Product knowledge and lifecycle model with a published artifact deposit</td>
+</tr>
+<tr>
+<td><a href="#ref-13">13</a></td>
+<td>complementary comparison</td>
+<td>Network architecture and reuse</td>
+</tr>
+<tr>
+<td><a href="#ref-14">14</a></td>
+<td>primary comparison</td>
+<td>Closest software identity, requirements and execution precedent</td>
+</tr>
+<tr>
+<td><a href="#ref-15">15</a></td>
+<td>complementary comparison</td>
+<td>Requirements/test traceability</td>
+</tr>
+<tr>
+<td><a href="#ref-16">16</a></td>
+<td>complementary comparison</td>
+<td>Human-task evaluation precedent</td>
+</tr>
+<tr>
+<td><a href="#ref-17">17</a></td>
+<td>complementary comparison</td>
+<td>Standards interoperability and formal correspondences</td>
+</tr>
+<tr>
+<td><a href="#ref-18">18</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-19">19</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-20">20</a></td>
+<td>method foundation standard or tool</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-21">21</a></td>
+<td>case or data source</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-22">22</a></td>
+<td>case or data source</td>
+<td>Supports method, foundation, notation, validation tooling, demonstration or data; not a competing product-knowledge model.</td>
+</tr>
+<tr>
+<td><a href="#ref-23">23</a></td>
+<td>complementary comparison</td>
+<td>Testing concepts and conditional reuse boundary</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references-and-exact-access-links">References and exact access links</h2>
+<p>Reference numbers match manuscript v0.44.0. DOI identifiers are retained even when a publisher blocks automated access. For compared sources with access failures, use the explicit alternate source above. An accessible landing page does not imply freely downloadable full text.</p>
+<p><a id="ref-1"></a></p>
+<p><strong>[1]</strong> A. Botzenhardt, A. Mädche, and J. Wiesner, “Developing a domain ontology for software product management,” in Proc. 5th Int. Workshop Software Product Management (IWSPM), 2011, pp. 7–16. doi: 10.1109/IWSPM.2011.6046207. <a href="https://doi.org/10.1109/IWSPM.2011.6046207">DOI</a></p>
+<p><a id="ref-2"></a></p>
+<p><strong>[2]</strong> K. Peffers, T. Tuunanen, M. A. Rothenberger, and S. Chatterjee, “A Design Science Research Methodology for Information Systems Research,” J. Manage. Inf. Syst., vol. 24, no. 3, pp. 45–77, 2007. doi: 10.2753/MIS0742-1222240302. <a href="https://doi.org/10.2753/MIS0742-1222240302">DOI</a></p>
+<p><a id="ref-3"></a></p>
+<p><strong>[3]</strong> R. de Almeida Falbo, “SABiO: Systematic Approach for Building Ontologies,” in Proc. ONTO.COM/ODISE, CEUR Workshop Proceedings, vol. 1301, 2014. <a href="https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf">official source</a></p>
+<p><a id="ref-4"></a></p>
+<p><strong>[4]</strong> M. C. Suárez-Figueroa, A. Gómez-Pérez, and B. Villazón-Terrazas, “How to Write and Use the Ontology Requirements Specification Document,” in On the Move to Meaningful Internet Systems: OTM 2009, LNCS 5871, pp. 966–982, 2009. doi: 10.1007/978-3-642-05151-7_16. <a href="https://doi.org/10.1007/978-3-642-05151-7_16">DOI</a></p>
+<p><a id="ref-5"></a></p>
+<p><strong>[5]</strong> P. C. Barbosa Fernandes, R. S. S. Guizzardi, and G. Guizzardi, “Using Goal Modeling to Capture Competency Questions in Ontology-based Systems,” Journal of Information and Data Management, vol. 2, no. 3, 2011. <a href="https://periodicos.ufmg.br/index.php/jidm/article/view/124">official source</a></p>
+<p><a id="ref-6"></a></p>
+<p><strong>[6]</strong> A. Fernández-Izquierdo, “Ontology testing based on requirements formalization in collaborative development environments,” CEUR Workshop Proceedings, vol. 1962, 2017. <a href="https://ceur-ws.org/Vol-1962/paper_8.pdf">official source</a></p>
+<p><a id="ref-7"></a></p>
+<p><strong>[7]</strong> V. Braun and V. Clarke, “Using thematic analysis in psychology,” Qualitative Research in Psychology, vol. 3, no. 2, pp. 77–101, 2006. doi: 10.1191/1478088706qp063oa. <a href="https://doi.org/10.1191/1478088706qp063oa">DOI</a></p>
+<p><a id="ref-8"></a></p>
+<p><strong>[8]</strong> G. Guizzardi, G. Wagner, J. P. A. Almeida, and R. S. S. Guizzardi, “Towards ontological foundations for conceptual modeling: The unified foundational ontology (UFO) story,” Applied Ontology, vol. 10, nos. 3–4, pp. 259–271, 2015. doi: 10.3233/AO-150157. <a href="https://doi.org/10.3233/AO-150157">DOI</a></p>
+<p><a id="ref-9"></a></p>
+<p><strong>[9]</strong> OntoUML, “OntoUML specification: Classes, relationships and anti-pattern catalogue.” Accessed: Oct. 14, 2026. <a href="https://ontouml.readthedocs.io/en/latest/">official source</a></p>
+<p><a id="ref-10"></a></p>
+<p><strong>[10]</strong> S. J. Fenves, A Core Product Model for Representing Design Information, NISTIR 6736. Gaithersburg, MD, USA: NIST, 2002. doi: 10.6028/NIST.IR.6736. <a href="https://doi.org/10.6028/NIST.IR.6736">DOI</a></p>
+<p><a id="ref-11"></a></p>
+<p><strong>[11]</strong> S. J. Fenves, S. Foufou, C. Bock, R. Sudarsan, N. Bouillon, and R. D. Sriram, CPM 2: A Revised Core Product Model for Representing Design Information, NISTIR 7185, Oct. 2004. doi: 10.6028/NIST.IR.7185. <a href="https://doi.org/10.6028/NIST.IR.7185">DOI</a></p>
+<p><a id="ref-12"></a></p>
+<p><strong>[12]</strong> L. Failla, M. Rossoni, M. Quirini, and G. Colombo, “Managing lifecycle of product information with an ontology-based knowledge framework,” J. Ind. Inf. Integr., vol. 45, Art. no. 100820, 2025. doi: 10.1016/j.jii.2025.100820. <a href="https://doi.org/10.1016/j.jii.2025.100820">DOI</a></p>
+<p><a id="ref-13"></a></p>
+<p><strong>[13]</strong> F. B. Ruy, R. A. Falbo, M. P. Barcellos, S. D. Costa, and G. Guizzardi, “SEON: A Software Engineering Ontology Network,” in EKAW 2016, LNCS 10024, pp. 527–542, 2016. doi: 10.1007/978-3-319-49004-5_34. <a href="https://doi.org/10.1007/978-3-319-49004-5_34">DOI</a></p>
+<p><a id="ref-14"></a></p>
+<p><strong>[14]</strong> B. B. Duarte et al., “Ontological foundations for software requirements with a focus on requirements at runtime,” Applied Ontology, vol. 13, no. 2, pp. 73–105, 2018. doi: 10.3233/AO-180197. <a href="https://doi.org/10.3233/AO-180197">DOI</a></p>
+<p><a id="ref-15"></a></p>
+<p><strong>[15]</strong> M. L. Roldán, M. Vegetti, S. Gonnet, M. Marciszack, and H. Leone, “An Ontology for Specifying and Tracing Requirements Engineering Artifacts and Test Artifacts,” CLEI Electron. J., vol. 22, no. 1, 2019. doi: 10.19153/cleiej.22.1.2. <a href="https://doi.org/10.19153/cleiej.22.1.2">DOI</a></p>
+<p><a id="ref-16"></a></p>
+<p><strong>[16]</strong> D. Mosquera, M. Ruiz, and O. Pastor, “Ontology-based NLP tool for tracing software requirements and conceptual models: an empirical study,” Requirements Eng., vol. 30, pp. 341–369, 2025. doi: 10.1007/s00766-025-00447-4. <a href="https://doi.org/10.1007/s00766-025-00447-4">DOI</a></p>
+<p><a id="ref-17"></a></p>
+<p><strong>[17]</strong> H. Panetto, M. Dassisti, and A. Tursi, “ONTO-PDM: Product-driven ONTOlogy for Product Data Management interoperability within manufacturing process environment,” Adv. Eng. Inform., vol. 26, no. 2, pp. 334–348, 2012. doi: 10.1016/j.aei.2011.12.002. <a href="https://doi.org/10.1016/j.aei.2011.12.002">DOI</a></p>
+<p><a id="ref-18"></a></p>
+<p><strong>[18]</strong> H. Knublauch and D. Kontokostas, Eds., “Shapes Constraint Language (SHACL),” W3C Recommendation, Jul. 20, 2017. <a href="https://www.w3.org/TR/2017/REC-shacl-20170720/">official source</a></p>
+<p><a id="ref-19"></a></p>
+<p><strong>[19]</strong> ROBOT, “Reason” and “Validate Profile,” documentation. and  Accessed: Oct. 12, 2026. <a href="https://robot.obolibrary.org/reason">official reason</a> · <a href="https://robot.obolibrary.org/validate-profile">official validate-profile</a></p>
+<p><a id="ref-20"></a></p>
+<p><strong>[20]</strong> OntoUML, “OntoUML Graph Validator,” source code, ver. 1.0.0a0. Accessed: Oct. 14, 2026. <a href="https://github.com/OntoUML/ontouml-validator">official source</a></p>
+<p><a id="ref-21"></a></p>
+<p><strong>[21]</strong> A. Saie Arasi, H. Haghighi, and H. Azgomi, “CM-PharmE ver.1: Towards a Conceptual Model for Pharmaceutical Ecosystem with a Business-Architecture Perspective,” in Proc. 2025 9th Iranian Conf. Advances in Enterprise Architecture (ICAEA), 2025. doi: 10.1109/ICAEA69058.2025.11301544. <a href="https://doi.org/10.1109/ICAEA69058.2025.11301544">DOI</a></p>
+<p><a id="ref-22"></a></p>
+<p><strong>[22]</strong> U.S. Food and Drug Administration, “openFDA Drug NDC API.” Accessed: Oct. 12, 2026. <a href="https://open.fda.gov/apis/drug/ndc/">official source</a></p>
+<p><a id="ref-23"></a></p>
+<p><strong>[23]</strong> NEMO, “Reference Ontology on Software Testing (ROoST),” SEON ontology specification, 2017. Accessed: Oct. 15, 2026. <a href="https://dev.nemo.inf.ufes.br/seon/ROoST.html">official source</a></p>
+<h2 id="link-and-identity-verification-15-october-2026">Link and identity verification — 15 October 2026</h2>
+<p>The checks separate (1) DOI/title identity, (2) HTTP transport and (3) access to the expected content. DOI metadata were retrieved from Crossref where possible; primary publisher/institutional pages supplement unavailable registry responses. A successful response containing “Site Unavailable” is recorded as a content error. The IEEE HTTP 202 response verifies a redirect, not an article body. Failures in one client are not erased by successful independent retrieval.</p>
+<p>The audit covers 39 source/access URLs (including one historical endpoint) and 14 DOI-metadata lookups. The machine-readable <a href="research/related-ontologies/link-audit-2026-10-15.json">link audit</a> records canonical URLs, outcomes and timestamps. The unavailable historical endpoint is not an active navigation link below.</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Exact URL</th>
+<th>HTTP result</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R01</td>
+<td><a href="https://doi.org/10.1109/IWSPM.2011.6046207">source</a></td>
+<td>202</td>
+<td>resolver_redirect_only_no_article_body_verified; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R02</td>
+<td><a href="https://doi.org/10.2753/MIS0742-1222240302">source</a></td>
+<td>403</td>
+<td>access_blocked; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R03</td>
+<td><a href="https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R04</td>
+<td><a href="https://doi.org/10.1007/978-3-642-05151-7_16">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R05</td>
+<td><a href="https://periodicos.ufmg.br/index.php/jidm/article/view/124">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>R06</td>
+<td><a href="https://ceur-ws.org/Vol-1962/paper_8.pdf">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R07</td>
+<td><a href="https://doi.org/10.1191/1478088706qp063oa">source</a></td>
+<td>403</td>
+<td>access_blocked; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R08</td>
+<td><a href="https://doi.org/10.3233/AO-150157">source</a></td>
+<td>403</td>
+<td>access_blocked; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>R09</td>
+<td><a href="https://ontouml.readthedocs.io/en/latest/">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R10</td>
+<td><a href="https://doi.org/10.6028/NIST.IR.6736">source</a></td>
+<td>200</td>
+<td>reachable; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R11</td>
+<td><a href="https://doi.org/10.6028/NIST.IR.7185">source</a></td>
+<td>200</td>
+<td>reachable; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R12</td>
+<td><a href="https://doi.org/10.1016/j.jii.2025.100820">source</a></td>
+<td>200</td>
+<td>soft_error_content_unavailable; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R13</td>
+<td><a href="https://doi.org/10.1007/978-3-319-49004-5_34">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R14</td>
+<td><a href="https://doi.org/10.3233/AO-180197">source</a></td>
+<td>403</td>
+<td>access_blocked; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R15</td>
+<td><a href="https://doi.org/10.19153/cleiej.22.1.2">source</a></td>
+<td>500</td>
+<td>http_error; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R16</td>
+<td><a href="https://doi.org/10.1007/s00766-025-00447-4">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R17</td>
+<td><a href="https://doi.org/10.1016/j.aei.2011.12.002">source</a></td>
+<td>200</td>
+<td>soft_error_content_unavailable; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R18</td>
+<td><a href="https://www.w3.org/TR/2017/REC-shacl-20170720/">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R19</td>
+<td><a href="https://robot.obolibrary.org/reason">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R19</td>
+<td><a href="https://robot.obolibrary.org/validate-profile">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R20</td>
+<td><a href="https://github.com/OntoUML/ontouml-validator">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R21</td>
+<td><a href="https://doi.org/10.1109/ICAEA69058.2025.11301544">source</a></td>
+<td>202</td>
+<td>resolver_redirect_only_no_article_body_verified; registered DOI/title retrieved</td>
+</tr>
+<tr>
+<td>R22</td>
+<td><a href="https://open.fda.gov/apis/drug/ndc/">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>R23</td>
+<td><a href="https://dev.nemo.inf.ufes.br/seon/ROoST.html">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>CPM-PDF</td>
+<td><a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>CPM2-PDF</td>
+<td><a href="https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>ONTOPROD-INSTITUTION</td>
+<td><a href="https://re.public.polimi.it/handle/11311/1286998">source</a></td>
+<td>403</td>
+<td>access_blocked</td>
+</tr>
+<tr>
+<td>ONTOPROD-DEPOSIT</td>
+<td><a href="https://zenodo.org/records/15005493">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>ONTOPROD-AUTHOR</td>
+<td><a href="https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>SPM-INSTITUTION</td>
+<td><a href="https://publikationen.bibliothek.kit.edu/1000052295">source</a></td>
+<td>502</td>
+<td>http_error; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>SWO-PDF</td>
+<td><a href="https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>SEON-SPEC</td>
+<td><a href="https://dev.nemo.inf.ufes.br/seon/menu.html">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>SWO-SPEC</td>
+<td><a href="https://dev.nemo.inf.ufes.br/seon/SwO.html">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>SEON-OWL</td>
+<td><a href="https://dev.nemo.inf.ufes.br/seon/SEON.owl">source</a></td>
+<td>200</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>SPM-RDF-HISTORICAL</td>
+<td>Historical address retained in JSON; HTTP 502</td>
+<td>502</td>
+<td>http_error</td>
+</tr>
+<tr>
+<td>R15-PUBLISHER</td>
+<td><a href="https://ejbeta.clei.org/cleiej/article/view/341">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>R17-INSTITUTION</td>
+<td><a href="https://iris.poliba.it/handle/11589/5202">source</a></td>
+<td>403</td>
+<td>access_blocked; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>R13-PUBLISHER</td>
+<td><a href="https://link.springer.com/chapter/10.1007/978-3-319-49004-5_34">source</a></td>
+<td>200</td>
+<td>reachable; primary-page identity matched independently</td>
+</tr>
+<tr>
+<td>R14-PUBLISHER</td>
+<td><a href="https://journals.sagepub.com/doi/10.3233/AO-180197">source</a></td>
+<td>403</td>
+<td>access_blocked; primary-page identity matched independently</td>
+</tr>
+</tbody>
+</table>
+<h2 id="structured-evidence">Structured evidence</h2>
+<ul>
+<li><a href="research/related-ontologies/reference-screening.json">Screening of 23 references</a></li>
+<li><a href="research/related-ontologies/primary-comparisons.json">Four primary families</a></li>
+<li><a href="research/related-ontologies/complementary-comparisons.json">Five complementary comparisons</a></li>
+<li><a href="research/related-ontologies/selected-correspondences.json">Twelve selected correspondence decisions</a></li>
+<li><a href="research/related-ontologies/link-audit-2026-10-15.json">Link audit</a></li>
+</ul>
+<p>The structured observations preserve the manuscript comparison. Their historical access statements are contextualized by the newer dated link audit above. No unavailable property is inferred to be absent, and a repository not verified in targeted searches is not declared nonexistent.</p></main><footer>Native model 0.41.0 · logical profile 0.43.0 · documentation candidate DB-2026.10.1. <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a> · <a href="guide/Citation.html">Citation and reuse</a> · <a href="guide/Limitations.html">Limitations</a>. Generated reference is derived from the declared source; it is not independent semantic acceptance.</footer></html>

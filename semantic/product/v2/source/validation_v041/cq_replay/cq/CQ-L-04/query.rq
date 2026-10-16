@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?condition ?scenario ?domain WHERE {
+VALUES ?condition { e:conditionA } VALUES (?scenarioType ?domain) { (p:RequirementScenarioSpecification "Product Requirement") (p:TestScenario "Product Test") } ?scenario a ?scenarioType ; p:specifiesExpectedCondition ?condition .
+}

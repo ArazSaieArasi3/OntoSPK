@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?case ?execution ?realization ?result ?evidence WHERE {
+VALUES ?execution { e:executionA } ?execution p:executes ?case ; p:testsRealization ?realization . ?result p:recordsExecution ?execution . OPTIONAL { ?result p:r92_hasVerificationEvidenceRecord ?evidence }
+}

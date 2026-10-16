@@ -1,0 +1,5 @@
+<urn:orsd:v03:synthetic:goalA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:MarketingGoalSpecification> .
+<urn:orsd:v03:synthetic:goalAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:MarketingGoalSpecification> .
+<urn:orsd:v03:synthetic:goalAOther> <urn:productium:specification-profile:r178_referencesMetric> <urn:orsd:v03:synthetic:metricAOther> .
+<urn:orsd:v03:synthetic:metricA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductMetricReference> .
+<urn:orsd:v03:synthetic:metricAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductMetricReference> .

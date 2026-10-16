@@ -1,0 +1,16 @@
+[
+  [
+    "urn:orsd:v03:synthetic:sliceA",
+    "urn:orsd:v03:synthetic:storyA",
+    "urn:orsd:v03:synthetic:reqF",
+    "urn:productium:specification-profile:FunctionalRequirementSpecification",
+    "urn:orsd:v03:synthetic:criterionF"
+  ],
+  [
+    "urn:orsd:v03:synthetic:sliceA",
+    "urn:orsd:v03:synthetic:storyA",
+    "urn:orsd:v03:synthetic:reqQ",
+    "urn:productium:specification-profile:QualityRequirementSpecification",
+    "urn:orsd:v03:synthetic:criterionQ"
+  ]
+]

@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?vision ?problem ?opportunity ?initiative WHERE {
+VALUES ?vision { e:visionA } ?vision p:r155_addresses ?problem . ?problem p:r22_motivatesOpportunity ?opportunity . OPTIONAL { ?opportunity p:motivatesHypothesis/p:motivatesSolutionHypothesis/p:informsInitiative ?initiative }
+}

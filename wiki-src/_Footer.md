@@ -1,0 +1,1 @@
+[Repository](https://github.com/ArazSaieArasi3/OntoSPK) · [Source and version](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/guide/Versions.md) · [Citation](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/CITATION.cff)

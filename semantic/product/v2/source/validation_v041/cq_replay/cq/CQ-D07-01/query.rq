@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?release ?item ?feature ?flag WHERE {
+VALUES ?release { e:releaseA } ?release p:r75_plansDeliveryItem ?item . ?item p:r80_plansFeature ?feature . OPTIONAL { ?flag p:r82_specifiesFeatureActivationControl ?feature }
+}

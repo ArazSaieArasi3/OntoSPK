@@ -1,0 +1,1411 @@
+{
+  "checked_at_utc": "2026-10-15T17:38:31.258950+00:00",
+  "method": "GET requests with redirects and response/title/PDF-header inspection; Crossref DOI metadata; independent primary-page retrieval. HTTP 200 alone is not treated as semantic identity or article access.",
+  "scope": "Every external URL linked by this comparison page, plus the historical unavailable SPM RDF URL. DOI registration and current publisher/full-text access are separate observations.",
+  "limits": "Point-in-time check, not a guarantee of future availability. No third-party implementation executed; OntoProd ZIP contents remain uninspected.",
+  "http_observations": [
+    {
+      "id": "R01",
+      "reference": 1,
+      "url": "https://doi.org/10.1109/IWSPM.2011.6046207",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.583277+00:00",
+      "http_status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/6046207/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": null,
+      "pdf_header": false,
+      "status": "resolver_redirect_only_no_article_body_verified"
+    },
+    {
+      "id": "R02",
+      "reference": 2,
+      "url": "https://doi.org/10.2753/MIS0742-1222240302",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.584384+00:00",
+      "status": "access_blocked",
+      "http_status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.2753/MIS0742-1222240302"
+    },
+    {
+      "id": "R03",
+      "reference": 3,
+      "url": "https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.585179+00:00",
+      "http_status": 200,
+      "final_url": "https://ceur-ws.org/Vol-1301/ontocomodise2014_2.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "R04",
+      "reference": 4,
+      "url": "https://doi.org/10.1007/978-3-642-05151-7_16",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.586028+00:00",
+      "http_status": 200,
+      "final_url": "https://link.springer.com/chapter/10.1007/978-3-642-05151-7_16",
+      "content_type": "text/html; charset=utf-8",
+      "title": "How to Write and Use the Ontology Requirements Specification Document | Springer Nature Link",
+      "pdf_header": false,
+      "status": "reachable",
+      "cookie_redirect_observed": true
+    },
+    {
+      "id": "R05",
+      "reference": 5,
+      "url": "https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.587937+00:00",
+      "http_status": 200,
+      "final_url": "https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Using Goal Modeling to Capture Competency Questions in Ontology-based Systems | Journal of Information and Data Management",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R06",
+      "reference": 6,
+      "url": "https://ceur-ws.org/Vol-1962/paper_8.pdf",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.590197+00:00",
+      "http_status": 200,
+      "final_url": "https://ceur-ws.org/Vol-1962/paper_8.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "R07",
+      "reference": 7,
+      "url": "https://doi.org/10.1191/1478088706qp063oa",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.593417+00:00",
+      "status": "access_blocked",
+      "http_status": 403,
+      "final_url": "https://www.tandfonline.com/doi/full/10.1191/1478088706qp063oa"
+    },
+    {
+      "id": "R08",
+      "reference": 8,
+      "url": "https://doi.org/10.3233/AO-150157",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:52.594007+00:00",
+      "status": "access_blocked",
+      "http_status": 403,
+      "final_url": "https://content.iospress.com/doi/10.3233/AO-150157"
+    },
+    {
+      "id": "R09",
+      "reference": 9,
+      "url": "https://ontouml.readthedocs.io/en/latest/",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:59.297217+00:00",
+      "http_status": 200,
+      "final_url": "https://ontouml.readthedocs.io/en/latest/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "OntoUML specification &mdash; OntoUML specification documentation",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R10",
+      "reference": 10,
+      "url": "https://doi.org/10.6028/NIST.IR.6736",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:33:59.859469+00:00",
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "R11",
+      "reference": 11,
+      "url": "https://doi.org/10.6028/NIST.IR.7185",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:00.013301+00:00",
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "R12",
+      "reference": 12,
+      "url": "https://doi.org/10.1016/j.jii.2025.100820",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:00.543042+00:00",
+      "http_status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S2452414X25000445",
+      "content_type": "text/html",
+      "title": "Site Unavailable",
+      "pdf_header": false,
+      "status": "soft_error_content_unavailable"
+    },
+    {
+      "id": "R13",
+      "reference": 13,
+      "url": "https://doi.org/10.1007/978-3-319-49004-5_34",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:00.633828+00:00",
+      "http_status": 200,
+      "final_url": "https://link.springer.com/chapter/10.1007/978-3-319-49004-5_34",
+      "content_type": "text/html; charset=utf-8",
+      "title": "SEON: A Software Engineering Ontology Network | Springer Nature Link",
+      "pdf_header": false,
+      "status": "reachable",
+      "cookie_redirect_observed": true
+    },
+    {
+      "id": "R14",
+      "reference": 14,
+      "url": "https://doi.org/10.3233/AO-180197",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:05.991784+00:00",
+      "status": "access_blocked",
+      "http_status": 403,
+      "final_url": "https://journals.sagepub.com/doi/full/10.3233/AO-180197"
+    },
+    {
+      "id": "R15",
+      "reference": 15,
+      "url": "https://doi.org/10.19153/cleiej.22.1.2",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:06.257487+00:00",
+      "status": "http_error",
+      "http_status": 500,
+      "final_url": "https://www.clei.org/cleiej/index.php/cleiej/article/view/341"
+    },
+    {
+      "id": "R16",
+      "reference": 16,
+      "url": "https://doi.org/10.1007/s00766-025-00447-4",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:06.347597+00:00",
+      "http_status": 200,
+      "final_url": "https://link.springer.com/article/10.1007/s00766-025-00447-4",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Ontology-based NLP tool for tracing software requirements and conceptual models: an empirical study | Requirements Engineering | Springer Nature Link",
+      "pdf_header": false,
+      "status": "reachable",
+      "cookie_redirect_observed": true
+    },
+    {
+      "id": "R17",
+      "reference": 17,
+      "url": "https://doi.org/10.1016/j.aei.2011.12.002",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:07.258815+00:00",
+      "http_status": 200,
+      "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S1474034611001121",
+      "content_type": "text/html",
+      "title": "Site Unavailable",
+      "pdf_header": false,
+      "status": "soft_error_content_unavailable"
+    },
+    {
+      "id": "R18",
+      "reference": 18,
+      "url": "https://www.w3.org/TR/2017/REC-shacl-20170720/",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:07.475825+00:00",
+      "http_status": 200,
+      "final_url": "https://www.w3.org/TR/2017/REC-shacl-20170720/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Shapes Constraint Language (SHACL)",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R19",
+      "reference": 19,
+      "url": "https://robot.obolibrary.org/reason",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:11.091102+00:00",
+      "http_status": 200,
+      "final_url": "https://robot.obolibrary.org/reason",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Reason | robot",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R19",
+      "reference": 19,
+      "url": "https://robot.obolibrary.org/validate-profile",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:13.867692+00:00",
+      "http_status": 200,
+      "final_url": "https://robot.obolibrary.org/validate-profile",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Validate Profile | robot",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R20",
+      "reference": 20,
+      "url": "https://github.com/OntoUML/ontouml-validator",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:14.710150+00:00",
+      "http_status": 200,
+      "final_url": "https://github.com/OntoUML/ontouml-validator",
+      "content_type": "text/html; charset=utf-8",
+      "title": "GitHub - OntoUML/ontouml-validator: Python software that implement validation rules for OntoUML models represented as OntoUML Vocabulary graphs · GitHub",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R21",
+      "reference": 21,
+      "url": "https://doi.org/10.1109/ICAEA69058.2025.11301544",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:14.789645+00:00",
+      "http_status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/11301544/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": null,
+      "pdf_header": false,
+      "status": "resolver_redirect_only_no_article_body_verified"
+    },
+    {
+      "id": "R22",
+      "reference": 22,
+      "url": "https://open.fda.gov/apis/drug/ndc/",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:15.750570+00:00",
+      "http_status": 200,
+      "final_url": "https://open.fda.gov/apis/drug/ndc/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "R23",
+      "reference": 23,
+      "url": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+      "kind": "bibliography",
+      "checked_at_utc": "2026-10-15T17:34:16.112505+00:00",
+      "http_status": 200,
+      "final_url": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+      "content_type": "text/html",
+      "title": "Reference Ontology on Software Testing (ROoST)",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "CPM-PDF",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:19.924156+00:00",
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "CPM2-PDF",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:20.070320+00:00",
+      "http_status": 200,
+      "final_url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "ONTOPROD-INSTITUTION",
+      "url": "https://re.public.polimi.it/handle/11311/1286998",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:21.295750+00:00",
+      "status": "access_blocked",
+      "http_status": 403,
+      "final_url": "https://re.public.polimi.it/handle/11311/1286998"
+    },
+    {
+      "id": "ONTOPROD-DEPOSIT",
+      "url": "https://zenodo.org/records/15005493",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:21.588418+00:00",
+      "http_status": 200,
+      "final_url": "https://zenodo.org/records/15005493",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Managing lifecycle of product information with an ontology-based knowledge framework | Zenodo",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "ONTOPROD-AUTHOR",
+      "url": "https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:23.262308+00:00",
+      "http_status": 200,
+      "final_url": "https://www.researchgate.net/publication/389772670_Managing_lifecycle_of_product_information_with_an_ontology-based_knowledge_framework",
+      "content_type": "text/html; charset=utf-8",
+      "title": null,
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "SPM-INSTITUTION",
+      "url": "https://publikationen.bibliothek.kit.edu/1000052295",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:26.869909+00:00",
+      "status": "http_error",
+      "http_status": 502,
+      "final_url": "https://publikationen.bibliothek.kit.edu/1000052295"
+    },
+    {
+      "id": "SWO-PDF",
+      "url": "https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:27.591856+00:00",
+      "http_status": 200,
+      "final_url": "https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf",
+      "content_type": "application/pdf",
+      "title": null,
+      "pdf_header": true,
+      "status": "reachable"
+    },
+    {
+      "id": "SEON-SPEC",
+      "url": "https://dev.nemo.inf.ufes.br/seon/menu.html",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:27.676022+00:00",
+      "http_status": 200,
+      "final_url": "https://dev.nemo.inf.ufes.br/seon/menu.html",
+      "content_type": "text/html",
+      "title": "SEON: The Software Engineering Ontology Network",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "SWO-SPEC",
+      "url": "https://dev.nemo.inf.ufes.br/seon/SwO.html",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:27.800914+00:00",
+      "http_status": 200,
+      "final_url": "https://dev.nemo.inf.ufes.br/seon/SwO.html",
+      "content_type": "text/html",
+      "title": "Software Ontology (SwO)",
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "SEON-OWL",
+      "url": "https://dev.nemo.inf.ufes.br/seon/SEON.owl",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:34:28.204887+00:00",
+      "http_status": 200,
+      "final_url": "https://dev.nemo.inf.ufes.br/seon/SEON.owl",
+      "content_type": "application/octet-stream",
+      "title": null,
+      "pdf_header": false,
+      "status": "reachable"
+    },
+    {
+      "id": "SPM-RDF-HISTORICAL",
+      "url": "http://wifo4.bwl.uni-mannheim.de/fileadmin/files/IWSPM5/SPM-Domain-Ontology.rdf",
+      "kind": "historical",
+      "checked_at_utc": "2026-10-15T17:34:28.309280+00:00",
+      "status": "http_error",
+      "http_status": 502,
+      "final_url": "http://wifo4.bwl.uni-mannheim.de/fileadmin/files/IWSPM5/SPM-Domain-Ontology.rdf"
+    },
+    {
+      "id": "R15-PUBLISHER",
+      "url": "https://ejbeta.clei.org/cleiej/article/view/341",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:35:32.309984+00:00",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://ejbeta.clei.org/cleiej/article/view/341",
+      "title": " An Ontology for Specifying and Tracing Requirements Engineering Artifacts and Test Artifacts | CLEI Electronic Journal "
+    },
+    {
+      "id": "R17-INSTITUTION",
+      "url": "https://iris.poliba.it/handle/11589/5202",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:35:32.310899+00:00",
+      "status": "access_blocked",
+      "http_status": 403
+    },
+    {
+      "id": "R13-PUBLISHER",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-49004-5_34",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:35:32.311718+00:00",
+      "status": "reachable",
+      "http_status": 200,
+      "final_url": "https://link.springer.com/chapter/10.1007/978-3-319-49004-5_34",
+      "title": "SEON: A Software Engineering Ontology Network | Springer Nature Link",
+      "cookie_redirect_observed": true
+    },
+    {
+      "id": "R14-PUBLISHER",
+      "url": "https://journals.sagepub.com/doi/10.3233/AO-180197",
+      "kind": "primary-alternative",
+      "checked_at_utc": "2026-10-15T17:35:32.312570+00:00",
+      "status": "access_blocked",
+      "http_status": 403
+    }
+  ],
+  "doi_metadata": [
+    {
+      "reference": 1,
+      "doi": "10.1109/IWSPM.2011.6046207",
+      "metadata_url": "https://api.crossref.org/works/10.1109/IWSPM.2011.6046207",
+      "checked_at_utc": "2026-10-15T17:35:01.544030+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.1109/iwspm.2011.6046207",
+      "title": [
+        "Developing a domain ontology for software product management"
+      ],
+      "author": [
+        {
+          "given": "Achim",
+          "family": "Botzenhardt",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Maedche",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Juri",
+          "family": "Wiesner",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.1109/iwspm.2011.6046207",
+      "published": {
+        "date-parts": [
+          [
+            2011,
+            8
+          ]
+        ]
+      },
+      "publisher": "IEEE"
+    },
+    {
+      "reference": 2,
+      "doi": "10.2753/MIS0742-1222240302",
+      "metadata_url": "https://api.crossref.org/works/10.2753/MIS0742-1222240302",
+      "checked_at_utc": "2026-10-15T17:35:01.544991+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.2753/mis0742-1222240302",
+      "title": [
+        "A Design Science Research Methodology for Information Systems Research"
+      ],
+      "author": [
+        {
+          "given": "Ken",
+          "family": "Peffers",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "a  The Management Information Systems Department, The University of Nevada, Las Vegas"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tuure",
+          "family": "Tuunanen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "b  The Department of Information Systems and Operations Management, The University of Auckland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marcus A.",
+          "family": "Rothenberger",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "c  Associate Professor of Management Information Systems, The University of Nevada, Las Vegas"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Samir",
+          "family": "Chatterjee",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "d  The School of Information Systems &amp; Technology and Founding Director of the Network Convergence Laboratory, Claremont Graduate University, California"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.2753/mis0742-1222240302",
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            12
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited"
+    },
+    {
+      "reference": 4,
+      "doi": "10.1007/978-3-642-05151-7_16",
+      "metadata_url": "https://api.crossref.org/works/10.1007/978-3-642-05151-7_16",
+      "checked_at_utc": "2026-10-15T17:35:01.545991+00:00",
+      "status": "metadata_unavailable",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "reference": 7,
+      "doi": "10.1191/1478088706qp063oa",
+      "metadata_url": "https://api.crossref.org/works/10.1191/1478088706qp063oa",
+      "checked_at_utc": "2026-10-15T17:35:01.546806+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.1191/1478088706qp063oa",
+      "title": [
+        "Using thematic analysis in psychology"
+      ],
+      "author": [
+        {
+          "given": "Virginia",
+          "family": "Braun",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Auckland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Victoria",
+          "family": "Clarke",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "University of the West of England"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.1191/1478088706qp063oa",
+      "published": {
+        "date-parts": [
+          [
+            2006,
+            1
+          ]
+        ]
+      },
+      "publisher": "Informa UK Limited"
+    },
+    {
+      "reference": 8,
+      "doi": "10.3233/AO-150157",
+      "metadata_url": "https://api.crossref.org/works/10.3233/AO-150157",
+      "checked_at_utc": "2026-10-15T17:35:01.548305+00:00",
+      "status": "metadata_unavailable",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "reference": 10,
+      "doi": "10.6028/NIST.IR.6736",
+      "metadata_url": "https://api.crossref.org/works/10.6028/NIST.IR.6736",
+      "checked_at_utc": "2026-10-15T17:35:01.551833+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.6028/nist.ir.6736",
+      "title": [
+        "A core product model for representing design information"
+      ],
+      "author": [
+        {
+          "given": "Steven J",
+          "family": "Fenves",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.6028/nist.ir.6736",
+      "published": {
+        "date-parts": [
+          [
+            2001
+          ]
+        ]
+      },
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "reference": 11,
+      "doi": "10.6028/NIST.IR.7185",
+      "metadata_url": "https://api.crossref.org/works/10.6028/NIST.IR.7185",
+      "checked_at_utc": "2026-10-15T17:35:08.811773+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.6028/nist.ir.7185",
+      "title": [
+        "CPM 2:"
+      ],
+      "author": [
+        {
+          "given": "Steven J",
+          "family": "Fenves",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Sebti",
+          "family": "Foufou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Conrad",
+          "family": "Bock",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rachuri",
+          "family": "Sudarsan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nicolas",
+          "family": "Bouillon",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ram D",
+          "family": "Sriram",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.6028/nist.ir.7185",
+      "published": {
+        "date-parts": [
+          [
+            2004
+          ]
+        ]
+      },
+      "publisher": "National Institute of Standards and Technology"
+    },
+    {
+      "reference": 12,
+      "doi": "10.1016/j.jii.2025.100820",
+      "metadata_url": "https://api.crossref.org/works/10.1016/j.jii.2025.100820",
+      "checked_at_utc": "2026-10-15T17:35:08.822708+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.1016/j.jii.2025.100820",
+      "title": [
+        "Managing lifecycle of product information with an ontology-based knowledge framework"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-7130-7743",
+          "authenticated-orcid": false,
+          "given": "Lorenzo",
+          "family": "Failla",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2714-9043",
+          "authenticated-orcid": false,
+          "given": "Marco",
+          "family": "Rossoni",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marco",
+          "family": "Quirini",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9999-8960",
+          "authenticated-orcid": false,
+          "given": "Giorgio",
+          "family": "Colombo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.1016/j.jii.2025.100820",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            5
+          ]
+        ]
+      },
+      "publisher": "Elsevier BV"
+    },
+    {
+      "reference": 13,
+      "doi": "10.1007/978-3-319-49004-5_34",
+      "metadata_url": "https://api.crossref.org/works/10.1007/978-3-319-49004-5_34",
+      "checked_at_utc": "2026-10-15T17:35:08.843942+00:00",
+      "status": "metadata_unavailable",
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "reference": 14,
+      "doi": "10.3233/AO-180197",
+      "metadata_url": "https://api.crossref.org/works/10.3233/AO-180197",
+      "checked_at_utc": "2026-10-15T17:35:08.851414+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.3233/ao-180197",
+      "title": [
+        "Ontological foundations for software requirements with a focus on requirements at runtime"
+      ],
+      "author": [
+        {
+          "given": "Bruno Borlini",
+          "family": "Duarte",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Ontology & Conceptual Modeling Research Group (NEMO), Department of Computer Science, Federal University of Espírito Santo (UFES), Brazil. E-mails: bruno.b.duarte@ufes.br, falbo@inf.ufes.br, gguizzardi@inf.ufes.br, rguizzardi@inf.ufes.br, vitorsouza@inf.ufes.br"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andre Luiz",
+          "family": "de Castro Leal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Mathematics, Federal Rural University of Rio de Janeiro (UFRRJ), Brazil. E-mail: andrecastr@gmail.com"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ricardo",
+          "family": "de Almeida Falbo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Ontology & Conceptual Modeling Research Group (NEMO), Department of Computer Science, Federal University of Espírito Santo (UFES), Brazil. E-mails: bruno.b.duarte@ufes.br, falbo@inf.ufes.br, gguizzardi@inf.ufes.br, rguizzardi@inf.ufes.br, vitorsouza@inf.ufes.br"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Giancarlo",
+          "family": "Guizzardi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Ontology & Conceptual Modeling Research Group (NEMO), Department of Computer Science, Federal University of Espírito Santo (UFES), Brazil. E-mails: bruno.b.duarte@ufes.br, falbo@inf.ufes.br, gguizzardi@inf.ufes.br, rguizzardi@inf.ufes.br, vitorsouza@inf.ufes.br"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Renata S.S.",
+          "family": "Guizzardi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Ontology & Conceptual Modeling Research Group (NEMO), Department of Computer Science, Federal University of Espírito Santo (UFES), Brazil. E-mails: bruno.b.duarte@ufes.br, falbo@inf.ufes.br, gguizzardi@inf.ufes.br, rguizzardi@inf.ufes.br, vitorsouza@inf.ufes.br"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vítor E. Silva",
+          "family": "Souza",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Ontology & Conceptual Modeling Research Group (NEMO), Department of Computer Science, Federal University of Espírito Santo (UFES), Brazil. E-mails: bruno.b.duarte@ufes.br, falbo@inf.ufes.br, gguizzardi@inf.ufes.br, rguizzardi@inf.ufes.br, vitorsouza@inf.ufes.br"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.3233/ao-180197",
+      "published": {
+        "date-parts": [
+          [
+            2018,
+            5,
+            2
+          ]
+        ]
+      },
+      "publisher": "SAGE Publications"
+    },
+    {
+      "reference": 15,
+      "doi": "10.19153/cleiej.22.1.2",
+      "metadata_url": "https://api.crossref.org/works/10.19153/cleiej.22.1.2",
+      "checked_at_utc": "2026-10-15T17:35:08.926524+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.19153/cleiej.22.1.2",
+      "title": [
+        "An Ontology for Specifying and Tracing Requirements Engineering Artifacts and Test Artifacts"
+      ],
+      "author": [
+        {
+          "given": "María Luciana",
+          "family": "Roldán",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marcela",
+          "family": "Vegetti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Silvio",
+          "family": "Gonnet",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Marcelo",
+          "family": "Marciszack",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Horacio",
+          "family": "Leone",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.19153/cleiej.22.1.2",
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            4,
+            1
+          ]
+        ]
+      },
+      "publisher": "Centro Latino Americano de Estudios en Informatica"
+    },
+    {
+      "reference": 16,
+      "doi": "10.1007/s00766-025-00447-4",
+      "metadata_url": "https://api.crossref.org/works/10.1007/s00766-025-00447-4",
+      "checked_at_utc": "2026-10-15T17:35:08.983775+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.1007/s00766-025-00447-4",
+      "title": [
+        "Ontology-based NLP tool for tracing software requirements and conceptual models: an empirical study"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0552-7878",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Mosquera",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marcela",
+          "family": "Ruiz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Oscar",
+          "family": "Pastor",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.1007/s00766-025-00447-4",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            6,
+            14
+          ]
+        ]
+      },
+      "publisher": "Springer Science and Business Media LLC"
+    },
+    {
+      "reference": 17,
+      "doi": "10.1016/j.aei.2011.12.002",
+      "metadata_url": "https://api.crossref.org/works/10.1016/j.aei.2011.12.002",
+      "checked_at_utc": "2026-10-15T17:35:15.731828+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.1016/j.aei.2011.12.002",
+      "title": [
+        "ONTO-PDM: Product-driven ONTOlogy for Product Data Management interoperability within manufacturing process environment"
+      ],
+      "author": [
+        {
+          "given": "H.",
+          "family": "Panetto",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "Dassisti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "A.",
+          "family": "Tursi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.1016/j.aei.2011.12.002",
+      "published": {
+        "date-parts": [
+          [
+            2012,
+            4
+          ]
+        ]
+      },
+      "publisher": "Elsevier BV"
+    },
+    {
+      "reference": 21,
+      "doi": "10.1109/ICAEA69058.2025.11301544",
+      "metadata_url": "https://api.crossref.org/works/10.1109/ICAEA69058.2025.11301544",
+      "checked_at_utc": "2026-10-15T17:35:15.779064+00:00",
+      "status": "metadata_retrieved",
+      "registered_doi": "10.1109/icaea69058.2025.11301544",
+      "title": [
+        "CM-PharmE ver.1: Towards a Conceptual Model for Pharmaceutical Ecosystem with a Business-Architecture Perspective"
+      ],
+      "author": [
+        {
+          "given": "Araz Saie",
+          "family": "Arasi",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Islamic Azad University,Department of Computer Engineering, Ra.C.,Rasht,Iran"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hassan",
+          "family": "Haghighi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shahid Beheshti University,Faculty of Computer Science and Engineering,Department of Software and Information Systems,Tehran,Iran"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Hossein",
+          "family": "Azgomi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Islamic Azad University,Department of Computer Engineering, Ra.C.,Rasht,Iran"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "url": "https://doi.org/10.1109/icaea69058.2025.11301544",
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            11
+          ]
+        ]
+      },
+      "publisher": "IEEE"
+    }
+  ],
+  "primary_page_identity_checks": [
+    {
+      "id": "SPM-INSTITUTION",
+      "url": "https://publikationen.bibliothek.kit.edu/1000052295",
+      "title": "Developing a Domain Ontology for Software Product Management",
+      "result": "Title, authors and DOI matched on institutional page.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "ONTOPROD-DEPOSIT",
+      "url": "https://zenodo.org/records/15005493",
+      "title": "Managing lifecycle of product information with an ontology-based knowledge framework",
+      "result": "Paper title, creator, deposit DOI and file inventory matched.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "SWO-PDF",
+      "url": "https://www.inf.ufes.br/~gguizzardi/appliedOntologyRunTime.pdf",
+      "title": "Ontological foundations for software requirements with a focus on requirements at runtime",
+      "result": "Author PDF, 30 pages; retained scientific comparison locators.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "CPM-PDF",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir6736.pdf",
+      "title": "A core product model for representing design information",
+      "result": "Official NIST PDF, 39 pages, NISTIR 6736.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "CPM2-PDF",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir7185.pdf",
+      "title": "CPM 2: A Revised Core Product Model for Representing Design Information",
+      "result": "Official NIST PDF, 46 pages, NISTIR 7185.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R05",
+      "url": "https://periodicos.ufmg.br/index.php/jidm/article/view/124",
+      "title": "Using Goal Modeling to Capture Competency Questions in Ontology-based Systems",
+      "result": "Journal title and all three authors matched.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R08",
+      "url": "https://journals.sagepub.com/doi/10.3233/AO-150157",
+      "title": "Towards ontological foundations for conceptual modeling: The unified foundational ontology (UFO) story",
+      "result": "Publisher search record matches title, four authors and DOI; not a new full-text review.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R13-PUBLISHER",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-49004-5_34",
+      "title": "SEON: A Software Engineering Ontology Network",
+      "result": "Publisher page matches authors, DOI and pages 527–542.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R14-PUBLISHER",
+      "url": "https://journals.sagepub.com/doi/10.3233/AO-180197",
+      "title": "Ontological foundations for software requirements with a focus on requirements at runtime",
+      "result": "Publisher page matches title, authors, year and DOI.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R15-PUBLISHER",
+      "url": "https://ejbeta.clei.org/cleiej/article/view/341",
+      "title": "An Ontology for Specifying and Tracing Requirements Engineering Artifacts and Test Artifacts",
+      "result": "Journal page matches five authors and DOI.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R16",
+      "url": "https://link.springer.com/article/10.1007/s00766-025-00447-4",
+      "title": "Ontology-based NLP tool for tracing software requirements and conceptual models: an empirical study",
+      "result": "Publisher title, authors and DOI matched.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R17-INSTITUTION",
+      "url": "https://iris.poliba.it/handle/11589/5202",
+      "title": "ONTO-PDM: Product-driven ONTOlogy for Product Data Management interoperability within manufacturing process environment",
+      "result": "Institutional title, authors, year and DOI matched; no full text is hosted there.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "R23",
+      "url": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+      "title": "Reference Ontology on Software Testing (ROoST)",
+      "result": "Official specification and testing definitions retrieved.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    },
+    {
+      "id": "SWO-SPEC",
+      "url": "https://dev.nemo.inf.ufes.br/seon/SwO.html",
+      "title": "Software Ontology (SwO)",
+      "result": "Official specification retrieved; separate version from journal article.",
+      "checked_date": "2026-10-15",
+      "route": "independent_primary_page_retrieval_or_publisher_search_record"
+    }
+  ]
+}

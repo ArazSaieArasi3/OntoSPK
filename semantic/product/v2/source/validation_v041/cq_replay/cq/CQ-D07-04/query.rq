@@ -1,0 +1,12 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX a: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX d: <urn:product-ontology:delivery-profile:0.5:>
+PREFIX e: <urn:product-ontology:trace-profile:0.6:>
+PREFIX t: <urn:orsd:v06:synthetic:>
+SELECT DISTINCT ?change ?proposal ?subject ?subjectKind ?decision ?task WHERE { 
+ { ?change a p:ChangeRecord . VALUES (?path ?subjectKind) {(e:changeScope "scope") (e:changeFeature "feature")} ?change ?path ?subject .
+ OPTIONAL {?proposal p:r79_proposesRecordedChange ?change} OPTIONAL {?change e:changeDecision ?decision} OPTIONAL {?change e:changeTask ?task} }
+ UNION
+ { ?proposal a p:ChangeProposalSpecification . FILTER NOT EXISTS {?proposal p:r79_proposesRecordedChange ?record}
+ VALUES (?path ?subjectKind) {(e:proposalScope "scope") (e:proposalFeature "feature")} ?proposal ?path ?subject . }
+  }

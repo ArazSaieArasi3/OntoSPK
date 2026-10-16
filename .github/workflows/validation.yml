@@ -1,0 +1,55 @@
+name: Ontology and documentation checks
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'semantic/**'
+      - 'data-models/**'
+      - 'tools/ontospk/**'
+      - '.github/workflows/validation.yml'
+  pull_request:
+    paths:
+      - 'semantic/**'
+      - 'data-models/**'
+      - 'tools/ontospk/**'
+      - '.github/workflows/validation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ontology-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Python dependencies
+        run: python -m pip install -r tools/ontospk/requirements.txt
+      - name: Obtain pinned external tools
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --quiet https://github.com/OntoUML/ontouml-validator.git "$RUNNER_TEMP/validator"
+          git -C "$RUNNER_TEMP/validator" checkout --quiet 46f54c1a5225fc9ea74ac2256fd4a673e9101a40
+          git clone --quiet https://github.com/OntoUML/ontouml-js.git "$RUNNER_TEMP/sdk"
+          git -C "$RUNNER_TEMP/sdk" checkout --quiet a0e44530564331cf17c850d659fae4b6adad4415
+          npm ci --prefix "$RUNNER_TEMP/sdk" --ignore-scripts --no-audit --no-fund
+          npm run build --prefix "$RUNNER_TEMP/sdk"
+          curl --fail --location --retry 3 https://github.com/ontodev/robot/releases/download/v1.9.11/robot.jar --output "$RUNNER_TEMP/robot.jar"
+          echo '53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26'"  $RUNNER_TEMP/robot.jar" | sha256sum --check --strict
+      - name: Execute bounded scientific controls
+        run: python tools/ontospk/run_validation.py --robot "$RUNNER_TEMP/robot.jar" --validator "$RUNNER_TEMP/validator" --sdk "$RUNNER_TEMP/sdk" --output build/evaluation
+      - name: Check public reference package
+        run: python tools/publication/check_publication.py

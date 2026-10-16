@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?criterion ?scenario ?condition WHERE {
+VALUES ?criterion { e:criterionA } ?criterion p:exemplifiedByScenario ?scenario . ?scenario p:specifiesExpectedCondition ?condition .
+}

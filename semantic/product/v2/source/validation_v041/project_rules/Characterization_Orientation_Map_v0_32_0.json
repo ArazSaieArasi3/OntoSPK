@@ -1,0 +1,14 @@
+[
+  {
+    "relation": "ICREL:CP:bearsCapability",
+    "native_properties": [
+      "ICEND:CP:bearsCapability:0",
+      "ICEND:CP:bearsCapability:1"
+    ],
+    "graph_profile_properties": [
+      "ICEND:CP:bearsCapability:1",
+      "ICEND:CP:bearsCapability:0"
+    ],
+    "policy": "Invert orientation in validation view only; end IDs, adjacent multiplicities, readonly flags, labels and canonical model remain unchanged."
+  }
+]

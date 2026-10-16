@@ -1,0 +1,909 @@
+{
+  "new_full_documents_read": 3,
+  "fresh_search_attempts": 13,
+  "search_rate_limited_attempts": 3,
+  "scope": "Bounded searches; returned snippets are locators only. Three full documents at cbb74b2ef7d20537faff7f2640c3ba86ca71b90e support the cards. No exhaustive absence claim.",
+  "cards": [
+    {
+      "native_id": "EXT:EvidenceLayer:Evidence",
+      "label": "Evidence",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "Evidence",
+        "allowed_target_kinds": [
+          "supporting_evidence"
+        ],
+        "operational_definition": "An external item used as support or challenge relative to a contextual claim. The item, its attribution and the claim are distinct; general PROV Entity does not establish an Evidence class or its owner.",
+        "owner_class_locator": "",
+        "owner_alignment": "OPEN",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:157",
+          "name": {
+            "en": "evidencedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:157:A",
+              "class": "IC:ProblemStatement",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:157:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:160",
+          "name": {
+            "en": "evidencedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:160:A",
+              "class": "IC:HypothesisSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:160:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:162",
+          "name": {
+            "en": "evidencedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:162:A",
+              "class": "IC:ProductMarketFitAssessment",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:162:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:224",
+          "name": {
+            "en": "evidencedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:224:A",
+              "class": "IC:AcquisitionHypothesisSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:224:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:226",
+          "name": {
+            "en": "evidencedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:226:A",
+              "class": "IC:AdoptionHypothesisSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:226:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:218",
+          "name": {
+            "en": "citesSupportingEvidence"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:218:A",
+              "class": "IC:ReleaseEvidenceRecord",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:218:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:221",
+          "name": {
+            "en": "supportedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:221:A",
+              "class": "IC:MessagingSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:221:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:223",
+          "name": {
+            "en": "supportedBy"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:223:A",
+              "class": "IC:CompetitiveNarrative",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:223:B",
+              "class": "EXT:EvidenceLayer:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ ارجاعات Product دوباره خوانده شد و برای این مفهوم مالک/IRI دقیق تثبیت نمی‌کند.",
+      "proposed_disposition_fa": "دو مرز Evidence ادغام نشوند؛ PROV Entity فقط دامنهٔ عمومی تعامل است و برابری یا مالکیت Evidence را اثبات نمی‌کند.",
+      "exact_question_fa": "نشانی مخزن/فایل مرجع، نسخه و IRI دقیق مفهوم را مشخص کنید؛ تعریف باید با کاربرد ثبت‌شده در این کارت سازگار باشد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "Evidence نقشِ یک منبع در پشتیبانی یا نقد یک ادعای معین است؛ حامل شاهد، ثبت انتساب و خودِ ادعا یکی نیستند. PROV Entity برای معرفی حامل دیجیتال/مفهومی مناسب است، اما کلاس Evidence یا مالک آن را اثبات نمی‌کند.",
+        "remaining": "مالک مفهومیِ عمومی در مسیر مدیریت محصول قابل‌پیگیری است، ولی IRI و هم‌ارزی دقیق هدف حاضر تأیید نشده است.",
+        "source_ids": [
+          "S09",
+          "S13",
+          "S14"
+        ]
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:Market:MarketInsight",
+      "label": "MarketInsight",
+      "prior_status": "CLASS_NOT_DECLARED_IN_PINNED_OWNER",
+      "contract": {
+        "display_label": "Market Insight",
+        "allowed_target_kinds": [
+          "market_insight"
+        ],
+        "operational_definition": "A source-attributed interpretation about a market or customer context, distinct from its raw signals and from product-management ManagementInsight. Market concept ownership is retained; no undeclared class IRI is invented.",
+        "owner_class_locator": "",
+        "owner_alignment": "OPEN",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:115",
+          "name": {
+            "en": "refersTo"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:115:A",
+              "class": "IC:MarketingInsightReference",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:115:B",
+              "class": "EXT:Market:MarketInsight",
+              "cardinality": "1"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ Product و فهرست کامل Market دوباره خوانده شدند؛ این نام در فهرست هستهٔ بررسی‌شده نیست.",
+      "proposed_disposition_fa": "قرارداد خارجی حفظ شود؛ تعریف در ماژول مالک تکمیل یا هدف معتبر با توجیه معنایی معرفی شود. جایگزینی بر اساس شباهت نام مجاز نیست.",
+      "exact_question_fa": "برای MarketInsight تعریف و IRI مالک معرفی شود، یا افزودن تعریف در ماژول Market برای بازبینی مستقل پیشنهاد شود.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "MarketInsight تفسیر مستند و منسوب به منبع دربارهٔ بازار است، نه مشاهدهٔ خام یا MarketSignal. مالک تعریف دامنه‌ای از تولیدکنندهٔ تحلیل جدا شود: Market می‌تواند قرارداد معنا را مالک باشد و Product Intelligence تولیدکنندهٔ تحلیل باشد. این تفکیک پیشنهاد رفع ابهام مالکیت است.",
+        "remaining": "در TTL مرجع مالک، MarketInsight کلاس اعلام‌شده نیست؛ این پیشنهاد هنوز IRI وارداتی معتبر نمی‌سازد.",
+        "source_ids": [
+          "S11",
+          "S12",
+          "S13",
+          "S14"
+        ]
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:ProductManagement:Metric",
+      "label": "Metric",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "Metric Definition",
+        "allowed_target_kinds": [
+          "metric_definition"
+        ],
+        "operational_definition": "An externally governed versioned measure definition with formula, unit, population and interpretation context; not an observed value or target. DQV is a data-quality example only, not a universal measure vocabulary.",
+        "owner_class_locator": "",
+        "owner_alignment": "OPEN",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:112",
+          "name": {
+            "en": "refersTo"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:112:A",
+              "class": "IC:ProductMetricReference",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:112:B",
+              "class": "EXT:ProductManagement:Metric",
+              "cardinality": "1"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "فایل کامل Product Management Core اکنون بازیابی شد: فهرست ۳۰ مفهوم آن Metric را شامل نمی‌شود. این بررسی به معنی نبودن Metric در همهٔ مخازن نیست.",
+      "proposed_disposition_fa": "ارجاع خارجی با نوع نامشخص حفظ شود تا قرارداد مالک و IRI تثبیت شود.",
+      "exact_question_fa": "تعریف رسمی Metric متعلق به کدام فایل و IRI است؟ baseline فعلی Product Management فهرست مستقلی برای Metric ندارد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "مقصد باید تعریف سنجه شامل ویژگی مورد سنجش، روش/فرمول، واحد، جمعیت و زمینه باشد؛ مقدار مشاهده‌شده و هدف مطلوب از تعریف جدا هستند. مالک generic Metric مسیر مدیریت محصول است. DQV فقط برای سنجهٔ کیفیت داده نامزد محدود است، نه جایگزین همهٔ سنجه‌های محصول.",
+        "remaining": "در هستهٔ ۳۰مفهومی مدیریت محصول Metric اعلام نشده؛ IRI رسمی generic Metric هنوز حل نشده است.",
+        "source_ids": [
+          "S10",
+          "S13",
+          "S14"
+        ]
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:ExternalUnresolved:Evidence",
+      "label": "Evidence",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "External Evidence",
+        "allowed_target_kinds": [
+          "supporting_evidence"
+        ],
+        "operational_definition": "An external evidence item identified by its own source and version. This opaque boundary is not automatically identical to EvidenceLayer Evidence, a carrier, a claim or an attribution record.",
+        "owner_class_locator": "",
+        "owner_alignment": "OPEN",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:192",
+          "name": {
+            "en": "references"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:192:A",
+              "class": "IC:ProblemSolutionFitAssessment",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:192:B",
+              "class": "EXT:ExternalUnresolved:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:198",
+          "name": {
+            "en": "citesSupportingEvidence"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:198:A",
+              "class": "IC:ValidationEvidenceRecord",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:198:B",
+              "class": "EXT:ExternalUnresolved:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:207",
+          "name": {
+            "en": "citesInsightEvidence"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:207:A",
+              "class": "IC:MarketingInsightReference",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:207:B",
+              "class": "EXT:ExternalUnresolved:Evidence",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ ارجاعات Product دوباره خوانده شد و برای این مفهوم مالک/IRI دقیق تثبیت نمی‌کند.",
+      "proposed_disposition_fa": "دو مرز Evidence ادغام نشوند؛ PROV Entity فقط دامنهٔ عمومی تعامل است و برابری یا مالکیت Evidence را اثبات نمی‌کند.",
+      "exact_question_fa": "نشانی مخزن/فایل مرجع، نسخه و IRI دقیق مفهوم را مشخص کنید؛ تعریف باید با کاربرد ثبت‌شده در این کارت سازگار باشد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "همان تفکیک حامل شاهد، ادعا و انتساب در X01 اعمال شود. دو handle با نام Evidence را فقط پس از احراز یکی‌بودن مقصد، نسخه و معنا می‌توان به یک منبع متصل کرد. یکسانی برچسب دلیل ادغام نیست.",
+        "remaining": "شناسه و مالک دقیق همچنان باز است؛ مشترک‌بودن دامنهٔ عمومی PROV همانی را ثابت نمی‌کند.",
+        "source_ids": [
+          "S01",
+          "S09",
+          "S14"
+        ]
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:UXResearch:User_Mental_Model",
+      "label": "User Mental Model",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "Documented User Mental Model",
+        "allowed_target_kinds": [
+          "mental_model_representation"
+        ],
+        "operational_definition": "An external documented representation of how users understand or expect a product to work; not a user mental state.",
+        "owner_class_locator": "",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:194",
+          "name": {
+            "en": "referencesMentalModel"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:194:A",
+              "class": "IC:InformationArchitectureSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:194:B",
+              "class": "EXT:UXResearch:User_Mental_Model",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ ارجاعات Product دوباره خوانده شد و برای این مفهوم مالک/IRI دقیق تثبیت نمی‌کند.",
+      "proposed_disposition_fa": "ارجاع خارجی با نوع نامشخص حفظ شود تا قرارداد مالک و IRI تثبیت شود.",
+      "exact_question_fa": "نشانی مخزن/فایل مرجع، نسخه و IRI دقیق مفهوم را مشخص کنید؛ تعریف باید با کاربرد ثبت‌شده در این کارت سازگار باشد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "در این کاربرد، مقصد باید «بازنمایی مستند از برداشت کاربران» باشد، نه خودِ حالت ذهنی فرد. سند پژوهش UX، گروه کاربران، روش و تاریخ از پدیدهٔ ذهنی مدل‌شده جدا بمانند.",
+        "remaining": "ماژول مالک و IRI هنوز مشخص نیست؛ برچسب فعلی ممکن است سند و پدیدهٔ ذهنی را خلط کند.",
+        "source_ids": [
+          "S09",
+          "S14"
+        ]
+      },
+      "prior_contract": {
+        "display_label": "User Mental Model",
+        "allowed_target_kinds": "mental_model_representation",
+        "operational_definition": "A documented representation of users understanding used as input to an information architecture specification; no claim to identify the users mental disposition itself.",
+        "decision": "PRESERVE_OWNER_UNRESOLVED_REFERENCE",
+        "owner_class_locator": "",
+        "ufo_stereotype": "UNASSIGNED",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS"
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:ExternalUnresolved:Test_Script",
+      "label": "Test Script",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "Test Script or Manual Procedure",
+        "allowed_target_kinds": [
+          "executable_code",
+          "manual_procedure"
+        ],
+        "operational_definition": "A typed external test instruction artifact. executable_code denotes runnable test code; manual_procedure denotes documented human steps. The two must not be conflated.",
+        "roost_candidate_kind": "executable_code",
+        "roost_concept_locator": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+        "locator_kind": "DOCUMENT_CONCEPT_LABEL_ONLY_NOT_VERIFIED_MACHINE_CLASS_IRI",
+        "owner_class_locator": "",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED",
+        "roost_concept_label": "Test Script"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:195",
+          "name": {
+            "en": "usesScript"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:195:A",
+              "class": "IC:TestCase",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:195:B",
+              "class": "EXT:ExternalUnresolved:Test_Script",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:197",
+          "name": {
+            "en": "citesExecutionScript"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:197:A",
+              "class": "IC:TestResult",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:197:B",
+              "class": "EXT:ExternalUnresolved:Test_Script",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ ارجاعات Product دوباره خوانده شد و برای این مفهوم مالک/IRI دقیق تثبیت نمی‌کند.",
+      "proposed_disposition_fa": "ارجاع خارجی با نوع نامشخص حفظ شود تا قرارداد مالک و IRI تثبیت شود.",
+      "exact_question_fa": "نشانی مخزن/فایل مرجع، نسخه و IRI دقیق مفهوم را مشخص کنید؛ تعریف باید با کاربرد ثبت‌شده در این کارت سازگار باشد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "اسکریپت اجرایی را از دستورالعمل دستی جدا کنیم. ROoST، Test Script را برنامهٔ کوتاه و زیرنوع Test Code تعریف کرده است؛ برای این شاخه نامزد مستند داریم. یک دستورالعمل متنی را نباید Test Script اجرایی آن انتالوژی فرض کرد.",
+        "remaining": "تعریف فعلی ما هر دو شاخه را می‌پذیرد؛ نگاشت یک‌به‌یک به ROoST نادرست است. نسخه و IRI ماشینیِ قابل‌استفاده هنوز قفل نشده است.",
+        "source_ids": [
+          "S08",
+          "S14"
+        ]
+      },
+      "prior_contract": {
+        "display_label": "Test Script",
+        "allowed_target_kinds": "test_script",
+        "operational_definition": "An externally maintained instruction or executable artifact used to carry out a test case; distinct from a test execution event.",
+        "decision": "PRESERVE_OWNER_UNRESOLVED_REFERENCE",
+        "owner_class_locator": "",
+        "ufo_stereotype": "UNASSIGNED",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS"
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:ExternalUnresolved:Test_Plan",
+      "label": "Test Plan",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "Test Plan",
+        "allowed_target_kinds": [
+          "test_plan_document"
+        ],
+        "operational_definition": "An external versioned planning document that describes testing scope, approach and organization; not an activity, a suite or a result.",
+        "roost_source": "https://dev.nemo.inf.ufes.br/seon/ROoST.html",
+        "roost_concept_label": "Test Plan",
+        "owner_class_locator": "",
+        "machine_alignment": "NOT_LOCKED",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:196",
+          "name": {
+            "en": "reportedUnderTestPlan"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:196:A",
+              "class": "IC:TestResult",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:196:B",
+              "class": "EXT:ExternalUnresolved:Test_Plan",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ ارجاعات Product دوباره خوانده شد و برای این مفهوم مالک/IRI دقیق تثبیت نمی‌کند.",
+      "proposed_disposition_fa": "ارجاع خارجی با نوع نامشخص حفظ شود تا قرارداد مالک و IRI تثبیت شود.",
+      "exact_question_fa": "نشانی مخزن/فایل مرجع، نسخه و IRI دقیق مفهوم را مشخص کنید؛ تعریف باید با کاربرد ثبت‌شده در این کارت سازگار باشد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "Test Plan یک سند برنامه‌ریزیِ محدوده، رویکرد و سازمان‌دهی آزمون است؛ خودِ اجرای آزمون یا مجموعهٔ TestCaseها نیست. ROoST تعریف هم‌خوان و مرجع مفهومی مستند دارد.",
+        "remaining": "مرجع مفهومی پیدا شد، اما IRI ماشینی، نسخهٔ قفل‌شده و پذیرش نگاشت هنوز نهایی نیست. PROV Plan صرفاً مرجع عمومی‌تر است.",
+        "source_ids": [
+          "S08",
+          "S09",
+          "S14"
+        ]
+      },
+      "prior_contract": {
+        "display_label": "Test Plan",
+        "allowed_target_kinds": "test_plan",
+        "operational_definition": "An externally maintained plan setting the scope, approach and organization under which a test result is reported.",
+        "decision": "PRESERVE_OWNER_UNRESOLVED_REFERENCE",
+        "owner_class_locator": "",
+        "ufo_stereotype": "UNASSIGNED",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS"
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:ExternalUnresolved:Configuration",
+      "label": "Configuration",
+      "prior_status": "OWNER_CONTRACT_UNRESOLVED",
+      "contract": {
+        "display_label": "Test Dataset Configuration Description",
+        "allowed_target_kinds": [
+          "test_dataset_configuration"
+        ],
+        "operational_definition": "An immutable versioned description of test dataset settings or generation parameters cited by TestDataReference; not the dataset, the testing environment or a product-line assignment.",
+        "scope_decision": "Resolve the existing referencesDatasetConfiguration relation to dataset configuration only; an environment configuration would require a separate justified relation.",
+        "owner_class_locator": "",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:199",
+          "name": {
+            "en": "referencesDatasetConfiguration"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:199:A",
+              "class": "IC:TestDataReference",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:199:B",
+              "class": "EXT:ExternalUnresolved:Configuration",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ ارجاعات Product دوباره خوانده شد و برای این مفهوم مالک/IRI دقیق تثبیت نمی‌کند.",
+      "proposed_disposition_fa": "پیکربندی محیط آزمون مستقل بماند؛ با ProductConfiguration مربوط به تنوع خط محصول یکسان نشود.",
+      "exact_question_fa": "نشانی مخزن/فایل مرجع، نسخه و IRI دقیق مفهوم را مشخص کنید؛ تعریف باید با کاربرد ثبت‌شده در این کارت سازگار باشد.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "مقصد، snapshot نسخه‌دارِ تنظیمات محیط یا دادهٔ آزمون باشد؛ با انتخاب تنوع خط محصول، خود محیط عملیاتی یا رخداد پیکربندی یکی نیست. سند تنظیمات و محیطی که سند آن را توصیف می‌کند از هم جدا شوند.",
+        "remaining": "مالک و IRI معتبر این نوع پیکربندی مشخص نشده؛ نام رابطه referencesDatasetConfiguration نیز نیازمند تعیین صریح دامنهٔ داده/محیط است.",
+        "source_ids": [
+          "S09",
+          "S14"
+        ]
+      },
+      "prior_contract": {
+        "display_label": "Configuration",
+        "allowed_target_kinds": "test_environment_configuration",
+        "operational_definition": "A versioned description of settings relevant to a test environment; not automatically equivalent to product-line variability configuration.",
+        "decision": "PRESERVE_OWNER_UNRESOLVED_REFERENCE",
+        "owner_class_locator": "",
+        "ufo_stereotype": "UNASSIGNED",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS"
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:Market:Pain",
+      "label": "Pain",
+      "prior_status": "CLASS_NOT_DECLARED_IN_PINNED_OWNER",
+      "contract": {
+        "display_label": "Customer Pain Point",
+        "allowed_target_kinds": [
+          "customer_pain_point"
+        ],
+        "operational_definition": "A source-attributed adverse consequence or obstacle in a specified customer context. It is distinct from a need, demand, problem record or medical pain; no class in the locked Market core is fabricated.",
+        "owner_class_locator": "",
+        "owner_alignment": "OPEN",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:211",
+          "name": {
+            "en": "assessesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:211:A",
+              "class": "IC:ProductMarketFitAssessment",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:211:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:213",
+          "name": {
+            "en": "addressesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:213:A",
+              "class": "IC:UserStorySpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:213:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:214",
+          "name": {
+            "en": "describesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:214:A",
+              "class": "IC:JourneySpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:214:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:215",
+          "name": {
+            "en": "describesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:215:A",
+              "class": "IC:JourneyStageSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:215:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:217",
+          "name": {
+            "en": "describesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:217:A",
+              "class": "IC:TouchpointSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:217:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:219",
+          "name": {
+            "en": "addressesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:219:A",
+              "class": "IC:PositioningStatement",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:219:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:220",
+          "name": {
+            "en": "addressesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:220:A",
+              "class": "IC:MessagingSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:220:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        },
+        {
+          "id": "REL:W2:225",
+          "name": {
+            "en": "addressesPain"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:225:A",
+              "class": "IC:AdoptionHypothesisSpecification",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:225:B",
+              "class": "EXT:Market:Pain",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "نقشهٔ Product و فهرست کامل Market دوباره خوانده شدند؛ این نام در فهرست هستهٔ بررسی‌شده نیست.",
+      "proposed_disposition_fa": "قرارداد خارجی حفظ شود؛ تعریف در ماژول مالک تکمیل یا هدف معتبر با توجیه معنایی معرفی شود. جایگزینی بر اساس شباهت نام مجاز نیست.",
+      "exact_question_fa": "برای Pain تعریف و IRI مالک معرفی شود، یا افزودن تعریف در ماژول Market برای بازبینی مستقل پیشنهاد شود.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "Pain به‌عنوان مانع یا پیامد نامطلوبِ گزارش‌شده در زمینهٔ مشتری تعریف شود؛ نیاز، تقاضا، مشکلِ صورت‌بندی‌شده و درد پزشکی هم‌معنی آن نیستند. ادعای وجود pain از تجربهٔ واقعی کاربر و سند گزارش آن جدا شود.",
+        "remaining": "در TTL قفل‌شدهٔ Market کلاس Pain وجود ندارد؛ برابرگرفتن با Need یا MarketBarrier بدون نگاشت معنایی قابل‌دفاع نیست.",
+        "source_ids": [
+          "S11",
+          "S12",
+          "S14"
+        ]
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    },
+    {
+      "native_id": "EXT:Market:Competitor_Alternative",
+      "label": "Competitive Referent",
+      "prior_status": "COMPOSITE_TARGET_REQUIRES_SEPARATION",
+      "contract": {
+        "display_label": "Competitive Referent",
+        "allowed_target_kinds": [
+          "competitor_role",
+          "alternative_assertion"
+        ],
+        "operational_definition": "Either a competitor role instance with a focal competitor and market context, or a contextual assertion relating two alternatives for a need at a time. This boundary handle is not a union imported class.",
+        "competitor_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#CompetitorRole",
+        "alternative_property_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#alternativeTo",
+        "owner_repository": "ArazSaieArasi3/market-ontology",
+        "owner_ref": "e309f00adb812b37b6b6d64ec83a1db89cc80995",
+        "required_context": [
+          "market",
+          "focal_product",
+          "need",
+          "valid_time"
+        ],
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "affected_relations": [
+        {
+          "id": "REL:W2:222",
+          "name": {
+            "en": "differentiatesFrom"
+          },
+          "endpoints": [
+            {
+              "id": "END:W2:222:A",
+              "class": "IC:CompetitiveNarrative",
+              "cardinality": "0..*"
+            },
+            {
+              "id": "END:W2:222:B",
+              "class": "EXT:Market:Competitor_Alternative",
+              "cardinality": "0..*"
+            }
+          ]
+        }
+      ],
+      "fresh_source_assessment_fa": "هستهٔ Market، CompetitorRole را نقش وابسته به زمینه و Alternative/Substitute را رابطه معرفی می‌کند.",
+      "proposed_disposition_fa": "در نگاشت بعدی discriminator با دو حالت competitor_role و alternative_relation و زمینهٔ بازار/نیاز ثبت شود؛ دستهٔ دوم به رکورد رابطه اشاره کند، نه کلاس ساختگی Alternative.",
+      "exact_question_fa": "برای رابطهٔ differentiatesFrom، ارجاع به نقش رقیب است یا به رابطهٔ جایگزینی؟ مصداق و زمینهٔ بازار/نیاز ارائه شود.",
+      "decision": "DRAFT_AWAITING_OWNER_CONTRACT_AND_INDEPENDENT_ACCEPTANCE",
+      "accepted": false,
+      "reviewer": null,
+      "assistant_desk_review_v040": {
+        "status": "PROPOSED",
+        "answer": "رقیب نقشی زمینه‌مند برای Actor/Organization است؛ alternativeTo رابطهٔ بین گزینه‌هاست. در یک مقصد کلاسِ ترکیبی ادغام نشوند. target_kind همراه بازار، محصول کانونی، نیاز و زمان تعیین شود؛ ارجاع به جایگزینی باید به گزارهٔ زمینه‌مند یا رکورد آن اشاره کند، نه کلاس ساختگی Alternative.",
+        "remaining": "IRI واقعی CompetitorRole و property alternativeTo از TTL تأیید شد، اما این‌ها هنوز نگاشت contextual کامل differentiatesFrom را اجرا نمی‌کنند.",
+        "source_ids": [
+          "S11",
+          "S12",
+          "S14",
+          "S15"
+        ]
+      },
+      "prior_contract": {
+        "display_label": "Competitive Referent",
+        "allowed_target_kinds": "competitor_role|alternative_option",
+        "operational_definition": "An explicitly qualified referent of a differentiation claim: either a contextual competitor role or an alternative option for a specified need. This boundary handle is not a single imported class.",
+        "decision": "QUALIFY_COMPETITIVE_REFERENT",
+        "owner_class_locator": "",
+        "ufo_stereotype": "UNASSIGNED",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS"
+      },
+      "implementation_status": "BOUNDED_CONTRACT_IMPLEMENTED; OWNER_ALIGNMENT_AND_INDEPENDENT_ACCEPTANCE_OPEN"
+    }
+  ],
+  "new_external_acceptances": 0,
+  "native_changed": false
+}

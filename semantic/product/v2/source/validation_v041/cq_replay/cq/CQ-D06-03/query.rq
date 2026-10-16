@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?entry ?milestone WHERE {
+VALUES ?entry { e:entryA } ?entry p:r67_targetsMilestone ?milestone .
+}

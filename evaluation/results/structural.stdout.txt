@@ -1,0 +1,1 @@
+{"version": "0.43.0", "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed", "freshly_compared": 892, "matched": 892, "typing_rules": 286, "cardinality_rules": 572, "generalization_rules": 34, "scope": "Static native signatures only. These are not 892 independent OWL axioms or proofs of modal meaning."}

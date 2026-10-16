@@ -1,0 +1,6 @@
+<urn:orsd:v03:synthetic:releaseA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ReleaseSpecification> .
+<urn:orsd:v03:synthetic:releaseAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ReleaseSpecification> .
+<urn:orsd:v03:synthetic:versionA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductVersion> .
+<urn:orsd:v03:synthetic:versionA> <urn:productium:specification-profile:r83_plannedForRelease> <urn:orsd:v03:synthetic:releaseA> .
+<urn:orsd:v03:synthetic:versionAOther> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <urn:productium:specification-profile:ProductVersion> .
+<urn:orsd:v03:synthetic:versionAOther> <urn:productium:specification-profile:r83_plannedForRelease> <urn:orsd:v03:synthetic:releaseAOther> .

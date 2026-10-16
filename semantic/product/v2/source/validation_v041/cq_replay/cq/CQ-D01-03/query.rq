@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?product ?reference ?referenceType ?target WHERE {
+VALUES ?product { e:productA } VALUES (?link ?referenceType) { (p:referencesProductFamily p:ProductFamilyReference) (p:referencesProductLine p:ProductLineReference) (p:referencesProductVariant p:ProductVariantReference) } ?product ?link ?reference . ?reference a ?referenceType ; p:referenceTarget ?target .
+}

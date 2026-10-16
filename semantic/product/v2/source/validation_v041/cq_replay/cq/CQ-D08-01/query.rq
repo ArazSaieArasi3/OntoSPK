@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?subject ?scenario ?case ?condition WHERE {
+VALUES ?subject { e:requirementA e:criterionA } VALUES ?link { p:r85_specifiesRequirementVerification p:r86_specifiesCriterionVerification } ?scenario ?link ?subject . ?case p:r87_refinesTestScenario ?scenario . OPTIONAL { ?scenario p:specifiesExpectedCondition ?condition }
+}

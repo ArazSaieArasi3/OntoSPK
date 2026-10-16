@@ -1,0 +1,4 @@
+PREFIX prod: <urn:productium:specification-profile:>
+PREFIX assess: <urn:product-ontology:assessment-profile:0.4:>
+PREFIX t: <urn:orsd:v04:synthetic:>
+SELECT DISTINCT ?intended ?actual ?realization ?claim ?record ?carrier ?stance WHERE { ?claim assess:claimRealization ?realization ; assess:claimActualCapability ?actual ; assess:claimIntendedCapability ?intended ; assess:claimContext/assess:contextVersion ?version . ?realization prod:bearsCapability ?actual ; prod:realizesVersion ?version . ?actual prod:evaluatedAgainst ?intended . ?version prod:specifiesCapability ?intended . ?record prod:recordsClaim ?claim ; prod:recordsCarrier ?carrier ; assess:attributionStance ?stance . }

@@ -1,0 +1,17 @@
+[
+  [
+    "urn:orsd:v03:synthetic:requirementA",
+    "businessRuleReference",
+    "urn:orsd:v03:synthetic:ruleRefA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:requirementA",
+    "constraint",
+    "urn:orsd:v03:synthetic:constraintA"
+  ],
+  [
+    "urn:orsd:v03:synthetic:requirementA",
+    "rationale",
+    "urn:orsd:v03:synthetic:rationaleA"
+  ]
+]

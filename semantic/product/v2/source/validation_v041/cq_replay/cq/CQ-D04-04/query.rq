@@ -1,0 +1,5 @@
+PREFIX p: <urn:productium:specification-profile:>
+PREFIX e: <urn:orsd:v03:synthetic:>
+SELECT DISTINCT ?feature ?requirement ?sourceReference ?sourceTarget WHERE {
+VALUES ?feature { e:featureA } ?feature p:specifiedByRequirement ?requirement . OPTIONAL { ?sourceReference p:sourcesRequirement ?requirement ; p:referenceTarget ?sourceTarget }
+}

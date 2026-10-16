@@ -1,0 +1,3402 @@
+[
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "completed_record",
+    "expected": true,
+    "reason": "All seven relation signatures and mandatory recorded-run fields satisfied; suite indexing optional."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:AcceptanceCriterionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_AcceptanceCriterionSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConstraintSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_ConstraintSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:FunctionalRequirementSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_FunctionalRequirementSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:GoalSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_GoalSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:MarketingGoalSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_MarketingGoalSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:OutcomeSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_OutcomeSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:QualityRequirementSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_QualityRequirementSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:RequirementSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "only_RequirementSpecification",
+    "expected": true,
+    "reason": "ImpAbs counterexample: one criterion of one subtype is sufficient; no quota of every subtype."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "outcome_annotation": "failed",
+    "id": "completed_failed",
+    "expected": true,
+    "reason": "A consolidated result does not require success; an aborted concluded run is within scope."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "outcome_annotation": "aborted",
+    "id": "completed_aborted",
+    "expected": true,
+    "reason": "A consolidated result does not require success; an aborted concluded run is within scope."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "e2": [
+        "IC:TestExecution"
+      ],
+      "result2": [
+        "IC:TestResult"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:091",
+        "e2",
+        "result2"
+      ],
+      [
+        "REL:W2:090",
+        "e2",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e2",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e2",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e2",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e2",
+        "condition1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ],
+      "e2": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "repeat_new_event_same_bindings",
+    "expected": true,
+    "reason": "Repetition remains a distinct occurrence even with equal case, subject and timestamp."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "suite1": [
+        "IC:TestSuiteSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:147",
+        "suite1",
+        "e1"
+      ],
+      [
+        "REL:W2:088",
+        "suite1",
+        "case1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "explicit_suite_index",
+    "expected": true,
+    "reason": "Indexing suite explicitly contains the executed case."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "suite1": [
+        "IC:TestSuiteSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:147",
+        "suite1",
+        "e1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_suite_index",
+    "expected": false,
+    "reason": "The suite cannot index an execution of a case outside its declared membership."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_091",
+    "expected": false,
+    "reason": "Required source-to-target minimum is not met."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "extra": [
+        "IC:TestResult"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:091",
+        "e1",
+        "extra"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "multiple_091",
+    "expected": false,
+    "reason": "Maximum one adjacent target exceeded."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:ProductMetricReference"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_091",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_090",
+    "expected": false,
+    "reason": "Required source-to-target minimum is not met."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "extra": [
+        "IC:TestCase"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "extra"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "multiple_090",
+    "expected": false,
+    "reason": "Maximum one adjacent target exceeded."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:ProductMetricReference"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_090",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "suite1": [
+        "IC:TestSuiteSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:088",
+        "suite1",
+        "case1"
+      ],
+      [
+        "REL:W2:147",
+        "suite1",
+        "case1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_147",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_testsRealization",
+    "expected": false,
+    "reason": "Required source-to-target minimum is not met."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "extra": [
+        "IC:ProductRealization"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "extra"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "multiple_testsRealization",
+    "expected": false,
+    "reason": "Maximum one adjacent target exceeded."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductMetricReference"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_testsRealization",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_assessesSpecification",
+    "expected": false,
+    "reason": "Required source-to-target minimum is not met."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:ProductMetricReference"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_assessesSpecification",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_executionContext",
+    "expected": false,
+    "reason": "Required source-to-target minimum is not met."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "extra": [
+        "IC:AssessmentContextSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "extra"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "multiple_executionContext",
+    "expected": false,
+    "reason": "Maximum one adjacent target exceeded."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:ProductMetricReference"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_executionContext",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_executionCriterion",
+    "expected": false,
+    "reason": "Required source-to-target minimum is not met."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ProductMetricReference"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "wrong_target_executionCriterion",
+    "expected": false,
+    "reason": "Object type violates the native relationship endpoint."
+  },
+  {
+    "types": {
+      "e1": [],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "missing_event_type",
+    "expected": false,
+    "reason": "Property-based targeting must detect an untyped run."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestCase"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "specification_as_event",
+    "expected": false,
+    "reason": "A TestCase specification cannot stand in for the occurring TestExecution."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": []
+    },
+    "id": "missing_end_time",
+    "expected": false,
+    "reason": "The completed-event profile requires an end time."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z",
+        "2026-10-14T04:31:00Z"
+      ]
+    },
+    "id": "multiple_end_times",
+    "expected": false,
+    "reason": "One consolidated event end time required."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "not-a-date"
+      ]
+    },
+    "id": "malformed_end_time",
+    "expected": false,
+    "reason": "A dateTime value is required."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "e2": [
+        "IC:TestExecution"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:090",
+        "e2",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e2",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e2",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e2",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e2",
+        "condition1"
+      ],
+      [
+        "REL:W2:091",
+        "e2",
+        "result1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ],
+      "e2": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "one_result_two_events",
+    "expected": false,
+    "reason": "A consolidated result belongs to exactly one recorded execution."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "unmatched_capability_version",
+    "expected": false,
+    "reason": "Assessment capability must belong to the tested version."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConditionSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "no_realization_version",
+    "expected": false,
+    "reason": "Missing version evidence fails the selected same-version reporting contract."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:GoalSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "other_condition": [
+        "IC:OutcomeSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:019",
+        "condition1",
+        "other_condition"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "no_criterion_propagation_019",
+    "expected": true,
+    "reason": "An explicitly checked condition may link to another condition without that condition becoming checked or satisfied."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:ConstraintSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "other_condition": [
+        "IC:RequirementSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:046",
+        "condition1",
+        "other_condition"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "no_criterion_propagation_046",
+    "expected": true,
+    "reason": "An explicitly checked condition may link to another condition without that condition becoming checked or satisfied."
+  },
+  {
+    "types": {
+      "e1": [
+        "IC:TestExecution"
+      ],
+      "case1": [
+        "IC:TestCase"
+      ],
+      "real1": [
+        "IC:ProductRealization"
+      ],
+      "cap1": [
+        "IC:CapabilitySpecification"
+      ],
+      "condition1": [
+        "IC:RequirementSpecification"
+      ],
+      "result1": [
+        "IC:TestResult"
+      ],
+      "ctx1": [
+        "IC:AssessmentContextSpecification"
+      ],
+      "v1": [
+        "IC:ProductVersion"
+      ],
+      "other_condition": [
+        "IC:AcceptanceCriterionSpecification"
+      ]
+    },
+    "edges": [
+      [
+        "REL:W2:091",
+        "e1",
+        "result1"
+      ],
+      [
+        "REL:W2:090",
+        "e1",
+        "case1"
+      ],
+      [
+        "ICREL:CP:testsRealization",
+        "e1",
+        "real1"
+      ],
+      [
+        "ICREL:CP:assessesSpecification",
+        "e1",
+        "cap1"
+      ],
+      [
+        "REL:ORSD05:executionContext",
+        "e1",
+        "ctx1"
+      ],
+      [
+        "REL:ORSD05:executionCriterion",
+        "e1",
+        "condition1"
+      ],
+      [
+        "ICREL:CP:realizesVersion",
+        "real1",
+        "v1"
+      ],
+      [
+        "ICREL:CP:specifiesCapability",
+        "v1",
+        "cap1"
+      ],
+      [
+        "REL:W2:044",
+        "condition1",
+        "other_condition"
+      ]
+    ],
+    "ended": {
+      "e1": [
+        "2026-10-14T04:30:00Z"
+      ]
+    },
+    "id": "no_criterion_propagation_044",
+    "expected": true,
+    "reason": "An explicitly checked condition may link to another condition without that condition becoming checked or satisfied."
+  }
+]
