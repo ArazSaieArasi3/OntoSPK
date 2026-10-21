@@ -11,7 +11,6 @@
 - [Overview](Overview)
 - [Quality](Quality)
 - [References](References)
-- [Relational Implementation](Relational-Implementation)
 - [Reproduce](Reproduce)
 - [Versions](Versions)
 - [Visualization](Visualization)

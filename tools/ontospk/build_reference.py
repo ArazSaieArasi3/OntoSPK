@@ -65,7 +65,7 @@ This reference covers every native class, association, end and generalization, t
 - [Native-class projection coverage](native-class-projection.csv)
 - [OWL class inventory](owl-class-inventory.csv)
 - [Machine-readable inventory](inventory.json)
-- [Database dictionary and mapping](../../../../data-models/product/v2/README.md)
+- [Distribution scope and evaluation](../../../../docs/releases/v2.0.0/README.md)
 - [Complete source model](../source/formalization/Native_Model_v0_41_0.json)
 
 Native classes (128 including 27 external handles), named OWL classes (121) and physical SQL predicate tables are different inventories. Counts must not be substituted for one another. Fifty-eight upstream rules are unimplemented in the pinned validator; the independent acceptance and scientific-follow-up register remains open. The formal specification does not claim complete UFO modal, counterfactual or causal semantics.
@@ -73,5 +73,5 @@ Native classes (128 including 27 external handles), named OWL classes (121) and 
 sections=[]
 for n in ['classes.md','associations.md','generalizations.md','commitments.md']:
     sections.append('<section><h2>'+html.escape(n)+'</h2><pre>'+html.escape((OUT/n).read_text())+'</pre></section>')
-write('complete-reference.html','<!doctype html><html lang="en"><meta charset="utf-8"><title>OntoSPK complete structural and formal reference</title><style>body{font-family:serif;max-width:1100px;margin:2rem auto;padding:1rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:monospace;font-size:.85rem}section{margin-top:3rem}</style><h1>OntoSPK complete structural and formal reference</h1><p>Version 2.0.0-rc.1. Native 0.41.0; logical profile 0.43.0. All formulas and native contract fields are displayed; operational policies retain their stated limits.</p>'+''.join(sections)+'</html>')
+write('complete-reference.html','<!doctype html><html lang="en"><meta charset="utf-8"><title>OntoSPK complete structural and formal reference</title><style>body{font-family:serif;max-width:1100px;margin:2rem auto;padding:1rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:monospace;font-size:.85rem}section{margin-top:3rem}</style><h1>OntoSPK complete structural and formal reference</h1><p>Public distribution 2.0.0 in preparation. Native 0.41.0; logical profile 0.43.0. All formulas and native contract fields are displayed; operational policies retain their stated limits.</p>'+''.join(sections)+'</html>')
 print(json.dumps(inventory,indent=2))

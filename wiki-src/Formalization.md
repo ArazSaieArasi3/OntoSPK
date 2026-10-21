@@ -33,7 +33,7 @@ The [first-order specification](https://github.com/ArazSaieArasi3/OntoSPK/blob/m
 - [Generalizations and generalization sets](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/generalizations.md)
 - [Classes and native identity commitments](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/classes.md)
 - [Native to OWL projection](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/native-class-projection.csv)
-- [OWL, validation and database constraints](Constraints)
+- [OWL and data-validation constraints](Constraints)
 - [Reasoning and results](Quality)
 
 Generated lookup pages complement this explanation. They do not establish complete UFO modal, counterfactual or causal semantics.

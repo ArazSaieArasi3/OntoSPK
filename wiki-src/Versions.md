@@ -2,16 +2,16 @@
 
 | Object | Current identity |
 | --- | --- |
-| Public distribution target | 2.0.0-rc.1 — unreleased candidate |
+| Public distribution target | 2.0.0 — prepared, GitHub Release pending |
 | Native conceptual model | 0.41.0 |
 | Logical profile revision | 0.43.0 |
 | Source assembly provenance | 0.45.0 |
-| Documentation baseline | DB-2026.10.1 — candidate |
+| Documentation baseline | Public core preparation, 21 October 2026 |
 
 These labels identify different objects. Retained fixture and schema filenames keep their original revisions for reproducibility. The OWL ontology metadata is documented in [Formalization](Formalization).
 
-The public package is a selected distribution from source commit `e12c23ce04232a695116376435fe48d33d8b14c0`; the [distribution manifest](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/distribution-manifest.json) records hashes and transformations. Public repository commits differ from development commits because the public package has a different history and scope.
+The stable ontology-core source is the private `product-ontology` tag `v2.0.0`, commit `beb0194b23d5794307742f9214d780e823ff829f`. The public repository has a separate history and selected scope; the [distribution manifest](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/distribution-manifest.json) records both source identity and file hashes. The earlier public candidate was based on source commit `e12c23ce04232a695116376435fe48d33d8b14c0`.
 
-Common semantic artifacts preserve exact bytes. Generated references, execution receipts and rebuilt database artifacts have their own hashes. Their byte identity is not assumed to equal earlier generated outputs.
+The canonical native model and logical profile preserve their exact SHA-256 digests. Generated references and execution receipts have their own hashes. The physical database is outside this core distribution.
 
-No published GitHub Release is declared by this documentation baseline. Stable 2.0.0 requires a separate release decision. Published tags and release payloads must not be silently replaced. Documentation-only improvements do not automatically create a new semantic model version.
+The private source has a stable `v2.0.0` release; the public destination does not yet have a `v2.0.0` GitHub Release. Publishing that tag requires the public migration and validation review. Published tags and release payloads must not be silently replaced. Documentation-only improvements do not automatically create a new semantic model version.

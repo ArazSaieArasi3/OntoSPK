@@ -1,12 +1,12 @@
 cff-version: 1.2.0
-message: "Please cite the exact OntoSPK version and commit used; the current distribution is an unreleased candidate."
+message: "Please cite the exact OntoSPK version and public commit used. Public 2.0.0 release is pending."
 type: software
 title: "OntoSPK: An Ontology for Software Product Knowledge"
 authors:
   - name: "Araz Saie Arasi"
 repository-code: "https://github.com/ArazSaieArasi3/OntoSPK"
 url: "https://github.com/ArazSaieArasi3/OntoSPK"
-version: "2.0.0-rc.1"
+version: "2.0.0"
 keywords:
   - ontology
   - software product

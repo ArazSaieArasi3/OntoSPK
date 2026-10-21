@@ -13,7 +13,7 @@ ap.add_argument('--output',type=Path,default=V/'evidence/integration')
 args=ap.parse_args();out=args.output.resolve();out.mkdir(parents=True,exist_ok=True)
 previous=json.loads((out/'INTEGRATION_RESULTS.json').read_text()) if args.retry_failed and (out/'INTEGRATION_RESULTS.json').exists() else None
 if previous:assert previous['native_sha256']=='b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed'
-report={'release':'v2.0.0-rc.1','started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+report={'release':'v2.0.0-public-preparation','started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
         'python':platform.python_version(),'sqlite':sqlite3.sqlite_version,
         'packages':{n:importlib.metadata.version(n) for n in ['rdflib','pyshacl','owlrl','loguru']},
         'steps':[],'independent_acceptances':0,

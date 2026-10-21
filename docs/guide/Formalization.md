@@ -33,7 +33,7 @@ The [first-order specification](../../semantic/product/v2/formal-specification/R
 - [Generalizations and generalization sets](../../semantic/product/v2/reference/generalizations.md)
 - [Classes and native identity commitments](../../semantic/product/v2/reference/classes.md)
 - [Native to OWL projection](../../semantic/product/v2/reference/native-class-projection.csv)
-- [OWL, validation and database constraints](Constraints.md)
+- [OWL and data-validation constraints](Constraints.md)
 - [Reasoning and results](Quality.md)
 
 Generated lookup pages complement this explanation. They do not establish complete UFO modal, counterfactual or causal semantics.
