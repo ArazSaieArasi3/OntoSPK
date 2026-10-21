@@ -2,7 +2,7 @@
 
 The [related-ontology comparison](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/research/related-ontologies/related-ontology-comparison.md) contains the source-specific literature and official links used for CPM/CPM2, OntoProd, software product-management prior work and software/requirements foundations. Its numbered citations are local to that comparison.
 
-The [foundational review source register](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/source/t39_review/Sources.json) records sources used in the identity and foundational assessment. A source entry does not imply independent acceptance of this model.
+Foundational interpretation draws on the [OntoUML identity and category reference](https://ontouml.readthedocs.io/en/latest/theory/identity.html), the [ROoST testing ontology](https://dev.nemo.inf.ufes.br/seon/ROoST.html) and the [W3C PROV-O specification](https://www.w3.org/TR/prov-o/). These resources inform the local model without establishing exact equivalence or independent acceptance.
 
 Technical execution sources include the pinned OntoUML validator and SDK, ROBOT/HermiT, RDFLib and pySHACL. Their exact execution identities are recorded in [Quality](Quality) and [Reproduce](Reproduce). WebVOWL and its dependencies are attributed in [THIRD_PARTY_NOTICES.md](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/THIRD_PARTY_NOTICES.md).
 

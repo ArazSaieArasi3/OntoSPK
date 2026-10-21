@@ -17,6 +17,8 @@ These denominators overlap and must not be summed as independent observations. F
 
 The [execution receipt](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/results/INTEGRATION_RESULTS.json) and method-specific reports record the current local run. Command paths in the published receipt are normalized to repository-relative paths and named external-tool placeholders for portability; outcomes are not changed. Successful local execution and successful remote CI are separate statuses.
 
+The earlier candidate's revision receipt included three checks against a pinned external Market snapshot. The public core does not redistribute that snapshot. Its current revision harness uses three synthetic RDF boundary checks with the same local non-conflation intent; these do not verify the external owner's current model. Compare execution receipts by source revision as well as by total case count.
+
 The full recorded integration includes a finite SQL admission harness; this is a test of supplied synthetic records, not a public database distribution or a claim about a production implementation. The public ontology core excludes the physical database.
 
 Independent semantic/domain review, external-owner acceptance and production deployment remain outside these results. See [Limitations](Limitations) and [Reproduce](Reproduce).

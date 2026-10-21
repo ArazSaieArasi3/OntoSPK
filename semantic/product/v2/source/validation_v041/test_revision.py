@@ -152,12 +152,15 @@ for handle,good,bad in [
 for name,c,expected in cases:
  r=boundary.assess(c);check(name,(r['status']=='CONTRACT_CONFORMING_ONLY')==expected and not r['semantic_equivalence'] and not r['owner_acceptance'],r,'external_boundary')
 
-# Check actual pinned Market TTL with an RDF parser, not a text pattern.
-market=Graph().parse(W.parent/'t39_review/Market_Owner_Locked.ttl')
-ns='https://github.com/ArazSaieArasi3/product-management-research/semantic/market#'
-check('pinned_competitor_class', (URIRef(ns+'CompetitorRole'),RDF.type,OWL.Class) in market,group='owner_rdf')
-check('pinned_alternative_property',(URIRef(ns+'alternativeTo'),RDF.type,OWL.ObjectProperty) in market,group='owner_rdf')
-check('no_fabricated_market_classes',all((URIRef(ns+x),RDF.type,OWL.Class) not in market for x in ['Pain','MarketInsight','AlternativeRelation']),group='owner_rdf')
+# A synthetic RDF boundary fixture checks the local non-conflation rule. It
+# does not verify or redistribute an externally governed owner's ontology.
+market=Graph()
+ns='urn:ontospk:synthetic-market-boundary:'
+market.add((URIRef(ns+'CompetitorRole'),RDF.type,OWL.Class))
+market.add((URIRef(ns+'alternativeTo'),RDF.type,OWL.ObjectProperty))
+check('boundary_competitor_class', (URIRef(ns+'CompetitorRole'),RDF.type,OWL.Class) in market,group='boundary_fixture')
+check('boundary_alternative_property',(URIRef(ns+'alternativeTo'),RDF.type,OWL.ObjectProperty) in market,group='boundary_fixture')
+check('boundary_no_fabricated_classes',all((URIRef(ns+x),RDF.type,OWL.Class) not in market for x in ['Pain','MarketInsight','AlternativeRelation']),group='boundary_fixture')
 
 profile.SHAPES.serialize(W/'Occurrence_Profile_v0_41_0.shacl.ttl',format='turtle')
 base.serialize(W/'fixtures/occurrence-positive-v041.ttl',format='turtle')

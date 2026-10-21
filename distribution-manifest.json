@@ -209,23 +209,23 @@
     },
     {
       "path": "docs/guide/Quality.html",
-      "bytes": 3479,
-      "sha256": "3bbb9e5d2e381b1d48d392da2ccc13fd197267a83e60372d498523b45c419910"
+      "bytes": 3892,
+      "sha256": "82fb307dfdce65ec172bdb2a7a1fe39f1c003633c9b1828eac524060bb9f601f"
     },
     {
       "path": "docs/guide/Quality.md",
-      "bytes": 2057,
-      "sha256": "c0bdb4adc3d3543fc950e2989fd648cb13be5558ca3dde3ee599c4e9cde685fc"
+      "bytes": 2464,
+      "sha256": "50480e373dc6d8eb41ae2f20f6af1179f2127b1e61da870805e1fa6cf2ef015c"
     },
     {
       "path": "docs/guide/References.html",
-      "bytes": 2282,
-      "sha256": "522912d3d2a2cdd7456133d454686acd48f19ca384ac97c80db1a8078af218fa"
+      "bytes": 2418,
+      "sha256": "0439001a6a67916b60879b474defd4616c67659c86ca89de369f43e56e4b6d2a"
     },
     {
       "path": "docs/guide/References.md",
-      "bytes": 1060,
-      "sha256": "ebe6e1efd6ea4f5b9a05d5c2047e1dbb6f9135827617d81ab5c6c9906a33d0c7"
+      "bytes": 1220,
+      "sha256": "669a4d268acffc06869eea46897d7dde2a28f5b7ba5fef844671b1436e138751"
     },
     {
       "path": "docs/guide/Reproduce.html",
@@ -325,7 +325,7 @@
     {
       "path": "docs/reference/owl/object-properties.html",
       "bytes": 228698,
-      "sha256": "cff87aec04a71ffdd206236de650f649d6ee18de8277563fa9953a2c8f7ffa6d"
+      "sha256": "3236a53d9551bcea49565cee98e0b784af2c6aca178ec211c93144ac41d76478"
     },
     {
       "path": "docs/related-ontologies.html",
@@ -550,7 +550,7 @@
     {
       "path": "evaluation/publication-checks.json",
       "bytes": 496,
-      "sha256": "341256706c90216460d793d8411c1ede6d6f946a4b4906f81002ef8990196257"
+      "sha256": "43a51d00cc0a2ab09c66c4ed90d5e1de83ddf44dcb1eef53af927fb9983d8817"
     },
     {
       "path": "evaluation/results/INTEGRATION_RESULTS.json",
@@ -858,31 +858,6 @@
       "sha256": "1f4cdc5f3016b5f3be77b724f4d30a604450c666bfc5adbb508ba08d47aa381e"
     },
     {
-      "path": "semantic/product/v2/source/formalization/T52_Formal_Scope_Decision_v0_42_0.json",
-      "bytes": 1817,
-      "sha256": "7a8a810b3522fc0d7a5fd27f9109451debccb66335638cfdd1672289b869cd02"
-    },
-    {
-      "path": "semantic/product/v2/source/t39_review/Market_Owner_Locked.ttl",
-      "bytes": 3730,
-      "sha256": "c9d07d325acd2f9b777dcae573387221e0e5327bb8ec1e0924b981ba92881fe0"
-    },
-    {
-      "path": "semantic/product/v2/source/t39_review/ROoST_Correspondence_v0_41_0.json",
-      "bytes": 3051,
-      "sha256": "ff7b0f6be7ad29a12047b8fb365a670cfaca4f575f5dfa89f7a45c1d88780b51"
-    },
-    {
-      "path": "semantic/product/v2/source/t39_review/Review_Responses_15_v0_41_0.json",
-      "bytes": 35799,
-      "sha256": "3c6dec3ae4e13c34a1fe362e6aee1ad5b9b82bb855e1c2f172b30e9b15315bad"
-    },
-    {
-      "path": "semantic/product/v2/source/t39_review/Sources.json",
-      "bytes": 5565,
-      "sha256": "1ae7b8b038c3292531638a072eeeec4ff87946c7d5b0f8e199166ce4d12b44b1"
-    },
-    {
       "path": "semantic/product/v2/source/t52_formalization_v043/Commitment_Matrix_22_v0_43_0.json",
       "bytes": 28727,
       "sha256": "d016e9c02ec8bd45b0bc65f9ba40fd0cb46609eaa9211d7eaaad9642886497a7"
@@ -891,11 +866,6 @@
       "path": "semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl",
       "bytes": 156624,
       "sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12"
-    },
-    {
-      "path": "semantic/product/v2/source/t52_formalization_v043/Execution_Summary_v0_43_0.json",
-      "bytes": 631,
-      "sha256": "feaffa8e7339094396df9366dba94ab5faa21143bfcab0fb16c269aba5e58673"
     },
     {
       "path": "semantic/product/v2/source/t52_formalization_v043/OntoSPK_Formalization_Supplement_v0_43_0_EN.html",
@@ -3444,8 +3414,8 @@
     },
     {
       "path": "semantic/product/v2/source/validation_v041/test_revision.py",
-      "bytes": 14092,
-      "sha256": "7c07198451004894138267ff51d34cab36c7f9beed0db5f8d0451fdb31e16034"
+      "bytes": 14234,
+      "sha256": "ea817bdc261047b39223ade26b9e41a9c2382200ec0c510bd22bb756c6f3cb18"
     },
     {
       "path": "third-party-licenses/WebVOWL.txt",
@@ -3579,8 +3549,8 @@
     },
     {
       "path": "wiki-src/Quality.md",
-      "bytes": 2097,
-      "sha256": "fe9a383613b0af9b9d7f8554af35c478603fd024411c4065fbfe090203ab5a95"
+      "bytes": 2504,
+      "sha256": "5be9b4fd94eff33c7ced67166c0b6a261a27eff7ec586e928fed662e0dfa8e76"
     },
     {
       "path": "wiki-src/README.md",
@@ -3589,8 +3559,8 @@
     },
     {
       "path": "wiki-src/References.md",
-      "bytes": 1200,
-      "sha256": "1ae55ce1e9ab5aeea3dd6a9e7aaedd954178e96283d5ee5a0ef3a97990b6ed7e"
+      "bytes": 1314,
+      "sha256": "5dcdd6743d4a80c52be0069c5d1043aff657a480ad5c926596f4aa69ee412bbf"
     },
     {
       "path": "wiki-src/Reproduce.md",
