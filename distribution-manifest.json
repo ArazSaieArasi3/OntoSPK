@@ -24,8 +24,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "bytes": 667,
-      "sha256": "df8e4e885e3fddd561daa3f06c79d636299161e2b3f573ef50664a3751b44bb0"
+      "bytes": 633,
+      "sha256": "8e71ad2e268f4fcbade019d930203474305b29af8c624246bee84a9dbfc53ad0"
     },
     {
       "path": ".github/workflows/validation.yml",
@@ -279,8 +279,8 @@
     },
     {
       "path": "docs/publication-status.json",
-      "bytes": 1435,
-      "sha256": "b0f07a2d79616fd439f18ed86d9e4ae505ec14a31fcf326d414bbddd9d3fa8cc"
+      "bytes": 1519,
+      "sha256": "b53f769de29f6a1b278c97596f58c0ebed5bcd4a65b619d0920256dce6a02a8b"
     },
     {
       "path": "docs/reading-guide.md",
