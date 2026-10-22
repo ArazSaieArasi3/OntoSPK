@@ -24,8 +24,17 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m pip install -r tools/ontospk/requirements.txt
+      - name: Verify generated coverage and Wiki source audits
+        run: |
+          python tools/publication/build_coverage_register.py
+          python tools/publication/audit_shacl_shapes.py
+          python tools/publication/build_portal.py
+          python tools/publication/audit_wiki.py
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md wiki-src docs
       - run: python tools/publication/check_publication.py

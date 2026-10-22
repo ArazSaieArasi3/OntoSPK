@@ -75,7 +75,14 @@ for rdf_type, kind in owl_kinds:
                         "Omitted facts and no-unique-name cases do not imply rejection",
                         "A bare declaration does not create a closed-world constraint or testable behavioral claim"))
 
-shacl_paths = sorted((ROOT / SOURCE / "validation_v041").rglob("*.shacl.ttl"))
+# Runtime entry points load these four graphs. The event contract has a plain .ttl
+# suffix, so a filename-only *.shacl.ttl search silently omits active constraints.
+shacl_paths = [ROOT / SOURCE / "validation_v041" / p for p in (
+    "Occurrence_Profile_v0_41_0.shacl.ttl",
+    "inputs/identity-slice.shacl.ttl",
+    "inputs/complete-reporting-v0_16.shacl.ttl",
+    "inputs/Event_Contract_Shapes_v0_30_0.ttl",
+)]
 shacl_graphs = []
 constraint_predicates = {
     SH.minCount, SH.maxCount, SH["class"], SH.datatype, SH.nodeKind, SH["in"],
@@ -87,26 +94,52 @@ constraint_predicates = {
     SH.sparql,
 }
 targets = (SH.targetClass, SH.targetNode, SH.targetSubjectsOf, SH.targetObjectsOf)
+shape_edges = (SH.property, SH.node, SH.qualifiedValueShape, SH["not"])
+list_edges = (SH["or"], SH["and"], SH.xone)
+
+
+def reachable(g, root):
+    """Yield target-reachable shapes, including logical alternatives and their properties."""
+    pending = [(root, "root", None)]
+    visited = set()
+    while pending:
+        node, route, path = pending.pop(0)
+        if node in visited:
+            continue
+        visited.add(node)
+        yield node, route, path
+        edges = []
+        for pred in shape_edges:
+            for child in g.objects(node, pred):
+                edges.append((str(pred), child, term(g, g.value(child, SH.path)) if pred == SH.property else path))
+        for pred in list_edges:
+            for head in g.objects(node, pred):
+                for index, child in enumerate(g.items(head)):
+                    edges.append((str(pred) + f"[{index}]", child, path))
+        edges.sort(key=lambda e: json.dumps((e[0], term(g, e[1])), sort_keys=True))
+        for index, (_, child, child_path) in enumerate(edges):
+            pending.append((child, f"{route}.{index}", child_path))
+
+
 for path in shacl_paths:
     relative = path.relative_to(ROOT)
     sources.append(source(relative))
     shapes = Graph().parse(path)
     active = sorted({n for n in shapes.subjects(RDF.type, SH.NodeShape)
                      if any((n, t, None) in shapes for t in targets)}, key=str)
+    reached = {child for node in active for child, _, _ in reachable(shapes, node)}
+    property_nodes = {p for p in shapes.objects(None, SH.property)} & reached
     shacl_graphs.append({"path": str(relative), "targeted_node_shapes": len(active),
-                         "linked_property_shapes": len({p for n in active for p in shapes.objects(n, SH.property)}),
-                         "linked_sparql_constraints": len({p for n in active for p in shapes.objects(n, SH.sparql)})})
+                         "reachable_property_shapes": len(property_nodes),
+                         "nested_property_shapes": len(property_nodes - {p for n in active for p in shapes.objects(n, SH.property)}),
+                         "linked_sparql_constraints": len({p for n in reached for p in shapes.objects(n, SH.sparql)})})
     for node in active:
         target = sorted((str(p), term(shapes, o)) for p, o in shapes.predicate_objects(node) if p in targets)
-        children = [(node, None)] + [(p, term(shapes, shapes.value(p, SH.path)))
-                                      for p in shapes.objects(node, SH.property)]
-        # Stable ordering for anonymous properties; no BNode identifier is used as a key.
-        children.sort(key=lambda pair: json.dumps(pair[1], sort_keys=True))
-        for ordinal, (child, prop_path) in enumerate(children):
+        for child, route, prop_path in reachable(shapes, node):
             constraints = sorted(((str(p), term(shapes, o)) for p, o in shapes.predicate_objects(child)
                                   if p in constraint_predicates), key=lambda item: json.dumps(item, sort_keys=True))
             for index, (predicate, value) in enumerate(constraints):
-                key = f"{relative}::{node}::{ordinal}:{index}"
+                key = f"{relative}::{node}::{route}:{index}"
                 rows.append(row("shacl_constraint", key, relative,
                                 {"node_shape": str(node), "target": target, "path": prop_path,
                                  "component": predicate, "parameter": value},
@@ -186,10 +219,11 @@ assert counts["commitment"] == 22 and counts["cq_contract"] == 56 and counts["cq
 assert counts["native_class"] == 128 and counts["native_relation"] == 286
 assert counts["native_generalization"] == 34 and counts["native_expression"] == 892
 assert counts["external_handle"] == 27 and counts["owl_class"] == 121
-assert len(shacl_graphs) == 3
-assert sum(s["targeted_node_shapes"] for s in shacl_graphs) == 1201
-assert sum(s["linked_property_shapes"] for s in shacl_graphs) == 722
-assert sum(s["linked_sparql_constraints"] for s in shacl_graphs) == 47
+assert len(shacl_graphs) == 4
+assert sum(s["targeted_node_shapes"] for s in shacl_graphs) == 1217
+assert sum(s["reachable_property_shapes"] for s in shacl_graphs) == 777
+assert sum(s["nested_property_shapes"] for s in shacl_graphs) == 40
+assert sum(s["linked_sparql_constraints"] for s in shacl_graphs) == 49
 assert len({(x["group"], x["key"]) for x in rows}) == len(rows)
 register = {"scope": "Released v2.0.0 sources, with the subsequent finite evaluation plan",
             "status": "INVENTORY_AND_CASE_DESIGN_ONLY; no new validation executed",
@@ -218,8 +252,10 @@ table = "\n".join(f"| `{group}` | {count} |" for group, count in counts.items())
     "structural expressions or constraints. They must not be summed as a global correctness score. "
     "The SHACL count is per active target-reachable component and parameter, including named "
     "and anonymous property shapes; #14 will test graph validity and activation. "
-    "The three shapes graphs contain 1,201 targeted node shapes, 722 directly linked "
-    "property shapes and 47 linked SPARQL constraints. The CQ source has two additional "
+    "The four active shapes graphs contain 1,217 targeted node shapes, 777 distinct reachable "
+    "property shapes (40 nested in logical alternatives) and 49 linked SPARQL constraints. "
+    "The event-contract graph uses a plain `.ttl` "
+    "suffix and is included because the runtime loads it. The CQ source has two additional "
     "optional mapping rows outside the 56 retained replay contracts.\n\n"
     "## Acceptance route\n\n"
     "Issues #14–#16 execute SHACL checks; #17–#20 run OWL, HermiT and ROBOT checks; "
