@@ -2,7 +2,7 @@
 
 This is a **test design, not an execution report**. Each machine-readable row records the source, method, oracle, positive, negative and boundary case, and limitation. The released native and logical files remain unchanged.
 
-[Full row register (JSON, gzip)](coverage-register.json.gz) · [Evaluation plan](comprehensive-coverage-plan.md) · [Prior finite results](../docs/guide/Quality.md)
+[Full row register (JSON, gzip)](coverage-register.json.gz) · [Evaluation plan](comprehensive-coverage-plan.md) · [Prior finite results](../docs/guide/Quality.md) · [Subsequent isolated SHACL component execution](shacl-simple-constraints.md)
 
 ## Distinct denominators
 

@@ -138,7 +138,7 @@ assert sum(x["distinct_reachable_sparql_constraints"] for x in graphs) == 49
 assert all(x["inactive_node_shapes"] == x["unreachable_property_shapes"] ==
            x["unreachable_sparql_constraints"] == 0 for x in graphs)
 out = {"scope": "Four runtime-loaded public-core SHACL graphs; shape integrity and activation inventory",
-       "status": "GRAPH_AUDIT_EXECUTED; FULL_CONSTRAINT_CASE_COVERAGE_PENDING_15_16",
+       "status": "GRAPH_AUDIT_EXECUTED; ISOLATED_SIMPLE_COMPONENT_CASES_15_SEPARATE; COMPLEX_CASES_16_PENDING",
        "additional_source_shape_graphs_outside_runtime": [],
        "graphs": graphs, "synthetic_status_controls": synthetic_controls(),
        "interpretation": "Meta-SHACL success and an empty data graph do not prove behavior on targeted records. "
@@ -168,8 +168,8 @@ lines += ["", "All four graphs parse and pass meta-SHACL. Every declared node sh
           "A controlled malformed-shape graph is rejected by meta-SHACL. A different, valid shape "
           "with a missing required data value returns an ordinary nonconformance report. An empty "
           "data graph conforms because the source graphs have no matching focus nodes in that control; "
-          "it does not activate every target. Constraint-level positive, negative and boundary cases "
-          "remain #15 and #16.", "", "[Machine-readable counts and source hashes](shacl-shapes-audit.json) · "
+          "it does not activate every target. Isolated simple-component case execution is recorded "
+          "in #15; graph interactions and complex constraints remain #16.", "", "[Machine-readable counts and source hashes](shacl-shapes-audit.json) · "
           "[Corrected coverage register](coverage-register.md)", ""]
 (ROOT / "evaluation/shacl-shapes-audit.md").write_text("\n".join(lines), encoding="utf-8")
 print(json.dumps({"graphs": len(graphs), "targets": sum(x["targeted_node_shapes"] for x in graphs),

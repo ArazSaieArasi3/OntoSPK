@@ -11,6 +11,6 @@ This audit covers the four graphs loaded by the public validation runtime. The e
 
 All four graphs parse and pass meta-SHACL. Every declared node shape has a target; all `sh:property` and `sh:sparql` nodes are reachable from those targets. The 40 nested property shapes occur in logical alternatives of the complete-reporting graph. No other TTL source graph declares a SHACL node shape outside these runtime-loaded graphs. Repeated templates are reported separately from exact same-target duplicates and are not treated as independent test outcomes.
 
-A controlled malformed-shape graph is rejected by meta-SHACL. A different, valid shape with a missing required data value returns an ordinary nonconformance report. An empty data graph conforms because the source graphs have no matching focus nodes in that control; it does not activate every target. Constraint-level positive, negative and boundary cases remain #15 and #16.
+A controlled malformed-shape graph is rejected by meta-SHACL. A different, valid shape with a missing required data value returns an ordinary nonconformance report. An empty data graph conforms because the source graphs have no matching focus nodes in that control; it does not activate every target. Isolated simple-component case execution is recorded in #15; graph interactions and complex constraints remain #16.
 
 [Machine-readable counts and source hashes](shacl-shapes-audit.json) · [Corrected coverage register](coverage-register.md)
