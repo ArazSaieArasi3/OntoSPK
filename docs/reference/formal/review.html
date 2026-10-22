@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Review of the FOL transcription — OntoSPK ontology documentation"><title>Review of the FOL transcription — OntoSPK</title><link rel="stylesheet" href="../../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../../index.html">Overview</a><a href="../../widoco/index-en.html">OWL reference</a><a href="../native/index.html">Conceptual reference</a><a href="../../evaluation/index.html">Evaluation</a><a href="../../explore/index.html">Explore</a><a href="../../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../../guide/Home.html">Home</a></li><li><a href="../../guide/Overview.html">Overview</a></li><li><a href="../../guide/Domains.html">Domains</a></li><li><a href="../../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../../guide/Formalization.html">Formalization</a></li><li><a href="../../guide/Constraints.html">Constraints</a></li><li><a href="../../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../../guide/Quality.html">Quality</a></li><li><a href="../../guide/Reproduce.html">Reproduce</a></li><li><a href="../../guide/Visualization.html">Visualization</a></li><li><a href="../../guide/External-References.html">External References</a></li><li><a href="../../guide/Versions.html">Versions</a></li><li><a href="../../guide/Citation.html">Citation</a></li><li><a href="../../guide/References.html">References</a></li><li><a href="../../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../search.html">Find a class or property</a></li><li><a href="index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="review-of-the-fol-transcription">Review of the FOL transcription</h1>
+<p>The review checks whether the published formulas faithfully transcribe their stated inputs. It does not run a new ontology-wide consistency proof or replace independent semantic review.</p>
+<h2 id="clarifications-incorporated">Clarifications incorporated</h2>
+<table>
+<thead>
+<tr>
+<th>Point</th>
+<th>Published treatment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Native structure and logical-profile commitments have different coverage.</td>
+<td>Two separately named theories are published; their union or equivalence is not asserted.</td>
+</tr>
+<tr>
+<td>Relation labels are not unique.</td>
+<td>Every machine predicate has an identifier-derived unique symbol and a complete source dictionary.</td>
+</tr>
+<tr>
+<td>Endpoint multiplicities can be reversed accidentally.</td>
+<td>Both directions are extracted from the native endpoints and compared with the retained relation contracts.</td>
+</tr>
+<tr>
+<td>A readable table is not itself an expanded logical file.</td>
+<td>All structural macros are expanded into FOL with equality, and the emitted text is independently parsed.</td>
+</tr>
+<tr>
+<td>Datatype ranges are not a complete datatype theory.</td>
+<td>The profile export explicitly identifies its abstract datatype predicates and omitted datatype semantics.</td>
+</tr>
+<tr>
+<td>A count of expressions can include tautologies or pairwise expansions.</td>
+<td>Counts are reported as inventory, not as evidence of semantic strength.</td>
+</tr>
+<tr>
+<td>Test-profile joins are not necessarily asserted OWL axioms.</td>
+<td>EV10 and EV11 are documented as scoped graph/admission contracts in a separate reference.</td>
+</tr>
+<tr>
+<td>Asymmetry is weaker than general acyclicity.</td>
+<td>No unsupported cycle-freedom claim is made.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="executed-checks">Executed checks</h2>
+<p>The <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/transcription-review.json">machine-readable report</a> records source and output hashes, syntax and binding checks, complete relation-signature comparison, all two-object interpretations of each native relation and source-based profile inventory reconciliation. Both satisfying and violating finite interpretations are included.</p>
+<p>The parser accepts the generated function-free TPTP FOF subset. It is a transcription check, not a third-party theorem prover. The two-object evaluation is exhaustive within its declared bound; it is not exhaustive over arbitrary interpretations. The profile checks cover syntax, signatures and source-family counts and do not prove full semantic equivalence to OWL 2.</p>
+<p>The model and logical-profile input bytes remain unchanged. Article files are outside this publication change. Ontology-wide satisfiability, temporal and modal adequacy, independent acceptance and datatype value-space verification remain separate questions.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#clarifications-incorporated">Clarifications incorporated</a></li><li><a href="#executed-checks">Executed checks</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../../guide/Citation.html">Citation and reuse</a> · <a href="../../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

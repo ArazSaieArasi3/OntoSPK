@@ -94,4 +94,9 @@ write(wiki/'_Footer.md','[Repository]('+REPO+') · [Core release]('+REPO+'/relea
 write(wiki/'README.md','# Wiki publication source\n\nGenerated from `docs/guide` by `tools/publication/build_portal.py`. Edit curated source, not these projections. File preparation does not imply that the GitHub Wiki has been published. See `docs/publication-status.json`.')
 write(OUT/'.nojekyll','')
 write(OUT/'reference/coverage.json',json.dumps({'native':json.loads((V/'reference/inventory.json').read_text()),'logical_declarations':counts,'owl_triples':len(G),'logical_source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'formal_description_dimensions':['identity_language','architecture','classes','object_properties','datatype_properties','individuals','axioms_constraints','reasoning','conceptual_formal_traceability','competency_questions'],'coverage_scope':'Generated inventory and curated explanation; not independent semantic acceptance.'},indent=2)+'\n')
+from finish_widoco import finish
+from enrich_pages import enrich
+finish()
+shutil.copyfile(ROOT/'tools/publication/portal.css', OUT/'assets/portal.css')
+enrich()
 print(json.dumps({'guide_pages':len(list(GUIDE.glob('*.md'))),'wiki_pages':len(list(wiki.glob('*.md')))-1,'logical_declarations':counts,'owl_triples':len(G),'site':'docs'},indent=2))

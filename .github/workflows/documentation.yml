@@ -37,7 +37,9 @@ jobs:
           python tools/publication/build_coverage_register.py
           python tools/publication/audit_shacl_shapes.py
           python tools/publication/test_shacl_simple_constraints.py
+          python tools/publication/build_webvowl_data.py
           python tools/publication/build_portal.py
           python tools/publication/audit_wiki.py
-          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md wiki-src docs
+          python tools/publication/audit_pages.py
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md evaluation/pages-completeness.json wiki-src docs
       - run: python tools/publication/check_publication.py

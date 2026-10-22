@@ -1,0 +1,11 @@
+{
+  "source_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+  "rdf_triples": 2081,
+  "graph_isomorphic_to_core": true,
+  "files": {
+    "ontology.ttl": "30b88af6806af8597c88ba64f33ea7413cf1bf22e8e08daa4527cb38dfc5d6c1",
+    "ontology.owl": "847f380477c54c14810fa6f5b077c5ce6211c76c802e19c2071aaa3de249fbdb",
+    "ontology.jsonld": "9bbfe0a352148b37c9716dea21d30a69239031ea5cad420f56bd7796dacc5455",
+    "ontology.nt": "5057e2b37a6725c847fd0bf54ed764e35a206c42d42893c12bde75fd64a4aa3a"
+  }
+}

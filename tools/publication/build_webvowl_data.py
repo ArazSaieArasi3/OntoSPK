@@ -13,13 +13,14 @@ nodes=set(classes);edges=[];omitted=[]
 for p in sorted(objects|data):
  ds=list(g.objects(p,RDFS.domain));rs=list(g.objects(p,RDFS.range))
  if len(ds)!=1 or len(rs)!=1 or not isinstance(ds[0],URIRef) or not isinstance(rs[0],URIRef):
-  omitted.append({'iri':str(p),'reason':'An exact single declared URI domain and range are required for this view.','declared_domains':list(map(str,ds)),'declared_ranges':list(map(str,rs))});continue
+  describe=lambda values:sorted(str(x) if isinstance(x,URIRef) else '[anonymous OWL expression; inspect the released source]' for x in values)
+  omitted.append({'iri':str(p),'reason':'An exact single declared URI domain and range are required for this view.','declared_domains':describe(ds),'declared_ranges':describe(rs)});continue
  nodes.update([ds[0],rs[0]]);edges.append((p,ds[0],rs[0],'owl:DatatypeProperty' if p in data else 'owl:ObjectProperty'))
-for a,b in g.subject_objects(RDFS.subClassOf):
+for a,b in sorted(g.subject_objects(RDFS.subClassOf),key=lambda pair:tuple(map(str,pair))):
  if isinstance(a,URIRef) and isinstance(b,URIRef):nodes.update([a,b]);edges.append((None,a,b,'rdfs:subClassOf'))
 def ident(x):return 'n'+hashlib.sha256(str(x).encode()).hexdigest()[:20]
 def label(x):return str(g.value(x,RDFS.label) or str(x).rsplit('#',1)[-1].rsplit(':',1)[-1])
-v={'_comment':'Derived exploratory view; missing endpoints are omitted, not supplied. See coverage.json.','header':{'languages':['en'],'title':{'en':'OntoSPK bounded OWL profile'},'iri':'urn:productium:specification-profile:','version':'Logical profile 0.43.0; public 2.0.0 preparation','description':{'en':'An exploratory projection of asserted named classes, declared property endpoints and URI subclass edges. It does not encode all restrictions, disjointness, SHACL or SQL policies.'}},'namespace':[{'name':p,'iri':str(n)} for p,n in g.namespaces()],'class':[],'classAttribute':[],'property':[],'propertyAttribute':[]}
+v={'_comment':'Derived exploratory view; missing endpoints are omitted, not supplied. See coverage.json.','header':{'languages':['en'],'title':{'en':'OntoSPK bounded OWL profile'},'iri':'urn:productium:specification-profile:','version':'Logical profile 0.43.0; ontology core v2.0.0','description':{'en':'An exploratory projection of asserted named classes, declared property endpoints and URI subclass edges. It does not encode all restrictions, disjointness, SHACL or SQL policies.'}},'namespace':[{'name':p,'iri':str(n)} for p,n in sorted(g.namespaces())],'class':[],'classAttribute':[],'property':[],'propertyAttribute':[]}
 for n in sorted(nodes):
  typ='owl:Class' if n in classes else ('owl:Thing' if n==OWL.Thing else 'rdfs:Datatype')
  v['class'].append({'id':ident(n),'type':typ})

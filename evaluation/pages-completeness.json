@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "scope": "Static Pages completeness and RDF graph identity; live browser acceptance is separate",
+  "guide_pages": 15,
+  "reader_html_pages": 41,
+  "widoco_declarations": {
+    "classes": 121,
+    "object_properties": 286,
+    "datatype_properties": 46
+  },
+  "search_entries": 581,
+  "search_anchors_checked": 581,
+  "serializations": {
+    "ontology.ttl": {
+      "graph_isomorphic": true,
+      "sha256": "30b88af6806af8597c88ba64f33ea7413cf1bf22e8e08daa4527cb38dfc5d6c1"
+    },
+    "ontology.owl": {
+      "graph_isomorphic": true,
+      "sha256": "847f380477c54c14810fa6f5b077c5ce6211c76c802e19c2071aaa3de249fbdb"
+    },
+    "ontology.jsonld": {
+      "graph_isomorphic": true,
+      "sha256": "9bbfe0a352148b37c9716dea21d30a69239031ea5cad420f56bd7796dacc5455"
+    },
+    "ontology.nt": {
+      "graph_isomorphic": true,
+      "sha256": "5057e2b37a6725c847fd0bf54ed764e35a206c42d42893c12bde75fd64a4aa3a"
+    }
+  },
+  "native_classes": 128,
+  "native_associations": 286,
+  "native_generalizations": 34,
+  "scoped_commitments": 22,
+  "required_routes": [
+    "index.html",
+    "widoco/index-en.html",
+    "reference/native/classes.html",
+    "reference/native/associations.html",
+    "reference/native/generalizations.html",
+    "reference/native/commitments.html",
+    "reference/formal/index.html",
+    "reference/formal/native-structure.html",
+    "reference/formal/profile-projection.html",
+    "reference/formal/scoped-contracts.html",
+    "reference/formal/review.html",
+    "reference/search.html",
+    "evaluation/index.html",
+    "evaluation/shacl-shapes-audit.html",
+    "evaluation/shacl-simple-constraints.html",
+    "explore/index.html",
+    "downloads/index.html"
+  ],
+  "errors": []
+}

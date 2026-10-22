@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Mappings and scoped contracts — OntoSPK ontology documentation"><title>Mappings and scoped contracts — OntoSPK</title><link rel="stylesheet" href="../../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../../index.html">Overview</a><a href="../../widoco/index-en.html">OWL reference</a><a href="../native/index.html">Conceptual reference</a><a href="../../evaluation/index.html">Evaluation</a><a href="../../explore/index.html">Explore</a><a href="../../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../../guide/Home.html">Home</a></li><li><a href="../../guide/Overview.html">Overview</a></li><li><a href="../../guide/Domains.html">Domains</a></li><li><a href="../../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../../guide/Formalization.html">Formalization</a></li><li><a href="../../guide/Constraints.html">Constraints</a></li><li><a href="../../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../../guide/Quality.html">Quality</a></li><li><a href="../../guide/Reproduce.html">Reproduce</a></li><li><a href="../../guide/Visualization.html">Visualization</a></li><li><a href="../../guide/External-References.html">External References</a></li><li><a href="../../guide/Versions.html">Versions</a></li><li><a href="../../guide/Citation.html">Citation</a></li><li><a href="../../guide/References.html">References</a></li><li><a href="../../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../search.html">Find a class or property</a></li><li><a href="index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="mappings-and-scoped-contracts">Mappings and scoped contracts</h1>
+<p>These formulas retain explicit mappings and scoped test contracts from the current companion sources. They are separated from the native structural theory and the OWL projection so that a mapping or an operational admission condition is not silently promoted to an axiom of every representation.</p>
+<h2 id="inverse-mappings">Inverse mappings</h2>
+<p>The <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/validation_v041/inputs/Relation_OWL_SQL_Crosswalk_v0_16_0.csv">association crosswalk</a> gives the following orientations. Subscripts below identify distinct native associations even when their display labels coincide.</p>
+<pre><code class="language-text">forall E,P:
+  entryOfPortfolio_W004(E,P) &lt;-&gt; organizesEntry_W003(P,E)
+
+forall D,P:
+  dependencyOfProduct_W013(D,P) &lt;-&gt; hasDependencySpecification_W012(P,D)
+
+forall E,R:
+  hasResult_W091(E,R) &lt;-&gt; recordsExecution_profile(R,E)
+</code></pre>
+<p>The first two connect explicitly mapped native associations. The third relates a native association to the retained profile predicate; it does not introduce a new <code>owl:inverseOf</code> declaration into the source file.</p>
+<p>The profile already declares:</p>
+<pre><code class="language-text">forall A,U:
+  isCarrierInRecord(A,U) &lt;-&gt; recordsCarrier(U,A)
+
+forall A,U,C:
+  (isCarrierInRecord(A,U) and recordsClaim(U,C)) -&gt;
+    recordedAttributionTo(A,C)
+</code></pre>
+<p>The consequence is an attribution link, not truth of the claim.</p>
+<h2 id="test-profile-joins">Test-profile joins</h2>
+<p>The source is the <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/t52_formalization_v043/Commitment_Matrix_22_v0_43_0.json">scoped commitment matrix</a>, commitments EV10 and EV11. These joins are documented graph/admission contracts; they are not claimed to be axioms encoded in the retained OWL file.</p>
+<pre><code class="language-text">forall E,R,S:
+  (testsRealization(E,R) and assessesSpecification(E,S)) -&gt;
+    exists V:
+      realizesVersion(R,V) and specifiesCapability(V,S)
+
+forall Q,E,T:
+  (hasRecordedExecution(Q,E) and executes(E,T)) -&gt;
+    containsCase(Q,T)
+</code></pre>
+<p><code>containsCase</code> is the profile name mapped to native association <code>REL:W2:088</code>. No other relation named <code>contains</code> is merged with it.</p>
+<p>The typed unique-version condition follows from the native endpoint type and exact-one realization/version bound:</p>
+<pre><code class="language-text">forall E,R:
+  testsRealization(E,R) -&gt;
+    exists V:
+      ProductVersion(V) and realizesVersion(R,V) and
+      forall W: realizesVersion(R,W) -&gt; W=V
+</code></pre>
+<p>These statements align a declared test target and assessment scope. They do not establish actual participation, successful execution, or satisfaction of the specified capability.</p>
+<h2 id="additional-boundaries">Additional boundaries</h2>
+<ul>
+<li>The native requirement generalization set is neither disjoint nor complete.</li>
+<li>The profile disjointness list applies only to its listed classes. In particular, TestResult remains a subclass of EvidenceArtifact.</li>
+<li>Asymmetry and irreflexivity alone do not exclude every longer directed cycle. No transitive-closure claim is added.</li>
+<li>Functional properties mean at most one value; existence requires a separate minimum or exact-cardinality axiom.</li>
+<li>Missing explicit data is not automatically false in the first-order theory. Finite admission checks have separately stated completeness requirements.</li>
+<li>A repeated identifier or timestamp is not a proof of continuing real-world identity.</li>
+<li>The immutable-record, replay and persistence commitments in the matrix remain operational contracts. They are not folded into a static object theory.</li>
+</ul></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#inverse-mappings">Inverse mappings</a></li><li><a href="#test-profile-joins">Test-profile joins</a></li><li><a href="#additional-boundaries">Additional boundaries</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../../guide/Citation.html">Citation and reuse</a> · <a href="../../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>
