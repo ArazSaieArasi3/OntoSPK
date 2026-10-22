@@ -2,7 +2,7 @@
 
 OntoSPK is an ontology for modeling software product knowledge across planning, definition, requirements, experience, delivery, testing, marketing, evidence and realization. It distinguishes a continuing product from its versions, specifications, realizations and execution records.
 
-The public repository is preparing the **2.0.0 ontology-core distribution**, derived from the stable private source release. It contains a conceptual model, a bounded OWL profile, graph constraints and competency-question fixtures. The public release has not yet been published; independent semantic review remains open.
+The **2.0.0 ontology-core distribution** is derived from the stable private source release. It contains a conceptual model, a bounded OWL profile, graph constraints and competency-question fixtures. Check [GitHub Releases](https://github.com/ArazSaieArasi3/OntoSPK/releases) for the public release record; independent semantic review remains open.
 
 ## Start here
 

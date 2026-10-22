@@ -1,6 +1,6 @@
 # OntoSPK 2.0 ontology core
 
-This page describes the public package being prepared from the stable ontology-core source. The public GitHub release is pending. Its semantic baseline consists of native model 0.41.0 and bounded logical profile 0.43.0. Existing native identifiers and ontology IRIs have not been renamed.
+This page describes the selected public ontology-core package. Check [GitHub Releases](https://github.com/ArazSaieArasi3/OntoSPK/releases) for its publication record and exact tag. Its semantic baseline consists of native model 0.41.0 and bounded logical profile 0.43.0. Existing native identifiers and ontology IRIs have not been renamed.
 
 ## Included
 
@@ -23,6 +23,6 @@ Physical SQLite or PostgreSQL packages, an operational database, the separate Ex
 
 ## Release identity
 
-The source release is private `product-ontology` `v2.0.0`, commit `beb0194b23d5794307742f9214d780e823ff829f`. Its original native-model SHA-256 is `b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed`; the logical profile SHA-256 is `153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12`. The public source tree has a different history and a separately recorded distribution manifest. The eventual public tag and downloads must be built and verified from the accepted public commit.
+The source release is private `product-ontology` `v2.0.0`, commit `beb0194b23d5794307742f9214d780e823ff829f`. Its original native-model SHA-256 is `b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed`; the logical profile SHA-256 is `153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12`. The public source tree has a different history and a separately recorded distribution manifest. Verify the public tag, release downloads and checksums against the exact accepted public commit.
 
 No project-wide reuse licence has been selected. [Licensing](../../../LICENSING.md) and [third-party notices](../../../THIRD_PARTY_NOTICES.md) define the current state. A DOI has not been assigned.
