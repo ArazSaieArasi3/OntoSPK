@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import tarfile
 from html import escape
+from viewer_compat import prepare_viewer
 
 ROOT=Path(__file__).resolve().parents[2]
 REGISTRY=ROOT/'tools/publication/pages-registry.json'
@@ -29,6 +30,8 @@ def guard(old,new):
 def decorate(folder,source,version,mutable):
     for path in folder.rglob('*.html'):
         text=path.read_text()
+        if path.relative_to(folder).as_posix() == 'webvowl/index.html':
+            text=prepare_viewer(text)
         text=text.replace(REPO+'/blob/main/',REPO+'/blob/'+source+'/').replace(REPO+'/tree/main/',REPO+'/tree/'+source+'/')
         relative='../'*(len(path.relative_to(folder).parts)+(0 if mutable else 1))
         status='Mutable current documentation' if mutable else 'Frozen documentation release'
@@ -65,7 +68,7 @@ def build(output,registry):
     (output/'versions').mkdir();(output/'versions/index.html').write_text(page.replace('CURRENT','../current').replace('LINKS',''.join(links)))
     (output/'index.html').write_text(page.replace('CURRENT','current').replace('LINKS',''.join(links).replace('../releases/','releases/')))
     (output/'.nojekyll').touch()
-    manifest={'current_source_commit':head,'ontology_core':'v2.0.0','releases':registry['releases'],'files':{p.relative_to(output).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}}
+    manifest={'current_source_commit':head,'ontology_core':'v2.0.0','releases':registry['releases'],'presentation_adjustments':[{'id':'webvowl-1.1.7-view-mode-controls','source':'tools/publication/viewer_compat.py','source_sha256':hashlib.sha256((ROOT/'tools/publication/viewer_compat.py').read_bytes()).hexdigest(),'scope':'Retain hidden DOM controls required by upstream view-mode initialization; hide unavailable editing; label search and keep the title visible. No RDF or graph JSON changes.'}],'files':{p.relative_to(output).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}}
     (output/'publication-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps({'html_pages':len(list(output.rglob('*.html'))),'frozen_releases':list(registry['releases']),'current_source_commit':head,'output':str(output)}))
 if __name__=='__main__':
