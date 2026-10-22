@@ -1,0 +1,136 @@
+{
+  "scope": "prepared source only; no live Wiki render or external-link reachability test",
+  "status": "PASS_SOURCE_AUDIT",
+  "reader_pages": 15,
+  "support_files": 3,
+  "sidebar_sections": 3,
+  "words_approx": 3611,
+  "words_per_page": {
+    "mean": 240.7,
+    "median": 191,
+    "minimum": 113,
+    "maximum": 666
+  },
+  "markdown_links": 73,
+  "link_categories": {
+    "external_or_anchor": 3,
+    "repo_main": 5,
+    "repo_other": 9,
+    "repo_tag": 27,
+    "wiki_internal": 29
+  },
+  "sidebar_coverage": 15,
+  "orphan_pages": 0,
+  "non_english_script_matches": 0,
+  "generic_phrase_matches": 0,
+  "pages": [
+    {
+      "page": "Citation.md",
+      "words_approx": 113,
+      "headings": 1,
+      "links": 3,
+      "sha256": "7f69121651beb3b4c96bb6ec0839601dc4aea1099feac40363390ee808f319ad"
+    },
+    {
+      "page": "Competency-Questions.md",
+      "words_approx": 132,
+      "headings": 1,
+      "links": 2,
+      "sha256": "bfe97e1879da2605312970acfae81f62facfb33c81b7d37653155b58e19ca319"
+    },
+    {
+      "page": "Conceptual-Model.md",
+      "words_approx": 151,
+      "headings": 1,
+      "links": 3,
+      "sha256": "fd1c0c7db04b67bb64727e11e0d7bd27771f63f40014219860a9da577412da00"
+    },
+    {
+      "page": "Constraints.md",
+      "words_approx": 173,
+      "headings": 1,
+      "links": 3,
+      "sha256": "4d82350b6f08fac7c2561f3fdef0d1af6a497e2730d167c4e758666aff265e5b"
+    },
+    {
+      "page": "Domains.md",
+      "words_approx": 219,
+      "headings": 1,
+      "links": 3,
+      "sha256": "48987ff170078c0305433ace00b3a85074db9aa0899fd2112d73673e56a6d173"
+    },
+    {
+      "page": "External-References.md",
+      "words_approx": 666,
+      "headings": 6,
+      "links": 10,
+      "sha256": "af0f194b77eb543ff532c0ea7b9a12fd03bad2f6b0d22abeb6eb94d3094c09f5"
+    },
+    {
+      "page": "Formalization.md",
+      "words_approx": 442,
+      "headings": 5,
+      "links": 10,
+      "sha256": "b50dc748a2898ef752ae4d14c53a58dc8ba3af8dffc2cfab6183b4d1311dca10"
+    },
+    {
+      "page": "Home.md",
+      "words_approx": 192,
+      "headings": 4,
+      "links": 16,
+      "sha256": "2492668233cb4870c0599de04fe4b11e2684cb0ff4d261b31acd44e77585ba88"
+    },
+    {
+      "page": "Limitations.md",
+      "words_approx": 214,
+      "headings": 1,
+      "links": 2,
+      "sha256": "9972d6b9ebe705b37462f255849ed483074fdb47c5003e57d15ba61d9b5cda92"
+    },
+    {
+      "page": "Overview.md",
+      "words_approx": 147,
+      "headings": 1,
+      "links": 5,
+      "sha256": "6648d23ceb0120a8252fc9f848c8f4894ac5c040013b43ac04548059433265c9"
+    },
+    {
+      "page": "Quality.md",
+      "words_approx": 309,
+      "headings": 1,
+      "links": 3,
+      "sha256": "baefab4f93ca8eebb35e109cf3d8fb1868be23c86adbd1f72061b5d67a457f64"
+    },
+    {
+      "page": "References.md",
+      "words_approx": 165,
+      "headings": 1,
+      "links": 7,
+      "sha256": "4300c788a89ed69762d7c918e67e394b49c67d8081c9d9bbe38f5bb90c948733"
+    },
+    {
+      "page": "Reproduce.md",
+      "words_approx": 330,
+      "headings": 1,
+      "links": 0,
+      "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220"
+    },
+    {
+      "page": "Versions.md",
+      "words_approx": 191,
+      "headings": 1,
+      "links": 4,
+      "sha256": "e989a4dea1fb77b9d6d929dbba25058a5cfae76d208a4cfbb44c3e1f9c84d7a7"
+    },
+    {
+      "page": "Visualization.md",
+      "words_approx": 167,
+      "headings": 1,
+      "links": 2,
+      "sha256": "d260bbba6fcfeec71f83d3aae9c2235d6ffc33b0366ca83a07fa86b734cb834a"
+    }
+  ],
+  "errors": [],
+  "manual_editorial_readback": "Pages reviewed for reader routes, source/evidence boundaries, technical clarity, restrained wording and preserved limitations; a lexical scan cannot prove human authorship or expert semantic acceptance.",
+  "live_wiki_state": "LIVE_HOME_PLACEHOLDER_ONLY; CURATED_GUIDE_PENDING"
+}

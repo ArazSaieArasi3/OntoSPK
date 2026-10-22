@@ -19,9 +19,9 @@ This is a **test design, not an execution report**. Each machine-readable row re
 | `owl_class` | 121 |
 | `owl_datatype_property` | 46 |
 | `owl_object_property` | 286 |
-| `shacl_constraint` | 1845 |
+| `shacl_constraint` | 1977 |
 
-These inventories overlap: a native class can also be a bounded OWL declaration, an external handle is also a native class, and a commitment may be represented by several structural expressions or constraints. They must not be summed as a global correctness score. The SHACL count is per active target-reachable component and parameter, including named and anonymous property shapes; #14 will test graph validity and activation. The three shapes graphs contain 1,201 targeted node shapes, 722 directly linked property shapes and 47 linked SPARQL constraints. The CQ source has two additional optional mapping rows outside the 56 retained replay contracts.
+These inventories overlap: a native class can also be a bounded OWL declaration, an external handle is also a native class, and a commitment may be represented by several structural expressions or constraints. They must not be summed as a global correctness score. The SHACL count is per active target-reachable component and parameter, including named and anonymous property shapes; #14 will test graph validity and activation. The four active shapes graphs contain 1,217 targeted node shapes, 777 distinct reachable property shapes (40 nested in logical alternatives) and 49 linked SPARQL constraints. The event-contract graph uses a plain `.ttl` suffix and is included because the runtime loads it. The CQ source has two additional optional mapping rows outside the 56 retained replay contracts.
 
 ## Acceptance route
 

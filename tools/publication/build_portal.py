@@ -54,7 +54,7 @@ def term(x,depth=0):
 groups=[('classes',OWL.Class),('object-properties',OWL.ObjectProperty),('datatype-properties',OWL.DatatypeProperty),('individuals',OWL.NamedIndividual)]
 counts={}
 for name,typ in groups:
- entities=sorted({s for s in G.subjects(RDF.type,typ) if isinstance(s,URIRef)},key=lambda x:label(x).lower());counts[name]=len(entities)
+ entities=sorted({s for s in G.subjects(RDF.type,typ) if isinstance(s,URIRef)},key=lambda x:(label(x).lower(),str(x)));counts[name]=len(entities)
  body='<h1>'+name.replace('-',' ').title()+'</h1><p>All '+str(len(entities))+' named declarations in the pinned logical profile. Missing axioms remain unspecified; endpoints or characteristics are not guessed.</p>'
  body+='<ul>'+''.join('<li><a href="#'+hashlib.sha256(str(x).encode()).hexdigest()[:16]+'">'+esc(label(x))+'</a></li>' for x in entities)+'</ul>'
  for x in entities:

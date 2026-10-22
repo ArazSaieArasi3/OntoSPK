@@ -1,0 +1,157 @@
+{
+  "scope": "Four runtime-loaded public-core SHACL graphs; shape integrity and activation inventory",
+  "status": "GRAPH_AUDIT_EXECUTED; FULL_CONSTRAINT_CASE_COVERAGE_PENDING_15_16",
+  "additional_source_shape_graphs_outside_runtime": [],
+  "graphs": [
+    {
+      "source": "semantic/product/v2/source/validation_v041/Occurrence_Profile_v0_41_0.shacl.ttl",
+      "sha256": "4c451c8ccfe2915ff46d710112e6eee0456a5c65e25fcf3227cb6bb0cdcb93d8",
+      "rdf_triples": 86,
+      "node_shapes": 1,
+      "targeted_node_shapes": 1,
+      "inactive_node_shapes": 0,
+      "target_kinds": {
+        "targetClass": 1
+      },
+      "distinct_reachable_property_shapes": 9,
+      "nested_property_shapes": 0,
+      "unreachable_property_shapes": 0,
+      "distinct_reachable_sparql_constraints": 7,
+      "unreachable_sparql_constraints": 0,
+      "property_paths": {
+        "direct_iri": 9
+      },
+      "selected_component_occurrences": {
+        "datatype": 9,
+        "in": 3,
+        "maxCount": 6,
+        "minCount": 9,
+        "pattern": 4,
+        "sparql": 7
+      },
+      "duplicate_target_and_body_clusters": 0,
+      "duplicate_target_and_body_excess": 0,
+      "distinct_target_and_body_fingerprints": 1,
+      "distinct_body_templates": 1,
+      "reused_body_template_clusters": 0,
+      "meta_shacl": "CONFORMS",
+      "empty_data_graph": "CONFORMS_NO_TARGETED_RECORDS"
+    },
+    {
+      "source": "semantic/product/v2/source/validation_v041/inputs/identity-slice.shacl.ttl",
+      "sha256": "ead833a72681b098ab161764b98c06b79d1d0080681e2c5451c06ffdcb1478e5",
+      "rdf_triples": 35,
+      "node_shapes": 6,
+      "targeted_node_shapes": 6,
+      "inactive_node_shapes": 0,
+      "target_kinds": {
+        "targetClass": 2,
+        "targetObjectsOf": 2,
+        "targetSubjectsOf": 2
+      },
+      "distinct_reachable_property_shapes": 3,
+      "nested_property_shapes": 0,
+      "unreachable_property_shapes": 0,
+      "distinct_reachable_sparql_constraints": 0,
+      "unreachable_sparql_constraints": 0,
+      "property_paths": {
+        "direct_iri": 2,
+        "inverse": 1
+      },
+      "selected_component_occurrences": {
+        "class": 7,
+        "maxCount": 2,
+        "minCount": 3,
+        "nodeKind": 2
+      },
+      "duplicate_target_and_body_clusters": 0,
+      "duplicate_target_and_body_excess": 0,
+      "distinct_target_and_body_fingerprints": 6,
+      "distinct_body_templates": 5,
+      "reused_body_template_clusters": 1,
+      "meta_shacl": "CONFORMS",
+      "empty_data_graph": "CONFORMS_NO_TARGETED_RECORDS"
+    },
+    {
+      "source": "semantic/product/v2/source/validation_v041/inputs/complete-reporting-v0_16.shacl.ttl",
+      "sha256": "c22bb02a2b7e3043bcf668eab0318402f7d7d88cfd13456a5865eb90f901a9ca",
+      "rdf_triples": 7204,
+      "node_shapes": 1194,
+      "targeted_node_shapes": 1194,
+      "inactive_node_shapes": 0,
+      "target_kinds": {
+        "targetClass": 537,
+        "targetObjectsOf": 279,
+        "targetSubjectsOf": 379
+      },
+      "distinct_reachable_property_shapes": 750,
+      "nested_property_shapes": 40,
+      "unreachable_property_shapes": 0,
+      "distinct_reachable_sparql_constraints": 40,
+      "unreachable_sparql_constraints": 0,
+      "property_paths": {
+        "direct_iri": 514,
+        "inverse": 236
+      },
+      "selected_component_occurrences": {
+        "class": 1198,
+        "datatype": 41,
+        "in": 3,
+        "maxCount": 167,
+        "minCount": 195,
+        "nodeKind": 175,
+        "pattern": 17,
+        "sparql": 40,
+        "xone": 4
+      },
+      "duplicate_target_and_body_clusters": 0,
+      "duplicate_target_and_body_excess": 0,
+      "distinct_target_and_body_fingerprints": 1194,
+      "distinct_body_templates": 741,
+      "reused_body_template_clusters": 82,
+      "meta_shacl": "CONFORMS",
+      "empty_data_graph": "CONFORMS_NO_TARGETED_RECORDS"
+    },
+    {
+      "source": "semantic/product/v2/source/validation_v041/inputs/Event_Contract_Shapes_v0_30_0.ttl",
+      "sha256": "4d320772d272a37ea67e84969d9d456615f177ea4e1edade4e5adef3f7150e18",
+      "rdf_triples": 141,
+      "node_shapes": 16,
+      "targeted_node_shapes": 16,
+      "inactive_node_shapes": 0,
+      "target_kinds": {
+        "targetClass": 15,
+        "targetObjectsOf": 7,
+        "targetSubjectsOf": 8
+      },
+      "distinct_reachable_property_shapes": 15,
+      "nested_property_shapes": 0,
+      "unreachable_property_shapes": 0,
+      "distinct_reachable_sparql_constraints": 2,
+      "unreachable_sparql_constraints": 0,
+      "property_paths": {
+        "direct_iri": 8,
+        "inverse": 7
+      },
+      "selected_component_occurrences": {
+        "class": 28,
+        "datatype": 1,
+        "maxCount": 6,
+        "minCount": 15,
+        "sparql": 2
+      },
+      "duplicate_target_and_body_clusters": 0,
+      "duplicate_target_and_body_excess": 0,
+      "distinct_target_and_body_fingerprints": 16,
+      "distinct_body_templates": 16,
+      "reused_body_template_clusters": 0,
+      "meta_shacl": "CONFORMS",
+      "empty_data_graph": "CONFORMS_NO_TARGETED_RECORDS"
+    }
+  ],
+  "synthetic_status_controls": {
+    "malformed_shape_graph": "META_SHACL_REJECTED",
+    "valid_shape_nonconforming_data": "CONFORMS_FALSE_WITH_ONE_VALIDATION_RESULT"
+  },
+  "interpretation": "Meta-SHACL success and an empty data graph do not prove behavior on targeted records. Duplicate structural templates are not independent defect-detection cases; each target remains traceable. Nonconformance of a valid shape is a data result, whereas meta-SHACL rejection is a malformed-shape error."
+}

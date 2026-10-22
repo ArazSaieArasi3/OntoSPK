@@ -19,8 +19,8 @@
   "files": [
     {
       "path": ".github/workflows/documentation.yml",
-      "bytes": 757,
-      "sha256": "daf6cb588ba9c1d7d843348952b51d55545f05a018e6cd0b01573a9dfba24115"
+      "bytes": 1344,
+      "sha256": "8868d4d0b877384787453eb973649d150238970264d3d17110c1c89afb9a4954"
     },
     {
       "path": ".github/workflows/pages.yml",
@@ -194,13 +194,13 @@
     },
     {
       "path": "docs/guide/Home.html",
-      "bytes": 2254,
-      "sha256": "9865a4acc02a6ce110f320654982840cfc2a9971c7c0672c2cd1ac86acc7b762"
+      "bytes": 3047,
+      "sha256": "fc022dfd5cdfa443c4523ca9560524e74191201a829c26974fb3f437a9e34db5"
     },
     {
       "path": "docs/guide/Home.md",
-      "bytes": 948,
-      "sha256": "86804321aeefe32dc332a14d3eeeca079414a6be023cf9b15455517b682d06be"
+      "bytes": 1620,
+      "sha256": "80f1098c0869b1d539a6b3af84a9bd4f8001a5ea45fe20f42e39d00e3913133b"
     },
     {
       "path": "docs/guide/Limitations.html",
@@ -244,13 +244,13 @@
     },
     {
       "path": "docs/guide/Reproduce.html",
-      "bytes": 3953,
-      "sha256": "aa885aaa891f89bdec9d5c8993ee56d72465d4630734918135ab40cd4fb0d666"
+      "bytes": 3961,
+      "sha256": "aeff422c9ff8e3daa62bae89c9a08de57f9ae38ba27260e973a1d86c955c55d5"
     },
     {
       "path": "docs/guide/Reproduce.md",
-      "bytes": 2579,
-      "sha256": "48fa09d6e9712ab5fe1d2ea056e06e379e3774aa09d01d0cf78689c27a2df504"
+      "bytes": 2587,
+      "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220"
     },
     {
       "path": "docs/guide/Versions.html",
@@ -320,7 +320,7 @@
     {
       "path": "docs/reference/owl/classes.html",
       "bytes": 103284,
-      "sha256": "1dd0ac24c34d5c058076d9b8e8fe65031324e48021b4fd8791e49a1772c61d25"
+      "sha256": "b4c2b9bac3b06293093b7f6faef915099213e59ce6f6b615d416368642b3bedc"
     },
     {
       "path": "docs/reference/owl/datatype-properties.html",
@@ -340,7 +340,7 @@
     {
       "path": "docs/reference/owl/object-properties.html",
       "bytes": 228748,
-      "sha256": "9eeee44df6266a54854fb4a51db352ab22023a80b0e9b9fb6171df4ea3ce18d3"
+      "sha256": "a765ea3b160b8e13eb5ee09364b9a0bf2e5c1bd4d2338effac13dfaa82207694"
     },
     {
       "path": "docs/related-ontologies.html",
@@ -574,13 +574,13 @@
     },
     {
       "path": "evaluation/coverage-register.json.gz",
-      "bytes": 104237,
-      "sha256": "32b3c2bc7ac4bd92a7b6c0639ba02498b882c6a1b5d3d57767f85a1619f9d69d"
+      "bytes": 106750,
+      "sha256": "eb224b16f11add3400df26417a3679e7fb6d17485846361a61e07eeccc1de837"
     },
     {
       "path": "evaluation/coverage-register.md",
-      "bytes": 2092,
-      "sha256": "a22fbf891c6e70822497991a68d50dbb1056840bcb7a176435b111e47dbc3300"
+      "bytes": 2235,
+      "sha256": "21ecaf15a62690fb7156c43f332f4bfd96a1db0d68d008ae3830caf48b9e38e1"
     },
     {
       "path": "evaluation/external-boundary-status.json",
@@ -600,7 +600,7 @@
     {
       "path": "evaluation/publication-checks.json",
       "bytes": 496,
-      "sha256": "391ebd097b93e6aa6366814a487257930e31389671958daba4354aabb79191df"
+      "sha256": "b1d7c810c622b23519d671ade6e7c27e60f3a8fb65884c2e2a6368fa6947f7bd"
     },
     {
       "path": "evaluation/results/INTEGRATION_RESULTS.json",
@@ -746,6 +746,26 @@
       "path": "evaluation/results/upstream_sdk.json",
       "bytes": 9094,
       "sha256": "43372c37b39ab495f73525d3c2ba1157ed81f2ce9e34ceb300a2ef56c96b9f67"
+    },
+    {
+      "path": "evaluation/shacl-shapes-audit.json",
+      "bytes": 5582,
+      "sha256": "7c7b8016efffd86465cb0bd09ba113b624c48d1ae677a44c5e1b245905862cf5"
+    },
+    {
+      "path": "evaluation/shacl-shapes-audit.md",
+      "bytes": 1823,
+      "sha256": "5d867335edf30d45d4dafdb85ecc81c29aff22bae93ec9f26cb705bee4587ccb"
+    },
+    {
+      "path": "evaluation/wiki-source-audit.json",
+      "bytes": 3859,
+      "sha256": "5eccd2017ce5fa4db1aef1302517c8dea10a52781fc0ad8b03303d33c6b903f6"
+    },
+    {
+      "path": "evaluation/wiki-source-audit.md",
+      "bytes": 2197,
+      "sha256": "525874b267ee89bfd8f7acc393d512ca911bfd2e4168607d4224929b7e717b0e"
     },
     {
       "path": "evaluation/workflow-static-check.json",
@@ -3543,9 +3563,19 @@
       "sha256": "4dc242a84c272a1bc241b190df8f133311c0341d210716224846fdd249ce5733"
     },
     {
+      "path": "tools/publication/audit_shacl_shapes.py",
+      "bytes": 10333,
+      "sha256": "4fb5f58836f2ca88c0d54a93b35f7ffbc117a6a1f13c0daec49f205538431af6"
+    },
+    {
+      "path": "tools/publication/audit_wiki.py",
+      "bytes": 8598,
+      "sha256": "18b791bd3c3088365b0c44fa7b43720739cfc740587ab1dc97701727fc2205e9"
+    },
+    {
       "path": "tools/publication/build_coverage_register.py",
-      "bytes": 15175,
-      "sha256": "b144b654eb451e5b94c46ef00d65af561ae5a9eeccdc16fdf153925a10173a6f"
+      "bytes": 17261,
+      "sha256": "ec2ceb891df65774e12c99ed10668db0912509f7e83b43d555e3c56de4f556bf"
     },
     {
       "path": "tools/publication/build_external_boundary_report.py",
@@ -3559,8 +3589,8 @@
     },
     {
       "path": "tools/publication/build_portal.py",
-      "bytes": 12684,
-      "sha256": "beb53327d592cdba776c709505c32c9ea322b6b2b9e2e12441c4dac9fbe28b7c"
+      "bytes": 12693,
+      "sha256": "d0b6ee96f3f590f4a09e140705908f79f951a6b059fb331e53ca30cc8740f3b4"
     },
     {
       "path": "tools/publication/build_webvowl_data.py",
@@ -3624,8 +3654,8 @@
     },
     {
       "path": "wiki-src/Home.md",
-      "bytes": 912,
-      "sha256": "2c8af11fbede2c48facb8ddcb0bff861671e82145d66d3c787df87f575c3a16b"
+      "bytes": 1578,
+      "sha256": "2492668233cb4870c0599de04fe4b11e2684cb0ff4d261b31acd44e77585ba88"
     },
     {
       "path": "wiki-src/Limitations.md",
@@ -3654,8 +3684,8 @@
     },
     {
       "path": "wiki-src/Reproduce.md",
-      "bytes": 2579,
-      "sha256": "48fa09d6e9712ab5fe1d2ea056e06e379e3774aa09d01d0cf78689c27a2df504"
+      "bytes": 2587,
+      "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220"
     },
     {
       "path": "wiki-src/Versions.md",

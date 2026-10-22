@@ -12,7 +12,11 @@
 <li>OntoUML SDK at commit <code>a0e44530564331cf17c850d659fae4b6adad4415</code>: https://github.com/OntoUML/ontouml-js ; install dependencies and build that checkout.</li>
 <li>ROBOT 1.9.11: https://github.com/ontodev/robot/releases/tag/v1.9.11 ; expected JAR SHA-256 <code>53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26</code>.</li>
 </ul>
-<pre><code class="language-bash">.venv/bin/python tools/ontospk/run_validation.py   --robot /path/to/robot.jar   --validator /path/to/ontouml-validator   --sdk /path/to/ontouml-js   --output build/evaluation
+<pre><code class="language-bash">.venv/bin/python tools/ontospk/run_validation.py \
+  --robot /path/to/robot.jar \
+  --validator /path/to/ontouml-validator \
+  --sdk /path/to/ontouml-js \
+  --output build/evaluation
 </code></pre>
 <p>The command returns a nonzero exit status for an executed failed stage and records skipped external tools explicitly. The recorded full execution passes ten stages; future runs should inspect their own receipt rather than inherit that status.</p>
 <p>The SQL code used by some historical finite admission controls remains a test harness. The physical database build is maintained separately from the public ontology-core package.</p>

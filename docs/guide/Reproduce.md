@@ -18,7 +18,11 @@ For all ten stages, obtain the following public upstream tools outside this repo
 - ROBOT 1.9.11: https://github.com/ontodev/robot/releases/tag/v1.9.11 ; expected JAR SHA-256 `53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26`.
 
 ```bash
-.venv/bin/python tools/ontospk/run_validation.py   --robot /path/to/robot.jar   --validator /path/to/ontouml-validator   --sdk /path/to/ontouml-js   --output build/evaluation
+.venv/bin/python tools/ontospk/run_validation.py \
+  --robot /path/to/robot.jar \
+  --validator /path/to/ontouml-validator \
+  --sdk /path/to/ontouml-js \
+  --output build/evaluation
 ```
 
 The command returns a nonzero exit status for an executed failed stage and records skipped external tools explicitly. The recorded full execution passes ten stages; future runs should inspect their own receipt rather than inherit that status.
