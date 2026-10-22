@@ -15,7 +15,7 @@ The current evidence consists of finite synthetic controls and exact-source chec
 
 These denominators overlap and must not be summed as independent observations. Fifty-eight of the 71 declared upstream validator rules are unimplemented. The evaluated direct-call harness retains 54 warnings and reports no errors in its implemented functions. This does not constitute a complete upstream whole-model validation.
 
-The [execution receipt](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/results/INTEGRATION_RESULTS.json) and method-specific reports record the current local run. Command paths in the published receipt are normalized to repository-relative paths and named external-tool placeholders for portability; outcomes are not changed. Successful local execution and successful remote CI are separate statuses.
+The [execution receipt](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/evaluation/results/INTEGRATION_RESULTS.json) and method-specific reports record the current local run. Command paths in the published receipt are normalized to repository-relative paths and named external-tool placeholders for portability; outcomes are not changed. Successful local execution and successful remote CI are separate statuses.
 
 The earlier candidate's revision receipt included three checks against a pinned external Market snapshot. The public core does not redistribute that snapshot. Its current revision harness uses three synthetic RDF boundary checks with the same local non-conflation intent; these do not verify the external owner's current model. Compare execution receipts by source revision as well as by total case count.
 

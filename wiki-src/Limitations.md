@@ -1,6 +1,6 @@
 # Limitations and open scientific questions
 
-The ontology-core source is prepared for a public 2.0.0 release and has bounded synthetic evaluation. The public release has not yet been published. It does not claim:
+The public [v2.0.0 ontology-core release](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0) has bounded synthetic evaluation. It does not claim:
 
 - independent expert/domain acceptance of the complete conceptual model;
 - acceptance or exact-class equivalence by external ontology owners;

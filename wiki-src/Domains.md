@@ -17,6 +17,6 @@ The domain grouping organizes the native model; it does not define twelve indepe
 | Product Realization | Actual product realizations and realized capabilities. |
 | Product Reference | Reference records connecting the local model to externally governed subjects. |
 
-These short descriptions are navigation aids. Exact entity definitions, stereotypes, identity commitments and relation contracts are in the [class catalogue](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/classes.md) and [association catalogue](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/associations.md).
+These short descriptions are navigation aids. Exact entity definitions, stereotypes, identity commitments and relation contracts are in the [class catalogue](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/classes.md) and [association catalogue](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/associations.md).
 
 The [selected conceptual view](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/assets/selected-model.svg) displays forty selected concepts. It is not the full model; the complete native source retains all 128 conceptual classes, including 27 external handles.

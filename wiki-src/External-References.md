@@ -53,8 +53,8 @@ Business: [#23](https://github.com/ArazSaieArasi3/OntoSPK/issues/23); Market: [#
 
 ## Sources and reproduction
 
-- [Frozen native model](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json)
-- [Machine-readable register with owner snapshot identifiers](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/external-boundary-status.json)
+- [Frozen native model](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json)
+- [Machine-readable register with owner snapshot identifiers](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/evaluation/external-boundary-status.json)
 - [Generator](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/tools/publication/build_external_boundary_report.py)
 - [Quality evidence and limits](Quality)
 - [Release plan](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/development/release-plan.md)

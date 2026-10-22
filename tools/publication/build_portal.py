@@ -10,6 +10,7 @@ ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'docs';GUIDE=OUT/'guide';V=ROOT/'semantic/product/v2'
 SOURCE=V/'source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl'
 REPO='https://github.com/ArazSaieArasi3/OntoSPK'
+CORE_REF='v2.0.0'
 G=Graph().parse(SOURCE)
 def esc(x):return html.escape(str(x))
 def rel(a,b):return os.path.relpath(a,b).replace(os.sep,'/')
@@ -81,11 +82,15 @@ for p in GUIDE.glob('*.md'):
   if u.scheme or url.startswith('#'):return m.group(0)
   target=(p.parent/u.path).resolve()
   if target in mapping and target.parent==GUIDE:return '['+title+']('+target.stem+(('#'+u.fragment) if u.fragment else '')+')'
-  return '['+title+']('+REPO+('/tree/main/' if target.is_dir() else '/blob/main/')+target.relative_to(ROOT).as_posix()+(('#'+u.fragment) if u.fragment else '')+')'
+  source_path=target.relative_to(ROOT).as_posix()
+  frozen=source_path.startswith(('semantic/','evaluation/','docs/downloads/','docs/reference/','docs/widoco/','docs/webvowl/')) or source_path in {'CITATION.cff','LICENSING.md','THIRD_PARTY_NOTICES.md','distribution-manifest.json'}
+  ref=CORE_REF if frozen else 'main'
+  return '['+title+']('+REPO+('/tree/' if target.is_dir() else '/blob/')+ref+'/'+source_path+(('#'+u.fragment) if u.fragment else '')+')'
  text=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',wiki_link,text)
  write(wiki/p.name,text)
-write(wiki/'_Sidebar.md','## OntoSPK\n\n'+ '\n'.join('- ['+p.stem.replace('-',' ')+']('+p.stem+')' for p in sorted(GUIDE.glob('*.md'))))
-write(wiki/'_Footer.md','[Repository]('+REPO+') · [Source and version]('+REPO+'/blob/main/docs/guide/Versions.md) · [Citation]('+REPO+'/blob/main/CITATION.cff)')
+wiki_sections=[('Start',['Home','Overview','Domains','Conceptual-Model','External-References']),('Model and evidence',['Formalization','Constraints','Competency-Questions','Quality','Reproduce']),('Use and cite',['Visualization','Versions','Citation','References','Limitations'])]
+write(wiki/'_Sidebar.md','## OntoSPK\n\n'+'\n\n'.join('### '+heading+'\n'+ '\n'.join('- ['+name.replace('-',' ')+']('+name+')' for name in names) for heading,names in wiki_sections)+'\n')
+write(wiki/'_Footer.md','[Repository]('+REPO+') · [Core release]('+REPO+'/releases/tag/'+CORE_REF+') · [Guide source]('+REPO+'/blob/main/docs/guide/Versions.md) · [Citation]('+REPO+'/blob/'+CORE_REF+'/CITATION.cff)')
 write(wiki/'README.md','# Wiki publication source\n\nGenerated from `docs/guide` by `tools/publication/build_portal.py`. Edit curated source, not these projections. File preparation does not imply that the GitHub Wiki has been published. See `docs/publication-status.json`.')
 write(OUT/'.nojekyll','')
 write(OUT/'reference/coverage.json',json.dumps({'native':json.loads((V/'reference/inventory.json').read_text()),'logical_declarations':counts,'owl_triples':len(G),'logical_source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'formal_description_dimensions':['identity_language','architecture','classes','object_properties','datatype_properties','individuals','axioms_constraints','reasoning','conceptual_formal_traceability','competency_questions'],'coverage_scope':'Generated inventory and curated explanation; not independent semantic acceptance.'},indent=2)+'\n')
