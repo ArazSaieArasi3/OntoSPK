@@ -573,6 +573,16 @@
       "sha256": "46686497d1333652ab663e4633b11b76e047f0f1aa7728d2a7068673a791d5fb"
     },
     {
+      "path": "evaluation/coverage-register.json.gz",
+      "bytes": 104237,
+      "sha256": "32b3c2bc7ac4bd92a7b6c0639ba02498b882c6a1b5d3d57767f85a1619f9d69d"
+    },
+    {
+      "path": "evaluation/coverage-register.md",
+      "bytes": 2092,
+      "sha256": "a22fbf891c6e70822497991a68d50dbb1056840bcb7a176435b111e47dbc3300"
+    },
+    {
       "path": "evaluation/external-boundary-status.json",
       "bytes": 18202,
       "sha256": "2199f300c3dac155d9033406aa1541622e2f4aac9ff7529d95f037e015afe06a"
@@ -3531,6 +3541,11 @@
       "path": "tools/ontospk/run_validation.py",
       "bytes": 5712,
       "sha256": "4dc242a84c272a1bc241b190df8f133311c0341d210716224846fdd249ce5733"
+    },
+    {
+      "path": "tools/publication/build_coverage_register.py",
+      "bytes": 15175,
+      "sha256": "b144b654eb451e5b94c46ef00d65af561ae5a9eeccdc16fdf153925a10173a6f"
     },
     {
       "path": "tools/publication/build_external_boundary_report.py",
