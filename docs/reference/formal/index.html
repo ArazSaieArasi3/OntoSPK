@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="OntoSPK first-order specification — OntoSPK ontology documentation"><title>OntoSPK first-order specification — OntoSPK</title><link rel="stylesheet" href="../../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../../index.html">Overview</a><a href="../../widoco/index-en.html">OWL reference</a><a href="../native/index.html">Conceptual reference</a><a href="../../evaluation/index.html">Evaluation</a><a href="../../explore/index.html">Explore</a><a href="../../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../../guide/Home.html">Home</a></li><li><a href="../../guide/Overview.html">Overview</a></li><li><a href="../../guide/Domains.html">Domains</a></li><li><a href="../../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../../guide/Formalization.html">Formalization</a></li><li><a href="../../guide/Constraints.html">Constraints</a></li><li><a href="../../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../../guide/Quality.html">Quality</a></li><li><a href="../../guide/Reproduce.html">Reproduce</a></li><li><a href="../../guide/Visualization.html">Visualization</a></li><li><a href="../../guide/External-References.html">External References</a></li><li><a href="../../guide/Versions.html">Versions</a></li><li><a href="../../guide/Citation.html">Citation</a></li><li><a href="../../guide/References.html">References</a></li><li><a href="../../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../search.html">Find a class or property</a></li><li><a href="index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="ontospk-first-order-specification">OntoSPK first-order specification</h1>
+<p>This specification makes the declared static structure and explicit logical-profile commitments inspectable in first-order logic with equality. It is bound to native model <strong>0.41.0</strong> and logical profile <strong>0.43.0</strong>, within distribution <strong>2.0.0-rc.1</strong>. It does not change either source model.</p>
+<h2 id="read-the-specification">Read the specification</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Human-readable reference</th>
+<th>Expanded formulas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Every native class, association, endpoint multiplicity and generalization</td>
+<td><a href="native-structure.html">Native structure</a></td>
+<td><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/native-structure.p">Native FOL</a></td>
+</tr>
+<tr>
+<td>Explicit logical constructs in the retained OWL profile</td>
+<td><a href="profile-projection.html">Profile projection</a></td>
+<td><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/profile-projection.p">Profile FOL</a></td>
+</tr>
+<tr>
+<td>Inverse mappings, test-profile joins and inference boundaries</td>
+<td><a href="scoped-contracts.html">Mappings and scoped contracts</a></td>
+<td>Formulas are given explicitly in that document.</td>
+</tr>
+<tr>
+<td>Identifier and version traceability</td>
+<td><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/symbols.json">Predicate dictionary</a> and <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/source-bindings.json">source bindings</a></td>
+<td><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/relation-signatures.json">Association signatures</a></td>
+</tr>
+<tr>
+<td>Transcription checks</td>
+<td><a href="review.html">Review findings</a></td>
+<td><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/transcription-review.json">Machine-readable report</a></td>
+</tr>
+</tbody>
+</table>
+<p>The native theory and profile projection have <strong>separate signatures</strong>. Their files must not simply be concatenated as a claim of semantic equivalence. Native classes, external handles, implementation properties and datatype predicates have distinct roles. The existing <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/native-class-projection.csv">native-class projection</a> and <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/validation_v041/inputs/Relation_OWL_SQL_Crosswalk_v0_16_0.csv">association crosswalk</a> retain the declared mappings and their limits.</p>
+<h2 id="language">Language</h2>
+<p>Classes are unary predicates and associations are binary predicates. Identity is ordinary equality. Quantifiers range over individuals, not predicates. The readable cardinality tables are finite axiom schemas; all macros are expanded in the <code>.p</code> files using TPTP FOF syntax.</p>
+<p>For example, the actual-capability commitment is:</p>
+<pre><code class="language-text">forall C:
+  ProductCapability(C) -&gt;
+    exists R:
+      ProductRealization(R) and bearsCapability(R,C) and
+      forall S: bearsCapability(S,C) -&gt; S=R
+</code></pre>
+<p>Existence and uniqueness are both required. Two different names do not automatically denote two different individuals. Classes may be empty unless another axiom requires an instance. A <code>0..*</code> bound contributes no substantive restriction; those tautological entries are retained to preserve one-to-one correspondence with the existing structural register. Expression counts are not measures of semantic strength.</p>
+<h2 id="scope">Scope</h2>
+<p>The native reference covers 128 class symbols, including 27 external handles, 286 associations and 34 generalizations. Its 892 expressions preserve the source register's three entries per association and one per generalization. The profile projection translates the explicit logical constructs separately, including pairwise expansion of the declared disjointness list.</p>
+<p>The profile projection is an <strong>object-level FOL abstraction</strong>, not a full axiomatization of OWL 2 direct semantics. XSD ranges appear as unary datatype predicates. Datatype value spaces, lexical normalization and object/data-domain separation are not supplied. It also does not encode the full modal meaning of UFO stereotypes, temporal identity, causal participation, or operational persistence and admission policies.</p>
+<p>A recorded specification does not itself establish an implemented capability. An evidence attribution does not establish claim truth. A test result does not automatically imply success. These are limits on inference, not assertions that implementation, truth or success are absent.</p>
+<h2 id="reproduce-the-transcription-checks">Reproduce the transcription checks</h2>
+<p>From the repository root, using the dependencies in <code>tools/ontospk/requirements.txt</code>:</p>
+<pre><code class="language-bash">python tools/ontospk/build_fol.py
+python tools/ontospk/check_fol.py
+</code></pre>
+<p>The checks parse the emitted formulas, inspect variable closure and predicate arity, reconcile source inventories and evaluate native relation translations over all two-object interpretations. They check the transcription; they are not a proof of whole-ontology consistency, independent domain validation, or full equivalence among the native model, OWL, SHACL and SQL.</p>
+<p>No manuscript change or new ontology-wide reasoner result is part of this addition.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#read-the-specification">Read the specification</a></li><li><a href="#language">Language</a></li><li><a href="#scope">Scope</a></li><li><a href="#reproduce-the-transcription-checks">Reproduce the transcription checks</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../../guide/Citation.html">Citation and reuse</a> · <a href="../../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

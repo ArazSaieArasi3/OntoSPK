@@ -1,8 +1,8 @@
 {
   "status": "PASS",
   "native_and_logical_identity_verified": true,
-  "local_links_checked": 480,
-  "html_files": 33,
+  "local_links_checked": 1340,
+  "html_files": 46,
   "guide_pages": 15,
   "webvowl_named_classes": 121,
   "webvowl_rendered_declared_properties": 322,

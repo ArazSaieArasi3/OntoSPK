@@ -8,7 +8,7 @@
       "en": "OntoSPK bounded OWL profile"
     },
     "iri": "urn:productium:specification-profile:",
-    "version": "Logical profile 0.43.0; public 2.0.0 preparation",
+    "version": "Logical profile 0.43.0; ontology core v2.0.0",
     "description": {
       "en": "An exploratory projection of asserted named classes, declared property endpoints and URI subclass edges. It does not encode all restrictions, disjointness, SHACL or SQL policies."
     }
@@ -27,6 +27,10 @@
       "iri": "http://purl.org/dc/elements/1.1/"
     },
     {
+      "name": "dcam",
+      "iri": "http://purl.org/dc/dcam/"
+    },
+    {
       "name": "dcat",
       "iri": "http://www.w3.org/ns/dcat#"
     },
@@ -37,10 +41,6 @@
     {
       "name": "dcterms",
       "iri": "http://purl.org/dc/terms/"
-    },
-    {
-      "name": "dcam",
-      "iri": "http://purl.org/dc/dcam/"
     },
     {
       "name": "doap",
@@ -63,6 +63,10 @@
       "iri": "http://www.w3.org/ns/org#"
     },
     {
+      "name": "owl",
+      "iri": "http://www.w3.org/2002/07/owl#"
+    },
+    {
       "name": "prof",
       "iri": "http://www.w3.org/ns/dx/prof/"
     },
@@ -73,6 +77,14 @@
     {
       "name": "qb",
       "iri": "http://purl.org/linked-data/cube#"
+    },
+    {
+      "name": "rdf",
+      "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    },
+    {
+      "name": "rdfs",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#"
     },
     {
       "name": "schema",
@@ -111,24 +123,12 @@
       "iri": "https://www.w3.org/2003/01/geo/wgs84_pos#"
     },
     {
-      "name": "owl",
-      "iri": "http://www.w3.org/2002/07/owl#"
-    },
-    {
-      "name": "rdf",
-      "iri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    },
-    {
-      "name": "rdfs",
-      "iri": "http://www.w3.org/2000/01/rdf-schema#"
+      "name": "xml",
+      "iri": "http://www.w3.org/XML/1998/namespace"
     },
     {
       "name": "xsd",
       "iri": "http://www.w3.org/2001/XMLSchema#"
-    },
-    {
-      "name": "xml",
-      "iri": "http://www.w3.org/XML/1998/namespace"
     }
   ],
   "class": [
@@ -6198,118 +6198,6 @@
     },
     {
       "id": "p322",
-      "domain": "n1732b9594bb2c164a06a",
-      "range": "n067f8073d9ce09b52740",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p323",
-      "domain": "n538881c077a746a622fc",
-      "range": "n067f8073d9ce09b52740",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p324",
-      "domain": "n54a4db46d43f05edd03c",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p325",
-      "domain": "nb7144cb84d81c48311ac",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p326",
-      "domain": "n372235ba19d156a14ea3",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p327",
-      "domain": "n07684f2be0a0b29f5495",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p328",
-      "domain": "n776e2c90c5cbe92b0e0b",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p329",
-      "domain": "nb18ff0aad466eac6e927",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p330",
-      "domain": "n0a8d9825145110ae1b59",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p331",
-      "domain": "n51d691cd1ceb8aa4ceda",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p332",
-      "domain": "n6063ba4c607cd6a780b9",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p333",
-      "domain": "necbebe36879703ae24b5",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p334",
-      "domain": "n50f07de6f93a6d92246b",
-      "range": "nc2bf0dcc58669f93dcdf",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p335",
-      "domain": "n8fe3dc034829c31c4142",
-      "range": "nbd3c5c1d047365e8eb98",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p336",
       "domain": "n0299ae3ee8cee91408d7",
       "range": "nbd3c5c1d047365e8eb98",
       "label": {
@@ -6317,7 +6205,63 @@
       }
     },
     {
-      "id": "p337",
+      "id": "p323",
+      "domain": "n6e1188524044ed8ad6ee",
+      "range": "n9a33f1c873edb5eb5d48",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p324",
+      "domain": "nde10da7b4fc8f28f82b0",
+      "range": "n9a33f1c873edb5eb5d48",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p325",
+      "domain": "n54a4db46d43f05edd03c",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p326",
+      "domain": "nf3de1b87cc6babb26efd",
+      "range": "n6317ec1f3f8b2bfad6ec",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p327",
+      "domain": "n8fe3dc034829c31c4142",
+      "range": "nbd3c5c1d047365e8eb98",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p328",
+      "domain": "n6c2354404467ca74bca5",
+      "range": "n6317ec1f3f8b2bfad6ec",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p329",
+      "domain": "n1732b9594bb2c164a06a",
+      "range": "n067f8073d9ce09b52740",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p330",
       "domain": "n9ac1cc8dc6c5308bff69",
       "range": "nbd3c5c1d047365e8eb98",
       "label": {
@@ -6325,7 +6269,23 @@
       }
     },
     {
-      "id": "p338",
+      "id": "p331",
+      "domain": "n19f0f0dca27a2810d649",
+      "range": "n9ac1cc8dc6c5308bff69",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p332",
+      "domain": "necbebe36879703ae24b5",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p333",
       "domain": "n05ee7bc3b37cd3a6253a",
       "range": "nbd3c5c1d047365e8eb98",
       "label": {
@@ -6333,17 +6293,57 @@
       }
     },
     {
+      "id": "p334",
+      "domain": "n5d53795275865e27f341",
+      "range": "n2f0e28256b511bd84922",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p335",
+      "domain": "nb7144cb84d81c48311ac",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p336",
+      "domain": "nb18ff0aad466eac6e927",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p337",
+      "domain": "n50f07de6f93a6d92246b",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p338",
+      "domain": "n0a8d9825145110ae1b59",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
       "id": "p339",
-      "domain": "n067f8073d9ce09b52740",
-      "range": "nbd3c5c1d047365e8eb98",
+      "domain": "n538881c077a746a622fc",
+      "range": "n067f8073d9ce09b52740",
       "label": {
         "en": "subclass of"
       }
     },
     {
       "id": "p340",
-      "domain": "n5d53795275865e27f341",
-      "range": "n2f0e28256b511bd84922",
+      "domain": "n0b26c3e85bf0cca558e2",
+      "range": "n1c89f4985c96ff3d68a9",
       "label": {
         "en": "subclass of"
       }
@@ -6358,70 +6358,22 @@
     },
     {
       "id": "p342",
-      "domain": "n1c3da1d37d2a2c639c45",
-      "range": "n131385c1d5ae776bb9df",
+      "domain": "n372235ba19d156a14ea3",
+      "range": "nc2bf0dcc58669f93dcdf",
       "label": {
         "en": "subclass of"
       }
     },
     {
       "id": "p343",
-      "domain": "nd5ce3254dc5412d6f7e2",
-      "range": "n131385c1d5ae776bb9df",
+      "domain": "n067f8073d9ce09b52740",
+      "range": "nbd3c5c1d047365e8eb98",
       "label": {
         "en": "subclass of"
       }
     },
     {
       "id": "p344",
-      "domain": "n16c2d7e8b12bb91150ef",
-      "range": "n1c89f4985c96ff3d68a9",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p345",
-      "domain": "n89bff0caf1a037586fa2",
-      "range": "n1c89f4985c96ff3d68a9",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p346",
-      "domain": "n0b26c3e85bf0cca558e2",
-      "range": "n1c89f4985c96ff3d68a9",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p347",
-      "domain": "ne628162e32d9a7ceb4ac",
-      "range": "n6c2354404467ca74bca5",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p348",
-      "domain": "n1be0710365de9c491d25",
-      "range": "n6c2354404467ca74bca5",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p349",
-      "domain": "n19f0f0dca27a2810d649",
-      "range": "n9ac1cc8dc6c5308bff69",
-      "label": {
-        "en": "subclass of"
-      }
-    },
-    {
-      "id": "p350",
       "domain": "n724e7cc77cebd66e69d1",
       "range": "n9a33f1c873edb5eb5d48",
       "label": {
@@ -6429,31 +6381,47 @@
       }
     },
     {
-      "id": "p351",
-      "domain": "n6e1188524044ed8ad6ee",
-      "range": "n9a33f1c873edb5eb5d48",
+      "id": "p345",
+      "domain": "n07684f2be0a0b29f5495",
+      "range": "nc2bf0dcc58669f93dcdf",
       "label": {
         "en": "subclass of"
       }
     },
     {
-      "id": "p352",
-      "domain": "nde10da7b4fc8f28f82b0",
-      "range": "n9a33f1c873edb5eb5d48",
+      "id": "p346",
+      "domain": "n776e2c90c5cbe92b0e0b",
+      "range": "nc2bf0dcc58669f93dcdf",
       "label": {
         "en": "subclass of"
       }
     },
     {
-      "id": "p353",
-      "domain": "n6c2354404467ca74bca5",
-      "range": "n6317ec1f3f8b2bfad6ec",
+      "id": "p347",
+      "domain": "n51d691cd1ceb8aa4ceda",
+      "range": "nc2bf0dcc58669f93dcdf",
       "label": {
         "en": "subclass of"
       }
     },
     {
-      "id": "p354",
+      "id": "p348",
+      "domain": "nd5ce3254dc5412d6f7e2",
+      "range": "n131385c1d5ae776bb9df",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p349",
+      "domain": "n6063ba4c607cd6a780b9",
+      "range": "nc2bf0dcc58669f93dcdf",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p350",
       "domain": "n26ca0bdab7f0504401a8",
       "range": "n6317ec1f3f8b2bfad6ec",
       "label": {
@@ -6461,9 +6429,41 @@
       }
     },
     {
+      "id": "p351",
+      "domain": "n1c3da1d37d2a2c639c45",
+      "range": "n131385c1d5ae776bb9df",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p352",
+      "domain": "n1be0710365de9c491d25",
+      "range": "n6c2354404467ca74bca5",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p353",
+      "domain": "n89bff0caf1a037586fa2",
+      "range": "n1c89f4985c96ff3d68a9",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
+      "id": "p354",
+      "domain": "ne628162e32d9a7ceb4ac",
+      "range": "n6c2354404467ca74bca5",
+      "label": {
+        "en": "subclass of"
+      }
+    },
+    {
       "id": "p355",
-      "domain": "nf3de1b87cc6babb26efd",
-      "range": "n6317ec1f3f8b2bfad6ec",
+      "domain": "n16c2d7e8b12bb91150ef",
+      "range": "n1c89f4985c96ff3d68a9",
       "label": {
         "en": "subclass of"
       }
