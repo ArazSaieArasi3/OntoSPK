@@ -1,3 +1,9 @@
 {
-  "releases": {}
+  "releases": {
+    "v2.0.1": {
+      "source_commit": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "docs_tree": "694bf02d7ed6f6046e9223a7939ee5c9ebadefd2",
+      "ontology_core": "v2.0.0"
+    }
+  }
 }

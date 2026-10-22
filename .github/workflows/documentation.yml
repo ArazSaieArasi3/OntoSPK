@@ -43,3 +43,8 @@ jobs:
           python tools/publication/audit_pages.py
           git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md evaluation/pages-completeness.json wiki-src docs
       - run: python tools/publication/check_publication.py
+      - name: Verify immutable publication routes
+        run: |
+          python tools/publication/test_versioned_site.py
+          python tools/publication/build_versioned_site.py --previous-ref origin/main
+          python tools/publication/audit_versioned_site.py

@@ -1,5 +1,9 @@
 name: Publish documentation portal
 on:
+  workflow_run:
+    workflows: [Documentation integrity]
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
@@ -10,6 +14,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   deploy:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     environment:
@@ -17,11 +22,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build source-bound current and frozen routes
+        run: |
+          python tools/publication/test_versioned_site.py
+          python tools/publication/build_versioned_site.py --previous-ref HEAD^
+          python tools/publication/audit_versioned_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: docs
+          path: build/site
           retention-days: 1
-      - name: Deploy static reference
+      - name: Deploy versioned reference
         id: deployment
         uses: actions/deploy-pages@v4

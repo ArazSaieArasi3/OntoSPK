@@ -30,7 +30,7 @@ def decorate(folder,source,version,mutable):
     for path in folder.rglob('*.html'):
         text=path.read_text()
         text=text.replace(REPO+'/blob/main/',REPO+'/blob/'+source+'/').replace(REPO+'/tree/main/',REPO+'/tree/'+source+'/')
-        relative='../'*len(path.relative_to(folder).parts)
+        relative='../'*(len(path.relative_to(folder).parts)+(0 if mutable else 1))
         status='Mutable current documentation' if mutable else 'Frozen documentation release'
         banner=f'<aside class="publication-context" style="padding:10px;background:#edf3f8;color:#173b54;font:14px/1.5 system-ui,sans-serif">{status} <strong>{escape(version)}</strong> · ontology core <strong>v2.0.0</strong> · <a href="{REPO}/commit/{source}">source {source[:12]}</a> · <a href="{relative}versions/index.html">Documentation versions</a></aside>'
         if '/webvowl/' in path.as_posix():
