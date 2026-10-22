@@ -1,1 +1,1 @@
-[Repository](https://github.com/ArazSaieArasi3/OntoSPK) · [Source and version](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/guide/Versions.md) · [Citation](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/CITATION.cff)
+[Repository](https://github.com/ArazSaieArasi3/OntoSPK) · [Core release](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0) · [Guide source](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/guide/Versions.md) · [Citation](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/CITATION.cff)

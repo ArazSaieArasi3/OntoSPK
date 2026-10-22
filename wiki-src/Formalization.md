@@ -24,18 +24,18 @@ The uniqueness statement does not prove temporal continuity or conformance of a 
 
 ## First-order specification
 
-The [first-order specification](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/formal-specification/README.md) provides a readable account and expanded formulas for the complete native structure, a separate projection of explicit logical-profile constructs, source mappings and a reproducible transcription review. It preserves source versions and distinguishes transcription checks from ontology-wide verification.
+The [first-order specification](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/formal-specification/README.md) provides a readable account and expanded formulas for the complete native structure, a separate projection of explicit logical-profile constructs, source mappings and a reproducible transcription review. It preserves source versions and distinguishes transcription checks from ontology-wide verification.
 
 ## Complete reference
 
-- [All structural formulas and association contracts](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/associations.md)
-- [All scoped commitments and their limits](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/commitments.md)
-- [Generalizations and generalization sets](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/generalizations.md)
-- [Classes and native identity commitments](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/classes.md)
-- [Native to OWL projection](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/native-class-projection.csv)
+- [All structural formulas and association contracts](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/associations.md)
+- [All scoped commitments and their limits](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/commitments.md)
+- [Generalizations and generalization sets](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/generalizations.md)
+- [Classes and native identity commitments](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/classes.md)
+- [Native to OWL projection](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/native-class-projection.csv)
 - [OWL and data-validation constraints](Constraints)
 - [Reasoning and results](Quality)
 
 Generated lookup pages complement this explanation. They do not establish complete UFO modal, counterfactual or causal semantics.
 
-The generated [WIDOCO cross-reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/widoco/index-en.html) complements the [logical declaration reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/reference/owl/index.html). Both derive from the same logical source.
+The generated [WIDOCO cross-reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/docs/widoco/index-en.html) complements the [logical declaration reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/docs/reference/owl/index.html). Both derive from the same logical source.

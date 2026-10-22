@@ -124,13 +124,13 @@
     },
     {
       "path": "docs/guide/Citation.html",
-      "bytes": 2092,
-      "sha256": "b7cc2c61e34f5561e3b582c1d0b0025f5e8f92a1ac2d0be316d05744d5df5104"
+      "bytes": 2048,
+      "sha256": "f220f8ea25d98ff1f828c16a9965a464073ac69032ace4b7b9c47261db148a05"
     },
     {
       "path": "docs/guide/Citation.md",
-      "bytes": 834,
-      "sha256": "10bb0ddac97172321626a8ebf4f6da86dd62e3d5faa9375daf12a86d9d9c5b9c"
+      "bytes": 790,
+      "sha256": "627fabfae68fd60fcb9043db663ca68d3d081fc973b63a04baf6242054c56388"
     },
     {
       "path": "docs/guide/Competency-Questions.html",
@@ -194,23 +194,23 @@
     },
     {
       "path": "docs/guide/Home.html",
-      "bytes": 1838,
-      "sha256": "bbb953f09cb8336f274911724ca10d7f3ae30ca877556f19c170a7003991ef85"
+      "bytes": 2254,
+      "sha256": "9865a4acc02a6ce110f320654982840cfc2a9971c7c0672c2cd1ac86acc7b762"
     },
     {
       "path": "docs/guide/Home.md",
-      "bytes": 560,
-      "sha256": "e93a70e34aa980fd6bcabf2a993cbc6767671661579fdd15079246ccb6c154a5"
+      "bytes": 948,
+      "sha256": "86804321aeefe32dc332a14d3eeeca079414a6be023cf9b15455517b682d06be"
     },
     {
       "path": "docs/guide/Limitations.html",
-      "bytes": 2964,
-      "sha256": "1b3d06d434a313e62fb5eb019e63b0e2ab1a63fcd1457437ae2346692de21e36"
+      "bytes": 2965,
+      "sha256": "86522a30f5498c8d02466d938f70a7c3fdbc79907cd0fa40e07b4c56517b7a1f"
     },
     {
       "path": "docs/guide/Limitations.md",
-      "bytes": 1704,
-      "sha256": "90cbca8832b19ba95dd97162d55ad724f68c5063c8fe2990d1ee4139e5a6eaa1"
+      "bytes": 1694,
+      "sha256": "0ef78d258770af5a37fdafff8ead5b1f83cb94c3dfd3b4e46b1d5a70638bc547"
     },
     {
       "path": "docs/guide/Overview.html",
@@ -254,13 +254,13 @@
     },
     {
       "path": "docs/guide/Versions.html",
-      "bytes": 3022,
-      "sha256": "ed1434d3d2d02e990dc92a66d9e6377c474a136765ac8db76d29631891c20dd5"
+      "bytes": 3083,
+      "sha256": "c91d1f87d87b20b69a6dbbc90d391a7526c9642d5be008b9336056af7387136f"
     },
     {
       "path": "docs/guide/Versions.md",
-      "bytes": 1553,
-      "sha256": "f8d89a2b8fcba78be2a57c2fc33f34c05685bf25c31de2cd9d70a93fae92e8d1"
+      "bytes": 1603,
+      "sha256": "352a150c2ac084f1ebb89005543bc2c0645490d0c6928f87fa2635b45ad7ed58"
     },
     {
       "path": "docs/guide/Visualization.html",
@@ -3544,8 +3544,8 @@
     },
     {
       "path": "tools/publication/build_portal.py",
-      "bytes": 11985,
-      "sha256": "ec4a93b38dc207f749c8ddf229e370ac43d9268f1a7aae8dd53b6f114ec34796"
+      "bytes": 12684,
+      "sha256": "beb53327d592cdba776c709505c32c9ea322b6b2b9e2e12441c4dac9fbe28b7c"
     },
     {
       "path": "tools/publication/build_webvowl_data.py",
@@ -3574,48 +3574,48 @@
     },
     {
       "path": "wiki-src/Citation.md",
-      "bytes": 926,
-      "sha256": "30c6733c3b99db119f13a4ac4c366746528b58760b652ad306f8bf3e53156093"
+      "bytes": 886,
+      "sha256": "7f69121651beb3b4c96bb6ec0839601dc4aea1099feac40363390ee808f319ad"
     },
     {
       "path": "wiki-src/Competency-Questions.md",
-      "bytes": 1075,
-      "sha256": "9a9fe08fc02b6eb335cbac6ab65ed292f302f558f614fec7f92131ecd0a4a242"
+      "bytes": 1079,
+      "sha256": "bfe97e1879da2605312970acfae81f62facfb33c81b7d37653155b58e19ca319"
     },
     {
       "path": "wiki-src/Conceptual-Model.md",
-      "bytes": 1246,
-      "sha256": "3d6eb29b5bde2fc387251d95d3fce2bd3cacb8312a7bb73f0dc35d5979e0311f"
+      "bytes": 1252,
+      "sha256": "fd1c0c7db04b67bb64727e11e0d7bd27771f63f40014219860a9da577412da00"
     },
     {
       "path": "wiki-src/Constraints.md",
-      "bytes": 1390,
-      "sha256": "6e7ed1126af101bb3c96a3da98738aae5482ad4eeba1f29113889b1911c7ce8c"
+      "bytes": 1394,
+      "sha256": "4d82350b6f08fac7c2561f3fdef0d1af6a497e2730d167c4e758666aff265e5b"
     },
     {
       "path": "wiki-src/Domains.md",
-      "bytes": 1887,
-      "sha256": "2d3e65ba8612c8a24a53fa13c38e0ac8eabe79fdeeb4a9461c07a9a2c3fbe984"
+      "bytes": 1891,
+      "sha256": "48987ff170078c0305433ace00b3a85074db9aa0899fd2112d73673e56a6d173"
     },
     {
       "path": "wiki-src/External-References.md",
-      "bytes": 7396,
-      "sha256": "79271627da14bae4b9553aa3c0d5a6b24141b44b17e5212cb01f68b5d2796a18"
+      "bytes": 7400,
+      "sha256": "af0f194b77eb543ff532c0ea7b9a12fd03bad2f6b0d22abeb6eb94d3094c09f5"
     },
     {
       "path": "wiki-src/Formalization.md",
-      "bytes": 3467,
-      "sha256": "6727186d55cc29f7f65063964389f8cc5295f4789c0c61f4accfb7e9cc642ac1"
+      "bytes": 3483,
+      "sha256": "b50dc748a2898ef752ae4d14c53a58dc8ba3af8dffc2cfab6183b4d1311dca10"
     },
     {
       "path": "wiki-src/Home.md",
-      "bytes": 524,
-      "sha256": "145d8c3f33f5587890f703487111ad3453860fd57b050b8a84bc9d4627780cbc"
+      "bytes": 912,
+      "sha256": "2c8af11fbede2c48facb8ddcb0bff861671e82145d66d3c787df87f575c3a16b"
     },
     {
       "path": "wiki-src/Limitations.md",
-      "bytes": 1701,
-      "sha256": "c3319afb3394a11445f283eedf83fac2f7264fa2b83391cec1307ec069b14853"
+      "bytes": 1691,
+      "sha256": "9972d6b9ebe705b37462f255849ed483074fdb47c5003e57d15ba61d9b5cda92"
     },
     {
       "path": "wiki-src/Overview.md",
@@ -3624,8 +3624,8 @@
     },
     {
       "path": "wiki-src/Quality.md",
-      "bytes": 2504,
-      "sha256": "5be9b4fd94eff33c7ced67166c0b6a261a27eff7ec586e928fed662e0dfa8e76"
+      "bytes": 2506,
+      "sha256": "baefab4f93ca8eebb35e109cf3d8fb1868be23c86adbd1f72061b5d67a457f64"
     },
     {
       "path": "wiki-src/README.md",
@@ -3634,8 +3634,8 @@
     },
     {
       "path": "wiki-src/References.md",
-      "bytes": 1314,
-      "sha256": "5dcdd6743d4a80c52be0069c5d1043aff657a480ad5c926596f4aa69ee412bbf"
+      "bytes": 1316,
+      "sha256": "4300c788a89ed69762d7c918e67e394b49c67d8081c9d9bbe38f5bb90c948733"
     },
     {
       "path": "wiki-src/Reproduce.md",
@@ -3644,23 +3644,23 @@
     },
     {
       "path": "wiki-src/Versions.md",
-      "bytes": 1596,
-      "sha256": "9d3af2b4a9099e2f18099173f8f90f7957bbe3c5c36c93e68259f0741de31131"
+      "bytes": 1648,
+      "sha256": "e989a4dea1fb77b9d6d929dbba25058a5cfae76d208a4cfbb44c3e1f9c84d7a7"
     },
     {
       "path": "wiki-src/Visualization.md",
-      "bytes": 1250,
-      "sha256": "2859340ec00b3239dbed3fdd9dff33f66b31c41282130069a2764ba62c8591be"
+      "bytes": 1252,
+      "sha256": "d260bbba6fcfeec71f83d3aae9c2235d6ffc33b0366ca83a07fa86b734cb834a"
     },
     {
       "path": "wiki-src/_Footer.md",
-      "bytes": 235,
-      "sha256": "97749305fc7ffd3775a5fd58bbeb889ac7a646693d2fbb6798a4f86502d631bc"
+      "bytes": 312,
+      "sha256": "6a767e4abcca4347bee607b1eadc31e39f38f43836fb14f75f809d75174491ca"
     },
     {
       "path": "wiki-src/_Sidebar.md",
-      "bytes": 444,
-      "sha256": "4152479e95678595e994465153f8305d6c537469d43d4dee201da881b85b7293"
+      "bytes": 497,
+      "sha256": "820acf2ced821219a819b9ccc715a48841bc91f472e56b82d6d06a94fa609aca"
     }
   ],
   "manifest_self_inclusion": false

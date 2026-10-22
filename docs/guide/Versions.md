@@ -2,7 +2,7 @@
 
 | Object | Current identity |
 | --- | --- |
-| Public distribution target | 2.0.0; verify the tag and release record on GitHub |
+| Public distribution | [v2.0.0](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0), commit `ccea141bcc238a4aae47e631cadc1809b738bc73` |
 | Native conceptual model | 0.41.0 |
 | Logical profile revision | 0.43.0 |
 | Source assembly provenance | 0.45.0 |
@@ -14,4 +14,4 @@ The stable ontology-core source is the private `product-ontology` tag `v2.0.0`, 
 
 The canonical native model and logical profile preserve their exact SHA-256 digests. Generated references and execution receipts have their own hashes. The physical database is outside this core distribution.
 
-The private source has a stable `v2.0.0` release. The [public Releases page](https://github.com/ArazSaieArasi3/OntoSPK/releases) records whether and when the public `v2.0.0` tag was published. Published tags and release payloads must not be silently replaced. Documentation-only improvements do not automatically create a new semantic model version.
+The private source has a stable `v2.0.0` release. The public [v2.0.0 release](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0) is a separate selected distribution. Published tags and release payloads must not be silently replaced. Documentation-only improvements do not automatically create a new semantic model version.

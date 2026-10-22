@@ -10,6 +10,6 @@
 
 An OWL domain is not a command to reject every value lacking an explicit type. Absence of a triple does not normally imply falsity. An OWL cardinality is not automatically the same operation as a SQL row count.
 
-The [commitment matrix](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/reference/commitments.md) records which mechanism addresses each commitment. The [occurrence shapes](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/semantic/product/v2/source/validation_v041/Occurrence_Profile_v0_41_0.shacl.ttl), executable policies and mapping CSVs remain inspectable.
+The [commitment matrix](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/reference/commitments.md) records which mechanism addresses each commitment. The [occurrence shapes](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/validation_v041/Occurrence_Profile_v0_41_0.shacl.ttl), executable policies and mapping CSVs remain inspectable.
 
 Unsupported constructs and pending scientific review are retained in [Limitations](Limitations).

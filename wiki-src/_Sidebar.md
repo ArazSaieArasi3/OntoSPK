@@ -1,17 +1,22 @@
 ## OntoSPK
 
-- [Citation](Citation)
-- [Competency Questions](Competency-Questions)
-- [Conceptual Model](Conceptual-Model)
-- [Constraints](Constraints)
-- [Domains](Domains)
-- [External References](External-References)
-- [Formalization](Formalization)
+### Start
 - [Home](Home)
-- [Limitations](Limitations)
 - [Overview](Overview)
+- [Domains](Domains)
+- [Conceptual Model](Conceptual-Model)
+- [External References](External-References)
+
+### Model and evidence
+- [Formalization](Formalization)
+- [Constraints](Constraints)
+- [Competency Questions](Competency-Questions)
 - [Quality](Quality)
-- [References](References)
 - [Reproduce](Reproduce)
-- [Versions](Versions)
+
+### Use and cite
 - [Visualization](Visualization)
+- [Versions](Versions)
+- [Citation](Citation)
+- [References](References)
+- [Limitations](Limitations)
