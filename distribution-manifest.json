@@ -64,8 +64,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 1149,
-      "sha256": "25fae5c1a103b2b3802d0034a294abc9731cb1e6d9d8f212179d72f8e76000f4"
+      "bytes": 3967,
+      "sha256": "9761c432bcdccea1fb034aa8740727941abdbc9f464b66b6ddab46c80421d5ff"
     },
     {
       "path": "VERSION",
@@ -356,6 +356,11 @@
       "path": "docs/releases/v2.0.0/publication-boundary-review.md",
       "bytes": 4569,
       "sha256": "3bfafcf5098ef6b5561508fde6dce67200a018f2edae4f869423bd4676be0cac"
+    },
+    {
+      "path": "docs/releases/v2.0.0/rights-readback.md",
+      "bytes": 4737,
+      "sha256": "83a842ae2918986523dcf5b6fbe1c1b2e6eec2ee729c9bd83e25be49a45b6f44"
     },
     {
       "path": "docs/research/related-ontologies/complementary-comparisons.json",
@@ -3448,6 +3453,21 @@
       "sha256": "ea817bdc261047b39223ade26b9e41a9c2382200ec0c510bd22bb756c6f3cb18"
     },
     {
+      "path": "third-party-licenses/Apache-2.0-Google-dark-mode.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third-party-licenses/Sizzle-2011-MIT.txt",
+      "bytes": 1209,
+      "sha256": "8fa588a16eac009765fb30af2f872b9cf65a0b096e1d692f36a5ba01813cf7ab"
+    },
+    {
+      "path": "third-party-licenses/W3C-software-1998.txt",
+      "bytes": 2553,
+      "sha256": "c8dbcfc2aa1782baee89cd670af7f0f2d74ebe849e52d3b16b7c5b4a728a2ed1"
+    },
+    {
       "path": "third-party-licenses/WebVOWL.txt",
       "bytes": 1167,
       "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde"
@@ -3458,9 +3478,19 @@
       "sha256": "e4796bd1fdc09e06a3683957a177d59b38aec4143df81b2d25472438f5763482"
     },
     {
+      "path": "third-party-licenses/jquery-1.6.2-MIT.txt",
+      "bytes": 1074,
+      "sha256": "0ade425df7c0386e04fbaa6b49e97a71ec504e53a4c01137c4bfb425a9a92344"
+    },
+    {
       "path": "third-party-licenses/lodash.txt",
       "bytes": 1952,
       "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc"
+    },
+    {
+      "path": "third-party-licenses/marked-v4-license.txt",
+      "bytes": 2942,
+      "sha256": "8e3a3f82f59a60958f56ca08f445647c32a4733dc7ca6c2c46f6eb898471ab9c"
     },
     {
       "path": "tools/ontospk/README.md",
