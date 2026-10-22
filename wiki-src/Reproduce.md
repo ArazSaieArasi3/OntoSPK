@@ -7,7 +7,6 @@ python -m venv .venv
 .venv/bin/python -m pip install -r tools/ontospk/requirements.txt
 .venv/bin/python tools/ontospk/run_validation.py --output build/evaluation
 .venv/bin/python tools/ontospk/build_reference.py
-.venv/bin/python tools/ontospk/build_database.py
 ```
 
 The first validation command runs the locally available structural, admission, revision, CQ and project-rule controls. It explicitly records omitted external-tool checks. It is not the full ten-stage execution.
@@ -24,7 +23,9 @@ For all ten stages, obtain the following public upstream tools outside this repo
 
 The command returns a nonzero exit status for an executed failed stage and records skipped external tools explicitly. The recorded full execution passes ten stages; future runs should inspect their own receipt rather than inherit that status.
 
-To rebuild the static reference and check the public distribution:
+The SQL code used by some historical finite admission controls remains a test harness. The physical database build is maintained separately from the public ontology-core package.
+
+To rebuild the static reference and check the public core:
 
 ```bash
 .venv/bin/python tools/publication/build_portal.py

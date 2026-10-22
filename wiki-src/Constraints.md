@@ -5,7 +5,7 @@
 | Conceptual model | Declared kinds, roles, relations and multiplicities | Native modeling commitments. |
 | OWL | Logical meaning and entailment | Open-world interpretation; domain and range can infer types. |
 | SHACL | Validation of supplied graphs | Explicit target, path and validation conditions. |
-| SQLite | Persistence and record integrity | Foreign keys, uniqueness and finite database controls. |
+| Finite SQL test harness | Checks supplied records in the historical admission tests | Separate from the published ontology core; no physical database is distributed here. |
 | Admission and history policy | Qualification of a supplied population | Bounded implementation behavior and receipts. |
 
 An OWL domain is not a command to reject every value lacking an explicit type. Absence of a triple does not normally imply falsity. An OWL cardinality is not automatically the same operation as a SQL row count.

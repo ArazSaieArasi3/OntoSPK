@@ -2,7 +2,7 @@
 
 OntoSPK is an ontology for modeling software product knowledge across planning, definition, requirements, experience, delivery, testing, marketing, evidence and realization. It distinguishes a continuing product from its versions, specifications, realizations and execution records.
 
-The current distribution is **2.0.0-rc.1, an unreleased candidate**. It contains a conceptual model, a bounded OWL profile, data constraints, competency-question fixtures and a synthetic SQLite reference implementation. Independent semantic review remains open.
+The public repository is preparing the **2.0.0 ontology-core distribution**, derived from the stable private source release. It contains a conceptual model, a bounded OWL profile, graph constraints and competency-question fixtures. The public release has not yet been published; independent semantic review remains open.
 
 ## Start here
 
@@ -12,7 +12,9 @@ The current distribution is **2.0.0-rc.1, an unreleased candidate**. It contains
 - [Complete conceptual reference](semantic/product/v2/reference/README.md)
 - [Evaluation and reasoning results](docs/guide/Quality.md)
 - [Reproduce the checks](docs/guide/Reproduce.md)
-- [Relational implementation](data-models/product/v2/README.md)
+- [Core release scope and evidence](docs/releases/v2.0.0/README.md)
+- [External references and ownership boundaries](docs/guide/External-References.md)
+- [Release plan and work register](docs/development/release-plan.md)
 - [Related ontologies](docs/research/related-ontologies/related-ontology-comparison.md)
 - [Versions and source identity](docs/guide/Versions.md)
 - [Citation and reuse](docs/guide/Citation.md)
@@ -35,10 +37,10 @@ Conceptual classes, named OWL classes and physical SQL tables are different inve
 
 Curated explanations are maintained in `docs/guide`. The Wiki snapshot is derived from those pages. The static portal in `docs` provides the generated logical reference, diagrams, downloads and WebVOWL. See [documentation publication status](docs/publication-status.json) before assuming that a live Wiki or Pages deployment exists.
 
-The included database and test populations are synthetic. Passing the documented finite controls does not establish complete UFO modal or causal adequacy, independent domain validation, external-owner acceptance or production readiness.
+The test populations are synthetic. Passing the documented finite controls does not establish complete UFO modal or causal adequacy, independent domain validation, external-owner acceptance or production readiness. The physical database and Explorer are separate work; neither is part of this ontology-core distribution.
 
 ## Version and rights
 
-The distribution combines native model 0.41.0 and logical profile 0.43.0. Technical filenames retain the revisions of their schema or fixture contracts; those revisions are not alternative distribution versions. Semantic identifiers are preserved.
+The distribution combines native model 0.41.0 and logical profile 0.43.0. Technical filenames retain the revisions of their schema or fixture contracts; those revisions are not alternative distribution versions. Semantic identifiers are preserved. See [source identity and release state](docs/guide/Versions.md).
 
 No project-wide reuse licence has yet been selected. See [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).

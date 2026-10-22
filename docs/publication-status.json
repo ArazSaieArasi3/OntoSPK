@@ -1,38 +1,40 @@
 {
-  "distribution_version": "2.0.0-rc.1",
-  "distribution_state": "unreleased_candidate",
-  "documentation_baseline": "DB-2026.10.1",
-  "documentation_state": "candidate",
+  "distribution_version": "2.0.0",
+  "distribution_state": "public_preparation_release_pending",
+  "documentation_baseline": "public-core-2026-10-21",
+  "documentation_state": "prepared_for_review",
   "source_prepared": true,
   "local_semantic_evaluation": "PASS_TEN_STAGES",
-  "remote_semantic_ci": "BLOCKED_BEFORE_EXECUTION",
+  "remote_semantic_ci": "PREVIOUS_PUBLIC_CANDIDATE_PASSED; MIGRATION_BRANCH_PENDING",
   "wiki": {
     "source": "wiki-src",
-    "state": "SOURCE_PREPARED_PUBLICATION_ACCESS_PENDING",
+    "state": "SOURCE_PREPARED_PUBLICATION_PENDING",
     "published_ref": null
   },
   "pages": {
     "source": "docs",
-    "state": "SOURCE_PREPARED_RELEASE_AND_SITE_CONFIGURATION_PENDING",
+    "state": "SOURCE_PREPARED_DEPLOYMENT_PENDING",
     "deployment_ref": null
   },
   "webvowl": {
     "data": "docs/webvowl/data/ontospk.json",
-    "state": "DATA_AND_STATIC_CONTRACTS_VERIFIED_BROWSER_PENDING",
+    "state": "STATIC_DATA_PREPARED_BROWSER_PENDING",
     "online_browser_verification": "NOT_EXECUTED"
   },
   "licensing": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
   "source_prerelease_published": false,
   "remote_check_runs": [
     {
-      "run_id": 38925819198,
+      "run_id": 38962245070,
       "kind": "ontology",
-      "state": "NOT_STARTED_ACCOUNT_RESTRICTION"
+      "state": "PASSED_ON_PREVIOUS_PUBLIC_CANDIDATE"
     },
     {
-      "run_id": 38925818909,
+      "run_id": 38962244816,
       "kind": "documentation",
-      "state": "NOT_STARTED_ACCOUNT_RESTRICTION"
+      "state": "PASSED_ON_PREVIOUS_PUBLIC_CANDIDATE"
     }
-  ]
+  ],
+  "source_private_release": "v2.0.0",
+  "source_commit": "beb0194b23d5794307742f9214d780e823ff829f"
 }

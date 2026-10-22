@@ -1,0 +1,19 @@
+{
+  "review_date": "2026-10-22",
+  "reviewed_commits": [
+    "df96c940e83ff333ee149ad93d8b5f5cf2c6b88a",
+    "3a4ca4ab67d64606024e6a9186264f8c4c0d201a",
+    "a2c2174adc6f34222a32fe932dc2515509b4f68d",
+    "f465f2e8d0d4fc7a60a3c3cf9dfdcdd3d584b262",
+    "03c2fbc0b48f9ca2fead47ab817e8e376a2320c0",
+    "9a357fbf63a0bf6487b30ef566082e558e2fdc40"
+  ],
+  "unique_blobs": 697,
+  "text_blobs_scanned": 694,
+  "binary_blobs_not_text_scanned": 3,
+  "configured_disclosure_findings": [],
+  "candidate_baseline": "df96c940e83ff333ee149ad93d8b5f5cf2c6b88a",
+  "historical_implementation_present": true,
+  "history_rewritten": false,
+  "limits": "Finite configured pattern scan, not an exhaustive confidentiality, secret or licence proof; binary payloads are not text scanned. Historical synthetic implementation and removed owner snapshot remain reachable."
+}

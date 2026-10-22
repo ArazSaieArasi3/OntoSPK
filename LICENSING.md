@@ -4,4 +4,6 @@ The repository is publicly available for inspection. A project-wide reuse licenc
 
 Third-party components retain their own licences and notices. Their inclusion does not determine the licence of the original ontology. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Tool binaries and external source checkouts are not distributed as part of the ontology source.
 
+The [v2.0.0 rights readback](docs/releases/v2.0.0/rights-readback.md) records the owner's narrow decision to leave one historical Market V1 snapshot publicly inspectable in this repository's history. That decision does not change the separate Market repository's private visibility or grant a project-wide reuse licence to OntoSPK or Market Ontology.
+
 Maintainers can record a future licensing decision here without rewriting historical release notices.
