@@ -574,8 +574,8 @@
     },
     {
       "path": "evaluation/coverage-register.json.gz",
-      "bytes": 106613,
-      "sha256": "15321834748ec47e9af40cf4cdbe1d439842801f4f1de6034103e089b24fb46d"
+      "bytes": 106612,
+      "sha256": "3087018332fb18f8bced74f97a745dab2a03350d0483509bcf2ca5766521f96e"
     },
     {
       "path": "evaluation/coverage-register.md",
