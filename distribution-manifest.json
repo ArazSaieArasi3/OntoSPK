@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "distribution_version": "2.0.0",
-  "state": "public_preparation_release_pending",
+  "state": "public_core_v2.0.0_check_releases_for_publication",
   "semantic_source_commit": "beb0194b23d5794307742f9214d780e823ff829f",
   "native_version": "0.41.0",
   "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
@@ -39,13 +39,13 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 575,
-      "sha256": "002c22d8969921bd662258d2f38a282b3c02d6ed6658ff8eb126a49514109a6a"
+      "bytes": 597,
+      "sha256": "f639d1a1a3338e3fcb90732949d40c2f72c3fc202b09b7e889cf0a89925812a5"
     },
     {
       "path": "CITATION.cff",
-      "bytes": 433,
-      "sha256": "87a68f35d986b399aff55365a67ebc191d00cd92ef19a429cd687c2ab62ae5b9"
+      "bytes": 404,
+      "sha256": "58dae0f82f1d7c66648f42a9841cbd3b8df6bec7c5dc5c4137892dfdca5e8091"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -59,8 +59,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3016,
-      "sha256": "9d8b8298244048cc257c782f160b1f4f3f92207ab4c91c703b13e011af36cbc9"
+      "bytes": 3043,
+      "sha256": "a690fd97a235cb65f7292a54fd0cd87fd57d01db76f95c55441014951f51905c"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -94,18 +94,18 @@
     },
     {
       "path": "docs/downloads/CITATION.cff",
-      "bytes": 433,
-      "sha256": "87a68f35d986b399aff55365a67ebc191d00cd92ef19a429cd687c2ab62ae5b9"
+      "bytes": 404,
+      "sha256": "58dae0f82f1d7c66648f42a9841cbd3b8df6bec7c5dc5c4137892dfdca5e8091"
     },
     {
       "path": "docs/downloads/SHA256SUMS.txt",
       "bytes": 241,
-      "sha256": "76384c818ccdcb82350f22830d7e82d67138b5509f37b1b951b83a62efd6a904"
+      "sha256": "811d8ce9024508dae87b71df810c26c7ef287a61ea8dfd9ca828ac44c7ff01aa"
     },
     {
       "path": "docs/downloads/index.html",
-      "bytes": 1428,
-      "sha256": "14bc4b04e022024dd651cb6562cd844960bdeddbb734a04445a6f80bfe775510"
+      "bytes": 1488,
+      "sha256": "037092a577c23734e1493d0955cb770c705f6bfa4ace02c56ed471cd69309645"
     },
     {
       "path": "docs/downloads/native-to-owl.csv",
@@ -124,18 +124,18 @@
     },
     {
       "path": "docs/guide/Citation.html",
-      "bytes": 2040,
-      "sha256": "8315c53a9c5a26bac3b5417a095c8415046a40c382cafe09639ee96b4a426773"
+      "bytes": 2092,
+      "sha256": "b7cc2c61e34f5561e3b582c1d0b0025f5e8f92a1ac2d0be316d05744d5df5104"
     },
     {
       "path": "docs/guide/Citation.md",
-      "bytes": 843,
-      "sha256": "0b424da9d3149a9c8d7e13a7721e37d293d029276fe775fbec921ff7ddd4dc55"
+      "bytes": 834,
+      "sha256": "10bb0ddac97172321626a8ebf4f6da86dd62e3d5faa9375daf12a86d9d9c5b9c"
     },
     {
       "path": "docs/guide/Competency-Questions.html",
-      "bytes": 2173,
-      "sha256": "5bcfd59d5d62260aac60753443abc5a5da5e2f45ee82cca226eafd7bb437ebdc"
+      "bytes": 2223,
+      "sha256": "ee255925746d08a8e53dd217b36dea7daa67126caf271b2d1b326ce1084a690f"
     },
     {
       "path": "docs/guide/Competency-Questions.md",
@@ -144,8 +144,8 @@
     },
     {
       "path": "docs/guide/Conceptual-Model.html",
-      "bytes": 2292,
-      "sha256": "a5e0a71b0e9e1eea649e2afaf22cf0ad419bb06ca5435873bfde4107e162d5e6"
+      "bytes": 2342,
+      "sha256": "a9db0f24b73332a07f4b073455dd307489c670962310e05b1cc6b1e3e5493ba2"
     },
     {
       "path": "docs/guide/Conceptual-Model.md",
@@ -154,8 +154,8 @@
     },
     {
       "path": "docs/guide/Constraints.html",
-      "bytes": 2674,
-      "sha256": "fac0a3d30bd292ad74618e93b439d02d0bb7bb51a5d2c1682f154887a2e256d7"
+      "bytes": 2724,
+      "sha256": "5ea8d8b1d2ee6968748e8cc73630ce6c9ac288d1bf3001e3efc8dbcdc6eab3eb"
     },
     {
       "path": "docs/guide/Constraints.md",
@@ -164,8 +164,8 @@
     },
     {
       "path": "docs/guide/Domains.html",
-      "bytes": 3131,
-      "sha256": "40ef5fc223834e31516c0c037a075ac16b53adc3c299807d1fa9acb647d0a40d"
+      "bytes": 3181,
+      "sha256": "c5c8fba71429b24ddbd445de24df81f518b55820203687beee43f962e17f2c92"
     },
     {
       "path": "docs/guide/Domains.md",
@@ -174,8 +174,8 @@
     },
     {
       "path": "docs/guide/External-References.html",
-      "bytes": 10604,
-      "sha256": "06b9e389bdd233bb7003a4bb8c5f2f450bcea37d96a72618c82ea8cbdd3d440d"
+      "bytes": 10654,
+      "sha256": "8e920f311ef8cab65c205596387c47f86dc4f31fdd1449cc10b3bd1be93c4ff1"
     },
     {
       "path": "docs/guide/External-References.md",
@@ -184,8 +184,8 @@
     },
     {
       "path": "docs/guide/Formalization.html",
-      "bytes": 4653,
-      "sha256": "3a5f0a9e5d0fecfb256595d31b8e4b5c3acc187e23494720246180be3fb74e9e"
+      "bytes": 4703,
+      "sha256": "ba3d2cf59b4280cdc083b131c3915d6403b7756721f52bddc04950d901cf5825"
     },
     {
       "path": "docs/guide/Formalization.md",
@@ -194,8 +194,8 @@
     },
     {
       "path": "docs/guide/Home.html",
-      "bytes": 1788,
-      "sha256": "4f2d0930e43ff00be2ec810c4943c3d1e601870426a95192284fb974296f2897"
+      "bytes": 1838,
+      "sha256": "bbb953f09cb8336f274911724ca10d7f3ae30ca877556f19c170a7003991ef85"
     },
     {
       "path": "docs/guide/Home.md",
@@ -204,8 +204,8 @@
     },
     {
       "path": "docs/guide/Limitations.html",
-      "bytes": 2914,
-      "sha256": "0761cbe96166e3ce77f822f2a4d42e8fe29fd69baa8edfb7c960680f0bb69fa2"
+      "bytes": 2964,
+      "sha256": "1b3d06d434a313e62fb5eb019e63b0e2ab1a63fcd1457437ae2346692de21e36"
     },
     {
       "path": "docs/guide/Limitations.md",
@@ -214,8 +214,8 @@
     },
     {
       "path": "docs/guide/Overview.html",
-      "bytes": 2263,
-      "sha256": "5b835cdc59449846fe7bebb81446766a6982dc9dcb667b9669841b366ea0c478"
+      "bytes": 2313,
+      "sha256": "fac653597fde4a0c3e2feb98f54d6d027ba8ae36c610af04a4a5688ebcb4b61a"
     },
     {
       "path": "docs/guide/Overview.md",
@@ -224,8 +224,8 @@
     },
     {
       "path": "docs/guide/Quality.html",
-      "bytes": 3892,
-      "sha256": "82fb307dfdce65ec172bdb2a7a1fe39f1c003633c9b1828eac524060bb9f601f"
+      "bytes": 3942,
+      "sha256": "e0404ae0c1f36a3e48e18aba337b63aee9246a19d33315a4cd9fc54c143a1f9e"
     },
     {
       "path": "docs/guide/Quality.md",
@@ -234,8 +234,8 @@
     },
     {
       "path": "docs/guide/References.html",
-      "bytes": 2418,
-      "sha256": "0439001a6a67916b60879b474defd4616c67659c86ca89de369f43e56e4b6d2a"
+      "bytes": 2468,
+      "sha256": "eab4e4f634b2543637e5fb6abdf8a2fe12b23cfb9f1f4c12e1821bb1284f5672"
     },
     {
       "path": "docs/guide/References.md",
@@ -244,8 +244,8 @@
     },
     {
       "path": "docs/guide/Reproduce.html",
-      "bytes": 3903,
-      "sha256": "3eabd41f8387cd715e74aa698b6336761625dcf8d1fa658063df75975ed63510"
+      "bytes": 3953,
+      "sha256": "aa885aaa891f89bdec9d5c8993ee56d72465d4630734918135ab40cd4fb0d666"
     },
     {
       "path": "docs/guide/Reproduce.md",
@@ -254,18 +254,18 @@
     },
     {
       "path": "docs/guide/Versions.html",
-      "bytes": 2918,
-      "sha256": "2cc5c1577bf515d2dcd7c4ac8298961640b30e0c6aa144aebd8ede02dd99feed"
+      "bytes": 3022,
+      "sha256": "ed1434d3d2d02e990dc92a66d9e6377c474a136765ac8db76d29631891c20dd5"
     },
     {
       "path": "docs/guide/Versions.md",
-      "bytes": 1510,
-      "sha256": "dc91a81699e2b8b7fa5c0477fbdc267fa2c86df7ba106e51cbd67b1bf72252d1"
+      "bytes": 1553,
+      "sha256": "f8d89a2b8fcba78be2a57c2fc33f34c05685bf25c31de2cd9d70a93fae92e8d1"
     },
     {
       "path": "docs/guide/Visualization.html",
-      "bytes": 2243,
-      "sha256": "17cebc10905ace5a2b83043df75a272c90b08f787c263123cdc7b46b71b41b1f"
+      "bytes": 2293,
+      "sha256": "4487f610b76b25772d39c5a9320309e5dfc07c2f88e1818f962f7d058bf13493"
     },
     {
       "path": "docs/guide/Visualization.md",
@@ -274,13 +274,13 @@
     },
     {
       "path": "docs/index.html",
-      "bytes": 2845,
-      "sha256": "6c90a33ee500eb21536422db9cfc4480734aab5571484e344b4cbcb142d42668"
+      "bytes": 2873,
+      "sha256": "90dff495f1c2646c8ae5fb857758666394dec49e701f7f4e02d192c4b335b730"
     },
     {
       "path": "docs/publication-status.json",
-      "bytes": 1248,
-      "sha256": "b90ba677a368588ffc51d6cc2abaa86c9f1c0ce202c641e51e8c8775745cf854"
+      "bytes": 1383,
+      "sha256": "a682c65ae931b47043a7754c23bffe685f95352c713c548c2b9d44eb204022f1"
     },
     {
       "path": "docs/reading-guide.md",
@@ -294,63 +294,68 @@
     },
     {
       "path": "docs/reference/native/associations.html",
-      "bytes": 1012055,
-      "sha256": "94733b50b57adba0b9d794243a8dc6101e27b822547c6d2cf3ba15b7477c7088"
+      "bytes": 1012105,
+      "sha256": "5c878a6082d7c066a45778bc56ef4c086701a8ed416e3b007de39dd4b0e3781a"
     },
     {
       "path": "docs/reference/native/classes.html",
-      "bytes": 268085,
-      "sha256": "a5f1da391e23b117a9d645b8bed69bb4881359da6579c5a6fea154fa9aa4680e"
+      "bytes": 268135,
+      "sha256": "10723fd302c6277911bfa003e8359de4750ab61912e5735d9830f24a7f7ee997"
     },
     {
       "path": "docs/reference/native/commitments.html",
-      "bytes": 31096,
-      "sha256": "2e238a0a89eb9a0946a6f2a7189742dddf1c7b6eba3c2c643072a8e4075f23fb"
+      "bytes": 31146,
+      "sha256": "d11073fe26545fa03f00b72abaa405d39eb668776cf9d46b0fd84ddcc5cd4112"
     },
     {
       "path": "docs/reference/native/generalizations.html",
-      "bytes": 12712,
-      "sha256": "ef07c849dc2404c401b3bd3ccdf2fb145947a71321cbe0b1e917aadddfd2b8e8"
+      "bytes": 12762,
+      "sha256": "147d4230792974e54809b32c5b76e852591171b00c0896144eb07fa89e77b141"
     },
     {
       "path": "docs/reference/native/index.html",
-      "bytes": 2990,
-      "sha256": "39bad551dc26c9c03273a39be4013a60c63ee2a5a7e32e3fb8107408522a1e5c"
+      "bytes": 3040,
+      "sha256": "5d9c91903bce25a87b344097060285c79bfe4cb11897d22d388705a754ed5b9f"
     },
     {
       "path": "docs/reference/owl/classes.html",
-      "bytes": 103234,
-      "sha256": "43233f1cb107908eaefe7637e468e72e36c27b852d90cad687ddface5bdaf35f"
+      "bytes": 103284,
+      "sha256": "1dd0ac24c34d5c058076d9b8e8fe65031324e48021b4fd8791e49a1772c61d25"
     },
     {
       "path": "docs/reference/owl/datatype-properties.html",
-      "bytes": 37084,
-      "sha256": "88a70385e1e94e507b5d7496a662e6f879b2770fb0e17f99d48c842fe8661b0b"
+      "bytes": 37134,
+      "sha256": "2f61e88dbdf35a1fb7c20fcd1bf1095d0c4b4205c1cae3196315b5a724b435b2"
     },
     {
       "path": "docs/reference/owl/index.html",
-      "bytes": 1929,
-      "sha256": "fcb92b7c820a434f62311bcf926b812234c42bfcf4f919c31f593881dab7d9d2"
+      "bytes": 1979,
+      "sha256": "b9a1af662fc26e26d1842c199d3db25e33b0fcdaf300b5a694da373d5a95b3bd"
     },
     {
       "path": "docs/reference/owl/individuals.html",
-      "bytes": 1213,
-      "sha256": "475a0a060dc5b5db98253713671b0966002c9d80cec80fe3e4cf373f7c328bc0"
+      "bytes": 1263,
+      "sha256": "30e8cecd5c742e7d811ebc7e5ad1e03408766e78ef2a28715fb960cb34bd0285"
     },
     {
       "path": "docs/reference/owl/object-properties.html",
-      "bytes": 228698,
-      "sha256": "3236a53d9551bcea49565cee98e0b784af2c6aca178ec211c93144ac41d76478"
+      "bytes": 228748,
+      "sha256": "9eeee44df6266a54854fb4a51db352ab22023a80b0e9b9fb6171df4ea3ce18d3"
     },
     {
       "path": "docs/related-ontologies.html",
-      "bytes": 39566,
-      "sha256": "f4296c54c7d6ab9b0d71063b091fa2026999c73cfc8b210cb48dbe1eee3bf3ef"
+      "bytes": 39616,
+      "sha256": "adddd0fd843a99a2a1b2667506ac9c4634125a8aa13f880c87f653159d9897ca"
     },
     {
       "path": "docs/releases/v2.0.0/README.md",
-      "bytes": 3461,
-      "sha256": "8b55e675d5792c0558fe6e691027a4c5df66f373b09907060969da181c85b846"
+      "bytes": 3511,
+      "sha256": "482a9ca71c26d2103cdaaebfea4454af975558223bba04e8d55be66d4ac79e31"
+    },
+    {
+      "path": "docs/releases/v2.0.0/RELEASE_NOTES.md",
+      "bytes": 2423,
+      "sha256": "a141aeae6cef40802ba79da4063382db0df91d287374fdff91d5ae6bce1a92e5"
     },
     {
       "path": "docs/releases/v2.0.0/publication-boundary-review.md",
@@ -3534,13 +3539,13 @@
     },
     {
       "path": "tools/publication/build_manifest.py",
-      "bytes": 2226,
-      "sha256": "89db21095022c0b74044eb2f5e83dc97e180bbfe0f4b4b68527620139e2b5be7"
+      "bytes": 2241,
+      "sha256": "77d525638def71081d536ba1ce450a5411ce4243646d558133e98b3d80c7df7d"
     },
     {
       "path": "tools/publication/build_portal.py",
-      "bytes": 11980,
-      "sha256": "38a024b99cfe84a0c1d6ac872da8e92c419f74bc7926a8f5ef14c006816aba32"
+      "bytes": 11985,
+      "sha256": "ec4a93b38dc207f749c8ddf229e370ac43d9268f1a7aae8dd53b6f114ec34796"
     },
     {
       "path": "tools/publication/build_webvowl_data.py",
@@ -3569,8 +3574,8 @@
     },
     {
       "path": "wiki-src/Citation.md",
-      "bytes": 935,
-      "sha256": "42b89abd8b124609b8ee7d8dd8ef57af00d7030c4efd1722ab2dcf29229c54e9"
+      "bytes": 926,
+      "sha256": "30c6733c3b99db119f13a4ac4c366746528b58760b652ad306f8bf3e53156093"
     },
     {
       "path": "wiki-src/Competency-Questions.md",
@@ -3639,8 +3644,8 @@
     },
     {
       "path": "wiki-src/Versions.md",
-      "bytes": 1553,
-      "sha256": "5cbc47fa2a7100d84f75fb81b5b946a0b8b5cf85038b8c31a131a8a181f53501"
+      "bytes": 1596,
+      "sha256": "9d3af2b4a9099e2f18099173f8f90f7957bbe3c5c36c93e68259f0741de31131"
     },
     {
       "path": "wiki-src/Visualization.md",

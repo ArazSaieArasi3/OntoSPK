@@ -1,11 +1,11 @@
 {
   "distribution_version": "2.0.0",
-  "distribution_state": "public_preparation_release_pending",
+  "distribution_state": "CORE_V2_0_0; CHECK_GITHUB_RELEASES_FOR_PUBLICATION",
   "documentation_baseline": "public-core-2026-10-21",
-  "documentation_state": "prepared_for_review",
+  "documentation_state": "SOURCE_PREPARED; LIVE_DOCUMENTATION_IN_V2_0_1",
   "source_prepared": true,
   "local_semantic_evaluation": "PASS_TEN_STAGES",
-  "remote_semantic_ci": "PREVIOUS_PUBLIC_CANDIDATE_PASSED; MIGRATION_BRANCH_PENDING",
+  "remote_semantic_ci": "ACCEPTED_CORE_CANDIDATE_PASSED",
   "wiki": {
     "source": "wiki-src",
     "state": "SOURCE_PREPARED_PUBLICATION_PENDING",
@@ -22,17 +22,17 @@
     "online_browser_verification": "NOT_EXECUTED"
   },
   "licensing": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
-  "source_prerelease_published": false,
+  "public_release_record": "https://github.com/ArazSaieArasi3/OntoSPK/releases",
   "remote_check_runs": [
     {
-      "run_id": 38962245070,
+      "run_id": 39735045170,
       "kind": "ontology",
-      "state": "PASSED_ON_PREVIOUS_PUBLIC_CANDIDATE"
+      "state": "SUCCESS_ON_ACCEPTED_CORE_CANDIDATE_5dc0933c76f1047d9751bfc13ac4316daad82a24"
     },
     {
-      "run_id": 38962244816,
+      "run_id": 39735045210,
       "kind": "documentation",
-      "state": "PASSED_ON_PREVIOUS_PUBLIC_CANDIDATE"
+      "state": "SUCCESS_ON_ACCEPTED_CORE_CANDIDATE_5dc0933c76f1047d9751bfc13ac4316daad82a24"
     }
   ],
   "source_private_release": "v2.0.0",

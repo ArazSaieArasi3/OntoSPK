@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the exact OntoSPK version and public commit used. Public 2.0.0 release is pending."
+message: "Please cite the exact OntoSPK release tag and public commit used."
 type: software
 title: "OntoSPK: An Ontology for Software Product Knowledge"
 authors:
