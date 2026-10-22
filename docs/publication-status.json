@@ -1,8 +1,8 @@
 {
   "distribution_version": "2.0.0",
-  "distribution_state": "CORE_V2_0_0; CHECK_GITHUB_RELEASES_FOR_PUBLICATION",
+  "distribution_state": "CORE_V2_0_0_PUBLIC_RELEASE_PUBLISHED",
   "documentation_baseline": "public-core-2026-10-21",
-  "documentation_state": "SOURCE_PREPARED; LIVE_DOCUMENTATION_IN_V2_0_1",
+  "documentation_state": "LIVE_PUBLISHED_VERIFIED",
   "source_prepared": true,
   "local_semantic_evaluation": "PASS_TEN_STAGES",
   "remote_semantic_ci": "ACCEPTED_CORE_CANDIDATE_PASSED",
@@ -16,14 +16,21 @@
   },
   "pages": {
     "source": "docs",
-    "state": "SOURCE_PREPARED_DEPLOYMENT_PENDING",
-    "deployment_trigger": "MANUAL_ONLY_UNTIL_VERSIONED_PAGES_ACCEPTANCE_IN_V2_0_1",
-    "deployment_ref": null
+    "state": "LIVE_PUBLISHED_VERIFIED",
+    "deployment_trigger": "AFTER_SUCCESSFUL_MAIN_DOCUMENTATION_CI_OR_EXPLICIT_MANUAL_DISPATCH",
+    "deployment_ref": "4564169a4a01e9f87909578e0c4f2c559ee7a8c1",
+    "deployment_ref_scope": "Accepted live runtime readback; current route is mutable and its latest commit is recorded in the deployment manifest.",
+    "url": "https://arazsaiearasi3.github.io/OntoSPK/",
+    "frozen_url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html",
+    "current_url": "https://arazsaiearasi3.github.io/OntoSPK/current/index.html",
+    "verification_report": "evaluation/pages-publication-verification.json",
+    "deployment_manifest": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json"
   },
   "webvowl": {
     "data": "docs/webvowl/data/ontospk.json",
-    "state": "STATIC_DATA_PREPARED_BROWSER_PENDING",
-    "online_browser_verification": "NOT_EXECUTED"
+    "state": "LIVE_PUBLISHED_BROWSER_VERIFIED",
+    "online_browser_verification": "PASS_EMBEDDED_AND_FULL_SIZE_LOADING_SEARCH_SELECTION_PAUSE_DOWNLOAD_NAVIGATION",
+    "verification_report": "evaluation/pages-publication-verification.json"
   },
   "licensing": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
   "public_release_record": "https://github.com/ArazSaieArasi3/OntoSPK/releases",
@@ -40,5 +47,7 @@
     }
   ],
   "source_private_release": "v2.0.0",
-  "source_commit": "beb0194b23d5794307742f9214d780e823ff829f"
+  "source_commit": "beb0194b23d5794307742f9214d780e823ff829f",
+  "documentation_version": "2.0.1",
+  "documentation_verified_at": "2026-10-22T21:07:35.440966+03:30"
 }

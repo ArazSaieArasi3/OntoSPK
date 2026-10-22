@@ -23,6 +23,8 @@ for file in SITE.rglob('*.html'):
             if identifier not in parser.ids:errors.append('Missing upstream view-mode control: '+identifier)
         if 'hidden' not in parser.ids.get('editMode',{}):errors.append('Unavailable editing must be hidden')
         if parser.ids.get('search-input-text',{}).get('aria-label')!='Search ontology terms':errors.append('Viewer search needs an accessible name')
+    if file.relative_to(SITE).as_posix().endswith('/explore/index.html') and 'viewer-filter-instructions' not in parser.ids:
+        errors.append('Explorer must explain the automatic collapsing filter')
     for link in parser.links:
         u=urlsplit(link)
         if u.scheme or link.startswith('//') or not u.path:continue
