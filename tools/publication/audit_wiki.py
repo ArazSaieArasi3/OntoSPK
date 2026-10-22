@@ -1,4 +1,8 @@
-"""Measure the prepared Wiki source without claiming live Wiki publication."""
+"""Measure the Wiki source and bind any recorded publication to its file hashes.
+
+The source audit does not perform a new network or browser check. Live acceptance
+is a separate, dated receipt.
+"""
 
 from collections import Counter
 from pathlib import Path
@@ -91,8 +95,30 @@ if len(PAGES) != len(list(GUIDE.glob("*.md"))):
     errors.append("Guide/Wiki reader-page inventory differs")
 
 status = json.loads((ROOT / "docs/publication-status.json").read_text())
-if status["wiki"]["state"] != "LIVE_HOME_PLACEHOLDER_ONLY; CURATED_GUIDE_PENDING":
-    errors.append("Live Wiki status must be read back before changing this source-only audit")
+wiki_status = status["wiki"]
+if wiki_status["state"] == "LIVE_PUBLISHED_VERIFIED":
+    receipt_path = ROOT / wiki_status["verification_report"]
+    receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+    published = {row["file"]: row["sha256"] for row in receipt["files"]}
+    expected = {page.name: hashlib.sha256(page.read_bytes()).hexdigest()
+                for page in PAGES + SUPPORT[:2]}
+    if receipt["status"] != "PASS_LIVE_WIKI_READBACK" or published != expected:
+        errors.append("Recorded Wiki publication must match the current 17 source files")
+    if receipt["wiki_commit"] != wiki_status["published_ref"] or \
+            receipt["reviewed_source_commit"] != wiki_status["reviewed_source_commit"]:
+        errors.append("Published Wiki and reviewed-source commits must match the receipt")
+    if receipt["reader_pages"] != len(PAGES) or len(receipt["browser_readback"]["pages"]) != len(PAGES):
+        errors.append("Publication receipt must retain a browser readback for every reader page")
+    live_description = ("The published Wiki was read back at commit `" + wiki_status["published_ref"] +
+                        "`; all 17 published files match the reviewed source. "
+                        "[The dated publication receipt](wiki-publication-verification.md) records "
+                        "the separate browser acceptance; this source audit does not repeat it. ")
+elif wiki_status["state"] == "LIVE_HOME_PLACEHOLDER_ONLY; CURATED_GUIDE_PENDING":
+    live_description = ("The live GitHub Wiki still has only its initial Home placeholder; "
+                        "source quality does not establish publication or browser rendering. ")
+else:
+    errors.append("Wiki publication state requires an explicitly supported evidence boundary")
+    live_description = "The recorded Wiki publication state has not been accepted by this audit. "
 data = {"scope": "prepared source only; no live Wiki render or external-link reachability test",
         "status": "PASS_SOURCE_AUDIT" if not errors else "FAIL_SOURCE_AUDIT",
         "reader_pages": len(PAGES), "support_files": len(SUPPORT), "sidebar_sections": 3,
@@ -117,8 +143,7 @@ page_table = "\n".join(f"| {r['page']} | {r['words_approx']} | {r['headings']} |
 (ROOT / "evaluation/wiki-source-audit.md").write_text(
     "# Curated Wiki source audit\n\n"
     "This assessment covers source-controlled English guide pages and the generated Wiki projection. "
-    "The live GitHub Wiki still has only its initial Home placeholder; source quality does not establish "
-    "publication or browser rendering. The Wiki source explains the model; native and logical files remain "
+    + live_description + "The Wiki source explains the model; native and logical files remain "
     "semantic authority, and execution receipts remain evidence authority.\n\n"
     f"**Source inventory:** {len(PAGES)} reader pages, {len(SUPPORT)} support files, "
     f"{sum(r['words_approx'] for r in rows):,} approximate English words and "
@@ -139,7 +164,7 @@ page_table = "\n".join(f"| {r['page']} | {r['words_approx']} | {r['headings']} |
     "The source check finds no Arabic/Persian script and no configured generic AI-style stock phrase. "
     "This is a bounded editorial check; it cannot establish who authored the text, full semantic "
     "correctness, external-site reachability or live navigation. Repo links to v2.0.0 are checked "
-    "against the tag tree; the online Wiki and Pages remain separate publication tasks.\n\n"
+    "against the tag tree. Live Wiki acceptance is a separate dated receipt; Pages publication remains pending.\n\n"
     f"**Result:** {data['status']}; {len(errors)} source errors. "
     "See [machine-readable audit](wiki-source-audit.json) for page hashes and link counts.\n",
     encoding="utf-8")
