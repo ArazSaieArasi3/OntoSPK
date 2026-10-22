@@ -17,7 +17,7 @@ def desc(e):return (e.get('description') or {}).get('en','')
 def write(n,t):(OUT/n).write_text(t,encoding='utf-8')
 def field(v):return str(v or '').replace('|','\\|').replace('\n',' ')
 def formulas(i):return '\n'.join('```text\n'+a+'\n```\n' for a in byaxiom[i])
-rows=['# Class catalogue\n','All 128 native classes are listed: 101 local classes and 27 externally governed handles. External handle names do not assert imported-class equivalence. Independent acceptance remains open.\n']
+rows=['# Class catalogue\n','All 128 native classes are listed: 101 local classes and 27 externally governed handles. External handle names do not assert imported-class equivalence. Independent acceptance remains open.\n','Read the [external-reference register](../../../../docs/guide/External-References.md) before interpreting preserved owner locators or declaration-verification fields. They do not establish public resolvability or accepted semantic equivalence.\n']
 for e in classes:
     g=ground.get(e['id'],{});cp=e.get('customProperties') or {}
     rows += [f"## {name(e)}\n",f"- Native identifier: `{e['id']}`\n- Scope: {'external handle' if e['id'].startswith('EXT:') else 'local'}\n- Domain: {g.get('domain','not locally assigned')}\n- Declared stereotype: {e.get('stereotype') or 'uncommitted'}\n- Nature: {', '.join(e.get('restrictedTo') or []) or 'uncommitted'}\n",desc(e)+'\n',f"Identity commitment: {g.get('identity_commitment') or 'See the native contract; no independent identity acceptance asserted.'}\n",'Native contract fields:\n```json\n'+json.dumps(cp,ensure_ascii=False,indent=2)+'\n```\n']

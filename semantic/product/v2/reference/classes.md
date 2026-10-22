@@ -2,6 +2,8 @@
 
 All 128 native classes are listed: 101 local classes and 27 externally governed handles. External handle names do not assert imported-class equivalence. Independent acceptance remains open.
 
+Read the [external-reference register](../../../../docs/guide/External-References.md) before interpreting preserved owner locators or declaration-verification fields. They do not establish public resolvability or accepted semantic equivalence.
+
 ## ProductPortfolio
 
 - Native identifier: `IC:ProductPortfolio`

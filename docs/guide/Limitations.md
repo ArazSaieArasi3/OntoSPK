@@ -14,4 +14,6 @@ The ontology-core source is prepared for a public 2.0.0 release and has bounded 
 
 The current identity and relation decisions remain inspectable, including unresolved scientific boundaries. Negative and partial results are part of the evidence. A passing reasoner check establishes only its documented logical scope; a passing data-admission fixture establishes only its documented finite-data behavior.
 
+The [complete external-reference register](External-References.md) distinguishes 16 historically observed same-name declarations, one rename candidate and ten unresolved, undeclared or composite handles. Seventeen preserved class locators use a private research namespace. They are not public download links or accepted owner alignments. Their native fields remain unchanged to preserve the frozen model identity.
+
 WebVOWL is an exploratory OWL view. It does not display every conceptual commitment, SHACL condition or database policy. The separate application Explorer is not part of WebVOWL acceptance.

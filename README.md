@@ -13,6 +13,8 @@ The public repository is preparing the **2.0.0 ontology-core distribution**, der
 - [Evaluation and reasoning results](docs/guide/Quality.md)
 - [Reproduce the checks](docs/guide/Reproduce.md)
 - [Core release scope and evidence](docs/releases/v2.0.0/README.md)
+- [External references and ownership boundaries](docs/guide/External-References.md)
+- [Release plan and work register](docs/development/release-plan.md)
 - [Related ontologies](docs/research/related-ontologies/related-ontology-comparison.md)
 - [Versions and source identity](docs/guide/Versions.md)
 - [Citation and reuse](docs/guide/Citation.md)

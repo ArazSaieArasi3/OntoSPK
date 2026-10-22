@@ -15,6 +15,8 @@ The native structure contains 101 local conceptual classes, 27 external handles,
 
 The external handles identify conceptual boundaries. They do not establish imported-class equivalence, exact external IRIs or consent by the owners of other ontologies. Full modal/causal UFO semantics, expert acceptance, production deployment and browser acceptance of a separate application are not established by these finite controls.
 
+The [external-reference register](../../guide/External-References.md) explains all 27 handles and the 17 preserved locators that use a private research namespace. The [publication-boundary review](publication-boundary-review.md) records the current candidate and historical inspection. The [release plan](../../development/release-plan.md) gives the finite work and exit criteria for the public increments.
+
 ## Separate work
 
 Physical SQLite or PostgreSQL packages, an operational database, the separate Explorer application, industrial datasets and manuscript binaries are not part of the selected ontology core. Historical synthetic implementation material in earlier public commits remains part of Git history; this scope statement does not claim to erase that history.

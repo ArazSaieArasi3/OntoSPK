@@ -59,8 +59,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2863,
-      "sha256": "7c97dbb288b8ea4e11c241d52d035d639f1c85b8e4510c6377d1c3f4ff094671"
+      "bytes": 3016,
+      "sha256": "9d8b8298244048cc257c782f160b1f4f3f92207ab4c91c703b13e011af36cbc9"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -86,6 +86,11 @@
       "path": "docs/assets/site.css",
       "bytes": 1444,
       "sha256": "0ef3aa9a8e4a93c0b3e7b989b90124ca9680245e9c523894e43030035c73eab0"
+    },
+    {
+      "path": "docs/development/release-plan.md",
+      "bytes": 7070,
+      "sha256": "5ae3432bbc089d2574325766784878b1c76315bc1cff102b16b867c3cdca5664"
     },
     {
       "path": "docs/downloads/CITATION.cff",
@@ -168,6 +173,16 @@
       "sha256": "88ce96e96c50a60e63be922e786e400a22e8b9dd0e0999c434ed191324dabfa2"
     },
     {
+      "path": "docs/guide/External-References.html",
+      "bytes": 10604,
+      "sha256": "06b9e389bdd233bb7003a4bb8c5f2f450bcea37d96a72618c82ea8cbdd3d440d"
+    },
+    {
+      "path": "docs/guide/External-References.md",
+      "bytes": 7207,
+      "sha256": "6b0ff755c5731eaedd8e3966b5706b5ac7ea8b391d05ca6cc80130dd9baffefb"
+    },
+    {
       "path": "docs/guide/Formalization.html",
       "bytes": 4653,
       "sha256": "3a5f0a9e5d0fecfb256595d31b8e4b5c3acc187e23494720246180be3fb74e9e"
@@ -189,13 +204,13 @@
     },
     {
       "path": "docs/guide/Limitations.html",
-      "bytes": 2480,
-      "sha256": "d674cb84f0fcb1561a4efd1bca5b30bd46e9cca628a8c63017bbf09e2edc8788"
+      "bytes": 2914,
+      "sha256": "0761cbe96166e3ce77f822f2a4d42e8fe29fd69baa8edfb7c960680f0bb69fa2"
     },
     {
       "path": "docs/guide/Limitations.md",
-      "bytes": 1289,
-      "sha256": "df6380f00242993a12b6c451684c61eef7bdcaaa1ccfd702220bab7dfefd958e"
+      "bytes": 1704,
+      "sha256": "90cbca8832b19ba95dd97162d55ad724f68c5063c8fe2990d1ee4139e5a6eaa1"
     },
     {
       "path": "docs/guide/Overview.html",
@@ -284,8 +299,8 @@
     },
     {
       "path": "docs/reference/native/classes.html",
-      "bytes": 267832,
-      "sha256": "9c913b7d3af47b86a7cb9fae6e2d88af31c88d0502d833b63e761a9a04b0d92c"
+      "bytes": 268085,
+      "sha256": "a5f1da391e23b117a9d645b8bed69bb4881359da6579c5a6fea154fa9aa4680e"
     },
     {
       "path": "docs/reference/native/commitments.html",
@@ -334,8 +349,13 @@
     },
     {
       "path": "docs/releases/v2.0.0/README.md",
-      "bytes": 3053,
-      "sha256": "735b7a3dfb6ef205645ed3930a20f4bfe047a142b7133b2a90347688fcdbc3ab"
+      "bytes": 3461,
+      "sha256": "8b55e675d5792c0558fe6e691027a4c5df66f373b09907060969da181c85b846"
+    },
+    {
+      "path": "docs/releases/v2.0.0/publication-boundary-review.md",
+      "bytes": 4569,
+      "sha256": "3bfafcf5098ef6b5561508fde6dce67200a018f2edae4f869423bd4676be0cac"
     },
     {
       "path": "docs/research/related-ontologies/complementary-comparisons.json",
@@ -543,14 +563,24 @@
       "sha256": "46686497d1333652ab663e4633b11b76e047f0f1aa7728d2a7068673a791d5fb"
     },
     {
+      "path": "evaluation/external-boundary-status.json",
+      "bytes": 18202,
+      "sha256": "2199f300c3dac155d9033406aa1541622e2f4aac9ff7529d95f037e015afe06a"
+    },
+    {
       "path": "evaluation/public-repository-verification.json",
       "bytes": 590,
       "sha256": "0fc2d1a55e7ffc08eb34ed8bb668c9771206e0e71202d1688bd84b34fa4040e7"
     },
     {
+      "path": "evaluation/publication-boundary-review.json",
+      "bytes": 849,
+      "sha256": "6070e6761609ab15606289ecb24283cee12eaed3cb6811c477ca8accc31195a6"
+    },
+    {
       "path": "evaluation/publication-checks.json",
       "bytes": 496,
-      "sha256": "43a51d00cc0a2ab09c66c4ed90d5e1de83ddf44dcb1eef53af927fb9983d8817"
+      "sha256": "391ebd097b93e6aa6366814a487257930e31389671958daba4354aabb79191df"
     },
     {
       "path": "evaluation/results/INTEGRATION_RESULTS.json",
@@ -794,8 +824,8 @@
     },
     {
       "path": "semantic/product/v2/reference/classes.md",
-      "bytes": 248891,
-      "sha256": "1782d505502f840d683f6791ed928a4e4c7f421ca8fa1431eb2ace345a198660"
+      "bytes": 249136,
+      "sha256": "512f70b1f8f7c5c7c34c741c184a544f1fc4ab887f0bc0ee193c7116e394bb2f"
     },
     {
       "path": "semantic/product/v2/reference/commitments.md",
@@ -804,8 +834,8 @@
     },
     {
       "path": "semantic/product/v2/reference/complete-reference.html",
-      "bytes": 1419606,
-      "sha256": "c02978175d855fa42af7869dcc29520dd4ccba54592f0d3e98f25905d9fa0d9f"
+      "bytes": 1419851,
+      "sha256": "45e3233befea147a670b71813655092da52fcb1b4a3f72748f1cb30beb2cf284"
     },
     {
       "path": "semantic/product/v2/reference/generalizations.md",
@@ -3449,8 +3479,8 @@
     },
     {
       "path": "tools/ontospk/build_reference.py",
-      "bytes": 8387,
-      "sha256": "1eac57ba69b39446b7fd48c9aedb1e2bd79adaae86e5b9110dd649b54933bd8e"
+      "bytes": 8635,
+      "sha256": "b291c9e54967ee18d7f4b6d3a7f00849b42c140ca88aab0d690a690b40c3e02d"
     },
     {
       "path": "tools/ontospk/check_fol.py",
@@ -3466,6 +3496,11 @@
       "path": "tools/ontospk/run_validation.py",
       "bytes": 5712,
       "sha256": "4dc242a84c272a1bc241b190df8f133311c0341d210716224846fdd249ce5733"
+    },
+    {
+      "path": "tools/publication/build_external_boundary_report.py",
+      "bytes": 6546,
+      "sha256": "e442997e4a62a45c33260fb67fd25531a9a04418326846a4ca63b1d47c6a836b"
     },
     {
       "path": "tools/publication/build_manifest.py",
@@ -3528,6 +3563,11 @@
       "sha256": "2d3e65ba8612c8a24a53fa13c38e0ac8eabe79fdeeb4a9461c07a9a2c3fbe984"
     },
     {
+      "path": "wiki-src/External-References.md",
+      "bytes": 7396,
+      "sha256": "79271627da14bae4b9553aa3c0d5a6b24141b44b17e5212cb01f68b5d2796a18"
+    },
+    {
       "path": "wiki-src/Formalization.md",
       "bytes": 3467,
       "sha256": "6727186d55cc29f7f65063964389f8cc5295f4789c0c61f4accfb7e9cc642ac1"
@@ -3539,8 +3579,8 @@
     },
     {
       "path": "wiki-src/Limitations.md",
-      "bytes": 1289,
-      "sha256": "df6380f00242993a12b6c451684c61eef7bdcaaa1ccfd702220bab7dfefd958e"
+      "bytes": 1701,
+      "sha256": "c3319afb3394a11445f283eedf83fac2f7264fa2b83391cec1307ec069b14853"
     },
     {
       "path": "wiki-src/Overview.md",
@@ -3584,8 +3624,8 @@
     },
     {
       "path": "wiki-src/_Sidebar.md",
-      "bytes": 399,
-      "sha256": "6abfb1cb7be441e99613971f1029a709533749eb351b6edf31e3afae876828d1"
+      "bytes": 444,
+      "sha256": "4152479e95678595e994465153f8305d6c537469d43d4dee201da881b85b7293"
     }
   ],
   "manifest_self_inclusion": false
