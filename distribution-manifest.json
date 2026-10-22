@@ -54,8 +54,8 @@
     },
     {
       "path": "LICENSING.md",
-      "bytes": 718,
-      "sha256": "47e321b22625f62af61f177126ec8df17c38b38ec7c5e50d44e03d342f31d9e4"
+      "bytes": 1070,
+      "sha256": "eb818a9f48be7914857d8b546bae28bd797213506f2573d2b2a8bcb14ebfdfd3"
     },
     {
       "path": "README.md",
@@ -89,8 +89,8 @@
     },
     {
       "path": "docs/development/release-plan.md",
-      "bytes": 7070,
-      "sha256": "5ae3432bbc089d2574325766784878b1c76315bc1cff102b16b867c3cdca5664"
+      "bytes": 7483,
+      "sha256": "89a4a0ab6bc469e0f922a3dd74909d7fdcf453c3e0cf4c2b868c789c0e588e80"
     },
     {
       "path": "docs/downloads/CITATION.cff",
@@ -359,8 +359,8 @@
     },
     {
       "path": "docs/releases/v2.0.0/rights-readback.md",
-      "bytes": 4737,
-      "sha256": "83a842ae2918986523dcf5b6fbe1c1b2e6eec2ee729c9bd83e25be49a45b6f44"
+      "bytes": 5019,
+      "sha256": "46a6a03414c0ab8db9cee692029643aaa08228d14816981d00638dfa7c02e2df"
     },
     {
       "path": "docs/research/related-ontologies/complementary-comparisons.json",
