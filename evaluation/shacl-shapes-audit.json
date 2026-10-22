@@ -1,6 +1,6 @@
 {
   "scope": "Four runtime-loaded public-core SHACL graphs; shape integrity and activation inventory",
-  "status": "GRAPH_AUDIT_EXECUTED; FULL_CONSTRAINT_CASE_COVERAGE_PENDING_15_16",
+  "status": "GRAPH_AUDIT_EXECUTED; ISOLATED_SIMPLE_COMPONENT_CASES_15_SEPARATE; COMPLEX_CASES_16_PENDING",
   "additional_source_shape_graphs_outside_runtime": [],
   "graphs": [
     {
