@@ -13,7 +13,7 @@ Each release has a finite scope and its own acceptance criteria. Publish a compl
 | v2.0.2 | Expanded finite evaluation | Inventory-derived SHACL/HermiT/ROBOT/CQ coverage, controlled adverse cases, readable findings and reproducible evidence. A semantic defect requiring a model change must use a suitable semantic release instead of silently changing this patch. |
 | v2.1.0 | Accepted semantic revisions | Only changes justified by resolved external contracts or scientific identity/event review. This release is conditional on actual accepted model changes and does not block the preceding patches. |
 
-The execution order is the public core release, Wiki, Pages/WebVOWL, and the expanded evaluation increment. Evaluation design can proceed after the core migration; publication of the initial core does not claim that the expanded suite has run. The conditional semantic increment is a separate workstream.
+The execution order is the public core release, Wiki, Pages/WebVOWL, and the expanded evaluation increment. Evaluation design can proceed after the core migration; publication of the initial core does not claim that the expanded suite has run. The conditional semantic increment is a separate workstream. Its external-boundary reviews (#23–#27) use a self-contained OntoSPK interpretation as a design objective: decide concept by concept whether a locally defined concept with provenance annotation is justified, while retaining source citations without making a private owner repository a runtime dependency. Any accepted native/logical change is explicitly versioned and does not alter the frozen v2.0.0 identity.
 
 ## v2.0.0
 
