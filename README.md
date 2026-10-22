@@ -35,7 +35,7 @@ Conceptual classes, named OWL classes and physical SQL tables are different inve
 
 ## Documentation and examples
 
-Curated explanations are maintained in `docs/guide`. The Wiki snapshot is derived from those pages. The static portal in `docs` provides the generated logical reference, diagrams, downloads and WebVOWL. See [documentation publication status](docs/publication-status.json) before assuming that a live Wiki or Pages deployment exists.
+Read the curated guide in the [GitHub Wiki](https://github.com/ArazSaieArasi3/OntoSPK/wiki). It is maintained in `docs/guide` and projected into `wiki-src`; the [publication receipt](evaluation/wiki-publication-verification.md) records the accepted live snapshot. The static portal in `docs` provides the generated logical reference, diagrams, downloads and WebVOWL, with live Pages deployment still pending. See [documentation publication status](docs/publication-status.json) for the separate publication states.
 
 The test populations are synthetic. Passing the documented finite controls does not establish complete UFO modal or causal adequacy, independent domain validation, external-owner acceptance or production readiness. The physical database and Explorer are separate work; neither is part of this ontology-core distribution.
 

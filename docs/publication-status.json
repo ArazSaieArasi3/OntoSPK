@@ -8,8 +8,11 @@
   "remote_semantic_ci": "ACCEPTED_CORE_CANDIDATE_PASSED",
   "wiki": {
     "source": "wiki-src",
-    "state": "LIVE_HOME_PLACEHOLDER_ONLY; CURATED_GUIDE_PENDING",
-    "published_ref": "53ea75cda3a0bda4cb9edd76df39eea2089bfe68"
+    "state": "LIVE_PUBLISHED_VERIFIED",
+    "published_ref": "24bc0b25f935a639e9ee247f07a601baf243365d",
+    "reviewed_source_commit": "a1da92ddfe23f2d4fbde88de942315fdeeb6675d",
+    "verification_report": "evaluation/wiki-publication-verification.json",
+    "verified_reader_pages": 15
   },
   "pages": {
     "source": "docs",

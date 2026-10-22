@@ -1,0 +1,269 @@
+{
+  "status": "PASS_LIVE_WIKI_READBACK",
+  "recorded_at": "2026-10-22T19:04:52+03:30",
+  "wiki_url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki",
+  "wiki_commit": "24bc0b25f935a639e9ee247f07a601baf243365d",
+  "reviewed_source_commit": "a1da92ddfe23f2d4fbde88de942315fdeeb6675d",
+  "repository_commit_at_readback": "3e34b93d157bcd44499e07b4b2ba352d71e17a90",
+  "source_directory": "wiki-src",
+  "publication_actor": "repository owner, using the prepared source",
+  "published_files": 17,
+  "reader_pages": 15,
+  "published_support_files": 2,
+  "excluded_repository_note": "README.md",
+  "source_file_comparison": "17 of 17 exact byte matches; no extra Markdown files",
+  "files": [
+    {
+      "file": "Citation.md",
+      "sha256": "7f69121651beb3b4c96bb6ec0839601dc4aea1099feac40363390ee808f319ad",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Competency-Questions.md",
+      "sha256": "bfe97e1879da2605312970acfae81f62facfb33c81b7d37653155b58e19ca319",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Conceptual-Model.md",
+      "sha256": "fd1c0c7db04b67bb64727e11e0d7bd27771f63f40014219860a9da577412da00",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Constraints.md",
+      "sha256": "4d82350b6f08fac7c2561f3fdef0d1af6a497e2730d167c4e758666aff265e5b",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Domains.md",
+      "sha256": "48987ff170078c0305433ace00b3a85074db9aa0899fd2112d73673e56a6d173",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "External-References.md",
+      "sha256": "af0f194b77eb543ff532c0ea7b9a12fd03bad2f6b0d22abeb6eb94d3094c09f5",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Formalization.md",
+      "sha256": "b50dc748a2898ef752ae4d14c53a58dc8ba3af8dffc2cfab6183b4d1311dca10",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Home.md",
+      "sha256": "2492668233cb4870c0599de04fe4b11e2684cb0ff4d261b31acd44e77585ba88",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Limitations.md",
+      "sha256": "9972d6b9ebe705b37462f255849ed483074fdb47c5003e57d15ba61d9b5cda92",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Overview.md",
+      "sha256": "6648d23ceb0120a8252fc9f848c8f4894ac5c040013b43ac04548059433265c9",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Quality.md",
+      "sha256": "baefab4f93ca8eebb35e109cf3d8fb1868be23c86adbd1f72061b5d67a457f64",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "References.md",
+      "sha256": "4300c788a89ed69762d7c918e67e394b49c67d8081c9d9bbe38f5bb90c948733",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Reproduce.md",
+      "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Versions.md",
+      "sha256": "e989a4dea1fb77b9d6d929dbba25058a5cfae76d208a4cfbb44c3e1f9c84d7a7",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "Visualization.md",
+      "sha256": "d260bbba6fcfeec71f83d3aae9c2235d6ffc33b0366ca83a07fa86b734cb834a",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "_Footer.md",
+      "sha256": "6a767e4abcca4347bee607b1eadc31e39f38f43836fb14f75f809d75174491ca",
+      "matches_reviewed_source": true
+    },
+    {
+      "file": "_Sidebar.md",
+      "sha256": "820acf2ced821219a819b9ccc715a48841bc91f472e56b82d6d06a94fa609aca",
+      "matches_reviewed_source": true
+    }
+  ],
+  "browser_readback": {
+    "method": "Read-only GitHub browser navigation and rendered DOM inspection",
+    "pages": [
+      {
+        "page": "Home",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "Overview",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Overview",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "Domains",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Domains",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 1,
+        "code_blocks": 0
+      },
+      {
+        "page": "Conceptual-Model",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Conceptual-Model",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "External-References",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/External-References",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 1,
+        "code_blocks": 0
+      },
+      {
+        "page": "Formalization",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Formalization",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 1
+      },
+      {
+        "page": "Constraints",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Constraints",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 1,
+        "code_blocks": 0
+      },
+      {
+        "page": "Competency-Questions",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Competency-Questions",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "Quality",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Quality",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 1,
+        "code_blocks": 0
+      },
+      {
+        "page": "Reproduce",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Reproduce",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 3
+      },
+      {
+        "page": "Visualization",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Visualization",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "Versions",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Versions",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 1,
+        "code_blocks": 0
+      },
+      {
+        "page": "Citation",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Citation",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "References",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/References",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      },
+      {
+        "page": "Limitations",
+        "url": "https://github.com/ArazSaieArasi3/OntoSPK/wiki/Limitations",
+        "rendered": true,
+        "sidebar_contains_all_15_pages": true,
+        "footer_core_release_v2_0_0": true,
+        "tables": 0,
+        "code_blocks": 0
+      }
+    ],
+    "home_to_overview_click": "PASS",
+    "sidebar_sections": 3,
+    "sidebar_pages": 15,
+    "sidebar_on_all_pages": true,
+    "footer_on_all_pages": true,
+    "unresolved_internal_page_targets": [],
+    "malformed_or_nested_wiki_routes": [],
+    "rendered_tables": 5,
+    "rendered_code_blocks": 4,
+    "core_release_link_followed": {
+      "url": "https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0",
+      "title": "OntoSPK v2.0.0 — ontology core",
+      "tag_commit": "ccea141bcc238a4aae47e631cadc1809b738bc73",
+      "uploaded_assets": 4
+    }
+  },
+  "source_link_checks": {
+    "reader_markdown_links": 73,
+    "internal_wiki_links": 29,
+    "pinned_tag_paths": 27,
+    "method": "Source audit checks internal page names and repository paths against the v2.0.0 tag tree; browser checks rendered destinations and loads all 15 page endpoints."
+  },
+  "limitations": [
+    "This is a dated acceptance receipt, not continuous monitoring of the mutable Wiki.",
+    "Third-party website availability and external-owner equivalence are not established by this check.",
+    "Pages, WIDOCO hosting and WebVOWL browser acceptance remain separate work.",
+    "No new ontology release or scientific-semantic acceptance is claimed."
+  ]
+}
