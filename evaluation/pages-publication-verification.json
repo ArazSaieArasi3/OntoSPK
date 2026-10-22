@@ -1,0 +1,2298 @@
+{
+  "status": "PASS_LIVE_PAGES_AND_WEBVOWL",
+  "recorded_at": "2026-10-22T21:07:35.440966+03:30",
+  "ontology_core": "v2.0.0",
+  "documentation_version": "v2.0.1",
+  "frozen_documentation_source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+  "accepted_runtime_commit": "4564169a4a01e9f87909578e0c4f2c559ee7a8c1",
+  "pages_url": "https://arazsaiearasi3.github.io/OntoSPK/",
+  "frozen_url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html",
+  "current_url": "https://arazsaiearasi3.github.io/OntoSPK/current/index.html",
+  "documentation_ci_run": 39820926626,
+  "accepted_deployment_run": 39822912779,
+  "initial_deployment_run": 39819173013,
+  "queued_automatic_deployment_run": 39821066044,
+  "reader_pages": [
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "OntoSPK documentation",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Home.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Overview",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Overview.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Domains",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Domains.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Conceptual model",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Conceptual-Model.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Formalization and logical semantics",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Formalization.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Constraints and interpretation",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Constraints.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Competency questions",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Competency-Questions.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Evaluation and reasoning",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Quality.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Reproduce the evaluation",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Reproduce.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Visualization",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Visualization.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "External references and ownership boundaries",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/External-References.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Versions and source identity",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Versions.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Citation and reuse",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Citation.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "References and technical sources",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/References.html"
+    },
+    {
+      "images": [],
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Limitations and open scientific questions",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/guide/Limitations.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Software product knowledge, explicitly modeled",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "OntoSPK conceptual and formal reference",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/native/index.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Evaluation and evidence",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/evaluation/index.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Downloads",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/downloads/index.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "OntoSPK first-order specification",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/formal/index.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "OntoSPK: bounded comparison with related ontologies",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/related-ontologies.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Class catalogue",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/native/classes.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Association catalogue",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/native/associations.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Generalizations and sets",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/native/generalizations.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Bounded commitments",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/native/commitments.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Finite evaluation coverage register",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/evaluation/coverage-register.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Coverage plan for the public ontology core",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/evaluation/comprehensive-coverage-plan.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Active SHACL graph audit",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/evaluation/shacl-shapes-audit.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Simple SHACL constraint case execution",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/evaluation/shacl-simple-constraints.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Live Wiki publication verification",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/evaluation/wiki-publication-verification.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Native first-order specification",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/formal/native-structure.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Explicit logical-profile projection",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/formal/profile-projection.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Mappings and scoped contracts",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/formal/scoped-contracts.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Review of the FOL transcription",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/formal/review.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Logical ontology reference",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/owl/index.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Classes",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/owl/classes.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Object Properties",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/owl/object-properties.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Datatype Properties",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/owl/datatype-properties.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Individuals",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/owl/individuals.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Find a class or property",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/reference/search.html"
+    },
+    {
+      "lang": "en",
+      "main": true,
+      "nav": true,
+      "source": "e678145e1c69aca65e87e4875b109bfca07e4648",
+      "title": "Explore the OWL profile",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/explore/index.html"
+    }
+  ],
+  "reader_landmarks_and_language_verified": true,
+  "search": {
+    "entries": 581,
+    "ProductRealization_matches": 2,
+    "separate_native_and_owl_entries": true,
+    "zero_match_case": 0,
+    "native_anchor": "productrealization"
+  },
+  "widoco": {
+    "named_classes": 121,
+    "object_properties": 286,
+    "datatype_properties": 46,
+    "urn_anchor_click_and_reload_verified": true,
+    "tested_anchor": "urn:product-ontology:external-boundary:0.7:Architecture:ArchitectureElement",
+    "rdf_downloads_graph_isomorphic_to_core": 4
+  },
+  "webvowl": {
+    "url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/webvowl/index.html#ontospk",
+    "selectedClassIri": "urn:productium:specification-profile:ProductRealization",
+    "selection": "tyFindi...\nUserFlowSpeci...\nUserRoleSpeci...\nUserStorySpeci...\nValidationEvi...\nValidationFin...\nVerificationE...\nVerticalSliceSp...\nVisionStatement\nProductRealiza...\n>\n \u2316 \nOntology \nExport \nFilter \nOptions \nModes \nReset Resume \nAbout\n\n\u2316\n\n+\n\n-\n\nOntoSPK bounded OWL profile\nurn:productium:specification-profile:\nVersion: Logical profile 0.43.0; ontology core v2.0.0\nAuthor(s): --\nLanguage: \nen\nDescription\n\nAn exploratory projection of asserted named classes, declared property endpoints and URI subclass edges. It does not encode all restrictions, disjointness, SHACL or SQL policies.\n\nMetadata\nStatistics\nSelection Details\n\nName: ProductRealization\n\nType: owl:Class\n\nComment: A concrete, causally integrated computing-system artifact configured to enact one fixed product-version baseline. It is the deployed functional whole, not its record, hosting machine, execution event or deployment interval.",
+    "collapsingFilter": "0",
+    "pauseLabel": "Resume",
+    "embedded_graph_labels_observed": 194,
+    "full_graph_labels_after_zero_collapse": 480,
+    "download_navigation_verified": true,
+    "omitted_declared_properties": 10,
+    "scope": "Exploratory asserted-endpoint projection; automatic display collapsing is separate from adapter omissions."
+  },
+  "source_identity": {
+    "native_sha256": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+    "logical_sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12"
+  },
+  "http_readback": {
+    "recorded_at": "2026-10-22T17:35:53.057469+00:00",
+    "deployment_commit": "4564169a4a01e9f87909578e0c4f2c559ee7a8c1",
+    "baseline_deployment_commit": "16493a522dc23f4c9fefc1aa963260c89e6946c5",
+    "files_checked": 228,
+    "changed_files_fetched": 45,
+    "unchanged_files_reconciled": 183,
+    "all_match": true,
+    "manifest_sha256": "a442de25238b0e4cbc44c73325a2ef70565d568ba523693798a3fc9fa3f44005",
+    "presentation_adjustments": [
+      {
+        "id": "webvowl-1.1.7-view-mode-controls",
+        "source": "tools/publication/viewer_compat.py",
+        "source_sha256": "25c3d8099b17efee8ad253bdb92c1737d1b887b7da76a61ad49b9f473e5c944c",
+        "scope": "Retain hidden DOM controls required by upstream view-mode initialization; hide unavailable editing; label search and keep the title visible. No RDF or graph JSON changes."
+      }
+    ],
+    "excluded_control_files": [
+      ".nojekyll",
+      "current/.nojekyll",
+      "releases/v2.0.1/.nojekyll"
+    ],
+    "files": [
+      {
+        "path": "current/assets/portal.css",
+        "status": 200,
+        "bytes": 3734,
+        "sha256": "1f06478e0e13fddc3ce2fba93220c8bf0bcefc996590d7fcc7ec256df63cae80",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/assets/selected-model.svg",
+        "status": 200,
+        "bytes": 167103,
+        "sha256": "b65fe848f76df6d2a47c1e29b8266b440e01cff76ea588e90dda572307cab3ca",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/assets/site.css",
+        "status": 200,
+        "bytes": 1444,
+        "sha256": "0ef3aa9a8e4a93c0b3e7b989b90124ca9680245e9c523894e43030035c73eab0",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/assets/term-search.js",
+        "status": 200,
+        "bytes": 710,
+        "sha256": "6511614e2189182608550c83bed02fd88a04f174aeb0fa8638f4a8e643565316",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/development/release-plan.md",
+        "status": 200,
+        "bytes": 7483,
+        "sha256": "89a4a0ab6bc469e0f922a3dd74909d7fdcf453c3e0cf4c2b868c789c0e588e80",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/downloads/CITATION.cff",
+        "status": 200,
+        "bytes": 404,
+        "sha256": "58dae0f82f1d7c66648f42a9841cbd3b8df6bec7c5dc5c4137892dfdca5e8091",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/downloads/SHA256SUMS.txt",
+        "status": 200,
+        "bytes": 241,
+        "sha256": "811d8ce9024508dae87b71df810c26c7ef287a61ea8dfd9ca828ac44c7ff01aa",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/downloads/index.html",
+        "status": 200,
+        "bytes": 4982,
+        "sha256": "466ae89e553ccddcc6f63b6fe72b17a4c6ae503b71e7fa7d32f0a50902b6eaa8",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/downloads/native-to-owl.csv",
+        "status": 200,
+        "bytes": 16212,
+        "sha256": "e05b40fb8537c08265a883748613cab69b3e1fc7bb8405e96d93fcd12b5cd4fa",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/downloads/ontospk.ttl",
+        "status": 200,
+        "bytes": 156624,
+        "sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/editorial-policy.md",
+        "status": 200,
+        "bytes": 751,
+        "sha256": "0eeccfa434597d4db44db11031d6116f4656559bed9b3a2f8b249c11a740af87",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/evaluation/comprehensive-coverage-plan.html",
+        "status": 200,
+        "bytes": 6957,
+        "sha256": "69d13d8cfdd73fdc92b23a87a85d484911166010a93ac55c4e78432272856887",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/evaluation/coverage-register.html",
+        "status": 200,
+        "bytes": 6932,
+        "sha256": "8b187e90a12dbc0c1a84c31c9627bb6f01c4e8eb8bee55c5a05c814c478c9810",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/evaluation/index.html",
+        "status": 200,
+        "bytes": 5538,
+        "sha256": "c555ab5e527da417d27bee390bd280fbeeb9e05f56ed79ed2cba6aa67ba65170",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/evaluation/shacl-shapes-audit.html",
+        "status": 200,
+        "bytes": 6563,
+        "sha256": "a5b46e0a3d438e6a2f6145df6d708daf9343333fc46f925a89afc4df6859db31",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/evaluation/shacl-simple-constraints.html",
+        "status": 200,
+        "bytes": 5788,
+        "sha256": "59d01309c4505254dae33dde37a65b5873e84235c66121b533a68c09845648af",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/evaluation/wiki-publication-verification.html",
+        "status": 200,
+        "bytes": 6239,
+        "sha256": "dcb2c6c85faaf6f320770933376da87a2d173cb0209d8882385d23d78294e94e",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/explore/index.html",
+        "status": 200,
+        "bytes": 6472,
+        "sha256": "ff1edd91965c3c1e7054720bd682f54403bf0f4b8599a1c5c40aaddd3ae2b26d",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Citation.html",
+        "status": 200,
+        "bytes": 4254,
+        "sha256": "f01e71cc0983f9a7c76f1e680b4d801ce38be5eb233b769a5ae3a4f341aaa722",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Citation.md",
+        "status": 200,
+        "bytes": 790,
+        "sha256": "627fabfae68fd60fcb9043db663ca68d3d081fc973b63a04baf6242054c56388",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Competency-Questions.html",
+        "status": 200,
+        "bytes": 4397,
+        "sha256": "e815f2cad1e8790618539d13eea3084f163a5e4df075c91754d1cb8804ba192a",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Competency-Questions.md",
+        "status": 200,
+        "bytes": 984,
+        "sha256": "de31b446404dab4b78933589b639787b480916cec197ee7e4f4bc4b507a41cdd",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Conceptual-Model.html",
+        "status": 200,
+        "bytes": 4478,
+        "sha256": "c0e166949a6a47cbea2f36cae672902d2fb245ec4837c69562187a59056f8689",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Conceptual-Model.md",
+        "status": 200,
+        "bytes": 1108,
+        "sha256": "8d98eacf8260202d1239f765bf5e76ed2aecfd11311ff259a3245d3750ee2cfc",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Constraints.html",
+        "status": 200,
+        "bytes": 4872,
+        "sha256": "1180f106cc70474f16bdceb5ec7dd5d4cc2231651fb035aad60db25849f18ca8",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Constraints.md",
+        "status": 200,
+        "bytes": 1301,
+        "sha256": "f2d0bf36a5db3fd688a1fd18cf8ef1e994a8443278d560df891273501f06d3d2",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Domains.html",
+        "status": 200,
+        "bytes": 5304,
+        "sha256": "97b5a6ad6bcfee79819c4f7ceaa596bd5200b708b877a044a7c1b920a424fada",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Domains.md",
+        "status": 200,
+        "bytes": 1741,
+        "sha256": "88ce96e96c50a60e63be922e786e400a22e8b9dd0e0999c434ed191324dabfa2",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/External-References.html",
+        "status": 200,
+        "bytes": 13255,
+        "sha256": "fa322c2717ffb4f624e55ce4e5de56fc1650dcaca98153e7f9f960c6478eff27",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/External-References.md",
+        "status": 200,
+        "bytes": 7207,
+        "sha256": "6b0ff755c5731eaedd8e3966b5706b5ac7ea8b391d05ca6cc80130dd9baffefb",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Formalization.html",
+        "status": 200,
+        "bytes": 7066,
+        "sha256": "5c61a88fbd2db8c1a9759920656998b7289df6ee5dc8f795e118e5283f0e259f",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Formalization.md",
+        "status": 200,
+        "bytes": 3089,
+        "sha256": "acdbe841b3f75b38056d781ae12cb5e2598347a2a579c632dd8132c062e64d53",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Home.html",
+        "status": 200,
+        "bytes": 5240,
+        "sha256": "674325e7856d21f5357bdcc03a28c5bee1cbc273965f9ae738c9bd365f5c5c41",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Home.md",
+        "status": 200,
+        "bytes": 1620,
+        "sha256": "80f1098c0869b1d539a6b3af84a9bd4f8001a5ea45fe20f42e39d00e3913133b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Limitations.html",
+        "status": 200,
+        "bytes": 5122,
+        "sha256": "8e0301556abf0ed4208d70dcadcfe51342d2da52b99a8cbdbc4a49128e0ae714",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Limitations.md",
+        "status": 200,
+        "bytes": 1694,
+        "sha256": "0ef78d258770af5a37fdafff8ead5b1f83cb94c3dfd3b4e46b1d5a70638bc547",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Overview.html",
+        "status": 200,
+        "bytes": 4437,
+        "sha256": "b83b68dd948702ec989a62673365931716c89beee4e0f9defde514ce549895e5",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Overview.md",
+        "status": 200,
+        "bytes": 1140,
+        "sha256": "bd2d188feb49d511657edf1ff3e58c2ddcaa1a3d09c4d5219f693a005f704f6c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Quality.html",
+        "status": 200,
+        "bytes": 6118,
+        "sha256": "04ee9ebc0f40186971c75d61ac239e4c2f7eefd5f7c0666f111de68580f4d846",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Quality.md",
+        "status": 200,
+        "bytes": 2464,
+        "sha256": "50480e373dc6d8eb41ae2f20f6af1179f2127b1e61da870805e1fa6cf2ef015c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/References.html",
+        "status": 200,
+        "bytes": 4652,
+        "sha256": "38ea031e3ceb7c9e67407207907f60e8e556e9e99833fc3b65a969e0287f424e",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/References.md",
+        "status": 200,
+        "bytes": 1220,
+        "sha256": "669a4d268acffc06869eea46897d7dde2a28f5b7ba5fef844671b1436e138751",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Reproduce.html",
+        "status": 200,
+        "bytes": 6101,
+        "sha256": "b937498d5b4b12a39221af6b3a8cef8713740c5a57e40fb5788f9aefa9dc8b38",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Reproduce.md",
+        "status": 200,
+        "bytes": 2587,
+        "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Versions.html",
+        "status": 200,
+        "bytes": 5263,
+        "sha256": "1f50945e1207d0fc672bd098d85c72a916c024a57a115fd4d70ca68bb91a6f9d",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Versions.md",
+        "status": 200,
+        "bytes": 1603,
+        "sha256": "352a150c2ac084f1ebb89005543bc2c0645490d0c6928f87fa2635b45ad7ed58",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/guide/Visualization.html",
+        "status": 200,
+        "bytes": 4422,
+        "sha256": "185933b386b5b8cefdb7dd03824b47df996e3f7beb95ca2aef2f4bd1193e63a3",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/guide/Visualization.md",
+        "status": 200,
+        "bytes": 1142,
+        "sha256": "f2aae4976228f57bbee1f3924538e4afd6f1359fd73757ed2d5bb725a2621f86",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/index.html",
+        "status": 200,
+        "bytes": 5832,
+        "sha256": "6887a5ea27afabb30207d68b69ffab424793d8d548d135f59bda9996e3fb7723",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/publication-status.json",
+        "status": 200,
+        "bytes": 1676,
+        "sha256": "cd1cf4390d34b369803c1aa2fb2908fabc430b9a297bf0c994aeec2e5427bb9b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/reading-guide.md",
+        "status": 200,
+        "bytes": 415,
+        "sha256": "24a71fadeada97cd1b358a6fcc380d421c844f2534556cc5336609b1837d3886",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/reference/coverage.json",
+        "status": 200,
+        "bytes": 1053,
+        "sha256": "aa5937765a560990bf9fe9fa488044a7b81b813d2967ae195cdcab949f6ffa31",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/reference/formal/index.html",
+        "status": 200,
+        "bytes": 9447,
+        "sha256": "00d6cf5b7a1cf5188e03076fa847cd4ee05cf4f4c5c3e6b4259a863506588277",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/formal/native-structure.html",
+        "status": 200,
+        "bytes": 79331,
+        "sha256": "9cee404ec606e15cd2f40393c1492f91b4fe120f22b6ba3892ace5837f07e89b",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/formal/profile-projection.html",
+        "status": 200,
+        "bytes": 249644,
+        "sha256": "7ea68cc5115730d4a46020c6ac075e4b3ca127879e3e3ae9804341f0b844e3d9",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/formal/review.html",
+        "status": 200,
+        "bytes": 6501,
+        "sha256": "048d051c1e8f8a4574bed9203ec01806d23cb243bbaec344ea060931071fa1c1",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/formal/scoped-contracts.html",
+        "status": 200,
+        "bytes": 7495,
+        "sha256": "fd314d975943713175f68ae233650a1bb88046f6ce0414c2fc96a274e465d39a",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/native/associations.html",
+        "status": 200,
+        "bytes": 1015945,
+        "sha256": "13089f20d33d4612e5fcb058266894ebfb79f2fca50aa2191c2bfce787ea630d",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/native/classes.html",
+        "status": 200,
+        "bytes": 271551,
+        "sha256": "4920c76c69851cd2b04533f0883470410b804b46911db71ba715834111023972",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/native/commitments.html",
+        "status": 200,
+        "bytes": 36069,
+        "sha256": "0ac8000f8d2d785758b365a5922a1d15e070932fecf92b71222293fe3a58bdf9",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/native/generalizations.html",
+        "status": 200,
+        "bytes": 16797,
+        "sha256": "d541d5a9dd6aad7e5f15443fad062f24fc99276e3ded31bb95ebacb4053a552b",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/native/index.html",
+        "status": 200,
+        "bytes": 5370,
+        "sha256": "b97fa248803048a8fd2e4d1819afdc9d6b0c5a10c2ea74c591f76453dc49237f",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/owl/classes.html",
+        "status": 200,
+        "bytes": 104031,
+        "sha256": "72d4e47885da43013f23f4a2a6d94d34e57b150ca3dde8a6117fdbe37aa27005",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/owl/datatype-properties.html",
+        "status": 200,
+        "bytes": 40211,
+        "sha256": "204842fb61d39496d578eb04134e478e088b3c810d6d33d8ccac0c8849673e75",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/owl/index.html",
+        "status": 200,
+        "bytes": 4340,
+        "sha256": "997b06a063614dd382f6fac1e303e4dd9880b72d5f65037f217f5af8c39e7440",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/owl/individuals.html",
+        "status": 200,
+        "bytes": 3544,
+        "sha256": "3b906157cb4ea6e0bd804c534bc3726c45a494e4dee8ef373696ff00aca0c340",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/owl/object-properties.html",
+        "status": 200,
+        "bytes": 229928,
+        "sha256": "2b38a72247523b5dec41ed686f0562455f404a0f5e7c4338e124174cc13d760d",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/reference/search.html",
+        "status": 200,
+        "bytes": 107131,
+        "sha256": "c55bb3d2fb8cc6399e59ecbdc92674f21f5fe76b7a4430fab1b68a0bb93bee68",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/related-ontologies.html",
+        "status": 200,
+        "bytes": 42877,
+        "sha256": "e9bf9d2eba148e33323d0258df908a2bb03acbcfe3dcf83d772e5c5073452c77",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/releases/v2.0.0/README.md",
+        "status": 200,
+        "bytes": 3511,
+        "sha256": "482a9ca71c26d2103cdaaebfea4454af975558223bba04e8d55be66d4ac79e31",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/releases/v2.0.0/RELEASE_NOTES.md",
+        "status": 200,
+        "bytes": 2423,
+        "sha256": "a141aeae6cef40802ba79da4063382db0df91d287374fdff91d5ae6bce1a92e5",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/releases/v2.0.0/publication-boundary-review.md",
+        "status": 200,
+        "bytes": 4569,
+        "sha256": "3bfafcf5098ef6b5561508fde6dce67200a018f2edae4f869423bd4676be0cac",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/releases/v2.0.0/rights-readback.md",
+        "status": 200,
+        "bytes": 5019,
+        "sha256": "46a6a03414c0ab8db9cee692029643aaa08228d14816981d00638dfa7c02e2df",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/research/related-ontologies/complementary-comparisons.json",
+        "status": 200,
+        "bytes": 844,
+        "sha256": "48163c70a30926355a0b555149848988e34ec894d2f9c9956b4dd30491e4c652",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/research/related-ontologies/link-audit-2026-10-15.json",
+        "status": 200,
+        "bytes": 46164,
+        "sha256": "e9055348d13eeab941379fd3e023379f0dbc6109f66d5311f197342e6da12a1b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/research/related-ontologies/primary-comparisons.json",
+        "status": 200,
+        "bytes": 7746,
+        "sha256": "a1143d49d987a0354a1caf900964aaf9338f0ae0727bf19030768cd10b715bb7",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/research/related-ontologies/reference-screening.json",
+        "status": 200,
+        "bytes": 10350,
+        "sha256": "2e474ac5795e369949353dc4219de0efc33e61cbb5a3c14f23930eb460afc3b6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/research/related-ontologies/related-ontology-comparison.md",
+        "status": 200,
+        "bytes": 31236,
+        "sha256": "dd444b748f30f04f08efff58586ffb1be38cd3f5466636a43c5eb4156f6d05c6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/research/related-ontologies/selected-correspondences.json",
+        "status": 200,
+        "bytes": 4746,
+        "sha256": "0b8716efa1882d5a6eccc207741148667a753c3435d4aef1d1c9d8c7b5d50579",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/tool-provenance.json",
+        "status": 200,
+        "bytes": 1091,
+        "sha256": "c358f10424ad55e3584f0d97be95161fe4137165eee7fb7211c851baf1742005",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/coverage.json",
+        "status": 200,
+        "bytes": 3769,
+        "sha256": "1fcaa186578c00e9520b3c297d4621f78bc89e6b5263726c7b35676fe25e59c1",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/css/webvowl.app.css",
+        "status": 200,
+        "bytes": 42680,
+        "sha256": "8323ad062f40675bcd3af6c6d11c1515fb4cb7066fac323039187d366e43b006",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/css/webvowl.css",
+        "status": 200,
+        "bytes": 5341,
+        "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/data/ontospk.json",
+        "status": 200,
+        "bytes": 168244,
+        "sha256": "a91ef0f186a93e6808e9db46b4a5e16bcd8277171210e753385187b57edb1274",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/favicon.ico",
+        "status": 200,
+        "bytes": 1150,
+        "sha256": "c5bd4a733d00a1984a4fe9c5a641f226c1a9cfc7a6f8edab20d923672cc8eee3",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/index.html",
+        "status": 200,
+        "bytes": 25602,
+        "sha256": "cc988c7e4645de216cb9668344abbcd95900c37e88f40fcbd7bd2ca34fa7726f",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/webvowl/js/d3.min.js",
+        "status": 200,
+        "bytes": 151725,
+        "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/js/webvowl.app.js",
+        "status": 200,
+        "bytes": 350023,
+        "sha256": "58d58598a0f004b86afd70667bd16d1192f006baa93c1c198579f18691848d27",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/js/webvowl.js",
+        "status": 200,
+        "bytes": 755727,
+        "sha256": "cf45907686fb827f1fce86cc415e90419a3f87bf25939d0dd40d727a7dc2913b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl/license.txt",
+        "status": 200,
+        "bytes": 1167,
+        "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/webvowl-build-package-lock.json",
+        "status": 200,
+        "bytes": 434876,
+        "sha256": "82b42809132b0fc52fa4e3bfb1f8dbf1d467f763296efe89c9059bd2e3744975",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/index-en.html",
+        "status": 200,
+        "bytes": 1469513,
+        "sha256": "1f396f46ab6781eb3e1224aa7ac6af7f8f562472f6e7b3615b9d06ca80e54ba4",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/widoco/ontology.jsonld",
+        "status": 200,
+        "bytes": 306199,
+        "sha256": "9bbfe0a352148b37c9716dea21d30a69239031ea5cad420f56bd7796dacc5455",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/ontology.nt",
+        "status": 200,
+        "bytes": 362657,
+        "sha256": "5057e2b37a6725c847fd0bf54ed764e35a206c42d42893c12bde75fd64a4aa3a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/ontology.owl",
+        "status": 200,
+        "bytes": 318455,
+        "sha256": "847f380477c54c14810fa6f5b077c5ce6211c76c802e19c2071aaa3de249fbdb",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/ontology.ttl",
+        "status": 200,
+        "bytes": 156623,
+        "sha256": "30b88af6806af8597c88ba64f33ea7413cf1bf22e8e08daa4527cb38dfc5d6c1",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/provenance/provenance-en.html",
+        "status": 200,
+        "bytes": 1233,
+        "sha256": "f272a72a87be2647e62212aef7c3ff9831f8635cca42f168320fa28c1c09aca1",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "current/widoco/provenance/provenance-en.ttl",
+        "status": 200,
+        "bytes": 324,
+        "sha256": "5bc74b9d913dd52d8d14f09bb430a3dad01776fb38bbdb40fe2df26c94515a7a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/readme.md",
+        "status": 200,
+        "bytes": 2232,
+        "sha256": "11380ffd200d73045afa944db96e79fe6d067111be552f1489eeb6c64300c565",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/dark-mode-toggle.mjs",
+        "status": 200,
+        "bytes": 14959,
+        "sha256": "2690a24a7933c85eb1bd0debd96ba522808ab2d1cddd231a51e9b4f47cd09eea",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/dark.css",
+        "status": 200,
+        "bytes": 592,
+        "sha256": "fcb1439e07a0617beb8f39510550dce1a24b85a21c5ae901c06ec489d9d53c20",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/extra.css",
+        "status": 200,
+        "bytes": 1846,
+        "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/jquery.js",
+        "status": 200,
+        "bytes": 91556,
+        "sha256": "d16d07a0353405fcec95f7efc50a2621bc7425f9a5e8895078396fb0dc460c4f",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/light.css",
+        "status": 200,
+        "bytes": 567,
+        "sha256": "3836b0a608c81346e3072756a4be2a010dd3027f573764b99769a74854a0e773",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/marked.min.js",
+        "status": 200,
+        "bytes": 47959,
+        "sha256": "5f1c959514d81adb885e3648a8397fa3285e849e5c143a4e04fa50dc52c2026b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/moon.svg",
+        "status": 200,
+        "bytes": 326,
+        "sha256": "086ffcabad215a5df0026a2f96cba1a9b49059dd8f8777d3f8316a44e5478289",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/owl.css",
+        "status": 200,
+        "bytes": 4419,
+        "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/primer.css",
+        "status": 200,
+        "bytes": 2496,
+        "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/rdf.icon",
+        "status": 200,
+        "bytes": 421,
+        "sha256": "7d73f1a6b32f2dbb65a8682928415a17ac0993a5bfa6443d5893d3fe5439d47f",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/rec.css",
+        "status": 200,
+        "bytes": 2687,
+        "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/slider.css",
+        "status": 200,
+        "bytes": 2633,
+        "sha256": "fcfd2fcf519e3a1e724c037164be41b16a9c5c2a221dec0efd5fed3d22f16ea0",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/resources/sun.svg",
+        "status": 200,
+        "bytes": 569,
+        "sha256": "26567e9916b367e1f04fdedc1b3e673e0c0e9409168d48a55a5fd9b55d1ce5ad",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "current/widoco/serialization-receipt.json",
+        "status": 200,
+        "bytes": 520,
+        "sha256": "6974b2e677319170e956dd992cb0fb694f01f2708820789b094924d9cecc02a3",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "index.html",
+        "status": 200,
+        "bytes": 1245,
+        "sha256": "7e3b4be0ba6076265a28755743ff43f9b919d0c17ce4e12507f53b12a54e8d0e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/assets/portal.css",
+        "status": 200,
+        "bytes": 3734,
+        "sha256": "1f06478e0e13fddc3ce2fba93220c8bf0bcefc996590d7fcc7ec256df63cae80",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/assets/selected-model.svg",
+        "status": 200,
+        "bytes": 167103,
+        "sha256": "b65fe848f76df6d2a47c1e29b8266b440e01cff76ea588e90dda572307cab3ca",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/assets/site.css",
+        "status": 200,
+        "bytes": 1444,
+        "sha256": "0ef3aa9a8e4a93c0b3e7b989b90124ca9680245e9c523894e43030035c73eab0",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/assets/term-search.js",
+        "status": 200,
+        "bytes": 710,
+        "sha256": "6511614e2189182608550c83bed02fd88a04f174aeb0fa8638f4a8e643565316",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/development/release-plan.md",
+        "status": 200,
+        "bytes": 7483,
+        "sha256": "89a4a0ab6bc469e0f922a3dd74909d7fdcf453c3e0cf4c2b868c789c0e588e80",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/downloads/CITATION.cff",
+        "status": 200,
+        "bytes": 404,
+        "sha256": "58dae0f82f1d7c66648f42a9841cbd3b8df6bec7c5dc5c4137892dfdca5e8091",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/downloads/SHA256SUMS.txt",
+        "status": 200,
+        "bytes": 241,
+        "sha256": "811d8ce9024508dae87b71df810c26c7ef287a61ea8dfd9ca828ac44c7ff01aa",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/downloads/index.html",
+        "status": 200,
+        "bytes": 4982,
+        "sha256": "6d55a63a4d66e9ee31ca2a8cbb2179a4491705ebf6ef856834156de6b77fc97c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/downloads/native-to-owl.csv",
+        "status": 200,
+        "bytes": 16212,
+        "sha256": "e05b40fb8537c08265a883748613cab69b3e1fc7bb8405e96d93fcd12b5cd4fa",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/downloads/ontospk.ttl",
+        "status": 200,
+        "bytes": 156624,
+        "sha256": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/editorial-policy.md",
+        "status": 200,
+        "bytes": 751,
+        "sha256": "0eeccfa434597d4db44db11031d6116f4656559bed9b3a2f8b249c11a740af87",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/evaluation/comprehensive-coverage-plan.html",
+        "status": 200,
+        "bytes": 6957,
+        "sha256": "8c722a2f204de230dcfa28f686ec89b4850d8b35493c2d0972c1b7643170ff53",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/evaluation/coverage-register.html",
+        "status": 200,
+        "bytes": 6932,
+        "sha256": "c6d7c265bd53404faedd2ac62b11b411ef6682106505453aea219a434ad09e8a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/evaluation/index.html",
+        "status": 200,
+        "bytes": 5538,
+        "sha256": "6577fcd6d1ef9aa3ce1aea8254226e291f9b2e838b870942a98b4323a583f807",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/evaluation/shacl-shapes-audit.html",
+        "status": 200,
+        "bytes": 6563,
+        "sha256": "2ca29d035d5c6b7246b348b26b41b14348189c484597a96b67bd2b5c74c94829",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/evaluation/shacl-simple-constraints.html",
+        "status": 200,
+        "bytes": 5788,
+        "sha256": "81cf37d83e1b4bfe3e2778ff706606575426f68819503dd3b5240487c0ff9b89",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/evaluation/wiki-publication-verification.html",
+        "status": 200,
+        "bytes": 6239,
+        "sha256": "ddc8764d2b89dc01e026867a4882e91fdf53b2e4caeb1fdd1c842a2818e93b5e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/explore/index.html",
+        "status": 200,
+        "bytes": 6472,
+        "sha256": "f26aabc6e7f4e2b7ce2d3b0fb747b2f51406c9eafad5dcda2477540ef4bc9bd9",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Citation.html",
+        "status": 200,
+        "bytes": 4254,
+        "sha256": "d97eb294b5a54f08783a17760174982ea2335ce9cf552f052612cc3e8897b9f2",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Citation.md",
+        "status": 200,
+        "bytes": 790,
+        "sha256": "627fabfae68fd60fcb9043db663ca68d3d081fc973b63a04baf6242054c56388",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Competency-Questions.html",
+        "status": 200,
+        "bytes": 4397,
+        "sha256": "080d24ca313352fcc43f637897a407f6220efe9723de0f5229c3518018b8b6a3",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Competency-Questions.md",
+        "status": 200,
+        "bytes": 984,
+        "sha256": "de31b446404dab4b78933589b639787b480916cec197ee7e4f4bc4b507a41cdd",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Conceptual-Model.html",
+        "status": 200,
+        "bytes": 4478,
+        "sha256": "24ea1c531490bcee0028d97c16df1140d4ccc1af2acbbc5c34d5407693763e92",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Conceptual-Model.md",
+        "status": 200,
+        "bytes": 1108,
+        "sha256": "8d98eacf8260202d1239f765bf5e76ed2aecfd11311ff259a3245d3750ee2cfc",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Constraints.html",
+        "status": 200,
+        "bytes": 4872,
+        "sha256": "108ea25358fe5476082fd7dc024c2a2fda0d93cd21555d28d7633117fe8a21e1",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Constraints.md",
+        "status": 200,
+        "bytes": 1301,
+        "sha256": "f2d0bf36a5db3fd688a1fd18cf8ef1e994a8443278d560df891273501f06d3d2",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Domains.html",
+        "status": 200,
+        "bytes": 5304,
+        "sha256": "86d6f65e8e9cbd32b266b0eea4f58cbefb48ffe33318e2bf31b3d6188c961594",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Domains.md",
+        "status": 200,
+        "bytes": 1741,
+        "sha256": "88ce96e96c50a60e63be922e786e400a22e8b9dd0e0999c434ed191324dabfa2",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/External-References.html",
+        "status": 200,
+        "bytes": 13255,
+        "sha256": "d9021ffb91fc5861d079c6c0b358dc7b136a13360ed008a0f041179894dec350",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/External-References.md",
+        "status": 200,
+        "bytes": 7207,
+        "sha256": "6b0ff755c5731eaedd8e3966b5706b5ac7ea8b391d05ca6cc80130dd9baffefb",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Formalization.html",
+        "status": 200,
+        "bytes": 7066,
+        "sha256": "e3f823cf22be87ccfd89abe32e4ed9c8c40c2a17f5818c6a6c89bce52b9b768d",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Formalization.md",
+        "status": 200,
+        "bytes": 3089,
+        "sha256": "acdbe841b3f75b38056d781ae12cb5e2598347a2a579c632dd8132c062e64d53",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Home.html",
+        "status": 200,
+        "bytes": 5240,
+        "sha256": "d13236f818b92b7f248d235623fdc81456a565bc332ba92e9e19e61be3cccea6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Home.md",
+        "status": 200,
+        "bytes": 1620,
+        "sha256": "80f1098c0869b1d539a6b3af84a9bd4f8001a5ea45fe20f42e39d00e3913133b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Limitations.html",
+        "status": 200,
+        "bytes": 5122,
+        "sha256": "28b08f71bbcffb2cffd0cb7e8376c21cd063e145d96a55d6daba781ddb026015",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Limitations.md",
+        "status": 200,
+        "bytes": 1694,
+        "sha256": "0ef78d258770af5a37fdafff8ead5b1f83cb94c3dfd3b4e46b1d5a70638bc547",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Overview.html",
+        "status": 200,
+        "bytes": 4437,
+        "sha256": "f5d2b1c3fa55be17108ff031eca5cf6f700c50dd9845ff7bcb42f97c812d8951",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Overview.md",
+        "status": 200,
+        "bytes": 1140,
+        "sha256": "bd2d188feb49d511657edf1ff3e58c2ddcaa1a3d09c4d5219f693a005f704f6c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Quality.html",
+        "status": 200,
+        "bytes": 6118,
+        "sha256": "5077e5c8daf2e3320e06e3f5f58cf3234711d7faaa64e3a437e3bb39329e196b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Quality.md",
+        "status": 200,
+        "bytes": 2464,
+        "sha256": "50480e373dc6d8eb41ae2f20f6af1179f2127b1e61da870805e1fa6cf2ef015c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/References.html",
+        "status": 200,
+        "bytes": 4652,
+        "sha256": "67a1af3e17a437c812fb8ba99bbefff817682eb48e1fd6895d4ea9ae8c79a07b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/References.md",
+        "status": 200,
+        "bytes": 1220,
+        "sha256": "669a4d268acffc06869eea46897d7dde2a28f5b7ba5fef844671b1436e138751",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Reproduce.html",
+        "status": 200,
+        "bytes": 6101,
+        "sha256": "e11332e7922a33b34f60c858368fd9df74c55588bcd83254fb2f87d881d0e45c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Reproduce.md",
+        "status": 200,
+        "bytes": 2587,
+        "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Versions.html",
+        "status": 200,
+        "bytes": 5263,
+        "sha256": "4001acae9173fe6cb63925ed598a1e5c303b84de25ad25d1622c2d1f95c40b5c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Versions.md",
+        "status": 200,
+        "bytes": 1603,
+        "sha256": "352a150c2ac084f1ebb89005543bc2c0645490d0c6928f87fa2635b45ad7ed58",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Visualization.html",
+        "status": 200,
+        "bytes": 4422,
+        "sha256": "169c9021f3f04676bc875b145a06793669f077756bdec3d9be6de075e3784909",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/guide/Visualization.md",
+        "status": 200,
+        "bytes": 1142,
+        "sha256": "f2aae4976228f57bbee1f3924538e4afd6f1359fd73757ed2d5bb725a2621f86",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/index.html",
+        "status": 200,
+        "bytes": 5832,
+        "sha256": "8944b95eb90ffaf6eaefd4ae3fcea129ff29386946264bea88b91bab023d3731",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/publication-status.json",
+        "status": 200,
+        "bytes": 1676,
+        "sha256": "cd1cf4390d34b369803c1aa2fb2908fabc430b9a297bf0c994aeec2e5427bb9b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reading-guide.md",
+        "status": 200,
+        "bytes": 415,
+        "sha256": "24a71fadeada97cd1b358a6fcc380d421c844f2534556cc5336609b1837d3886",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/coverage.json",
+        "status": 200,
+        "bytes": 1053,
+        "sha256": "aa5937765a560990bf9fe9fa488044a7b81b813d2967ae195cdcab949f6ffa31",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/formal/index.html",
+        "status": 200,
+        "bytes": 9447,
+        "sha256": "fbda2ac2871a0f26144546e90cc0f7d0d79fbed9adbff6fc225e6c3b5ab0556e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/formal/native-structure.html",
+        "status": 200,
+        "bytes": 79331,
+        "sha256": "dc74bc6bfd7bbdfbacc4c853530297863b941f4990ba3d67e43bbc655d9a02c6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/formal/profile-projection.html",
+        "status": 200,
+        "bytes": 249644,
+        "sha256": "fc67f40f704ee1497a70835f81c7e3f734b7cc8e0a9f8309a593269aca677db4",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/formal/review.html",
+        "status": 200,
+        "bytes": 6501,
+        "sha256": "d175fa82ec7721dcb1e86cd78ae51e8fb3b88c193c94fa44fd9d5724d786b83e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/formal/scoped-contracts.html",
+        "status": 200,
+        "bytes": 7495,
+        "sha256": "91a920b4b9018b861b6740a2017aeaa44f0bfc383be35d15369859753150617c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/native/associations.html",
+        "status": 200,
+        "bytes": 1015945,
+        "sha256": "8adec3832318b982fa9f0547040eaf24cf0fd87e2e473a8b7a19864eed0e859a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/native/classes.html",
+        "status": 200,
+        "bytes": 271551,
+        "sha256": "f4b22d0d0aa52914e0814963b0cb1b3d75f8cc561087268167d5d3d4839c41a6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/native/commitments.html",
+        "status": 200,
+        "bytes": 36069,
+        "sha256": "e6c8a936e8a24a04a1b48fe1c8d716c2381de29f602d79ca0c73a8445d28e9f4",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/native/generalizations.html",
+        "status": 200,
+        "bytes": 16797,
+        "sha256": "03f8a6933916fff9d2ba96048bf26bc7ed7a565459c78188a135838af552b745",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/native/index.html",
+        "status": 200,
+        "bytes": 5370,
+        "sha256": "eae5cb59f21400b292c58efef2fef8bead3721f07bab5f7ecc1c86be7f9a3a82",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/owl/classes.html",
+        "status": 200,
+        "bytes": 104031,
+        "sha256": "b1c8a6cf8537397444c0b789d956a108ebc1ad773533a65b9ed4c8787d6d6413",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/owl/datatype-properties.html",
+        "status": 200,
+        "bytes": 40211,
+        "sha256": "d881e290fa43c36f529c0fac986b9dae7ffba5da56e1cfad669036efa02eee5e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/owl/index.html",
+        "status": 200,
+        "bytes": 4340,
+        "sha256": "874b3a1310d0a77229cd1412668dfc74178d9900f5c1314c0d31c125ab75ca0a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/owl/individuals.html",
+        "status": 200,
+        "bytes": 3544,
+        "sha256": "ad205067ebb1ddfe10f6014940970dd7cfabe5532745e23ab6656a9f07b0379c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/owl/object-properties.html",
+        "status": 200,
+        "bytes": 229928,
+        "sha256": "b499ab2bd79ae1666747887b7e0f747cf520b5c57eeee0093198d781216da5a3",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/reference/search.html",
+        "status": 200,
+        "bytes": 107131,
+        "sha256": "2bae0e0b4b79308241806e9d717157329609096464051ebcb819303c38a8b826",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/related-ontologies.html",
+        "status": 200,
+        "bytes": 42877,
+        "sha256": "01c7c7fdf9cba81e64763ceb33c23cddae58613068607d6cc824732cb51f141f",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/releases/v2.0.0/README.md",
+        "status": 200,
+        "bytes": 3511,
+        "sha256": "482a9ca71c26d2103cdaaebfea4454af975558223bba04e8d55be66d4ac79e31",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/releases/v2.0.0/RELEASE_NOTES.md",
+        "status": 200,
+        "bytes": 2423,
+        "sha256": "a141aeae6cef40802ba79da4063382db0df91d287374fdff91d5ae6bce1a92e5",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/releases/v2.0.0/publication-boundary-review.md",
+        "status": 200,
+        "bytes": 4569,
+        "sha256": "3bfafcf5098ef6b5561508fde6dce67200a018f2edae4f869423bd4676be0cac",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/releases/v2.0.0/rights-readback.md",
+        "status": 200,
+        "bytes": 5019,
+        "sha256": "46a6a03414c0ab8db9cee692029643aaa08228d14816981d00638dfa7c02e2df",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/research/related-ontologies/complementary-comparisons.json",
+        "status": 200,
+        "bytes": 844,
+        "sha256": "48163c70a30926355a0b555149848988e34ec894d2f9c9956b4dd30491e4c652",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/research/related-ontologies/link-audit-2026-10-15.json",
+        "status": 200,
+        "bytes": 46164,
+        "sha256": "e9055348d13eeab941379fd3e023379f0dbc6109f66d5311f197342e6da12a1b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/research/related-ontologies/primary-comparisons.json",
+        "matches_manifest": true,
+        "status": 200,
+        "bytes": 7746,
+        "sha256": "a1143d49d987a0354a1caf900964aaf9338f0ae0727bf19030768cd10b715bb7",
+        "readback_retry": "One transient HTTP 503; one retry",
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/research/related-ontologies/reference-screening.json",
+        "status": 200,
+        "bytes": 10350,
+        "sha256": "2e474ac5795e369949353dc4219de0efc33e61cbb5a3c14f23930eb460afc3b6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/research/related-ontologies/related-ontology-comparison.md",
+        "status": 200,
+        "bytes": 31236,
+        "sha256": "dd444b748f30f04f08efff58586ffb1be38cd3f5466636a43c5eb4156f6d05c6",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/research/related-ontologies/selected-correspondences.json",
+        "status": 200,
+        "bytes": 4746,
+        "sha256": "0b8716efa1882d5a6eccc207741148667a753c3435d4aef1d1c9d8c7b5d50579",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/tool-provenance.json",
+        "status": 200,
+        "bytes": 1091,
+        "sha256": "c358f10424ad55e3584f0d97be95161fe4137165eee7fb7211c851baf1742005",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/coverage.json",
+        "status": 200,
+        "bytes": 3769,
+        "sha256": "1fcaa186578c00e9520b3c297d4621f78bc89e6b5263726c7b35676fe25e59c1",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/css/webvowl.app.css",
+        "status": 200,
+        "bytes": 42680,
+        "sha256": "8323ad062f40675bcd3af6c6d11c1515fb4cb7066fac323039187d366e43b006",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/css/webvowl.css",
+        "status": 200,
+        "bytes": 5341,
+        "sha256": "067bb2fe6dfb69a4ef4be734a7b3788335f4c3cd419ce3e42d86c3cf302c49f8",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/data/ontospk.json",
+        "status": 200,
+        "bytes": 168244,
+        "sha256": "a91ef0f186a93e6808e9db46b4a5e16bcd8277171210e753385187b57edb1274",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/favicon.ico",
+        "status": 200,
+        "bytes": 1150,
+        "sha256": "c5bd4a733d00a1984a4fe9c5a641f226c1a9cfc7a6f8edab20d923672cc8eee3",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/index.html",
+        "status": 200,
+        "bytes": 25600,
+        "sha256": "85af6c8f7805e8a6b7925a2aa35a388ace456fafda272eaac9cdb69f595deec7",
+        "matches_manifest": true,
+        "phase": "changed-payload readback",
+        "attempts": 1
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/js/d3.min.js",
+        "status": 200,
+        "bytes": 151725,
+        "sha256": "76c39718d1c0a3fb321676b3b7e29306c0907919a5716d5728bd1b08ae0169e7",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/js/webvowl.app.js",
+        "status": 200,
+        "bytes": 350023,
+        "sha256": "58d58598a0f004b86afd70667bd16d1192f006baa93c1c198579f18691848d27",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/js/webvowl.js",
+        "status": 200,
+        "bytes": 755727,
+        "sha256": "cf45907686fb827f1fce86cc415e90419a3f87bf25939d0dd40d727a7dc2913b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl/license.txt",
+        "status": 200,
+        "bytes": 1167,
+        "sha256": "d07986d8f3441f0a563f237aa3778489c763def2e151911e1774a18deff89cde",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/webvowl-build-package-lock.json",
+        "status": 200,
+        "bytes": 434876,
+        "sha256": "82b42809132b0fc52fa4e3bfb1f8dbf1d467f763296efe89c9059bd2e3744975",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/index-en.html",
+        "status": 200,
+        "bytes": 1469513,
+        "sha256": "1046734350a2631e558a98fc37d23ad92f109af79c26485ac7ea7ab43808574c",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/ontology.jsonld",
+        "status": 200,
+        "bytes": 306199,
+        "sha256": "9bbfe0a352148b37c9716dea21d30a69239031ea5cad420f56bd7796dacc5455",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/ontology.nt",
+        "status": 200,
+        "bytes": 362657,
+        "sha256": "5057e2b37a6725c847fd0bf54ed764e35a206c42d42893c12bde75fd64a4aa3a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/ontology.owl",
+        "status": 200,
+        "bytes": 318455,
+        "sha256": "847f380477c54c14810fa6f5b077c5ce6211c76c802e19c2071aaa3de249fbdb",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/ontology.ttl",
+        "status": 200,
+        "bytes": 156623,
+        "sha256": "30b88af6806af8597c88ba64f33ea7413cf1bf22e8e08daa4527cb38dfc5d6c1",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/provenance/provenance-en.html",
+        "status": 200,
+        "bytes": 1233,
+        "sha256": "b08869be53b8acc15727ee26a1e9b9bcaced8db47ccba8f56c933b7c9b4311ca",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/provenance/provenance-en.ttl",
+        "status": 200,
+        "bytes": 324,
+        "sha256": "5bc74b9d913dd52d8d14f09bb430a3dad01776fb38bbdb40fe2df26c94515a7a",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/readme.md",
+        "status": 200,
+        "bytes": 2232,
+        "sha256": "11380ffd200d73045afa944db96e79fe6d067111be552f1489eeb6c64300c565",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/dark-mode-toggle.mjs",
+        "status": 200,
+        "bytes": 14959,
+        "sha256": "2690a24a7933c85eb1bd0debd96ba522808ab2d1cddd231a51e9b4f47cd09eea",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/dark.css",
+        "status": 200,
+        "bytes": 592,
+        "sha256": "fcb1439e07a0617beb8f39510550dce1a24b85a21c5ae901c06ec489d9d53c20",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/extra.css",
+        "status": 200,
+        "bytes": 1846,
+        "sha256": "1dbcaa25005079b92646c5a318da244bbb5740354b4adb7ee0d8c37b5495666e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/jquery.js",
+        "status": 200,
+        "bytes": 91556,
+        "sha256": "d16d07a0353405fcec95f7efc50a2621bc7425f9a5e8895078396fb0dc460c4f",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/light.css",
+        "status": 200,
+        "bytes": 567,
+        "sha256": "3836b0a608c81346e3072756a4be2a010dd3027f573764b99769a74854a0e773",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/marked.min.js",
+        "status": 200,
+        "bytes": 47959,
+        "sha256": "5f1c959514d81adb885e3648a8397fa3285e849e5c143a4e04fa50dc52c2026b",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/moon.svg",
+        "status": 200,
+        "bytes": 326,
+        "sha256": "086ffcabad215a5df0026a2f96cba1a9b49059dd8f8777d3f8316a44e5478289",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/owl.css",
+        "status": 200,
+        "bytes": 4419,
+        "sha256": "be3fc69ae8735ed7fc4e647d1cf14d78f6a49fdb5203de1058c66d60d733c298",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/primer.css",
+        "status": 200,
+        "bytes": 2496,
+        "sha256": "9cc654454ddbe7c0bc02e5a43b18592214fed8bd789cf2c97b70976e9277e908",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/rdf.icon",
+        "status": 200,
+        "bytes": 421,
+        "sha256": "7d73f1a6b32f2dbb65a8682928415a17ac0993a5bfa6443d5893d3fe5439d47f",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/rec.css",
+        "status": 200,
+        "bytes": 2687,
+        "sha256": "3930245616929a2cdc12bf7bc8133a1a74c39ed5a02f22df18837c6adeff0526",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/slider.css",
+        "status": 200,
+        "bytes": 2633,
+        "sha256": "fcfd2fcf519e3a1e724c037164be41b16a9c5c2a221dec0efd5fed3d22f16ea0",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/resources/sun.svg",
+        "status": 200,
+        "bytes": 569,
+        "sha256": "26567e9916b367e1f04fdedc1b3e673e0c0e9409168d48a55a5fd9b55d1ce5ad",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "releases/v2.0.1/widoco/serialization-receipt.json",
+        "status": 200,
+        "bytes": 520,
+        "sha256": "6974b2e677319170e956dd992cb0fb694f01f2708820789b094924d9cecc02a3",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      },
+      {
+        "path": "versions/index.html",
+        "status": 200,
+        "bytes": 1257,
+        "sha256": "eb8d30a18add7407d74eefca04a363a6d113e26d722b19833c87675d5d4af11e",
+        "matches_manifest": true,
+        "phase": "unchanged since previously matched HTTP readback"
+      }
+    ]
+  },
+  "screenshots": {
+    "pages-v2.0.1.jpg": "908123d63da69d46d470dec7cc792556b91f064b968196b9a21fa0143f953fca",
+    "webvowl-v2.0.1.jpg": "c8a81e9979902904401ff70c1b2a393b5e1874604900b295b35e7b2f9ef4237c"
+  },
+  "limits": [
+    "The browser check used the observed desktop viewport; static landmarks are not a full accessibility certification.",
+    "UI acceptance and finite evaluation do not establish independent ontology correctness.",
+    "The frozen source mapping is retained; deployment manifests identify the publication-only compatibility adjustment.",
+    "The receipt records the accepted runtime deployment; the later release tag identifies the closeout commit.",
+    "Per-concept sourced pages remain deferred in issue #37; pyLODE is not implemented."
+  ]
+}

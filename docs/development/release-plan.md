@@ -36,6 +36,8 @@ The execution order is the public core release, Wiki, Pages/WebVOWL, and the exp
 | [#11: Publish WebVOWL for the released logical profile](https://github.com/ArazSaieArasi3/OntoSPK/issues/11) | #10 |
 | [#12: Verify published documentation and release v2.0.1](https://github.com/ArazSaieArasi3/OntoSPK/issues/12) | #11 |
 
+The [Pages and viewer acceptance receipt](../../evaluation/pages-publication-verification.md) records the live documentation increment. The frozen documentation source and ontology core identity are distinct from the mutable current route. The release list remains the authority for the public v2.0.1 tag.
+
 ## v2.0.2
 
 | Work item | Depends on |
@@ -70,6 +72,7 @@ The execution order is the public core release, Wiki, Pages/WebVOWL, and the exp
 | [#30: Verify the publication-facing citation and evidence handoff](https://github.com/ArazSaieArasi3/OntoSPK/issues/30) | #7 |
 | [#31: Pilot verification of the first-order formal specification](https://github.com/ArazSaieArasi3/OntoSPK/issues/31) | #13 |
 | [#32: Verify diagram provenance and domain relationship views](https://github.com/ArazSaieArasi3/OntoSPK/issues/32) | #7 |
+| [#37: Plan a sourced concept page for each OntoSPK concept](https://github.com/ArazSaieArasi3/OntoSPK/issues/37) | Deferred design discussion with the repository owner |
 
 ## Publication boundaries
 

@@ -9,7 +9,7 @@ import shutil
 import subprocess
 import tarfile
 from html import escape
-from viewer_compat import prepare_viewer
+from viewer_compat import prepare_viewer, prepare_explorer
 
 ROOT=Path(__file__).resolve().parents[2]
 REGISTRY=ROOT/'tools/publication/pages-registry.json'
@@ -32,6 +32,8 @@ def decorate(folder,source,version,mutable):
         text=path.read_text()
         if path.relative_to(folder).as_posix() == 'webvowl/index.html':
             text=prepare_viewer(text)
+        if path.relative_to(folder).as_posix() == 'explore/index.html':
+            text=prepare_explorer(text)
         text=text.replace(REPO+'/blob/main/',REPO+'/blob/'+source+'/').replace(REPO+'/tree/main/',REPO+'/tree/'+source+'/')
         relative='../'*(len(path.relative_to(folder).parts)+(0 if mutable else 1))
         status='Mutable current documentation' if mutable else 'Frozen documentation release'
@@ -65,10 +67,10 @@ def build(output,registry):
         decorate(target,entry['source_commit'],version,False)
         links.append(f'<li><a href="../releases/{version}/index.html">Documentation {version}</a> — ontology core v2.0.0 — <a href="{REPO}/commit/{entry["source_commit"]}">source {entry["source_commit"][:12]}</a></li>')
     page='''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OntoSPK documentation</title><style>body{font:18px/1.7 system-ui,sans-serif;max-width:850px;margin:50px auto;padding:20px;color:#173b54}a{color:#145c9e}</style></head><body><main><h1>OntoSPK documentation</h1><p>Software product knowledge: conceptual model, bounded logical profile, constraints and evaluation.</p><p><a href="CURRENT/index.html">Read current documentation</a> · <a href="CURRENT/widoco/index-en.html">WIDOCO OWL reference</a> · <a href="CURRENT/explore/index.html">Explore WebVOWL</a></p><h2>Documentation versions</h2><p>The current route can change. Frozen releases retain their recorded documentation source and the ontology core version they describe.</p><ul>LINKS</ul><p><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">Project Wiki</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core release</a></p></main></body></html>'''
-    (output/'versions').mkdir();(output/'versions/index.html').write_text(page.replace('CURRENT','../current').replace('LINKS',''.join(links)))
+    (output/'versions').mkdir(exist_ok=True);(output/'versions/index.html').write_text(page.replace('CURRENT','../current').replace('LINKS',''.join(links)))
     (output/'index.html').write_text(page.replace('CURRENT','current').replace('LINKS',''.join(links).replace('../releases/','releases/')))
     (output/'.nojekyll').touch()
-    manifest={'current_source_commit':head,'ontology_core':'v2.0.0','releases':registry['releases'],'presentation_adjustments':[{'id':'webvowl-1.1.7-view-mode-controls','source':'tools/publication/viewer_compat.py','source_sha256':hashlib.sha256((ROOT/'tools/publication/viewer_compat.py').read_bytes()).hexdigest(),'scope':'Retain hidden DOM controls required by upstream view-mode initialization; hide unavailable editing; label search and keep the title visible. No RDF or graph JSON changes.'}],'files':{p.relative_to(output).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}}
+    manifest={'current_source_commit':head,'ontology_core':'v2.0.0','releases':registry['releases'],'presentation_adjustments':[{'id':'webvowl-1.1.7-view-mode-controls','source':'tools/publication/viewer_compat.py','source_sha256':hashlib.sha256((ROOT/'tools/publication/viewer_compat.py').read_bytes()).hexdigest(),'scope':'Retain hidden DOM controls required by upstream view-mode initialization; hide unavailable editing; label search, keep the title visible and explain automatic collapsing. No RDF or graph JSON changes.'}],'files':{p.relative_to(output).as_posix():hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}}
     (output/'publication-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(json.dumps({'html_pages':len(list(output.rglob('*.html'))),'frozen_releases':list(registry['releases']),'current_source_commit':head,'output':str(output)}))
 if __name__=='__main__':
