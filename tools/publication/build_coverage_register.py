@@ -126,22 +126,31 @@ for path in shacl_paths:
     sources.append(source(relative))
     shapes = Graph().parse(path)
     active = sorted({n for n in shapes.subjects(RDF.type, SH.NodeShape)
-                     if any((n, t, None) in shapes for t in targets)}, key=str)
+                     if any((n, t, None) in shapes for t in targets)},
+                    key=lambda n: (0, str(n)) if isinstance(n, URIRef) else
+                    (1, json.dumps(term(shapes, n), sort_keys=True)))
     reached = {child for node in active for child, _, _ in reachable(shapes, node)}
     property_nodes = {p for p in shapes.objects(None, SH.property)} & reached
     shacl_graphs.append({"path": str(relative), "targeted_node_shapes": len(active),
                          "reachable_property_shapes": len(property_nodes),
                          "nested_property_shapes": len(property_nodes - {p for n in active for p in shapes.objects(n, SH.property)}),
                          "linked_sparql_constraints": len({p for n in reached for p in shapes.objects(n, SH.sparql)})})
+    blank_ordinals = Counter()
     for node in active:
+        if isinstance(node, BNode):
+            fingerprint = hashlib.sha256(json.dumps(term(shapes, node), sort_keys=True).encode()).hexdigest()[:16]
+            blank_ordinals[fingerprint] += 1
+            node_key = f"blank:{fingerprint}:{blank_ordinals[fingerprint]}"
+        else:
+            node_key = str(node)
         target = sorted((str(p), term(shapes, o)) for p, o in shapes.predicate_objects(node) if p in targets)
         for child, route, prop_path in reachable(shapes, node):
             constraints = sorted(((str(p), term(shapes, o)) for p, o in shapes.predicate_objects(child)
                                   if p in constraint_predicates), key=lambda item: json.dumps(item, sort_keys=True))
             for index, (predicate, value) in enumerate(constraints):
-                key = f"{relative}::{node}::{route}:{index}"
+                key = f"{relative}::{node_key}::{route}:{index}"
                 rows.append(row("shacl_constraint", key, relative,
-                                {"node_shape": str(node), "target": target, "path": prop_path,
+                                {"node_shape": node_key, "target": target, "path": prop_path,
                                  "component": predicate, "parameter": value},
                                 "SHACL data graph validation against this active shapes graph",
                                 "Focus node, source shape, constraint component, and expected conformance match",

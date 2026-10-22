@@ -574,8 +574,8 @@
     },
     {
       "path": "evaluation/coverage-register.json.gz",
-      "bytes": 106612,
-      "sha256": "3087018332fb18f8bced74f97a745dab2a03350d0483509bcf2ca5766521f96e"
+      "bytes": 106750,
+      "sha256": "eb224b16f11add3400df26417a3679e7fb6d17485846361a61e07eeccc1de837"
     },
     {
       "path": "evaluation/coverage-register.md",
@@ -3574,8 +3574,8 @@
     },
     {
       "path": "tools/publication/build_coverage_register.py",
-      "bytes": 16771,
-      "sha256": "4ab9a6d2996e62e53abffd814bb7af7297f7da9c06540f47bd0fe2b6449af0b8"
+      "bytes": 17261,
+      "sha256": "ec2ceb891df65774e12c99ed10668db0912509f7e83b43d555e3c56de4f556bf"
     },
     {
       "path": "tools/publication/build_external_boundary_report.py",
