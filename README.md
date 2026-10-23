@@ -39,6 +39,8 @@ Read the curated guide in the [GitHub Wiki](https://github.com/ArazSaieArasi3/On
 
 The test populations are synthetic. Passing the documented finite controls does not establish complete UFO modal or causal adequacy, independent domain validation, external-owner acceptance or production readiness. The physical database and Explorer are separate work; neither is part of this ontology-core distribution.
 
+The [expanded finite evaluation v2.0.2](evaluation/v2.0.2-closeout.md) accounts for all 1,977 SHACL component occurrences, checks satisfiability of 121 named OWL classes, executes 71 HermiT scenarios, and replays all 56 CQ contracts. The [current evaluation portal](https://arazsaiearasi3.github.io/OntoSPK/current/evaluation/index.html) connects its reports. The [default ROBOT report](evaluation/robot-report.md) retains 812 editorial/metadata findings, including 288 ERROR; it is not claimed clean. [GitHub Releases](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.2) records publication of this evaluation increment, separately from the frozen ontology core and documentation v2.0.1.
+
 ## Version and rights
 
 The distribution combines native model 0.41.0 and logical profile 0.43.0. Technical filenames retain the revisions of their schema or fixture contracts; those revisions are not alternative distribution versions. Semantic identifiers are preserved. See [source identity and release state](docs/guide/Versions.md).

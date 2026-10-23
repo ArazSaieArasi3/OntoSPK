@@ -45,6 +45,7 @@ def local_target(src,url):
  if u.scheme or url.startswith('//') or not u.path:return None,u.fragment
  return (src.parent/unquote(u.path)).resolve(),u.fragment
 for src in ROOT.rglob('*.html'):
+ if {'.git','.venv','build','dist'} & set(src.relative_to(ROOT).parts):continue
  soup=BeautifulSoup(src.read_text(),'html.parser')
  for a in soup.find_all(['a','img','script','link']):
   attr='href' if a.name in ['a','link'] else 'src';url=a.get(attr,'')
@@ -72,6 +73,6 @@ for p in ROOT.rglob('*'):
  for pat in patterns:require(pat.lower() not in text.lower(),str(p.relative_to(ROOT))+': disallowed public-content pattern')
 for line in (ROOT/'docs/downloads/SHA256SUMS.txt').read_text().splitlines():
  digest,name=line.split('  ',1);require(hashlib.sha256((ROOT/'docs/downloads'/name).read_bytes()).hexdigest()==digest,'Download checksum '+name)
-result={'status':'PASS' if not errors else 'FAIL','native_and_logical_identity_verified':not any('source identity' in e for e in errors),'local_links_checked':checked,'html_files':sum(1 for _ in ROOT.rglob('*.html')),'guide_pages':len(list((ROOT/'docs/guide').glob('*.md'))),'webvowl_named_classes':len(classes),'webvowl_rendered_declared_properties':322,'webvowl_omitted_properties':10,'database_payload_in_core':False,'local_evaluation_stages':len(receipt['steps']),'fragment_warnings':fragment_warnings,'browser_rendered_verification':'NOT_PERFORMED_BY_THIS_STATIC_CHECK','online_publication_verification':'NOT_EXECUTED','errors':errors}
+result={'status':'PASS' if not errors else 'FAIL','native_and_logical_identity_verified':not any('source identity' in e for e in errors),'local_links_checked':checked,'html_files':sum(1 for p in ROOT.rglob('*.html') if not {'.git','.venv','build','dist'} & set(p.relative_to(ROOT).parts)),'guide_pages':len(list((ROOT/'docs/guide').glob('*.md'))),'webvowl_named_classes':len(classes),'webvowl_rendered_declared_properties':322,'webvowl_omitted_properties':10,'database_payload_in_core':False,'local_evaluation_stages':len(receipt['steps']),'fragment_warnings':fragment_warnings,'browser_rendered_verification':'NOT_PERFORMED_BY_THIS_STATIC_CHECK','online_publication_verification':'NOT_EXECUTED','errors':errors}
 out=ROOT/'evaluation/publication-checks.json';out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 raise SystemExit(bool(errors))
