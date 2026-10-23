@@ -1,0 +1,150 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Business boundary contract review — OntoSPK ontology documentation"><title>Business boundary contract review — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="business-boundary-contract-review">Business boundary contract review</h1>
+<p><strong>Issue #23: the five local reference policies are decided.</strong> Public authority is the existing OntoSPK v2.0.0 operational contract. The separately governed owner repository is private, so no public owner snapshot or owner-equivalent import is accepted. No private owner payload is copied.</p>
+<table>
+<thead>
+<tr>
+<th>Stable handle</th>
+<th>Public operational meaning in OntoSPK</th>
+<th>Accepted local kind</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EXT:Business:BusinessCapability</code></td>
+<td>A business-owned ability that a product capability specification intends to support.</td>
+<td><code>business_capability</code></td>
+<td>Keep reference-only; no accepted owner equivalence.</td>
+</tr>
+<tr>
+<td><code>EXT:Business:BusinessGoal</code></td>
+<td>A business-owned desired outcome to which a product requirement contributes.</td>
+<td><code>business_goal</code></td>
+<td>Keep reference-only; no accepted owner equivalence.</td>
+</tr>
+<tr>
+<td><code>EXT:Business:BusinessRule</code></td>
+<td>A business-owned directive or constraint referenced by a product specification.</td>
+<td><code>business_rule</code></td>
+<td>Keep reference-only; no accepted owner equivalence.</td>
+</tr>
+<tr>
+<td><code>EXT:Business:Service</code></td>
+<td>A business-facing service included in an offering; distinct from a software architecture service.</td>
+<td><code>business_service</code></td>
+<td>Keep reference-only; no accepted owner equivalence.</td>
+</tr>
+<tr>
+<td><code>EXT:Business:ValueProposition</code></td>
+<td>A business-owned statement of value offered to intended recipients.</td>
+<td><code>value_proposition</code></td>
+<td>Keep reference-only; no accepted owner equivalence.</td>
+</tr>
+</tbody>
+</table>
+<p>The definitions above are reproduced from the already public native model, not from the private Business ontology. They explain OntoSPK usage without requiring a reader to fetch a private repository. The four same-name declarations are historical evidence, not definition-equivalence proofs.</p>
+<h2 id="service-versus-businessservice">Service versus BusinessService</h2>
+<p>Keep the stable Business handle; display Business Service; reject treating architecture_service as its typed record kind. BusinessService remains an owner rename candidate, not an accepted equivalence or an IRI rewrite.</p>
+<p>The native architecture service contract uses <code>architecture_service</code>: A technical service in a software architecture; distinct from a business-facing service. The business contract uses <code>business_service</code>: A business-facing service included in an offering; distinct from a software architecture service.</p>
+<p>The existing stable native ID remains <code>EXT:Business:Service</code>, the native display is <strong>Business Service</strong>, and the owner <code>BusinessService</code> locator remains a rename candidate. Neither the Business handle nor the architecture handle is retargeted or merged. Different IRIs do not themselves establish disjoint classes or distinct individuals.</p>
+<h2 id="all-eight-native-uses-and-their-existing-logical-projection">All eight native uses and their existing logical projection</h2>
+<table>
+<thead>
+<tr>
+<th>Native relation</th>
+<th>Source</th>
+<th>Relation</th>
+<th>Business target</th>
+<th>Targets per source</th>
+<th>Existing OWL predicate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>REL:W2:107</code></td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td>intendedToSupport</td>
+<td><code>EXT:Business:BusinessCapability</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r107_intendedToSupport</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:111</code></td>
+<td><code>IC:BusinessRuleReference</code></td>
+<td>refersTo</td>
+<td><code>EXT:Business:BusinessRule</code></td>
+<td><code>1</code></td>
+<td><code>urn:productium:specification-profile:referenceTarget</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:116</code></td>
+<td><code>IC:PositioningStatement</code></td>
+<td>references</td>
+<td><code>EXT:Business:ValueProposition</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r116_references</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:167</code></td>
+<td><code>IC:QualityRequirementSpecification</code></td>
+<td>supports</td>
+<td><code>EXT:Business:BusinessGoal</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r167_supports</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:185</code></td>
+<td><code>IC:Product</code></td>
+<td>referencesValueProposition</td>
+<td><code>EXT:Business:ValueProposition</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r185_referencesValueProposition</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:187</code></td>
+<td><code>IC:OfferingSpecification</code></td>
+<td>includesService</td>
+<td><code>EXT:Business:Service</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r187_includesService</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:190</code></td>
+<td><code>IC:VisionStatement</code></td>
+<td>referencesValueProposition</td>
+<td><code>EXT:Business:ValueProposition</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r190_referencesValueProposition</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:202</code></td>
+<td><code>IC:GoToMarketSpecification</code></td>
+<td>referencesValueProposition</td>
+<td><code>EXT:Business:ValueProposition</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r202_referencesValueProposition</code></td>
+</tr>
+</tbody>
+</table>
+<p>Four Business kinds have local OWL boundary placeholders used as ranges by seven relations. BusinessRule instead uses the local <code>BusinessRuleReference</code> record and generic <code>referenceTarget</code> predicate, with no asserted BusinessRule owner-class range. The native-to-OWL class projection register deliberately asserts no authoritative mapping for any of the five handles. A traced boundary range is not an accepted mapping to the owner ontology.</p>
+<h2 id="accepted-rejected-and-unresolved">Accepted, rejected and unresolved</h2>
+<ul>
+<li><strong>Accepted:</strong> five local operational reference contracts, their kinds and the eight released relation signatures. Preserve the core and record target/source/version provenance.</li>
+<li><strong>Rejected:</strong> automatic equivalence from equal names, an unreviewed Service → BusinessService IRI rename, merging business/architecture service contracts, and adding an owner ontology as a runtime import.</li>
+<li><strong>Unresolved externally:</strong> authoritative owner-definition compatibility, target membership and UFO typing. These are not needed to choose the current reference-only policy. A future locally owned concept or accepted owner mapping requires an explicit new semantic identity and review, not a change to frozen v2.0.0.</li>
+</ul>
+<h2 id="executable-reference-record-gate">Executable reference-record gate</h2>
+<p>The released legacy boundary gate returns REVIEW_REQUIRED for all five Business handles: it has no v0_41 typed Business contract. The new <strong>separate adapter</strong> at <code>tools/boundaries/business_reference.py</code> implements this reviewed local record policy. It requires a stable handle, an allowed kind, one target IRI, a source IRI and a nonempty version; it rejects equivalence/owner-acceptance flags and an inconsistent supplied class locator. Passing means local record conformance only. It neither proves target membership nor fetches an owner repository.</p>
+<pre><code class="language-bash">python tools/boundaries/business_reference.py --input reference.json
+python tools/publication/test_business_boundary_contract.py
+</code></pre>
+<p>Native, OWL, SHACL, Wiki and existing frozen publication mappings are unchanged. This is a documented/executable reference policy; no new semantic release is claimed. A complete RDF population still needs its existing SHACL validation; a valid JSON reference record is not whole-population or independent scientific acceptance.</p>
+<h2 id="public-sources-and-reproducibility">Public sources and reproducibility</h2>
+<ul>
+<li><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json">Frozen native contracts</a></li>
+<li><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl">Frozen logical profile</a></li>
+<li><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/cea116fbd022bb8ded5f33b6b4dfb779d1a7cb05/evaluation/external-boundary-status.json">Published historical external register</a></li>
+<li><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/business-boundary-review.json">Exact source paths, hashes, decisions and eight relation signatures</a></li>
+<li><a href="business-boundary-tests.html">Executable contract test report</a></li>
+</ul>
+<p>Run <code>python tools/publication/build_business_boundary_review.py</code> from the repository root to reproduce the public extraction. The private-visibility observation is a dated metadata readback, not a claim that this generator performs an online owner-definition review.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#service-versus-businessservice">Service versus BusinessService</a></li><li><a href="#all-eight-native-uses-and-their-existing-logical-projection">All eight native uses and their existing logical projection</a></li><li><a href="#accepted-rejected-and-unresolved">Accepted, rejected and unresolved</a></li><li><a href="#executable-reference-record-gate">Executable reference-record gate</a></li><li><a href="#public-sources-and-reproducibility">Public sources and reproducibility</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

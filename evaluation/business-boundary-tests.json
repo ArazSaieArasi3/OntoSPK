@@ -1,0 +1,5536 @@
+{
+  "adapter_sha256": "ec02f0658084d583083b1edc2ac51c2cfa69cd4897ee5bb3f531dc746266186d",
+  "cases": [
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessCapability:valid",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessCapability:locator_is_not_acceptance",
+      "input": {
+        "class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessCapability",
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:missing_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:missing_target",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:missing_source",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:missing_version",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_6",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "relative/path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_7",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https:///missing-host",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_8",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_9",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:only_namespace",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_10",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/bad path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_11",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/%ZZ",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_12",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": [
+          "urn:two:targets"
+        ],
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_13",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https://user:password@example.org/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_14",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:bad/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_15",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:65536/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_target_16",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:0/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_17",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "relative/path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_18",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https:///missing-host",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_19",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "urn:",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_20",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "urn:only_namespace",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_21",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/bad path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_22",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/%ZZ",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_23",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": [
+          "urn:two:targets"
+        ],
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_24",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://user:password@example.org/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_25",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org:bad/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_26",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org:65536/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:invalid_source_27",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org:0/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:blank_version",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "  "
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:architecture_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "architecture_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:claim_equivalentClass",
+      "input": {
+        "equivalentClass": true,
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:claim_sameAs",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "sameAs": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:claim_semantic_equivalence",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "semantic_equivalence": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:claim_owner_acceptance",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "owner_acceptance": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessCapability:explicit_false_flags",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "UNREVIEWED_CLASS_LOCATOR"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNREVIEWED_CLASS_LOCATOR",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:wrong_locator",
+      "input": {
+        "class_locator": "urn:ontospk:synthetic:architecture-service",
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "UNSUPPORTED_REFERENCE_FIELDS"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNSUPPORTED_REFERENCE_FIELDS",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:rdf_equivalence_field",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "owl:equivalentClass": "urn:example:owner",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessCapability:other_business_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessCapability",
+        "errors": [],
+        "handle": "EXT:Business:BusinessCapability",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessCapability:synthetic_provenance_not_verified",
+      "input": {
+        "handle": "EXT:Business:BusinessCapability",
+        "kind": "business_capability",
+        "source": "urn:unknown:source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "unverified-claim"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessGoal:valid",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessGoal:locator_is_not_acceptance",
+      "input": {
+        "class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessGoal",
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:missing_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:missing_target",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:missing_source",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:missing_version",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_45",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "relative/path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_46",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https:///missing-host",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_47",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_48",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:only_namespace",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_49",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/bad path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_50",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/%ZZ",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_51",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": [
+          "urn:two:targets"
+        ],
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_52",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https://user:password@example.org/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_53",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:bad/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_54",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:65536/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_target_55",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:0/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_56",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "relative/path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_57",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https:///missing-host",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_58",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "urn:",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_59",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "urn:only_namespace",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_60",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/bad path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_61",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/%ZZ",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_62",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": [
+          "urn:two:targets"
+        ],
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_63",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://user:password@example.org/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_64",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org:bad/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_65",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org:65536/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:invalid_source_66",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org:0/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:blank_version",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "  "
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:architecture_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "architecture_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:claim_equivalentClass",
+      "input": {
+        "equivalentClass": true,
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:claim_sameAs",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "sameAs": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:claim_semantic_equivalence",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "semantic_equivalence": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:claim_owner_acceptance",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "owner_acceptance": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessGoal:explicit_false_flags",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "UNREVIEWED_CLASS_LOCATOR"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNREVIEWED_CLASS_LOCATOR",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:wrong_locator",
+      "input": {
+        "class_locator": "urn:ontospk:synthetic:architecture-service",
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "UNSUPPORTED_REFERENCE_FIELDS"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNSUPPORTED_REFERENCE_FIELDS",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:rdf_equivalence_field",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "owl:equivalentClass": "urn:example:owner",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessGoal:other_business_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessGoal",
+        "errors": [],
+        "handle": "EXT:Business:BusinessGoal",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessGoal:synthetic_provenance_not_verified",
+      "input": {
+        "handle": "EXT:Business:BusinessGoal",
+        "kind": "business_goal",
+        "source": "urn:unknown:source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "unverified-claim"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessRule:valid",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessRule:locator_is_not_acceptance",
+      "input": {
+        "class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessRule",
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:missing_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:missing_target",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:missing_source",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:missing_version",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_84",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "relative/path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_85",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https:///missing-host",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_86",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_87",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:only_namespace",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_88",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/bad path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_89",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/%ZZ",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_90",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": [
+          "urn:two:targets"
+        ],
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_91",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https://user:password@example.org/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_92",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:bad/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_93",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:65536/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_target_94",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:0/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_95",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "relative/path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_96",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https:///missing-host",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_97",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "urn:",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_98",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "urn:only_namespace",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_99",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/bad path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_100",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/%ZZ",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_101",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": [
+          "urn:two:targets"
+        ],
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_102",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://user:password@example.org/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_103",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org:bad/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_104",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org:65536/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:invalid_source_105",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org:0/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:blank_version",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "  "
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:architecture_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "architecture_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:claim_equivalentClass",
+      "input": {
+        "equivalentClass": true,
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:claim_sameAs",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "sameAs": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:claim_semantic_equivalence",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "semantic_equivalence": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:claim_owner_acceptance",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "owner_acceptance": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessRule:explicit_false_flags",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "UNREVIEWED_CLASS_LOCATOR"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNREVIEWED_CLASS_LOCATOR",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:wrong_locator",
+      "input": {
+        "class_locator": "urn:ontospk:synthetic:architecture-service",
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "UNSUPPORTED_REFERENCE_FIELDS"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNSUPPORTED_REFERENCE_FIELDS",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:rdf_equivalence_field",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "owl:equivalentClass": "urn:example:owner",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:BusinessRule:other_business_kind",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_goal",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "BusinessRule",
+        "errors": [],
+        "handle": "EXT:Business:BusinessRule",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:BusinessRule:synthetic_provenance_not_verified",
+      "input": {
+        "handle": "EXT:Business:BusinessRule",
+        "kind": "business_rule",
+        "source": "urn:unknown:source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "unverified-claim"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:Service:valid",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "rename candidate only",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:Service:locator_is_not_acceptance",
+      "input": {
+        "class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessService",
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:missing_kind",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:missing_target",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:missing_source",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:missing_version",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_123",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "relative/path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_124",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https:///missing-host",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_125",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_126",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:only_namespace",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_127",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/bad path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_128",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/%ZZ",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_129",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": [
+          "urn:two:targets"
+        ],
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_130",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https://user:password@example.org/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_131",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:bad/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_132",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:65536/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_target_133",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:0/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_134",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "relative/path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_135",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https:///missing-host",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_136",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "urn:",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_137",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "urn:only_namespace",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_138",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/bad path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_139",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/%ZZ",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_140",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": [
+          "urn:two:targets"
+        ],
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_141",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://user:password@example.org/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_142",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org:bad/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_143",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org:65536/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:invalid_source_144",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org:0/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:blank_version",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "  "
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:architecture_kind",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "architecture_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:claim_equivalentClass",
+      "input": {
+        "equivalentClass": true,
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:claim_sameAs",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "sameAs": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:claim_semantic_equivalence",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "semantic_equivalence": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:claim_owner_acceptance",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "owner_acceptance": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:Service:explicit_false_flags",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "UNREVIEWED_CLASS_LOCATOR"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "rename candidate only",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNREVIEWED_CLASS_LOCATOR",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:wrong_locator",
+      "input": {
+        "class_locator": "urn:ontospk:synthetic:architecture-service",
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "UNSUPPORTED_REFERENCE_FIELDS"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNSUPPORTED_REFERENCE_FIELDS",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:rdf_equivalence_field",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "owl:equivalentClass": "urn:example:owner",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:Service:other_business_kind",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "Business Service",
+        "errors": [],
+        "handle": "EXT:Business:Service",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:Service:synthetic_provenance_not_verified",
+      "input": {
+        "handle": "EXT:Business:Service",
+        "kind": "business_service",
+        "source": "urn:unknown:source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "unverified-claim"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:ValueProposition:valid",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:ValueProposition:locator_is_not_acceptance",
+      "input": {
+        "class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#ValueProposition",
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:missing_kind",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:missing_target",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:missing_source",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:missing_version",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_162",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "relative/path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_163",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https:///missing-host",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_164",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_165",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:only_namespace",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_166",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/bad path",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_167",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org/%ZZ",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_168",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": [
+          "urn:two:targets"
+        ],
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_169",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https://user:password@example.org/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_170",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:bad/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_171",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:65536/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_target_172",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "https://example.org:0/",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_173",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "relative/path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_174",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https:///missing-host",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_175",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "urn:",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_176",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "urn:only_namespace",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_177",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/bad path",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_178",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/%ZZ",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_179",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": [
+          "urn:two:targets"
+        ],
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_180",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://user:password@example.org/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_181",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org:bad/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_182",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org:65536/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "SOURCE_IRI_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "SOURCE_IRI_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:invalid_source_183",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org:0/",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "VERSION_REQUIRED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "VERSION_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:blank_version",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "  "
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:architecture_kind",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "architecture_service",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:claim_equivalentClass",
+      "input": {
+        "equivalentClass": true,
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:claim_sameAs",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "sameAs": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:claim_semantic_equivalence",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "semantic_equivalence": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "OWNER_ALIGNMENT_NOT_AUTHORIZED"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OWNER_ALIGNMENT_NOT_AUTHORIZED",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:claim_owner_acceptance",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "owner_acceptance": true,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:ValueProposition:explicit_false_flags",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "UNREVIEWED_CLASS_LOCATOR"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "historically observed same-name declaration only",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNREVIEWED_CLASS_LOCATOR",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:wrong_locator",
+      "input": {
+        "class_locator": "urn:ontospk:synthetic:architecture-service",
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "UNSUPPORTED_REFERENCE_FIELDS"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "UNSUPPORTED_REFERENCE_FIELDS",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:rdf_equivalence_field",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "owl:equivalentClass": "urn:example:owner",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [
+          "TARGET_KIND_MISMATCH"
+        ],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": "TARGET_KIND_MISMATCH",
+      "expected_status": "REJECTED",
+      "id": "EXT:Business:ValueProposition:other_business_kind",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "business_rule",
+        "source": "https://example.org/declared-source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "synthetic-v1"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "contract_revision": "BUSINESS-BOUNDARY-REVIEW-1",
+        "display_label": "ValueProposition",
+        "errors": [],
+        "handle": "EXT:Business:ValueProposition",
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+        "supplied_class_locator_status": "NOT_SUPPLIED",
+        "target_membership_verified": false
+      },
+      "expected_error": null,
+      "expected_status": "LOCAL_REFERENCE_CONFORMING_ONLY",
+      "id": "EXT:Business:ValueProposition:synthetic_provenance_not_verified",
+      "input": {
+        "handle": "EXT:Business:ValueProposition",
+        "kind": "value_proposition",
+        "source": "urn:unknown:source",
+        "target": "urn:ontospk:synthetic:business-target",
+        "version": "unverified-claim"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "errors": [
+          "OUTSIDE_REVIEWED_BUSINESS_SCOPE"
+        ],
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REVIEW_REQUIRED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OUTSIDE_REVIEWED_BUSINESS_SCOPE",
+      "expected_status": "REVIEW_REQUIRED",
+      "id": "outside_architecture",
+      "input": {
+        "handle": "EXT:Architecture:Service"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "errors": [
+          "OUTSIDE_REVIEWED_BUSINESS_SCOPE"
+        ],
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REVIEW_REQUIRED",
+        "target_membership_verified": false
+      },
+      "expected_error": "OUTSIDE_REVIEWED_BUSINESS_SCOPE",
+      "expected_status": "REVIEW_REQUIRED",
+      "id": "outside_unknown",
+      "input": {
+        "handle": "EXT:Business:Unknown"
+      },
+      "status": "PASS"
+    },
+    {
+      "actual": {
+        "errors": [
+          "REFERENCE_OBJECT_REQUIRED"
+        ],
+        "network_access_performed": false,
+        "owner_acceptance": false,
+        "semantic_equivalence": false,
+        "source_truth_verified": false,
+        "status": "REJECTED",
+        "target_membership_verified": false
+      },
+      "expected_error": "REFERENCE_OBJECT_REQUIRED",
+      "expected_status": "REJECTED",
+      "id": "malformed_reference",
+      "input": [],
+      "status": "PASS"
+    }
+  ],
+  "cli_exit_controls": 3,
+  "limits": "These are local record and source-signature tests. No owner membership, external equivalence, live dereferenceability or full RDF population conformance is established.",
+  "logical_boundary_proxies": 4,
+  "native_handles": 5,
+  "native_relations": 8,
+  "reference_cases": 198,
+  "review_sha256": "8dabfe82d5f5072b517afccf362989a9064a86d38c9f245d60541d2c1831ce1d",
+  "status": "PASS"
+}

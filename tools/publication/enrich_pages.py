@@ -45,7 +45,8 @@ def enrich():
     for source in formal.glob('*.md'):
         mapping[source] = DOCS / 'reference/formal' / ('index.html' if source.stem == 'README' else source.stem+'.html')
     expanded_reports = ['v2.0.2-closeout','shacl-complex','owl-hermit','robot-report','cq-regression','core-regression']
-    reports = ['coverage-register','comprehensive-coverage-plan','shacl-shapes-audit','shacl-simple-constraints','wiki-publication-verification'] + expanded_reports
+    boundary_reports = ['business-boundary-review','business-boundary-tests']
+    reports = ['coverage-register','comprehensive-coverage-plan','shacl-shapes-audit','shacl-simple-constraints','wiki-publication-verification'] + expanded_reports + boundary_reports
     for name in reports:
         mapping[ROOT/'evaluation'/f'{name}.md'] = DOCS/'evaluation'/f'{name}.html'
     for name in ['README','classes','associations','generalizations','commitments']:
@@ -62,6 +63,8 @@ def enrich():
                     continue
                 dest = (source.parent/unquote(u.path)).resolve()
                 evidence_ref = 'v2.0.2' if dest.parent == ROOT/'evaluation' and any(dest.name.startswith(n+'.') for n in expanded_reports) else SOURCE_BASELINE
+                if dest.parent == ROOT/'evaluation' and any(dest.name.startswith(n+'.') for n in boundary_reports):
+                    evidence_ref = 'main'
                 a['href'] = relative(mapping[dest], target) if dest in mapping else REPO+'/blob/'+('v2.0.0' if dest.is_relative_to(ROOT/'semantic') else evidence_ref)+'/'+dest.relative_to(ROOT).as_posix()
                 if u.fragment:
                     a['href'] += '#'+u.fragment
@@ -86,7 +89,7 @@ def enrich():
     evaluation += ''.join('<li><a href="'+name+'.html">'+name.replace('-',' ').title()+'</a></li>' for name in expanded_reports)
     evaluation += '</ul><h2>Released core baseline</h2><ul><li><a href="../guide/Quality.html">Historical core methods, outcomes and interpretation</a></li><li><a href="../guide/Competency-Questions.html">Competency questions and replay contracts</a></li><li><a href="'+REPO+'/blob/v2.0.0/evaluation/results/INTEGRATION_RESULTS.json">Exact original ten-stage integration receipt</a></li></ul><h2>Source inventories and simple components</h2><p>The graph audit covers four active SHACL graphs; isolated simple-component cases cover 1,864 occurrences, with 1,754 constructible expected violations and 110 logically unreachable negative cases. The register is the original test design; actual execution is recorded in the v2.0.2 closeout.</p><ul>'
     evaluation += ''.join('<li><a href="'+name+'.html">'+name.replace('-',' ').title()+'</a></li>' for name in reports[:4])
-    evaluation += '</ul><h2>Publication acceptance</h2><p>The <a href="wiki-publication-verification.html">Wiki receipt</a> records a separate publication check. Browser and deployment receipts for Pages must identify their own exact source.</p><h2>Limits</h2><p>Independent domain review, external-owner equivalence, modal and causal adequacy, and production readiness are not established by these finite checks. Read <a href="../guide/Limitations.html">the limitations</a> before reuse.</p>'
+    evaluation += '</ul><h2>Current boundary policy reviews</h2><p>The <a href="business-boundary-review.html">Business review</a> decides five local reference-only policies and traces all eight native uses. Its <a href="business-boundary-tests.html">executable record tests</a> cover the separate adapter. External-owner equivalence remains unaccepted; the frozen core is unchanged. This review does not publish v2.1.0.</p><h2>Publication acceptance</h2><p>The <a href="wiki-publication-verification.html">Wiki receipt</a> records a separate publication check. Browser and deployment receipts for Pages must identify their own exact source.</p><h2>Limits</h2><p>Independent domain review, external-owner equivalence, modal and causal adequacy, and production readiness are not established by these finite checks. Read <a href="../guide/Limitations.html">the limitations</a> before reuse.</p>'
     (DOCS/'evaluation/index.html').write_text('<html lang="en"><head><title>Evaluation and evidence</title></head><body><main>'+evaluation+'</main></body></html>')
 
     coverage = json.loads((DOCS/'webvowl/coverage.json').read_text())
