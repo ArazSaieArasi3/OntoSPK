@@ -1,0 +1,277 @@
+{
+  "accepted_external_equivalences": 0,
+  "current_core_typed_adapter_status": "The frozen boundary_profile.assess returns REVIEW_REQUIRED for these five handles because it has no v0_41 typed Business contracts. Do not relabel that legacy outcome as validated.",
+  "issue": 23,
+  "limits": "Local reference structure and public usage are decided; target membership, source truth, public dereferenceability, UFO adequacy and external-owner equivalence are not established.",
+  "new_adapter": "tools/boundaries/business_reference.py is a separate explicit reference-record gate; it does not modify or silently replace the frozen runtime.",
+  "new_owned_domain_concepts": 0,
+  "next_semantic_release": "No native/logical change accepted here. v2.1.0 remains conditional on later scientific decisions; no semantic release is fabricated for this review.",
+  "ontology_core": "v2.0.0",
+  "owner_metadata_observation": {
+    "method": "Authenticated repository metadata and presence of the previously recorded revision; no owner payload copied.",
+    "observed_date": "2026-10-23",
+    "public_owner_snapshot_selected": null,
+    "recorded_snapshot": "1cd8e02b4786ac9f0c50f2936912b63e32aed360",
+    "repository": "ArazSaieArasi3/business-ontology",
+    "visibility": "private"
+  },
+  "public_authority": "The already published OntoSPK operational contracts, not a private owner definition.",
+  "relation_count": 8,
+  "review_id": "BUSINESS-BOUNDARY-REVIEW-1",
+  "review_scope": "Four named Business targets and one Service rename candidate",
+  "rows": [
+    {
+      "accepted_owner_mapping": null,
+      "accepted_policy": "REFERENCE_ONLY_WITH_LOCAL_OPERATIONAL_CONTRACT",
+      "allowed_target_kind": "business_capability",
+      "definition_source": "OntoSPK v2.0.0 native model, customProperties.v0_17_boundary_contract",
+      "display_label": "BusinessCapability",
+      "frozen_model_effect": "NONE",
+      "incident_relations": [
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r107_intendedToSupport",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:107",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:CapabilitySpecification",
+          "target_id": "EXT:Business:BusinessCapability",
+          "title": "intendedToSupport"
+        }
+      ],
+      "local_logical_boundary_iris": [
+        "urn:product-ontology:external-boundary:0.7:Business%3ABusinessCapability"
+      ],
+      "logical_representation": "The released property range uses a local boundary placeholder, not an imported or owner-equivalent class.",
+      "native_id": "EXT:Business:BusinessCapability",
+      "native_projection_status": "no mapping asserted by this register",
+      "owner_locator_interpretation": "historically observed same-name declaration only",
+      "public_operational_definition": "A business-owned ability that a product capability specification intends to support.",
+      "recorded_owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessCapability",
+      "recorded_owner_commit": "1cd8e02b4786ac9f0c50f2936912b63e32aed360",
+      "recorded_owner_repository": "ArazSaieArasi3/business-ontology",
+      "rejected_alignment": "Automatic equivalentClass/sameAs from names or a source locator",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED",
+      "unresolved_external_question": "Publicly reproducible owner-definition compatibility and foundational alignment are not accepted."
+    },
+    {
+      "accepted_owner_mapping": null,
+      "accepted_policy": "REFERENCE_ONLY_WITH_LOCAL_OPERATIONAL_CONTRACT",
+      "allowed_target_kind": "business_goal",
+      "definition_source": "OntoSPK v2.0.0 native model, customProperties.v0_17_boundary_contract",
+      "display_label": "BusinessGoal",
+      "frozen_model_effect": "NONE",
+      "incident_relations": [
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r167_supports",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:167",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:QualityRequirementSpecification",
+          "target_id": "EXT:Business:BusinessGoal",
+          "title": "supports"
+        }
+      ],
+      "local_logical_boundary_iris": [
+        "urn:product-ontology:external-boundary:0.7:Business%3ABusinessGoal"
+      ],
+      "logical_representation": "The released property range uses a local boundary placeholder, not an imported or owner-equivalent class.",
+      "native_id": "EXT:Business:BusinessGoal",
+      "native_projection_status": "no mapping asserted by this register",
+      "owner_locator_interpretation": "historically observed same-name declaration only",
+      "public_operational_definition": "A business-owned desired outcome to which a product requirement contributes.",
+      "recorded_owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessGoal",
+      "recorded_owner_commit": "1cd8e02b4786ac9f0c50f2936912b63e32aed360",
+      "recorded_owner_repository": "ArazSaieArasi3/business-ontology",
+      "rejected_alignment": "Automatic equivalentClass/sameAs from names or a source locator",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED",
+      "unresolved_external_question": "Publicly reproducible owner-definition compatibility and foundational alignment are not accepted."
+    },
+    {
+      "accepted_owner_mapping": null,
+      "accepted_policy": "REFERENCE_ONLY_WITH_LOCAL_OPERATIONAL_CONTRACT",
+      "allowed_target_kind": "business_rule",
+      "definition_source": "OntoSPK v2.0.0 native model, customProperties.v0_17_boundary_contract",
+      "display_label": "BusinessRule",
+      "frozen_model_effect": "NONE",
+      "incident_relations": [
+        {
+          "logical_predicate": "urn:productium:specification-profile:referenceTarget",
+          "logical_ranges": [],
+          "logical_role": "generic reference target",
+          "native_relation_id": "REL:W2:111",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "1",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:BusinessRuleReference",
+          "target_id": "EXT:Business:BusinessRule",
+          "title": "refersTo"
+        }
+      ],
+      "local_logical_boundary_iris": [],
+      "logical_representation": "BusinessRuleReference is a local reference record; referenceTarget has no asserted BusinessRule owner-class range.",
+      "native_id": "EXT:Business:BusinessRule",
+      "native_projection_status": "no mapping asserted by this register",
+      "owner_locator_interpretation": "historically observed same-name declaration only",
+      "public_operational_definition": "A business-owned directive or constraint referenced by a product specification.",
+      "recorded_owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessRule",
+      "recorded_owner_commit": "1cd8e02b4786ac9f0c50f2936912b63e32aed360",
+      "recorded_owner_repository": "ArazSaieArasi3/business-ontology",
+      "rejected_alignment": "Automatic equivalentClass/sameAs from names or a source locator",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED",
+      "unresolved_external_question": "Publicly reproducible owner-definition compatibility and foundational alignment are not accepted."
+    },
+    {
+      "accepted_owner_mapping": null,
+      "accepted_policy": "REFERENCE_ONLY_WITH_LOCAL_OPERATIONAL_CONTRACT",
+      "allowed_target_kind": "business_service",
+      "definition_source": "OntoSPK v2.0.0 native model, customProperties.v0_17_boundary_contract",
+      "display_label": "Business Service",
+      "frozen_model_effect": "NONE",
+      "incident_relations": [
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r187_includesService",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3AService"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:187",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:OfferingSpecification",
+          "target_id": "EXT:Business:Service",
+          "title": "includesService"
+        }
+      ],
+      "local_logical_boundary_iris": [
+        "urn:product-ontology:external-boundary:0.7:Business%3AService"
+      ],
+      "logical_representation": "The released property range uses a local boundary placeholder, not an imported or owner-equivalent class.",
+      "native_id": "EXT:Business:Service",
+      "native_projection_status": "no mapping asserted by this register",
+      "owner_locator_interpretation": "rename candidate only",
+      "public_operational_definition": "A business-facing service included in an offering; distinct from a software architecture service.",
+      "recorded_owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#BusinessService",
+      "recorded_owner_commit": "1cd8e02b4786ac9f0c50f2936912b63e32aed360",
+      "recorded_owner_repository": "ArazSaieArasi3/business-ontology",
+      "rejected_alignment": "Automatic equivalentClass/sameAs from names or a source locator",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED",
+      "unresolved_external_question": "Publicly reproducible owner-definition compatibility and foundational alignment are not accepted."
+    },
+    {
+      "accepted_owner_mapping": null,
+      "accepted_policy": "REFERENCE_ONLY_WITH_LOCAL_OPERATIONAL_CONTRACT",
+      "allowed_target_kind": "value_proposition",
+      "definition_source": "OntoSPK v2.0.0 native model, customProperties.v0_17_boundary_contract",
+      "display_label": "ValueProposition",
+      "frozen_model_effect": "NONE",
+      "incident_relations": [
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r116_references",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:116",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:PositioningStatement",
+          "target_id": "EXT:Business:ValueProposition",
+          "title": "references"
+        },
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r185_referencesValueProposition",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:185",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:Product",
+          "target_id": "EXT:Business:ValueProposition",
+          "title": "referencesValueProposition"
+        },
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r190_referencesValueProposition",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:190",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:VisionStatement",
+          "target_id": "EXT:Business:ValueProposition",
+          "title": "referencesValueProposition"
+        },
+        {
+          "logical_predicate": "urn:product-ontology:relation-profile:0.7:r202_referencesValueProposition",
+          "logical_ranges": [
+            "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition"
+          ],
+          "logical_role": "local boundary placeholder",
+          "native_relation_id": "REL:W2:202",
+          "owner_equivalence": false,
+          "per_source_target_bounds": "0..*",
+          "per_target_source_bounds": "0..*",
+          "source_id": "IC:GoToMarketSpecification",
+          "target_id": "EXT:Business:ValueProposition",
+          "title": "referencesValueProposition"
+        }
+      ],
+      "local_logical_boundary_iris": [
+        "urn:product-ontology:external-boundary:0.7:Business%3AValueProposition"
+      ],
+      "logical_representation": "The released property range uses a local boundary placeholder, not an imported or owner-equivalent class.",
+      "native_id": "EXT:Business:ValueProposition",
+      "native_projection_status": "no mapping asserted by this register",
+      "owner_locator_interpretation": "historically observed same-name declaration only",
+      "public_operational_definition": "A business-owned statement of value offered to intended recipients.",
+      "recorded_owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/business#ValueProposition",
+      "recorded_owner_commit": "1cd8e02b4786ac9f0c50f2936912b63e32aed360",
+      "recorded_owner_repository": "ArazSaieArasi3/business-ontology",
+      "rejected_alignment": "Automatic equivalentClass/sameAs from names or a source locator",
+      "semantic_equivalence": "NOT_ASSERTED",
+      "ufo_stereotype": "UNASSIGNED",
+      "unresolved_external_question": "Publicly reproducible owner-definition compatibility and foundational alignment are not accepted."
+    }
+  ],
+  "service_decision": {
+    "architecture_allowed_kind": "architecture_service",
+    "architecture_definition": "A technical service in a software architecture; distinct from a business-facing service.",
+    "business_allowed_kind": "business_service",
+    "business_definition": "A business-facing service included in an offering; distinct from a software architecture service.",
+    "business_display_label": "Business Service",
+    "candidate_owner_name": "BusinessService",
+    "decision": "Keep the stable Business handle; display Business Service; reject treating architecture_service as its typed record kind. BusinessService remains an owner rename candidate, not an accepted equivalence or an IRI rewrite.",
+    "native_architecture_handle": "EXT:Architecture:Service",
+    "native_business_handle": "EXT:Business:Service",
+    "not_claimed": "Different concept IRIs do not assert owl:disjointWith or establish individual inequality."
+  },
+  "source_sha256": {
+    "evaluation/external-boundary-status.json": "2199f300c3dac155d9033406aa1541622e2f4aac9ff7529d95f037e015afe06a",
+    "semantic/product/v2/reference/native-class-projection.csv": "e05b40fb8537c08265a883748613cab69b3e1fc7bb8405e96d93fcd12b5cd4fa",
+    "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+    "semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+    "semantic/product/v2/source/validation_v041/inputs/Relation_OWL_SQL_Crosswalk_v0_16_0.csv": "6bee97b08e4e4523c26bf2ebacdef844355330c3160fa20d067de43f9d9bfd46"
+  },
+  "status": "REFERENCE_ONLY_POLICIES_DECIDED"
+}

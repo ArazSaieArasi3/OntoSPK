@@ -43,6 +43,8 @@ The [expanded finite evaluation v2.0.2](evaluation/v2.0.2-closeout.md) accounts 
 
 ## Version and rights
 
+The [Business boundary review](evaluation/business-boundary-review.md) decides the five local reference-only contracts and traces all eight native relations. A [separate reference-record adapter](tools/boundaries/business_reference.py) implements the reviewed policy, with [executable acceptance evidence](evaluation/business-boundary-tests.md). Business Service retains its stable handle; BusinessService remains an owner rename candidate. No external equivalence or new semantic release is asserted.
+
 The distribution combines native model 0.41.0 and logical profile 0.43.0. Technical filenames retain the revisions of their schema or fixture contracts; those revisions are not alternative distribution versions. Semantic identifiers are preserved. See [source identity and release state](docs/guide/Versions.md).
 
 No project-wide reuse licence has yet been selected. See [LICENSING.md](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).

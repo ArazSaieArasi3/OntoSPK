@@ -57,6 +57,8 @@ The [finite evaluation closeout](../../evaluation/v2.0.2-closeout.md) records th
 
 ## v2.1.0
 
+The [Business contract decision](../../evaluation/business-boundary-review.md) resolves #23 as five local reference-only policies, with all eight existing native uses traced and a [tested separate record adapter](../../evaluation/business-boundary-tests.md). The public native operational meanings are sufficient for current local reference use; promoting any of these handles to a locally owned domain concept is not accepted by this review. Owner-definition compatibility remains unaccepted. The frozen core is unchanged, and v2.1.0 remains conditional on later accepted semantic changes.
+
 | Work item | Depends on |
 | --- | --- |
 | [#23: Resolve the Business external-reference contract](https://github.com/ArazSaieArasi3/OntoSPK/issues/23) | #3 |
