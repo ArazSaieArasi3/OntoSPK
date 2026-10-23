@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ROBOT execution and finding adjudication — OntoSPK ontology documentation"><title>ROBOT execution and finding adjudication — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="robot-execution-and-finding-adjudication">ROBOT execution and finding adjudication</h1>
+<p>ROBOT 1.9.11 was actually executed for version readback, OWL 2 DL profile validation, HermiT orchestration and its unmodified default report. The profile and reason commands pass. The default report returns exit 1 with <strong>812 findings: 288 ERROR, 451 WARN, 73 INFO</strong>. These are not hidden or relabelled as a clean report.</p>
+<table>
+<thead>
+<tr>
+<th>Default rule</th>
+<th style="text-align: right;">Findings</th>
+<th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>duplicate_label</td>
+<td style="text-align: right;">41</td>
+<td>Lexical collision across distinct IRIs; not owl:sameAs or a logical contradiction. Retain distinct meanings; review disambiguation in the next metadata increment.</td>
+</tr>
+<tr>
+<td>missing_definition</td>
+<td style="text-align: right;">451</td>
+<td>Editorial evidence debt; no definition is invented by this release. Source-backed concept pages remain #37.</td>
+</tr>
+<tr>
+<td>missing_label</td>
+<td style="text-align: right;">244</td>
+<td>Editorial metadata debt; identifiers remain authoritative. Add curated source-bound labels only in a new version.</td>
+</tr>
+<tr>
+<td>missing_ontology_description</td>
+<td style="text-align: right;">1</td>
+<td>Ontology-header metadata follow-up; repository/guide descriptions do not fill an OWL annotation automatically.</td>
+</tr>
+<tr>
+<td>missing_ontology_license</td>
+<td style="text-align: right;">1</td>
+<td>Known rights state: no project-wide reuse licence selected. Do not manufacture a licence axiom.</td>
+</tr>
+<tr>
+<td>missing_ontology_title</td>
+<td style="text-align: right;">1</td>
+<td>Ontology-header metadata follow-up; no frozen graph mutation in this evaluation patch.</td>
+</tr>
+<tr>
+<td>missing_superclass</td>
+<td style="text-align: right;">73</td>
+<td>Default OBO hierarchy expectation; an undeclared superclass is not proof of logical incoherence. All named classes are checked independently below.</td>
+</tr>
+</tbody>
+</table>
+<p>The default report applies OBO-style editorial conventions. These findings are metadata/hierarchy conventions, not evidence of an inconsistent ontology. No labels, definitions, ontology headers or licence assertions were fabricated to clear them. Future metadata repair requires its own version and source review; this evaluation patch preserves the frozen logical graph. The follow-up is tracked in <a href="https://github.com/ArazSaieArasi3/OntoSPK/issues/44">issue #44</a>.</p>
+<p><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.2/evaluation/robot-report.json.gz">Unfiltered findings and exact dispositions</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.2/evaluation/owl-hermit.json.gz">Actual tool commands, exit statuses and outputs</a></p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

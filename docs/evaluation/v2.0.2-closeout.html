@@ -1,0 +1,196 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Evaluation release v2.0.2 — closeout — OntoSPK ontology documentation"><title>Evaluation release v2.0.2 — closeout — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="evaluation-release-v202-closeout">Evaluation release v2.0.2 — closeout</h1>
+<p><strong>The finite evaluation release gate passes.</strong> The ontology core remains v2.0.0; native and logical semantic source hashes are unchanged. There are zero unexplained positive-baseline failures and zero unaccounted SHACL component occurrences. This is not universal semantic or independent domain acceptance.</p>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SHACL source components</td>
+<td>1,977 accounted for: 1,864 simple + 113 complex</td>
+</tr>
+<tr>
+<td>Simple adverse cases</td>
+<td>1,754 executed; 110 logically unreachable, explicitly excluded</td>
+</tr>
+<tr>
+<td>Complex controls</td>
+<td>449 observations, 244 inverse projections, 42 native event fixtures</td>
+</tr>
+<tr>
+<td>OWL 2 DL / baseline</td>
+<td>Pass / consistent</td>
+</tr>
+<tr>
+<td>Named-class satisfiability</td>
+<td>121 / 121 satisfiable</td>
+</tr>
+<tr>
+<td>Expanded HermiT scenarios</td>
+<td>71 expected consistency/entailment outcomes matched</td>
+</tr>
+<tr>
+<td>CQ replay</td>
+<td>56 contracts, 187 fixtures, 374 exact-answer comparisons passed</td>
+</tr>
+<tr>
+<td>CQ mutation sensitivity</td>
+<td>1314 detected / 9128 probes; 7814 survivors retained</td>
+</tr>
+<tr>
+<td>Fresh core regression</td>
+<td>8 stages passed; overlapping suite counts reported separately</td>
+</tr>
+<tr>
+<td>Default ROBOT report</td>
+<td>812 findings retained: 288 ERROR, 451 WARN, 73 INFO</td>
+</tr>
+<tr>
+<td>Commitment traceability</td>
+<td>22 / 22 scoped; OPEN01 remains an explicitly unasserted scientific limitation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="finding-decisions">Finding decisions</h2>
+<ul>
+<li><strong>fixture_configuration</strong>: Complete reporting graph needs the same retained ont_graph used by the released runtime; raw fixtures without it lack subclass context. The source graph was not changed. Disposition: RESOLVED_IN_HARNESS.</li>
+<li><strong>logical_unreachability</strong>: 110 simple adverse cases cannot exist in isolation; source targetObjectsOf can also make isolated inverse missing-edge cases unreachable. Disposition: CLASSIFIED_NOT_COUNTED_AS_NEGATIVE_PASS.</li>
+<li><strong>method_limit</strong>: 7814 data mutations survive exact-answer querying. All per-triple observations remain available; all 56 CQs detect at least one data mutation. No inference is used. Disposition: RETAINED_OBSERVATIONS.</li>
+<li><strong>editorial_metadata</strong>: Default ROBOT report has 812 raw findings, including 288 ERROR. Labels, definitions and header metadata require an explicitly versioned follow-up; the lack of a project licence is an already disclosed rights state. Disposition: DEFERRED_SOURCE_REVIEW_NO_SILENT_REPAIR.</li>
+<li><strong>scientific_followup</strong>: External-owner contracts, modal/causal adequacy and independent domain acceptance remain separate work. No semantic source defect was found by these finite tests. Disposition: OUTSIDE_V2_0_2.</li>
+</ul>
+<h2 id="commitment-evidence">Commitment evidence</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Commitment</th>
+<th>Accepted evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID01</td>
+<td>One version per ProductRealization</td>
+<td>owl-hermit.json.gz: equality_version; owl-hermit.json.gz: distinct_version; owl-hermit.json.gz: missing_version_open_world; shacl-simple-constraints.json.gz: source identity components; core-regression.json.gz: explicit identity population rejection</td>
+</tr>
+<tr>
+<td>ID02</td>
+<td>At least one actual capability per realization</td>
+<td>owl-hermit.json.gz: missing_capability_open_world; shacl-simple-constraints.json.gz: source identity components; core-regression.json.gz: explicit identity population rejection</td>
+</tr>
+<tr>
+<td>ID03</td>
+<td>Exactly one bearer per ProductCapability</td>
+<td>owl-hermit.json.gz: equality_bearer; owl-hermit.json.gz: distinct_bearer; owl-hermit.json.gz: missing_bearer_open_world; shacl-simple-constraints.json.gz: source identity components; core-regression.json.gz: explicit identity population rejection</td>
+</tr>
+<tr>
+<td>ID04</td>
+<td>Realization and capability continuity</td>
+<td>core-regression.json.gz: suites.revision.groups.identity_policy</td>
+</tr>
+<tr>
+<td>ID05</td>
+<td>Do not infer identity from equal identifiers or timestamps</td>
+<td>owl-hermit.json.gz: equal_times_no_identity; owl-hermit.json.gz: equal_times_distinct_events</td>
+</tr>
+<tr>
+<td>EV01</td>
+<td>hasResult / inverse recordsExecution endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_has_result; owl-hermit.json.gz: equality_result_event; owl-hermit.json.gz: distinct_result_event; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV02</td>
+<td>executes endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_executes; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV03</td>
+<td>hasRecordedExecution endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_suite_index; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV04</td>
+<td>testsRealization endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_tested_realization; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV05</td>
+<td>assessesSpecification endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_assessed_specification; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV06</td>
+<td>executionContext endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_execution_context; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV07</td>
+<td>executionCriterion endpoint types and native multiplicities</td>
+<td>owl-hermit.json.gz: domain_range_execution_criterion; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV08</td>
+<td>One known observed end; start explicitly known or unknown; timezone-qualified recorded times</td>
+<td>owl-hermit.json.gz: missing_end_open_world; owl-hermit.json.gz: two_end_times; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV09</td>
+<td>Tested realization has a typed single version</td>
+<td>owl-hermit.json.gz: equality_version; owl-hermit.json.gz: distinct_version; owl-hermit.json.gz: missing_version_open_world; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV10</td>
+<td>Assessed specification belongs to tested version</td>
+<td>owl-hermit.json.gz: no_version_specification_chain; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV11</td>
+<td>Indexing suite contains the executed case</td>
+<td>owl-hermit.json.gz: no_suite_case_closure; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>EV12</td>
+<td>No automatic criterion propagation or success entailment</td>
+<td>owl-hermit.json.gz: no_criterion_propagation; owl-hermit.json.gz: no_success_from_result; shacl-complex.json.gz: source-bound SPARQL/whole-graph event controls; core-regression.json.gz: combined/revision event controls</td>
+</tr>
+<tr>
+<td>LG01</td>
+<td>Completed record cannot be renamed, rebound or erased</td>
+<td>core-regression.json.gz: suites.revision.groups.history</td>
+</tr>
+<tr>
+<td>LG02</td>
+<td>Replay is idempotent; conflicting replay is rejected</td>
+<td>core-regression.json.gz: suites.combined.results (idempotent replay and snapshot conflict)</td>
+</tr>
+<tr>
+<td>LG03</td>
+<td>Persistence survives close/reopen</td>
+<td>core-regression.json.gz: suites.combined.groups.persistence</td>
+</tr>
+<tr>
+<td>INT01</td>
+<td>OWL/native/SHACL/SQL identifiers are explicitly mapped</td>
+<td>owl-hermit.json.gz: positive_population; core-regression.json.gz: suites.structural (892 static expressions); core-regression.json.gz: suites.combined.groups.mapping and roundtrip</td>
+</tr>
+<tr>
+<td>OPEN01</td>
+<td>Full modal/Event semantics and independent acceptance</td>
+<td>Scope/limitation, not a theorem claimed by this release</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reproduce">Reproduce</h2>
+<p>Use the pinned Python requirements and the SHA-256-verified ROBOT 1.9.11 JAR. Java 17 must provide the jdk.compiler module. Run from the repository root:</p>
+<pre><code class="language-bash">python tools/publication/test_shacl_complex.py
+python tools/publication/test_owl_reasoning.py --robot "$ROBOT_JAR"
+python tools/publication/test_cq_regression.py
+python tools/publication/test_core_regression.py --robot "$ROBOT_JAR"
+python tools/publication/adjudicate_evaluation.py
+</code></pre>
+<p>The expanded-evaluation workflow also regenerates the simple-component receipt and verifies the publication package. Native upstream SDK/validator results remain historical and are not relabelled as fresh. No owner decision is required to publish this bounded evaluation increment. Metadata improvements, external contracts and independent scientific assessment remain separate follow-ups.</p>
+<p><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.2/evaluation/v2.0.2-closeout.json.gz">Machine-readable execution index and finding decisions</a> · <a href="shacl-complex.html">SHACL</a> · <a href="owl-hermit.html">HermiT</a> · <a href="robot-report.html">ROBOT</a> · <a href="cq-regression.html">CQ replay</a> · <a href="core-regression.html">Core regression</a></p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#finding-decisions">Finding decisions</a></li><li><a href="#commitment-evidence">Commitment evidence</a></li><li><a href="#reproduce">Reproduce</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

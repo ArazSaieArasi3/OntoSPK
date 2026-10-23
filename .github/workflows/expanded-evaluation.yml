@@ -1,0 +1,89 @@
+name: Expanded finite evaluation
+on:
+  pull_request:
+    paths:
+      - 'tools/publication/**'
+      - 'evaluation/**'
+      - 'docs/**'
+      - '.github/workflows/expanded-evaluation.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'tools/publication/**'
+      - 'evaluation/**'
+      - 'docs/**'
+      - '.github/workflows/expanded-evaluation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: expanded-evaluation-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  evaluate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - run: python -m pip install -r tools/ontospk/requirements.txt
+      - name: Obtain checksum-pinned ROBOT
+        run: |
+          curl --fail --location --retry 3 https://github.com/ontodev/robot/releases/download/v1.9.11/robot.jar --output "$RUNNER_TEMP/robot.jar"
+          echo '53cd275c8e4c0dad1fc2c1c34174876795cd7d6b6926e1444adcbb0cb3c7ab26'"  $RUNNER_TEMP/robot.jar" | sha256sum --check --strict
+      - name: Execute expanded controls and adjudicate actual results
+        env:
+          ROBOT_JAR: ${{ runner.temp }}/robot.jar
+        run: |
+          python tools/publication/build_coverage_register.py
+          python tools/publication/audit_shacl_shapes.py
+          python tools/publication/test_shacl_simple_constraints.py
+          python tools/publication/test_shacl_complex.py
+          python tools/publication/test_owl_reasoning.py --robot "$ROBOT_JAR"
+          python tools/publication/test_cq_regression.py
+          python tools/publication/test_core_regression.py --robot "$ROBOT_JAR"
+          python tools/publication/adjudicate_evaluation.py
+          git diff --exit-code -- semantic
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md
+      - name: Verify public package and immutable documentation
+        run: |
+          python tools/publication/check_publication.py
+          python tools/publication/test_versioned_site.py
+          python tools/publication/build_versioned_site.py --previous-ref origin/main
+          python tools/publication/audit_versioned_site.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fresh-evaluation-${{ github.sha }}
+          path: |
+            evaluation/*complex*
+            evaluation/*hermit*
+            evaluation/robot-report*
+            evaluation/cq-regression*
+            evaluation/core-regression*
+            evaluation/v2.0.2-closeout*
+          retention-days: 30
+  publish:
+    needs: evaluate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Publish the accepted evaluation increment once
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/publication/publish_evaluation_release.py

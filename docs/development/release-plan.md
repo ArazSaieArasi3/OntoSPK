@@ -40,6 +40,8 @@ The [Pages and viewer acceptance receipt](../../evaluation/pages-publication-ver
 
 ## v2.0.2
 
+The [finite evaluation closeout](../../evaluation/v2.0.2-closeout.md) records the implementation and executed evidence for #16–#22. Its source-bound execution index accounts for all 1,977 SHACL component occurrences; default ROBOT editorial findings and no-inference CQ mutation survivors remain explicit. Publication is recorded by the public v2.0.2 release and its successful workflow, not by this plan.
+
 | Work item | Depends on |
 | --- | --- |
 | [#13: Define the finite coverage register for comprehensive evaluation](https://github.com/ArazSaieArasi3/OntoSPK/issues/13) | #7 |
