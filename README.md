@@ -43,6 +43,8 @@ The [expanded finite evaluation v2.0.2](evaluation/v2.0.2-closeout.md) accounts 
 
 ## Version and rights
 
+The [Market preservation receipt](evaluation/market-boundary-preservation.md) records the owner's acceptance of existing reference-only use: four named Market handles, 13 native uses, all 27 boundary elements and all 543 semantic files remain unchanged. Publication of sibling private repositories and new cross-ontology wiring are deferred. [v2.0.3 release notes](docs/releases/v2.0.3/RELEASE_NOTES.md) define this documentation/evidence patch; the [release record](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.3) records its publication state.
+
 The [Business boundary review](evaluation/business-boundary-review.md) decides the five local reference-only contracts and traces all eight native relations. A [separate reference-record adapter](tools/boundaries/business_reference.py) implements the reviewed policy, with [executable acceptance evidence](evaluation/business-boundary-tests.md). Business Service retains its stable handle; BusinessService remains an owner rename candidate. No external equivalence or new semantic release is asserted.
 
 The distribution combines native model 0.41.0 and logical profile 0.43.0. Technical filenames retain the revisions of their schema or fixture contracts; those revisions are not alternative distribution versions. Semantic identifiers are preserved. See [source identity and release state](docs/guide/Versions.md).

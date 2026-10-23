@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Market boundary preservation — issue #24 — OntoSPK ontology documentation"><title>Market boundary preservation — issue #24 — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="market-boundary-preservation-issue-24">Market boundary preservation — issue #24</h1>
+<p><strong>Current reference-only use is accepted and preserved by owner direction (23 October 2026).</strong> The earlier proposal to reassess owner alignment, introduce locally owned replacement concepts or publish sibling repositories is deferred. This increment changes documentation and preservation checks only.</p>
+<table>
+<thead>
+<tr>
+<th>Handle</th>
+<th>Existing public operational meaning</th>
+<th>Recorded kind</th>
+<th>Disposition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EXT:Market:CustomerSegment</code></td>
+<td>A grouping of customers by shared needs, behavior or context; not an individual customer.</td>
+<td><code>customer_segment</code></td>
+<td>Preserve unchanged</td>
+</tr>
+<tr>
+<td><code>EXT:Market:Market</code></td>
+<td>A bounded exchange context to which a product or go-to-market specification refers.</td>
+<td><code>market</code></td>
+<td>Preserve unchanged</td>
+</tr>
+<tr>
+<td><code>EXT:Market:MarketSegment</code></td>
+<td>A subset of a market selected using explicit segmentation criteria.</td>
+<td><code>market_segment</code></td>
+<td>Preserve unchanged</td>
+</tr>
+<tr>
+<td><code>EXT:Market:Need</code></td>
+<td>A required or desired condition associated with a customer or actor context.</td>
+<td><code>customer_need</code></td>
+<td>Preserve unchanged</td>
+</tr>
+</tbody>
+</table>
+<p>These meanings and locators already exist in the public native v2.0.0 model. No new definition, class, owner mapping, import, constraint or Market runtime adapter is introduced. No sibling/private repository is read or changed by this workflow.</p>
+<h2 id="existing-native-uses">Existing native uses</h2>
+<table>
+<thead>
+<tr>
+<th>Relation</th>
+<th>Source</th>
+<th>Market target</th>
+<th>Recorded target bounds</th>
+<th>Existing logical predicate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>REL:W2:113</code> refersTo</td>
+<td><code>IC:TargetMarketReference</code></td>
+<td><code>EXT:Market:Market</code></td>
+<td><code>1</code></td>
+<td><code>urn:productium:specification-profile:referenceTarget</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:114</code> refersTo</td>
+<td><code>IC:TargetSegmentReference</code></td>
+<td><code>EXT:Market:MarketSegment</code></td>
+<td><code>1</code></td>
+<td><code>urn:productium:specification-profile:referenceTarget</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:186</code> targets</td>
+<td><code>IC:OfferingSpecification</code></td>
+<td><code>EXT:Market:CustomerSegment</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r186_targets</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:189</code> targets</td>
+<td><code>IC:VisionStatement</code></td>
+<td><code>EXT:Market:CustomerSegment</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r189_targets</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:200</code> targets</td>
+<td><code>IC:GoToMarketSpecification</code></td>
+<td><code>EXT:Market:CustomerSegment</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r200_targets</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:201</code> targets</td>
+<td><code>IC:GoToMarketSpecification</code></td>
+<td><code>EXT:Market:Market</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r201_targets</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:203</code> targets</td>
+<td><code>IC:LaunchSpecification</code></td>
+<td><code>EXT:Market:CustomerSegment</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r203_targets</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:204</code> targets</td>
+<td><code>IC:MarketingGoalSpecification</code></td>
+<td><code>EXT:Market:CustomerSegment</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r204_targets</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:208</code> addressesNeed</td>
+<td><code>IC:OfferingSpecification</code></td>
+<td><code>EXT:Market:Need</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r208_addressesNeed</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:209</code> informedBy</td>
+<td><code>IC:VisionStatement</code></td>
+<td><code>EXT:Market:Need</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r209_informedBy</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:210</code> assessesNeed</td>
+<td><code>IC:ProductMarketFitAssessment</code></td>
+<td><code>EXT:Market:Need</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r210_assessesNeed</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:212</code> intendsToAddressNeed</td>
+<td><code>IC:FeatureSpecification</code></td>
+<td><code>EXT:Market:Need</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r212_intendsToAddressNeed</code></td>
+</tr>
+<tr>
+<td><code>REL:W2:216</code> intendsToAddressNeed</td>
+<td><code>IC:TouchpointSpecification</code></td>
+<td><code>EXT:Market:Need</code></td>
+<td><code>0..*</code></td>
+<td><code>urn:product-ontology:relation-profile:0.7:r216_intendsToAddressNeed</code></td>
+</tr>
+</tbody>
+</table>
+<p>The table reproduces recorded bounds; their original candidate/review metadata is retained in the JSON receipt and is not promoted to a new scientific acceptance. Two reference-record relations use generic <code>referenceTarget</code>; the other eleven retain their existing logical range projections. None establishes an accepted mapping to an external owner class.</p>
+<h2 id="executed-preservation-evidence">Executed preservation evidence</h2>
+<ul>
+<li>All 543 tracked semantic files are byte-identical to frozen v2.0.0; all 27 boundary elements and the 13 incident Market relations are preserved.</li>
+<li>All 90 memory-only adverse changes are rejected: definitions, labels, kinds, locators, equivalence flags, stereotypes, typed contracts, relation endpoints/cardinalities/removals, and changes to the other 23 boundaries.</li>
+<li>Four direct calls to the frozen boundary runtime retain <code>REVIEW_REQUIRED / NO_IMPLEMENTED_TYPED_BOUNDARY_CONTRACT</code>. This result is disclosed unchanged; present reference use is accepted by policy and does not imply a newly implemented typed validator.</li>
+</ul>
+<h2 id="release-and-deferred-scope">Release and deferred scope</h2>
+<p>v2.0.3 is a documentation/evidence patch over ontology core v2.0.0. Existing Business evidence from #23 is retained. No semantic migration is required. The frozen v2.0.1 documentation and v2.0.2 evaluation release remain unchanged. The future v2.1.0 semantic work remains conditional; private-repository publication is not a prerequisite for this patch.</p>
+<p>The original external alignment/localization objectives of #24 are superseded for this increment by the owner preservation decision. The acceptance is explicitly limited to current reference-only use. ProductLine, Architecture and unresolved/composite external reviews (#25–#27) are deferred; they are not silently reported implemented. Later cross-ontology rewiring requires a new owner-directed review.</p>
+<p><a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/market-boundary-preservation.json">Exact source identities, all file blobs, relation metadata, runtime observations and adverse controls</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json">Frozen native source</a></p>
+<p>Reproduce with <code>python tools/publication/review_market_preservation.py</code> from the repository root with the frozen v2.0.0 commit available. No network request is made by this runner.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#existing-native-uses">Existing native uses</a></li><li><a href="#executed-preservation-evidence">Executed preservation evidence</a></li><li><a href="#release-and-deferred-scope">Release and deferred scope</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

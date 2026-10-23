@@ -45,6 +45,7 @@ jobs:
         env:
           ROBOT_JAR: ${{ runner.temp }}/robot.jar
         run: |
+          python tools/publication/review_market_preservation.py
           python tools/publication/build_business_boundary_review.py
           python tools/publication/test_business_boundary_contract.py
           python tools/publication/build_coverage_register.py
@@ -56,7 +57,7 @@ jobs:
           python tools/publication/test_core_regression.py --robot "$ROBOT_JAR"
           python tools/publication/adjudicate_evaluation.py
           git diff --exit-code -- semantic
-          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md
       - name: Verify public package and immutable documentation
         run: |
           python tools/publication/check_publication.py
@@ -68,6 +69,7 @@ jobs:
         with:
           name: fresh-evaluation-${{ github.sha }}
           path: |
+            evaluation/market-boundary-preservation.*
             evaluation/business-boundary-*
             evaluation/*complex*
             evaluation/*hermit*
@@ -83,12 +85,17 @@ jobs:
     timeout-minutes: 5
     permissions:
       contents: write
+      actions: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Publish the accepted evaluation increment once
+      - name: Retain the evaluation release and publish the preservation patch
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/publication/publish_evaluation_release.py
+        run: |
+          python tools/publication/publish_evaluation_release.py
+          python tools/publication/publish_preservation_release.py

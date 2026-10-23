@@ -37,7 +37,7 @@ for name,fmt in [('ontology.ttl','turtle'),('ontology.owl','xml'),('ontology.jso
     serializations[name]={'graph_isomorphic':same,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
 required=['index.html','widoco/index-en.html','reference/native/classes.html','reference/native/associations.html','reference/native/generalizations.html','reference/native/commitments.html','reference/formal/index.html','reference/formal/native-structure.html','reference/formal/profile-projection.html','reference/formal/scoped-contracts.html','reference/formal/review.html','reference/search.html','evaluation/index.html','evaluation/shacl-shapes-audit.html','evaluation/shacl-simple-constraints.html','explore/index.html','downloads/index.html']
 for name in required:require((DOCS/name).is_file(),'Required documentation route: '+name)
-for name in ('business-boundary-review','business-boundary-tests'):
+for name in ('business-boundary-review','business-boundary-tests','market-boundary-preservation'):
     require((DOCS/'evaluation'/f'{name}.html').is_file(),'Business boundary evidence route: '+name)
 guide=list((DOCS/'guide').glob('*.html'))
 require(len(guide)==15,'All 15 curated guide pages')
