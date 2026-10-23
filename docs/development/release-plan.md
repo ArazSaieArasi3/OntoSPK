@@ -11,9 +11,10 @@ Each release has a finite scope and its own acceptance criteria. Publish a compl
 | v2.0.0 | Public ontology core | Frozen native and bounded logical identity; explicit publication boundary, rights state and external-reference caveats; verified finite evidence; accepted migration and release assets. |
 | v2.0.1 | Published documentation | Curated Wiki followed by versioned Pages, exhaustive generated reference, diagrams/downloads and a browser-verified WebVOWL view. Native and logical semantics remain those of v2.0.0. |
 | v2.0.2 | Expanded finite evaluation | Inventory-derived SHACL/HermiT/ROBOT/CQ coverage, controlled adverse cases, readable findings and reproducible evidence. A semantic defect requiring a model change must use a suitable semantic release instead of silently changing this patch. |
+| v2.0.3 | Boundary preservation and public evidence | Owner-accepted current reference-only use; four named Market handles and 13 uses traced; all 27 boundaries and 543 semantic files preserved; reproducible controls and a source-bound release package. No private-repository publication or new wiring. |
 | v2.1.0 | Accepted semantic revisions | Only changes justified by resolved external contracts or scientific identity/event review. This release is conditional on actual accepted model changes and does not block the preceding patches. |
 
-The execution order is the public core release, Wiki, Pages/WebVOWL, and the expanded evaluation increment. Evaluation design can proceed after the core migration; publication of the initial core does not claim that the expanded suite has run. The conditional semantic increment is a separate workstream. Its external-boundary reviews (#23–#27) use a self-contained OntoSPK interpretation as a design objective: decide concept by concept whether a locally defined concept with provenance annotation is justified, while retaining source citations without making a private owner repository a runtime dependency. Any accepted native/logical change is explicitly versioned and does not alter the frozen v2.0.0 identity.
+The execution order is the public core release, Wiki, Pages/WebVOWL, expanded evaluation, and the bounded v2.0.3 preservation patch. The owner decision of 23 October 2026 accepts all current boundary treatments for present OntoSPK use and defers private-repository publication, replacement concepts and cross-ontology rewiring. This supersedes the earlier self-contained-localization proposal for the current increment. It does not establish external semantic equivalence. Any future accepted native/logical change is explicitly versioned and does not alter frozen v2.0.0.
 
 ## v2.0.0
 
@@ -55,9 +56,13 @@ The [finite evaluation closeout](../../evaluation/v2.0.2-closeout.md) records th
 | [#21: Replay competency contracts and measure defect detection](https://github.com/ArazSaieArasi3/OntoSPK/issues/21) | #13 |
 | [#22: Adjudicate coverage findings and publish the evaluation increment](https://github.com/ArazSaieArasi3/OntoSPK/issues/22) | #16, #18, #19, #20, #21 |
 
+## v2.0.3
+
+The [Market preservation receipt](../../evaluation/market-boundary-preservation.md) completes the owner-directed current-use disposition in #24. Its earlier external owner-alignment/localization criteria are superseded for this increment, not reported as executed. No external/private repository is accessed or modified by this work. The patch includes the accepted #23 Business evidence, 90 preservation adverse controls and four disclosed frozen-runtime observations. [Release notes](../releases/v2.0.3/RELEASE_NOTES.md) define the finite scope. Publication requires successful main documentation and expanded evaluation CI plus an exact source-bound archive/manifest; the release list records actual publication.
+
 ## v2.1.0
 
-The [Business contract decision](../../evaluation/business-boundary-review.md) resolves #23 as five local reference-only policies, with all eight existing native uses traced and a [tested separate record adapter](../../evaluation/business-boundary-tests.md). The public native operational meanings are sufficient for current local reference use; promoting any of these handles to a locally owned domain concept is not accepted by this review. Owner-definition compatibility remains unaccepted. The frozen core is unchanged, and v2.1.0 remains conditional on later accepted semantic changes.
+The [Business contract decision](../../evaluation/business-boundary-review.md) resolves #23 as five local reference-only policies, with all eight existing native uses traced and a [tested separate record adapter](../../evaluation/business-boundary-tests.md). The current Market disposition is recorded under v2.0.3. The frozen core is unchanged; v2.1.0 remains conditional on later accepted semantic changes. Owner-definition compatibility remains unasserted. #25–#27 external contract changes and owner-repository work are deferred by owner direction and are not release blockers for the patch. The next active scientific task is #28 restricted to OntoSPK-local identity/event/bearer questions; its external alignment portion remains deferred.
 
 | Work item | Depends on |
 | --- | --- |

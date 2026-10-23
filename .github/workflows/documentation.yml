@@ -36,6 +36,7 @@ jobs:
       - run: python -m pip install -r tools/ontospk/requirements.txt
       - name: Verify generated coverage and Wiki source audits
         run: |
+          python tools/publication/review_market_preservation.py
           python tools/publication/build_business_boundary_review.py
           python tools/publication/test_business_boundary_contract.py
           python tools/publication/build_coverage_register.py
@@ -45,7 +46,7 @@ jobs:
           python tools/publication/build_portal.py
           python tools/publication/audit_wiki.py
           python tools/publication/audit_pages.py
-          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md evaluation/pages-completeness.json wiki-src docs evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md evaluation/pages-completeness.json wiki-src docs evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md
       - run: python tools/publication/check_publication.py
       - name: Verify immutable publication routes
         run: |

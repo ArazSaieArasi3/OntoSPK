@@ -1,0 +1,1373 @@
+{
+  "adverse_change_controls": [
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:label"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:kind"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:definition"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:locator"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:equivalence"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:stereotype"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:CustomerSegment:typed_contract"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:label"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:kind"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:definition"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:locator"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:equivalence"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:stereotype"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Market:typed_contract"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:label"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:kind"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:definition"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:locator"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:equivalence"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:stereotype"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketSegment:typed_contract"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:label"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:kind"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:definition"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:locator"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:equivalence"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:stereotype"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Need:typed_contract"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:113:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:113:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:113:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:114:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:114:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:114:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:186:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:186:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:186:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:189:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:189:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:189:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:200:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:200:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:200:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:201:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:201:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:201:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:203:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:203:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:203:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:204:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:204:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:204:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:208:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:208:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:208:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:209:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:209:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:209:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:210:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:210:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:210:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:212:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:212:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:212:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:216:cardinality"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:216:endpoint"
+    },
+    {
+      "drift_rejected": true,
+      "id": "REL:W2:216:relation_removal"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Architecture:ArchitectureElement:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Architecture:Component:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Architecture:Interface:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Architecture:Service:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Business:BusinessCapability:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Business:BusinessGoal:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Business:BusinessRule:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Business:Service:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Business:ValueProposition:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:EvidenceLayer:Evidence:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ExternalUnresolved:Configuration:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ExternalUnresolved:Evidence:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ExternalUnresolved:Test_Plan:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ExternalUnresolved:Test_Script:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Competitor_Alternative:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:MarketInsight:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:Market:Pain:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ProductLine:ProductConfiguration:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ProductLine:ProductFamily:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ProductLine:ProductLine:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ProductLine:ProductVariant:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:ProductManagement:Metric:outside_scope_change"
+    },
+    {
+      "drift_rejected": true,
+      "id": "EXT:UXResearch:User_Mental_Model:outside_scope_change"
+    }
+  ],
+  "all_boundary_handles_preserved": 27,
+  "baseline_commit": "ccea141bcc238a4aae47e631cadc1809b738bc73",
+  "decision_date": "2026-10-23",
+  "deferred": "Owner-definition review, public visibility, local replacement concepts and cross-ontology mappings are outside this increment.",
+  "issue": 24,
+  "legacy_runtime_checks": [
+    {
+      "actual": {
+        "errors": [
+          "NO_IMPLEMENTED_TYPED_BOUNDARY_CONTRACT"
+        ],
+        "status": "REVIEW_REQUIRED"
+      },
+      "input": {
+        "handle": "EXT:Market:CustomerSegment",
+        "kind": "customer_segment",
+        "source": "urn:ontospk:synthetic:source",
+        "target": "urn:ontospk:synthetic:market-target",
+        "version": "synthetic-v1"
+      },
+      "interpretation": "Legacy typed validation remains unimplemented; current reference use is accepted by owner policy only."
+    },
+    {
+      "actual": {
+        "errors": [
+          "NO_IMPLEMENTED_TYPED_BOUNDARY_CONTRACT"
+        ],
+        "status": "REVIEW_REQUIRED"
+      },
+      "input": {
+        "handle": "EXT:Market:Market",
+        "kind": "market",
+        "source": "urn:ontospk:synthetic:source",
+        "target": "urn:ontospk:synthetic:market-target",
+        "version": "synthetic-v1"
+      },
+      "interpretation": "Legacy typed validation remains unimplemented; current reference use is accepted by owner policy only."
+    },
+    {
+      "actual": {
+        "errors": [
+          "NO_IMPLEMENTED_TYPED_BOUNDARY_CONTRACT"
+        ],
+        "status": "REVIEW_REQUIRED"
+      },
+      "input": {
+        "handle": "EXT:Market:MarketSegment",
+        "kind": "market_segment",
+        "source": "urn:ontospk:synthetic:source",
+        "target": "urn:ontospk:synthetic:market-target",
+        "version": "synthetic-v1"
+      },
+      "interpretation": "Legacy typed validation remains unimplemented; current reference use is accepted by owner policy only."
+    },
+    {
+      "actual": {
+        "errors": [
+          "NO_IMPLEMENTED_TYPED_BOUNDARY_CONTRACT"
+        ],
+        "status": "REVIEW_REQUIRED"
+      },
+      "input": {
+        "handle": "EXT:Market:Need",
+        "kind": "customer_need",
+        "source": "urn:ontospk:synthetic:source",
+        "target": "urn:ontospk:synthetic:market-target",
+        "version": "synthetic-v1"
+      },
+      "interpretation": "Legacy typed validation remains unimplemented; current reference use is accepted by owner policy only."
+    }
+  ],
+  "limits": "Owner acceptance of current use is not owner-definition equivalence, UFO validation, or a new claim that the legacy typed gate validates these four handles.",
+  "market_handles": [
+    {
+      "disposition": "OWNER_ACCEPTED_CURRENT_REFERENCE_ONLY_USE",
+      "existing_contract": {
+        "allowed_target_kinds": "customer_segment",
+        "decision": "PRESERVE_NAMED_EXTERNAL_REFERENCE",
+        "display_label": "CustomerSegment",
+        "operational_definition": "A grouping of customers by shared needs, behavior or context; not an individual customer.",
+        "owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#CustomerSegment",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "label": "CustomerSegment",
+      "model_change": false,
+      "native_id": "EXT:Market:CustomerSegment",
+      "new_equivalence": false,
+      "new_local_class": false,
+      "operational_definition": "A grouping of customers by shared needs, behavior or context; not an individual customer.",
+      "owner_alignment": "DEFERRED_NO_NEW_ASSESSMENT",
+      "recorded_kind": "customer_segment"
+    },
+    {
+      "disposition": "OWNER_ACCEPTED_CURRENT_REFERENCE_ONLY_USE",
+      "existing_contract": {
+        "allowed_target_kinds": "market",
+        "decision": "PRESERVE_NAMED_EXTERNAL_REFERENCE",
+        "display_label": "Market",
+        "operational_definition": "A bounded exchange context to which a product or go-to-market specification refers.",
+        "owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#Market",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "label": "Market",
+      "model_change": false,
+      "native_id": "EXT:Market:Market",
+      "new_equivalence": false,
+      "new_local_class": false,
+      "operational_definition": "A bounded exchange context to which a product or go-to-market specification refers.",
+      "owner_alignment": "DEFERRED_NO_NEW_ASSESSMENT",
+      "recorded_kind": "market"
+    },
+    {
+      "disposition": "OWNER_ACCEPTED_CURRENT_REFERENCE_ONLY_USE",
+      "existing_contract": {
+        "allowed_target_kinds": "market_segment",
+        "decision": "PRESERVE_NAMED_EXTERNAL_REFERENCE",
+        "display_label": "MarketSegment",
+        "operational_definition": "A subset of a market selected using explicit segmentation criteria.",
+        "owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#MarketSegment",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "label": "MarketSegment",
+      "model_change": false,
+      "native_id": "EXT:Market:MarketSegment",
+      "new_equivalence": false,
+      "new_local_class": false,
+      "operational_definition": "A subset of a market selected using explicit segmentation criteria.",
+      "owner_alignment": "DEFERRED_NO_NEW_ASSESSMENT",
+      "recorded_kind": "market_segment"
+    },
+    {
+      "disposition": "OWNER_ACCEPTED_CURRENT_REFERENCE_ONLY_USE",
+      "existing_contract": {
+        "allowed_target_kinds": "customer_need",
+        "decision": "PRESERVE_NAMED_EXTERNAL_REFERENCE",
+        "display_label": "Need",
+        "operational_definition": "A required or desired condition associated with a customer or actor context.",
+        "owner_class_locator": "https://github.com/ArazSaieArasi3/product-management-research/semantic/market#Need",
+        "publication_treatment": "EXTERNAL_BOUNDARY_CALLOUT_NOT_UFO_CLASS",
+        "semantic_equivalence": "NOT_ASSERTED",
+        "ufo_stereotype": "UNASSIGNED"
+      },
+      "label": "Need",
+      "model_change": false,
+      "native_id": "EXT:Market:Need",
+      "new_equivalence": false,
+      "new_local_class": false,
+      "operational_definition": "A required or desired condition associated with a customer or actor context.",
+      "owner_alignment": "DEFERRED_NO_NEW_ASSESSMENT",
+      "recorded_kind": "customer_need"
+    }
+  ],
+  "native_relation_count": 13,
+  "native_relations": [
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:productium:specification-profile:referenceTarget",
+      "logical_ranges": [],
+      "native_relation_id": "REL:W2:113",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "1",
+      "source": "IC:TargetMarketReference",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED"
+      },
+      "target": "EXT:Market:Market",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED"
+      },
+      "title": "refersTo"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:productium:specification-profile:referenceTarget",
+      "logical_ranges": [],
+      "native_relation_id": "REL:W2:114",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "1",
+      "source": "IC:TargetSegmentReference",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED"
+      },
+      "target": "EXT:Market:MarketSegment",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED"
+      },
+      "title": "refersTo"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r186_targets",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment"
+      ],
+      "native_relation_id": "REL:W2:186",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:OfferingSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A general offering can have no explicit segment; an offering can target several segments and a segment can receive several offerings.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:CustomerSegment",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A general offering can have no explicit segment; an offering can target several segments and a segment can receive several offerings.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "targets"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r189_targets",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment"
+      ],
+      "native_relation_id": "REL:W2:189",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:VisionStatement",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A vision can precede segmentation; one vision can address several segments and a segment can concern several visions.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:CustomerSegment",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A vision can precede segmentation; one vision can address several segments and a segment can concern several visions.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "targets"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r200_targets",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment"
+      ],
+      "native_relation_id": "REL:W2:200",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:GoToMarketSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A preliminary strategy may have no fixed segment; multi-segment strategies and multiple strategies for one segment are permitted.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:CustomerSegment",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A preliminary strategy may have no fixed segment; multi-segment strategies and multiple strategies for one segment are permitted.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "targets"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r201_targets",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3AMarket"
+      ],
+      "native_relation_id": "REL:W2:201",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:GoToMarketSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A strategy can precede formal market delimitation; it may span markets and one market may be targeted by several strategies.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:Market",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A strategy can precede formal market delimitation; it may span markets and one market may be targeted by several strategies.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "targets"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r203_targets",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment"
+      ],
+      "native_relation_id": "REL:W2:203",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:LaunchSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A launch plan can precede audience allocation; several launches and audience segments may be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:CustomerSegment",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A launch plan can precede audience allocation; several launches and audience segments may be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "targets"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r204_targets",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ACustomerSegment"
+      ],
+      "native_relation_id": "REL:W2:204",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:MarketingGoalSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A general marketing goal may be unsegmented; a goal can span segments and a segment can be relevant to several goals.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:CustomerSegment",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A general marketing goal may be unsegmented; a goal can span segments and a segment can be relevant to several goals.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "targets"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r208_addressesNeed",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ANeed"
+      ],
+      "native_relation_id": "REL:W2:208",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:OfferingSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "An offer may exist before need mapping; multiple needs and offerings can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:Need",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "An offer may exist before need mapping; multiple needs and offerings can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "addressesNeed"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r209_informedBy",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ANeed"
+      ],
+      "native_relation_id": "REL:W2:209",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:VisionStatement",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A vision can originate from other inputs; several needs and vision statements can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:Need",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A vision can originate from other inputs; several needs and vision statements can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "informedBy"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r210_assessesNeed",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ANeed"
+      ],
+      "native_relation_id": "REL:W2:210",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:ProductMarketFitAssessment",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "An assessment may focus on other factors; several needs and assessments can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:Need",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "An assessment may focus on other factors; several needs and assessments can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "assessesNeed"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r212_intendsToAddressNeed",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ANeed"
+      ],
+      "native_relation_id": "REL:W2:212",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:FeatureSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A feature can be specified before need mapping; one feature can address several needs and one need may motivate several features.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:Need",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A feature can be specified before need mapping; one feature can address several needs and one need may motivate several features.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "intendsToAddressNeed"
+    },
+    {
+      "existing_external_typing": "UNVERIFIED_BOUNDARY",
+      "logical_predicate": "urn:product-ontology:relation-profile:0.7:r216_intendsToAddressNeed",
+      "logical_ranges": [
+        "urn:product-ontology:external-boundary:0.7:Market%3ANeed"
+      ],
+      "native_relation_id": "REL:W2:216",
+      "recorded_source_bounds": "0..*",
+      "recorded_target_bounds": "0..*",
+      "source": "IC:TouchpointSpecification",
+      "source_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A touchpoint can be designed before need mapping; multiple needs and alternative touchpoints can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "target": "EXT:Market:Need",
+      "target_end_metadata": {
+        "source_cardinality_policy": "RAW_WORKBOOK_ONLY_NOT_COMMITTED",
+        "v07_basis": "A touchpoint can be designed before need mapping; multiple needs and alternative touchpoints can be cross-referenced.",
+        "v07_cardinality_status": "DESIGN_CANDIDATE_REVIEWED_NOT_ACCEPTED"
+      },
+      "title": "intendsToAddressNeed"
+    }
+  ],
+  "new_boundary_adapters": 0,
+  "new_external_equivalences": 0,
+  "ontology_core": "v2.0.0",
+  "owner_decision": "All current boundary treatments are accepted for present OntoSPK use. Private repository publication and cross-ontology rewiring are deferred to the owner.",
+  "patch_target": "v2.0.3",
+  "private_repository_mutations": 0,
+  "private_repository_reads": 0,
+  "scope": "Preserve the four named Market references; do not execute the earlier owner-alignment/localization proposal.",
+  "semantic_changes": 0,
+  "semantic_files_byte_identical": 543,
+  "semantic_tree_git_blobs": {
+    "semantic/product/v2/README.md": "99a000296e0d5ffe9a8bcef364e0395293f8b58f",
+    "semantic/product/v2/catalogue/Concept_Catalogue_v0_41_0.csv": "7b088ae912a404098b33af264d8ede84bcc7ba49",
+    "semantic/product/v2/figures/OntoSPK_Selected_40_v0_45_0.svg": "3694fb2efdf0fecd161a4fbea14dbea5da6bc816",
+    "semantic/product/v2/figures/Selected_View_Manifest_v0_45_0.json": "d63ca452f0d06b3bdd232fb8e7a0e0ad5bfed3dd",
+    "semantic/product/v2/formal-specification/README.md": "256d46bb1e3a65528e944a31179b14a25ef25274",
+    "semantic/product/v2/formal-specification/native-structure.md": "a9fb3fc1039e1ac93b09f9eb77021f6daf0803b5",
+    "semantic/product/v2/formal-specification/native-structure.p": "d85682ddd18415b366d807d3dc5cba76cdc0f9f2",
+    "semantic/product/v2/formal-specification/profile-projection.md": "355cbc0e576243a6ff9c8b53cd615818ce82d6fe",
+    "semantic/product/v2/formal-specification/profile-projection.p": "a37a7a347684ac71473e94ae01763f575c7e404d",
+    "semantic/product/v2/formal-specification/relation-signatures.json": "f4c196f136eeafaf33899c3fa3240443765ecd67",
+    "semantic/product/v2/formal-specification/review.md": "1a0222fcb9e87b3969983c34a008417b361704e1",
+    "semantic/product/v2/formal-specification/scoped-contracts.md": "7ac19b7ec4fc4f001f168d3689d1f24cc4a51eac",
+    "semantic/product/v2/formal-specification/source-bindings.json": "6645c5c6c4fa25b90fed088f6ebeab72e127b9fc",
+    "semantic/product/v2/formal-specification/symbols.json": "3ac77031c0466f1609359e9ad98dd55d24fe6cd4",
+    "semantic/product/v2/formal-specification/transcription-review.json": "5b0b2e2520d6190adf9489f74147fa47456f3fef",
+    "semantic/product/v2/native-input-locations.json": "a9c8758d4d7ef02005dacd8bba037c48e916eedb",
+    "semantic/product/v2/reference/README.md": "e1d2ece2e4805c5e26f3971b28f825aaca69c7d2",
+    "semantic/product/v2/reference/associations.md": "6e9fa31a88161ef927ee8b8ad0063591bd2edbe9",
+    "semantic/product/v2/reference/classes.md": "41ed4e9e6590964d84107d2feb03c898fa960f1b",
+    "semantic/product/v2/reference/commitments.md": "b609f1f8f859c01c5896226a05c882de4c487bc4",
+    "semantic/product/v2/reference/complete-reference.html": "99ce83f9adefcee92ba10a3aeefe7e66e4e11912",
+    "semantic/product/v2/reference/generalizations.md": "f53fe8314b6f818802463f26eb493197b55a999b",
+    "semantic/product/v2/reference/inventory.json": "9429be8fafc17e28111cc35164346a89ce6b6671",
+    "semantic/product/v2/reference/native-class-projection.csv": "48cafda05a4627c73434332922ef3435dd851eb0",
+    "semantic/product/v2/reference/owl-class-inventory.csv": "1c80b91b2cdd15a5f0f2a12740183beadd26834b",
+    "semantic/product/v2/source/formalization/Class_Grounding_Register_128.json": "090df26e6be397ee983b1e5ec398efc0c1babe30",
+    "semantic/product/v2/source/formalization/External_Decision_Cards_10.json": "02e83beafdcfc0561ecaa2ff9e79a6b5c74fa3d4",
+    "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "9b835bfd3fd3dd9de7097f433f44b22df9c78058",
+    "semantic/product/v2/source/formalization/Relation_Contracts_286.json": "7ab94cf560a917d07a831011579195c07186fa56",
+    "semantic/product/v2/source/formalization/Structural_Axioms_892.json": "9436bc8dd7116c94e325e44c74327dc4379596f6",
+    "semantic/product/v2/source/formalization/Structural_Formalization.txt": "9b612f22cc701d18f529d7b1e8f0c1e63f0da813",
+    "semantic/product/v2/source/t52_formalization_v043/Commitment_Matrix_22_v0_43_0.json": "3669c879acbe6c367cde3eebf1b017db90861203",
+    "semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl": "3853ee6f2926f2d234c5e0855a31136be6849559",
+    "semantic/product/v2/source/t52_formalization_v043/OntoSPK_Formalization_Supplement_v0_43_0_EN.html": "3136c14f08cb68d1e87b8c3f4ee46f2a344757b5",
+    "semantic/product/v2/source/t52_formalization_v043/check_structural_register.py": "50b0c5a8f1077005dc838ec0bff7105670e1e72c",
+    "semantic/product/v2/source/t52_formalization_v043/fixtures/occurrence_logical_population.ttl": "2d9c8cde57ba530ef317da0e5de23fac0bc1fd53",
+    "semantic/product/v2/source/t52_formalization_v043/fixtures/occurrence_operational_metadata.ttl": "7f2055849a400fc509a69f3d4ec7902e9af3ff8e",
+    "semantic/product/v2/source/t52_formalization_v043/run_formal_checks.py": "bac3caf07caae20c11bf0323e19831fa1719087c",
+    "semantic/product/v2/source/validation_v041/Occurrence_Profile_v0_41_0.shacl.ttl": "d09306c710ade7ae9bcbc804e72676431fe5de4b",
+    "semantic/product/v2/source/validation_v041/Structural_Crosswalk_v0_34_0.json": "45d3be366ae9fbd1b90f065dbac3ff4978271732",
+    "semantic/product/v2/source/validation_v041/admission.py": "1ab0db0568975f8da843379e9ed9e2c9b013ba11",
+    "semantic/product/v2/source/validation_v041/boundary_profile.py": "631804292e318e1d41c8078ae855f3c6a1915680",
+    "semantic/product/v2/source/validation_v041/build_population.py": "371679d78c2721d54e0ba321f98a27552b953caf",
+    "semantic/product/v2/source/validation_v041/cq_replay/CQ_Contracts_v0_24_0.csv": "67e01614acbfe03a1e366ec77691c6c9e9be5d9c",
+    "semantic/product/v2/source/validation_v041/cq_replay/CQ_Replay_Report_v0_24_0.json": "34ba437d48f95d31b75fe7864d8cecbd621b45f5",
+    "semantic/product/v2/source/validation_v041/cq_replay/Evidence_Index_v0_24_0.csv": "6b92936be77cb7d1df3b60c7f1ae28fdcc9fc570",
+    "semantic/product/v2/source/validation_v041/cq_replay/Requirements_Register_v0_24_0.csv": "4ccf96d33a609f313e422c9c441db16e6bf44cbe",
+    "semantic/product/v2/source/validation_v041/cq_replay/Retained_Formal_Profile_v0_22_0.ttl": "38210e6dbac3916766b90175c27cf03200101885",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/missing_critical_edge.ttl": "23fcb1b0c1b3c37f9b8b35e231c140867761925c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/positive.expected.json": "aaa85701a07448d2f55d2de61e1029e7fd79e8c2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/positive.ttl": "0518df63f46c6fd7faaa6d30f608f7a845627aa4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/query.rq": "a58aa2e07df88abf06c3bb13a45b3ce4157ad348",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-01/wrong_direction.ttl": "770d747c5e88dc38223cbe8c114849fe593431af",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/missing_critical_edge.ttl": "51848ae15c31fc206503a6135b4479a56fcd1d36",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/positive.expected.json": "540bc2d3267f0bda146313353cd471502c8a0896",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/positive.ttl": "c23e5c2548b9c504bd2354f521edba14f20e6f2b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/query.rq": "79add91a2d65263a382f63edf6404810aa5e0bc2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/status_unknown.expected.json": "31b461585f35570ce315ce18652e931984f0a71d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/status_unknown.ttl": "70805b066f48c962331d5c1db89097bc2f3823a4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-02/wrong_direction.ttl": "4d18b552391378888c4f8486dd699abc2f6d829e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/missing_critical_edge.expected.json": "fb3afbc8e5379d66fe46ed467b94d76eac5df523",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/missing_critical_edge.ttl": "4ee879dfe9ad4d45f2ad50e76c2d83d47a66c3f8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/positive.expected.json": "766ace5290b1e8537ddd53af57f87285ceeeba55",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/positive.ttl": "d5d53fad8db02c634211104c334c2c8bf43c2936",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/query.rq": "40187bcca96cc914aa840a2fc2e52578fa222c41",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/wrong_direction.expected.json": "fb3afbc8e5379d66fe46ed467b94d76eac5df523",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-03/wrong_direction.ttl": "c85fc794fd9f942dabff77d7a692b2c7fce874e5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/missing_binding.expected.json": "814d95c0e06fd9acd704f4739e708111210b573b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/missing_binding.ttl": "7cccf6841d84f3197c73ad0e70283be2c1793b56",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/positive.expected.json": "315c7e00f1838d9b9d5abbe10e5d79d6c6f0bedb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/query.rq": "715127766ae540ec82bea8dfa2dad446cb0d21e8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/reversed_binding.expected.json": "814d95c0e06fd9acd704f4739e708111210b573b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-04/reversed_binding.ttl": "8bf3f9af23dd03cbb68d55fa21048f5e0087aa0b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/missing_critical_edge.ttl": "1d69db1e66656287ad36102f1a7699c72518be5c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/offering_without_bundle.expected.json": "648b12d0e71d66780630473f7a0dc04e932ea9c9",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/offering_without_bundle.ttl": "4a557e94bfd0737dc6c92cf2f1d2d9fcdcd92150",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/positive.expected.json": "e51b7e7eb875af526fa0a8777ebe8322172fda8d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/positive.ttl": "b789986fbdbd8e0489db8d32aed7b29812b6f3a0",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/query.rq": "533b86bf3009bdbc3968d8cc412ba5f5a7d28411",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-05/wrong_direction.ttl": "318686647d8ffd5121e91b34ccf85cd8caaf829e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/missing_critical_edge.ttl": "3a8042e14f7d4ff1dddee71a0076f4c9b63c683c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/positive.expected.json": "889c3f762fc9d3ff2d7532c294b0eba17c047a71",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/positive.ttl": "d7b62c5166f19825db248a1a091a6aee4cd4a77e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/query.rq": "7f825fd7f9b2c226395f54b77d5a8ff079dbc4a2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D01-06/wrong_direction.ttl": "e0599fac87331caca0bf32592b9e021e1dda4e2a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/metric_unknown.expected.json": "7ce5b21a9769e4300c965f05352fe036a2759dbf",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/metric_unknown.ttl": "364a732e2fb8180ec4531effb7747b807b28581c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/missing_critical_edge.ttl": "9d12edc6d19798aff629c9a922bfb83c7513785c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/positive.expected.json": "f8b6ccc4c7aa2d100f22bca9ae6fa75a2a232cad",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/positive.ttl": "349a0abaeb384b8c6741c92a0cf2d6ee760ca992",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/query.rq": "ad2cec9e6cf287ca398117121c47559f60ac2cd1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-01/wrong_direction.ttl": "765eaced431680e68f1884052f4a1ccf6d24e210",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/missing_critical_edge.ttl": "103dc45f27385a0c9e6b4b33b14c43732e116a93",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/positive.expected.json": "d394ae613e0dc5720005f692d7c37b7fa4823d61",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/positive.ttl": "777a716e7ab222a831f0cd671f757b00de3f7d67",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/query.rq": "020a17dcf6982058ae7b19f5eda69cb740400501",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-02/wrong_direction.ttl": "8f25a36c614a654adaf1d9cb77e574f176fad418",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/missing_critical_edge.expected.json": "d8d2b051d5c8d8a13c4795da25f66fd6e8933476",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/missing_critical_edge.ttl": "21e42e9e64ae651a4e1de89dfd251ded4c788c01",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/positive.expected.json": "c4178cea62fc4309fb3e6fa45d0eaa60657f8c81",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/positive.ttl": "9817cfc0adb1df7b88caf8b3ae8602f6c01c1fc4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/query.rq": "8a7f0620cfc7b03ad1bcf9dfc901353ffe6fb389",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/wrong_direction.expected.json": "d8d2b051d5c8d8a13c4795da25f66fd6e8933476",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-03/wrong_direction.ttl": "30f997b30b22d21a69d2a76ade3b4e5e6009ff46",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/missing_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/missing_binding.ttl": "524e383521c8d96013a2da26df9169a995afd114",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/positive.expected.json": "c799193b4bc8160bffa4700ab010f65cbbfa4364",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/query.rq": "4bfea02d78f6efffd3e5c802bdef7091fc5446a3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/reversed_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-04/reversed_binding.ttl": "ba22a20fad9daa4868b40f6dacf34f698abc0677",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/missing_critical_edge.expected.json": "1d0a7549a0196569fe7e07e5642a230a76a73dad",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/missing_critical_edge.ttl": "3951050febfe71a9ad4a6edf0ca0579a1fd598ea",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/positive.expected.json": "3cef3648d4f7b8a25750ec0b342551db85d6a98d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/positive.ttl": "9fc0f0c73cc3a8022437dc9381e450f3aa4c4e86",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/query.rq": "1d00499ebb5c7eeeaffe310162db2450432870f0",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/wrong_direction.expected.json": "1d0a7549a0196569fe7e07e5642a230a76a73dad",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D02-05/wrong_direction.ttl": "6d957d703f81f3570231a089bf4efe63bbac379b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/intended_actual_boundary.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/intended_actual_boundary.ttl": "3c5290c1e724676132afb998d8224198771e76c6",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/missing_critical_edge.ttl": "aefedc67625e472098a62445d0a5d5ac0ce8dcb2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/positive.expected.json": "f108d7a4732a5fcb5c7fe964c8fc1f7088edeade",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/positive.ttl": "c75c031804688cffed8cf4101d67bf967481ea1c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/query.rq": "7bab91e28ce0a8ba232067e14c62ff6223072b86",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-01/wrong_direction.ttl": "a72a8e731edf7d01c8b48d462181e06ff85f271d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/missing_critical_edge.ttl": "6ef4dc3fc3c0f4db45f8b605f9a7ea1c4c6fef1a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/positive.expected.json": "4291a97f6381849b3694ce66a8a051e00a6ce613",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/positive.ttl": "110e41c55fdb175be1b867c8d949b5bf9060b6e1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/query.rq": "88dd23443e9844cf954b570552c34ab4946cc12a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-02/wrong_direction.ttl": "25df679e0ee11c9c946d906bd856bc25c6be07a6",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/missing_binding.expected.json": "868403207f067801c4681256a2dc121710d71a47",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/missing_binding.ttl": "8147de541caa9129f2d99b9a3373744b6e1c0604",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/positive.expected.json": "fab742dcaed3ed844c09189ff1bfa5ddf1a17abc",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/positive.ttl": "9c8b46bc0141f9309c0cf42d2c3772145a02123e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/query.rq": "02874f54b66697ee0fdd8b4c0d6a3a8f3424321e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/reversed_binding.expected.json": "868403207f067801c4681256a2dc121710d71a47",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-03/reversed_binding.ttl": "ec44ccd5077222f85a82eea7918a77322b870e41",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/missing_critical_edge.ttl": "8aab4884c85b6c581c0029c86f465d3f5ce5b603",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/positive.expected.json": "d18a3d8794d7a5ac770aa8b0daef761fe80eedd7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/positive.ttl": "542b06c00828eff58c7de6312cc89218d757e3eb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/query.rq": "ff6956c060553e2e5b0bb0ae7e9eee0355ca07b5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-04/wrong_direction.ttl": "7099dff26690ed3581204859033cb532dcd1f6f5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/missing_critical_edge.ttl": "9c4b876685030e9837d2f3de2115f7a2238f8dcb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/positive.expected.json": "202326e9639ac027271497a778c8df472203d0fd",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/positive.ttl": "1cf3db0c65f64a2525f065829c6da986f8df3784",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/query.rq": "36cc8e1a3898d6254d3ab9ddb3ab2cac32819444",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D03-05/wrong_direction.ttl": "15b887c1de2219fedf31dab8f3cbd62e5e417261",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/missing_critical_edge.ttl": "ceacba3f89057ae75bf1b6577d1677908a519de8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/positive.expected.json": "d83d1f6d1bbb3e595b54f4fda723363dd5a7c4c5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/positive.ttl": "94c6a5bc0a6df160dbd0d6d9cfbc75d4cd8c4989",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/query.rq": "d0d43517e524015216fae5a3ba897e8b4d23cf22",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-01/wrong_direction.ttl": "352b0578dc0444b8182eb2dd543ff7db5396f973",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/missing_critical_edge.expected.json": "0288953bdc7450c75187ef16937ef568434dff76",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/missing_critical_edge.ttl": "1275c17ae23bbef2e8420236bc58a74415372fb2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/positive.expected.json": "b89ade573f91d5105725608d35e8305215a505fc",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/positive.ttl": "b6ec442ef6104118df40ec8c403ca36d145ca5f9",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/query.rq": "1a2ca0ffde27e1b58f99d25a36ef8c7c0bbc7af2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/wrong_direction.expected.json": "0288953bdc7450c75187ef16937ef568434dff76",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-02/wrong_direction.ttl": "08db1984a7a202376c172a24d9ecbe56d200acf1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/missing_critical_edge.ttl": "7453f353e15f467a6f746313bd1749e0a1e74ed8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/positive.expected.json": "2bbb11fbb78d9843efb203decfc7527e73b87a6f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/positive.ttl": "79b14b6e025176a6c81799de39eba9ab857457fe",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/query.rq": "e9a4ff32281683f3a127a9089fc97408f3dfaf2c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-03/wrong_direction.ttl": "7fe9727672199ec185d1964d69de3b250d72ace3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/missing_critical_edge.ttl": "47ff14608316e821a49b2bb7a5bddda7d4e9bf51",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/positive.expected.json": "a4564a84d2292a01c024a091936bbf40e6ef3a5a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/positive.ttl": "22d0bbf6901c49a303e21f104d0aa560062ffe4a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/query.rq": "b6c6e92e5c501bcae861e7cfe8b26f572c740961",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-04/wrong_direction.ttl": "b2b614badf6613485f999e53004cf5d71707061a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/finding_without_resolution.expected.json": "60bba91921ad22bb42a00c3fc3239bdad39934e3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/finding_without_resolution.ttl": "9d63dae54f1bfb535b663392e7947cf6894eb487",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/missing_critical_edge.ttl": "4668fffffdbeee8e7ecbfad3813f2dab7ed18653",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/positive.expected.json": "578e8d29f88fe361db88c4f1abad56458cc7bb5c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/positive.ttl": "741a78e383aaba59f9d8a0d9800d787f4d23255c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/query.rq": "120e0401157cf4eb101bee350181fa849ba2c80f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D04-05/wrong_direction.ttl": "dafc046a64647cdc8183cf21a4a5a1e9fd3c1191",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/missing_critical_edge.ttl": "5b05baa894d497f00c9de5dfec973d6610df29f0",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/positive.expected.json": "985d461fb1c985c0c8514be4ba3679ace394ad90",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/positive.ttl": "0c624f5b5d55740917ae59406a4d52bbf54b4c09",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/query.rq": "ed130f68e783e974de94175be8e1b08913c0fe06",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-01/wrong_direction.ttl": "791d45ee85858a32a5b04eb8fb03e119269d450d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/missing_critical_edge.ttl": "7796d6b60a0fcbcddcc34342c4ccc2dae6c1a811",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/positive.expected.json": "8edb41fb1608230f53325d3956832d86168236e3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/positive.ttl": "fb482734dd24104d796e1fbbd56755350925b1c6",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/query.rq": "8e10b89ac314b998649b278c54380feda9240120",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-02/wrong_direction.ttl": "1bcf320c9f8b25a2cbd71364bb5007d1d6ee8496",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/missing_binding.expected.json": "13782a82464b9fa513e33b3c003ee5fd755cc604",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/missing_binding.ttl": "e8007e9649a509fa710d15ba0efe33d6cf7d0f1b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/positive.expected.json": "c31e2a114188683cb24744a9222546f0e6bcf5d0",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/query.rq": "2ee73c2b8af3c7e2a58cf0e43b027f0b5713202c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/reversed_binding.expected.json": "b730ff31f0b0404d3314d8be3c49dec9d7c36b68",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-03/reversed_binding.ttl": "0bab74284dedbcc5879e85043edc3685ea8cc985",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/missing_binding.expected.json": "11b8dd2f210dc192858cd0b4854736bbb0cea9f1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/missing_binding.ttl": "c69fdb922f05a11153f9092c159ee52082eb8ee5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/positive.expected.json": "d993c74dcb0862f05a0aed8b62095f15b3ef0aba",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/query.rq": "f633f4c7e89de0ddd229322513d1464dc76ea270",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/reversed_binding.expected.json": "11b8dd2f210dc192858cd0b4854736bbb0cea9f1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D05-04/reversed_binding.ttl": "8553ed448b9ff4f274ecbd7229b0730acf0f9c14",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/missing_critical_edge.ttl": "461e087af3a178d446967963025a32077788d169",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/positive.expected.json": "ac8a872d5a73452875fe834c3de63ba51238a74f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/positive.ttl": "dff214d79e22609d01cee07cde52aaffc49483dc",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/query.rq": "d91240a98bd7b57ea02b481ede348e6ff8013725",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-01/wrong_direction.ttl": "e89f7ccb386ef56de71cba11d07b1701eff7db71",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/missing_critical_edge.ttl": "29aa45983bfbf486910761a35e8cf546adc8724f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/positive.expected.json": "31f5fc91007cdebbc174e18410bb5fee941ccac3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/positive.ttl": "ffe77b249c3a00fdddfd57a38b914007b3081046",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/query.rq": "114c4fa5019cecca345f8a990bb2d61704478063",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-02/wrong_direction.ttl": "8dcf55de691ec5e9af5d1dbb35c2038ee8f54ca4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/missing_critical_edge.ttl": "4e2c40fac7a4f576b71c6af10ba7546b2c5a9a66",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/positive.expected.json": "a1467731c6cfa195a89e6d763d1ca4d096d6ae92",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/positive.ttl": "a3eb117ba3cb73626bd6dfbc2b9142bc69749b86",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/query.rq": "a3a530129abd04341e701cd99f8ea94e7ba4256c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-03/wrong_direction.ttl": "9f243872d271eb4ad9cd1689bbb3a62c0b4c8fba",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/missing_critical_edge.ttl": "ef77e9fc0543cfc4e24593114abd741e27a73152",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/positive.expected.json": "fef5b359a4c781cd6a807bfd1de8bf2107cd54b4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/positive.ttl": "6e898cbb22ff809d43dbb43132ce85616bf81b6e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/query.rq": "c23f09b8a0d190eb3a6013ae3a6c3c672bcb7ef8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D06-04/wrong_direction.ttl": "a9e12684c7097cb4a5070f5c8bc651fc7ebdfe8b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/feature_without_flag.expected.json": "854e4645156ebee2fddd48e202764983d2c213e7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/feature_without_flag.ttl": "4ffded88829e6bdc0718618fca4ca244c299ee28",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/missing_critical_edge.ttl": "c79a538d46da80665438d143d96011fee60fb9fe",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/positive.expected.json": "dd908a5854d1e5ec42e815af043211c618e9b748",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/positive.ttl": "52ddd11638994e403b69a16e78d5450addaa69d7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/query.rq": "3e30e59c2ceffa3f81259cd9cdf35d4044a27569",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-01/wrong_direction.ttl": "e4eb8312982e339b6033e3b65b5ea75644e6211d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/missing_binding.expected.json": "8127e24be78c756a851ea986443f557630fa4d15",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/missing_binding.ttl": "a6e7760658300b420154a03996aaa4df5d43262b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/positive.expected.json": "a4a641e8c1f8698795de23f6d2b8f53b66f85a5f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/positive.ttl": "55ce2b4de460cbd27809145e7e21163dc307232b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/query.rq": "fa4d4ccc2190a877851dbed8948792cc43fbe530",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/reversed_binding.expected.json": "8127e24be78c756a851ea986443f557630fa4d15",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-02/reversed_binding.ttl": "f95b1d5ba563f1df24a9f1c24bb63cb77286cdcb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/missing_critical_edge.ttl": "f1b7cdd76d93966f4f446bd4d3b4a9c350d7939f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/positive.expected.json": "cd19519e4d416b1eba371db63143bd150b83937c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/positive.ttl": "39055c4c34b1434b0a7bbc0a99a2be7ab9780f06",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/query.rq": "f5635eb11ac380207c851f196f70789e61dec6c0",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-03/wrong_direction.ttl": "1904c49014dbbd090781b98918d73de4a0fd81a1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/missing_binding.expected.json": "1f28de820076844d6eeb0732d7292e58c6a3e0f6",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/missing_binding.ttl": "2edd202dd30ace74a9db483e482561ef6b3ab5fe",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/positive.expected.json": "d23028a798866a198eee85a8cd03fc6eb5bdb72c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/query.rq": "c3389ecc0db3b19bfc3196c94d687c22cec50da3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/reversed_binding.expected.json": "1f28de820076844d6eeb0732d7292e58c6a3e0f6",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D07-04/reversed_binding.ttl": "e637a2846b6868b93e17acb3c195ec58dc224313",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/missing_critical_edge.expected.json": "e8bc32eba7d27dd7eecdf7ea9a20cc45121382d7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/missing_critical_edge.ttl": "41285ef0e32115dfafcf73af43252224ab10dc69",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/positive.expected.json": "becc633fac9e551e9d405e82290be655a0e6f83e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/positive.ttl": "12fef89414d718abf69568a5ef3b9fd5d4c882c9",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/query.rq": "3d58d4518fd642aa640a4e3a98daa8e3e27ac692",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/wrong_direction.expected.json": "e8bc32eba7d27dd7eecdf7ea9a20cc45121382d7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-01/wrong_direction.ttl": "dab8d9874a6b7bd67f04952b5d55b0ab27f405dc",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/missing_critical_edge.ttl": "a76ffc224cb4535a28f9f034386bc0d7803fcf9e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/positive.expected.json": "5db6e6304ce735266eca3c2fe062386d4d84e195",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/positive.ttl": "8891924bfad2721f13bf016616d1dbf3f5857493",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/query.rq": "33424d8b100fcc2127672aef39ae9e26b0e44e4e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-02/wrong_direction.ttl": "b07b730bd52d3e1a5be207bdc50ca0c04f9e760c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/missing_critical_edge.ttl": "9f0bf8d511fb1e7c932f6a08978de0b559108771",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/positive.expected.json": "c16236d01a3aebe805326dbdcb9a85b28bf54ee1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/positive.ttl": "82573cf788131bf2dc80fc8dce8fd82e07f7b9d4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/query.rq": "05cf7e8307398945592fdbab8edbe0aa511beab1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-03/wrong_direction.ttl": "de674c2494bd6776c34a133bb712eb0e370fe510",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/missing_critical_edge.ttl": "1ae49c9e94815ef47f5e332e99da3c87a318b25a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/positive.expected.json": "83cb929ac2a86574e5015445bf24b3ab8e970c82",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/positive.ttl": "32cc4c516453c9d0fef368fb9fc3576d7dd78d7b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/query.rq": "88996a11109d5d378cd8bd3dde9b4e37a0f641fa",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D08-04/wrong_direction.ttl": "a50d420e9b1d7e28b6ebc5fe9004d8d95152ad04",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/missing_critical_edge.ttl": "05fe0205438ba2ec827bd403a8237510e9992a2b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/positive.expected.json": "ac0ec94c1ec65fdc9075e0e3e9f884b5684a465e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/positive.ttl": "13bfbf4b39d24ed7390524cfdaec8a79c5a47c12",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/query.rq": "f940d4a00d9f53854862ff81e553d6c3fb19279d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-01/wrong_direction.ttl": "9ecef09f54404b2cee92766487b2a55e8c238108",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/launch_without_messaging.expected.json": "ae56e597ee9ea3bbff12d444ab9a9e39441fe025",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/launch_without_messaging.ttl": "9ea6e968c335aec19d3dda9b9c312c4840689656",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/missing_critical_edge.ttl": "e5d5c30c113b9acf64b13626e9a3bb56eb38bc60",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/positive.expected.json": "57904cdbfd9649ef4e32ffe500de328b4c396e8e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/positive.ttl": "8a98fd37762cd9f6ba80b4e63beb51572efdb58d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/query.rq": "189ca3eb39fa8af838f3a0252719d47fde6617c3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-02/wrong_direction.ttl": "864932bf779d73805bc727445aeda3bf4521568f",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/missing_critical_edge.ttl": "6ac825152dfddced61c28c6695519e3fa3561721",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/positive.expected.json": "47b1bf32cc33e36e7e33328d64a7362bc57be99b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/positive.ttl": "94a3b2991560d3174e1b13ff760b2384ac823f7d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/query.rq": "abefccb155a4239247f55ba3815b18e5c3e15eae",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-03/wrong_direction.ttl": "403c688700f6999be794987f335b8e6d810a7641",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/missing_binding.expected.json": "77f76136b3aade6dbf726aa9c7707f07e688a18c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/missing_binding.ttl": "134194d4e6438fb16fd126a30ca9b6a96d9488f8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/positive.expected.json": "235c8f2c7a6a3ed1acfd53f22360b3381460d714",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/query.rq": "411e054308d36cd3eb18eb65fd4c5323650a1e19",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/reversed_binding.expected.json": "77f76136b3aade6dbf726aa9c7707f07e688a18c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D09-04/reversed_binding.ttl": "0c34e9047e8c825623a8b52fb58b882571df3b21",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-01/missing_binding.expected.json": "0d94e0e210f364a247fb2f00ae6303ce4e42fcbc",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-01/missing_binding.ttl": "bbdc354650e7573e149693d91a017af97577daca",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-01/positive.expected.json": "a964b51f7fc72e7486b8798bb7c3f3995bc3e6f9",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-01/positive.ttl": "9c8b46bc0141f9309c0cf42d2c3772145a02123e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-01/query.rq": "cab7a78fbbb7de5edcaef81ad114f6ff77fa6930",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/missing_critical_edge.expected.json": "43fcf7765d73156842bcf88b90d3b62db135d35c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/missing_critical_edge.ttl": "bffd64594d70ba53f46a02500772ee0c52df5669",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/positive.expected.json": "d94a4e4f30c6542ccb9de963f200fbefba672c74",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/positive.ttl": "0e16cc0a8ee9012c3ead7cda0c1e612d1865566e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/query.rq": "d20cc36205137ff08c83a2fb47d4012852fa6d90",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/wrong_direction.expected.json": "43fcf7765d73156842bcf88b90d3b62db135d35c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-02/wrong_direction.ttl": "f321f24438e73589cf44eba060894068e238ddb1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-03/missing_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-03/missing_binding.ttl": "85ac5f430948e818a667c4470f89d02ed37d0ac2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-03/positive.expected.json": "6bdddb5aae8a2449754362f1271a4e042f00afdd",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-03/positive.ttl": "9c8b46bc0141f9309c0cf42d2c3772145a02123e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D10-03/query.rq": "c6f5b8361e1f1da88cdf88a027f9814f89c8231a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/missing_critical_edge.ttl": "0bf8469da9a901bdf22ac0f757a25d3bb84cc19e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/positive.expected.json": "f5d894e6089e243415b14c098d6287641665ebe7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/positive.ttl": "95aa4bf89ff3d89f061943f9ad1744ae6a083959",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/query.rq": "79056b3d7afb305622f8d6581cfd59a13b0ec695",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-01/wrong_direction.ttl": "e625195ea51b92b0daaf5c617a2d6ba8eb84c2a2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/intended_actual_boundary.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/intended_actual_boundary.ttl": "ed03ae9dd21cb4944965d2aa8176059feb94d32b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/missing_critical_edge.ttl": "488262e867b7cd82e5b8c1315aeac2f5782401cb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/positive.expected.json": "2b4eb1a1c7f8d8eece3202e64571be96803330e1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/positive.ttl": "897029268969fd6fffe0e9724f8c52ec9f326e0a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/query.rq": "03801c038e0a177ef144c62aab5b25249170808a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-02/wrong_direction.ttl": "affdced28989efd4baf2549f7856deb89bc5d68a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/missing_binding.expected.json": "25f1f8c5e556c0cf2f27f79882e48300be64d7bd",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/missing_binding.ttl": "28877bfe27fefd2a3e187950c2370e3f6234786b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/positive.expected.json": "b3aa97f58092c19d7cc9283c14c2d97991d91c81",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/positive.ttl": "9c8b46bc0141f9309c0cf42d2c3772145a02123e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/query.rq": "34fce395e13a31fbcb60926cc5c9e97e86b5dfdb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/reversed_binding.expected.json": "25f1f8c5e556c0cf2f27f79882e48300be64d7bd",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D11-03/reversed_binding.ttl": "c18175c59d7261f789ef2da547624ad573258476",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/missing_critical_edge.ttl": "86c1ec9570785f30557337dc50234a07a7946d88",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/positive.expected.json": "5905a5a049749104f4150205bb68eb7574c6a1e4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/positive.ttl": "cff0da3e61617d14a3d89f4f6a208baa04bbd668",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/query.rq": "3b2843834aeaeef12ebf95a74d9dc5c768c8a2c9",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_BusinessRuleReference.expected.json": "2f2ad38973cfcbb57271f18c6c070391a202f4cb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_BusinessRuleReference.ttl": "0ee69127ecbb91b76ba7c706c195583d04e8af3a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ExternalReferenceRecord.expected.json": "27010ec9306f52f6f5a4173aa7ad61d502862a75",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ExternalReferenceRecord.ttl": "49c4bb9cf37d948e6a941b1b637746057e08cdf2",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_MarketingInsightReference.expected.json": "742ed68dc828a9f9cbe76d86a839b38d19b546a6",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_MarketingInsightReference.ttl": "a3d8db3cc50a6cdc395fac262db78e2e9a5cf827",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductFamilyReference.expected.json": "5905a5a049749104f4150205bb68eb7574c6a1e4",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductFamilyReference.ttl": "cff0da3e61617d14a3d89f4f6a208baa04bbd668",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductLineReference.expected.json": "e19e740dedda4e3b01199489a9d7d55cd62d489a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductLineReference.ttl": "44d73a9a0f538b0bf7cc04e038c1111b4f101cdb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductMetricReference.expected.json": "a035d01b90ecbb847a1fb6bce5f5658425138cab",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductMetricReference.ttl": "dbf93650398c05bb503b8e573d5c04a8499bc9e3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductVariantReference.expected.json": "9f3af0d528ff87b669c15f803ca622e9684761b3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_ProductVariantReference.ttl": "a36a4a8ac58b5c626617c59d2ce1c093319de91c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_RequirementSourceReference.expected.json": "d079f25c7d055cb59b3b7060c00f514945d7c44d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_RequirementSourceReference.ttl": "a7aaa23eaf1a199f25c88c01dd474a2c0e680252",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TargetMarketReference.expected.json": "bacffef09c974ab89600393b47e81ac74c5ffcdf",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TargetMarketReference.ttl": "fb222ffed9b184dd2cab483aa19d70db6f52b1bb",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TargetSegmentReference.expected.json": "0da9dc1de7d6e1593ab5bf1ae68aed3a69365cb5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TargetSegmentReference.ttl": "080a8ebdaa627865e6c54b963ea614b347e83a35",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TaskReference.expected.json": "24c482f8bf6b17b304c33b2aa9c1c0b0adf2bab7",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TaskReference.ttl": "4dd1de66d767765601901ea755309c1537756627",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TestDataReference.expected.json": "2e396f1de0a380c0636fb18d5b3cf16c1b5834ee",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/reference_type_TestDataReference.ttl": "360f5c10e4c112a02947ef6e44f50d49a13d55c8",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-01/wrong_direction.ttl": "402346534e27224b079c9c740dfc03a7a47873df",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/missing_critical_edge.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/missing_critical_edge.ttl": "d0073619034b42a0048b0fa6e79408a576e8638e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/positive.expected.json": "0f8084e9f234b9e3fae3b367aa4021278502c2e0",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/positive.ttl": "c27c6c53887b75f6ed9379c5ae82d9003462bb93",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/query.rq": "3b2cdfe62b7ca1115fd4731c64379979f2dad527",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/reference_without_purpose.expected.json": "36eea0f4cd7498cf76b15abb54c510f2ba4cca29",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/reference_without_purpose.ttl": "1296897c2824d9de7d32319d027eb5742e608626",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/wrong_direction.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-02/wrong_direction.ttl": "46115652f845a7ffb6444ee73341c442aeca528e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/missing_binding.expected.json": "33dd8b333486025c636fd1a9df24586903b0d52d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/missing_binding.ttl": "0dcaa67a222ec21111c481378663894d5083de98",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/positive.expected.json": "ecdbbd5de36aa5c29aa2db001506f2e95008648a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/positive.ttl": "55ce2b4de460cbd27809145e7e21163dc307232b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/query.rq": "665a3d9161424063972e1c818ce56e1ed2029a27",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/reversed_binding.expected.json": "289737201706c1f3e2987f1b2e8bb3c2d75c90b3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-D12-03/reversed_binding.ttl": "6a7a2621888111ade8847b062ea7609d718344ef",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/missing_binding.expected.json": "9a794a7615d7a6ba7d9d5883cda7370f63dec274",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/missing_binding.ttl": "d004e1f514757a06d2fe3950c5103bc0053f0e87",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/positive.expected.json": "7400c99dee8a8f0236357e0a409951f42473980a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/positive.ttl": "55ce2b4de460cbd27809145e7e21163dc307232b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/query.rq": "fb0ff398d9a992229aaddc5baa91e99ebb85e16d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/reversed_binding.expected.json": "9a794a7615d7a6ba7d9d5883cda7370f63dec274",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-01/reversed_binding.ttl": "8036490ec724794c7e2e79f163c09c602f607990",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/missing_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/missing_binding.ttl": "a9bc0588c56863c3157f0bd9354fe87d47edf608",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/positive.expected.json": "ce52980af7a967984aba55174dae2fd21eebad2b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/positive.ttl": "9c8b46bc0141f9309c0cf42d2c3772145a02123e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/query.rq": "cea9a2cf08495531eef22b2d0ad09759a41350c5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/reversed_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-02/reversed_binding.ttl": "683ba5b07242ee186c3de6dcf784201487761891",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/missing_binding.expected.json": "2a4490e52dd9214750a18ab7981e294fa908526e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/missing_binding.ttl": "0682dd12f60ec2285798cf7a073dc8c30b319d7d",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/positive.expected.json": "389481a56edc9a75b151c2ca019a7eec0f434153",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/positive.ttl": "55ce2b4de460cbd27809145e7e21163dc307232b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/query.rq": "352b86e56a3451892a4b6889b9dcabadf363d5b3",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/reversed_binding.expected.json": "2a4490e52dd9214750a18ab7981e294fa908526e",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-03/reversed_binding.ttl": "107c203c76f7a2b83cf313efbed18c51289255ab",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/missing_critical_edge.expected.json": "f0b3ea1d0f7e374b07521a260351b858b3ef9f06",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/missing_critical_edge.ttl": "edf5ec4d3abda28e6d0e0d17256ed49e51d5f476",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/positive.expected.json": "db8e203f9dcee57ecd7867a4f8a8036c4309050c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/positive.ttl": "6d9871592cc0420935f9235114eff06314011e60",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/query.rq": "bf1cb93ebec4513a32243451e5fc0aec17f9b253",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/wrong_direction.expected.json": "f0b3ea1d0f7e374b07521a260351b858b3ef9f06",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-04/wrong_direction.ttl": "c7fc550b66194b6f106116f93695b905f28c547b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/missing_binding.expected.json": "a1b0fc60a018e08926b4774c811fc7736af6b573",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/missing_binding.ttl": "1c1e19cb8407e2f278b5083125199b0edb3d379a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/positive.expected.json": "35fcf31d9cc1dc71031829d3af82e60544fb6755",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/positive.ttl": "55ce2b4de460cbd27809145e7e21163dc307232b",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/query.rq": "7acbbc78ba16fd29bc8efed544be3618f4d750aa",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/reversed_binding.expected.json": "a1b0fc60a018e08926b4774c811fc7736af6b573",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-05/reversed_binding.ttl": "c376a42f1b143818a161e055e59f730e17848f84",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/missing_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/missing_binding.ttl": "fa589bcffba72f6dfe474b0b8e04653152e8b3b1",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/positive.expected.json": "b1c6d0a18f41910bac9d828f1b912f1031d40be5",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/positive.ttl": "05238448711f5bcc5745af6ac6f4fed11a05e71a",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/query.rq": "744ea4ab9fd4b35fadc84b7647c8750470a5a5da",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/reversed_binding.expected.json": "fe51488c7066f6687ef680d6bfaa4f7768ef205c",
+    "semantic/product/v2/source/validation_v041/cq_replay/cq/CQ-L-06/reversed_binding.ttl": "df25022b250a1b33d9509f46e1cb9d87d03c5ce5",
+    "semantic/product/v2/source/validation_v041/cq_replay/replay_cqs.py": "5f58eacb8cf6203c69e48a73ce472e190012f324",
+    "semantic/product/v2/source/validation_v041/event_contracts.py": "3e87d1754a70b43d4945aab30204c9ddf08d8e20",
+    "semantic/product/v2/source/validation_v041/fixtures/combined-positive.ttl": "dc5312d3b1dddd34abbf1b7034dd2199a8b08142",
+    "semantic/product/v2/source/validation_v041/fixtures/combined-recovered.ttl": "dc5312d3b1dddd34abbf1b7034dd2199a8b08142",
+    "semantic/product/v2/source/validation_v041/fixtures/multiple_capabilities_one_bearer.ttl": "d5906c463f0aefe1bd61bcd1ec720c2a4e6c9f1b",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_datatype_mismatch.ttl": "60a39412b55d5b864174c4f54c086bff5864137e",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_date_only_end_time.ttl": "a3d765cd3fa12329495071d4be495f5768c66dbd",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_empty_population.ttl": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_historical_capability_bearer_rebind.ttl": "a224462ef877ab5b0e92aa872416b46a4efac336",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_historical_event_case_rebind.ttl": "9e43b094081c26e9e8a2e2f3f9e56beb2c17afb4",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_historical_realization_version_rebind.ttl": "a0d5da6681ad7f503b1a210ec85f6709c7cbbfff",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_historical_result_outcome_rebind.ttl": "b4c120ebac4bdd760fc9578f20d0e95dbbd12590",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_actual_capability.ttl": "c35c2f6581b8896a42a5e701c6966cfbe31a9bfb",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_actual_capability_type.ttl": "92c148e34a9ecf055d25f11e034da60cdde5be3f",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_capability_version_link.ttl": "a102e9edc2e0d6f291925cdf20ee4e1bb0957dbf",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_context_provenance.ttl": "cd9bda6301f048506f463c9c6ff68c8459930778",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_end_time.ttl": "14610f7144f8f0f2ab3c00178ca5fdc4c868167f",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_product_owner_of_version.ttl": "0b8efff4e96538f9bd5ff7dc834650199a4033e7",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_realization_type.ttl": "5e9842736884a980db6c75edce1ee7a8b2e16613",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_result_execution_link.ttl": "57de33541618f3e8a180ee8502d7558339815b0e",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_result_provenance.ttl": "c8539c9c1de56857d4acc1d258cfcd0de2757142",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_missing_version_binding.ttl": "6ce11743088bc5f79674183b075b09396c008e38",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_result_before_event_end.ttl": "862924d15dc98988157a21b1d17cab928e26b869",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_snapshot_identifier_conflict.ttl": "e63d2eb0fc56be7e6100243ef488d1246f49a538",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_suite_does_not_contain_executed_case.ttl": "7840a9be6e2d4b3798dfca07177fb89751f40cb6",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_two_bearers_for_one_capability.ttl": "63e24e82e5bb3928cd4e66acc45ccfa194eedab0",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_two_versions_for_one_realization.ttl": "8bc6832867b31d225a6915d277aaefc0e119ff4b",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_unknown_result_outcome.ttl": "85ba53311957a2f235366ba99705a800a7714584",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_unmapped_class.ttl": "b5a12206e27e950d84c64850c303d807ae30ae9c",
+    "semantic/product/v2/source/validation_v041/fixtures/negative_unmapped_predicate.ttl": "b419d49b77433b888d35e392f985a9ff49401f26",
+    "semantic/product/v2/source/validation_v041/fixtures/occurrence-positive-v041.ttl": "bff9507bb8fae8bd950131d7da9a4c1afd9d688e",
+    "semantic/product/v2/source/validation_v041/fixtures/repeat_distinct_event_same_inputs.ttl": "e63d2eb0fc56be7e6100243ef488d1246f49a538",
+    "semantic/product/v2/source/validation_v041/fixtures/same_population_new_snapshot.ttl": "dc5312d3b1dddd34abbf1b7034dd2199a8b08142",
+    "semantic/product/v2/source/validation_v041/fixtures/subtype_explicit_ancestry_roundtrip.ttl": "7df9eed4ff868590be48f307199153c0ef969ec4",
+    "semantic/product/v2/source/validation_v041/fixtures/two_events_one_population.ttl": "1d15f2e3c1449076b3c11597b5e838596e68d1f4",
+    "semantic/product/v2/source/validation_v041/inputs/Class_Table_Mapping_v0_16_0.csv": "217cbe4fc1f69c6a779f594ea421c352fc14b0c9",
+    "semantic/product/v2/source/validation_v041/inputs/Event_Contract_Fixtures_v0_30_0.json": "614a930549e2b6116a813b0642e07358c7961279",
+    "semantic/product/v2/source/validation_v041/inputs/Event_Contract_Results_v0_30_0.json": "aeefc3c1647575574825bae7fbd0734c7b8b01d6",
+    "semantic/product/v2/source/validation_v041/inputs/Event_Contract_Shapes_v0_30_0.ttl": "d44c9843c31f77c8d6e0b77107a0885ea1cd2bf1",
+    "semantic/product/v2/source/validation_v041/inputs/Property_Table_Mapping_v0_16_0.csv": "bbc334b4e567431eb4c8db2206ff7822ccccbde6",
+    "semantic/product/v2/source/validation_v041/inputs/Relation_OWL_SQL_Crosswalk_v0_16_0.csv": "8f0421d757aff746a8117ed384641e76cd59589c",
+    "semantic/product/v2/source/validation_v041/inputs/Retained_Formal_Profile_v0_15_0.ttl": "6dae374141b11caeb03060a664be0318b3482a27",
+    "semantic/product/v2/source/validation_v041/inputs/complete-reporting-v0_16.shacl.ttl": "4646e037e6bb019c75e8cc81ade4d15466ce8291",
+    "semantic/product/v2/source/validation_v041/inputs/domain_schema_v016.sql": "483ca1c429583b5a4a00cb93a6f54d890b7b0753",
+    "semantic/product/v2/source/validation_v041/inputs/identity-slice.shacl.ttl": "144af0fd967aa7fe6bdfbcd7e170fc10c9babc90",
+    "semantic/product/v2/source/validation_v041/inputs/identity_policy.py": "7d1ab9154de92de211ae96860d882d186e4c2df5",
+    "semantic/product/v2/source/validation_v041/inputs/identity_runtime_v025.py": "74f1b504ea3eee0513cec3b37f0a4c19e07501de",
+    "semantic/product/v2/source/validation_v041/inputs/identity_transition_cases.json": "cde5ada1c0a510e320e5c07cab4a985f2c74f1f0",
+    "semantic/product/v2/source/validation_v041/inputs/legacy_test_event_contracts.py": "e336a4ba938068a0ab87f825c83e663a969a9a45",
+    "semantic/product/v2/source/validation_v041/inputs/retained_database_v016.py": "4ede999a5a54acebb00b5d8e63a2d53c205d9a56",
+    "semantic/product/v2/source/validation_v041/occurrence_profile.py": "27bacc77484337989aedc3ae07cafbba7f5c9f3a",
+    "semantic/product/v2/source/validation_v041/official_tools/inputs/Event_Validation_Input_v0_29_0.json": "b4ff8d960ad18293717411c3ad4ca630648dd02f",
+    "semantic/product/v2/source/validation_v041/official_tools/run_graph_validation.py": "e62b30d3559473fb73581c66d7eea225d2ad2660",
+    "semantic/product/v2/source/validation_v041/official_tools/sdk_roundtrip.cjs": "febf9378743c9414e44704d8671cfed43111236c",
+    "semantic/product/v2/source/validation_v041/project_rules/Characterization_Orientation_Map_v0_32_0.json": "babc854f79ad90cf2a2309ed69649d6fcf7d2321",
+    "semantic/product/v2/source/validation_v041/project_rules/Remaining_40_Applicability_v0_32_0.json": "cb8acb7556c06d82f39c7873d0fd1cd180521a61",
+    "semantic/product/v2/source/validation_v041/project_rules/inputs/Rule_Coverage_71_v0_31_0.json": "407afb08046f53ad8b0d82122c8fff6d5a9ef758",
+    "semantic/product/v2/source/validation_v041/project_rules/remaining_rules.py": "634fa3c567e33c8718922f6d50358e6307ccdf7c",
+    "semantic/product/v2/source/validation_v041/project_rules/test_remaining_rules.py": "1848057981b71f18ba81470722f11f15f7d467be",
+    "semantic/product/v2/source/validation_v041/representation_bridge.py": "db0fb0e548a7e27c54ac4677d5f856340ffec519",
+    "semantic/product/v2/source/validation_v041/requirements-lock.json": "3dc931e5849f2aa6b982e4be0ed6faed9c781cde",
+    "semantic/product/v2/source/validation_v041/requirements.txt": "069ab829f1b2c6dd7b5967b0f8d1820bc8231520",
+    "semantic/product/v2/source/validation_v041/sql_projection.py": "78254c248446169911501ed72948e4df39f8fec4",
+    "semantic/product/v2/source/validation_v041/test_integration.py": "9d4b3c74cec058d111a0105db58e2a6ffbfdc733",
+    "semantic/product/v2/source/validation_v041/test_revision.py": "b5b364ff52eb75fe88059ccd97e33a0ce06f5c1d"
+  },
+  "source_sha256": {
+    "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+    "semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl": "153548613d6069742a10868c92f813229918038c03fa7e1efea6b8a7726edc12",
+    "semantic/product/v2/source/validation_v041/inputs/Relation_OWL_SQL_Crosswalk_v0_16_0.csv": "6bee97b08e4e4523c26bf2ebacdef844355330c3160fa20d067de43f9d9bfd46"
+  },
+  "status": "PASS_OWNER_DIRECTED_PRESERVATION"
+}
