@@ -108,7 +108,7 @@
       "title": "Identity of local reference records"
     },
     {
-      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "assessment": "Retain one consolidated result record for one concluded attempt. An evidence attribution is distinct from its carrier. Verification/validation are constitutive purposes of an attribution baseline; this review introduces no exclusive partition between them. Later reporting time does not imply creation during the attempt.",
       "id": "EVIDENCE",
       "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
       "native_ids": [
@@ -617,7 +617,7 @@
       "stereotype": "subkind"
     },
     {
-      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "assessment": "Retain one consolidated result record for one concluded attempt. An evidence attribution is distinct from its carrier. Verification/validation are constitutive purposes of an attribution baseline; this review introduces no exclusive partition between them. Later reporting time does not imply creation during the attempt.",
       "decision": "EVIDENCE",
       "independent_acceptance": false,
       "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
@@ -629,7 +629,7 @@
       "stereotype": "kind"
     },
     {
-      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "assessment": "Retain one consolidated result record for one concluded attempt. An evidence attribution is distinct from its carrier. Verification/validation are constitutive purposes of an attribution baseline; this review introduces no exclusive partition between them. Later reporting time does not imply creation during the attempt.",
       "decision": "EVIDENCE",
       "independent_acceptance": false,
       "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
@@ -641,7 +641,7 @@
       "stereotype": "subkind"
     },
     {
-      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "assessment": "Retain one consolidated result record for one concluded attempt. An evidence attribution is distinct from its carrier. Verification/validation are constitutive purposes of an attribution baseline; this review introduces no exclusive partition between them. Later reporting time does not imply creation during the attempt.",
       "decision": "EVIDENCE",
       "independent_acceptance": false,
       "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
@@ -669,7 +669,7 @@
     "semantic/product/v2/source/formalization/Class_Grounding_Register_128.json": "57e8e2ecd55eb3fd0ee1b6d2ff5c2a70725bcede91acda23292a19f64fe0dc21",
     "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
     "semantic/product/v2/source/t52_formalization_v043/Commitment_Matrix_22_v0_43_0.json": "d016e9c02ec8bd45b0bc65f9ba40fd0cb46609eaa9211d7eaaad9642886497a7",
-    "tools/publication/local_identity_decisions.json": "615a6c01b7fc229e1ed0ed422bef09953afabb652e65c28b93627e61711e9a91"
+    "tools/publication/local_identity_decisions.json": "bd05a764604ecc401c9efcf4d18d01eb00f1f9fe2ed1e67f55c5f0eab7f04f62"
   },
   "status": "BOUNDED_LOCAL_REVIEW_COMPLETE_WITH_RETAINED_LIMITS"
 }
