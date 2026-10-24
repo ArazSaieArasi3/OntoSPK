@@ -1,0 +1,163 @@
+{
+  "review_date": "2026-10-24",
+  "scope": "OntoSPK-local review; preserve all boundary treatments and private-repository hold.",
+  "profile_followup_issue": 48,
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html",
+      "observed": "2026-10-24",
+      "use": "Identity-provider and rigid-type structural comparison; not an imported ontology."
+    },
+    {
+      "id": "S2",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+      "observed": "2026-10-24",
+      "use": "Bearer dependence/characterization and the displayed Abstract=True profile discrepancy."
+    },
+    {
+      "id": "S3",
+      "url": "https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html",
+      "observed": "2026-10-24",
+      "use": "Bearer/feature direction and multiplicity comparison."
+    },
+    {
+      "id": "S4",
+      "url": "https://nemo-ufes.github.io/gufo/",
+      "observed": "2026-10-24",
+      "version_displayed": "1.0.0",
+      "use": "Conceptual comparison of objects, intrinsic modes, events and participation. No gUFO import or full UFO-B claim."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "LINEAGE",
+      "title": "Product lineage and version baseline",
+      "native_ids": [
+        "IC:ProductPortfolio",
+        "IC:Product",
+        "IC:ProductVersion"
+      ],
+      "assessment": "Keep authored mandate/product lineage and an immutable approved version baseline as three distinct referents. Rename, ownership transfer and version succession do not by themselves create another Product. Version equality is a declared/canonical-identifier assumption in the transition policy; no content-based or OWL-key identity proof is inferred.",
+      "limit": "Semantic identity needs provenance and human/domain evidence; equality of record IDs is insufficient.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "ARTIFACT",
+      "title": "Authored specifications and records",
+      "native_ids": [
+        "IC:OfferingSpecification",
+        "IC:BundleSpecification",
+        "IC:LifecycleSpecification",
+        "IC:VisionStatement",
+        "IC:FeatureSpecification",
+        "IC:VerticalSliceSpecification",
+        "IC:UserStorySpecification",
+        "IC:PersonaSpecification",
+        "IC:RoadmapEntry",
+        "IC:ReleaseSpecification",
+        "IC:LaunchSpecification",
+        "IC:DecisionRecord"
+      ],
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "STAGE",
+      "title": "Stage definitions and status assertions",
+      "native_ids": [
+        "IC:LifecycleStageSpecification",
+        "IC:ProductStatusRecord"
+      ],
+      "assessment": "Retain stage-definition artifacts and dated status-assertion records. Neither current class is a Product phase or an intrinsic quality merely because its label concerns a stage/status.",
+      "limit": "A real phase partition or quality model would require a separate versioned conceptual decision.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "CONTEXT",
+      "title": "Dependency and user-role specifications",
+      "native_ids": [
+        "IC:DependencySpecification",
+        "IC:UserRoleSpecification"
+      ],
+      "assessment": "Retain specifications of a dependency condition or participation purpose; do not turn their current instances into actual relators or anti-rigid user roles.",
+      "limit": "Actual participants, truthmakers and necessary dependence need evidence before a different ontological reading.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "ABILITY",
+      "title": "Intended ability, concrete realization and actual mode",
+      "native_ids": [
+        "IC:CapabilitySpecification",
+        "IC:ProductRealization",
+        "IC:ProductCapability"
+      ],
+      "assessment": "Preserve the intended-ability specification, concrete configured realization and actual intrinsic disposition as distinct. A realization has one version and at least one actual capability; an actual capability has exactly one bearer. Continuity evidence governs reuse of realization/capability identifiers in the separate bounded policy.",
+      "limit": "Causal continuity and disposition persistence remain supplied evidence. The concrete Mode abstractness/profile discrepancy is tracked in #48; no strict profile conformance is claimed.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "CONDITION",
+      "title": "Constitutive condition facets",
+      "native_ids": [
+        "IC:GoalSpecification",
+        "IC:OutcomeSpecification",
+        "IC:RequirementSpecification",
+        "IC:FunctionalRequirementSpecification",
+        "IC:QualityRequirementSpecification",
+        "IC:AcceptanceCriterionSpecification"
+      ],
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "SCENARIO",
+      "title": "Scenario and test-procedure artifacts",
+      "native_ids": [
+        "IC:RequirementScenarioSpecification",
+        "IC:TestScenario",
+        "IC:TestCase"
+      ],
+      "assessment": "Retain authored scenario/procedure facets inheriting ScenarioSpecification identity. Repeating a TestCase is another TestExecution; a scenario description is distinct from an obtaining situation.",
+      "limit": "No identity inference from equal procedure text or from equal execution inputs is introduced.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "REFERENCE",
+      "title": "Identity of local reference records",
+      "native_ids": [
+        "IC:ProductFamilyReference",
+        "IC:ProductLineReference",
+        "IC:ProductVariantReference",
+        "IC:ProductMetricReference"
+      ],
+      "assessment": "Retain ExternalReferenceRecord inheritance and the constitutive local reference purpose. Distinguish reference-record identity from externally governed target identity.",
+      "limit": "Owner semantics, replacement concepts and new mappings remain deferred; existing boundary treatment is unchanged.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "EVIDENCE",
+      "title": "Outcome records and evidence attributions",
+      "native_ids": [
+        "IC:TestResult",
+        "IC:VerificationEvidenceRecord",
+        "IC:ValidationEvidenceRecord"
+      ],
+      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    },
+    {
+      "id": "EVENT",
+      "title": "Attempt occurrence, participation and reporting",
+      "native_ids": [
+        "IC:TestExecution"
+      ],
+      "assessment": "Retain the concluded real-attempt profile, including setup-only aborted attempts. Binding a target is not proof of actual participation; a code-exercised correspondence flag remains a qualified candidate. Equal inputs/timestamps do not identify events, and graph replay is not a newly observed occurrence.",
+      "limit": "Unknown end/planned runs are outside this admission profile, not absent from reality. No full UFO-B causality or new ROoST equivalence is asserted.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS"
+    }
+  ]
+}

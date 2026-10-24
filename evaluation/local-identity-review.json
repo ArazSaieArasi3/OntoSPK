@@ -1,0 +1,675 @@
+{
+  "decision_groups": [
+    {
+      "assessment": "Keep authored mandate/product lineage and an immutable approved version baseline as three distinct referents. Rename, ownership transfer and version succession do not by themselves create another Product. Version equality is a declared/canonical-identifier assumption in the transition policy; no content-based or OWL-key identity proof is inferred.",
+      "id": "LINEAGE",
+      "limit": "Semantic identity needs provenance and human/domain evidence; equality of record IDs is insufficient.",
+      "native_ids": [
+        "IC:ProductPortfolio",
+        "IC:Product",
+        "IC:ProductVersion"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Product lineage and version baseline"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "id": "ARTIFACT",
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_ids": [
+        "IC:OfferingSpecification",
+        "IC:BundleSpecification",
+        "IC:LifecycleSpecification",
+        "IC:VisionStatement",
+        "IC:FeatureSpecification",
+        "IC:VerticalSliceSpecification",
+        "IC:UserStorySpecification",
+        "IC:PersonaSpecification",
+        "IC:RoadmapEntry",
+        "IC:ReleaseSpecification",
+        "IC:LaunchSpecification",
+        "IC:DecisionRecord"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Authored specifications and records"
+    },
+    {
+      "assessment": "Retain stage-definition artifacts and dated status-assertion records. Neither current class is a Product phase or an intrinsic quality merely because its label concerns a stage/status.",
+      "id": "STAGE",
+      "limit": "A real phase partition or quality model would require a separate versioned conceptual decision.",
+      "native_ids": [
+        "IC:LifecycleStageSpecification",
+        "IC:ProductStatusRecord"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Stage definitions and status assertions"
+    },
+    {
+      "assessment": "Retain specifications of a dependency condition or participation purpose; do not turn their current instances into actual relators or anti-rigid user roles.",
+      "id": "CONTEXT",
+      "limit": "Actual participants, truthmakers and necessary dependence need evidence before a different ontological reading.",
+      "native_ids": [
+        "IC:DependencySpecification",
+        "IC:UserRoleSpecification"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Dependency and user-role specifications"
+    },
+    {
+      "assessment": "Preserve the intended-ability specification, concrete configured realization and actual intrinsic disposition as distinct. A realization has one version and at least one actual capability; an actual capability has exactly one bearer. Continuity evidence governs reuse of realization/capability identifiers in the separate bounded policy.",
+      "id": "ABILITY",
+      "limit": "Causal continuity and disposition persistence remain supplied evidence. The concrete Mode abstractness/profile discrepancy is tracked in #48; no strict profile conformance is claimed.",
+      "native_ids": [
+        "IC:CapabilitySpecification",
+        "IC:ProductRealization",
+        "IC:ProductCapability"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Intended ability, concrete realization and actual mode"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "id": "CONDITION",
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_ids": [
+        "IC:GoalSpecification",
+        "IC:OutcomeSpecification",
+        "IC:RequirementSpecification",
+        "IC:FunctionalRequirementSpecification",
+        "IC:QualityRequirementSpecification",
+        "IC:AcceptanceCriterionSpecification"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Constitutive condition facets"
+    },
+    {
+      "assessment": "Retain authored scenario/procedure facets inheriting ScenarioSpecification identity. Repeating a TestCase is another TestExecution; a scenario description is distinct from an obtaining situation.",
+      "id": "SCENARIO",
+      "limit": "No identity inference from equal procedure text or from equal execution inputs is introduced.",
+      "native_ids": [
+        "IC:RequirementScenarioSpecification",
+        "IC:TestScenario",
+        "IC:TestCase"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Scenario and test-procedure artifacts"
+    },
+    {
+      "assessment": "Retain ExternalReferenceRecord inheritance and the constitutive local reference purpose. Distinguish reference-record identity from externally governed target identity.",
+      "id": "REFERENCE",
+      "limit": "Owner semantics, replacement concepts and new mappings remain deferred; existing boundary treatment is unchanged.",
+      "native_ids": [
+        "IC:ProductFamilyReference",
+        "IC:ProductLineReference",
+        "IC:ProductVariantReference",
+        "IC:ProductMetricReference"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Identity of local reference records"
+    },
+    {
+      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "id": "EVIDENCE",
+      "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
+      "native_ids": [
+        "IC:TestResult",
+        "IC:VerificationEvidenceRecord",
+        "IC:ValidationEvidenceRecord"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Outcome records and evidence attributions"
+    },
+    {
+      "assessment": "Retain the concluded real-attempt profile, including setup-only aborted attempts. Binding a target is not proof of actual participation; a code-exercised correspondence flag remains a qualified candidate. Equal inputs/timestamps do not identify events, and graph replay is not a newly observed occurrence.",
+      "id": "EVENT",
+      "limit": "Unknown end/planned runs are outside this admission profile, not absent from reality. No full UFO-B causality or new ROoST equivalence is asserted.",
+      "native_ids": [
+        "IC:TestExecution"
+      ],
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "title": "Attempt occurrence, participation and reporting"
+    }
+  ],
+  "existing_review_questions": 37,
+  "issue": 28,
+  "limits": [
+    "No independent expert acceptance or empirical continuity truth is established.",
+    "The separate transition policy consumes declared canonical identifiers/evidence; it is not an OWL identity theorem.",
+    "Static bearer cardinality is not a complete modal dependence or disposition-destruction theory.",
+    "Occurrence admission covers concluded reports; target binding does not prove participation or full causal adequacy.",
+    "Legacy application SQL and policy integration are bounded implementation surfaces, not a production guarantee.",
+    "External alignment and ROoST comparison remain owner-deferred; existing candidate text is preserved."
+  ],
+  "local_classes": 101,
+  "local_stereotypes": {
+    "category": 1,
+    "event": 1,
+    "kind": 67,
+    "mode": 1,
+    "subkind": 31
+  },
+  "ontology_core": "v2.0.0",
+  "preserved_scope": {
+    "boundary_changes": 0,
+    "native_logical_changes": 0,
+    "new_external_mappings": 0,
+    "new_ontology_imports": 0,
+    "private_repository_reads_or_changes": 0
+  },
+  "primary_sources": [
+    {
+      "id": "S1",
+      "observed": "2026-10-24",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/sortals/kind/index.html",
+      "use": "Identity-provider and rigid-type structural comparison; not an imported ontology."
+    },
+    {
+      "id": "S2",
+      "observed": "2026-10-24",
+      "url": "https://ontouml.readthedocs.io/en/latest/classes/aspects/mode/index.html",
+      "use": "Bearer dependence/characterization and the displayed Abstract=True profile discrepancy."
+    },
+    {
+      "id": "S3",
+      "observed": "2026-10-24",
+      "url": "https://ontouml.readthedocs.io/en/latest/relationships/characterization/index.html",
+      "use": "Bearer/feature direction and multiplicity comparison."
+    },
+    {
+      "id": "S4",
+      "observed": "2026-10-24",
+      "url": "https://nemo-ufes.github.io/gufo/",
+      "use": "Conceptual comparison of objects, intrinsic modes, events and participation. No gUFO import or full UFO-B claim.",
+      "version_displayed": "1.0.0"
+    }
+  ],
+  "profile_finding": {
+    "disposition": "Preserve the released concrete project profile; withhold strict reference-profile conformance pending explicit adjudication.",
+    "followup_issue": 48,
+    "native_id": "IC:ProductCapability",
+    "native_isAbstract": false,
+    "native_stereotype": "mode",
+    "reference_page_abstract": true,
+    "source": "S2"
+  },
+  "release_target": "v2.0.4",
+  "review_date": "2026-10-24",
+  "reviewed_entries": 39,
+  "rows": [
+    {
+      "assessment": "Keep authored mandate/product lineage and an immutable approved version baseline as three distinct referents. Rename, ownership transfer and version succession do not by themselves create another Product. Version equality is a declared/canonical-identifier assumption in the transition policy; no content-based or OWL-key identity proof is inferred.",
+      "decision": "LINEAGE",
+      "independent_acceptance": false,
+      "limit": "Semantic identity needs provenance and human/domain evidence; equality of record IDs is insufficient.",
+      "native_id": "IC:ProductPortfolio",
+      "source_definition": "A governed strategic arrangement organizing products, entries and planning references under a continuing portfolio mandate.",
+      "source_identity_commitment": "Constitutive mandate and stewardship lineage; adding or removing products does not create a new portfolio. A separately constituted mandate does.",
+      "source_review_question": "Does portfolio identity survive member changes, and do all Products participate uniformly? If heterogeneous PortfolioItems are parts, define their roles.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Keep authored mandate/product lineage and an immutable approved version baseline as three distinct referents. Rename, ownership transfer and version succession do not by themselves create another Product. Version equality is a declared/canonical-identifier assumption in the transition policy; no content-based or OWL-key identity proof is inferred.",
+      "decision": "LINEAGE",
+      "independent_acceptance": false,
+      "limit": "Semantic identity needs provenance and human/domain evidence; equality of record IDs is insufficient.",
+      "native_id": "IC:Product",
+      "source_definition": "A governed intentional product artifact with continuing constitutive purpose and stewardship lineage; not a deployment or a database row.",
+      "source_identity_commitment": "Same constitutive product lineage survives rename, owner transfer and version changes. A declared independent fork starts another product. ID records this decision; it does not prove it.",
+      "source_review_question": "Specify sameness across versions, offerings, ownership and deployment; separate product referent from Product Knowledge record if both occur.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Keep authored mandate/product lineage and an immutable approved version baseline as three distinct referents. Rename, ownership transfer and version succession do not by themselves create another Product. Version equality is a declared/canonical-identifier assumption in the transition policy; no content-based or OWL-key identity proof is inferred.",
+      "decision": "LINEAGE",
+      "independent_acceptance": false,
+      "limit": "Semantic identity needs provenance and human/domain evidence; equality of record IDs is insufficient.",
+      "native_id": "IC:ProductVersion",
+      "source_definition": "An immutable approved specification baseline for one Product.",
+      "source_identity_commitment": "Same product lineage and same approved semantic baseline. A semantic change creates a new version; serialization copies do not.",
+      "source_review_question": "Choose independent version-record identity versus same Product changing intrinsic condition; define succession.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:OfferingSpecification",
+      "source_definition": "A catalog specification of how one product is intended to be offered to an audience under stated terms.",
+      "source_identity_commitment": "Approved offering purpose and terms baseline; changing constitutive commercial terms creates a successor specification.",
+      "source_review_question": "Choose offer identity across audience/price/channel changes and show dependence on Product and market context.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:BundleSpecification",
+      "source_definition": "A governed composition specification referencing offerings intended to be presented together.",
+      "source_identity_commitment": "Authored bundle configuration lineage; no identity is inferred from the accidental equality of referenced offering sets.",
+      "source_review_question": "Identify homogeneous members or different functional roles; test whether same bundle survives member replacement.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:LifecycleSpecification",
+      "source_definition": "An authored scheme describing lifecycle-stage meanings applicable to products.",
+      "source_identity_commitment": "Lifecycle scheme purpose and controlled revision lineage; product transitions do not change the scheme identity.",
+      "source_review_question": "Identify whether instances are reusable models or actual histories of one Product.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:VisionStatement",
+      "source_definition": "An authored statement articulating intended product direction, experience and value.",
+      "source_identity_commitment": "Authored vision purpose and revision lineage; a materially different intended direction requires a successor statement.",
+      "source_review_question": "Specify statement identity/version, author and product bearer; distinguish description from a future situation.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:FeatureSpecification",
+      "source_definition": "An authored functional-unit specification linking intended behavior, user value and acceptance criteria.",
+      "source_identity_commitment": "Authored functional contract and revision lineage; deployment or enabling does not create/change its identity.",
+      "source_review_question": "Clarify implemented functionality vs specification, independent identity, and real parthood in a Product.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:VerticalSliceSpecification",
+      "source_definition": "An authored end-to-end increment specification connecting intended value to coherent behavior and acceptance conditions.",
+      "source_identity_commitment": "Value-bearing slice contract and baseline; runtime implementation is distinct.",
+      "source_review_question": "Specify slice identity and whether decomposedInto denotes product parthood, planned work or specification refinement.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:UserStorySpecification",
+      "source_definition": "An authored user-centered narrative specifying a desired interaction goal and expected value.",
+      "source_identity_commitment": "Narrative goal, intended actor context and baseline; wording edits do not change the constitutive story.",
+      "source_review_question": "Specify ID and version; preserve distinction from actual user action and Requirement.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:PersonaSpecification",
+      "source_definition": "An authored model of a user archetype, fixing a behavioral profile, population/use context and research provenance; not a person, group of actual users or their temporary role.",
+      "source_identity_commitment": "The same authored archetype-model baseline with fixed behavioral interpretation, population/use context and research provenance. A display-name change or file copy preserves it; changing constitutive profile or scope creates a successor. Neither a database ID nor an actual user supplies its identity.",
+      "source_review_question": "Specify archetype artifact identity/evidence; actual human users would need a different type.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:RoadmapEntry",
+      "source_definition": "A scoped entry in one roadmap referencing intended initiatives, features or delivery targets.",
+      "source_identity_commitment": "Owning roadmap and entry creation lineage; moving owners creates a successor entry.",
+      "source_review_question": "Define entry ID across target/schedule changes and distinguish from the actual target item.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:ReleaseSpecification",
+      "source_definition": "A governed specification of a planned delivery increment and its intended contents.",
+      "source_identity_commitment": "Delivery-increment purpose and specification baseline.",
+      "source_review_question": "Choose package/snapshot, act of publishing, or record; specify release ID, temporal boundary and version relation.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:LaunchSpecification",
+      "source_definition": "A plan specification for introducing a product or change to an intended audience.",
+      "source_identity_commitment": "Introduction purpose, audience context and plan baseline.",
+      "source_review_question": "Distinguish actual activity, campaign/plan and record; provide temporal identity and participants.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain the current authored-artifact reading and each published constitutive purpose/baseline criterion. Plans, offerings and decision records are distinct from realized behavior, publication acts and physical file copies. Bundle and portfolio references alone do not prove real-world parthood.",
+      "decision": "ARTIFACT",
+      "independent_acceptance": false,
+      "limit": "These are existing scoped design choices, not independently validated universal identity criteria.",
+      "native_id": "IC:DecisionRecord",
+      "source_definition": "An immutable record of a product decision, its considered alternatives, rationale and provenance.",
+      "source_identity_commitment": "Decision occurrence reference and record provenance; a later decision is another record.",
+      "source_review_question": "Distinguish decision act from record; define record identity and change/version policy.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain stage-definition artifacts and dated status-assertion records. Neither current class is a Product phase or an intrinsic quality merely because its label concerns a stage/status.",
+      "decision": "STAGE",
+      "independent_acceptance": false,
+      "limit": "A real phase partition or quality model would require a separate versioned conceptual decision.",
+      "native_id": "IC:LifecycleStageSpecification",
+      "source_definition": "A scoped definition of a lifecycle stage within one lifecycle specification.",
+      "source_identity_commitment": "Owning lifecycle scheme and authored stage definition; reuse under another scheme creates a scoped definition.",
+      "source_review_question": "For \u00abPhase\u00bb, identify the Product identity provider, intrinsic criterion and complete disjoint partition; otherwise model a stage category.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain stage-definition artifacts and dated status-assertion records. Neither current class is a Product phase or an intrinsic quality merely because its label concerns a stage/status.",
+      "decision": "STAGE",
+      "independent_acceptance": false,
+      "limit": "A real phase partition or quality model would require a separate versioned conceptual decision.",
+      "native_id": "IC:ProductStatusRecord",
+      "source_definition": "A dated contextual assertion assigning a status value to one product.",
+      "source_identity_commitment": "Subject product, assessment context, assertion time and provenance; a new assessment is a new record.",
+      "source_review_question": "Specify bearer, value, changes and identity of status assignment; \u00abQuality\u00bb requires characterization, \u00abPhase\u00bb requires intrinsic partition.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain specifications of a dependency condition or participation purpose; do not turn their current instances into actual relators or anti-rigid user roles.",
+      "decision": "CONTEXT",
+      "independent_acceptance": false,
+      "limit": "Actual participants, truthmakers and necessary dependence need evidence before a different ontological reading.",
+      "native_id": "IC:DependencySpecification",
+      "source_definition": "An authored claim that one product depends on an identified product, capability or resource under a stated dependency condition.",
+      "source_identity_commitment": "Dependent product, target binding and dependency condition baseline; retargeting creates a successor specification.",
+      "source_review_question": "Name all participants, truthmaker and existential dependence; \u00abRelator\u00bb requires mediations to at least two individuals.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain specifications of a dependency condition or participation purpose; do not turn their current instances into actual relators or anti-rigid user roles.",
+      "decision": "CONTEXT",
+      "independent_acceptance": false,
+      "limit": "Actual participants, truthmakers and necessary dependence need evidence before a different ontological reading.",
+      "native_id": "IC:UserRoleSpecification",
+      "source_definition": "A designed specification of a user participation context, responsibilities and permissions.",
+      "source_identity_commitment": "Defined participation purpose and governed specification lineage. Actual users have their own identity.",
+      "source_review_question": "If \u00abRole\u00bb, model Person/user identity provider and necessary relational context; if definition, give artifact identity.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Preserve the intended-ability specification, concrete configured realization and actual intrinsic disposition as distinct. A realization has one version and at least one actual capability; an actual capability has exactly one bearer. Continuity evidence governs reuse of realization/capability identifiers in the separate bounded policy.",
+      "decision": "ABILITY",
+      "independent_acceptance": false,
+      "limit": "Causal continuity and disposition persistence remain supplied evidence. The concrete Mode abstractness/profile discrepancy is tracked in #48; no strict profile conformance is claimed.",
+      "native_id": "IC:CapabilitySpecification",
+      "source_definition": "A version-scoped specification of an intended ability, irrespective of its implementation.",
+      "source_identity_commitment": "Same version-scoped intended ability contract; changed contract requires a new baseline.",
+      "source_review_question": "Identify concrete Product bearer and necessary dependence for \u00abMode\u00bb; if merely planned, model capability specification separately.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Preserve the intended-ability specification, concrete configured realization and actual intrinsic disposition as distinct. A realization has one version and at least one actual capability; an actual capability has exactly one bearer. Continuity evidence governs reuse of realization/capability identifiers in the separate bounded policy.",
+      "decision": "ABILITY",
+      "independent_acceptance": false,
+      "limit": "Causal continuity and disposition persistence remain supplied evidence. The concrete Mode abstractness/profile discrepancy is tracked in #48; no strict profile conformance is claimed.",
+      "native_id": "IC:ProductRealization",
+      "source_definition": "A concrete, causally integrated computing-system artifact configured to enact one fixed product-version baseline. It is the deployed functional whole, not its record, hosting machine, execution event or deployment interval.",
+      "source_identity_commitment": "The same constitutively organized deployment lineage and fixed version baseline, sustained by nonbranching causal continuity of the configured functional whole. Restart or host replacement preserves identity only when that continuity is evidenced. Version change, independent duplication or destruction followed by reconstruction creates another realization. A retained deployment identifier alone does not establish continuity.",
+      "source_review_question": "Updated concrete realization/mode identity commitment (ID03/ID04).",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Preserve the intended-ability specification, concrete configured realization and actual intrinsic disposition as distinct. A realization has one version and at least one actual capability; an actual capability has exactly one bearer. Continuity evidence governs reuse of realization/capability identifiers in the separate bounded policy.",
+      "decision": "ABILITY",
+      "independent_acceptance": false,
+      "limit": "Causal continuity and disposition persistence remain supplied evidence. The concrete Mode abstractness/profile discrepancy is tracked in #48; no strict profile conformance is claimed.",
+      "native_id": "IC:ProductCapability",
+      "source_definition": "An actual intrinsic disposition of one concrete ProductRealization as a configured functional whole. Intended behavior, successful execution, a specification and a machine label are not the disposition.",
+      "source_identity_commitment": "The same bearer and continuous underlying disposition. A new bearer requires a distinct capability; a preserved bearer is insufficient if the underlying disposition is destroyed and recreated. Similar functionality or identifiers do not prove disposition continuity.",
+      "source_review_question": "Updated concrete realization/mode identity commitment (ID03/ID04).",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "mode"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "decision": "CONDITION",
+      "independent_acceptance": false,
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_id": "IC:GoalSpecification",
+      "source_definition": "An authored ConditionSpecification whose constitutive content includes desired product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence.",
+      "source_identity_commitment": "Inherits ConditionSpecification identity. Desired product condition is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Decide whether instance is a governed statement with its own ID or an intention borne by an agent; trace targets to Outcome.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "decision": "CONDITION",
+      "independent_acceptance": false,
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_id": "IC:OutcomeSpecification",
+      "source_definition": "An authored ConditionSpecification whose constitutive content includes expected measurable product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence.",
+      "source_identity_commitment": "Inherits ConditionSpecification identity. Expected measurable product condition is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Separate expected target from actual observation/event and specify outcome identity across measures.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "decision": "CONDITION",
+      "independent_acceptance": false,
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_id": "IC:RequirementSpecification",
+      "source_definition": "An authored ConditionSpecification whose constitutive content includes required product condition. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence.",
+      "source_identity_commitment": "Inherits ConditionSpecification identity. Required product condition is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Ground persistent requirement identity across edits and copies; distinguish normative statement from required behavior.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "decision": "CONDITION",
+      "independent_acceptance": false,
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_id": "IC:FunctionalRequirementSpecification",
+      "source_definition": "A requirement specification with an essential normative commitment about intended behavior or functionality.",
+      "source_identity_commitment": "Inherits RequirementSpecification identity; the behavior commitment is constitutive of this clause.",
+      "source_review_question": "First establish Requirement's identity provider; justify that functional classification is rigid; decide overlap with QualityRequirement.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "decision": "CONDITION",
+      "independent_acceptance": false,
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_id": "IC:QualityRequirementSpecification",
+      "source_definition": "A requirement specification with an essential normative commitment about a measurable quality under defined conditions.",
+      "source_identity_commitment": "Inherits RequirementSpecification identity; changing the constitutive quality commitment creates a successor clause.",
+      "source_review_question": "First establish same identity provider and rigid classification; decide overlap/completeness of the two categories.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain rigid, authored facets under the published ConditionSpecification/RequirementSpecification identity providers. Desired, expected, required and acceptance content belongs to that authored baseline. A requirement statement is distinct from the actual behavior or the agent intention.",
+      "decision": "CONDITION",
+      "independent_acceptance": false,
+      "limit": "Content essentiality is a model assumption; the review does not impose new disjointness, coverage or modal axioms.",
+      "native_id": "IC:AcceptanceCriterionSpecification",
+      "source_definition": "An authored ConditionSpecification whose constitutive content includes condition used in the authored acceptance contract. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence.",
+      "source_identity_commitment": "Inherits ConditionSpecification identity. Condition used in the authored acceptance contract is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Specify criterion ID, owner and scope; separate statement from observed satisfaction.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain authored scenario/procedure facets inheriting ScenarioSpecification identity. Repeating a TestCase is another TestExecution; a scenario description is distinct from an obtaining situation.",
+      "decision": "SCENARIO",
+      "independent_acceptance": false,
+      "limit": "No identity inference from equal procedure text or from equal execution inputs is introduced.",
+      "native_id": "IC:RequirementScenarioSpecification",
+      "source_definition": "An authored ScenarioSpecification whose constitutive content includes requirement/acceptance illustration. The facet belongs to this specification baseline, not to a temporary use of its file or an actual occurrence.",
+      "source_identity_commitment": "Inherits ScenarioSpecification identity. Requirement/acceptance illustration is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Identify scenario across changes and distinguish from TestScenario and enacted behavior.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain authored scenario/procedure facets inheriting ScenarioSpecification identity. Repeating a TestCase is another TestExecution; a scenario description is distinct from an obtaining situation.",
+      "decision": "SCENARIO",
+      "independent_acceptance": false,
+      "limit": "No identity inference from equal procedure text or from equal execution inputs is introduced.",
+      "native_id": "IC:TestScenario",
+      "source_definition": "A ScenarioSpecification describing a situation to verify specified behavior or conditions. It can be detailed enough to also be a TestCase; its described situation is not a completed TestExecution.",
+      "source_identity_commitment": "Inherits ScenarioSpecification identity. Verification situation is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Define scenario ID and ensure it is a specification rather than an occurring situation.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain authored scenario/procedure facets inheriting ScenarioSpecification identity. Repeating a TestCase is another TestExecution; a scenario description is distinct from an obtaining situation.",
+      "decision": "SCENARIO",
+      "independent_acceptance": false,
+      "limit": "No identity inference from equal procedure text or from equal execution inputs is introduced.",
+      "native_id": "IC:TestCase",
+      "source_definition": "A ScenarioSpecification that includes an operational test procedure and expected conditions. Repeated executions reuse the specification and remain distinct events.",
+      "source_identity_commitment": "Inherits ScenarioSpecification identity. Operational test procedure is fixed in this authored baseline; compatible facets can overlap.",
+      "source_review_question": "Define test-case identity and revision semantics; separate its executions.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain ExternalReferenceRecord inheritance and the constitutive local reference purpose. Distinguish reference-record identity from externally governed target identity.",
+      "decision": "REFERENCE",
+      "independent_acceptance": false,
+      "limit": "Owner semantics, replacement concepts and new mappings remain deferred; existing boundary treatment is unchanged.",
+      "native_id": "IC:ProductFamilyReference",
+      "source_definition": "A local reference artifact identifying a product-family target governed by an external owner. Its product-family purpose is constitutive to the authored reference record, not a temporary role of the target.",
+      "source_identity_commitment": "Inherits ExternalReferenceRecord identity; product-family is part of its fixed purpose set.",
+      "source_review_question": "Define reference identity, external target IRI, source/version and whether reference can change target.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain ExternalReferenceRecord inheritance and the constitutive local reference purpose. Distinguish reference-record identity from externally governed target identity.",
+      "decision": "REFERENCE",
+      "independent_acceptance": false,
+      "limit": "Owner semantics, replacement concepts and new mappings remain deferred; existing boundary treatment is unchanged.",
+      "native_id": "IC:ProductLineReference",
+      "source_definition": "A local reference artifact identifying an externally governed product line. Its product-line purpose is constitutive to the authored reference record, not a temporary role of the target.",
+      "source_identity_commitment": "Inherits ExternalReferenceRecord identity; product-line is part of its fixed purpose set.",
+      "source_review_question": "Define local reference identity and external ProductLine target/source/version.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain ExternalReferenceRecord inheritance and the constitutive local reference purpose. Distinguish reference-record identity from externally governed target identity.",
+      "decision": "REFERENCE",
+      "independent_acceptance": false,
+      "limit": "Owner semantics, replacement concepts and new mappings remain deferred; existing boundary treatment is unchanged.",
+      "native_id": "IC:ProductVariantReference",
+      "source_definition": "A local reference artifact identifying an externally governed product variant. Its product-variant purpose is constitutive to the authored reference record, not a temporary role of the target.",
+      "source_identity_commitment": "Inherits ExternalReferenceRecord identity; product-variant is part of its fixed purpose set.",
+      "source_review_question": "Define local reference identity and ProductVariant target/configuration version.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain ExternalReferenceRecord inheritance and the constitutive local reference purpose. Distinguish reference-record identity from externally governed target identity.",
+      "decision": "REFERENCE",
+      "independent_acceptance": false,
+      "limit": "Owner semantics, replacement concepts and new mappings remain deferred; existing boundary treatment is unchanged.",
+      "native_id": "IC:ProductMetricReference",
+      "source_definition": "A local reference artifact binding a product measurement context to an externally governed metric. Its product-metric purpose is constitutive to the authored reference record, not a temporary role of the target.",
+      "source_identity_commitment": "Inherits ExternalReferenceRecord identity; product-metric is part of its fixed purpose set.",
+      "source_review_question": "Define local reference identity and external Metric ownership; distinguish metric definition from measured value.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "decision": "EVIDENCE",
+      "independent_acceptance": false,
+      "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
+      "native_id": "IC:TestResult",
+      "source_definition": "The single consolidated outcome record for one concluded TestExecution in this reporting profile. Recording may occur after the attempt ends; this association does not assert creation during the attempt.",
+      "source_identity_commitment": "Same recorded execution outcome and provenance; a copy is the same record representation, not another test.",
+      "source_review_question": "Set result-record identity/provenance and distinguish observed outcome/value from the recording artifact.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "kind"
+    },
+    {
+      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "decision": "EVIDENCE",
+      "independent_acceptance": false,
+      "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
+      "native_id": "IC:VerificationEvidenceRecord",
+      "source_definition": "An evidence-attribution record whose constitutive assessment purpose is verification.",
+      "source_identity_commitment": "Inherits EvidenceAttributionRecord identity. Purpose belongs to the recorded claim, not a temporary role of its carrier.",
+      "source_review_question": "Determine evidence identity and whether verification is essential or a contextual use; if \u00abRole\u00bb, add identity provider and dependency.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain one consolidated result record for one concluded attempt and distinct evidence-attribution records. Later reporting time does not imply creation during the attempt. A physical carrier and its verification/validation assertions are distinct referents.",
+      "decision": "EVIDENCE",
+      "independent_acceptance": false,
+      "limit": "Record identity, real outcome truth and independent evidential acceptance are different questions.",
+      "native_id": "IC:ValidationEvidenceRecord",
+      "source_definition": "An evidence-attribution record whose constitutive assessment purpose is validation.",
+      "source_identity_commitment": "Inherits EvidenceAttributionRecord identity. Purpose belongs to the recorded claim, not a temporary role of its carrier.",
+      "source_review_question": "Determine evidence identity and whether the same record may support both validation and verification.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "subkind"
+    },
+    {
+      "assessment": "Retain the concluded real-attempt profile, including setup-only aborted attempts. Binding a target is not proof of actual participation; a code-exercised correspondence flag remains a qualified candidate. Equal inputs/timestamps do not identify events, and graph replay is not a newly observed occurrence.",
+      "decision": "EVENT",
+      "independent_acceptance": false,
+      "limit": "Unknown end/planned runs are outside this admission profile, not absent from reality. No full UFO-B causality or new ROoST equivalence is asserted.",
+      "native_id": "IC:TestExecution",
+      "source_definition": "A concluded real attempt to carry out one TestCase against one declared ProductRealization, including a setup-only aborted attempt or an unsuccessful exercised test, with one consolidated result. A planned run is not an occurrence. Only the evidenced code-exercised subset is a candidate for alignment to ROoST Test Execution.",
+      "source_identity_commitment": "Same occurrence and participants; repetition is a new event, even with equal inputs/results.",
+      "source_review_question": "Represent occurrence, participants, time and TestCase specification using an event-capable native model; determine tooling coverage.",
+      "status": "PRESERVE_AUTHORED_DESIGN_WITH_LIMITS",
+      "stereotype": "event"
+    }
+  ],
+  "source_sha256": {
+    "semantic/product/v2/source/formalization/Class_Grounding_Register_128.json": "57e8e2ecd55eb3fd0ee1b6d2ff5c2a70725bcede91acda23292a19f64fe0dc21",
+    "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+    "semantic/product/v2/source/t52_formalization_v043/Commitment_Matrix_22_v0_43_0.json": "d016e9c02ec8bd45b0bc65f9ba40fd0cb46609eaa9211d7eaaad9642886497a7",
+    "tools/publication/local_identity_decisions.json": "615a6c01b7fc229e1ed0ed422bef09953afabb652e65c28b93627e61711e9a91"
+  },
+  "status": "BOUNDED_LOCAL_REVIEW_COMPLETE_WITH_RETAINED_LIMITS"
+}

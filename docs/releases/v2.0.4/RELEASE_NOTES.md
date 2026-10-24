@@ -1,0 +1,16 @@
+# OntoSPK v2.0.4 — Bounded local identity and event review
+
+This documentation/evidence patch completes the OntoSPK-local scope of #28. All 37 existing local grounding questions have an explicit assessment; two updated realization/capability commitments bring the review to 39 entries in ten decision groups. The native/OWL/SHACL core remains v2.0.0, with all 543 semantic files and 27 boundary elements unchanged. Private sibling repositories and external rewiring remain deferred.
+
+- Retain the distinct Product lineage, immutable ProductVersion baseline, concrete ProductRealization and bearer-dependent actual ProductCapability. Plans/specifications, actual occurrences and result/evidence records are distinguished explicitly.
+- Execute all 864 combinations of the declared transition-policy grid, replay the 25 retained cases and run 48 bijective identifier-renaming controls. Native checks cover 101 local classes, 34 generalizations and four adverse structures. Focused legacy ledger and occurrence/history contrasts include unknown starts, setup-only aborts, late recording, repeated equal-time attempts and append-only observations.
+- Retain two explicit limits. The old synthetic application ledger allows a direct DELETE/re-INSERT bearer replacement despite blocking UPDATE; it is not a production-hardening assurance. The native concrete Mode profile differs from the inspected reference page's abstractness table: #48 tracks the intended profile, author decision and any future migration. No strict full-reference-profile conformance is claimed.
+- The full finite SHACL/HermiT/CQ/core suite is rerun by main CI before publication. Tagged receipts and fresh CI observations remain distinct. Default ROBOT findings (812 total, including 288 ERROR) remain tracked in #44.
+
+[Readable local review](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.4/evaluation/local-identity-review.md) · [Focused tests](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.4/evaluation/local-identity-tests.md) · [Profile follow-up #48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48)
+
+The completed scope is a bounded assessment of existing authored choices and their executable policies. Evidence IRIs do not establish truth; finite checks do not prove arbitrary-world identity, full UFO modal/causal adequacy, empirical validity or independent expert acceptance. Existing ROoST candidacy text is preserved; no new external mapping is made. Actual semantic changes, if later accepted, require a separately versioned model and migration.
+
+The source/evidence ZIP contains all tracked public files at the tag. The release manifest binds its checksum, exact source commit, unchanged core identities and eight receipts; SHA256SUMS covers the ZIP and manifest. Earlier releases and frozen documentation v2.0.1 remain unchanged. Current Pages adds the local-review and focused-test pages; this patch adds no new frozen Pages route.
+
+Reproduce with `python tools/publication/build_local_identity_review.py` and `python tools/publication/test_local_identity_review.py` using the pinned dependencies. Use a clone with the frozen core commit available for the preservation checks and the full expanded workflow for its separate fresh execution. No project-wide reuse licence is newly assigned.
