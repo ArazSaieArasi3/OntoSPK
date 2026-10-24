@@ -1,0 +1,497 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Diagram provenance and verification — OntoSPK ontology documentation"><title>Diagram provenance and verification — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/formal/method.html">Formal verification method</a></li><li><a href="../reference/diagrams/index.html">Diagrams and domains</a></li><li><a href="../reference/publication/index.html">Citation and evidence handoff</a></li><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="diagram-provenance-and-verification">Diagram provenance and verification</h1>
+<p><strong>Result: PASS_BOUNDED_VIEW_REVIEW.</strong> The complete native source contains 128 classes, 286 associations and 34 generalizations. The approved public selected view contains 40 classes, 48 associations and 11 generalizations. All visible names, stereotypes, endpoint cardinalities and arrow target geometry match the declared selected-view profile and current native inputs. This is a bounded source/notation review, not independent scientific acceptance.</p>
+<h2 id="historical-discrepancies-and-disposition">Historical discrepancies and disposition</h2>
+<p>Six isReadOnly fields in the historical manifest are null although current native endpoints and SVG metadata say true. The accepted inputs are preserved; this report supplies complete current endpoint records for the 59 displayed relationships. The old SVG description also claims embedded draw.io data, which its XML does not contain. The reviewed presentation copy removes that unsupported claim while preserving visible geometry. No editable source is claimed recovered.</p>
+<h2 id="reading-the-notation">Reading the notation</h2>
+<p>Association heads are open and declare target navigability only in this selected-view convention. They do not establish native navigability or causal/dependency relations. Generalization heads are hollow triangles pointing to the general class; generalizations carry no multiplicities. All 59 head tips meet the intended class boundary within three SVG coordinate units. Explicitly abstract classes are marked; unspecified native abstractness is not promoted to a scientific decision. Relation-family stereotypes are not invented for plain associations. The physical SVG is 178 by 222.5 mm with a portrait viewBox, rather than a full A4 page.</p>
+<h2 id="two-domain-views">Two domain views</h2>
+<p>The complete matrix accounts for all 286 association declarations, including within-domain cells and a separate external boundary bucket. Its row/column direction follows native endpoint order. The rectangle/arrow view uses a deterministic maximum spanning tree over local cross-domain association counts: twelve domains and eleven representative associations. Native ID breaks representative ties. The machine-readable report lists every omitted relation and every representative endpoint/cardinality; this is a navigation subset, not a new domain ontology, dependency architecture or assertion that the omitted links are absent. All twelve domain colors are taken directly from the selected figure. The 34 generalizations are not counted as associations.</p>
+<h2 id="scope-and-omissions">Scope and omissions</h2>
+<p>The selected view omits 88 class symbols, 238 associations and 23 generalizations. Exact omitted identifiers and all current displayed endpoint properties are recorded in <code>diagram-provenance.json</code>. The complete native model and exhaustive reference remain the full ontology source; no full-model image or independent UFO conformance certificate is claimed. PNGs are presentation exports tied to their SVG source hash; CI regenerates SVGs and verifies PNG source binding, not cross-platform byte-identical font rasterization.</p>
+<table>
+<thead>
+<tr>
+<th>Display</th>
+<th>Native relation</th>
+<th>Type</th>
+<th>Source</th>
+<th>Target</th>
+<th style="text-align: right;">Head distance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R01</td>
+<td><code>REL:W2:007</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:Product</code></td>
+<td><code>IC:ProductVersion</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R02</td>
+<td><code>ICREL:CP:specifiesCapability</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductVersion</code></td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R03</td>
+<td><code>ICREL:CP:realizesVersion</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductRealization</code></td>
+<td><code>IC:ProductVersion</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R04</td>
+<td><code>ICREL:CP:bearsCapability</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductRealization</code></td>
+<td><code>IC:ProductCapability</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R05</td>
+<td><code>ICREL:CP:evaluatedAgainst</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductCapability</code></td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R06</td>
+<td><code>REL:W2:034</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td><code>IC:FeatureSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R07</td>
+<td><code>REL:W2:131</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:FeatureSpecification</code></td>
+<td><code>IC:RequirementSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R08</td>
+<td><code>ICREL:CP:testsRealization</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestExecution</code></td>
+<td><code>IC:ProductRealization</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R09</td>
+<td><code>ICREL:CP:assessesSpecification</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestExecution</code></td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R10</td>
+<td><code>REL:W2:090</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestExecution</code></td>
+<td><code>IC:TestCase</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R11</td>
+<td><code>REL:W2:091</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestExecution</code></td>
+<td><code>IC:TestResult</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R12</td>
+<td><code>REL:ORSD05:executionContext</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestExecution</code></td>
+<td><code>IC:AssessmentContextSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R13</td>
+<td><code>ICREL:EU:usesEvidence</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:EvidenceAttributionRecord</code></td>
+<td><code>IC:EvidenceArtifact</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R14</td>
+<td><code>ICREL:EU:assertsClaim</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:EvidenceAttributionRecord</code></td>
+<td><code>IC:AssessmentClaim</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R15</td>
+<td><code>REL:ORSD04:claimRealization</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:AssessmentClaim</code></td>
+<td><code>IC:ProductRealization</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R16</td>
+<td><code>REL:W2:002</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductPortfolio</code></td>
+<td><code>IC:Product</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R17</td>
+<td><code>REL:W2:017</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:Product</code></td>
+<td><code>IC:VisionStatement</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R18</td>
+<td><code>REL:W2:018</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:VisionStatement</code></td>
+<td><code>IC:GoalSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R19</td>
+<td><code>REL:W2:155</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:VisionStatement</code></td>
+<td><code>IC:ProblemStatement</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R20</td>
+<td><code>REL:W2:019</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:GoalSpecification</code></td>
+<td><code>IC:OutcomeSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R21</td>
+<td><code>REL:W2:033</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:OutcomeSpecification</code></td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R22</td>
+<td><code>REL:W2:020</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:OutcomeSpecification</code></td>
+<td><code>IC:ProductMetricReference</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R23</td>
+<td><code>REL:W2:042</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:FeatureSpecification</code></td>
+<td><code>IC:UserStorySpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R24</td>
+<td><code>REL:W2:043</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:UserStorySpecification</code></td>
+<td><code>IC:RequirementSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R25</td>
+<td><code>REL:W2:044</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:RequirementSpecification</code></td>
+<td><code>IC:AcceptanceCriterionSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R26</td>
+<td><code>REL:W2:048</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:RequirementSourceReference</code></td>
+<td><code>IC:RequirementSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R27</td>
+<td><code>REL:W2:062</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:UserStorySpecification</code></td>
+<td><code>IC:PersonaSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R28</td>
+<td><code>REL:W2:063</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:UserStorySpecification</code></td>
+<td><code>IC:UserFlowSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R29</td>
+<td><code>REL:W2:064</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:Roadmap</code></td>
+<td><code>IC:RoadmapEntry</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R30</td>
+<td><code>REL:W2:066</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:RoadmapEntry</code></td>
+<td><code>IC:FeatureSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R31</td>
+<td><code>REL:W2:068</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:RoadmapEntry</code></td>
+<td><code>IC:PriorityAssessment</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R32</td>
+<td><code>REL:W2:139</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:Roadmap</code></td>
+<td><code>IC:GoalSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R33</td>
+<td><code>REL:W2:140</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:RoadmapEntry</code></td>
+<td><code>IC:ReleaseSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R34</td>
+<td><code>REL:W2:083</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductVersion</code></td>
+<td><code>IC:ReleaseSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R35</td>
+<td><code>REL:W2:075</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ReleaseSpecification</code></td>
+<td><code>IC:DeliveryWorkItem</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R36</td>
+<td><code>REL:W2:080</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:DeliveryWorkItem</code></td>
+<td><code>IC:FeatureSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R37</td>
+<td><code>REL:W2:077</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ReleaseSpecification</code></td>
+<td><code>IC:DeliveryStatusRecord</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R38</td>
+<td><code>REL:W2:094</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:Product</code></td>
+<td><code>IC:PositioningStatement</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R39</td>
+<td><code>REL:W2:100</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:GoToMarketSpecification</code></td>
+<td><code>IC:PositioningStatement</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R40</td>
+<td><code>REL:W2:173</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:PositioningStatement</code></td>
+<td><code>IC:CapabilitySpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R41</td>
+<td><code>REL:W2:146</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestCase</code></td>
+<td><code>IC:RequirementSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R42</td>
+<td><code>REL:W2:092</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:TestResult</code></td>
+<td><code>IC:VerificationEvidenceRecord</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R43</td>
+<td><code>REL:ORSD05:releaseStatusVersion</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:DeliveryStatusRecord</code></td>
+<td><code>IC:ProductVersion</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R44</td>
+<td><code>ICREL:SP:expectedCondition</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ScenarioSpecification</code></td>
+<td><code>IC:ConditionSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R45</td>
+<td><code>REL:ORSD04:claimCriterion</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:AssessmentClaim</code></td>
+<td><code>IC:ConditionSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R46</td>
+<td><code>REL:ORSD04:claimContext</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:AssessmentClaim</code></td>
+<td><code>IC:AssessmentContextSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>R47</td>
+<td><code>REL:ORSD06:decisionEvidence</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:DecisionRecord</code></td>
+<td><code>IC:EvidenceAttributionRecord</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>R48</td>
+<td><code>ICREL:implementsFeature</code></td>
+<td>BinaryRelation</td>
+<td><code>IC:ProductRealization</code></td>
+<td><code>IC:FeatureSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>G01</td>
+<td><code>GEN:W2:152</code></td>
+<td>Generalization</td>
+<td><code>IC:FunctionalRequirementSpecification</code></td>
+<td><code>IC:RequirementSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>G02</td>
+<td><code>GEN:W2:153</code></td>
+<td>Generalization</td>
+<td><code>IC:QualityRequirementSpecification</code></td>
+<td><code>IC:RequirementSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>G03</td>
+<td><code>GEN:IC04:TestResult:EvidenceArtifact</code></td>
+<td>Generalization</td>
+<td><code>IC:TestResult</code></td>
+<td><code>IC:EvidenceArtifact</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>G04</td>
+<td><code>GEN:IC04:VerificationEvidence:EvidenceArtifact</code></td>
+<td>Generalization</td>
+<td><code>IC:VerificationEvidenceRecord</code></td>
+<td><code>IC:EvidenceAttributionRecord</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>G05</td>
+<td><code>GEN:IC06:ProductMetricReference</code></td>
+<td>Generalization</td>
+<td><code>IC:ProductMetricReference</code></td>
+<td><code>IC:ExternalReferenceRecord</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>G06</td>
+<td><code>GEN:IC06:RequirementSourceReference</code></td>
+<td>Generalization</td>
+<td><code>IC:RequirementSourceReference</code></td>
+<td><code>IC:ExternalReferenceRecord</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>G07</td>
+<td><code>GEN:IC07:GoalSpecification</code></td>
+<td>Generalization</td>
+<td><code>IC:GoalSpecification</code></td>
+<td><code>IC:ConditionSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>G08</td>
+<td><code>GEN:IC07:OutcomeSpecification</code></td>
+<td>Generalization</td>
+<td><code>IC:OutcomeSpecification</code></td>
+<td><code>IC:ConditionSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+<tr>
+<td>G09</td>
+<td><code>GEN:IC07:RequirementSpecification</code></td>
+<td>Generalization</td>
+<td><code>IC:RequirementSpecification</code></td>
+<td><code>IC:ConditionSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>G10</td>
+<td><code>GEN:IC07:AcceptanceCriterionSpecification</code></td>
+<td>Generalization</td>
+<td><code>IC:AcceptanceCriterionSpecification</code></td>
+<td><code>IC:ConditionSpecification</code></td>
+<td style="text-align: right;">2.25</td>
+</tr>
+<tr>
+<td>G11</td>
+<td><code>GEN:IC07:TestCase</code></td>
+<td>Generalization</td>
+<td><code>IC:TestCase</code></td>
+<td><code>IC:ScenarioSpecification</code></td>
+<td style="text-align: right;">2.26</td>
+</tr>
+</tbody>
+</table>
+<p>Reproduce with <code>python tools/publication/build_diagram_review.py</code>; use <code>--render-png</code> to explicitly refresh presentation exports.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#historical-discrepancies-and-disposition">Historical discrepancies and disposition</a></li><li><a href="#reading-the-notation">Reading the notation</a></li><li><a href="#two-domain-views">Two domain views</a></li><li><a href="#scope-and-omissions">Scope and omissions</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

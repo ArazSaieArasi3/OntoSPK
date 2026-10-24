@@ -2,7 +2,7 @@
   "status": "PASS",
   "scope": "Accepted repository Wiki snapshot to current Pages; no fresh live Wiki or browser readback",
   "wiki_pages": 15,
-  "source_reader_pages": 16,
+  "source_reader_pages": 18,
   "normalization": "Whitespace and one declared historical Home publication sentence; current-context asides checked separately",
   "pages": [
     {
@@ -126,12 +126,28 @@
       "links": 2
     },
     {
+      "source": "docs/handbook/diagram-provenance.md",
+      "page": "docs/reference/diagrams/index.html",
+      "source_sha256": "d70aff466e6205bc41fd60a863b7de9b3a4690b0e6d0831bf1deac754b7e23b4",
+      "normalized_content_sha256": "456234ebf85e580168ce9ec8348381218b9248bbeffd640cf6e44320cda8ff73",
+      "headings": 6,
+      "links": 9
+    },
+    {
       "source": "docs/handbook/formal-verification.md",
       "page": "docs/reference/formal/method.html",
       "source_sha256": "85e8af63034e59e14c56eb6cbc0d6a4b3d64ad585384523c2a01a22eeccb72bc",
       "normalized_content_sha256": "ec3625b47dd7ad08f54eba90796a321948ea2ff22cf741d058feb3408e354507",
       "headings": 9,
       "links": 15
+    },
+    {
+      "source": "docs/handbook/publication-handoff.md",
+      "page": "docs/reference/publication/index.html",
+      "source_sha256": "8c789b908d24c0a56ac9e5b6d2a801cc3f65293e93a3a9c7dab27852c7cfcae2",
+      "normalized_content_sha256": "cd86e74e0e22296e09be2d0ab4164caa18ca6347beb0942ba2d85aa5d601d2d8",
+      "headings": 6,
+      "links": 19
     }
   ],
   "errors": []

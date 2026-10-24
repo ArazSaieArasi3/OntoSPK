@@ -22,4 +22,8 @@ faults = {
 for name, text in faults.items():
     result = audit(overrides={guide: text})
     assert result['errors'], f'Undetected fault: {name}'
-print(f"PASS: baseline and {len(faults)} independently injected reader regressions")
+diagram='docs/reference/diagrams/index.html'
+soup=BeautifulSoup((ROOT/diagram).read_text(),'html.parser')
+soup.find('main').find('img')['src']='../../assets/diagrams/domain-matrix.svg'
+assert audit(overrides={diagram:str(soup)})['errors'],'Undetected swapped diagram image'
+print(f"PASS: baseline and {len(faults)+1} independently injected reader regressions")
