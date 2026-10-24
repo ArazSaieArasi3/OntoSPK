@@ -50,6 +50,9 @@ jobs:
           python tools/publication/build_portal.py
           python tools/publication/audit_wiki.py
           python tools/publication/audit_pages.py
+          python tools/publication/audit_documentation.py
+          python tools/publication/test_documentation_audit.py
+          git diff --exit-code -- evaluation/documentation-parity.json evaluation/documentation-parity.md
           git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md evaluation/pages-completeness.json wiki-src docs evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md evaluation/local-identity-review.json evaluation/local-identity-review.md evaluation/local-identity-tests.json.gz evaluation/local-identity-tests.md evaluation/robot-metadata-review.json.gz evaluation/robot-metadata-review.md docs/downloads/OntoSPK-v2.0.5-annotated.ttl
       - run: python tools/publication/check_publication.py
       - name: Verify immutable publication routes
