@@ -1,30 +1,41 @@
 {
   "distribution_version": "2.0.0",
   "distribution_state": "CORE_V2_0_0_PUBLIC_RELEASE_PUBLISHED",
-  "documentation_baseline": "public-core-2026-10-21",
-  "documentation_state": "LIVE_PUBLISHED_VERIFIED",
-  "source_prepared": true,
-  "local_semantic_evaluation": "PASS_TEN_STAGES",
-  "remote_semantic_ci": "ACCEPTED_CORE_CANDIDATE_PASSED",
+  "documentation_increment": "2.0.8",
+  "documentation_state": "CURRENT_SOURCE_WITH_SEPARATE_LIVE_ACCEPTANCE",
+  "current_status": "current-status.json",
   "wiki": {
     "source": "wiki-src",
-    "state": "LIVE_PUBLISHED_VERIFIED",
-    "published_ref": "24bc0b25f935a639e9ee247f07a601baf243365d",
-    "reviewed_source_commit": "a1da92ddfe23f2d4fbde88de942315fdeeb6675d",
-    "verification_report": "evaluation/wiki-publication-verification.json",
-    "verified_reader_pages": 15
+    "state": "CURRENT_SOURCE_WITH_HISTORICAL_ACCEPTANCE",
+    "historical_acceptance": {
+      "source": "wiki-src",
+      "state": "LIVE_PUBLISHED_VERIFIED",
+      "published_ref": "24bc0b25f935a639e9ee247f07a601baf243365d",
+      "reviewed_source_commit": "a1da92ddfe23f2d4fbde88de942315fdeeb6675d",
+      "verification_report": "evaluation/wiki-publication-verification.json",
+      "verified_reader_pages": 15
+    },
+    "current_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/61"
   },
   "pages": {
     "source": "docs",
-    "state": "LIVE_PUBLISHED_VERIFIED",
-    "deployment_trigger": "AFTER_SUCCESSFUL_MAIN_DOCUMENTATION_CI_OR_EXPLICIT_MANUAL_DISPATCH",
-    "deployment_ref": "4564169a4a01e9f87909578e0c4f2c559ee7a8c1",
-    "deployment_ref_scope": "Accepted live runtime readback; current route is mutable and its latest commit is recorded in the deployment manifest.",
+    "state": "CURRENT_DEPLOYMENT_IDENTIFIED_BY_MANIFEST",
     "url": "https://arazsaiearasi3.github.io/OntoSPK/",
-    "frozen_url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html",
     "current_url": "https://arazsaiearasi3.github.io/OntoSPK/current/index.html",
-    "verification_report": "evaluation/pages-publication-verification.json",
-    "deployment_manifest": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json"
+    "deployment_manifest": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json",
+    "historical_acceptance": {
+      "source": "docs",
+      "state": "LIVE_PUBLISHED_VERIFIED",
+      "deployment_trigger": "AFTER_SUCCESSFUL_MAIN_DOCUMENTATION_CI_OR_EXPLICIT_MANUAL_DISPATCH",
+      "deployment_ref": "4564169a4a01e9f87909578e0c4f2c559ee7a8c1",
+      "deployment_ref_scope": "Accepted live runtime readback; current route is mutable and its latest commit is recorded in the deployment manifest.",
+      "url": "https://arazsaiearasi3.github.io/OntoSPK/",
+      "frozen_url": "https://arazsaiearasi3.github.io/OntoSPK/releases/v2.0.1/index.html",
+      "current_url": "https://arazsaiearasi3.github.io/OntoSPK/current/index.html",
+      "verification_report": "evaluation/pages-publication-verification.json",
+      "deployment_manifest": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json"
+    },
+    "current_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/61"
   },
   "webvowl": {
     "data": "docs/webvowl/data/ontospk.json",
@@ -34,20 +45,6 @@
   },
   "licensing": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
   "public_release_record": "https://github.com/ArazSaieArasi3/OntoSPK/releases",
-  "remote_check_runs": [
-    {
-      "run_id": 39735045170,
-      "kind": "ontology",
-      "state": "SUCCESS_ON_ACCEPTED_CORE_CANDIDATE_5dc0933c76f1047d9751bfc13ac4316daad82a24"
-    },
-    {
-      "run_id": 39735045210,
-      "kind": "documentation",
-      "state": "SUCCESS_ON_ACCEPTED_CORE_CANDIDATE_5dc0933c76f1047d9751bfc13ac4316daad82a24"
-    }
-  ],
   "source_private_release": "v2.0.0",
-  "source_commit": "beb0194b23d5794307742f9214d780e823ff829f",
-  "documentation_version": "2.0.1",
-  "documentation_verified_at": "2026-10-22T21:07:35.440966+03:30"
+  "source_commit": "beb0194b23d5794307742f9214d780e823ff829f"
 }

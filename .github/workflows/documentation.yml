@@ -36,11 +36,13 @@ jobs:
       - run: python -m pip install -r tools/ontospk/requirements.txt
       - name: Verify generated coverage and Wiki source audits
         run: |
+          python tools/publication/build_metadata_residual_review.py
+          python tools/publication/build_current_status.py
           python tools/publication/build_capability_profile_review.py
           python tools/publication/test_capability_profile_review.py
           git diff --exit-code -- evaluation/capability-profile-review.json
           python tools/publication/check_fol_pilot_sources.py
-          python tools/publication/build_metadata_review.py
+          python tools/publication/replay_metadata_baseline.py
           python tools/publication/build_local_identity_review.py
           python tools/publication/test_local_identity_review.py
           python tools/publication/review_market_preservation.py
@@ -57,11 +59,14 @@ jobs:
           python tools/publication/audit_pages.py
           python tools/publication/audit_documentation.py
           python tools/publication/test_documentation_audit.py
+          python tools/publication/test_reader_consolidation.py
+          git diff --exit-code -- evaluation/metadata-residual-review.json evaluation/metadata-residual-review.md docs/current-status.json docs/handbook/current-status.md README.md
           git diff --exit-code -- evaluation/documentation-parity.json evaluation/documentation-parity.md
           git diff --exit-code -- evaluation/diagram-provenance.json evaluation/diagram-provenance.md docs/assets/diagrams
           git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-shapes-audit.json evaluation/shacl-shapes-audit.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/wiki-source-audit.json evaluation/wiki-source-audit.md evaluation/pages-completeness.json wiki-src docs evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md evaluation/local-identity-review.json evaluation/local-identity-review.md evaluation/local-identity-tests.json.gz evaluation/local-identity-tests.md evaluation/robot-metadata-review.json.gz evaluation/robot-metadata-review.md docs/downloads/OntoSPK-v2.0.5-annotated.ttl
       - run: python tools/publication/check_publication.py
-      - run: python tools/publication/publish_visual_release.py --prepare-only
+      - run: python tools/publication/publish_visual_release.py --prepare-only --source-ref v2.0.7
+      - run: python tools/publication/publish_consolidation_release.py --prepare-only
       - name: Verify immutable publication routes
         run: |
           python tools/publication/test_versioned_site.py

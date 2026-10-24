@@ -45,6 +45,8 @@ require(len(guide)==15,'All 15 curated guide pages')
 search_soup=BeautifulSoup((DOCS/'reference/search.html').read_text(),'html.parser')
 terms=json.loads(search_soup.find(id='term-data').string)
 require(len(terms)==581,'581 native and OWL search entries')
+from native_search import search_errors
+errors.extend(search_errors((DOCS/'reference/search.html').read_text(), (DOCS/'reference/native/classes.html').read_text()))
 anchor_cache={}
 for term in terms:
     u=urlsplit(term['href']);target=DOCS/'reference'/u.path

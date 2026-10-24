@@ -2,16 +2,16 @@
   "status": "PASS",
   "scope": "Accepted repository Wiki snapshot to current Pages; no fresh live Wiki or browser readback",
   "wiki_pages": 15,
-  "source_reader_pages": 18,
+  "source_reader_pages": 19,
   "normalization": "Whitespace and one declared historical Home publication sentence; current-context asides checked separately",
   "pages": [
     {
       "source": "docs/guide/Citation.md",
       "page": "docs/guide/Citation.html",
-      "source_sha256": "627fabfae68fd60fcb9043db663ca68d3d081fc973b63a04baf6242054c56388",
-      "normalized_content_sha256": "dbbf4cbcf0cd45bb7ac91cefb6a754bd784f6796191e04609eb1fa6be1496f7c",
+      "source_sha256": "8263fb4998884b3308affa17b595b005661275431019059fa707e37adbf1b765",
+      "normalized_content_sha256": "2c3a6bd13111879b51346ef7de486efb9f894a5b4936cae8258e31c7f0d562a9",
       "headings": 1,
-      "links": 3
+      "links": 6
     },
     {
       "source": "docs/guide/Competency-Questions.md",
@@ -64,10 +64,10 @@
     {
       "source": "docs/guide/Home.md",
       "page": "docs/guide/Home.html",
-      "source_sha256": "80f1098c0869b1d539a6b3af84a9bd4f8001a5ea45fe20f42e39d00e3913133b",
-      "normalized_content_sha256": "7b373b0e3af9c8013116f630181aa64b14687dd683bceeef939aa7677e7db44e",
-      "headings": 4,
-      "links": 16
+      "source_sha256": "20ce8c21ff3a5e977f2923c9f11a3612739e031676dbc4a4f1f69e865d07b78b",
+      "normalized_content_sha256": "85da83daaad48f96815d75f1b120d44865fe49590c7f9139c1f6cdccd4999933",
+      "headings": 5,
+      "links": 20
     },
     {
       "source": "docs/guide/Limitations.md",
@@ -88,10 +88,10 @@
     {
       "source": "docs/guide/Quality.md",
       "page": "docs/guide/Quality.html",
-      "source_sha256": "50480e373dc6d8eb41ae2f20f6af1179f2127b1e61da870805e1fa6cf2ef015c",
-      "normalized_content_sha256": "486ccf7d72a504c56854832bac80b20f3d5d558fdb9ab39fffacd848078f730e",
-      "headings": 1,
-      "links": 3
+      "source_sha256": "bd0c17eab52d61e2d8138e629fb1166b8e0df6bbaa63b324f0a72f6223d78089",
+      "normalized_content_sha256": "7855e5e2a47828ec128776e671f17fe955d7b0ffa24f64470b1cd28dea7451a6",
+      "headings": 2,
+      "links": 7
     },
     {
       "source": "docs/guide/References.md",
@@ -104,50 +104,58 @@
     {
       "source": "docs/guide/Reproduce.md",
       "page": "docs/guide/Reproduce.html",
-      "source_sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220",
-      "normalized_content_sha256": "5492fb5705399dfa1c02fd800a4241ccbc24bdefe0f17a1b9f6f1585baa56493",
-      "headings": 1,
-      "links": 0
+      "source_sha256": "8042ff905411612177dac69648d2694e6b22ba3ee05b8e3dd4c4d64ef04ac4ca",
+      "normalized_content_sha256": "42153191bfcb957a7a495851c9a8b4b135ef767e3fd4769c5a8722e048ac18ab",
+      "headings": 2,
+      "links": 1
     },
     {
       "source": "docs/guide/Versions.md",
       "page": "docs/guide/Versions.html",
-      "source_sha256": "352a150c2ac084f1ebb89005543bc2c0645490d0c6928f87fa2635b45ad7ed58",
-      "normalized_content_sha256": "c9c0167a4932154b3a65e18f683f9604b508431e08dbcc272ec1c35073a613e0",
+      "source_sha256": "2d12579af0491319965793bf0cd19a9fd4f49507e83c7b5e02c7682593ea770e",
+      "normalized_content_sha256": "b017b5e4c9aa5ed32e29abd0c4ae420f0b1f3117dbcfef5985347b509aadb07e",
       "headings": 1,
-      "links": 4
+      "links": 6
     },
     {
       "source": "docs/guide/Visualization.md",
       "page": "docs/guide/Visualization.html",
-      "source_sha256": "f2aae4976228f57bbee1f3924538e4afd6f1359fd73757ed2d5bb725a2621f86",
-      "normalized_content_sha256": "7248005353605897b6a740eebb8697022eb528a141b578e3c1e07e049e477a1a",
-      "headings": 1,
-      "links": 2
+      "source_sha256": "8768978e5c7af2ee4913c74b10d3683121893e2fc7dbfca37b5bfa63d222b9f7",
+      "normalized_content_sha256": "aa7aa509a133bcae32b5efde2e595e66aac69472adb9cfa73280551c64d28b41",
+      "headings": 2,
+      "links": 3
+    },
+    {
+      "source": "docs/handbook/current-status.md",
+      "page": "docs/status/index.html",
+      "source_sha256": "48c5fd2a9abb4ecc6c7ead8d94be0786f0dc72b6184543ae3a673108ef1d3c24",
+      "normalized_content_sha256": "7e63301014de64276afa6cabd1b0ddb19ee666308631b00bb9147a8e1d44f63c",
+      "headings": 5,
+      "links": 14
     },
     {
       "source": "docs/handbook/diagram-provenance.md",
       "page": "docs/reference/diagrams/index.html",
-      "source_sha256": "d70aff466e6205bc41fd60a863b7de9b3a4690b0e6d0831bf1deac754b7e23b4",
-      "normalized_content_sha256": "456234ebf85e580168ce9ec8348381218b9248bbeffd640cf6e44320cda8ff73",
+      "source_sha256": "39c525082f06facb0af0564f40013d2672060bf3480bd2676355cd572580e19b",
+      "normalized_content_sha256": "9568de957de370da01e1d26865eb9b1ae9485ad045c893548368562c2b0c30b5",
       "headings": 6,
-      "links": 9
+      "links": 10
     },
     {
       "source": "docs/handbook/formal-verification.md",
       "page": "docs/reference/formal/method.html",
-      "source_sha256": "85e8af63034e59e14c56eb6cbc0d6a4b3d64ad585384523c2a01a22eeccb72bc",
-      "normalized_content_sha256": "ec3625b47dd7ad08f54eba90796a321948ea2ff22cf741d058feb3408e354507",
+      "source_sha256": "1b1bb45592e47eefa869250fc624a18d86f903f453c788ea5b403effa068e2d7",
+      "normalized_content_sha256": "5e94d6935afc62599b8353257e8950b60b61575d5a7759cc17ccb34ad2baf0fe",
       "headings": 9,
       "links": 15
     },
     {
       "source": "docs/handbook/publication-handoff.md",
       "page": "docs/reference/publication/index.html",
-      "source_sha256": "78b43dff007188db6545019f2d13b72fb303ef24166f046cbbd7bb8b7d830305",
-      "normalized_content_sha256": "5ad9892197d3141e096b71506f0cf79dbb891d4f4ae63e63bcb9542e367ac40d",
+      "source_sha256": "6516f899715b68686ac5e625d70809f22d2a67fdef32f57202ecafacf8d82747",
+      "normalized_content_sha256": "ac4dc36ab684b50c7334a9e7438653c8cf71363fb7b24fc5914bb38ae7fda208",
       "headings": 7,
-      "links": 20
+      "links": 24
     }
   ],
   "errors": []

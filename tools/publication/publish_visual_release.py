@@ -29,8 +29,9 @@ def package(commit):
         scope='Verified selected/domain views, complete reader documentation and author-review citation/evidence handoff; unchanged ontology core v2.0.0, no DOI or independent scientific acceptance claim.')
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--prepare-only',action='store_true');args=ap.parse_args()
-    commit=git('rev-parse','HEAD').decode().strip()
+    ap=argparse.ArgumentParser();ap.add_argument('--prepare-only',action='store_true');ap.add_argument('--source-ref');args=ap.parse_args()
+    assert not args.source_ref or args.prepare_only, 'Alternate source is prepare-only'
+    commit=git('rev-parse',args.source_ref or 'HEAD').decode().strip()
     if not args.prepare_only:
         assert os.environ.get('GITHUB_REPOSITORY')==REPO and os.environ.get('GITHUB_REF')=='refs/heads/main'
         assert os.environ['GITHUB_SHA']==commit

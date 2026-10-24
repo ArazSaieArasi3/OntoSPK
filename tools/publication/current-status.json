@@ -1,0 +1,19 @@
+{
+  "ontology_core": "v2.0.0",
+  "documentation_increment": "v2.0.8",
+  "publication_authority": "https://github.com/ArazSaieArasi3/OntoSPK/releases",
+  "current_deployment_authority": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json",
+  "decisions": {"PC-01": "ADOPTED_CONCRETE_PROJECT_PROFILE_WITH_DECLARED_REFERENCE_DEVIATION"},
+  "completed_previous_issues": [30, 31, 32, 48, 52],
+  "consolidation_issues": [56, 57, 58, 59, 60, 61],
+  "remaining_work": {
+    "29": "Actual DOI registration after rights, metadata and deposit-service prerequisites",
+    "37": "Deferred sourced concept/page schema and relation-definition scope discussion",
+    "25": "Owner-held ProductLine external contracts",
+    "26": "Owner-held Architecture external contracts",
+    "27": "Owner-held unresolved/composite external contracts"
+  },
+  "licence": "PROJECT_WIDE_REUSE_LICENCE_NOT_SELECTED",
+  "doi": null,
+  "semantic_migration": "NONE"
+}

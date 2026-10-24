@@ -8,7 +8,7 @@ The selected conceptual figure and the two domain views are reading projections 
 
 [Open the reviewed SVG](../assets/diagrams/selected-reviewed.svg). This view displays 40 classes, 48 associations and 11 generalizations from the full native source of 128 classes, 286 associations and 34 generalizations. Names, stereotypes, endpoint cardinalities and arrow target boundaries are checked against the exact current native records. Omitted identifiers are enumerated in the [machine-readable review](../../evaluation/diagram-provenance.json).
 
-Association heads are open and explicitly express a selected-view navigation convention. The native model does not assert this navigability. Hollow generalization triangles point to the general class. Plain associations are not assigned invented relation stereotypes. The review does not settle full UFO conformity or the separate ProductCapability profile question (#48).
+Association heads are open and explicitly express a selected-view navigation convention. The native model does not assert this navigability. Hollow generalization triangles point to the general class. Plain associations are not assigned invented relation stereotypes. The later [PC-01 decision](../../evaluation/capability-profile-review.md) adopts a concrete project capability profile with an explicit reference deviation. Neither the figure review nor PC-01 claims full UFO conformity.
 
 ## Historical discrepancies
 
