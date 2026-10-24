@@ -23,7 +23,7 @@ This source audit compares the accepted Wiki snapshot, authored guide and curren
 | docs/guide/Visualization.md | docs/guide/Visualization.html | 1 | 2 |
 | docs/handbook/diagram-provenance.md | docs/reference/diagrams/index.html | 6 | 9 |
 | docs/handbook/formal-verification.md | docs/reference/formal/method.html | 9 | 15 |
-| docs/handbook/publication-handoff.md | docs/reference/publication/index.html | 6 | 19 |
+| docs/handbook/publication-handoff.md | docs/reference/publication/index.html | 7 | 20 |
 
 Whitespace and the existing Home publication-status sentence adapter are normalized. Current-context asides are checked separately and excluded from historical-content equality. All authored handbook explanations are compared with their own Markdown sources. The finite fault-detection tests exercise paragraph deletion, heading changes, broken routes, misdirected existing links, absent current context and swapped diagram images.
 

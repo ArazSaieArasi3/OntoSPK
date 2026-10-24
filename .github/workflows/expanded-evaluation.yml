@@ -46,6 +46,9 @@ jobs:
         env:
           ROBOT_JAR: ${{ runner.temp }}/robot.jar
         run: |
+          python tools/publication/build_capability_profile_review.py
+          python tools/publication/test_capability_profile_review.py
+          git diff --exit-code -- evaluation/capability-profile-review.json
           python tools/publication/test_fol_pilot.py
           python tools/publication/build_diagram_review.py
           python tools/publication/test_diagram_review.py
@@ -87,6 +90,7 @@ jobs:
             evaluation/fol-pilot.*
             evaluation/diagram-provenance.*
             evaluation/documentation-parity.*
+            evaluation/capability-profile-review.*
             build/metadata-tests/raw-command-logs/
             evaluation/robot-metadata-*
             evaluation/local-identity-*

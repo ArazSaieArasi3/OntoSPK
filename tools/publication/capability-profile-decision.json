@@ -1,0 +1,46 @@
+{
+  "decision_id": "OntoSPK-PC-01",
+  "version": "1.0.0",
+  "date": "2026-10-24",
+  "issue": 48,
+  "status": "ADOPTED_BOUNDED_PROJECT_PROFILE",
+  "authority": "Maintainer delegated the choice to the implementation/review agent when evidence supports a best recommendation; this is not independent expert acceptance.",
+  "choice": "Retain the released concrete ProductCapability and explicitly declare the Mode abstractness deviation from the pinned reference.",
+  "project_profile": "OntoSPK concrete-capability project profile PC-01 version 1.0.0, scoped to IC:ProductCapability, its native taxonomy and ICREL:CP:bearsCapability; not an OntoUML language version or a complete UFO profile.",
+  "ontology_core": "v2.0.0",
+  "native_id": "IC:ProductCapability",
+  "isAbstract": false,
+  "stereotype": "mode",
+  "restrictedTo": ["intrinsic-mode"],
+  "strict_reference_conformance": false,
+  "semantic_migration": "NONE",
+  "reference": {
+    "repository": "https://github.com/OntoUML/OntoUML",
+    "commit": "e48fde4fbb74d0df92419e056c85d794b85be02b",
+    "observed": "2026-10-24",
+    "mode_abstract": true,
+    "files": {
+      "classes/aspects/mode/meta.yml": "a8cef10ef998cb25d0bad5c256dbd3dc75761f139e846ed80a86bddd75db1cff",
+      "classes/aspects/mode/definition.rst": "f9fcd1930e25ab23d33d9c69fe4f886e7e73527f750b503c5e2ea17bcc8059b1",
+      "classes/aspects/mode/constraints.rst": "c98ab16f85b67c912c965d4ede1d568b816e58f404acdd18d1b42848bc02ef42",
+      "classes/sortals/subkind/meta.yml": "ca58a008fba7c6ea575435bbbc7ab0ecf00668daa2a0c7186bed400efc5c4180",
+      "classes/sortals/subkind/definition.rst": "f4bfa8c2d958aea98dbdbdcc51509fbe1070ed22480f03abff9e5cf08247ef50"
+    }
+  },
+  "alternatives": [
+    {"id": "A", "choice": "Retain concrete project Mode with declared deviation", "selected": true, "impact": "No changes to released identifiers, direct typing, bearer relation, OWL mapping, SHACL targets or FOL theory. Strict reference conformance remains false."},
+    {"id": "B", "choice": "Set ProductCapability abstract without adding a concrete subtype", "selected": false, "impact": "Its native leaf would have no concrete specialization; the sampled positive fixture instances have no concrete descendant typing. OWL rdf:type alone does not encode native direct instantiation, so an OWL satisfiability pass would not repair this native admissibility problem."},
+    {"id": "C", "choice": "Abstract ProductCapability plus a justified concrete subkind", "selected": false, "impact": "Reference permits subkind specializations of mode. Requires domain evidence for a rigid specialization and a reviewed partition/scope, new native ID and generalization, mappings, typing migration, diagrams, constraints and affected controls. A synonym subclass just to satisfy the table has no independent domain justification."}
+  ],
+  "reopen_when": [
+    "Maintainer requires strict conformity to the pinned reference rather than the bounded project profile.",
+    "Domain evidence establishes meaningful rigid concrete capability specializations and a reviewed migration.",
+    "A new authoritative reference/profile changes the relevant requirements."
+  ],
+  "limits": [
+    "The reference abstract=true requirement is a real documented mismatch; it is neither dismissed as a typo nor reinterpreted as harmless stereotype metaclass abstractness.",
+    "C1-C6 checks are a focused structural comparison for this class, not a whole-language validation. Hierarchy checks with no ancestors or descendants pass vacuously.",
+    "Bearer uniqueness is distinct from full modal dependence, causal power, empirical capability existence and temporal continuity.",
+    "Existing review and release receipts remain historical; this decision does not retroactively change their statements."
+  ]
+}
