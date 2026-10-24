@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "scope": "Accepted repository Wiki snapshot to current Pages; no fresh live Wiki or browser readback",
+  "wiki_pages": 15,
+  "source_reader_pages": 16,
+  "normalization": "Whitespace and one declared historical Home publication sentence; current-context asides checked separately",
+  "pages": [
+    {
+      "source": "docs/guide/Citation.md",
+      "page": "docs/guide/Citation.html",
+      "source_sha256": "627fabfae68fd60fcb9043db663ca68d3d081fc973b63a04baf6242054c56388",
+      "normalized_content_sha256": "dbbf4cbcf0cd45bb7ac91cefb6a754bd784f6796191e04609eb1fa6be1496f7c",
+      "headings": 1,
+      "links": 3
+    },
+    {
+      "source": "docs/guide/Competency-Questions.md",
+      "page": "docs/guide/Competency-Questions.html",
+      "source_sha256": "de31b446404dab4b78933589b639787b480916cec197ee7e4f4bc4b507a41cdd",
+      "normalized_content_sha256": "b29bd807359f2e34de029eed5d4f719736534285d47a31422e84e2dadad8edab",
+      "headings": 1,
+      "links": 2
+    },
+    {
+      "source": "docs/guide/Conceptual-Model.md",
+      "page": "docs/guide/Conceptual-Model.html",
+      "source_sha256": "8d98eacf8260202d1239f765bf5e76ed2aecfd11311ff259a3245d3750ee2cfc",
+      "normalized_content_sha256": "398613f0a991bcc564e187937fe9d839f66c43f35edb5e1685b7f321a8f212ee",
+      "headings": 1,
+      "links": 3
+    },
+    {
+      "source": "docs/guide/Constraints.md",
+      "page": "docs/guide/Constraints.html",
+      "source_sha256": "f2d0bf36a5db3fd688a1fd18cf8ef1e994a8443278d560df891273501f06d3d2",
+      "normalized_content_sha256": "460847fd3400c8c1b2d29afe5cf8a941630c2fad7418fc3c8511df0b9137bbbc",
+      "headings": 1,
+      "links": 3
+    },
+    {
+      "source": "docs/guide/Domains.md",
+      "page": "docs/guide/Domains.html",
+      "source_sha256": "88ce96e96c50a60e63be922e786e400a22e8b9dd0e0999c434ed191324dabfa2",
+      "normalized_content_sha256": "1b48fcaa921a4a6f430483abf1db55ca7f9f8a3a6d7b6c984dfd62f47884de00",
+      "headings": 1,
+      "links": 3
+    },
+    {
+      "source": "docs/guide/External-References.md",
+      "page": "docs/guide/External-References.html",
+      "source_sha256": "6b0ff755c5731eaedd8e3966b5706b5ac7ea8b391d05ca6cc80130dd9baffefb",
+      "normalized_content_sha256": "0a8a5e5f0b11ad2c5282b6d9f39d6ead89e13871251b0b82adbb9a4cf25267e8",
+      "headings": 6,
+      "links": 10
+    },
+    {
+      "source": "docs/guide/Formalization.md",
+      "page": "docs/guide/Formalization.html",
+      "source_sha256": "acdbe841b3f75b38056d781ae12cb5e2598347a2a579c632dd8132c062e64d53",
+      "normalized_content_sha256": "29886db34288df9d35d8844a3e9784d3982b6c4d75df0a1f9d4b9a25d84b33f9",
+      "headings": 5,
+      "links": 10
+    },
+    {
+      "source": "docs/guide/Home.md",
+      "page": "docs/guide/Home.html",
+      "source_sha256": "80f1098c0869b1d539a6b3af84a9bd4f8001a5ea45fe20f42e39d00e3913133b",
+      "normalized_content_sha256": "7b373b0e3af9c8013116f630181aa64b14687dd683bceeef939aa7677e7db44e",
+      "headings": 4,
+      "links": 16
+    },
+    {
+      "source": "docs/guide/Limitations.md",
+      "page": "docs/guide/Limitations.html",
+      "source_sha256": "0ef78d258770af5a37fdafff8ead5b1f83cb94c3dfd3b4e46b1d5a70638bc547",
+      "normalized_content_sha256": "0364d8f036c7fd7b5ed5ce0caaf2858812ad770124f01a661afc1421c4904098",
+      "headings": 1,
+      "links": 2
+    },
+    {
+      "source": "docs/guide/Overview.md",
+      "page": "docs/guide/Overview.html",
+      "source_sha256": "bd2d188feb49d511657edf1ff3e58c2ddcaa1a3d09c4d5219f693a005f704f6c",
+      "normalized_content_sha256": "531db16953080de8dda619a50d77989e61229f1cd4f0490685b93943e91ca0f5",
+      "headings": 1,
+      "links": 5
+    },
+    {
+      "source": "docs/guide/Quality.md",
+      "page": "docs/guide/Quality.html",
+      "source_sha256": "50480e373dc6d8eb41ae2f20f6af1179f2127b1e61da870805e1fa6cf2ef015c",
+      "normalized_content_sha256": "486ccf7d72a504c56854832bac80b20f3d5d558fdb9ab39fffacd848078f730e",
+      "headings": 1,
+      "links": 3
+    },
+    {
+      "source": "docs/guide/References.md",
+      "page": "docs/guide/References.html",
+      "source_sha256": "669a4d268acffc06869eea46897d7dde2a28f5b7ba5fef844671b1436e138751",
+      "normalized_content_sha256": "f14266c3ca3550136a7aaf39dbd06414f66b1f012a361e011e27ead36d9bde13",
+      "headings": 1,
+      "links": 7
+    },
+    {
+      "source": "docs/guide/Reproduce.md",
+      "page": "docs/guide/Reproduce.html",
+      "source_sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220",
+      "normalized_content_sha256": "5492fb5705399dfa1c02fd800a4241ccbc24bdefe0f17a1b9f6f1585baa56493",
+      "headings": 1,
+      "links": 0
+    },
+    {
+      "source": "docs/guide/Versions.md",
+      "page": "docs/guide/Versions.html",
+      "source_sha256": "352a150c2ac084f1ebb89005543bc2c0645490d0c6928f87fa2635b45ad7ed58",
+      "normalized_content_sha256": "c9c0167a4932154b3a65e18f683f9604b508431e08dbcc272ec1c35073a613e0",
+      "headings": 1,
+      "links": 4
+    },
+    {
+      "source": "docs/guide/Visualization.md",
+      "page": "docs/guide/Visualization.html",
+      "source_sha256": "f2aae4976228f57bbee1f3924538e4afd6f1359fd73757ed2d5bb725a2621f86",
+      "normalized_content_sha256": "7248005353605897b6a740eebb8697022eb528a141b578e3c1e07e049e477a1a",
+      "headings": 1,
+      "links": 2
+    },
+    {
+      "source": "docs/handbook/formal-verification.md",
+      "page": "docs/reference/formal/method.html",
+      "source_sha256": "85e8af63034e59e14c56eb6cbc0d6a4b3d64ad585384523c2a01a22eeccb72bc",
+      "normalized_content_sha256": "ec3625b47dd7ad08f54eba90796a321948ea2ff22cf741d058feb3408e354507",
+      "headings": 9,
+      "links": 15
+    }
+  ],
+  "errors": []
+}

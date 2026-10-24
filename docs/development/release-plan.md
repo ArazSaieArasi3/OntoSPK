@@ -104,4 +104,6 @@ The public core excludes industrial or personal datasets, manuscript binaries, p
 
 ## Continuing work
 
+Owner-directed reader documentation increment [#52](https://github.com/ArazSaieArasi3/OntoSPK/issues/52) follows the accepted v2.0.6 pilot and precedes #32. It makes Pages the complete reading entry point, adds a source-backed formal verification explanation, labels historical guide/formal content and verifies Wiki-to-Pages content/link parity. This documentation increment uses the existing current deployment; no new ontology-core version or frozen documentation mapping is introduced.
+
 Use the linked issues to resume work and record results. Do not mark an item complete solely because source files, a plan or a historical report exist. Attach the accepted public commit, execution/readback evidence and remaining limitations. Cross-repository closeout is recorded by the respective maintainers without copying restricted source discussions into this repository.

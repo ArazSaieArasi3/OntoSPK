@@ -44,6 +44,9 @@ def enrich():
     formal = ROOT / 'semantic/product/v2/formal-specification'
     for source in formal.glob('*.md'):
         mapping[source] = DOCS / 'reference/formal' / ('index.html' if source.stem == 'README' else source.stem+'.html')
+    handbook = DOCS/'handbook/formal-verification.md'
+    method_page = DOCS/'reference/formal/method.html'
+    mapping[handbook] = method_page
     expanded_reports = ['v2.0.2-closeout','shacl-complex','owl-hermit','robot-report','cq-regression','core-regression']
     boundary_reports = ['business-boundary-review','business-boundary-tests','market-boundary-preservation']
     current_reports = boundary_reports + ['local-identity-review','local-identity-tests','robot-metadata-review','robot-metadata-tests','fol-pilot']
@@ -56,7 +59,7 @@ def enrich():
         mapping[DOCS/'guide'/f'{name}.md'] = DOCS/'guide'/f'{name}.html'
 
     for source, target in mapping.items():
-        if source.parent == formal or source.parent == ROOT/'evaluation':
+        if source.parent == formal or source.parent == ROOT/'evaluation' or source == handbook:
             soup = BeautifulSoup(markdown.markdown(source.read_text(), extensions=['tables','fenced_code','toc']), 'html.parser')
             for a in soup.find_all('a', href=True):
                 u = urlsplit(a['href'])
@@ -66,7 +69,12 @@ def enrich():
                 evidence_ref = 'v2.0.2' if dest.parent == ROOT/'evaluation' and any(dest.name.startswith(n+'.') for n in expanded_reports) else SOURCE_BASELINE
                 if (dest.parent == ROOT/'evaluation' and any(dest.name.startswith(n+'.') for n in current_reports)) or dest == ROOT/'tools/publication/fol-pilot-witnesses.json.gz':
                     evidence_ref = 'main'
-                a['href'] = relative(mapping[dest], target) if dest in mapping else REPO+'/blob/'+('v2.0.0' if dest.is_relative_to(ROOT/'semantic') else evidence_ref)+'/'+dest.relative_to(ROOT).as_posix()
+                if dest in mapping:
+                    a['href'] = relative(mapping[dest], target)
+                elif dest.is_relative_to(DOCS) and dest.suffix == '.html' and dest.is_file():
+                    a['href'] = relative(dest, target)
+                else:
+                    a['href'] = REPO+'/blob/'+('v2.0.0' if dest.is_relative_to(ROOT/'semantic') else evidence_ref)+'/'+dest.relative_to(ROOT).as_posix()
                 if u.fragment:
                     a['href'] += '#'+u.fragment
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -106,6 +114,16 @@ def enrich():
         main = soup.find('main')
         if not main:
             continue
+        # The accepted guide and formal sources remain historical. The current
+        # reading surface adds context without rewriting their accepted bytes.
+        if path.parent == DOCS/'guide' or path.parent == DOCS/'reference/formal' and path != method_page:
+            note = BeautifulSoup('<aside class="note current-context" aria-label="Current documentation context">'
+                '<p>This is the preserved core specification or guide baseline. '
+                'Ontology core v2.0.0 is unchanged; the accepted bounded FOL evidence is v2.0.6. '
+                'Historical preparation labels and earlier test counts below retain their original context. '
+                '<a href="'+relative(method_page,path)+'">Read the current formal verification method and version explanation</a> '
+                'and <a href="'+relative(DOCS/'evaluation/index.html',path)+'">the evaluation overview</a>.</p></aside>', 'html.parser')
+            main.find('h1').insert_after(note)
         # Convert links to already-generated source documents into local Pages
         # routes. Frozen semantic source references keep their release identity.
         for a in main.find_all('a', href=True):
@@ -128,6 +146,12 @@ def enrich():
                     a['href']='widoco/index-en.html'
             intro = BeautifulSoup('<p class="eyebrow">Ontology core v2.0.0 · WIDOCO reference</p><p>Start with the <a href="guide/Overview.html">overview</a>, browse the <a href="widoco/index-en.html">complete OWL reference</a>, or <a href="reference/search.html">find a class or property</a>. The guide, formal specification, evaluation and downloads are connected by the same version.</p>', 'html.parser')
             main.find('h1').insert_after(intro)
+            main.append(BeautifulSoup('<h2>Formal specification and verification</h2><p>'
+                '<a href="reference/formal/method.html">Read the languages, worked commitment, finite FOL method, results and reproduction instructions</a>. '
+                'The site includes all fifteen accepted Wiki guide pages and connects them to the complete references and current evidence.</p>', 'html.parser'))
+        if path == DOCS/'evaluation/index.html':
+            main.find('h1').insert_after(BeautifulSoup('<p><a href="../reference/formal/method.html">'
+                'Understand the formal verification method, assumptions and version boundaries</a> before interpreting individual results.</p>', 'html.parser'))
         if path == DOCS/'downloads/index.html':
             extra = BeautifulSoup('<h2>RDF serializations</h2><p>All four downloads are checked for RDF graph equivalence to the released logical source.</p><ul>'+''.join('<li><a href="../widoco/'+name+'">'+label+'</a></li>' for name,label in [('ontology.ttl','Turtle'),('ontology.owl','RDF/XML'),('ontology.jsonld','JSON-LD'),('ontology.nt','N-Triples')])+'</ul><p><a href="../widoco/serialization-receipt.json">Serialization hashes and graph-equivalence receipt</a></p><h2>Native model and complete sources</h2><ul><li><a href="https://raw.githubusercontent.com/ArazSaieArasi3/OntoSPK/v2.0.0/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json">Native conceptual model (JSON)</a></li><li><a href="'+REPO+'/tree/v2.0.0/semantic/product/v2/source/validation_v041">Four SHACL source graphs and validation fixtures</a></li><li><a href="'+REPO+'/archive/refs/tags/v2.0.0.zip">Complete released ontology-core source (ZIP)</a></li><li><a href="../reference/formal/index.html">First-order specification and source bindings</a></li></ul>', 'html.parser')
             main.append(extra)
@@ -139,7 +163,7 @@ def enrich():
             toc.append('<li><a href="#'+esc(h['id'])+'">'+esc(h.get_text(' ',strip=True))+'</a></li>')
         top = [('Overview',DOCS/'index.html'),('OWL reference',DOCS/'widoco/index-en.html'),('Conceptual reference',DOCS/'reference/native/index.html'),('Evaluation',DOCS/'evaluation/index.html'),('Explore',DOCS/'explore/index.html'),('Downloads',DOCS/'downloads/index.html')]
         links=''.join('<a'+(' aria-current="page"' if p==path else '')+' href="'+relative(p,path)+'">'+label+'</a>' for label,p in top)
-        sidebar='<h2>Documentation</h2><ul>'+''.join('<li><a'+(' aria-current="page"' if path==DOCS/'guide'/f'{n}.html' else '')+' href="'+relative(DOCS/'guide'/f'{n}.html',path)+'">'+n.replace('-',' ')+'</a></li>' for n in GUIDE_NAMES)+'</ul><h2>Reference tools</h2><ul><li><a href="'+relative(DOCS/'reference/search.html',path)+'">Find a class or property</a></li><li><a href="'+relative(DOCS/'reference/formal/index.html',path)+'">First-order specification</a></li><li><a href="'+REPO+'/wiki">GitHub Wiki</a></li></ul>'
+        sidebar='<h2>Documentation</h2><ul>'+''.join('<li><a'+(' aria-current="page"' if path==DOCS/'guide'/f'{n}.html' else '')+' href="'+relative(DOCS/'guide'/f'{n}.html',path)+'">'+n.replace('-',' ')+'</a></li>' for n in GUIDE_NAMES)+'</ul><h2>Reference tools</h2><ul><li><a href="'+relative(method_page,path)+'">Formal verification method</a></li><li><a href="'+relative(DOCS/'reference/search.html',path)+'">Find a class or property</a></li><li><a href="'+relative(DOCS/'reference/formal/index.html',path)+'">First-order specification</a></li><li><a href="'+REPO+'/wiki">GitHub Wiki</a></li></ul>'
         title = main.find('h1').get_text(' ',strip=True) if main.find('h1') else 'OntoSPK'
         output='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="'+esc(title)+' — OntoSPK ontology documentation"><title>'+esc(title)+' — OntoSPK</title><link rel="stylesheet" href="'+relative(DOCS/'assets/portal.css',path)+'"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="'+relative(DOCS/'index.html',path)+'">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary">'+links+'</nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation">'+sidebar+'</aside><main id="content">'+str(main.decode_contents())+'</main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul>'+''.join(toc)+'</ul></aside></div><footer><a href="'+REPO+'/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="'+relative(DOCS/'guide/Citation.html',path)+'">Citation and reuse</a> · <a href="'+relative(DOCS/'guide/Limitations.html',path)+'">Limits of the evidence</a> · <a href="'+REPO+'">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>'
         path.write_text(output,encoding='utf-8')

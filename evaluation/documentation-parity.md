@@ -1,0 +1,28 @@
+# Reader documentation parity
+
+This source audit compares the accepted Wiki snapshot, authored guide and current generated Pages. It checks full normalized text, headings and ordered link destinations, local reader routing and anchors; it is not a fresh readback of the mutable live Wiki or proof of scientific completeness. The historical Wiki receipt and frozen documentation snapshots remain unchanged.
+
+**Result: PASS.** 15 Wiki pages; 16 authored reader pages including the current FOL method; 0 errors.
+
+| Authored source | Pages route | Headings | Links |
+| --- | --- | ---: | ---: |
+| docs/guide/Citation.md | docs/guide/Citation.html | 1 | 3 |
+| docs/guide/Competency-Questions.md | docs/guide/Competency-Questions.html | 1 | 2 |
+| docs/guide/Conceptual-Model.md | docs/guide/Conceptual-Model.html | 1 | 3 |
+| docs/guide/Constraints.md | docs/guide/Constraints.html | 1 | 3 |
+| docs/guide/Domains.md | docs/guide/Domains.html | 1 | 3 |
+| docs/guide/External-References.md | docs/guide/External-References.html | 6 | 10 |
+| docs/guide/Formalization.md | docs/guide/Formalization.html | 5 | 10 |
+| docs/guide/Home.md | docs/guide/Home.html | 4 | 16 |
+| docs/guide/Limitations.md | docs/guide/Limitations.html | 1 | 2 |
+| docs/guide/Overview.md | docs/guide/Overview.html | 1 | 5 |
+| docs/guide/Quality.md | docs/guide/Quality.html | 1 | 3 |
+| docs/guide/References.md | docs/guide/References.html | 1 | 7 |
+| docs/guide/Reproduce.md | docs/guide/Reproduce.html | 1 | 0 |
+| docs/guide/Versions.md | docs/guide/Versions.html | 1 | 4 |
+| docs/guide/Visualization.md | docs/guide/Visualization.html | 1 | 2 |
+| docs/handbook/formal-verification.md | docs/reference/formal/method.html | 9 | 15 |
+
+Whitespace and the existing Home publication-status sentence adapter are normalized. Current-context asides are checked separately and excluded from historical-content equality. The method explanation is compared with its own Markdown source. The finite fault-detection tests exercise paragraph deletion, heading changes, broken routes, misdirected existing links and absent current context.
+
+Reproduce: `python tools/publication/audit_documentation.py` and `python tools/publication/test_documentation_audit.py`.
