@@ -16,4 +16,6 @@ All 56 retained CQ contracts match their source-bound expected answers in 374 fr
 
 All 69 boundary declaration/relation subjects retain every outgoing assertion. No hierarchy, identity, equivalence, restriction, import, licence, class, object-property or data-property signature is changed. Full scientific/native-profile acceptance, external owner equivalence and production readiness are not established.
 
+Command receipts normalize machine paths and volatile logging timestamps only; substantive messages are retained. Raw dated command outputs are included in the CI artifact.
+
 [Exact commands, raw findings, source hashes and CQ answers](robot-metadata-tests.json.gz) · [Individual review decisions and sources](robot-metadata-review.md)

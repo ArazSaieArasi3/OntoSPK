@@ -73,6 +73,7 @@ jobs:
         with:
           name: fresh-evaluation-${{ github.sha }}
           path: |
+            build/metadata-tests/raw-command-logs/
             evaluation/robot-metadata-*
             evaluation/local-identity-*
             evaluation/market-boundary-preservation.*

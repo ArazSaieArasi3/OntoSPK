@@ -5,6 +5,7 @@ import csv
 import gzip
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 from rdflib import Graph, Literal, RDF, RDFS, OWL, URIRef
@@ -18,7 +19,13 @@ work=ROOT/'build/metadata-tests';work.mkdir(parents=True,exist_ok=True)
 commands=[]
 def run(args,allowed=(0,)):
     p=subprocess.run(list(map(str,args)),cwd=ROOT,capture_output=True,text=True,timeout=180)
-    def portable(s):return s.replace(str(jar),'${ROBOT_JAR}').replace(str(ROOT)+os.sep,'')
+    # Keep substantive log messages while making the receipt reproducible on CI.
+    # The unmodified command's dated raw output remains in the CI artifact.
+    raw=work/'raw-command-logs';raw.mkdir(exist_ok=True)
+    (raw/(str(len(commands)+1)+'.txt')).write_text(p.stdout+'\nSTDERR\n'+p.stderr)
+    def portable(s):
+        s=s.replace(str(jar),'${ROBOT_JAR}').replace(str(ROOT)+os.sep,'')
+        return re.sub(r'(?m)^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2},\d{3} ', '', s)
     commands.append({'command':[portable(str(s)) for s in args],'exit_code':p.returncode,'stdout':portable(p.stdout),'stderr':portable(p.stderr)})
     assert p.returncode in allowed,commands[-1]
     return p
@@ -101,6 +108,7 @@ result={'status':'PASS_ANNOTATION_INCREMENT_WITH_RETAINED_DEFAULT_FINDINGS','rel
     'native_and_core_sha256':{str(p.relative_to(ROOT)):sha(p) for p in (NATIVE,CORE)},
     'annotated_sha256':sha(OUTPUT),'review_sha256':sha(ROOT/'evaluation/robot-metadata-review.json.gz'),
     'runner_sha256':sha(Path(__file__)),'java_guard_sha256':sha(ROOT/'tools/publication/MetadataLogicalIdentity.java'),
+    'log_normalization':'Machine paths and volatile logging timestamps only; substantive messages unchanged. Raw dated command outputs remain in the CI artifact.',
     'adverse_and_stability_controls':4,'named_classes_satisfiable':121,'cq_contracts':56,'cq_exact_answer_comparisons':374,
     'source_sha256':sources,'before':before,'after':after,'commands':commands,'cq_cases':cq,
     'limits':'Internal sourced annotation/elucidation review, not independent semantic acceptance. Default ERROR remains. Rights, owner-held boundaries and scientific/profile decisions are unchanged.'}
@@ -113,6 +121,7 @@ lines=['# Annotated metadata view — executed acceptance','',
     'OWLAPI independently compares all parsed logical axioms and class/object/data-property signatures: they are equal. A deliberately added subclass axiom is rejected by this guard. Annotation-only stability, forbidden boundary-label mutation and unapproved-licence contrasts are exercised in memory/temp files only. The annotated view passes OWL 2 DL and fresh HermiT consistency/satisfiability checks for all 121 named classes.','',
     'All 56 retained CQ contracts match their source-bound expected answers in 374 fresh comparisons (fixture-only and fixture plus annotated profile, with no inference). The core suite, including 71 HermiT scenarios, all SHACL controls and CQ mutation observations, remains independently rerun in expanded CI. These overlapping counts are not added as coverage.','',
     'All 69 boundary declaration/relation subjects retain every outgoing assertion. No hierarchy, identity, equivalence, restriction, import, licence, class, object-property or data-property signature is changed. Full scientific/native-profile acceptance, external owner equivalence and production readiness are not established.','',
+    'Command receipts normalize machine paths and volatile logging timestamps only; substantive messages are retained. Raw dated command outputs are included in the CI artifact.','',
     '[Exact commands, raw findings, source hashes and CQ answers](robot-metadata-tests.json.gz) · [Individual review decisions and sources](robot-metadata-review.md)','']
 (ROOT/'evaluation/robot-metadata-tests.md').write_text('\n'.join(lines))
 print(json.dumps({k:result[k] for k in ('status','baseline_findings','resolved_findings','retained_findings','new_findings','after_counts','after_rule_counts','named_classes_satisfiable','cq_contracts','cq_exact_answer_comparisons')}))
