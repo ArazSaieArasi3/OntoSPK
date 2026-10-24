@@ -18,7 +18,7 @@ def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT)
 def digest(data):return hashlib.sha256(data).hexdigest()
 def gh(*args):return subprocess.run(['gh',*args],cwd=ROOT,capture_output=True,text=True)
 
-def prepare(commit):
+def prepare(commit,tag=TAG,extra_receipts=(),archive_date=(2026,10,23,0,0,0),output_name='preservation-release',scope=None):
     assert git('rev-parse',commit+'^{commit}').decode().strip()==commit
     def content(path):return git('show',commit+':'+path)
     market=json.loads(content('evaluation/market-boundary-preservation.json'))
@@ -43,16 +43,17 @@ def prepare(commit):
         report=json.loads(content(path));assert report['status']=='PASS' and not report['errors']
     assert content('tools/publication/pages-registry.json')==git('show',PRIOR+':tools/publication/pages-registry.json')
     assert git('rev-parse',commit+':wiki-src')==git('rev-parse',PRIOR+':wiki-src')
-    dest=ROOT/'build/preservation-release';dest.mkdir(parents=True,exist_ok=True)
-    archive=dest/f'OntoSPK-{TAG}-source-and-evidence.zip'
+    dest=ROOT/'build'/output_name;dest.mkdir(parents=True,exist_ok=True)
+    archive=dest/f'OntoSPK-{tag}-source-and-evidence.zip'
     paths=git('ls-tree','-r','--name-only',commit).decode().splitlines()
     with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
         for path in paths:
-            info=zipfile.ZipInfo(path,date_time=(2026,10,23,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
+            info=zipfile.ZipInfo(path,date_time=archive_date);info.compress_type=zipfile.ZIP_DEFLATED
             z.writestr(info,content(path))
     receipts=['market-boundary-preservation.json','business-boundary-review.json','business-boundary-tests.json','v2.0.2-closeout.json.gz','pages-completeness.json','publication-checks.json']
-    manifest={'release':TAG,'source_commit':commit,'ontology_core':'v2.0.0',
-              'scope':'Owner-accepted boundary preservation and reproducible public evidence; no semantic change.',
+    receipts += list(extra_receipts)
+    manifest={'release':tag,'source_commit':commit,'ontology_core':'v2.0.0',
+              'scope':scope or 'Owner-accepted boundary preservation and reproducible public evidence; no semantic change.',
               'source_file_count':len(paths),'archive':archive.name,'archive_sha256':digest(archive.read_bytes()),
               'native_sha256':old['native_sha256'],'logical_sha256':old['logical_sha256'],
               'semantic_files_preserved':543,'boundary_handles_preserved':27,
