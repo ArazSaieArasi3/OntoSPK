@@ -30,7 +30,8 @@ def rect(g):
     return tuple(float(r.get(k)) for k in ('x','y','width','height'))
 def boundary_distance(point,box):
     px,py=point;x,y,w,h=box
-    return min(math.hypot(px-X,py-min(max(py,y),y+h)) for X in (x,x+w)) if y<=py<=y+h else min(math.hypot(py-Y,px-min(max(px,x),x+w)) for Y in (y,y+h))
+    return min([math.hypot(px-X,py-min(max(py,y),y+h)) for X in (x,x+w)] +
+               [math.hypot(py-Y,px-min(max(px,x),x+w)) for Y in (y,y+h)])
 
 def review(native,manifest,svg):
     by={e['id']:e for e in native['elements']}
@@ -85,7 +86,9 @@ def review(native,manifest,svg):
         check(g.get('data-source')==s and g.get('data-target')==t and g.get('data-head-target')==t,row['display_code']+': directed endpoints')
         distance=boundary_distance(tip,rect(class_groups[t]))
         check(distance<=3,row['display_code']+': head misses target boundary')
-        relations.append({'display_code':row['display_code'],'native_id':e['id'],'type':e['type'],'name':name(e),'source':s,'target':t,'properties':copy.deepcopy(ends),'head_boundary_distance':round(distance,4)})
+        start_distance=boundary_distance(numbers(paths[0].get('d'))[:2],rect(class_groups[s]))
+        check(start_distance<=3,row['display_code']+': route misses source boundary')
+        relations.append({'display_code':row['display_code'],'native_id':e['id'],'type':e['type'],'name':name(e),'source':s,'target':t,'properties':copy.deepcopy(ends),'head_boundary_distance':round(distance,4),'source_boundary_distance':round(start_distance,4)})
     check(len(drift)==6 and all(set(d['differences'])=={'isReadOnly'} for d in drift),'Six known stale manifest readOnly fields')
     all_classes=[e['id'] for e in native['elements'] if e['type']=='Class']
     all_rel=[e['id'] for e in native['elements'] if e['type']=='BinaryRelation']

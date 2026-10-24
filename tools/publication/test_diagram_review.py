@@ -4,7 +4,7 @@ import hashlib
 import json
 import struct
 import xml.etree.ElementTree as ET
-from build_diagram_review import ROOT,NATIVE,MANIFEST,FIGURE,OUT,NS,review,domains
+from build_diagram_review import ROOT,NATIVE,MANIFEST,FIGURE,OUT,NS,review,domains,boundary_distance
 
 native=json.loads(NATIVE.read_text());manifest=json.loads(MANIFEST.read_text());svg=ET.parse(FIGURE).getroot()
 baseline=review(native,manifest,svg);assert not baseline['errors'],baseline['errors']
@@ -18,8 +18,14 @@ faults={
     'filled generalization triangle':variant('G01',lambda g:list(g.iter(NS+'path'))[1].set('fill','#222222')),
     'missing visible stereotype':variant('C01',lambda g:setattr(next(g.iter(NS+'text')),'text','kind')),
     'displaced head':variant('R01',lambda g:list(g.iter(NS+'path'))[1].set('d','M 0 0 L 1 1 L 2 0')),
+    'displaced source':variant('R01',lambda g:list(g.iter(NS+'path'))[0].set('d','M 0 0 L 1 1')),
 }
 for label,modified in faults.items():assert review(native,manifest,modified)['errors'],label
+assert boundary_distance((5,0),(0,0,10,20))==0
+assert boundary_distance((5,20),(0,0,10,20))==0
+assert boundary_distance((0,10),(0,0,10,20))==0
+assert boundary_distance((10,10),(0,0,10,20))==0
+assert boundary_distance((5,10),(0,0,10,20))==5
 data=domains(native,baseline['domain_colors'])
 assert len(data['associations'])==286 and sum(row['count'] for row in data['matrix'])==286
 assert len(data['domains'])==12 and sum(d['classes'] for d in data['domains'])==101
@@ -41,4 +47,4 @@ for stem in ('domain-matrix','domain-backbone'):
     source=OUT/(stem+'.svg');root=ET.parse(source).getroot()
     assert size==(2*int(root.get('width')),2*int(root.get('height')))
     assert metadata['SourceSVG_SHA256']==hashlib.sha256(source.read_bytes()).hexdigest()
-print('PASS: 40 classes, 59 displayed relations, 286 aggregated associations, 12 domains, 5 rejected faults, 2 source-bound PNG exports')
+print('PASS: 40 classes, 59 displayed relations with both endpoints checked, 286 aggregated associations, 12 domains, 6 rejected faults, 2 source-bound PNG exports')

@@ -128,8 +128,8 @@
     {
       "source": "docs/handbook/diagram-provenance.md",
       "page": "docs/reference/diagrams/index.html",
-      "source_sha256": "ab6683626cc01ac2c65376f029c4278847c05899f429fdc6cee6fd6357549406",
-      "normalized_content_sha256": "bd3d98eb24a76325e8e17345d60aa875c510f05602be8a12c36980f186ee018a",
+      "source_sha256": "d70aff466e6205bc41fd60a863b7de9b3a4690b0e6d0831bf1deac754b7e23b4",
+      "normalized_content_sha256": "456234ebf85e580168ce9ec8348381218b9248bbeffd640cf6e44320cda8ff73",
       "headings": 6,
       "links": 9
     },

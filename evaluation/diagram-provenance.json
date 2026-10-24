@@ -623,7 +623,8 @@
           "propertyType": "IC:ProductVersion"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R02",
@@ -682,7 +683,8 @@
           "propertyType": "IC:CapabilitySpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "R03",
@@ -741,7 +743,8 @@
           "propertyType": "IC:ProductVersion"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R04",
@@ -800,7 +803,8 @@
           "propertyType": "IC:ProductCapability"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R05",
@@ -859,7 +863,8 @@
           "propertyType": "IC:CapabilitySpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R06",
@@ -920,7 +925,8 @@
           "propertyType": "IC:FeatureSpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R07",
@@ -981,7 +987,8 @@
           "propertyType": "IC:RequirementSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R08",
@@ -1040,7 +1047,8 @@
           "propertyType": "IC:ProductRealization"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R09",
@@ -1099,7 +1107,8 @@
           "propertyType": "IC:CapabilitySpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R10",
@@ -1160,7 +1169,8 @@
           "propertyType": "IC:TestCase"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R11",
@@ -1221,7 +1231,8 @@
           "propertyType": "IC:TestResult"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R12",
@@ -1282,7 +1293,8 @@
           "propertyType": "IC:AssessmentContextSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R13",
@@ -1341,7 +1353,8 @@
           "propertyType": "IC:EvidenceArtifact"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R14",
@@ -1400,7 +1413,8 @@
           "propertyType": "IC:AssessmentClaim"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "R15",
@@ -1461,7 +1475,8 @@
           "propertyType": "IC:ProductRealization"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R16",
@@ -1522,7 +1537,8 @@
           "propertyType": "IC:Product"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R17",
@@ -1583,7 +1599,8 @@
           "propertyType": "IC:VisionStatement"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "R18",
@@ -1644,7 +1661,8 @@
           "propertyType": "IC:GoalSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R19",
@@ -1707,7 +1725,8 @@
           "propertyType": "IC:ProblemStatement"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R20",
@@ -1768,7 +1787,8 @@
           "propertyType": "IC:OutcomeSpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R21",
@@ -1829,7 +1849,8 @@
           "propertyType": "IC:CapabilitySpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R22",
@@ -1890,7 +1911,8 @@
           "propertyType": "IC:ProductMetricReference"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R23",
@@ -1951,7 +1973,8 @@
           "propertyType": "IC:UserStorySpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R24",
@@ -2012,7 +2035,8 @@
           "propertyType": "IC:RequirementSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R25",
@@ -2073,7 +2097,8 @@
           "propertyType": "IC:AcceptanceCriterionSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "R26",
@@ -2134,7 +2159,8 @@
           "propertyType": "IC:RequirementSpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R27",
@@ -2195,7 +2221,8 @@
           "propertyType": "IC:PersonaSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R28",
@@ -2258,7 +2285,8 @@
           "propertyType": "IC:UserFlowSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R29",
@@ -2319,7 +2347,8 @@
           "propertyType": "IC:RoadmapEntry"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R30",
@@ -2380,7 +2409,8 @@
           "propertyType": "IC:FeatureSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R31",
@@ -2441,7 +2471,8 @@
           "propertyType": "IC:PriorityAssessment"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "R32",
@@ -2500,7 +2531,8 @@
           "propertyType": "IC:GoalSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R33",
@@ -2563,7 +2595,8 @@
           "propertyType": "IC:ReleaseSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R34",
@@ -2624,7 +2657,8 @@
           "propertyType": "IC:ReleaseSpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R35",
@@ -2685,7 +2719,8 @@
           "propertyType": "IC:DeliveryWorkItem"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R36",
@@ -2748,7 +2783,8 @@
           "propertyType": "IC:FeatureSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R37",
@@ -2809,7 +2845,8 @@
           "propertyType": "IC:DeliveryStatusRecord"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R38",
@@ -2870,7 +2907,8 @@
           "propertyType": "IC:PositioningStatement"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R39",
@@ -2931,7 +2969,8 @@
           "propertyType": "IC:PositioningStatement"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R40",
@@ -2994,7 +3033,8 @@
           "propertyType": "IC:CapabilitySpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "R41",
@@ -3053,7 +3093,8 @@
           "propertyType": "IC:RequirementSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R42",
@@ -3118,7 +3159,8 @@
           "propertyType": "IC:VerificationEvidenceRecord"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R43",
@@ -3179,7 +3221,8 @@
           "propertyType": "IC:ProductVersion"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R44",
@@ -3238,7 +3281,8 @@
           "propertyType": "IC:ConditionSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R45",
@@ -3299,7 +3343,8 @@
           "propertyType": "IC:ConditionSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R46",
@@ -3360,7 +3405,8 @@
           "propertyType": "IC:AssessmentContextSpecification"
         }
       ],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R47",
@@ -3421,7 +3467,8 @@
           "propertyType": "IC:EvidenceAttributionRecord"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "R48",
@@ -3480,7 +3527,8 @@
           "propertyType": "IC:FeatureSpecification"
         }
       ],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G01",
@@ -3490,7 +3538,8 @@
       "source": "IC:FunctionalRequirementSpecification",
       "target": "IC:RequirementSpecification",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G02",
@@ -3500,7 +3549,8 @@
       "source": "IC:QualityRequirementSpecification",
       "target": "IC:RequirementSpecification",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G03",
@@ -3510,7 +3560,8 @@
       "source": "IC:TestResult",
       "target": "IC:EvidenceArtifact",
       "properties": [],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G04",
@@ -3520,7 +3571,8 @@
       "source": "IC:VerificationEvidenceRecord",
       "target": "IC:EvidenceAttributionRecord",
       "properties": [],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G05",
@@ -3530,7 +3582,8 @@
       "source": "IC:ProductMetricReference",
       "target": "IC:ExternalReferenceRecord",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G06",
@@ -3540,7 +3593,8 @@
       "source": "IC:RequirementSourceReference",
       "target": "IC:ExternalReferenceRecord",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G07",
@@ -3550,7 +3604,8 @@
       "source": "IC:GoalSpecification",
       "target": "IC:ConditionSpecification",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G08",
@@ -3560,7 +3615,8 @@
       "source": "IC:OutcomeSpecification",
       "target": "IC:ConditionSpecification",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G09",
@@ -3570,7 +3626,8 @@
       "source": "IC:RequirementSpecification",
       "target": "IC:ConditionSpecification",
       "properties": [],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.01
     },
     {
       "display_code": "G10",
@@ -3580,7 +3637,8 @@
       "source": "IC:AcceptanceCriterionSpecification",
       "target": "IC:ConditionSpecification",
       "properties": [],
-      "head_boundary_distance": 2.25
+      "head_boundary_distance": 2.25,
+      "source_boundary_distance": 0.0
     },
     {
       "display_code": "G11",
@@ -3590,7 +3648,8 @@
       "source": "IC:TestCase",
       "target": "IC:ScenarioSpecification",
       "properties": [],
-      "head_boundary_distance": 2.26
+      "head_boundary_distance": 2.26,
+      "source_boundary_distance": 0.0
     }
   ],
   "domain_colors": {

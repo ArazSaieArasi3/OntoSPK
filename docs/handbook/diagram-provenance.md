@@ -36,7 +36,7 @@ Every selected relation, its endpoint classes and cardinalities, the complete pa
 
 ## Verification and reproduction
 
-The [full review](../../evaluation/diagram-provenance.md) records exact native/SVG/manifest hashes, all 59 displayed relation bindings, six historical metadata discrepancies and the selected view's omitted 88 classes, 238 associations and 23 generalizations. Five injected faults test cardinality, stereotype and head/target checks. The current reviewed SVG changes only presentation metadata and description; the frozen model, original figure and historical manifest are preserved.
+The [full review](../../evaluation/diagram-provenance.md) records exact native/SVG/manifest hashes, all 59 displayed relation bindings, six historical metadata discrepancies and the selected view's omitted 88 classes, 238 associations and 23 generalizations. Six injected faults test cardinality, stereotype, source boundary and head/target checks. Both ends of every displayed relation meet their intended class boundaries. The current reviewed SVG changes only presentation metadata and description; the frozen model, original figure and historical manifest are preserved.
 
 ```bash
 python tools/publication/build_diagram_review.py
