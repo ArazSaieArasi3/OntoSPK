@@ -2,7 +2,7 @@
 
 This source audit compares the accepted Wiki snapshot, authored guide and current generated Pages. It checks full normalized text, headings and ordered link destinations, local reader routing and anchors; it is not a fresh readback of the mutable live Wiki or proof of scientific completeness. The historical Wiki receipt and frozen documentation snapshots remain unchanged.
 
-**Result: PASS.** 15 Wiki pages; 16 authored reader pages including the current FOL method; 0 errors.
+**Result: PASS.** 15 Wiki pages; 18 authored reader pages including the current method, diagram and publication explanations; 0 errors.
 
 | Authored source | Pages route | Headings | Links |
 | --- | --- | ---: | ---: |
@@ -21,8 +21,10 @@ This source audit compares the accepted Wiki snapshot, authored guide and curren
 | docs/guide/Reproduce.md | docs/guide/Reproduce.html | 1 | 0 |
 | docs/guide/Versions.md | docs/guide/Versions.html | 1 | 4 |
 | docs/guide/Visualization.md | docs/guide/Visualization.html | 1 | 2 |
+| docs/handbook/diagram-provenance.md | docs/reference/diagrams/index.html | 6 | 9 |
 | docs/handbook/formal-verification.md | docs/reference/formal/method.html | 9 | 15 |
+| docs/handbook/publication-handoff.md | docs/reference/publication/index.html | 6 | 19 |
 
-Whitespace and the existing Home publication-status sentence adapter are normalized. Current-context asides are checked separately and excluded from historical-content equality. The method explanation is compared with its own Markdown source. The finite fault-detection tests exercise paragraph deletion, heading changes, broken routes, misdirected existing links and absent current context.
+Whitespace and the existing Home publication-status sentence adapter are normalized. Current-context asides are checked separately and excluded from historical-content equality. All authored handbook explanations are compared with their own Markdown sources. The finite fault-detection tests exercise paragraph deletion, heading changes, broken routes, misdirected existing links, absent current context and swapped diagram images.
 
 Reproduce: `python tools/publication/audit_documentation.py` and `python tools/publication/test_documentation_audit.py`.

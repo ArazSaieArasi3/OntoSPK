@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Cite the published v2.0.7 tag and its exact source commit for this documentation/evidence increment; cite v2.0.0 separately for the ontology core."
+type: software
+title: "OntoSPK: Verified Diagrams, Reader Documentation and Publication Evidence"
+authors:
+  - name: "Araz Saie Arasi"
+version: "2.0.7"
+date-released: 2026-10-24
+repository-code: "https://github.com/ArazSaieArasi3/OntoSPK"
+url: "https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.7"
+keywords:
+  - ontology
+  - software product knowledge
+  - documentation
+  - finite verification

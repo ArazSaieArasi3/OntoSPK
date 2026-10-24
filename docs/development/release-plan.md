@@ -15,6 +15,7 @@ Each release has a finite scope and its own acceptance criteria. Publish a compl
 | v2.0.4 | Bounded local identity and event review | Assess the 37 existing local questions plus realization/capability commitments; execute focused declaration/occurrence tests; retain profile and implementation limits explicitly; preserve the core and all boundaries. |
 | v2.0.5 | Source-reviewed editorial annotation view | Account for all 812 ROBOT rows; resolve 494 with sourced annotations; retain 318 explicitly; preserve all logical axioms, boundary assertions and rights state; publish a separate source-bound artifact. |
 | v2.0.6 | Executed bounded FOL pilot | Bind frozen FOL inputs, compare separate finite source encodings, test populated/contradictory scenarios, preserve independently checked certificates and explicit limits. |
+| v2.0.7 | Verified diagrams and publication handoff | Audit selected-view source/notation, disclose historical discrepancies, publish two source-derived domain projections and complete reader/citation explanations; retain the frozen core and every earlier release. |
 | v2.1.0 | Accepted semantic revisions | Only changes justified by resolved external contracts or scientific identity/event review. This release is conditional on actual accepted model changes and does not block the preceding patches. |
 
 The execution order is the public core release, Wiki, Pages/WebVOWL, expanded evaluation, and the bounded v2.0.3 preservation patch. The owner decision of 23 October 2026 accepts all current boundary treatments for present OntoSPK use and defers private-repository publication, replacement concepts and cross-ontology rewiring. This supersedes the earlier self-contained-localization proposal for the current increment. It does not establish external semantic equivalence. Any future accepted native/logical change is explicitly versioned and does not alter frozen v2.0.0.
@@ -74,6 +75,10 @@ The [metadata source review](../../evaluation/robot-metadata-review.md) complete
 ## v2.0.6
 
 The [executed FOL pilot](../../evaluation/fol-pilot.md) completes #31 within its representative bounded scope. It freshly reproduces the frozen FOL transcription, executes independent Z3 grounding/source checks for both separate theories, tests 19 full-theory scenarios and eight translation faults, and verifies fixed model/countermodel certificates with an independent interpreter. It retains datatype, modal/causal and bridging limitations, including concrete countermodels for EV10/EV11 joins and longer-cycle claims. [Release notes](../releases/v2.0.6/RELEASE_NOTES.md) define the finite acceptance scope. The 543 semantic files, 27 boundaries, manuscript and prior releases remain unchanged. After successful publication/readback, the next active item is diagram provenance/domain views (#32), followed by citation/evidence handoff (#30/#29). #37 and all sibling/private repository work remain owner-deferred.
+
+## v2.0.7
+
+The v2.0.7 documentation/evidence increment completes the owner-directed reading route (#52), diagram provenance/domain views (#32) and publication-facing author handoff (#30), subject to successful CI and actual release/Pages readback. See [diagram evidence](../../evaluation/diagram-provenance.md), [reader coverage](../../evaluation/documentation-parity.md), [author-review handoff](../handbook/publication-handoff.md) and [release scope](../releases/v2.0.7/RELEASE_NOTES.md). This patch does not change model semantics, update manuscript files, assign a DOI or resolve #48. DOI registration (#29) remains a real service/rights/metadata action; external boundaries and sourced concept pages remain owner-deferred.
 
 ## v2.1.0
 

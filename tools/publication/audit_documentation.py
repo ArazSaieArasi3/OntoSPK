@@ -33,10 +33,15 @@ def audit(root=ROOT, overrides=None):
     wiki = root/'wiki-src'
     method_source = docs/'handbook/formal-verification.md'
     method_page = docs/'reference/formal/method.html'
+    handbooks = sorted((docs/'handbook').glob('*.md'))
+    handbook_routes = {'formal-verification.md':method_page,'diagram-provenance.md':docs/'reference/diagrams/index.html','publication-handoff.md':docs/'reference/publication/index.html'}
     sources = sorted(guide.glob('*.md'))
     wiki_sources = sorted(p for p in wiki.glob('*.md') if not p.name.startswith('_') and p.name != 'README.md')
     mapping = {p: p.with_suffix('.html') for p in sources}
     mapping[method_source] = method_page
+    for p in handbooks:
+        if p.name not in handbook_routes:raise ValueError('Missing authored handbook route: '+p.name)
+        mapping[p] = handbook_routes[p.name]
     mapping[docs/'research/related-ontologies/related-ontology-comparison.md'] = docs/'related-ontologies.html'
     for p in (root/'semantic/product/v2/formal-specification').glob('*.md'):
         mapping[p] = docs/'reference/formal'/('index.html' if p.stem == 'README' else p.stem+'.html')
@@ -79,8 +84,10 @@ def audit(root=ROOT, overrides=None):
                 for a in soup.find_all('a', href=True)]
 
     def verify_links(main, page):
-        for a in main.find_all('a', href=True):
-            href = a['href']
+        for a in main.find_all(['a','img']):
+            attr='src' if a.name=='img' else 'href'
+            if not a.get(attr):continue
+            href = a[attr]
             u = urlsplit(href)
             canonical = destination(page, href)
             require(not (canonical.startswith('reader:') and u.scheme), f'{page.relative_to(root)}: reader link leaves Pages: {href}')
@@ -93,7 +100,7 @@ def audit(root=ROOT, overrides=None):
                 require(target_soup.find(id=unquote(u.fragment)) is not None or target_soup.find(attrs={'name': unquote(u.fragment)}) is not None,
                         f'{page.relative_to(root)}: missing anchor {href}')
 
-    for source in sources+[method_source]:
+    for source in sources+handbooks:
         target = mapping[source]
         if not target.exists():
             errors.append(f'Missing rendered reader page: {target.relative_to(root)}')
@@ -119,13 +126,15 @@ def audit(root=ROOT, overrides=None):
         heads = lambda soup: [(h.name, normalize(h.get_text(' ', strip=True))) for h in soup.find_all(re.compile('^h[1-6]$'))]
         require(heads(authored) == heads(main), f'{source.name}: rendered headings differ')
         require(links(authored, source) == links(main, target), f'{source.name}: rendered link destinations differ')
+        images=lambda soup,page:[(im.get('alt',''),destination(page,im.get('src',''))) for im in soup.find_all('img')]
+        require(images(authored,source)==images(main,target), f'{source.name}: rendered image destinations differ')
         rows.append({'source': source.relative_to(root).as_posix(), 'page': target.relative_to(root).as_posix(),
                      'source_sha256': hashlib.sha256(read(source).encode()).hexdigest(),
                      'normalized_content_sha256': hashlib.sha256(normalize(authored.get_text(' ', strip=True)).encode()).hexdigest(),
                      'headings': len(heads(authored)), 'links': len(links(authored, source))})
     return {'status': 'PASS' if not errors else 'FAIL',
             'scope': 'Accepted repository Wiki snapshot to current Pages; no fresh live Wiki or browser readback',
-            'wiki_pages': len(wiki_sources), 'source_reader_pages': len(sources)+1,
+            'wiki_pages': len(wiki_sources), 'source_reader_pages': len(sources)+len(handbooks),
             'normalization': 'Whitespace and one declared historical Home publication sentence; current-context asides checked separately',
             'pages': rows, 'errors': errors}
 
@@ -140,12 +149,12 @@ if __name__ == '__main__':
         'It checks full normalized text, headings and ordered link destinations, local reader routing and anchors; '
         'it is not a fresh readback of the mutable live Wiki or proof of scientific completeness. '
         'The historical Wiki receipt and frozen documentation snapshots remain unchanged.\n\n'
-        f"**Result: {result['status']}.** {result['wiki_pages']} Wiki pages; {result['source_reader_pages']} authored reader pages including the current FOL method; {len(result['errors'])} errors.\n\n"
+        f"**Result: {result['status']}.** {result['wiki_pages']} Wiki pages; {result['source_reader_pages']} authored reader pages including the current method, diagram and publication explanations; {len(result['errors'])} errors.\n\n"
         '| Authored source | Pages route | Headings | Links |\n| --- | --- | ---: | ---: |\n'+table+'\n\n'
         'Whitespace and the existing Home publication-status sentence adapter are normalized. '
         'Current-context asides are checked separately and excluded from historical-content equality. '
-        'The method explanation is compared with its own Markdown source. The finite fault-detection tests '
-        'exercise paragraph deletion, heading changes, broken routes, misdirected existing links and absent current context.\n\n'
+        'All authored handbook explanations are compared with their own Markdown sources. The finite fault-detection tests '
+        'exercise paragraph deletion, heading changes, broken routes, misdirected existing links, absent current context and swapped diagram images.\n\n'
         'Reproduce: `python tools/publication/audit_documentation.py` and '
         '`python tools/publication/test_documentation_audit.py`.\n')
     print(json.dumps({k: v for k, v in result.items() if k != 'pages'}))
