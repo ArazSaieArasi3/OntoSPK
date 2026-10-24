@@ -45,6 +45,8 @@ jobs:
         env:
           ROBOT_JAR: ${{ runner.temp }}/robot.jar
         run: |
+          python tools/publication/build_metadata_review.py
+          python tools/publication/test_metadata_view.py --robot "$ROBOT_JAR"
           python tools/publication/build_local_identity_review.py
           python tools/publication/test_local_identity_review.py
           python tools/publication/review_market_preservation.py
@@ -59,7 +61,7 @@ jobs:
           python tools/publication/test_core_regression.py --robot "$ROBOT_JAR"
           python tools/publication/adjudicate_evaluation.py
           git diff --exit-code -- semantic
-          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md evaluation/local-identity-review.json evaluation/local-identity-review.md evaluation/local-identity-tests.json.gz evaluation/local-identity-tests.md
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md evaluation/local-identity-review.json evaluation/local-identity-review.md evaluation/local-identity-tests.json.gz evaluation/local-identity-tests.md evaluation/robot-metadata-review.json.gz evaluation/robot-metadata-review.md evaluation/robot-metadata-tests.json.gz evaluation/robot-metadata-tests.md docs/downloads/OntoSPK-v2.0.5-annotated.ttl
       - name: Verify public package and immutable documentation
         run: |
           python tools/publication/check_publication.py
@@ -71,6 +73,7 @@ jobs:
         with:
           name: fresh-evaluation-${{ github.sha }}
           path: |
+            evaluation/robot-metadata-*
             evaluation/local-identity-*
             evaluation/market-boundary-preservation.*
             evaluation/business-boundary-*
@@ -96,10 +99,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Retain previous releases and publish the local-review patch
+      - name: Retain previous releases and publish the metadata patch
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python tools/publication/publish_evaluation_release.py
           python tools/publication/publish_preservation_release.py
           python tools/publication/publish_identity_release.py
+          python tools/publication/publish_metadata_release.py

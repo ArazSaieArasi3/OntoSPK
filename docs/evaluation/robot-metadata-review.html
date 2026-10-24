@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ROBOT metadata source review — v2.0.5 — OntoSPK ontology documentation"><title>ROBOT metadata source review — v2.0.5 — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="robot-metadata-source-review-v205">ROBOT metadata source review — v2.0.5</h1>
+<p>All 812 baseline findings are reviewed individually with exact source IRIs, local/header/held-boundary grouping and explicit decisions. The frozen core remains v2.0.0. The separate annotated download has its own version IRI and SHA-256; it is not a replacement for the frozen core or WIDOCO reference.</p>
+<table>
+<thead>
+<tr>
+<th>Decision</th>
+<th style="text-align: right;">Findings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ANNOTATION_REPAIRED</td>
+<td style="text-align: right;">492</td>
+</tr>
+<tr>
+<td>RETAIN_AUTHORED_ROOT</td>
+<td style="text-align: right;">53</td>
+</tr>
+<tr>
+<td>RETAIN_NO_LICENCE_SELECTED</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td>RETAIN_OWNER_HELD_BOUNDARY</td>
+<td style="text-align: right;">122</td>
+</tr>
+<tr>
+<td>RETAIN_UNSOURCED_DEFINITION</td>
+<td style="text-align: right;">144</td>
+</tr>
+</tbody>
+</table>
+<p>The view copies 101 existing local catalogue/register definitions verbatim, and 137 existing property comments as <strong>elucidations</strong>, not newly invented definitions. Missing labels use the exact authored IRI token with readable spacing. Local duplicate relation labels receive exact endpoint/token qualifiers; their old labels remain alternatives. Every change has an authored-source record. This is internal provenance, not independent literature/expert acceptance.</p>
+<p>Shared source comments on 22 distinct properties receive the exact existing property token as an explicit scope qualifier. Their original comment bodies remain verbatim, and no property identities are merged. This prevents ambiguous duplicate elucidations without inventing a new relational meaning.</p>
+<p>All 69 declared boundary proxy/relation subjects retain every outgoing assertion, including their labels and comments. All 27 native handles and 543 semantic source files remain unchanged. No sibling/private repository is accessed. External duplicate labels and missing definitions are deliberately retained.</p>
+<p>The 53 local superclass findings correspond to 52 native kinds and the EvidenceArtifact category with no authored native parent. No missing native parent was found; no hierarchy axiom is fabricated to satisfy an OBO convention. The other 20 root findings concern owner-held proxies. Full foundational-profile adjudication remains #48.</p>
+<p>Unsupported definitions remain explicit editorial debt in the separately planned sourced concept workflow (#37). No label, endpoint or identifier is promoted into a speculative definition. LICENSING.md remains authoritative: no project-wide reuse licence has been selected, and the missing-licence ERROR is retained.</p>
+<p><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/download/v2.0.5/OntoSPK-v2.0.5-annotated.ttl">Download the annotated editorial view</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/robot-metadata-review.json.gz">Every finding, change and exact source hash</a> · <a href="robot-metadata-tests.html">Fresh unmodified default-report comparison and logical controls</a></p>
+<p>The <a href="https://robot.obolibrary.org/report">ROBOT report documentation</a> describes the default severity/exit behavior. This work does not change its profile, suppress rows, use a base-IRI filter, or redefine ERROR as a pass. The pinned JAR supplies the actual queries; the execution receipt records before/after counts and retained failures.</p>
+<p>Reproduce: <code>python tools/publication/build_metadata_review.py</code>, then <code>python tools/publication/test_metadata_view.py --robot /path/to/robot.jar</code>.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>
