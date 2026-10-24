@@ -86,7 +86,8 @@ for p in GUIDE.glob('*.md'):
   if target in mapping and target.parent==GUIDE:return '['+title+']('+target.stem+(('#'+u.fragment) if u.fragment else '')+')'
   source_path=target.relative_to(ROOT).as_posix()
   frozen=source_path.startswith(('semantic/','evaluation/','docs/downloads/','docs/reference/','docs/widoco/','docs/webvowl/')) or source_path in {'CITATION.cff','LICENSING.md','THIRD_PARTY_NOTICES.md','distribution-manifest.json'}
-  ref=CORE_REF if frozen and source_path in CORE_FILES else 'main'
+  in_core=source_path in CORE_FILES or (target.is_dir() and any(name.startswith(source_path+'/') for name in CORE_FILES))
+  ref=CORE_REF if frozen and in_core else 'main'
   return '['+title+']('+REPO+('/tree/' if target.is_dir() else '/blob/')+ref+'/'+source_path+(('#'+u.fragment) if u.fragment else '')+')'
  text=re.sub(r'\[([^\]]+)\]\(([^)]+)\)',wiki_link,text)
  write(wiki/p.name,text)
