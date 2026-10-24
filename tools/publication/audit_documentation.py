@@ -34,7 +34,7 @@ def audit(root=ROOT, overrides=None):
     method_source = docs/'handbook/formal-verification.md'
     method_page = docs/'reference/formal/method.html'
     handbooks = sorted((docs/'handbook').glob('*.md'))
-    handbook_routes = {'formal-verification.md':method_page,'diagram-provenance.md':docs/'reference/diagrams/index.html','publication-handoff.md':docs/'reference/publication/index.html'}
+    handbook_routes = {'formal-verification.md':method_page,'diagram-provenance.md':docs/'reference/diagrams/index.html','publication-handoff.md':docs/'reference/publication/index.html','current-status.md':docs/'status/index.html'}
     sources = sorted(guide.glob('*.md'))
     wiki_sources = sorted(p for p in wiki.glob('*.md') if not p.name.startswith('_') and p.name != 'README.md')
     mapping = {p: p.with_suffix('.html') for p in sources}

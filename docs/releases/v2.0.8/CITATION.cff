@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Cite the exact published v2.0.8 tag and source commit for consolidated documentation/evidence; cite v2.0.0 separately for the ontology core."
+type: software
+title: "OntoSPK: Consolidated Documentation, Capability Profile Decision and Evidence"
+authors:
+  - name: "Araz Saie Arasi"
+version: "2.0.8"
+date-released: 2026-10-24
+repository-code: "https://github.com/ArazSaieArasi3/OntoSPK"
+url: "https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.8"

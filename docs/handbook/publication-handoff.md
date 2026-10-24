@@ -19,6 +19,8 @@ No DOI has been assigned in the current repository metadata or release records r
 | [v2.0.4](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.4) | Bounded local identity/event review | Local review and tests with an explicitly retained Mode-profile decision. |
 | [v2.0.5](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.5) | Separate editorial annotation view | Same logical axioms; 494 original ROBOT findings resolved and 318 retained. |
 | [v2.0.6](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.6) | Executed bounded FOL pilot | Representative finite searches and independently checked certificates; no universal proof. |
+| [v2.0.7](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.7) | Reviewed diagrams and publication handoff | Published immutable evidence increment; the subsequent PC-01 decision is outside this archive. |
+| [v2.0.8](https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.8) | Consolidated reader corrections, PC-01 and residual accounting | This source increment includes the decision and corrected search; its actual release record establishes publication. |
 
 The v2.0.7 increment packages the reviewed diagrams, complete Wiki-to-Pages coverage and this author-review handoff. Its preparation and the current site build do not alone establish publication: use the actual release record and its source-bound manifest before citing it as released. Earlier release tags, payloads, frozen documentation mappings and all 543 semantic files retain their identities.
 
@@ -36,7 +38,7 @@ The full [formal verification method](formal-verification.md) and [diagram expla
 
 ## Current ProductCapability / Mode decision
 
-The subsequent [PC-01 v1.0.0 profile decision](../../evaluation/capability-profile-review.md) resolves the project choice tracked in [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48): retain the concrete actual-disposition class within an explicitly bounded project profile. The exact official documentation commit requires abstract Mode; the mismatch is disclosed and strict reference-profile conformity remains unclaimed. The decision and its source-bound structural/migration checks are a later repository increment; they are not retroactively part of the immutable v2.0.7 archive.
+The subsequent [PC-01 v1.0.0 profile decision](../../evaluation/capability-profile-review.md) resolves the project choice tracked in [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48): retain the concrete actual-disposition class within an explicitly bounded project profile. The exact official documentation commit requires abstract Mode; the mismatch is disclosed and strict reference-profile conformity remains unclaimed. The decision and its source-bound structural/migration checks are a later repository increment; they are not retroactively part of the immutable v2.0.7 archive. The consolidated v2.0.8 sources include PC-01 explicitly.
 
 Changing the flag alone would leave an abstract native leaf without concrete specializations. Introducing meaningful concrete subkinds would require domain justification and a reviewed migration. Current instance typing, bearer cardinalities, OWL mapping and native/FOL constraints therefore remain as released. The complete comparison, alternatives and reopening conditions are available on the decision page within this site. No author confirmation is outstanding for this bounded choice: the maintainer delegated it. Independent expert acceptance and full UFO conformity are still unestablished.
 
@@ -60,3 +62,5 @@ Use a separate exact evidence-release reference when citing specific executed re
 - Keep sourced concept pages deferred for their separate schema/scope discussion (#37).
 
 This handoff is delivered through the public documentation and linked repository issue for author review. It does not send third-party messages or claim acceptance of the proposed manuscript statement.
+
+Read the [current status](current-status.md) and [row-level residual/rights account](../../evaluation/metadata-residual-review.md) for the consolidated station. Root citation metadata still identifies the core; the new increment has its own citation file and immutable release/manifest.

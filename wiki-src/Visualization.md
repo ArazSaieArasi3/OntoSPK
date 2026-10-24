@@ -7,3 +7,7 @@ The viewer uses WebVOWL 1.1.7 and a deterministic data adapter that preserves th
 The bundled WIDOCO converter produced an empty entity projection for the unchanged source and is not used as the published graph. Run `python tools/publication/build_webvowl_data.py` to regenerate the explicit exploratory projection. Viewer build and dependency provenance are recorded in [tool provenance](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/tool-provenance.json).
 
 Online deployment and browser-rendered acceptance are separate from preparing valid viewer files.
+
+## Reviewed conceptual views
+
+Use the [reviewed selected figure and domain projections](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/handbook/diagram-provenance.md). The current home page uses the reviewed SVG, which removes the original unsupported embedded-draw.io description while retaining its visible geometry. The original source image and old documentation releases remain historical evidence. The matrix accounts for all 286 associations; the sparse twelve-domain view displays eleven selected representative relations.

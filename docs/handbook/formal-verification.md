@@ -24,7 +24,7 @@ Historical labels such as `2.0.0-rc.1` inside the frozen formal reference record
 
 | Layer | Language or tool | Role |
 | --- | --- | --- |
-| Conceptual model | OntoUML with a declared bounded project profile | Classes, relations, identity commitments and stereotypes; native-profile adjudication remains separate. |
+| Conceptual model | OntoUML with a declared bounded project profile | Classes, relations, identity commitments and stereotypes; the adopted PC-01 local profile decision is disclosed separately and does not establish full reference conformity. |
 | Formal statements | First-order logic with equality (FOL) | Unary class predicates, binary relation predicates, quantifiers and ordinary identity. |
 | Expanded formula files | TPTP FOF syntax in `.p` files | Machine-readable serialization of the two static theories; all cardinality macros are expanded. |
 | Logical implementation | OWL 2 DL, serialized in Turtle | The retained executable ontology profile, also checked with HermiT. Turtle is a serialization, not a reasoning method. |

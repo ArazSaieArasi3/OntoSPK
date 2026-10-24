@@ -4,17 +4,17 @@
   "reader_pages": 15,
   "support_files": 3,
   "sidebar_sections": 3,
-  "words_approx": 3611,
+  "words_approx": 4161,
   "words_per_page": {
-    "mean": 240.7,
-    "median": 191,
-    "minimum": 113,
+    "mean": 277.4,
+    "median": 219,
+    "minimum": 132,
     "maximum": 666
   },
-  "markdown_links": 73,
+  "markdown_links": 88,
   "link_categories": {
-    "external_or_anchor": 3,
-    "repo_main": 5,
+    "external_or_anchor": 4,
+    "repo_main": 19,
     "repo_other": 9,
     "repo_tag": 27,
     "wiki_internal": 29
@@ -26,10 +26,10 @@
   "pages": [
     {
       "page": "Citation.md",
-      "words_approx": 113,
+      "words_approx": 194,
       "headings": 1,
-      "links": 3,
-      "sha256": "7f69121651beb3b4c96bb6ec0839601dc4aea1099feac40363390ee808f319ad"
+      "links": 6,
+      "sha256": "2aaa3e6cfebd1e568efefc17d5a6f7eb5cc58510a1d5bb842c0ac6bdfa3aa77b"
     },
     {
       "page": "Competency-Questions.md",
@@ -75,10 +75,10 @@
     },
     {
       "page": "Home.md",
-      "words_approx": 192,
-      "headings": 4,
-      "links": 16,
-      "sha256": "2492668233cb4870c0599de04fe4b11e2684cb0ff4d261b31acd44e77585ba88"
+      "words_approx": 286,
+      "headings": 5,
+      "links": 20,
+      "sha256": "347591a47dfee50ca6515144433977b8c80695b8176d6c914244dad6de298daf"
     },
     {
       "page": "Limitations.md",
@@ -96,10 +96,10 @@
     },
     {
       "page": "Quality.md",
-      "words_approx": 309,
-      "headings": 1,
-      "links": 3,
-      "sha256": "baefab4f93ca8eebb35e109cf3d8fb1868be23c86adbd1f72061b5d67a457f64"
+      "words_approx": 425,
+      "headings": 2,
+      "links": 7,
+      "sha256": "29968903b4cd437dd72b9d9735b5ea44c164655d8a62fcceaceb720c1ef518a1"
     },
     {
       "page": "References.md",
@@ -110,27 +110,27 @@
     },
     {
       "page": "Reproduce.md",
-      "words_approx": 330,
-      "headings": 1,
-      "links": 0,
-      "sha256": "499afaaf0ac5f5f242fd31e6837cba74a515d68b925861fc9b69fd9c0ed51220"
+      "words_approx": 448,
+      "headings": 2,
+      "links": 1,
+      "sha256": "131f6d1ac676add95d199a17b46d3e23c6b1fbe3c28743da2c285135fa9acbeb"
     },
     {
       "page": "Versions.md",
-      "words_approx": 191,
+      "words_approx": 263,
       "headings": 1,
-      "links": 4,
-      "sha256": "e989a4dea1fb77b9d6d929dbba25058a5cfae76d208a4cfbb44c3e1f9c84d7a7"
+      "links": 6,
+      "sha256": "fc902d0e7576f5f4fe81c12479015406a7764208d535602a4b6e8d2d62286c6c"
     },
     {
       "page": "Visualization.md",
-      "words_approx": 167,
-      "headings": 1,
-      "links": 2,
-      "sha256": "d260bbba6fcfeec71f83d3aae9c2235d6ffc33b0366ca83a07fa86b734cb834a"
+      "words_approx": 236,
+      "headings": 2,
+      "links": 3,
+      "sha256": "b209fe9f836308fbf2874dd4527234f4461beeac76ef3ed74a1e12a5a0f0e6bc"
     }
   ],
   "errors": [],
   "manual_editorial_readback": "Pages reviewed for reader routes, source/evidence boundaries, technical clarity, restrained wording and preserved limitations; a lexical scan cannot prove human authorship or expert semantic acceptance.",
-  "live_wiki_state": "LIVE_PUBLISHED_VERIFIED"
+  "live_wiki_state": "CURRENT_SOURCE_WITH_HISTORICAL_ACCEPTANCE"
 }

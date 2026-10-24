@@ -4,6 +4,11 @@
       "source_commit": "e678145e1c69aca65e87e4875b109bfca07e4648",
       "docs_tree": "694bf02d7ed6f6046e9223a7939ee5c9ebadefd2",
       "ontology_core": "v2.0.0"
+    },
+    "v2.0.8": {
+      "source_commit": "da46f84287b1e1e7195212e74aeffca27de447cf",
+      "docs_tree": "d8b04a8b773fc47a1850ad18304493b8b5d48261",
+      "ontology_core": "v2.0.0"
     }
   }
 }

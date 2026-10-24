@@ -113,6 +113,14 @@ if wiki_status["state"] == "LIVE_PUBLISHED_VERIFIED":
                         "`; all 17 published files match the reviewed source. "
                         "[The dated publication receipt](wiki-publication-verification.md) records "
                         "the separate browser acceptance; this source audit does not repeat it. ")
+elif wiki_status["state"] == "CURRENT_SOURCE_WITH_HISTORICAL_ACCEPTANCE":
+    old = wiki_status["historical_acceptance"]
+    receipt = json.loads((ROOT/old["verification_report"]).read_text())
+    for row in receipt["files"]:
+        data = subprocess.check_output(["git", "show", old["reviewed_source_commit"]+":wiki-src/"+row["file"]], cwd=ROOT)
+        if hashlib.sha256(data).hexdigest() != row["sha256"]:
+            errors.append("Historical Wiki receipt/source drift: "+row["file"])
+    live_description = ("Current guide/Wiki sources have evolved together. The original dated live acceptance is retained as historical evidence and is not asserted against these new bytes. Current live acceptance is recorded separately in issue #61. ")
 elif wiki_status["state"] == "LIVE_HOME_PLACEHOLDER_ONLY; CURATED_GUIDE_PENDING":
     live_description = ("The live GitHub Wiki still has only its initial Home placeholder; "
                         "source quality does not establish publication or browser rendering. ")
@@ -164,7 +172,7 @@ page_table = "\n".join(f"| {r['page']} | {r['words_approx']} | {r['headings']} |
     "The source check finds no Arabic/Persian script and no configured generic AI-style stock phrase. "
     "This is a bounded editorial check; it cannot establish who authored the text, full semantic "
     "correctness, external-site reachability or live navigation. Repo links to v2.0.0 are checked "
-    "against the tag tree. Live Wiki acceptance is a separate dated receipt; Pages publication remains pending.\n\n"
+    "against the tag tree. Live Wiki acceptance is a separate dated receipt; the current Pages source is identified by its live deployment manifest.\n\n"
     f"**Result:** {data['status']}; {len(errors)} source errors. "
     "See [machine-readable audit](wiki-source-audit.json) for page hashes and link counts.\n",
     encoding="utf-8")

@@ -40,3 +40,19 @@ python -m http.server 8000 --directory docs
 Open `http://localhost:8000` for the portal. Published sites require their own deployment and online checks. Tool version and input identity matter; a successful HTTP response is not semantic validation.
 
 To regenerate WIDOCO 1.4.25, obtain the JDK-17 JAR identified in `docs/tool-provenance.json`, then run `python tools/publication/run_widoco.py --jar /path/to/widoco.jar`. The wrapper checks its recorded SHA-256 and applies the portal link adapter. Rebuild WebVOWL data with `python tools/publication/build_webvowl_data.py`; viewer build provenance and licences are retained separately.
+
+## Consolidated documentation controls
+
+Install the additional pinned FOL requirements before running the solver pilot. The original metadata replay must run in its exact released context, since its historical receipt hashes the then-current README. The helper preserves that context and compares byte-identical receipts without overwriting them.
+
+```bash
+python tools/publication/replay_metadata_baseline.py --robot /path/to/robot.jar
+python tools/publication/build_metadata_residual_review.py
+python tools/publication/build_current_status.py
+python tools/publication/build_diagram_review.py
+python tools/publication/build_portal.py
+python tools/publication/audit_documentation.py
+python tools/publication/test_reader_consolidation.py
+```
+
+The [current FOL method](../handbook/formal-verification.md) supplies separate pilot reproduction instructions. The expanded evaluation workflow reruns scientific controls against their recorded inputs; Wiki/Pages live acceptance remains a separate operation.

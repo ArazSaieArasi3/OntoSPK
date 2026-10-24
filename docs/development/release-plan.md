@@ -1,10 +1,12 @@
 # Release plan and work register
 
-This register records the accepted work sequence. GitHub issues hold the current execution state and acceptance evidence. A planned release is not a published release; the [release list](https://github.com/ArazSaieArasi3/OntoSPK/releases) records publication.
+GitHub issue closeouts and actual release records are execution authority. This is the current work register, not a replacement for historical release notes. The [current status](../handbook/current-status.md) is generated from one governed record.
 
 ## Release policy
 
-Each release has a finite scope and its own acceptance criteria. Publish a completed increment without waiting for unrelated future research. Retain frozen versioned sources and checksums. Documentation and test changes may use a patch release when the native and logical semantics are unchanged. Accepted semantic changes require an explicitly versioned model and migration explanation. Recheck dependencies and observed evidence before tagging; do not count issue creation as implementation progress.
+Keep each increment finite, publish completed work without waiting for unrelated scientific decisions, and preserve all existing release tags, semantic files and frozen documentation mappings. Patch increments may update documentation and evidence without changing ontology core v2.0.0. Any accepted semantic migration needs a separately justified semantic version and migration assessment.
+
+## Release map
 
 | Release | Scope | Exit |
 | --- | --- | --- |
@@ -16,99 +18,50 @@ Each release has a finite scope and its own acceptance criteria. Publish a compl
 | v2.0.5 | Source-reviewed editorial annotation view | Account for all 812 ROBOT rows; resolve 494 with sourced annotations; retain 318 explicitly; preserve all logical axioms, boundary assertions and rights state; publish a separate source-bound artifact. |
 | v2.0.6 | Executed bounded FOL pilot | Bind frozen FOL inputs, compare separate finite source encodings, test populated/contradictory scenarios, preserve independently checked certificates and explicit limits. |
 | v2.0.7 | Verified diagrams and publication handoff | Audit selected-view source/notation, disclose historical discrepancies, publish two source-derived domain projections and complete reader/citation explanations; retain the frozen core and every earlier release. |
+| v2.0.8 | Consolidated current documentation and evidence | Native-ID search, correct duplicate-label destinations, reviewed figure entry points, synchronized Wiki/Pages status, PC-01 included, all residual metadata rows accounted for, append-only frozen documentation and independently verified source archive. Actual publication is established by the release record. |
 | v2.1.0 | Accepted semantic revisions | Only changes justified by resolved external contracts or scientific identity/event review. This release is conditional on actual accepted model changes and does not block the preceding patches. |
 
-The execution order is the public core release, Wiki, Pages/WebVOWL, expanded evaluation, and the bounded v2.0.3 preservation patch. The owner decision of 23 October 2026 accepts all current boundary treatments for present OntoSPK use and defers private-repository publication, replacement concepts and cross-ontology rewiring. This supersedes the earlier self-contained-localization proposal for the current increment. It does not establish external semantic equivalence. Any future accepted native/logical change is explicitly versioned and does not alter frozen v2.0.0.
 
-## v2.0.0
+## Accepted earlier work
 
-| Work item | Depends on |
+| Issue | Accepted result |
 | --- | --- |
-| [#2: Audit the publication boundary of the ontology-core package](https://github.com/ArazSaieArasi3/OntoSPK/issues/2) | None |
-| [#3: Document the status of all 27 external boundary references](https://github.com/ArazSaieArasi3/OntoSPK/issues/3) | #2 |
-| [#4: Verify licensing and third-party publication notices](https://github.com/ArazSaieArasi3/OntoSPK/issues/4) | #2 |
-| [#5: Reconcile final candidate hashes and execution evidence](https://github.com/ArazSaieArasi3/OntoSPK/issues/5) | #3, #4 |
-| [#6: Complete the ontology-core migration pull request](https://github.com/ArazSaieArasi3/OntoSPK/issues/6) | #5 |
-| [#7: Publish and verify the public v2.0.0 core release](https://github.com/ArazSaieArasi3/OntoSPK/issues/7) | #6 |
+| #7 | Public core v2.0.0 published. |
+| #8–#12 | Wiki, Pages, WIDOCO, WebVOWL and documentation v2.0.1 published. |
+| #13–#22 | Expanded finite evaluation published as v2.0.2. |
+| #23–#24 | Current reference-only boundary policies accepted; preservation evidence published. |
+| #28 | Bounded local identity/event review completed. |
+| #44 | Source-reviewed v2.0.5 annotation view published; retained default findings disclosed. |
+| #31 | Bounded FOL pilot published as v2.0.6. |
+| #52 | Complete reader route and content parity implemented and verified. |
+| #32 and #30 | Diagram provenance/domain views and publication handoff published as v2.0.7. |
+| #48 | PC-01 adopted after v2.0.7; concrete capability retained in a declared project profile, strict reference conformity unclaimed. |
 
-## v2.0.1
+## Consolidation v2.0.8
 
-| Work item | Depends on |
+| Issue | Acceptance boundary |
 | --- | --- |
-| [#8: Prepare the curated ontology Wiki guide](https://github.com/ArazSaieArasi3/OntoSPK/issues/8) | #7 |
-| [#9: Publish the Wiki and verify its navigation](https://github.com/ArazSaieArasi3/OntoSPK/issues/9) | #8 |
-| [#10: Publish versioned documentation routes on GitHub Pages](https://github.com/ArazSaieArasi3/OntoSPK/issues/10) | #9 |
-| [#11: Publish WebVOWL for the released logical profile](https://github.com/ArazSaieArasi3/OntoSPK/issues/11) | #10 |
-| [#12: Verify published documentation and release v2.0.1](https://github.com/ArazSaieArasi3/OntoSPK/issues/12) | #11 |
+| [#56](https://github.com/ArazSaieArasi3/OntoSPK/issues/56) | Search records bind all 128 exact native IDs to correct rendered sections; wrong-existing-destination controls detect the original defect. |
+| [#57](https://github.com/ArazSaieArasi3/OntoSPK/issues/57) | Current source/README/guide/Wiki status agrees; historical metadata replay uses its released context. |
+| [#58](https://github.com/ArazSaieArasi3/OntoSPK/issues/58) | Current figure routes use reviewed SVG without unsupported embedded-source claims. |
+| [#59](https://github.com/ArazSaieArasi3/OntoSPK/issues/59) | All 318 residual ROBOT findings are reconciled; rights and deposit prerequisites remain explicit. |
+| [#60](https://github.com/ArazSaieArasi3/OntoSPK/issues/60) | New exact-source archive and frozen documentation mapping; actual release assets independently verified. |
+| [#61](https://github.com/ArazSaieArasi3/OntoSPK/issues/61) | Live Wiki, full Pages payload, browser routes, source identities and final issue states independently verified. |
 
-The [Pages and viewer acceptance receipt](../../evaluation/pages-publication-verification.md) records the live documentation increment. The frozen documentation source and ontology core identity are distinct from the mutable current route. The release list remains the authority for the public v2.0.1 tag.
+Their issue records determine final open/closed state. Source preparation and green CI alone are insufficient to close publication/readback work.
 
-## v2.0.2
+## Remaining independent work
 
-The [finite evaluation closeout](../../evaluation/v2.0.2-closeout.md) records the implementation and executed evidence for #16–#22. Its source-bound execution index accounts for all 1,977 SHACL component occurrences; default ROBOT editorial findings and no-inference CQ mutation survivors remain explicit. Publication is recorded by the public v2.0.2 release and its successful workflow, not by this plan.
-
-| Work item | Depends on |
+| Issue | State and dependency |
 | --- | --- |
-| [#13: Define the finite coverage register for comprehensive evaluation](https://github.com/ArazSaieArasi3/OntoSPK/issues/13) | #7 |
-| [#14: Inventory and validate the active SHACL shapes graphs](https://github.com/ArazSaieArasi3/OntoSPK/issues/14) | #13 |
-| [#15: Test SHACL cardinality and value constraints](https://github.com/ArazSaieArasi3/OntoSPK/issues/15) | #14 |
-| [#16: Test SHACL paths and cross-record constraints](https://github.com/ArazSaieArasi3/OntoSPK/issues/16) | #15 |
-| [#17: Verify OWL profile, consistency and named-class satisfiability](https://github.com/ArazSaieArasi3/OntoSPK/issues/17) | #13 |
-| [#18: Extend HermiT scenarios for declared logical commitments](https://github.com/ArazSaieArasi3/OntoSPK/issues/18) | #17 |
-| [#19: Test open-world, equality and inference assumptions](https://github.com/ArazSaieArasi3/OntoSPK/issues/19) | #17 |
-| [#20: Record reproducible ROBOT and reasoner execution reports](https://github.com/ArazSaieArasi3/OntoSPK/issues/20) | #17 |
-| [#21: Replay competency contracts and measure defect detection](https://github.com/ArazSaieArasi3/OntoSPK/issues/21) | #13 |
-| [#22: Adjudicate coverage findings and publish the evaluation increment](https://github.com/ArazSaieArasi3/OntoSPK/issues/22) | #16, #18, #19, #20, #21 |
+| [#29](https://github.com/ArazSaieArasi3/OntoSPK/issues/29) | Actual DOI registration needs rights-holder/licence decision, verified deposit metadata and actual service access; use a precise archive including PC-01 when that scope is intended. |
+| [#37](https://github.com/ArazSaieArasi3/OntoSPK/issues/37) | Owner-deferred sourced concept/page schema; the 142 unsupported local property definitions require a relation-scope decision and supported sources. |
+| [#25](https://github.com/ArazSaieArasi3/OntoSPK/issues/25) | ProductLine contracts remain on the owner's existing hold. |
+| [#26](https://github.com/ArazSaieArasi3/OntoSPK/issues/26) | Architecture contracts remain on the owner's existing hold. |
+| [#27](https://github.com/ArazSaieArasi3/OntoSPK/issues/27) | Unresolved/composite external handles remain on the owner's existing hold. |
 
-## v2.0.3
+The 23 October owner direction accepts current reference-only boundary use; no private sibling-repository publication or rewiring is implied. PC-01 closes the local profile choice without changing abstractness, data, mappings or constraints. Future v2.1.0 is conditional on an actually justified semantic change; neither DOI registration nor this documentation station requires inventing one.
 
-The [Market preservation receipt](../../evaluation/market-boundary-preservation.md) completes the owner-directed current-use disposition in #24. Its earlier external owner-alignment/localization criteria are superseded for this increment, not reported as executed. No external/private repository is accessed or modified by this work. The patch includes the accepted #23 Business evidence, 90 preservation adverse controls and four disclosed frozen-runtime observations. [Release notes](../releases/v2.0.3/RELEASE_NOTES.md) define the finite scope. Publication requires successful main documentation and expanded evaluation CI plus an exact source-bound archive/manifest; the release list records actual publication.
+## Publication boundary
 
-## v2.0.4
-
-The [local review](../../evaluation/local-identity-review.md) completes the OntoSPK-local scope of #28 with 39 entries in ten decision groups. [Focused tests](../../evaluation/local-identity-tests.md) exercise 864 transition combinations, 25 retained cases, 48 identifier renamings and bounded native/ledger/occurrence controls. The concrete ProductCapability Mode abstractness question is retained in [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48), and a direct-DML limitation of the old synthetic application ledger is disclosed. Neither is relabeled as a full scientific or production assurance pass. [Release notes](../releases/v2.0.4/RELEASE_NOTES.md) define the patch; actual publication is recorded by the release list. All private-repository work and external rewiring remain deferred. The source-reviewed annotation work in #44 is recorded under v2.0.5, preserving the existing rights state and routing actual semantic changes separately.
-
-## v2.0.5
-
-The [metadata source review](../../evaluation/robot-metadata-review.md) completes the bounded #44 review of all 812 rows. The [executed checks](../../evaluation/robot-metadata-tests.md) resolve 494 and retain 318 with unchanged default severities and exit 1. A separately named annotated artifact preserves all logical axioms/signatures and all 69 boundary declarations/relations; all semantic source files remain frozen. [Release notes](../releases/v2.0.5/RELEASE_NOTES.md) state the exact scope. Unsupported definitions remain explicit in the already planned #37 workflow, rights remain unselected, and #48 remains a separate scientific decision. The bounded FOL verification pilot (#31) is recorded under v2.0.6; diagram provenance (#32) and citation/evidence handoff (#30/#29) remain next.
-
-## v2.0.6
-
-The [executed FOL pilot](../../evaluation/fol-pilot.md) completes #31 within its representative bounded scope. It freshly reproduces the frozen FOL transcription, executes independent Z3 grounding/source checks for both separate theories, tests 19 full-theory scenarios and eight translation faults, and verifies fixed model/countermodel certificates with an independent interpreter. It retains datatype, modal/causal and bridging limitations, including concrete countermodels for EV10/EV11 joins and longer-cycle claims. [Release notes](../releases/v2.0.6/RELEASE_NOTES.md) define the finite acceptance scope. The 543 semantic files, 27 boundaries, manuscript and prior releases remain unchanged. After successful publication/readback, the next active item is diagram provenance/domain views (#32), followed by citation/evidence handoff (#30/#29). #37 and all sibling/private repository work remain owner-deferred.
-
-## v2.0.7
-
-The v2.0.7 documentation/evidence increment completes the owner-directed reading route (#52), diagram provenance/domain views (#32) and publication-facing author handoff (#30), subject to successful CI and actual release/Pages readback. See [diagram evidence](../../evaluation/diagram-provenance.md), [reader coverage](../../evaluation/documentation-parity.md), [author-review handoff](../handbook/publication-handoff.md) and [release scope](../releases/v2.0.7/RELEASE_NOTES.md). This patch does not change model semantics, update manuscript files, assign a DOI or resolve #48. DOI registration (#29) remains a real service/rights/metadata action; external boundaries and sourced concept pages remain owner-deferred.
-
-## v2.1.0
-
-The [Business contract decision](../../evaluation/business-boundary-review.md) resolves #23 as five local reference-only policies, with all eight existing native uses traced and a [tested separate record adapter](../../evaluation/business-boundary-tests.md). The Market disposition is recorded under v2.0.3 and the bounded local #28 review under v2.0.4. The frozen core is unchanged; v2.1.0 remains conditional on later accepted semantic changes. Owner-definition compatibility remains unasserted. #25–#27 external contract changes and owner-repository work are deferred by owner direction and are not release blockers for these patches. #48 is a specific future native-profile adjudication; no Mode abstractness change is accepted by the current review.
-
-| Work item | Depends on |
-| --- | --- |
-| [#23: Resolve the Business external-reference contract](https://github.com/ArazSaieArasi3/OntoSPK/issues/23) | #3 |
-| [#24: Resolve the Market external-reference contract](https://github.com/ArazSaieArasi3/OntoSPK/issues/24) | #3 |
-| [#25: Resolve the ProductLine external-reference contract](https://github.com/ArazSaieArasi3/OntoSPK/issues/25) | #3 |
-| [#26: Resolve the Architecture external-reference contract](https://github.com/ArazSaieArasi3/OntoSPK/issues/26) | #3 |
-| [#27: Decide unresolved and composite external boundary handles](https://github.com/ArazSaieArasi3/OntoSPK/issues/27) | #3 |
-| [#28: Review identity, events and external boundaries in UFO/OntoUML](https://github.com/ArazSaieArasi3/OntoSPK/issues/28) | #13 |
-
-## Deferred follow-ups
-
-| Work item | Depends on |
-| --- | --- |
-| [#29: Register a persistent identifier after a public release exists](https://github.com/ArazSaieArasi3/OntoSPK/issues/29) | #7 |
-| [#30: Verify the publication-facing citation and evidence handoff](https://github.com/ArazSaieArasi3/OntoSPK/issues/30) | #7 |
-| [#31: Pilot verification of the first-order formal specification](https://github.com/ArazSaieArasi3/OntoSPK/issues/31) | #13 |
-| [#32: Verify diagram provenance and domain relationship views](https://github.com/ArazSaieArasi3/OntoSPK/issues/32) | #7 |
-| [#37: Plan a sourced concept page for each OntoSPK concept](https://github.com/ArazSaieArasi3/OntoSPK/issues/37) | Deferred design discussion with the repository owner |
-
-## Publication boundaries
-
-The public core excludes industrial or personal datasets, manuscript binaries, private correspondence, physical database releases and an operational Explorer application. Public examples are explicitly synthetic. Separately governed source references are evidence locators with disclosed accessibility and alignment limits; they are not imports or accepted equivalence assertions.
-
-## Continuing work
-
-Owner-directed reader documentation increment [#52](https://github.com/ArazSaieArasi3/OntoSPK/issues/52) follows the accepted v2.0.6 pilot and precedes #32. It makes Pages the complete reading entry point, adds a source-backed formal verification explanation, labels historical guide/formal content and verifies Wiki-to-Pages content/link parity. This documentation increment uses the existing current deployment; no new ontology-core version or frozen documentation mapping is introduced.
-
-Use the linked issues to resume work and record results. Do not mark an item complete solely because source files, a plan or a historical report exist. Attach the accepted public commit, execution/readback evidence and remaining limitations. Cross-repository closeout is recorded by the respective maintainers without copying restricted source discussions into this repository.
+The public core excludes manuscript binaries, industrial/personal datasets, private correspondence, physical database releases and an operational database Explorer. Synthetic fixtures and finite SQL admission harnesses are evidence, not an independently released production database. Scientific/domain acceptance and external-owner equivalence remain distinct from these operational checks.

@@ -1,5 +1,15 @@
 # OntoSPK
 
+<!-- current-status:start -->
+
+## Current documentation and evidence
+
+The consolidated documentation/evidence increment is **v2.0.8**, over unchanged ontology core **v2.0.0**. It includes PC-01, corrected native-ID term search, reviewed diagrams and current metadata/DOI accounting. [GitHub Releases](https://github.com/ArazSaieArasi3/OntoSPK/releases) is the authority for actual release publication; the [deployment manifest](https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json) identifies the live current source. Increment identity alone does not assert that a tag or DOI has been published.
+
+[Current status and remaining work](https://arazsaiearasi3.github.io/OntoSPK/current/status/index.html) · [PC-01 decision](evaluation/capability-profile-review.md) · [FOL method](docs/handbook/formal-verification.md) · [Diagrams](docs/handbook/diagram-provenance.md) · [Residual ROBOT findings](evaluation/metadata-residual-review.md)
+
+<!-- current-status:end -->
+
 OntoSPK is an ontology for modeling software product knowledge across planning, definition, requirements, experience, delivery, testing, marketing, evidence and realization. It distinguishes a continuing product from its versions, specifications, realizations and execution records.
 
 The **2.0.0 ontology-core distribution** is derived from the stable private source release. It contains a conceptual model, a bounded OWL profile, graph constraints and competency-question fixtures. Check [GitHub Releases](https://github.com/ArazSaieArasi3/OntoSPK/releases) for the public release record; independent semantic review remains open.
@@ -43,7 +53,7 @@ The [expanded finite evaluation v2.0.2](evaluation/v2.0.2-closeout.md) accounts 
 
 ## Version and rights
 
-The [bounded local identity/event review](evaluation/local-identity-review.md) assesses all 37 existing local grounding questions and two updated realization/capability commitments. Its [focused executable evidence](evaluation/local-identity-tests.md) covers 864 declared transition combinations, 25 retained cases, 48 identifier-renaming controls, native taxonomy and occurrence/history contrasts. The concrete Mode profile choice is retained in [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48); full native-profile or independent scientific acceptance is not claimed. [v2.0.4 release notes](docs/releases/v2.0.4/RELEASE_NOTES.md) define the documentation/evidence patch over unchanged core v2.0.0.
+The [bounded local identity/event review](evaluation/local-identity-review.md) assesses all 37 existing local grounding questions and two updated realization/capability commitments. Its [focused executable evidence](evaluation/local-identity-tests.md) covers 864 declared transition combinations, 25 retained cases, 48 identifier-renaming controls, native taxonomy and occurrence/history contrasts. The concrete Mode profile choice is adopted in [PC-01](evaluation/capability-profile-review.md), closing [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48); full native-profile or independent scientific acceptance is not claimed. [v2.0.4 release notes](docs/releases/v2.0.4/RELEASE_NOTES.md) define the documentation/evidence patch over unchanged core v2.0.0.
 
 The [ROBOT metadata source review](evaluation/robot-metadata-review.md) accounts for all 812 baseline findings. A separately versioned [v2.0.5 annotated view](docs/downloads/OntoSPK-v2.0.5-annotated.ttl) resolves 494 and retains 318 findings (34 ERROR, 211 WARN, 73 INFO); the [executed comparison](evaluation/robot-metadata-tests.md) preserves default exit 1 and verifies unchanged logical axioms, all owner-held boundary assertions, 121 satisfiable classes and 374 exact CQ answers. This is not a clean default report or a project licence choice. [Release notes](docs/releases/v2.0.5/RELEASE_NOTES.md) define the distinct editorial artifact; frozen core files and WIDOCO input remain unchanged.
 

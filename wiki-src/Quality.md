@@ -1,6 +1,6 @@
 # Evaluation and reasoning
 
-The current evidence consists of finite synthetic controls and exact-source checks. It reports what was executed, the input baseline, tool versions, expected outcomes, observed outcomes and limitations.
+The original core evidence consists of finite synthetic controls and exact-source checks. It reports what was executed, the input baseline, tool versions, expected outcomes, observed outcomes and limitations.
 
 | Method | Evaluated scope |
 | --- | --- |
@@ -15,10 +15,14 @@ The current evidence consists of finite synthetic controls and exact-source chec
 
 These denominators overlap and must not be summed as independent observations. Fifty-eight of the 71 declared upstream validator rules are unimplemented. The evaluated direct-call harness retains 54 warnings and reports no errors in its implemented functions. This does not constitute a complete upstream whole-model validation.
 
-The [execution receipt](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/evaluation/results/INTEGRATION_RESULTS.json) and method-specific reports record the current local run. Command paths in the published receipt are normalized to repository-relative paths and named external-tool placeholders for portability; outcomes are not changed. Successful local execution and successful remote CI are separate statuses.
+The [execution receipt](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/evaluation/results/INTEGRATION_RESULTS.json) and method-specific reports record the accepted original core run. Command paths in the published receipt are normalized to repository-relative paths and named external-tool placeholders for portability; outcomes are not changed. Successful local execution and successful remote CI are separate statuses.
 
 The earlier candidate's revision receipt included three checks against a pinned external Market snapshot. The public core does not redistribute that snapshot. Its current revision harness uses three synthetic RDF boundary checks with the same local non-conflation intent; these do not verify the external owner's current model. Compare execution receipts by source revision as well as by total case count.
 
 The full recorded integration includes a finite SQL admission harness; this is a test of supplied synthetic records, not a public database distribution or a claim about a production implementation. The public ontology core excludes the physical database.
 
 Independent semantic/domain review, external-owner acceptance and production deployment remain outside these results. See [Limitations](Limitations) and [Reproduce](Reproduce).
+
+## Later accepted evidence
+
+The [expanded evaluation](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/v2.0.2-closeout.md) records 71 HermiT scenarios and all 1,977 SHACL component occurrences. The [FOL method](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/docs/handbook/formal-verification.md) explains the representative v2.0.6 finite pilot. The [PC-01 decision](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/capability-profile-review.md) adopts the concrete capability project profile with a declared reference deviation; it does not establish strict reference conformity. The [current residual metadata account](https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/metadata-residual-review.md) preserves 318 annotated-view findings, including 34 ERROR. These later reports supplement the original core results; they do not convert historical counts into current execution claims.

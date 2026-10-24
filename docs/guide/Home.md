@@ -12,4 +12,8 @@ Read the [Overview](Overview.md), [Domains](Domains.md) and [Conceptual Model](C
 
 ## Explore and cite
 
-[Visualization](Visualization.md) explains the selected diagram and WebVOWL view. [Versions](Versions.md), [References](References.md) and [Citation](Citation.md) identify the release and its supporting sources. For exhaustive lookup, use the generated [native reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/docs/reference/native/index.html) and [OWL declaration reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/docs/reference/owl/index.html) from the released source. These are source snapshots; versioned live Pages routes will be linked after publication.
+[Visualization](Visualization.md) explains the selected diagram and WebVOWL view. [Versions](Versions.md), [References](References.md) and [Citation](Citation.md) identify the release and its supporting sources. For exhaustive lookup, use the generated [native reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/docs/reference/native/index.html) and [OWL declaration reference](https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/docs/reference/owl/index.html) from the released source. The references are also available through the published Pages portal; current and frozen documentation have separate source identities.
+
+## Current documentation and decisions
+
+The consolidated documentation/evidence increment is v2.0.8 over unchanged ontology core v2.0.0. Read the [current status](../handbook/current-status.md), [FOL verification method](../handbook/formal-verification.md), [reviewed diagrams and domains](../handbook/diagram-provenance.md) and [publication handoff](../handbook/publication-handoff.md). GitHub Releases records actual release publication; source preparation does not assert a completed DOI deposit.
