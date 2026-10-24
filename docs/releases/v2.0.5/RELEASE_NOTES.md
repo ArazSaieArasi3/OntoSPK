@@ -4,19 +4,19 @@ This patch completes the bounded source review in issue #44 and distributes a se
 
 ## Changes
 
-All 812 original ROBOT findings have exact source IRIs, scope groups, evidence and dispositions. The annotated view adds 244 readable labels from authored IRI tokens, disambiguates eight local relation labels using their declared endpoints/token while retaining old alternatives, copies 101 existing local catalogue definitions, and records 137 authored operational comments as elucidations. For 22 properties sharing comment text, exact existing property tokens qualify the text without inventing a new relational meaning. The public ontology name/scope supply title and description. A distinct OWL version IRI and checksummed standalone download identify this artifact.
+All 812 original ROBOT findings have exact source IRIs, scope groups, evidence and dispositions. The annotated view adds 244 readable labels from authored IRI tokens, disambiguates eight local relation labels using their declared endpoints/token while retaining old alternatives, copies 101 existing local catalogue definitions, and records 137 authored operational comments plus two current native relation descriptions as elucidations. For 22 properties sharing comment text, exact existing property tokens qualify the text without inventing a new relational meaning. The public ontology name/scope supply title and description. A distinct OWL version IRI and checksummed standalone download identify this artifact.
 
 ## Actual report result
 
-The unmodified ROBOT 1.9.11 default report resolves **492 of 812** original findings, with **320 retained** and **zero new findings**:
+The unmodified ROBOT 1.9.11 default report resolves **494 of 812** original findings, with **318 retained** and **zero new findings**:
 
 | Level | Frozen core | Annotated view |
 | --- | ---: | ---: |
 | ERROR | 288 | 34 |
-| WARN | 451 | 213 |
+| WARN | 451 | 211 |
 | INFO | 73 | 73 |
 
-The retained rows are 33 duplicate boundary labels, 213 missing definitions/elucidations, 73 superclass conventions and one missing ontology licence. The command still exits 1. This release does not claim a clean default report. Existing boundary annotations remain unchanged. Unsupported definitions remain visible editorial debt for the separately planned sourced-concept workflow (#37). No project-wide reuse licence is selected or manufactured.
+The retained rows are 33 duplicate boundary labels, 211 missing definitions/elucidations, 73 superclass conventions and one missing ontology licence. The command still exits 1. This release does not claim a clean default report. Existing boundary annotations remain unchanged. Unsupported definitions remain visible editorial debt for the separately planned sourced-concept workflow (#37). No project-wide reuse licence is selected or manufactured.
 
 ## Verification
 

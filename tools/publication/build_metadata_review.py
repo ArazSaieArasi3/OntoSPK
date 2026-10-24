@@ -13,6 +13,7 @@ NATIVE=SOURCE/'formalization/Native_Model_v0_41_0.json'
 CAT=ROOT/'semantic/product/v2/catalogue/Concept_Catalogue_v0_41_0.csv'
 MAP=ROOT/'semantic/product/v2/reference/native-class-projection.csv'
 REGISTER=SOURCE/'formalization/Class_Grounding_Register_128.json'
+PROPERTY_MAP=SOURCE/'validation_v041/inputs/Property_Table_Mapping_v0_16_0.csv'
 OUTPUT=ROOT/'docs/downloads/OntoSPK-v2.0.5-annotated.ttl'
 BASE=ROOT/'evaluation/robot-report.json.gz'
 DC=Namespace('http://purl.org/dc/terms/')
@@ -59,6 +60,8 @@ def generate():
     catalogue={r['native_id']:r for r in read_csv(CAT)}
     register={r['id']:r for r in json.loads(REGISTER.read_text())}
     native=json.loads(NATIVE.read_text())
+    native_by_id={e['id']:e for e in native['elements']}
+    property_map={r['predicate']:r for r in read_csv(PROPERTY_MAP)}
     parents={e['specific']:e['general'] for e in native['elements'] if e['type']=='Generalization'}
     with gzip.open(BASE,'rt') as f:baseline=json.load(f)
     changes=[]
@@ -105,7 +108,18 @@ def generate():
     comment_counts=Counter(str(o) for s in properties-held for o in original.objects(s,RDFS.comment))
     for subject in sorted(properties-held,key=str):
         comments=list(original.objects(subject,RDFS.comment))
-        if not comments:continue
+        if not comments:
+            ids=property_map[str(subject)]['native_relation_ids'].split(';') if property_map[str(subject)]['native_relation_ids'] else []
+            if len(ids)==1:
+                relation=native_by_id[ids[0]]
+                description=(relation.get('description') or {}).get('en')
+                if description:
+                    endpoints=[native_by_id[e]['propertyType'] for e in relation['properties']]
+                    mapped={v:URIRef(k) for k,v in mapping.items()}
+                    assert all((subject,pred,mapped[end]) in original for pred,end in zip((RDFS.domain,RDFS.range),endpoints))
+                    annotate(subject,IAO['0000600'],Literal(description),'Verbatim current native relation description with independently matched declared endpoints; no candidate review note is promoted.',str(NATIVE.relative_to(ROOT))+'#'+ids[0])
+                    provenance(subject,NATIVE,ids[0])
+            continue
         assert len(comments)==1
         # Existing operational explanations are elucidations, not newly
         # invented genus/differentia definitions or imported authority.
@@ -145,7 +159,10 @@ def generate():
             item['decision']='RETAIN_NO_LICENCE_SELECTED';item['rationale']='LICENSING.md explicitly retains no project-wide reuse licence; no owner rights choice is inferred.'
         elif rule=='missing_definition' and not list(g.objects(subject,IAO['0000115'])) and not list(g.objects(subject,IAO['0000600'])):
             item['decision']='RETAIN_UNSOURCED_DEFINITION'
-            item['rationale']='No reviewed authored definition or operational comment exists in the inspected source. Do not turn a name/domain/range into an invented definition; the sourced concept editorial workflow remains #37.'
+            item['rationale']='No current OWL definition/comment or eligible current native description was found. Historical candidate review notes are not silently promoted into an accepted definition. A name/domain/range alone is insufficient; sourced concept work remains #37.'
+            ids=property_map.get(str(subject),{}).get('native_relation_ids','')
+            item['native_relation_ids']=ids.split(';') if ids else []
+            item['candidate_review_notes']=[{'native_id':i,'source_key':k,'decision_scope':v.get('decision_scope'),'truth_condition':v.get('current_truth_condition')} for i in item['native_relation_ids'] for k,v in native_by_id[i]['customProperties'].items() if isinstance(v,dict) and 'current_truth_condition' in v]
         else:
             item['decision']='ANNOTATION_REPAIRED'
             item['rationale']='Exact annotation change and authored provenance are recorded in changes; execution against the unmodified default ROBOT report is required separately.'
@@ -154,7 +171,7 @@ def generate():
         adjudication.append(item)
     assert len(adjudication)==812
     result={'status':'SOURCE_REVIEW_AND_ANNOTATED_VIEW_COMPLETE','release':'v2.0.5','ontology_core':'v2.0.0',
-        'source_sha256':{str(p.relative_to(ROOT)):sha(p) for p in (CORE,NATIVE,CAT,MAP,REGISTER,BASE,ROOT/'README.md',ROOT/'LICENSING.md',ROOT/'tools/publication/build_metadata_review.py')},
+        'source_sha256':{str(p.relative_to(ROOT)):sha(p) for p in (CORE,NATIVE,CAT,MAP,PROPERTY_MAP,REGISTER,BASE,ROOT/'README.md',ROOT/'LICENSING.md',ROOT/'tools/publication/build_metadata_review.py')},
         'annotated_path':str(OUTPUT.relative_to(ROOT)),'annotated_sha256':sha(OUTPUT),'version_iri':str(VERSION),
         'findings_reviewed':812,'decisions':dict(Counter(r['decision'] for r in adjudication)),
         'annotation_changes':len(changes),'definition_annotations':101,
@@ -167,11 +184,11 @@ def generate():
         'All 812 baseline findings are reviewed individually with exact source IRIs, local/header/held-boundary grouping and explicit decisions. The frozen core remains v2.0.0. The separate annotated download has its own version IRI and SHA-256; it is not a replacement for the frozen core or WIDOCO reference.','',
         '| Decision | Findings |','| --- | ---: |']
     text += [f'| {k} | {v} |' for k,v in sorted(result['decisions'].items())]
-    text += ['',f"The view copies 101 existing local catalogue/register definitions verbatim, and {result['elucidation_annotations']} existing property comments as **elucidations**, not newly invented definitions. Missing labels use the exact authored IRI token with readable spacing. Local duplicate relation labels receive exact endpoint/token qualifiers; their old labels remain alternatives. Every change has an authored-source record. This is internal provenance, not independent literature/expert acceptance.",'',
+    text += ['',f"The view copies 101 existing local catalogue/register definitions verbatim, and 137 existing property comments plus two current native relation descriptions as **elucidations**, not newly invented definitions. Missing labels use the exact authored IRI token with readable spacing. Local duplicate relation labels receive exact endpoint/token qualifiers; their old labels remain alternatives. Every change has an authored-source record. This is internal provenance, not independent literature/expert acceptance.",'',
         'Shared source comments on 22 distinct properties receive the exact existing property token as an explicit scope qualifier. Their original comment bodies remain verbatim, and no property identities are merged. This prevents ambiguous duplicate elucidations without inventing a new relational meaning.','',
         'All 69 declared boundary proxy/relation subjects retain every outgoing assertion, including their labels and comments. All 27 native handles and 543 semantic source files remain unchanged. No sibling/private repository is accessed. External duplicate labels and missing definitions are deliberately retained.','',
         'The 53 local superclass findings correspond to 52 native kinds and the EvidenceArtifact category with no authored native parent. No missing native parent was found; no hierarchy axiom is fabricated to satisfy an OBO convention. The other 20 root findings concern owner-held proxies. Full foundational-profile adjudication remains #48.','',
-        'Unsupported definitions remain explicit editorial debt in the separately planned sourced concept workflow (#37). No label, endpoint or identifier is promoted into a speculative definition. LICENSING.md remains authoritative: no project-wide reuse licence has been selected, and the missing-licence ERROR is retained.','',
+        'The property table mapping and native relation descriptions were checked as well as the OWL comments. Two exact current descriptions with matching endpoints are reused. Historical candidate review notes retain their original scope and are not silently promoted into accepted definitions. Unsupported definitions remain explicit editorial debt in the separately planned sourced concept workflow (#37). No label, endpoint or identifier is promoted into a speculative definition. LICENSING.md remains authoritative: no project-wide reuse licence has been selected, and the missing-licence ERROR is retained.','',
         '[Download the annotated editorial view](https://github.com/ArazSaieArasi3/OntoSPK/releases/download/v2.0.5/OntoSPK-v2.0.5-annotated.ttl) · [Every finding, change and exact source hash](robot-metadata-review.json.gz) · [Fresh unmodified default-report comparison and logical controls](robot-metadata-tests.md)','',
         'The [ROBOT report documentation](https://robot.obolibrary.org/report) describes the default severity/exit behavior. This work does not change its profile, suppress rows, use a base-IRI filter, or redefine ERROR as a pass. The pinned JAR supplies the actual queries; the execution receipt records before/after counts and retained failures.','',
         'Reproduce: `python tools/publication/build_metadata_review.py`, then `python tools/publication/test_metadata_view.py --robot /path/to/robot.jar`.']

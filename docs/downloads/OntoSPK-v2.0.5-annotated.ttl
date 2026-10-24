@@ -1697,6 +1697,8 @@
 <urn:productium:specification-profile:definesLifecycleStage> <http://www.w3.org/2000/01/rdf-schema#domain> <urn:productium:specification-profile:LifecycleSpecification> .
 <urn:productium:specification-profile:definesLifecycleStage> <http://www.w3.org/2000/01/rdf-schema#label> "Defines Lifecycle Stage" .
 <urn:productium:specification-profile:definesLifecycleStage> <http://www.w3.org/2000/01/rdf-schema#range> <urn:productium:specification-profile:LifecycleStageSpecification> .
+<urn:productium:specification-profile:dependsOnEnablerSpecification> <http://purl.obolibrary.org/obo/IAO_0000600> "An authored feature dependency on a distinct feature specification; mutual coupling is permitted and this is not planning precedence." .
+<urn:productium:specification-profile:dependsOnEnablerSpecification> <http://purl.org/dc/terms/source> <https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json#REL:W2:040> .
 <urn:productium:specification-profile:dependsOnEnablerSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#IrreflexiveProperty> .
 <urn:productium:specification-profile:dependsOnEnablerSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <urn:productium:specification-profile:dependsOnEnablerSpecification> <http://www.w3.org/2000/01/rdf-schema#domain> <urn:productium:specification-profile:FeatureSpecification> .
@@ -2632,6 +2634,8 @@
 <urn:productium:specification-profile:specifiesCapability> <http://www.w3.org/2000/01/rdf-schema#domain> <urn:productium:specification-profile:ProductVersion> .
 <urn:productium:specification-profile:specifiesCapability> <http://www.w3.org/2000/01/rdf-schema#label> "Specifies Capability" .
 <urn:productium:specification-profile:specifiesCapability> <http://www.w3.org/2000/01/rdf-schema#range> <urn:productium:specification-profile:CapabilitySpecification> .
+<urn:productium:specification-profile:specifiesExpectedCondition> <http://purl.obolibrary.org/obo/IAO_0000600> "An authored scenario specifies one or more expected condition units; this is not a report that those conditions occurred." .
+<urn:productium:specification-profile:specifiesExpectedCondition> <http://purl.org/dc/terms/source> <https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/formalization/Native_Model_v0_41_0.json#ICREL:SP:expectedCondition> .
 <urn:productium:specification-profile:specifiesExpectedCondition> <http://purl.org/dc/terms/source> <https://github.com/ArazSaieArasi3/OntoSPK/blob/v2.0.0/semantic/product/v2/source/t52_formalization_v043/Current_Logical_Profile_v0_43_0.ttl#urn:productium:specification-profile:specifiesExpectedCondition> .
 <urn:productium:specification-profile:specifiesExpectedCondition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <urn:productium:specification-profile:specifiesExpectedCondition> <http://www.w3.org/2000/01/rdf-schema#domain> <urn:productium:specification-profile:ScenarioSpecification> .

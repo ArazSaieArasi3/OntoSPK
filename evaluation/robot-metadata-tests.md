@@ -1,14 +1,14 @@
 # Annotated metadata view — executed acceptance
 
-**492 of 812 default findings are resolved; 320 remain explicit.** The unmodified ROBOT 1.9.11 report is executed before and after, with default exit 1 on both. No profile override, severity change, result filter or suppressed row is used. This is not a clean default-report claim.
+**494 of 812 default findings are resolved; 318 remain explicit.** The unmodified ROBOT 1.9.11 report is executed before and after, with default exit 1 on both. No profile override, severity change, result filter or suppressed row is used. This is not a clean default-report claim.
 
 | Level | Frozen core | Annotated view |
 | --- | ---: | ---: |
 | ERROR | 288 | 34 |
-| WARN | 451 | 213 |
+| WARN | 451 | 211 |
 | INFO | 73 | 73 |
 
-The retained findings are 33 duplicate boundary labels, 213 missing definitions/elucidations, 73 superclass conventions and one missing project licence. There are zero new findings. Each of all 812 original rows has an exact review decision matching its actual before/after presence.
+The retained findings are 33 duplicate boundary labels, 211 missing definitions/elucidations, 73 superclass conventions and one missing project licence. There are zero new findings. Each of all 812 original rows has an exact review decision matching its actual before/after presence.
 
 OWLAPI independently compares all parsed logical axioms and class/object/data-property signatures: they are equal. A deliberately added subclass axiom is rejected by this guard. Annotation-only stability, forbidden boundary-label mutation and unapproved-licence contrasts are exercised in memory/temp files only. The annotated view passes OWL 2 DL and fresh HermiT consistency/satisfiability checks for all 121 named classes.
 

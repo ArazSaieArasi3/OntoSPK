@@ -16,8 +16,8 @@ def package(commit):
     tests=json.loads(gzip.decompress(content('evaluation/robot-metadata-tests.json.gz')))
     assert review['status']=='SOURCE_REVIEW_AND_ANNOTATED_VIEW_COMPLETE' and review['findings_reviewed']==812
     assert tests['status']=='PASS_ANNOTATION_INCREMENT_WITH_RETAINED_DEFAULT_FINDINGS'
-    assert (tests['resolved_findings'],tests['retained_findings'],tests['new_findings'])==(492,320,0)
-    assert tests['after_counts']=={'ERROR':34,'WARN':213,'INFO':73} and tests['default_report_clean'] is False
+    assert (tests['resolved_findings'],tests['retained_findings'],tests['new_findings'])==(494,318,0)
+    assert tests['after_counts']=={'ERROR':34,'WARN':211,'INFO':73} and tests['default_report_clean'] is False
     assert tests['logical_axioms_and_signature_equal'] and tests['named_classes_satisfiable']==121
     assert tests['cq_exact_answer_comparisons']==374 and tests['held_boundary_subjects_unchanged']==69
     assert tests['review_sha256']==digest(content('evaluation/robot-metadata-review.json.gz'))
@@ -28,11 +28,11 @@ def package(commit):
     assets,manifest=prepare(commit,tag=TAG,
         extra_receipts=('local-identity-review.json','local-identity-tests.json.gz','robot-metadata-review.json.gz','robot-metadata-tests.json.gz'),
         archive_date=(2026,10,24,0,0,0),output_name='metadata-release',
-        scope='Source-reviewed editorial annotation view; 492 resolved and 320 retained default ROBOT findings; unchanged logical axioms, frozen core and owner-held boundaries.')
+        scope='Source-reviewed editorial annotation view; 494 resolved and 318 retained default ROBOT findings; unchanged logical axioms, frozen core and owner-held boundaries.')
     artifact=assets[0].parent/Path(ANNOTATED).name;artifact.write_bytes(content(ANNOTATED))
     manifest.update({'annotated_path':ANNOTATED,'annotated_sha256':digest(artifact.read_bytes()),
                      'annotated_version_iri':review['version_iri'],'logical_axioms_unchanged':True,
-                     'robot_default_resolved':492,'robot_default_retained':320,'robot_default_clean':False})
+                     'robot_default_resolved':494,'robot_default_retained':318,'robot_default_clean':False})
     assets[1].write_text(json.dumps(manifest,indent=2)+'\n')
     assets[2].write_text(''.join(digest(p.read_bytes())+'  '+p.name+'\n' for p in (assets[0],assets[1],artifact)))
     return assets+[artifact],manifest
