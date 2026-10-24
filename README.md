@@ -18,8 +18,6 @@ The **2.0.0 ontology-core distribution** is derived from the stable private sour
 - [Related ontologies](docs/research/related-ontologies/related-ontology-comparison.md)
 - [Versions and source identity](docs/guide/Versions.md)
 - [Citation and reuse](docs/guide/Citation.md)
-- [Reviewed diagrams and domain views](docs/handbook/diagram-provenance.md)
-- [Citation and publication evidence handoff](docs/handbook/publication-handoff.md)
 
 ## Model at a glance
 
