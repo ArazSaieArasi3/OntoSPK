@@ -37,6 +37,7 @@ jobs:
           distribution: temurin
           java-version: '17'
       - run: python -m pip install -r tools/ontospk/requirements.txt
+      - run: python -m pip install -r tools/publication/fol-requirements.txt
       - name: Obtain checksum-pinned ROBOT
         run: |
           curl --fail --location --retry 3 https://github.com/ontodev/robot/releases/download/v1.9.11/robot.jar --output "$RUNNER_TEMP/robot.jar"
@@ -45,6 +46,8 @@ jobs:
         env:
           ROBOT_JAR: ${{ runner.temp }}/robot.jar
         run: |
+          python tools/publication/test_fol_pilot.py
+          python tools/publication/check_fol_pilot_sources.py
           python tools/publication/build_metadata_review.py
           python tools/publication/test_metadata_view.py --robot "$ROBOT_JAR"
           python tools/publication/build_local_identity_review.py
@@ -61,7 +64,7 @@ jobs:
           python tools/publication/test_core_regression.py --robot "$ROBOT_JAR"
           python tools/publication/adjudicate_evaluation.py
           git diff --exit-code -- semantic
-          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md evaluation/local-identity-review.json evaluation/local-identity-review.md evaluation/local-identity-tests.json.gz evaluation/local-identity-tests.md evaluation/robot-metadata-review.json.gz evaluation/robot-metadata-review.md evaluation/robot-metadata-tests.json.gz evaluation/robot-metadata-tests.md docs/downloads/OntoSPK-v2.0.5-annotated.ttl
+          git diff --exit-code -- evaluation/coverage-register.json.gz evaluation/coverage-register.md evaluation/shacl-simple-constraints.json.gz evaluation/shacl-simple-constraints.md evaluation/shacl-complex.json.gz evaluation/shacl-complex.md evaluation/cq-regression.json.gz evaluation/cq-regression.md evaluation/business-boundary-review.json evaluation/business-boundary-review.md evaluation/business-boundary-tests.json evaluation/business-boundary-tests.md evaluation/market-boundary-preservation.json evaluation/market-boundary-preservation.md evaluation/local-identity-review.json evaluation/local-identity-review.md evaluation/local-identity-tests.json.gz evaluation/local-identity-tests.md evaluation/robot-metadata-review.json.gz evaluation/robot-metadata-review.md evaluation/robot-metadata-tests.json.gz evaluation/robot-metadata-tests.md evaluation/fol-pilot.json.gz evaluation/fol-pilot.md tools/publication/fol-pilot-witnesses.json.gz docs/downloads/OntoSPK-v2.0.5-annotated.ttl
       - name: Verify public package and immutable documentation
         run: |
           python tools/publication/check_publication.py
@@ -73,6 +76,10 @@ jobs:
         with:
           name: fresh-evaluation-${{ github.sha }}
           path: |
+            build/fol-pilot/*.smt2
+            build/fol-pilot/artifact-manifest.json
+            build/fol-pilot/fresh-witnesses.json
+            evaluation/fol-pilot.*
             build/metadata-tests/raw-command-logs/
             evaluation/robot-metadata-*
             evaluation/local-identity-*
@@ -100,7 +107,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Retain previous releases and publish the metadata patch
+      - name: Retain previous releases and publish the FOL pilot
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -108,3 +115,4 @@ jobs:
           python tools/publication/publish_preservation_release.py
           python tools/publication/publish_identity_release.py
           python tools/publication/publish_metadata_release.py
+          python tools/publication/publish_fol_release.py

@@ -1,0 +1,2 @@
+# Linux x86_64 pilot; the runner verifies the installed native library SHA-256.
+z3-solver==4.15.4.0
