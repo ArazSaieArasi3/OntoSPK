@@ -144,10 +144,10 @@
     {
       "source": "docs/handbook/publication-handoff.md",
       "page": "docs/reference/publication/index.html",
-      "source_sha256": "8c789b908d24c0a56ac9e5b6d2a801cc3f65293e93a3a9c7dab27852c7cfcae2",
-      "normalized_content_sha256": "cd86e74e0e22296e09be2d0ab4164caa18ca6347beb0942ba2d85aa5d601d2d8",
-      "headings": 6,
-      "links": 19
+      "source_sha256": "78b43dff007188db6545019f2d13b72fb303ef24166f046cbbd7bb8b7d830305",
+      "normalized_content_sha256": "5ad9892197d3141e096b71506f0cf79dbb891d4f4ae63e63bcb9542e367ac40d",
+      "headings": 7,
+      "links": 20
     }
   ],
   "errors": []

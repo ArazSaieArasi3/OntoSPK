@@ -1,0 +1,95 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ProductCapability / Mode profile decision — issue #48 — OntoSPK ontology documentation"><title>ProductCapability / Mode profile decision — issue #48 — OntoSPK</title><link rel="stylesheet" href="../assets/portal.css"></head><body><a class="skip-link" href="#content">Skip to content</a><header><a class="brand" href="../index.html">OntoSPK</a><p>Software Product Knowledge Ontology · core v2.0.0</p><nav aria-label="Primary"><a href="../index.html">Overview</a><a href="../widoco/index-en.html">OWL reference</a><a href="../reference/native/index.html">Conceptual reference</a><a href="index.html">Evaluation</a><a href="../explore/index.html">Explore</a><a href="../downloads/index.html">Downloads</a></nav></header><div class="layout"><aside class="sidebar" aria-label="Documentation navigation"><h2>Documentation</h2><ul><li><a href="../guide/Home.html">Home</a></li><li><a href="../guide/Overview.html">Overview</a></li><li><a href="../guide/Domains.html">Domains</a></li><li><a href="../guide/Conceptual-Model.html">Conceptual Model</a></li><li><a href="../guide/Formalization.html">Formalization</a></li><li><a href="../guide/Constraints.html">Constraints</a></li><li><a href="../guide/Competency-Questions.html">Competency Questions</a></li><li><a href="../guide/Quality.html">Quality</a></li><li><a href="../guide/Reproduce.html">Reproduce</a></li><li><a href="../guide/Visualization.html">Visualization</a></li><li><a href="../guide/External-References.html">External References</a></li><li><a href="../guide/Versions.html">Versions</a></li><li><a href="../guide/Citation.html">Citation</a></li><li><a href="../guide/References.html">References</a></li><li><a href="../guide/Limitations.html">Limitations</a></li></ul><h2>Reference tools</h2><ul><li><a href="capability-profile-review.html">Capability profile decision</a></li><li><a href="../reference/formal/method.html">Formal verification method</a></li><li><a href="../reference/diagrams/index.html">Diagrams and domains</a></li><li><a href="../reference/publication/index.html">Citation and evidence handoff</a></li><li><a href="../reference/search.html">Find a class or property</a></li><li><a href="../reference/formal/index.html">First-order specification</a></li><li><a href="https://github.com/ArazSaieArasi3/OntoSPK/wiki">GitHub Wiki</a></li></ul></aside><main id="content"><h1 id="productcapability-mode-profile-decision-issue-48">ProductCapability / Mode profile decision — issue #48</h1>
+<p><strong>Decision PC-01 v1.0.0, adopted 24 October 2026: retain the concrete <code>ProductCapability</code> in an explicitly bounded project profile.</strong> The maintainer delegated the best supported choice; this is a local project decision, not independent scientific acceptance. No semantic migration is made. The ontology core remains v2.0.0; the latest published evidence release at this decision is v2.0.7. This subsequent decision is identified by its own repository commit, not retroactively attributed to that release.</p>
+<h2 id="meaning-in-the-model">Meaning in the model</h2>
+<p><code>ProductCapability</code> denotes an actual intrinsic disposition of one configured <code>ProductRealization</code>. A search service's ability to retrieve results is an example of the intended reading; the example does not establish an actual capability empirically. A requirement to retrieve results belongs to the specification side. A successful execution is evidence about behavior. These remain distinct.</p>
+<p>The retained class has stereotype <code>mode</code>, nature <code>intrinsic-mode</code> and <code>isAbstract=false</code>. Its characterization is <code>bearsCapability</code>. Every actual capability has exactly one realization bearer; the current project also requires each admitted realization to bear at least one capability. That latter minimum scopes the modeled systems and is not a universal assertion about every damaged installation. Capability identity requires the same bearer and continuity of the underlying disposition. Cardinality checks alone cannot establish that continuity or causal power.</p>
+<h2 id="exact-profile-and-authoritative-comparison">Exact profile and authoritative comparison</h2>
+<p>The intended profile for this decision is <strong>OntoSPK concrete-capability project profile PC-01 v1.0.0</strong>, precisely scoped by the <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/main/tools/publication/capability-profile-decision.json">machine-readable decision</a>, frozen native source and focused comparison below. This is a project restriction/deviation declaration, not an official OntoUML version or a complete foundational profile.</p>
+<p>The official documentation source was checked at commit <a href="https://github.com/OntoUML/OntoUML/tree/e48fde4fbb74d0df92419e056c85d794b85be02b"><code>e48fde4fbb74d0df92419e056c85d794b85be02b</code></a>. Five file digests are pinned in the decision; an optional reference-checkout command verifies those bytes. The <a href="https://github.com/OntoUML/OntoUML/blob/e48fde4fbb74d0df92419e056c85d794b85be02b/classes/aspects/mode/meta.yml">Mode metadata</a> explicitly declares <code>abstract: true</code>. The <a href="https://github.com/OntoUML/OntoUML/blob/e48fde4fbb74d0df92419e056c85d794b85be02b/classes/aspects/mode/constraints.rst">Mode constraints</a> separately require characterization and exactly one bearer, and restrict the inheritance structure. The <a href="https://github.com/OntoUML/OntoUML/blob/e48fde4fbb74d0df92419e056c85d794b85be02b/classes/sortals/subkind/meta.yml">Subkind metadata</a> permits Mode as a supertype without imposing the same mandatory abstractness value on Subkind.</p>
+<p>There is a documented abstractness mismatch. We do not call it a documentation typo, reinterpret it as mere stereotype-metaclass abstractness, or claim our concrete class conforms to it. The project profile permits concrete instantiation because this class intentionally records actual dispositions directly and currently has no justified concrete specialization hierarchy. That choice is defensible within the declared bounded project scope, while <strong>strict conformance to the pinned reference is withheld</strong>. General UFO adequacy and a whole-language review remain separate.</p>
+<h2 id="alternatives-and-migration-assessment">Alternatives and migration assessment</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Consequence</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. Keep concrete <code>ProductCapability</code>, explicitly disclose reference deviation</td>
+<td>Retains actual disposition instances, identity commitments and current mappings. Requires no data migration. Full reference-profile conformity cannot be claimed.</td>
+<td><strong>Adopted.</strong> Best supported by the present domain model and compatibility requirements.</td>
+</tr>
+<tr>
+<td>B. Toggle <code>isAbstract=true</code> alone</td>
+<td>Creates an abstract native leaf with no concrete specialization. Existing sampled fixture typing supplies no concrete descendant. A successful OWL consistency check would not encode or settle native direct instantiation.</td>
+<td>Rejected as an unjustified repair.</td>
+</tr>
+<tr>
+<td>C. Abstract <code>ProductCapability</code> plus meaningful concrete <code>subkind</code> specializations</td>
+<td>Potential route toward the reference rule. Requires evidence for rigid domain distinctions, coverage/scope decisions, new class IDs and generalizations, population typing, mapping/constraint/diagram updates and migration tests. A synonym subclass adds no domain explanation.</td>
+<td>Deferred until such evidence or a strict-conformity requirement exists.</td>
+</tr>
+</tbody>
+</table>
+<p>An abstract class can still have instances through a concrete subclass: inherited membership in <code>ProductCapability</code> would remain valid. Therefore the issue is <strong>lack of a concrete specialization and its justified typing/migration</strong>, not that every <code>rdf:type ProductCapability</code> assertion would necessarily become false. The present RDF profile does not encode native direct-versus-indirect instantiation. This distinction prevents a misleading migration or satisfiability argument.</p>
+<h2 id="source-bound-executed-evidence">Source-bound executed evidence</h2>
+<p>The <a href="https://github.com/ArazSaieArasi3/OntoSPK/blob/main/evaluation/capability-profile-review.json">deterministic report</a> binds native source, decision, mapping, eight affected native formulas and three positive synthetic populations by SHA-256. Reproduce it with <code>python tools/publication/build_capability_profile_review.py</code> and <code>python tools/publication/test_capability_profile_review.py</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Focused comparison</th>
+<th>Executed result</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1 characterization</td>
+<td><code>ICREL:CP:bearsCapability</code> found</td>
+<td>Scoped structural check.</td>
+</tr>
+<tr>
+<td>C2 bearer multiplicity</td>
+<td>Opposite end is exactly <code>1</code></td>
+<td>Static cardinality; no temporal/modal proof.</td>
+</tr>
+<tr>
+<td>C3–C6 ancestor/descendant restrictions</td>
+<td>No ancestors or descendants of this class</td>
+<td>Passes vacuously; no hierarchy-wide foundational proof.</td>
+</tr>
+<tr>
+<td>Reference abstractness</td>
+<td>Reference true; native false</td>
+<td>Explicitly accepted project deviation, not a passing strict-reference check.</td>
+</tr>
+<tr>
+<td>Three positive native-profile fixture populations</td>
+<td>Each explicitly types <code>actual1</code> as ProductCapability; no concrete descendants exist</td>
+<td>Synthetic compatibility evidence, not three distinct real capabilities or an inventory of deployed data.</td>
+</tr>
+<tr>
+<td>Native-to-OWL mapping</td>
+<td>Existing <code>urn:productium:specification-profile:ProductCapability</code> retained</td>
+<td>No new equivalence, import or signature bridge.</td>
+</tr>
+<tr>
+<td>Native formula inventory</td>
+<td>Eight of 892 structural formulas mention this class</td>
+<td>All retained; no new abstractness axiom is silently added.</td>
+</tr>
+<tr>
+<td>Adverse controls</td>
+<td>Eight injected structural faults detected; abstract-leaf and hypothetical-subkind contrasts exercised</td>
+<td>Finite test sensitivity, not independent domain validation.</td>
+</tr>
+</tbody>
+</table>
+<p>The official-source check was executed against the pinned Git checkout using <code>python tools/publication/build_capability_profile_review.py --reference-root build/ontouml-reference</code>. Routine CI uses the recorded comparison and local source hashes; it does not silently access a changing <code>latest</code> page or claim a fresh external readback. To repeat the external check, obtain the official repository at the exact commit above and pass its path. Third-party source files are not redistributed in this report.</p>
+<h2 id="acceptance-boundaries-and-reopening">Acceptance, boundaries and reopening</h2>
+<p>This resolves #48's project-profile choice and migration assessment by selecting A. No ontology axioms, native abstractness flags, identifiers, instance records, SHACL targets, diagrams, frozen releases or private sibling repositories change. Historical reports that said the choice was pending remain historical; this decision supersedes that pending status for current readers.</p>
+<p>Reopen the decision if strict conformity becomes a project requirement, independently justified concrete capability specializations emerge, or authoritative profile requirements change. A later accepted semantic migration must receive a new semantic version, reviewed migration and affected native/OWL/SHACL/CQ/FOL checks. Independent scientific review, modal/causal adequacy and empirical disposition continuity are still unestablished. Closing this focused decision does not certify them.</p>
+<p>The <a href="../reference/publication/index.html">current publication handoff</a> and <a href="../reference/formal/method.html">formal verification method</a> explain how to read this decision with the rest of the evidence.</p></main><aside class="toc" aria-label="On this page"><h2>On this page</h2><ul><li><a href="#meaning-in-the-model">Meaning in the model</a></li><li><a href="#exact-profile-and-authoritative-comparison">Exact profile and authoritative comparison</a></li><li><a href="#alternatives-and-migration-assessment">Alternatives and migration assessment</a></li><li><a href="#source-bound-executed-evidence">Source-bound executed evidence</a></li><li><a href="#acceptance-boundaries-and-reopening">Acceptance, boundaries and reopening</a></li></ul></aside></div><footer><a href="https://github.com/ArazSaieArasi3/OntoSPK/releases/tag/v2.0.0">Ontology core v2.0.0</a> · <a href="../guide/Citation.html">Citation and reuse</a> · <a href="../guide/Limitations.html">Limits of the evidence</a> · <a href="https://github.com/ArazSaieArasi3/OntoSPK">Repository</a><p>Native model 0.41.0 · logical profile 0.43.0. Generated references describe the supplied source; evaluation claims are tied to their recorded inputs and methods.</p></footer></body></html>

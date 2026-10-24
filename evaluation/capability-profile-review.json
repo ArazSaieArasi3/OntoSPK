@@ -1,0 +1,198 @@
+{
+  "affected_native_formulas": [
+    {
+      "formula": "forall x,y: R[\"ICREL:CP:bearsCapability\"](x,y) => (C[\"IC:ProductRealization\"](x) and C[\"IC:ProductCapability\"](y))",
+      "id": "ICREL:CP:bearsCapability:TYPING",
+      "kind": "TYPING",
+      "native_id": "ICREL:CP:bearsCapability"
+    },
+    {
+      "formula": "forall y: C[\"IC:ProductCapability\"](y) => 1 <= card{x | R[\"ICREL:CP:bearsCapability\"](x,y)} <= 1",
+      "id": "ICREL:CP:bearsCapability:LEFT_END",
+      "kind": "LEFT_END",
+      "native_id": "ICREL:CP:bearsCapability"
+    },
+    {
+      "formula": "forall x,y: R[\"ICREL:CP:evaluatedAgainst\"](x,y) => (C[\"IC:ProductCapability\"](x) and C[\"IC:CapabilitySpecification\"](y))",
+      "id": "ICREL:CP:evaluatedAgainst:TYPING",
+      "kind": "TYPING",
+      "native_id": "ICREL:CP:evaluatedAgainst"
+    },
+    {
+      "formula": "forall x: C[\"IC:ProductCapability\"](x) => 0 <= card{y | R[\"ICREL:CP:evaluatedAgainst\"](x,y)}",
+      "id": "ICREL:CP:evaluatedAgainst:RIGHT_END",
+      "kind": "RIGHT_END",
+      "native_id": "ICREL:CP:evaluatedAgainst"
+    },
+    {
+      "formula": "forall x,y: R[\"REL:ORSD04:claimActualCapability\"](x,y) => (C[\"IC:AssessmentClaim\"](x) and C[\"IC:ProductCapability\"](y))",
+      "id": "REL:ORSD04:claimActualCapability:TYPING",
+      "kind": "TYPING",
+      "native_id": "REL:ORSD04:claimActualCapability"
+    },
+    {
+      "formula": "forall y: C[\"IC:ProductCapability\"](y) => 0 <= card{x | R[\"REL:ORSD04:claimActualCapability\"](x,y)}",
+      "id": "REL:ORSD04:claimActualCapability:LEFT_END",
+      "kind": "LEFT_END",
+      "native_id": "REL:ORSD04:claimActualCapability"
+    },
+    {
+      "formula": "forall x,y: R[\"REL:ORSD06:dependencyActualCapabilityTarget\"](x,y) => (C[\"IC:DependencySpecification\"](x) and C[\"IC:ProductCapability\"](y))",
+      "id": "REL:ORSD06:dependencyActualCapabilityTarget:TYPING",
+      "kind": "TYPING",
+      "native_id": "REL:ORSD06:dependencyActualCapabilityTarget"
+    },
+    {
+      "formula": "forall y: C[\"IC:ProductCapability\"](y) => 0 <= card{x | R[\"REL:ORSD06:dependencyActualCapabilityTarget\"](x,y)}",
+      "id": "REL:ORSD06:dependencyActualCapabilityTarget:LEFT_END",
+      "kind": "LEFT_END",
+      "native_id": "REL:ORSD06:dependencyActualCapabilityTarget"
+    }
+  ],
+  "decision": {
+    "alternatives": [
+      {
+        "choice": "Retain concrete project Mode with declared deviation",
+        "id": "A",
+        "impact": "No changes to released identifiers, direct typing, bearer relation, OWL mapping, SHACL targets or FOL theory. Strict reference conformance remains false.",
+        "selected": true
+      },
+      {
+        "choice": "Set ProductCapability abstract without adding a concrete subtype",
+        "id": "B",
+        "impact": "Its native leaf would have no concrete specialization; the sampled positive fixture instances have no concrete descendant typing. OWL rdf:type alone does not encode native direct instantiation, so an OWL satisfiability pass would not repair this native admissibility problem.",
+        "selected": false
+      },
+      {
+        "choice": "Abstract ProductCapability plus a justified concrete subkind",
+        "id": "C",
+        "impact": "Reference permits subkind specializations of mode. Requires domain evidence for a rigid specialization and a reviewed partition/scope, new native ID and generalization, mappings, typing migration, diagrams, constraints and affected controls. A synonym subclass just to satisfy the table has no independent domain justification.",
+        "selected": false
+      }
+    ],
+    "authority": "Maintainer delegated the choice to the implementation/review agent when evidence supports a best recommendation; this is not independent expert acceptance.",
+    "choice": "Retain the released concrete ProductCapability and explicitly declare the Mode abstractness deviation from the pinned reference.",
+    "date": "2026-10-24",
+    "decision_id": "OntoSPK-PC-01",
+    "isAbstract": false,
+    "issue": 48,
+    "limits": [
+      "The reference abstract=true requirement is a real documented mismatch; it is neither dismissed as a typo nor reinterpreted as harmless stereotype metaclass abstractness.",
+      "C1-C6 checks are a focused structural comparison for this class, not a whole-language validation. Hierarchy checks with no ancestors or descendants pass vacuously.",
+      "Bearer uniqueness is distinct from full modal dependence, causal power, empirical capability existence and temporal continuity.",
+      "Existing review and release receipts remain historical; this decision does not retroactively change their statements."
+    ],
+    "native_id": "IC:ProductCapability",
+    "ontology_core": "v2.0.0",
+    "project_profile": "OntoSPK concrete-capability project profile PC-01 version 1.0.0, scoped to IC:ProductCapability, its native taxonomy and ICREL:CP:bearsCapability; not an OntoUML language version or a complete UFO profile.",
+    "reference": {
+      "commit": "e48fde4fbb74d0df92419e056c85d794b85be02b",
+      "files": {
+        "classes/aspects/mode/constraints.rst": "c98ab16f85b67c912c965d4ede1d568b816e58f404acdd18d1b42848bc02ef42",
+        "classes/aspects/mode/definition.rst": "f9fcd1930e25ab23d33d9c69fe4f886e7e73527f750b503c5e2ea17bcc8059b1",
+        "classes/aspects/mode/meta.yml": "a8cef10ef998cb25d0bad5c256dbd3dc75761f139e846ed80a86bddd75db1cff",
+        "classes/sortals/subkind/definition.rst": "f4bfa8c2d958aea98dbdbdcc51509fbe1070ed22480f03abff9e5cf08247ef50",
+        "classes/sortals/subkind/meta.yml": "ca58a008fba7c6ea575435bbbc7ab0ecf00668daa2a0c7186bed400efc5c4180"
+      },
+      "mode_abstract": true,
+      "observed": "2026-10-24",
+      "repository": "https://github.com/OntoUML/OntoUML"
+    },
+    "reopen_when": [
+      "Maintainer requires strict conformity to the pinned reference rather than the bounded project profile.",
+      "Domain evidence establishes meaningful rigid concrete capability specializations and a reviewed migration.",
+      "A new authoritative reference/profile changes the relevant requirements."
+    ],
+    "restrictedTo": [
+      "intrinsic-mode"
+    ],
+    "semantic_migration": "NONE",
+    "status": "ADOPTED_BOUNDED_PROJECT_PROFILE",
+    "stereotype": "mode",
+    "strict_reference_conformance": false,
+    "version": "1.0.0"
+  },
+  "limits": [
+    "The reference abstract=true requirement is a real documented mismatch; it is neither dismissed as a typo nor reinterpreted as harmless stereotype metaclass abstractness.",
+    "C1-C6 checks are a focused structural comparison for this class, not a whole-language validation. Hierarchy checks with no ancestors or descendants pass vacuously.",
+    "Bearer uniqueness is distinct from full modal dependence, causal power, empirical capability existence and temporal continuity.",
+    "Existing review and release receipts remain historical; this decision does not retroactively change their statements.",
+    "Three synthetic positive populations are sampled, not all user data or all possible instances. No deployed population was inspected."
+  ],
+  "mapping": {
+    "declared_owl_class": "True",
+    "label": "ProductCapability",
+    "mapped_iri": "urn:productium:specification-profile:ProductCapability",
+    "mapping_basis": "class-table map",
+    "native_id": "IC:ProductCapability",
+    "scope": "local"
+  },
+  "migration": {
+    "external_boundary_changes": 0,
+    "fol_changes": 0,
+    "instance_retyping": 0,
+    "native_changes": 0,
+    "new_classes": 0,
+    "owl_mapping_changes": 0,
+    "shacl_changes": 0
+  },
+  "native_formula_count": 892,
+  "sampled_positive_populations": [
+    {
+      "abstract_leaf_counterfactual": "NO_CONCRETE_NATIVE_SPECIALIZATION_FOR_RECORDED_TYPES",
+      "concrete_descendant_typings": 0,
+      "explicit_capability_instances": [
+        "urn:product-ontology:event-instance:actual1"
+      ],
+      "source": "semantic/product/v2/source/validation_v041/fixtures/occurrence-positive-v041.ttl"
+    },
+    {
+      "abstract_leaf_counterfactual": "NO_CONCRETE_NATIVE_SPECIALIZATION_FOR_RECORDED_TYPES",
+      "concrete_descendant_typings": 0,
+      "explicit_capability_instances": [
+        "urn:product-ontology:event-instance:actual1"
+      ],
+      "source": "semantic/product/v2/source/validation_v041/fixtures/same_population_new_snapshot.ttl"
+    },
+    {
+      "abstract_leaf_counterfactual": "NO_CONCRETE_NATIVE_SPECIALIZATION_FOR_RECORDED_TYPES",
+      "concrete_descendant_typings": 0,
+      "explicit_capability_instances": [
+        "urn:product-ontology:event-instance:actual1"
+      ],
+      "source": "semantic/product/v2/source/validation_v041/fixtures/two_events_one_population.ttl"
+    }
+  ],
+  "source_sha256": {
+    "semantic/product/v2/reference/native-class-projection.csv": "e05b40fb8537c08265a883748613cab69b3e1fc7bb8405e96d93fcd12b5cd4fa",
+    "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
+    "semantic/product/v2/source/formalization/Structural_Axioms_892.json": "3255d32b13056abdde20be852a38ea374d4f974a63a5da8d65b076df0e0789b8",
+    "semantic/product/v2/source/validation_v041/fixtures/occurrence-positive-v041.ttl": "f20d2d7d9550823103eab6e74fa04b39aff26b9869cd58a413643f2a208ed662",
+    "semantic/product/v2/source/validation_v041/fixtures/same_population_new_snapshot.ttl": "c5880d7436fe67d7426c3b030ac06bdc32e869fd796dc733fbb66b95d7d1dcc9",
+    "semantic/product/v2/source/validation_v041/fixtures/two_events_one_population.ttl": "8f72060eb950b30d3c1139218b2277d9b188bee4cfe1bd4f964926deccfb715e",
+    "tools/publication/capability-profile-decision.json": "0a2b39cc710f890b58118fed57dca99ce39af47d07d39770f209a2e184937ec1"
+  },
+  "status": "ADOPTED_BOUNDED_PROFILE_WITH_DECLARED_REFERENCE_DEVIATION",
+  "structural_comparison": {
+    "ancestors": [],
+    "characterizations": [
+      {
+        "bearer": "IC:ProductRealization",
+        "bearer_cardinality": "1",
+        "mode": "IC:ProductCapability",
+        "relation": "ICREL:CP:bearsCapability"
+      }
+    ],
+    "checks": {
+      "C1_characterization": true,
+      "C2_exactly_one_bearer": true,
+      "C3_no_provider_ancestor": true,
+      "C4_no_identity_inheritor_ancestor": true,
+      "C5_no_mixed_identity_descendant": true,
+      "C6_no_anti_rigid_ancestor": true
+    },
+    "descendants": [],
+    "errors": [],
+    "reference_abstractness_matches": false
+  }
+}

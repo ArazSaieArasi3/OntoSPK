@@ -32,7 +32,13 @@ The v2.0.7 increment packages the reviewed diagrams, complete Wiki-to-Pages cove
 | [Diagram review](../../evaluation/diagram-provenance.md) | 40 displayed classes and 59 relationships checked; six stale historical manifest fields disclosed; two source-derived domain views | Selected-view navigation is not native navigability; sparse domain view omits 275 associations; no recovered editable draw.io source or full-model figure is claimed. |
 | [Reader coverage](../../evaluation/documentation-parity.md) | All fifteen accepted Wiki reader pages are compared with current Pages by content, headings and link destination; controlled regressions are detected | The deterministic CI audit covers the accepted source snapshot, not continuous live Wiki monitoring or scientific acceptance. |
 
-The full [formal verification method](formal-verification.md) and [diagram explanation](diagram-provenance.md) are available within the site. Full native-profile conformity, independent domain/expert acceptance, external-owner equivalence and production readiness remain separate questions. The ProductCapability Mode-profile decision is [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48). The present increment does not resolve it.
+The full [formal verification method](formal-verification.md) and [diagram explanation](diagram-provenance.md) are available within the site. Full native-profile conformity, independent domain/expert acceptance, external-owner equivalence and production readiness remain separate questions.
+
+## Current ProductCapability / Mode decision
+
+The subsequent [PC-01 v1.0.0 profile decision](../../evaluation/capability-profile-review.md) resolves the project choice tracked in [#48](https://github.com/ArazSaieArasi3/OntoSPK/issues/48): retain the concrete actual-disposition class within an explicitly bounded project profile. The exact official documentation commit requires abstract Mode; the mismatch is disclosed and strict reference-profile conformity remains unclaimed. The decision and its source-bound structural/migration checks are a later repository increment; they are not retroactively part of the immutable v2.0.7 archive.
+
+Changing the flag alone would leave an abstract native leaf without concrete specializations. Introducing meaningful concrete subkinds would require domain justification and a reviewed migration. Current instance typing, bearer cardinalities, OWL mapping and native/FOL constraints therefore remain as released. The complete comparison, alternatives and reopening conditions are available on the decision page within this site. No author confirmation is outstanding for this bounded choice: the maintainer delegated it. Independent expert acceptance and full UFO conformity are still unestablished.
 
 ## Proposed manuscript wording for author review
 
@@ -49,7 +55,7 @@ Use a separate exact evidence-release reference when citing specific executed re
 ## Remaining publication decisions
 
 - Register a persistent identifier only after deposit eligibility, rights, exact archived version and actual service access are verified (#29).
-- Review the specific native Mode-profile decision before stronger OntoUML/UFO conformity claims (#48).
+- The bounded Mode-profile choice is recorded in PC-01. Reopen it and review a migration before requiring strict reference conformity or introducing domain-justified concrete capability subtypes.
 - Keep boundary-contract changes and private sibling repositories deferred under the owner's existing instruction (#25–#27).
 - Keep sourced concept pages deferred for their separate schema/scope discussion (#37).
 
