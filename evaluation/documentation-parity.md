@@ -13,7 +13,7 @@ This source audit compares the accepted Wiki snapshot, authored guide and curren
 | docs/guide/Domains.md | docs/guide/Domains.html | 1 | 3 |
 | docs/guide/External-References.md | docs/guide/External-References.html | 6 | 10 |
 | docs/guide/Formalization.md | docs/guide/Formalization.html | 5 | 10 |
-| docs/guide/Home.md | docs/guide/Home.html | 5 | 20 |
+| docs/guide/Home.md | docs/guide/Home.html | 6 | 23 |
 | docs/guide/Limitations.md | docs/guide/Limitations.html | 1 | 2 |
 | docs/guide/Overview.md | docs/guide/Overview.html | 1 | 5 |
 | docs/guide/Quality.md | docs/guide/Quality.html | 2 | 7 |
@@ -21,7 +21,7 @@ This source audit compares the accepted Wiki snapshot, authored guide and curren
 | docs/guide/Reproduce.md | docs/guide/Reproduce.html | 2 | 1 |
 | docs/guide/Versions.md | docs/guide/Versions.html | 1 | 6 |
 | docs/guide/Visualization.md | docs/guide/Visualization.html | 2 | 3 |
-| docs/handbook/current-status.md | docs/status/index.html | 5 | 14 |
+| docs/handbook/current-status.md | docs/status/index.html | 6 | 20 |
 | docs/handbook/diagram-provenance.md | docs/reference/diagrams/index.html | 6 | 10 |
 | docs/handbook/formal-verification.md | docs/reference/formal/method.html | 9 | 15 |
 | docs/handbook/publication-handoff.md | docs/reference/publication/index.html | 7 | 24 |

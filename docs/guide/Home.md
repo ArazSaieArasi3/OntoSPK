@@ -17,3 +17,8 @@ Read the [Overview](Overview.md), [Domains](Domains.md) and [Conceptual Model](C
 ## Current documentation and decisions
 
 The consolidated documentation/evidence increment is v2.0.8 over unchanged ontology core v2.0.0. Read the [current status](../handbook/current-status.md), [FOL verification method](../handbook/formal-verification.md), [reviewed diagrams and domains](../handbook/diagram-provenance.md) and [publication handoff](../handbook/publication-handoff.md). GitHub Releases records actual release publication; source preparation does not assert a completed DOI deposit.
+
+
+## Concept explanations and sources
+
+The [source-backed concept reader](https://arazsaiearasi3.github.io/OntoSPK/current/concepts/index.html) provides a categorized index of all 128 native entries and six editorial pilot pages, with canonical definitions, original explanations, examples and claim-specific IEEE-style references. Five local concepts and one external boundary have manuscripts; 122 entries await editorial coverage. [Read the sourcing and maintenance method](https://arazsaiearasi3.github.io/OntoSPK/current/concepts/method.html). This is a staged documentation increment under [#37](https://github.com/ArazSaieArasi3/OntoSPK/issues/37), not complete scientific validation or a new ontology core.

@@ -15,7 +15,8 @@
       "verification_report": "evaluation/wiki-publication-verification.json",
       "verified_reader_pages": 15
     },
-    "current_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/61"
+    "current_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/63",
+    "previous_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/61"
   },
   "pages": {
     "source": "docs",
@@ -35,7 +36,8 @@
       "verification_report": "evaluation/pages-publication-verification.json",
       "deployment_manifest": "https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json"
     },
-    "current_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/61"
+    "current_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/63",
+    "previous_live_acceptance": "https://github.com/ArazSaieArasi3/OntoSPK/issues/61"
   },
   "webvowl": {
     "data": "docs/webvowl/data/ontospk.json",

@@ -4,18 +4,18 @@
   "reader_pages": 15,
   "support_files": 3,
   "sidebar_sections": 3,
-  "words_approx": 4161,
+  "words_approx": 4251,
   "words_per_page": {
-    "mean": 277.4,
+    "mean": 283.4,
     "median": 219,
     "minimum": 132,
     "maximum": 666
   },
-  "markdown_links": 88,
+  "markdown_links": 91,
   "link_categories": {
-    "external_or_anchor": 4,
+    "external_or_anchor": 6,
     "repo_main": 19,
-    "repo_other": 9,
+    "repo_other": 10,
     "repo_tag": 27,
     "wiki_internal": 29
   },
@@ -75,10 +75,10 @@
     },
     {
       "page": "Home.md",
-      "words_approx": 286,
-      "headings": 5,
-      "links": 20,
-      "sha256": "347591a47dfee50ca6515144433977b8c80695b8176d6c914244dad6de298daf"
+      "words_approx": 376,
+      "headings": 6,
+      "links": 23,
+      "sha256": "d0e52e6a073f7edd4a1d64e98e1638d29cd002e68f8df45118433876beda9fa2"
     },
     {
       "page": "Limitations.md",

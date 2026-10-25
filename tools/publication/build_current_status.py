@@ -34,6 +34,10 @@ The FOL pilot (#31), reader parity (#52), diagrams (#32), publication handoff (#
 
 The historical v2.0.5 metadata reports are replayed from their exact release context so that current README improvements do not silently alter their source hashes. The [residual account](../../evaluation/metadata-residual-review.md) retains all 318 findings and routes each to an explicit disposition; it is not a clean ROBOT report.
 
+## Source-backed concept reader
+
+The current reader adds a [six-page editorial pilot](../concepts/index.html) over the released v2.0.8 station: five of 101 local concepts and one of 27 external handles. All 128 entries are indexed; 122 still await manuscripts. The [source method](../concepts/method.html) distinguishes canonical definitions, local synthesis and claim-specific evidence. Issues #37 and #63–#66 track pilot acceptance, expansion and relation scope. No new release number, ontology migration or independent scientific approval is asserted.
+
 ## Remaining independent work
 
 | Issue | Scope |
@@ -50,7 +54,7 @@ Use [the guide](../guide/Home.md), [formal verification method](formal-verificat
     readme = ROOT/'README.md'
     text = readme.read_text()
     start, end = '<!-- current-status:start -->', '<!-- current-status:end -->'
-    block = start+'\n\n## Current documentation and evidence\n\n'+summary+'\n\n[Current status and remaining work](https://arazsaiearasi3.github.io/OntoSPK/current/status/index.html) · [PC-01 decision](evaluation/capability-profile-review.md) · [FOL method](docs/handbook/formal-verification.md) · [Diagrams](docs/handbook/diagram-provenance.md) · [Residual ROBOT findings](evaluation/metadata-residual-review.md)\n\n'+end
+    block = start+'\n\n## Current documentation and evidence\n\n'+summary+'\n\n[Current status and remaining work](https://arazsaiearasi3.github.io/OntoSPK/current/status/index.html) · [Sourced concept pilot](https://arazsaiearasi3.github.io/OntoSPK/current/concepts/index.html) · [PC-01 decision](evaluation/capability-profile-review.md) · [FOL method](docs/handbook/formal-verification.md) · [Diagrams](docs/handbook/diagram-provenance.md) · [Residual ROBOT findings](evaluation/metadata-residual-review.md)\n\n'+end
     if start in text:
         text = text[:text.index(start)]+block+text[text.index(end)+len(end):]
     else:

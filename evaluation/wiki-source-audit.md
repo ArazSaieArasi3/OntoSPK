@@ -2,7 +2,7 @@
 
 This assessment covers source-controlled English guide pages and the generated Wiki projection. Current guide/Wiki sources have evolved together. The original dated live acceptance is retained as historical evidence and is not asserted against these new bytes. Current live acceptance is recorded separately in issue #61. The Wiki source explains the model; native and logical files remain semantic authority, and execution receipts remain evidence authority.
 
-**Source inventory:** 15 reader pages, 3 support files, 4,161 approximate English words and 88 Markdown links across reader pages. Mean page length is 277.4 words; the median is 219 (range 132–666). The three-section sidebar reaches 15 of 15 pages; 0 are orphaned.
+**Source inventory:** 15 reader pages, 3 support files, 4,251 approximate English words and 91 Markdown links across reader pages. Mean page length is 283.4 words; the median is 219 (range 132–666). The three-section sidebar reaches 15 of 15 pages; 0 are orphaned.
 
 | Page | Approx. words | Headings | Links |
 | --- | ---: | ---: | ---: |
@@ -13,7 +13,7 @@ This assessment covers source-controlled English guide pages and the generated W
 | Domains.md | 219 | 1 | 3 |
 | External-References.md | 666 | 6 | 10 |
 | Formalization.md | 442 | 5 | 10 |
-| Home.md | 286 | 5 | 20 |
+| Home.md | 376 | 6 | 23 |
 | Limitations.md | 214 | 1 | 2 |
 | Overview.md | 147 | 1 | 5 |
 | Quality.md | 425 | 2 | 7 |

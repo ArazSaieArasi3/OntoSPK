@@ -59,7 +59,7 @@ Use a separate exact evidence-release reference when citing specific executed re
 - Register a persistent identifier only after deposit eligibility, rights, exact archived version and actual service access are verified (#29).
 - The bounded Mode-profile choice is recorded in PC-01. Reopen it and review a migration before requiring strict reference conformity or introducing domain-justified concrete capability subtypes.
 - Keep boundary-contract changes and private sibling repositories deferred under the owner's existing instruction (#25–#27).
-- Keep sourced concept pages deferred for their separate schema/scope discussion (#37).
+- Continue the approved sourced concept reader in stages (#37, #63–#66); the six-page pilot does not complete the 101 local concepts, 27 external handles or property definitions.
 
 This handoff is delivered through the public documentation and linked repository issue for author review. It does not send third-party messages or claim acceptance of the proposed manuscript statement.
 

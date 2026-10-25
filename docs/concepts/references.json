@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "references": {
+    "ebert2007": {
+      "kind": "journal_article",
+      "authors": [
+        "C. Ebert"
+      ],
+      "title": "The impacts of software product management",
+      "year": 2007,
+      "url": "https://www.sciencedirect.com/science/article/pii/S0164121206002615",
+      "venue": "Journal of Systems and Software",
+      "access": "abstract_only",
+      "inspected_sections": [
+        "Abstract"
+      ],
+      "verified_on": "2026-10-26",
+      "volume": "80",
+      "number": "6",
+      "pages": "850–861",
+      "doi": "10.1016/j.jss.2006.09.017"
+    },
+    "kittlaus2022": {
+      "kind": "book",
+      "authors": [
+        "H.-B. Kittlaus"
+      ],
+      "title": "Software Product Management: The ISPMA-Compliant Study Guide and Handbook",
+      "year": 2022,
+      "url": "https://link.springer.com/book/10.1007/978-3-662-65116-2",
+      "venue": "Springer",
+      "access": "abstract_only",
+      "inspected_sections": [
+        "Chapter 2 abstract: Management of Software as a Business"
+      ],
+      "verified_on": "2026-10-26",
+      "edition": "2nd",
+      "doi": "10.1007/978-3-662-65116-2",
+      "reading_url": "https://link.springer.com/chapter/10.1007/978-3-662-65116-2_2"
+    },
+    "classen2008": {
+      "kind": "conference_paper",
+      "authors": [
+        "A. Classen",
+        "P. Heymans",
+        "P.-Y. Schobbens"
+      ],
+      "title": "What’s in a Feature: A Requirements Engineering Perspective",
+      "year": 2008,
+      "url": "https://link.springer.com/chapter/10.1007/978-3-540-78743-3_2",
+      "venue": "Fundamental Approaches to Software Engineering (FASE 2008), LNCS 4961",
+      "access": "reviewed_sections",
+      "inspected_sections": [
+        "Section 1 and Table 1, pp. 16–18",
+        "Section 2.1, p. 19",
+        "Section 3.1, pp. 21–22"
+      ],
+      "verified_on": "2026-10-26",
+      "pages": "16–30",
+      "doi": "10.1007/978-3-540-78743-3_2",
+      "reading_url": "https://link.springer.com/content/pdf/10.1007/978-3-540-78743-3_2.pdf"
+    },
+    "zave1997": {
+      "kind": "journal_article",
+      "authors": [
+        "P. Zave",
+        "M. Jackson"
+      ],
+      "title": "Four Dark Corners of Requirements Engineering",
+      "year": 1997,
+      "url": "https://www.pamelazave.com/fre.html",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "access": "reviewed_sections",
+      "inspected_sections": [
+        "Section 1, pp. 1–3",
+        "Section 2, terminology and environment"
+      ],
+      "verified_on": "2026-10-26",
+      "volume": "6",
+      "number": "1",
+      "pages": "1–30",
+      "reading_url": "https://www.fceia.unr.edu.ar/asist/zave00.pdf"
+    },
+    "azevedo2015": {
+      "kind": "journal_article",
+      "authors": [
+        "C. L. B. Azevedo",
+        "M.-E. Iacob",
+        "J. P. A. Almeida",
+        "M. van Sinderen",
+        "L. Ferreira Pires",
+        "G. Guizzardi"
+      ],
+      "title": "Modeling resources and capabilities in enterprise architecture: A well-founded ontology-based proposal for ArchiMate",
+      "year": 2015,
+      "url": "https://research.utwente.nl/en/publications/modeling-resources-and-capabilities-in-enterprise-architecture-a-/",
+      "venue": "Information Systems",
+      "access": "reviewed_sections",
+      "inspected_sections": [
+        "Section 4, dispositions, p. 241",
+        "Sections 6.1–6.2, pp. 243–245"
+      ],
+      "verified_on": "2026-10-26",
+      "volume": "54",
+      "pages": "235–262",
+      "doi": "10.1016/j.is.2015.04.008",
+      "reading_url": "https://ris.utwente.nl/ws/files/17061280/modeling.pdf"
+    },
+    "duarte2018": {
+      "kind": "journal_article",
+      "authors": [
+        "B. B. Duarte",
+        "A. L. de Castro Leal",
+        "R. de Almeida Falbo",
+        "G. Guizzardi",
+        "R. S. S. Guizzardi",
+        "V. E. Silva Souza"
+      ],
+      "title": "Ontological foundations for software requirements with a focus on requirements at runtime",
+      "year": 2018,
+      "url": "https://journals.sagepub.com/doi/10.3233/AO-180197",
+      "venue": "Applied Ontology",
+      "access": "abstract_only",
+      "inspected_sections": [
+        "Abstract"
+      ],
+      "verified_on": "2026-10-26",
+      "volume": "13",
+      "number": "2",
+      "pages": "73–105",
+      "doi": "10.3233/AO-180197"
+    },
+    "rro": {
+      "kind": "ontology_documentation",
+      "authors": [
+        "NEMO"
+      ],
+      "title": "Runtime Requirements Ontology (RRO)",
+      "year": null,
+      "url": "https://dev.nemo.inf.ufes.br/seon/RRO.html",
+      "venue": "Software Engineering Ontology Network",
+      "access": "reviewed_sections",
+      "inspected_sections": [
+        "Section 3.1, Program Execution",
+        "Concepts: Loaded Program Copy; Program Copy Execution; Software Function"
+      ],
+      "verified_on": "2026-10-26"
+    },
+    "menon2009": {
+      "kind": "conference_paper",
+      "authors": [
+        "C. Menon",
+        "R. Hawkins",
+        "J. McDermid"
+      ],
+      "title": "Defence Standard 00-56 Issue 4: Towards Evidence-Based Safety Standards",
+      "year": 2009,
+      "url": "https://www-users.york.ac.uk/~rdh2/papers/SSS09%20Paper%20final.pdf",
+      "venue": "Safety-Critical Systems: Problems, Process and Practice, Springer",
+      "access": "reviewed_sections",
+      "inspected_sections": [
+        "Section 2, definitions 1–4, author manuscript PDF p. 3",
+        "Sections 3.3–3.5, trustworthiness, scope and coverage"
+      ],
+      "verified_on": "2026-10-26",
+      "verification_url": "https://researchprofiles.herts.ac.uk/en/publications/defence-standard-00-56-issue-4-towards-evidence-based-safety-stan/"
+    },
+    "prov2013": {
+      "kind": "standard",
+      "authors": [
+        "L. Moreau",
+        "P. Missier"
+      ],
+      "title": "PROV-DM: The PROV Data Model",
+      "year": 2013,
+      "url": "https://www.w3.org/TR/2013/REC-prov-dm-20130430/",
+      "venue": "W3C Recommendation",
+      "access": "reviewed_sections",
+      "inspected_sections": [
+        "Section 1, Introduction",
+        "Section 5.3.2, Attribution"
+      ],
+      "verified_on": "2026-10-26",
+      "editors": true
+    }
+  }
+}
