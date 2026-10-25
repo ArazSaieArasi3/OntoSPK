@@ -6,7 +6,7 @@
 
 The consolidated documentation/evidence increment is **v2.0.8**, over unchanged ontology core **v2.0.0**. It includes PC-01, corrected native-ID term search, reviewed diagrams and current metadata/DOI accounting. [GitHub Releases](https://github.com/ArazSaieArasi3/OntoSPK/releases) is the authority for actual release publication; the [deployment manifest](https://arazsaiearasi3.github.io/OntoSPK/publication-manifest.json) identifies the live current source. Increment identity alone does not assert that a tag or DOI has been published.
 
-[Current status and remaining work](https://arazsaiearasi3.github.io/OntoSPK/current/status/index.html) · [PC-01 decision](evaluation/capability-profile-review.md) · [FOL method](docs/handbook/formal-verification.md) · [Diagrams](docs/handbook/diagram-provenance.md) · [Residual ROBOT findings](evaluation/metadata-residual-review.md)
+[Current status and remaining work](https://arazsaiearasi3.github.io/OntoSPK/current/status/index.html) · [Sourced concept pilot](https://arazsaiearasi3.github.io/OntoSPK/current/concepts/index.html) · [PC-01 decision](evaluation/capability-profile-review.md) · [FOL method](docs/handbook/formal-verification.md) · [Diagrams](docs/handbook/diagram-provenance.md) · [Residual ROBOT findings](evaluation/metadata-residual-review.md)
 
 <!-- current-status:end -->
 

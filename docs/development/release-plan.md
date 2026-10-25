@@ -55,7 +55,7 @@ Their issue records determine final open/closed state. Source preparation and gr
 | Issue | State and dependency |
 | --- | --- |
 | [#29](https://github.com/ArazSaieArasi3/OntoSPK/issues/29) | Actual DOI registration needs rights-holder/licence decision, verified deposit metadata and actual service access; use a precise archive including PC-01 when that scope is intended. |
-| [#37](https://github.com/ArazSaieArasi3/OntoSPK/issues/37) | Owner-deferred sourced concept/page schema; the 142 unsupported local property definitions require a relation-scope decision and supported sources. |
+| [#37](https://github.com/ArazSaieArasi3/OntoSPK/issues/37) | Active source-backed reader: six-page pilot #63; local expansion #64; external coverage #65; separate property/relation scope #66. The 142 unsupported local property definitions remain unresolved. |
 | [#25](https://github.com/ArazSaieArasi3/OntoSPK/issues/25) | ProductLine contracts remain on the owner's existing hold. |
 | [#26](https://github.com/ArazSaieArasi3/OntoSPK/issues/26) | Architecture contracts remain on the owner's existing hold. |
 | [#27](https://github.com/ArazSaieArasi3/OntoSPK/issues/27) | Unresolved/composite external handles remain on the owner's existing hold. |

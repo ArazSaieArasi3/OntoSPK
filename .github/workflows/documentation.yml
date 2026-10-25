@@ -55,6 +55,7 @@ jobs:
           python tools/publication/build_diagram_review.py
           python tools/publication/test_diagram_review.py
           python tools/publication/build_portal.py
+          python tools/publication/test_concept_pages.py
           python tools/publication/audit_wiki.py
           python tools/publication/audit_pages.py
           python tools/publication/audit_documentation.py

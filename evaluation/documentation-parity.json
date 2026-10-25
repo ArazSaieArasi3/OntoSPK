@@ -64,10 +64,10 @@
     {
       "source": "docs/guide/Home.md",
       "page": "docs/guide/Home.html",
-      "source_sha256": "20ce8c21ff3a5e977f2923c9f11a3612739e031676dbc4a4f1f69e865d07b78b",
-      "normalized_content_sha256": "85da83daaad48f96815d75f1b120d44865fe49590c7f9139c1f6cdccd4999933",
-      "headings": 5,
-      "links": 20
+      "source_sha256": "a757ce8b34cd1a772db02f80efefff429cac52ecec1a43f5b816d169f7e3870a",
+      "normalized_content_sha256": "bea12dbc6c200f925546347a2a59d88d180b01bfa8d34f4cbe694e8a46a6167a",
+      "headings": 6,
+      "links": 23
     },
     {
       "source": "docs/guide/Limitations.md",
@@ -128,10 +128,10 @@
     {
       "source": "docs/handbook/current-status.md",
       "page": "docs/status/index.html",
-      "source_sha256": "48c5fd2a9abb4ecc6c7ead8d94be0786f0dc72b6184543ae3a673108ef1d3c24",
-      "normalized_content_sha256": "7e63301014de64276afa6cabd1b0ddb19ee666308631b00bb9147a8e1d44f63c",
-      "headings": 5,
-      "links": 14
+      "source_sha256": "e96021d1ffda224181ae9ea1ff754fc2af4a337993006144871bfb542a033690",
+      "normalized_content_sha256": "e3398102ce3e590741bb826825320f414a14ec84494e1b2abe39f5645fd3e8c3",
+      "headings": 6,
+      "links": 20
     },
     {
       "source": "docs/handbook/diagram-provenance.md",
@@ -152,8 +152,8 @@
     {
       "source": "docs/handbook/publication-handoff.md",
       "page": "docs/reference/publication/index.html",
-      "source_sha256": "6516f899715b68686ac5e625d70809f22d2a67fdef32f57202ecafacf8d82747",
-      "normalized_content_sha256": "ac4dc36ab684b50c7334a9e7438653c8cf71363fb7b24fc5914bb38ae7fda208",
+      "source_sha256": "0ca05a13916a663877b3e4e53d6e5ea008aa04083148dc5204516b17083681e5",
+      "normalized_content_sha256": "8f52d2d204e88cfdf3e788f3db8b7109aa535608733cdb9c51e5c0f8e78d381f",
       "headings": 7,
       "links": 24
     }

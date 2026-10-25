@@ -2,7 +2,7 @@
   "status": "PASS",
   "scope": "Static Pages completeness and RDF graph identity; live browser acceptance is separate",
   "guide_pages": 15,
-  "reader_html_pages": 63,
+  "reader_html_pages": 71,
   "widoco_declarations": {
     "classes": 121,
     "object_properties": 286,
