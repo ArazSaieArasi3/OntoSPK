@@ -35,7 +35,7 @@
     "semantic/product/v2/catalogue/Concept_Catalogue_v0_41_0.csv": "172ef15e0fc080b5682480ca3839f47f9bff28521697312bf63bb37d860321d8",
     "semantic/product/v2/reference/native-class-projection.csv": "e05b40fb8537c08265a883748613cab69b3e1fc7bb8405e96d93fcd12b5cd4fa",
     "semantic/product/v2/source/formalization/Native_Model_v0_41_0.json": "b000749e658042c1af0fbcf5f034ee0659c046985547df31d490f4662f8a3aed",
-    "tools/publication/concept_pages.py": "1556275fe456dbeb71b901e209c3c9e22e7a009ebd7a7553fd72604b6872f67d"
+    "tools/publication/concept_pages.py": "accada5f9c6a97a6c297a47abb8b91052e30515f4b193e84facad5010a8a588f"
   },
   "entries": [
     {
