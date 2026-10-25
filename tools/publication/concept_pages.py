@@ -214,7 +214,7 @@ def build(root=ROOT):
         for e in meta['evidence']:
             n = order.index(e['source'])+1
             table += '<tr id="evidence-'+esc(e['id'])+'" data-source="'+esc(e['source'])+'"><td>'+esc(e['claim'])+'</td><td>'+esc(e['support'])+'</td><td><a href="#ref-'+str(n)+'">['+str(n)+']</a> '+esc(e['locator'])+'</td><td>'+esc(e['limitation'])+'</td></tr>'
-        table += '</tbody></table><h2>References</h2><ol class="ieee-references">'+''.join('<li id="ref-'+str(n)+'" value="'+str(n)+'">'+ieee(refs[k])+'</li>' for n, k in enumerate(order, 1))+'</ol>'
+        table += '</tbody></table><h2>References</h2><ol class="ieee-references" style="list-style:none;padding-left:0">'+''.join('<li id="ref-'+str(n)+'" value="'+str(n)+'"><span class="reference-number">['+str(n)+']</span> '+ieee(refs[k])+'</li>' for n, k in enumerate(order, 1))+'</ol>'
         outputs[route(identifier)] = shell(row['label'], head+canonical+rendered+table+links)
 
     def item(r, anchor=True):
@@ -236,7 +236,7 @@ def build(root=ROOT):
     outputs['method.html'] = shell('Concept editorial method', method+'<p><a href="index.html">Browse the concepts</a></p>')
     for name, text in outputs.items():
         (target/name).write_text(text)
-    (root/'docs/assets/concept-filter.js').write_text("const input=document.getElementById('concept-query');const count=document.getElementById('concept-count');function filterConcepts(){const q=input.value.trim().toLowerCase();document.querySelectorAll('.concept-entry').forEach(e=>{e.hidden=!e.dataset.search.includes(q)});document.querySelectorAll('#concept-groups section').forEach(s=>{s.hidden=![...s.querySelectorAll('.concept-entry')].some(e=>!e.hidden)});count.textContent=[...document.querySelectorAll('#concept-groups .concept-entry')].filter(e=>!e.hidden).length+' matching entries'}input.addEventListener('input',filterConcepts);filterConcepts();\n")
+    (root/'docs/assets/concept-filter.js').write_text("const input=document.getElementById('concept-query');const count=document.getElementById('concept-count');function filterConcepts(){const q=input.value.trim().toLowerCase();document.querySelectorAll('.concept-entry').forEach(e=>{e.hidden=!e.dataset.search.includes(q)});document.querySelectorAll('#concept-groups section').forEach(s=>{s.hidden=![...s.querySelectorAll('.concept-entry')].some(e=>!e.hidden)});count.textContent='Matching entries: '+[...document.querySelectorAll('#concept-groups .concept-entry')].filter(e=>!e.hidden).length}input.addEventListener('input',filterConcepts);filterConcepts();\n")
     inputs = [CATALOGUE, PROJECTION, MODEL, BASE/'references.json', BASE/'README.md', Path('tools/publication/concept_pages.py')]+[p.relative_to(root) for p, _, _ in manuscripts.values()]
     coverage = {'schema_version': 1, 'ontology_core': 'v2.0.0', 'scope': 'Editorial pilot; no semantic migration or independent scientific acceptance',
                 'local_total': 101, 'external_total': 27, 'local_manuscripts': local, 'external_manuscripts': external,
