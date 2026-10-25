@@ -32,7 +32,6 @@ The current reader adds a [six-page editorial pilot](../concepts/index.html) ove
 | [#25](https://github.com/ArazSaieArasi3/OntoSPK/issues/25) | Owner-held ProductLine external contracts |
 | [#26](https://github.com/ArazSaieArasi3/OntoSPK/issues/26) | Owner-held Architecture external contracts |
 | [#27](https://github.com/ArazSaieArasi3/OntoSPK/issues/27) | Owner-held unresolved/composite external contracts |
-| [#63](https://github.com/ArazSaieArasi3/OntoSPK/issues/63) | Six-page scholarly pilot, generated index and source-bound live acceptance |
 | [#64](https://github.com/ArazSaieArasi3/OntoSPK/issues/64) | Expand the 101 local concept manuscripts domain by domain |
 | [#65](https://github.com/ArazSaieArasi3/OntoSPK/issues/65) | Account for 27 external handles without new equivalence claims |
 | [#66](https://github.com/ArazSaieArasi3/OntoSPK/issues/66) | Scope the 142 unsupported local property/relation descriptions separately |

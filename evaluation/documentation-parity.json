@@ -128,10 +128,10 @@
     {
       "source": "docs/handbook/current-status.md",
       "page": "docs/status/index.html",
-      "source_sha256": "e96021d1ffda224181ae9ea1ff754fc2af4a337993006144871bfb542a033690",
-      "normalized_content_sha256": "e3398102ce3e590741bb826825320f414a14ec84494e1b2abe39f5645fd3e8c3",
+      "source_sha256": "8e7fa4f89d36c4361060cd77282be1ecedb4511a6b22fcb905fee04f002c0c35",
+      "normalized_content_sha256": "e6efda16900eb12f5ef6a345c1fe132e4f9f8aa8516807dccbfe08703c408ca4",
       "headings": 6,
-      "links": 20
+      "links": 19
     },
     {
       "source": "docs/handbook/diagram-provenance.md",

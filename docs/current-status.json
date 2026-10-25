@@ -27,7 +27,6 @@
     "25": "Owner-held ProductLine external contracts",
     "26": "Owner-held Architecture external contracts",
     "27": "Owner-held unresolved/composite external contracts",
-    "63": "Six-page scholarly pilot, generated index and source-bound live acceptance",
     "64": "Expand the 101 local concept manuscripts domain by domain",
     "65": "Account for 27 external handles without new equivalence claims",
     "66": "Scope the 142 unsupported local property/relation descriptions separately"
@@ -42,6 +41,7 @@
     "external_manuscripts": 1,
     "external_total": 27,
     "independent_scientific_review": "OPEN",
-    "semantic_migration": "NONE"
+    "semantic_migration": "NONE",
+    "implementation_and_acceptance_issue": "https://github.com/ArazSaieArasi3/OntoSPK/issues/63"
   }
 }
