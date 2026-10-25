@@ -237,6 +237,10 @@ def build(root=ROOT):
     for name, text in outputs.items():
         (target/name).write_text(text)
     (root/'docs/assets/concept-filter.js').write_text("const input=document.getElementById('concept-query');const count=document.getElementById('concept-count');function filterConcepts(){const q=input.value.trim().toLowerCase();document.querySelectorAll('.concept-entry').forEach(e=>{e.hidden=!e.dataset.search.includes(q)});document.querySelectorAll('#concept-groups section').forEach(s=>{s.hidden=![...s.querySelectorAll('.concept-entry')].some(e=>!e.hidden)});count.textContent='Matching entries: '+[...document.querySelectorAll('#concept-groups .concept-entry')].filter(e=>!e.hidden).length}input.addEventListener('input',filterConcepts);filterConcepts();\n")
+    # A fresh HTML deployment must not reuse a browser-cached older filter.
+    script_hash = digest((root/'docs/assets/concept-filter.js').read_bytes())[:16]
+    index = target/'index.html'
+    index.write_text(index.read_text().replace('../assets/concept-filter.js"', '../assets/concept-filter.js?v='+script_hash+'"'))
     inputs = [CATALOGUE, PROJECTION, MODEL, BASE/'references.json', BASE/'README.md', Path('tools/publication/concept_pages.py')]+[p.relative_to(root) for p, _, _ in manuscripts.values()]
     coverage = {'schema_version': 1, 'ontology_core': 'v2.0.0', 'scope': 'Editorial pilot; no semantic migration or independent scientific acceptance',
                 'local_total': 101, 'external_total': 27, 'local_manuscripts': local, 'external_manuscripts': external,

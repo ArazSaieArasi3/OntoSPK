@@ -42,6 +42,8 @@ def audit(overrides=None):
     require(len(manuscripts) == 6, 'Six pilot manuscripts')
     by_id = {r['native_id']: r for r in rows}
     index = BeautifulSoup(read(BASE/'index.html'), 'html.parser')
+    script_hash = hashlib.sha256((ROOT/'docs/assets/concept-filter.js').read_bytes()).hexdigest()[:16]
+    require(index.find('script', src='../assets/concept-filter.js?v='+script_hash) is not None, 'Filter cache binding')
     entries = index.select('#concept-groups li.concept-entry')
     require(len(entries) == 128 and len({e['data-native-id'] for e in entries}) == 128, 'Index IDs')
     expected_domains = {r['domain'] for r in catalogue.values() if r['scope'] == 'LOCAL'}
@@ -163,7 +165,8 @@ faults = {
     'wrong existing duplicate Evidence section': {index_path: index.replace('classes.html#evidence_1', 'classes.html#evidence')},
     'lost reference locator': {product: original.replace('Abstract, study purpose and industry-project account', 'Full text')},
     'false complete coverage': {coverage_path: json.dumps(badcover)},
+    'browser receives unversioned cached filter': {index_path: re.sub(r'concept-filter\.js\?v=[0-9a-f]+', 'concept-filter.js', index)},
 }
 for name, changes in faults.items():
     assert audit(changes), 'Undetected reader fault: '+name
-print('PASS: six manuscript/HTML bindings, 128 IDs and destinations, 12 domains, 9 source faults and 6 reader faults; no independent scientific validation claimed')
+print('PASS: six manuscript/HTML bindings, 128 IDs and destinations, 12 domains, 9 source faults and 7 reader faults; no independent scientific validation claimed')
