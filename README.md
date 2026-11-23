@@ -18,6 +18,7 @@ The **2.0.0 ontology-core distribution** is derived from the stable private sour
 
 - [Overview and scope](docs/guide/Overview.md)
 - [Domains and conceptual model](docs/guide/Domains.md)
+- [Conceptual distinctions and worked examples](docs/handbook/conceptual-distinctions.md)
 - [Formalization and logical semantics](docs/guide/Formalization.md)
 - [Complete conceptual reference](semantic/product/v2/reference/README.md)
 - [Evaluation and reasoning results](docs/guide/Quality.md)
